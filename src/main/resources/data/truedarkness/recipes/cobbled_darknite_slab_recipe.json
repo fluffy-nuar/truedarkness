@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:cobbled_darknite"
+    },
+    "1": {
+      "item": "truedarkness:cobbled_darknite"
+    },
+    "2": {
+      "item": "truedarkness:cobbled_darknite"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cobbled_darknite_slab",
+    "count": 6
+  }
+}

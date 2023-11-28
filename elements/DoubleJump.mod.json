@@ -1,0 +1,12 @@
+{
+  "_fv": 47,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Use Wings",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "DoubleJumpPriNazhatiiKlavishi"
+    }
+  }
+}

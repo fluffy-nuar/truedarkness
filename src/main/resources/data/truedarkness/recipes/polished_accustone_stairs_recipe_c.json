@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "truedarkness:polished_accustone"
+  },
+  "result": "truedarkness:polished_accustone_stairs"
+}

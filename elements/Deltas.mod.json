@@ -1,0 +1,16 @@
+{
+  "_fv": 47,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "RAW_GENERATION",
+    "restrictionDimensions": [
+      "CUSTOM:Yteria"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Swamps"
+      }
+    ],
+    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"40\" y=\"40\"><value name=\"feature\"><block inline=\"false\" type=\"feature_delta\"><comment h=\"124\" pinned=\"false\" w=\"262\">This block represents a delta feature, similar to the ones that generate in the Basalt Deltas biome.This feature should generate at an early generation stage, for example SURFACE_STRUCTURE or RAW_GENERATION</comment><value name=\"contents\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.FLOWING_WATER</field><comment h=\"80\" pinned=\"false\" w=\"160\">This is the block that appears in the filling of the delta.</comment></block></value><value name=\"rim\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:SwampSoil</field><comment h=\"80\" pinned=\"false\" w=\"160\">This is the block that makes up the rim of the delta.</comment></block></value><value name=\"size\"><block type=\"int_provider_uniform\"><field name=\"min\">3</field><field name=\"max\">7</field><comment h=\"80\" pinned=\"false\" w=\"160\">This is the size of the lava filling</comment></block></value><value name=\"rimSize\"><block type=\"int_provider_uniform\"><field name=\"min\">0</field><field name=\"max\">2</field><comment h=\"80\" pinned=\"false\" w=\"160\">This is the size of the magma rim. If the value is 0, magma won't generate at all</comment></block></value></block></value><next><block type=\"placement_count_on_every_layer\"><comment h=\"101\" pinned=\"false\" w=\"207\">This placement type works best for Nether biomes. We generate the delta 40 times on each vertical layer, so that the terrain is fully covered in deltas</comment><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">40</field></block></value><next><block type=\"placement_biome_filter\"><comment h=\"80\" pinned=\"false\" w=\"160\">We add a biome filter, so that the deltas don't generate outside of the current biome</comment></block></next></block></next></block></xml>"
+  }
+}

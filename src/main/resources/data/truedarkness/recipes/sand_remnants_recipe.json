@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:unclear_sand_of_missing"
+    },
+    {
+      "item": "truedarkness:sieve"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:sand_remnants",
+    "count": 1
+  }
+}

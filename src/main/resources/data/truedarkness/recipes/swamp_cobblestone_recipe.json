@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:swamp_terracota"
+    },
+    {
+      "item": "truedarkness:swamp_mud"
+    },
+    {
+      "item": "truedarkness:swamp_sand"
+    },
+    {
+      "item": "truedarkness:swamp_mud"
+    },
+    {
+      "item": "truedarkness:swamp_mud"
+    },
+    {
+      "item": "truedarkness:swamp_sand"
+    },
+    {
+      "item": "truedarkness:swamp_mud"
+    },
+    {
+      "item": "truedarkness:swamp_terracota"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:swamp_cobblestone",
+    "count": 12
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/block_of_writings",
+    "up": "truedarkness:block/block_of_writings",
+    "north": "truedarkness:block/block_of_writings_bag",
+    "east": "truedarkness:block/block_of_writings_bag",
+    "south": "truedarkness:block/block_of_writings_bag",
+    "west": "truedarkness:block/block_of_writings_bag",
+    "particle": "truedarkness:block/block_of_writings"
+  },
+  "render_type": "solid"
+}

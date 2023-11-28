@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "truedarkness:light_of_soul_gen",
+  "step": "underground_decoration"
+}

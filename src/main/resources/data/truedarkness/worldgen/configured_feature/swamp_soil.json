@@ -1,0 +1,20 @@
+{
+  "type": "truedarkness:swamp_soil",
+  "config": {
+    "size": 2,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:swamp_dirt"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:swamp_soil"
+        }
+      }
+    ]
+  }
+}

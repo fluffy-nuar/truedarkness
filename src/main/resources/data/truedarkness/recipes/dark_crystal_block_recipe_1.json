@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:dark_crystal_cluster_block"
+    }
+  },
+  "result": {
+    "item": "truedarkness:deleted_mod_element",
+    "count": 9
+  }
+}

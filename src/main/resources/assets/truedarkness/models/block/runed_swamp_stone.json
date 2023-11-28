@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/runed_grimstone_2",
+    "up": "truedarkness:block/runed_grimstone_1",
+    "north": "truedarkness:block/runed_grimstone_1",
+    "east": "truedarkness:block/runed_grimstone",
+    "south": "truedarkness:block/runed_grimstone_2",
+    "west": "truedarkness:block/runed_grimstone",
+    "particle": "truedarkness:block/runed_grimstone_2"
+  },
+  "render_type": "solid"
+}

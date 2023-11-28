@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/corrupted_rune",
+    "up": "truedarkness:block/corrupted_rune_1",
+    "north": "truedarkness:block/corrupted_rune_1",
+    "east": "truedarkness:block/corrupted_rune_2",
+    "south": "truedarkness:block/corrupted_rune_2",
+    "west": "truedarkness:block/corrupted_rune",
+    "particle": "truedarkness:block/corrupted_rune"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/cyan_wood_top",
+    "up": "truedarkness:block/cyan_wood_top",
+    "north": "truedarkness:block/cyan_stem_side",
+    "east": "truedarkness:block/cyan_stem_side",
+    "south": "truedarkness:block/cyan_stem_side",
+    "west": "truedarkness:block/cyan_stem_side",
+    "particle": "truedarkness:block/cyan_wood_top"
+  },
+  "render_type": "solid"
+}

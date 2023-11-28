@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:chiseled_polished_sandstone_of_missing_2"
+    },
+    "3": {
+      "item": "truedarkness:chiseled_polished_sandstone_of_missing_2"
+    },
+    "4": {
+      "item": "truedarkness:chiseled_polished_sandstone_of_missing_2"
+    },
+    "6": {
+      "item": "truedarkness:chiseled_polished_sandstone_of_missing_2"
+    },
+    "7": {
+      "item": "truedarkness:chiseled_polished_sandstone_of_missing_2"
+    },
+    "8": {
+      "item": "truedarkness:chiseled_polished_sandstone_of_missing_2"
+    }
+  },
+  "result": {
+    "item": "truedarkness:polished_sandstone_of_missing_stairs_1",
+    "count": 4
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DarknessSpruceWood"
+      },
+      {
+        "value": "CUSTOM:DarknessSpruceLog"
+      },
+      {
+        "value": "CUSTOM:StrippedDarknessSpruceLog"
+      },
+      {
+        "value": "CUSTOM:StrippedDarknessSpruce"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "darknessspruce_log",
+    "namespace": "forge"
+  }
+}

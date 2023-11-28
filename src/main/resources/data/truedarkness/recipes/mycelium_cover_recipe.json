@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:mycelium_grass"
+    },
+    "1": {
+      "item": "truedarkness:mycelium_grass"
+    },
+    "2": {
+      "item": "truedarkness:mycelium_grass"
+    }
+  },
+  "result": {
+    "item": "truedarkness:deleted_mod_element",
+    "count": 1
+  }
+}

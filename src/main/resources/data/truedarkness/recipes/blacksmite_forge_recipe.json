@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:swamp_cobblestone"
+    },
+    "1": {
+      "item": "truedarkness:swamp_cobblestone"
+    },
+    "2": {
+      "item": "truedarkness:swamp_cobblestone"
+    },
+    "3": {
+      "item": "truedarkness:gramite_shard"
+    },
+    "4": {
+      "item": "truedarkness:swamp_sand"
+    },
+    "5": {
+      "item": "truedarkness:gramite_shard"
+    },
+    "7": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "item": "truedarkness:blacksmite_forge",
+    "count": 1
+  }
+}

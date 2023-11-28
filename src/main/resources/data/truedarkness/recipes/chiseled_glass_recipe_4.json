@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "truedarkness:chiseled_glass_shard_4"
+    },
+    "3": {
+      "item": "truedarkness:chiseled_glass_shard_4"
+    },
+    "5": {
+      "item": "truedarkness:chiseled_glass_shard_4"
+    },
+    "7": {
+      "item": "truedarkness:chiseled_glass_shard_4"
+    }
+  },
+  "result": {
+    "item": "truedarkness:chiseled_glass_4",
+    "count": 1
+  }
+}

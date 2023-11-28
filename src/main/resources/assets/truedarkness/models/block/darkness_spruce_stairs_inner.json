@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "truedarkness:block/darkness_spruce_planks",
+    "top": "truedarkness:block/darkness_spruce_planks",
+    "side": "truedarkness:block/darkness_spruce_planks"
+  },
+  "render_type": "solid"
+}

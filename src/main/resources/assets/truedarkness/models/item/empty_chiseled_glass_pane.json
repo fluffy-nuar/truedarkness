@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:block/empty_chiseled_glass"
+  },
+  "render_type": "translucent"
+}

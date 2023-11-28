@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/kettle_samovar",
+  "textures": {
+    "all": "truedarkness:block/copper_kettle",
+    "particle": "truedarkness:block/copper_kettle",
+    "2": "truedarkness:block/copper_kettle"
+  },
+  "render_type": "cutout"
+}

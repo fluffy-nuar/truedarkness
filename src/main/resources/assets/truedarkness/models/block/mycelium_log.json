@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/mycelium_log_top",
+    "up": "truedarkness:block/mycelium_log_top",
+    "north": "truedarkness:block/mycelium_log",
+    "east": "truedarkness:block/mycelium_log",
+    "south": "truedarkness:block/mycelium_log",
+    "west": "truedarkness:block/mycelium_log",
+    "particle": "truedarkness:block/mycelium_log_top"
+  },
+  "render_type": "solid"
+}

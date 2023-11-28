@@ -1,0 +1,7 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "truedarkness:block/dried_planks"
+  },
+  "render_type": "solid"
+}

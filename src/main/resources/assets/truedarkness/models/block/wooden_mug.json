@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/wooden_mug",
+  "textures": {
+    "all": "truedarkness:block/wooden_mug",
+    "particle": "truedarkness:block/wooden_mug",
+    "1": "truedarkness:block/wooden_mug"
+  },
+  "render_type": "cutout"
+}

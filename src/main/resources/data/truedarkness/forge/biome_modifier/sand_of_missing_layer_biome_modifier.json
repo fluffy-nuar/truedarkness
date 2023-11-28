@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:swamp_wasteland",
+  "features": "truedarkness:sand_of_missing_layer",
+  "step": "vegetal_decoration"
+}

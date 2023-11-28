@@ -1,0 +1,22 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 250,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:CorruptedFireniteSword"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:FireniteScrap"
+    },
+    "name": "firenite_scrap_recipe_4",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:mine",
+  "features": "truedarkness:big_light_fungus",
+  "step": "fluid_springs"
+}

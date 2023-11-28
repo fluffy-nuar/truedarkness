@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "truedarkness:block/copper_kettle_for_samovar"
+    },
+    "facing=east": {
+      "model": "truedarkness:block/copper_kettle_for_samovar",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "truedarkness:block/copper_kettle_for_samovar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "truedarkness:block/copper_kettle_for_samovar",
+      "y": 270
+    }
+  }
+}

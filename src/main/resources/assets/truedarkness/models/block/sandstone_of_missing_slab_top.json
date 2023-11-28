@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "truedarkness:block/sandstone_of_missing",
+    "top": "truedarkness:block/sandstone_of_missing",
+    "side": "truedarkness:block/sandstone_of_missing"
+  },
+  "render_type": "solid"
+}

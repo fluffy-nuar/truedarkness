@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "truedarkness:block/dried_planks",
+    "particle": "truedarkness:block/dried_planks"
+  },
+  "render_type": "solid"
+}

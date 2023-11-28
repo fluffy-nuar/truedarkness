@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_amulet_chestplate"
+    },
+    "title": {
+      "translate": "advancements.vampirism.title"
+    },
+    "description": {
+      "translate": "advancements.vampirism.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "vampirism": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:corrupted_amulet_chestplate"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:cursing_and_curing"
+}

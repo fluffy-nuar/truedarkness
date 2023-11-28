@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Flask"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Coffee"
+      },
+      {
+        "value": "CUSTOM:Coffee"
+      },
+      {
+        "value": "CUSTOM:Coffee"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CoffeeFlask"
+    },
+    "name": "coffee_flask_recipe",
+    "namespace": "mod"
+  }
+}

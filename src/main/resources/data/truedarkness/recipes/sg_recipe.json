@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "truedarkness:swamp_bricks"
+  },
+  "addition": {
+    "item": "truedarkness:sandglass"
+  },
+  "result": {
+    "item": "truedarkness:cracked_swamp_bricks"
+  }
+}

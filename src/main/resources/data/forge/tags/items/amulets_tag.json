@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:ocean_amulet_chestplate",
+    "truedarkness:aquatic_amulet_chestplate",
+    "truedarkness:swamp_amulet_chestplate",
+    "truedarkness:iceberg_amulet_chestplate",
+    "truedarkness:coral_amulet_chestplate"
+  ]
+}

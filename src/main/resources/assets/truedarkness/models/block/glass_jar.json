@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/glass_jar",
+  "textures": {
+    "all": "truedarkness:block/glass_jar",
+    "particle": "truedarkness:block/glass_jar",
+    "0": "truedarkness:block/glass_jar"
+  },
+  "render_type": "cutout"
+}

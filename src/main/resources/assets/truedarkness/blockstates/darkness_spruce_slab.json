@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/darkness_spruce_slab"
+    },
+    "type=top": {
+      "model": "truedarkness:block/darkness_spruce_slab_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/darkness_spruce_slab_full"
+    }
+  }
+}

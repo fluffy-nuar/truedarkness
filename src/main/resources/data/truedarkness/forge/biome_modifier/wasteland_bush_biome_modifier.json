@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:swamp_wasteland",
+  "features": "truedarkness:wasteland_bush",
+  "step": "vegetal_decoration"
+}

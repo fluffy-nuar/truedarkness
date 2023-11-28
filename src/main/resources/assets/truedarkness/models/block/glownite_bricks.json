@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/glownite_bricks",
+    "up": "truedarkness:block/glownite_bricks",
+    "north": "truedarkness:block/glownite_bricks",
+    "east": "truedarkness:block/glownite_bricks",
+    "south": "truedarkness:block/glownite_bricks",
+    "west": "truedarkness:block/glownite_bricks",
+    "particle": "truedarkness:block/glownite_bricks"
+  },
+  "render_type": "solid"
+}

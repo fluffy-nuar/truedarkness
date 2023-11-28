@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/1_layer_upjson",
+  "textures": {
+    "all": "truedarkness:block/swamp_sand",
+    "particle": "truedarkness:block/swamp_sand",
+    "0": "truedarkness:block/swamp_sand"
+  },
+  "render_type": "cutout"
+}

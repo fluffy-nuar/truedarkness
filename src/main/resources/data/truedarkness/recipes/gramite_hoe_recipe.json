@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01",
+    " 3",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:gramite_shard"
+    },
+    "1": {
+      "item": "truedarkness:gramite_shard"
+    },
+    "3": {
+      "item": "truedarkness:gramite_stick"
+    },
+    "5": {
+      "item": "truedarkness:gramite_stick"
+    }
+  },
+  "result": {
+    "item": "truedarkness:gramite_hoe",
+    "count": 1
+  }
+}

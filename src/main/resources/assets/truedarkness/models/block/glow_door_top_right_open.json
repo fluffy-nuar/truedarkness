@@ -1,0 +1,8 @@
+{
+  "parent": "block/door_top_right_open",
+  "textures": {
+    "bottom": "truedarkness:block/glow_door",
+    "top": "truedarkness:block/glow_door_top"
+  },
+  "render_type": "cutout"
+}

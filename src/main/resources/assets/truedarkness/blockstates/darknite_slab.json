@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/darknite_slab"
+    },
+    "type=top": {
+      "model": "truedarkness:block/darknite_slab_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/darknite_slab_full"
+    }
+  }
+}

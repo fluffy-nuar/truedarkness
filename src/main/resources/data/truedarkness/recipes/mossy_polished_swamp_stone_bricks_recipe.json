@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:swamp_bush"
+    },
+    "1": {
+      "item": "truedarkness:polished_swamp_stone_bricks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:mossy_polished_swamp_stone_bricks",
+    "count": 1
+  }
+}

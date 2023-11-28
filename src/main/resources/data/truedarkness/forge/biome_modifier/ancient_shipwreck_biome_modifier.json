@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:swamps",
+    "truedarkness:mine",
+    "truedarkness:swamp_wasteland"
+  ],
+  "features": "truedarkness:ancient_shipwreck",
+  "step": "surface_structures"
+}

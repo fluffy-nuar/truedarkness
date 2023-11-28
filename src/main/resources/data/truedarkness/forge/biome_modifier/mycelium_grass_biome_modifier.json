@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:mine",
+  "features": "truedarkness:mycelium_grass",
+  "step": "vegetal_decoration"
+}

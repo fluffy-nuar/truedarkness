@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/fake_log_top",
+    "up": "truedarkness:block/fake_log_top",
+    "north": "truedarkness:block/fake_log",
+    "east": "truedarkness:block/fake_log",
+    "south": "truedarkness:block/fake_log",
+    "west": "truedarkness:block/fake_log",
+    "particle": "truedarkness:block/fake_log_top"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 47,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Chance Of Succes With Sand Remnants (Percent)",
+    "description": "How Many Chances Are There When The Sand Remnants Give Loot",
+    "category": "DROPS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 50
+  }
+}

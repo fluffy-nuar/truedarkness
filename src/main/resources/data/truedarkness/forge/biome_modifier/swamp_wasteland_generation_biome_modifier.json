@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:swamps",
+  "features": "truedarkness:swamp_wasteland_generation",
+  "step": "surface_structures"
+}

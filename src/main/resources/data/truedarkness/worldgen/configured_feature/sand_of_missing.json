@@ -1,0 +1,31 @@
+{
+  "type": "truedarkness:sand_of_missing",
+  "config": {
+    "size": 64,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:swamp_sand"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:sand_of_missing"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:swamp_terracota"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:sand_of_missing"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "forge:dried_log"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:dried_planks",
+    "count": 4
+  }
+}

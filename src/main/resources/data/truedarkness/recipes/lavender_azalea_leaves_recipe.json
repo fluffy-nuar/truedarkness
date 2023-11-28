@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:lavender"
+    },
+    {
+      "item": "minecraft:azalea_leaves"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:lavender_azalea_leaves",
+    "count": 1
+  }
+}

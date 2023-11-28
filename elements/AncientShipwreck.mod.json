@@ -1,0 +1,54 @@
+{
+  "_fv": 47,
+  "_type": "structure",
+  "definition": {
+    "structure": "ancient_shipwreck",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 1000000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 2,
+    "spawnZOffset": 2,
+    "spawnWorldTypes": [
+      "CUSTOM:Yteria"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.FLOWING_WATER"
+      },
+      {
+        "value": "CUSTOM:SwampSand"
+      },
+      {
+        "value": "CUSTOM:SwampMud"
+      },
+      {
+        "value": "CUSTOM:SwampTerracota"
+      },
+      {
+        "value": "CUSTOM:SwampKelp"
+      },
+      {
+        "value": "CUSTOM:SwampKelpTop"
+      },
+      {
+        "value": "CUSTOM:SwampSeaweed"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Swamps"
+      },
+      {
+        "value": "CUSTOM:Mine"
+      },
+      {
+        "value": "CUSTOM:SwamdWasteland"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

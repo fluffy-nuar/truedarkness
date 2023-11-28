@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "glass_jar"
+      },
+      "name": "default"
+    },
+    "fireflies_v": {
+      "map": {
+        "0": "fireflies_glass_jar"
+      },
+      "name": "fireflies_v"
+    }
+  }
+}

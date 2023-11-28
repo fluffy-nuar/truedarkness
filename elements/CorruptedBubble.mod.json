@@ -1,0 +1,134 @@
+{
+  "_fv": 47,
+  "_type": "plant",
+  "definition": {
+    "renderType": 2,
+    "texture": "corrupted_bubble",
+    "textureBottom": "",
+    "customModelName": "corrupted_bubble:default",
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 0,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": true,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 6.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Corrupted Bubble",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0,
+    "unbreakable": false,
+    "isSolid": true,
+    "isCustomSoundType": true,
+    "soundOnStep": {
+      "value": "SCULK"
+    },
+    "breakSound": {
+      "value": "block.sculk.break"
+    },
+    "stepSound": {
+      "value": "block.honey_block.step"
+    },
+    "placeSound": {
+      "value": "block.sculk.place"
+    },
+    "hitSound": {
+      "value": "block.sculk.hit"
+    },
+    "fallSound": {
+      "value": "block.sculk.fall"
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": "CUSTOM:CorruptedBubbleBlock"
+    },
+    "dropAmount": 1,
+    "forceTicking": true,
+    "emissiveRendering": false,
+    "hasTileEntity": true,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": "CUSTOM:CorruptedBubbleBlock"
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:SwampStone"
+      },
+      {
+        "value": "CUSTOM:Corrupt"
+      }
+    ],
+    "isBonemealable": false,
+    "frequencyOnChunks": 30,
+    "spawnWorldTypes": [
+      "CUSTOM:Yteria"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:CorruptedPlace"
+      }
+    ],
+    "generationType": "Grass",
+    "patchSize": 2,
+    "generateAtAnyHeight": true,
+    "onBlockAdded": {
+      "name": "CorruptedSculkCatalystObnovlieniieTika"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "CorruptedSculkCatalystObnovlieniieTika"
+    },
+    "onTickUpdate": {
+      "name": "CorruptedSculkCatalystObnovlieniieTika"
+    },
+    "onRandomUpdateEvent": {
+      "name": "CorruptedSculkCatalystObnovlieniieTika"
+    },
+    "onDestroyedByPlayer": {
+      "name": "CorruptedSculkCatalystObnovlieniieTika"
+    },
+    "onStartToDestroy": {
+      "name": "CorruptedSculkCatalystObnovlieniieTika"
+    },
+    "onEntityCollides": {
+      "name": "CorruptedSculkCatalystObnovlieniieTika"
+    },
+    "onBlockPlacedBy": {
+      "name": "CorruptedSculkCatalystObnovlieniieTika"
+    },
+    "onRightClicked": {
+      "name": "CorruptedBubblePriShchielchkiePKMPoRastieniiu"
+    },
+    "onEntityWalksOn": {
+      "name": "CorruptedSculkCatalystObnovlieniieTika"
+    },
+    "onHitByProjectile": {
+      "name": "CorruptedSculkCatalystObnovlieniieTika"
+    }
+  }
+}

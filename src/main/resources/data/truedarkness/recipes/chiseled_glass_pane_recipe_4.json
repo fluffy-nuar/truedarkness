@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:chiseled_glass_4"
+    },
+    "1": {
+      "item": "truedarkness:chiseled_glass_4"
+    },
+    "2": {
+      "item": "truedarkness:chiseled_glass_4"
+    },
+    "3": {
+      "item": "truedarkness:chiseled_glass_4"
+    },
+    "4": {
+      "item": "truedarkness:chiseled_glass_4"
+    },
+    "5": {
+      "item": "truedarkness:chiseled_glass_4"
+    }
+  },
+  "result": {
+    "item": "truedarkness:chiseled_glass_pane_4",
+    "count": 16
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bark",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DriedLog"
+      },
+      {
+        "value": "CUSTOM:DriedLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DriedLog"
+      },
+      {
+        "value": "CUSTOM:DriedLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DriedWood"
+    },
+    "name": "dried_wood_recipe",
+    "namespace": "mod"
+  }
+}

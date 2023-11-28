@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:swamps",
+    "truedarkness:swamp_wasteland"
+  ],
+  "features": "truedarkness:swamp_terracota",
+  "step": "underground_ores"
+}

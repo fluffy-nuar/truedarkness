@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:calm_aquamarine"
+    },
+    "title": {
+      "translate": "advancements.calm_aquamarine_adv.title"
+    },
+    "description": {
+      "translate": "advancements.calm_aquamarine_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "calm_aquamarine_adv": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:calm_aquamarine"
+            ],
+            "count": {
+              "min": 1,
+              "max": 999999999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:cvetaliy_adv"
+}

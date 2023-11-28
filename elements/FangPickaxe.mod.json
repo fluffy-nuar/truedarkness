@@ -1,0 +1,34 @@
+{
+  "_fv": 47,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 0,
+    "texture": "fang_pickaxe",
+    "customModelName": "Normal",
+    "name": "Fang Pickaxe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TrueDarknessElementariy"
+    },
+    "harvestLevel": 0,
+    "efficiency": 100.0,
+    "attackSpeed": 2.1,
+    "enchantability": 0,
+    "damageVsEntity": 3.0,
+    "usageCount": 4021,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:CorruptedHandFangs"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "FangPickaxeRightclicked"
+    }
+  }
+}

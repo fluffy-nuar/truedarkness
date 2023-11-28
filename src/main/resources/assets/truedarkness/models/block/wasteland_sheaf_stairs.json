@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "truedarkness:block/wasteland_sheaf",
+    "top": "truedarkness:block/wasteland_sheaf",
+    "side": "truedarkness:block/wasteland_sheaf"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EchoStone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.SCULK_CATALYST"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SculkGrail"
+    },
+    "name": "sculk_grail_recipe",
+    "namespace": "mod"
+  }
+}

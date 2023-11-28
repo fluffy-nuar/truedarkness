@@ -1,0 +1,12 @@
+{
+  "_fv": 47,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Cooldown of Soul Wings",
+    "description": "Time after what player can use double jump again (In ticks)",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 60
+  }
+}

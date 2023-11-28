@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "forge:glow_log"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:glow_planks",
+    "count": 4
+  }
+}

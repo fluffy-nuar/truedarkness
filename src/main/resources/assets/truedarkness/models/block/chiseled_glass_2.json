@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/chiseled_glass_2",
+    "up": "truedarkness:block/chiseled_glass_2",
+    "north": "truedarkness:block/chiseled_glass_2",
+    "east": "truedarkness:block/chiseled_glass_2",
+    "south": "truedarkness:block/chiseled_glass_2",
+    "west": "truedarkness:block/chiseled_glass_2",
+    "particle": "truedarkness:block/chiseled_glass_2"
+  },
+  "render_type": "translucent"
+}

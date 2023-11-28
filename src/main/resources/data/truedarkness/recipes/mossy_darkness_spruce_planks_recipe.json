@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:darkness_spruce_planks"
+    },
+    {
+      "item": "truedarkness:swamp_grass"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:mossy_darkness_spruce_planks",
+    "count": 1
+  }
+}

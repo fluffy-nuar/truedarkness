@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/firenite_block",
+    "up": "truedarkness:block/firenite_block",
+    "north": "truedarkness:block/firenite_block",
+    "east": "truedarkness:block/firenite_block",
+    "south": "truedarkness:block/firenite_block",
+    "west": "truedarkness:block/firenite_block",
+    "particle": "truedarkness:block/firenite_block"
+  },
+  "render_type": "solid"
+}

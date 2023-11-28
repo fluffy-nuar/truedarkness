@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:darknite_bricks_slab"
+    },
+    "1": {
+      "item": "truedarkness:darknite_bricks_slab"
+    }
+  },
+  "result": {
+    "item": "truedarkness:chiseled_darknite_bricks",
+    "count": 1
+  }
+}

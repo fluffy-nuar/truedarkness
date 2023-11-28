@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/mossy_swamp_bricks",
+    "up": "truedarkness:block/mossy_swamp_bricks",
+    "north": "truedarkness:block/mossy_swamp_bricks",
+    "east": "truedarkness:block/mossy_swamp_bricks",
+    "south": "truedarkness:block/mossy_swamp_bricks",
+    "west": "truedarkness:block/mossy_swamp_bricks",
+    "particle": "truedarkness:block/mossy_swamp_bricks"
+  },
+  "render_type": "solid"
+}

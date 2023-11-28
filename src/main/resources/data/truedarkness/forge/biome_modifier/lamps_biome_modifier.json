@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:grim_forest",
+  "features": "truedarkness:lamps",
+  "step": "surface_structures"
+}

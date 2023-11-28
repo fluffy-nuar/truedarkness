@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 1 ",
+    " 4 ",
+    "6 8"
+  ],
+  "key": {
+    "1": {
+      "item": "truedarkness:echo_stone"
+    },
+    "4": {
+      "item": "minecraft:sculk_catalyst"
+    },
+    "6": {
+      "item": "minecraft:echo_shard"
+    },
+    "8": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "item": "truedarkness:sculk_grail",
+    "count": 1
+  }
+}

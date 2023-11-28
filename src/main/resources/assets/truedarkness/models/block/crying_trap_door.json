@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_bottom",
+  "textures": {
+    "texture": "truedarkness:block/crying_trap_door",
+    "particle": "truedarkness:block/crying_trap_door"
+  },
+  "render_type": "translucent"
+}

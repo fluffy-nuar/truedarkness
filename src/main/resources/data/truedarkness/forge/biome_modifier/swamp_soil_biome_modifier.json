@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:swamps",
+    "truedarkness:mine"
+  ],
+  "features": "truedarkness:swamp_soil",
+  "step": "underground_ores"
+}

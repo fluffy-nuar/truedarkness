@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:swamps",
+    "truedarkness:mine"
+  ],
+  "features": "truedarkness:vine_6",
+  "step": "underground_structures"
+}

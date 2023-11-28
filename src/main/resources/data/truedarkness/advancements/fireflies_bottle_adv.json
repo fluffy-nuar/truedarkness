@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:fireflies_bottle"
+    },
+    "title": {
+      "translate": "advancements.fireflies_bottle_adv.title"
+    },
+    "description": {
+      "translate": "advancements.fireflies_bottle_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fireflies_bottle_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:fireflies_bottle_adv_1"
+}

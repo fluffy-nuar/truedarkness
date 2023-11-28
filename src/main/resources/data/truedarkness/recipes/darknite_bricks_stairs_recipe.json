@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:darknite_bricks"
+    },
+    "3": {
+      "item": "truedarkness:darknite_bricks"
+    },
+    "4": {
+      "item": "truedarkness:darknite_bricks"
+    },
+    "6": {
+      "item": "truedarkness:darknite_bricks"
+    },
+    "7": {
+      "item": "truedarkness:darknite_bricks"
+    },
+    "8": {
+      "item": "truedarkness:darknite_bricks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:darknite_bricks_stairs",
+    "count": 4
+  }
+}

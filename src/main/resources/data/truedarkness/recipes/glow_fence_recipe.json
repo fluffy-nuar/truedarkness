@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:glow_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "truedarkness:glow_planks"
+    },
+    "3": {
+      "item": "truedarkness:glow_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "truedarkness:glow_planks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:glow_fence",
+    "count": 3
+  }
+}

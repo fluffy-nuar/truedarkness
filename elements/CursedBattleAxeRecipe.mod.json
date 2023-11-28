@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CursedMetal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CursedMetal"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": "CUSTOM:GramiteStick"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GramiteStick"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CursedBattleAxe"
+    },
+    "name": "cursed_battle_axe_recipe",
+    "namespace": "mod"
+  }
+}

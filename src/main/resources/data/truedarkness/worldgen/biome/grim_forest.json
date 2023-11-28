@@ -1,0 +1,103 @@
+{
+  "has_precipitation": true,
+  "temperature": 0.3,
+  "downfall": 0.2,
+  "effects": {
+    "foliage_color": -13944575,
+    "grass_color": -12626940,
+    "sky_color": -10317129,
+    "fog_color": -10317129,
+    "water_color": -14061339,
+    "water_fog_color": -9522716
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "zombie",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 6
+      },
+      {
+        "type": "skeleton",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 6
+      },
+      {
+        "type": "creeper",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "spider",
+        "weight": 10,
+        "minCount": 3,
+        "maxCount": 7
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
+    [
+      "minecraft:forest_rock"
+    ],
+    [],
+    [
+      "minecraft:desert_well"
+    ],
+    [],
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:underwater_magma"
+    ],
+    [],
+    [],
+    [
+      "truedarkness:grim_forest_tree",
+      "minecraft:patch_large_fern",
+      "minecraft:patch_tall_grass",
+      "minecraft:patch_grass_taiga_2",
+      "minecraft:brown_mushroom_taiga",
+      "minecraft:red_mushroom_taiga",
+      "minecraft:patch_grass_forest",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin",
+      "minecraft:seagrass_simple"
+    ],
+    []
+  ]
+}

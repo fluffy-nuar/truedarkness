@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "truedarkness:block/glownite_bricks",
+    "top": "truedarkness:block/glownite_bricks",
+    "side": "truedarkness:block/glownite_bricks"
+  },
+  "render_type": "solid"
+}

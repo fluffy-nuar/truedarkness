@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "truedarkness:block/corrupt_rune_2"
+    },
+    "powered=true": {
+      "model": "truedarkness:block/corrupt_rune_2_down"
+    }
+  }
+}

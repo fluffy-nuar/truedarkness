@@ -1,0 +1,119 @@
+{
+  "_fv": 47,
+  "_type": "biome",
+  "definition": {
+    "name": "Corrupted Place",
+    "groundBlock": {
+      "value": "CUSTOM:Corrupt"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:Corrupt"
+    },
+    "underwaterBlock": {
+      "value": "CUSTOM:Corrupt"
+    },
+    "airColor": {
+      "value": -15466186,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -16681265,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -16757069,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": "CUSTOM:music.yteria"
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "CUSTOM:CorruptPollen"
+    },
+    "particlesProbability": 0.8,
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "spawnBiome": false,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.24,
+      "max": 0.24
+    },
+    "genHumidity": {
+      "min": -1.24,
+      "max": -0.76
+    },
+    "genContinentalness": {
+      "min": 0.27,
+      "max": 0.75
+    },
+    "genErosion": {
+      "min": 0.5596000000000001,
+      "max": 1.04
+    },
+    "genWeirdness": {
+      "min": -0.9924274454667004,
+      "max": -0.5124274454667004
+    },
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Savanna trees",
+    "treeType": 1,
+    "minHeight": 14,
+    "treeStem": {
+      "value": "CUSTOM:DriedLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:SwampCobblestone"
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": "CUSTOM:CorruptedSlime"
+    },
+    "defaultFeatures": [],
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:CorruptedKnight"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 2,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

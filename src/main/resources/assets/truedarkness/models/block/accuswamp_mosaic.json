@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/accuswamp_mosaic",
+    "up": "truedarkness:block/accuswamp_mosaic",
+    "north": "truedarkness:block/accuswamp_mosaic",
+    "east": "truedarkness:block/accuswamp_mosaic",
+    "south": "truedarkness:block/accuswamp_mosaic",
+    "west": "truedarkness:block/accuswamp_mosaic",
+    "particle": "truedarkness:block/accuswamp_mosaic"
+  },
+  "render_type": "solid"
+}

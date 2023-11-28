@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="truedarkness"
+version="1.11.0"
+displayName="True Darkness Elementriy"
+credits="§3Fluffy_Nuar, Koshatik"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/true-darkness-elementriy"
+logoFile="logo.png"
+authors="FLuffy_Nuar"
+description="§8Welcome to the world of Elementry. This is a place where even the strangest and most incomprehensible things take on a double meaning. In True Darkness, you will be able to imagine the world from which sculk got out (or is it not him yet?). You will be able to travel through the lavender fields or make delicious tea. Create new sets of armor, and maybe unravel the mystery of a long-dying world? It's up to you! The mod is in development, so it's worth getting ready for future content."
+
+[[dependencies.truedarkness]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.truedarkness]]
+    modId="dynamic_lights"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.truedarkness]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

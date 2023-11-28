@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/lapis_ore",
+    "up": "truedarkness:block/lapis_ore",
+    "north": "truedarkness:block/lapis_ore",
+    "east": "truedarkness:block/lapis_ore",
+    "south": "truedarkness:block/lapis_ore",
+    "west": "truedarkness:block/lapis_ore",
+    "particle": "truedarkness:block/lapis_ore"
+  },
+  "render_type": "solid"
+}

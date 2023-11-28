@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:blueberry"
+    },
+    {
+      "item": "truedarkness:blueberry"
+    },
+    {
+      "item": "truedarkness:blueberry"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:crushed_blueberries",
+    "count": 1
+  }
+}

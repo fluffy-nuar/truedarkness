@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "corrupted_axe"
+      },
+      "name": "default"
+    },
+    "yteria_trident": {
+      "map": {
+        "0": "yteria_trident"
+      },
+      "name": "yteria_trident"
+    }
+  }
+}

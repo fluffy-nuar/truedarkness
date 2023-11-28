@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "1": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "2": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "4": {
+      "item": "minecraft:rabbit_hide"
+    }
+  },
+  "result": {
+    "item": "truedarkness:bag",
+    "count": 1
+  }
+}

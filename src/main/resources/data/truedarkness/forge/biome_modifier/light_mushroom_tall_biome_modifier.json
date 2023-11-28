@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:mine",
+  "features": "truedarkness:light_mushroom_tall",
+  "step": "vegetal_decoration"
+}

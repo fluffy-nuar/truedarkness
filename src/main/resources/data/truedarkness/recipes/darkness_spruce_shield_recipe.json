@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:darkness_spruce_planks"
+    },
+    "1": {
+      "item": "minecraft:chain"
+    },
+    "2": {
+      "item": "truedarkness:darkness_spruce_planks"
+    },
+    "3": {
+      "item": "truedarkness:darkness_spruce_log"
+    },
+    "4": {
+      "item": "truedarkness:darkness_spruce_log"
+    },
+    "5": {
+      "item": "truedarkness:darkness_spruce_log"
+    },
+    "6": {
+      "item": "truedarkness:gramite_shard"
+    },
+    "8": {
+      "item": "truedarkness:gramite_shard"
+    }
+  },
+  "result": {
+    "item": "truedarkness:darkness_spruce_shield",
+    "count": 1
+  }
+}

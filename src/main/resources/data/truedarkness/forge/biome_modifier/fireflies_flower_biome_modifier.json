@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "dark_forest",
+  "features": "truedarkness:fireflies_flower",
+  "step": "vegetal_decoration"
+}

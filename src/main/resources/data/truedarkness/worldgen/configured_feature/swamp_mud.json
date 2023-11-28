@@ -1,0 +1,20 @@
+{
+  "type": "truedarkness:swamp_mud",
+  "config": {
+    "size": 31,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:swamp_sand"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:swamp_mud"
+        }
+      }
+    ]
+  }
+}

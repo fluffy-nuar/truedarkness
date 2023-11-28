@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/trudnite_block",
+    "up": "truedarkness:block/trudnite_block",
+    "north": "truedarkness:block/trudnite_block",
+    "east": "truedarkness:block/trudnite_block",
+    "south": "truedarkness:block/trudnite_block",
+    "west": "truedarkness:block/trudnite_block",
+    "particle": "truedarkness:block/trudnite_block"
+  },
+  "render_type": "solid"
+}

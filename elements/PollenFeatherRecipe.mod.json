@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SwampPollen"
+      },
+      {
+        "value": "CUSTOM:SwampPollen"
+      },
+      {
+        "value": "CUSTOM:SwampPollen"
+      },
+      {
+        "value": "CUSTOM:SwampPollen"
+      },
+      {
+        "value": "Items.FEATHER"
+      },
+      {
+        "value": "CUSTOM:SwampPollen"
+      },
+      {
+        "value": "CUSTOM:SwampPollen"
+      },
+      {
+        "value": "CUSTOM:SwampPollen"
+      },
+      {
+        "value": "CUSTOM:SwampPollen"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PollenFeather"
+    },
+    "name": "pollen_feather_recipe",
+    "namespace": "mod"
+  }
+}

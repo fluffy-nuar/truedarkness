@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "truedarkness:mine",
+  "spawners": {
+    "type": "truedarkness:fungum",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

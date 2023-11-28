@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "truedarkness:block/tall_lavender"
+    },
+    "half=lower": {
+      "model": "truedarkness:block/tall_lavender_bottom"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:sand_of_missing"
+    },
+    "title": {
+      "translate": "advancements.swamd_wasteland_adv.title"
+    },
+    "description": {
+      "translate": "advancements.swamd_wasteland_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "swamd_wasteland_adv": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "truedarkness:swamp_wasteland"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:yteria_adv"
+}

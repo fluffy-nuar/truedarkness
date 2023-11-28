@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/polished_accustone_bricks",
+    "up": "truedarkness:block/polished_accustone_bricks",
+    "north": "truedarkness:block/polished_accustone_bricks",
+    "east": "truedarkness:block/polished_accustone_bricks",
+    "south": "truedarkness:block/polished_accustone_bricks",
+    "west": "truedarkness:block/polished_accustone_bricks",
+    "particle": "truedarkness:block/polished_accustone_bricks"
+  },
+  "render_type": "solid"
+}

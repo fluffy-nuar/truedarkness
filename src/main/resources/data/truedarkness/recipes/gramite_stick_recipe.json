@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:gramite_shard"
+    },
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "truedarkness:gramite_shard"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:gramite_stick",
+    "count": 1
+  }
+}

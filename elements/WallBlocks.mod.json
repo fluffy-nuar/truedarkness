@@ -1,0 +1,60 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:SwampBricksWall"
+      },
+      {
+        "value": "CUSTOM:PolishedSwampCobblestoneWall"
+      },
+      {
+        "value": "CUSTOM:DarkniteWall"
+      },
+      {
+        "value": "CUSTOM:CobbledDarkniteWall"
+      },
+      {
+        "value": "CUSTOM:DarkniteBricksWall"
+      },
+      {
+        "value": "CUSTOM:SandstoneOfMissingWall"
+      },
+      {
+        "value": "CUSTOM:PolishedSandstoneOfMissingWall"
+      },
+      {
+        "value": "CUSTOM:PolishedSandstoneBricksOfMissingWall"
+      },
+      {
+        "value": "CUSTOM:PolishedAccustoneWall"
+      },
+      {
+        "value": "CUSTOM:PolishedAccustoneBricksWall"
+      },
+      {
+        "value": "CUSTOM:AccuswampMosaicWall"
+      },
+      {
+        "value": "CUSTOM:PolishedSwampStoneWall"
+      },
+      {
+        "value": "CUSTOM:PolishedSwampStoneBricksWall"
+      },
+      {
+        "value": "CUSTOM:DustClayWall"
+      },
+      {
+        "value": "CUSTOM:DustClayBricksWall"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "walls",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "truedarkness:block/chiseled_glownite_block",
+    "top": "truedarkness:block/chiseled_glownite_block",
+    "side": "truedarkness:block/chiseled_glownite_block"
+  },
+  "render_type": "solid"
+}

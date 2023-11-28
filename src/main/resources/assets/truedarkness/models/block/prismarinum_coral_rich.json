@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "truedarkness:block/prismarinume_coral_rich",
+    "particle": "truedarkness:block/prismarinume_coral_rich"
+  },
+  "render_type": "cutout"
+}

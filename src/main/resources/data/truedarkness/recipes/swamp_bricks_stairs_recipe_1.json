@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "truedarkness:swamp_bricks"
+  },
+  "result": "truedarkness:swamp_bricks_stairs"
+}

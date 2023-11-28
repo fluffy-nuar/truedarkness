@@ -1,0 +1,33 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:PrismarineCoralColourless"
+      },
+      {
+        "value": "CUSTOM:PrismarineCoralFlashing"
+      },
+      {
+        "value": "CUSTOM:PrismarineCoralWave"
+      },
+      {
+        "value": "CUSTOM:PrismarineCoralRich"
+      },
+      {
+        "value": "CUSTOM:PrismarineCoralDarkness"
+      },
+      {
+        "value": "Blocks.FLOWING_WATER"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "corals_yteria",
+    "namespace": "forge"
+  }
+}

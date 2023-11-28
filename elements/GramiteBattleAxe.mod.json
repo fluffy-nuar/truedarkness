@@ -1,0 +1,34 @@
+{
+  "_fv": 47,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "texture": "gramite_battle_axe",
+    "customModelName": "Normal",
+    "name": "Gramite Battle Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TrueDarknessElementariy"
+    },
+    "harvestLevel": 2,
+    "efficiency": 8.0,
+    "attackSpeed": 2.0,
+    "enchantability": 14,
+    "damageVsEntity": 6.0,
+    "usageCount": 567,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:GramiteShard"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "GramiteDaggerKoghdaInstrumientVInvientarie"
+    }
+  }
+}

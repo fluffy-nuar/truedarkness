@@ -1,0 +1,76 @@
+{
+  "type": "truedarkness:fake_tree",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:ore",
+          "config": {
+            "size": 14,
+            "discard_chance_on_air_exposure": 0,
+            "targets": [
+              {
+                "target": {
+                  "predicate_type": "block_match",
+                  "block": "truedarkness:swamp_stone"
+                },
+                "state": {
+                  "Name": "minecraft:sculk"
+                }
+              }
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:huge_fungus",
+          "config": {
+            "valid_base_block": {
+              "Name": "truedarkness:crenrit"
+            },
+            "stem_state": {
+              "Name": "truedarkness:fake_log",
+              "Properties": {
+                "axis": "y"
+              }
+            },
+            "hat_state": {
+              "Name": "truedarkness:fake_leaves"
+            },
+            "decor_state": {
+              "Name": "truedarkness:ancient_sculk"
+            },
+            "replaceable_blocks": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "#replaceable_by_trees"
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:netherrack_replace_blobs",
+          "config": {
+            "target": {
+              "Name": "truedarkness:swamp_stone"
+            },
+            "state": {
+              "Name": "truedarkness:swamp_soil"
+            },
+            "radius": {
+              "type": "uniform",
+              "value": {
+                "min_inclusive": 3,
+                "max_inclusive": 7
+              }
+            }
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "truedarkness:block/swamp_kelp",
+    "particle": "truedarkness:block/swamp_kelp"
+  },
+  "render_type": "cutout"
+}

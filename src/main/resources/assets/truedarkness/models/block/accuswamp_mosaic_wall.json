@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "truedarkness:block/accuswamp_mosaic",
+    "particle": "truedarkness:block/accuswamp_mosaic"
+  },
+  "render_type": "solid"
+}

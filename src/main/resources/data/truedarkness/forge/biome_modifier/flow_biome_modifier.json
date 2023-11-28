@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "truedarkness:swamps",
+  "spawners": {
+    "type": "truedarkness:flow",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

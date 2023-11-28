@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/wasteland_sheaf_top",
+    "up": "truedarkness:block/wasteland_sheaf_top",
+    "north": "truedarkness:block/wasteland_sheaf",
+    "east": "truedarkness:block/wasteland_sheaf",
+    "south": "truedarkness:block/wasteland_sheaf",
+    "west": "truedarkness:block/wasteland_sheaf",
+    "particle": "truedarkness:block/wasteland_sheaf_top"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:retroland",
+    "truedarkness:swamps",
+    "truedarkness:mine",
+    "truedarkness:swamp_wasteland"
+  ],
+  "features": "truedarkness:seawead_ofyteria_1",
+  "step": "local_modifications"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:darkness_spruce_planks"
+    },
+    "1": {
+      "item": "truedarkness:darkness_spruce_planks"
+    },
+    "2": {
+      "item": "truedarkness:darkness_spruce_planks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:darkness_spruce_slab",
+    "count": 6
+  }
+}

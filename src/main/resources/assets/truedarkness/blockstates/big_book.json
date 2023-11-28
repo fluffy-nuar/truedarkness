@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "truedarkness:block/big_book"
+    },
+    "facing=east": {
+      "model": "truedarkness:block/big_book",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "truedarkness:block/big_book",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "truedarkness:block/big_book",
+      "y": 270
+    }
+  }
+}

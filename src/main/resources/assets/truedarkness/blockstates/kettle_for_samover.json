@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "truedarkness:block/kettle_for_samover"
+    },
+    "facing=east": {
+      "model": "truedarkness:block/kettle_for_samover",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "truedarkness:block/kettle_for_samover",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "truedarkness:block/kettle_for_samover",
+      "y": 270
+    }
+  }
+}

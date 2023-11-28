@@ -1,0 +1,23 @@
+{
+  "type": "truedarkness:fireflies_oak_log",
+  "config": {
+    "size": 2,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:oak_log",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:fireflies_oak_log"
+        }
+      }
+    ]
+  }
+}

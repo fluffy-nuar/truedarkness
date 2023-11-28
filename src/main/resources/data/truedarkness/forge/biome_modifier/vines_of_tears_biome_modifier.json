@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:swamps",
+  "features": "truedarkness:vines_of_tears",
+  "step": "surface_structures"
+}

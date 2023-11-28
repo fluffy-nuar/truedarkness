@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_human_block"
+    },
+    "title": {
+      "translate": "advancements.corrupted_human_adv.title"
+    },
+    "description": {
+      "translate": "advancements.corrupted_human_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "corrupted_human_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:corrupted_place_adv"
+}

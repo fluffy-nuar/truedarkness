@@ -1,0 +1,75 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "C:/Users/nikda/Downloads/big_pot",
+		"particle": "C:/Users/nikda/Downloads/big_pot"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 14, 15],
+			"faces": {
+				"north": {"uv": [7, 1, 14, 8], "texture": "#0"},
+				"east": {"uv": [0, 1, 7.07143, 8.07143], "texture": "#0"},
+				"south": {"uv": [0, 1, 7, 8], "texture": "#0"},
+				"west": {"uv": [7, 1, 14, 8], "texture": "#0"},
+				"up": {"uv": [0, 8, 7, 15], "texture": "#0"},
+				"down": {"uv": [0, 8, 7, 15], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 14, 2],
+			"to": [14, 15, 14],
+			"faces": {
+				"north": {"uv": [0.5, 0.5, 6.5, 1], "texture": "#0"},
+				"east": {"uv": [0.5, 0.5, 6.5, 1], "texture": "#0"},
+				"south": {"uv": [0.5, 0.5, 6.5, 1], "texture": "#0"},
+				"west": {"uv": [0.5, 0.5, 6.5, 1], "texture": "#0"},
+				"up": {"uv": [0.5, 0.5, 6.5, 6.5], "texture": "#0"},
+				"down": {"uv": [0.5, 0.5, 6.5, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1, 15, 1],
+			"to": [15, 16, 15],
+			"faces": {
+				"north": {"uv": [0, 0.5, 7, 1], "texture": "#0"},
+				"east": {"uv": [0, 0.5, 7, 1], "texture": "#0"},
+				"south": {"uv": [0, 0.5, 7, 1], "texture": "#0"},
+				"west": {"uv": [0, 0.5, 7, 1], "texture": "#0"},
+				"up": {"uv": [7, 8, 14, 15], "texture": "#0"},
+				"down": {"uv": [0, 8, 7, 15], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [66.75, 0, 0],
+			"scale": [0.51, 0.51, 0.51]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [66.75, 0, 0],
+			"scale": [0.51, 0.51, 0.51]
+		},
+		"firstperson_righthand": {
+			"translation": [3, 0, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [3, 0, 0]
+		},
+		"ground": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [30, -45, 0],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"head": {
+			"translation": [0, 14.5, 0]
+		},
+		"fixed": {
+			"rotation": [0, -90, 0]
+		}
+	}
+}

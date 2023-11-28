@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:mycelium_log"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:mycelium_planks",
+    "count": 4
+  }
+}

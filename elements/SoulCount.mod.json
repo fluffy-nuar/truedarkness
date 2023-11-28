@@ -1,0 +1,12 @@
+{
+  "_fv": 47,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Soul Count",
+    "description": "How many can collect soul, to happen Overdrive",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 15
+  }
+}

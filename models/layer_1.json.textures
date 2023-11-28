@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "sand_of_missing"
+      },
+      "name": "default"
+    },
+    "swamp_sand": {
+      "map": {
+        "0": "swamp_sand"
+      },
+      "name": "swamp_sand"
+    }
+  }
+}

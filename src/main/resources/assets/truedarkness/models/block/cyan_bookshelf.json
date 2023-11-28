@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/cyan_planks",
+    "up": "truedarkness:block/cyan_planks",
+    "north": "truedarkness:block/ancient_bookshelf",
+    "east": "truedarkness:block/ancient_bookshelf",
+    "south": "truedarkness:block/ancient_bookshelf",
+    "west": "truedarkness:block/ancient_bookshelf",
+    "particle": "truedarkness:block/cyan_planks"
+  },
+  "render_type": "solid"
+}

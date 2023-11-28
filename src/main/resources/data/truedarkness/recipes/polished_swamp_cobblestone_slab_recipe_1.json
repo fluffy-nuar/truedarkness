@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "truedarkness:polished_swamp_cobblestone"
+  },
+  "result": "truedarkness:polished_swamp_cobblestone_slab"
+}

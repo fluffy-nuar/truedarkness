@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "truedarkness:polished_accustone_bricks"
+  },
+  "result": "truedarkness:chiseled_polished_accustone_bricks"
+}

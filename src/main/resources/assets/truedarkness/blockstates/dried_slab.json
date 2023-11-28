@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/dried_slab"
+    },
+    "type=top": {
+      "model": "truedarkness:block/dried_slab_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/dried_slab_full"
+    }
+  }
+}

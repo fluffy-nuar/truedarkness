@@ -1,0 +1,36 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:YteriasSapphireOre"
+      },
+      {
+        "value": "CUSTOM:LapisLazuliSwampOre"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": "CUSTOM:CvetaliyOre"
+      },
+      {
+        "value": "CUSTOM:ElectroMalachiteOre"
+      },
+      {
+        "value": "CUSTOM:MyceliumOre"
+      },
+      {
+        "value": "CUSTOM:SwampSlimyOre"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "rich_soul_yteria_items",
+    "namespace": "forge"
+  }
+}

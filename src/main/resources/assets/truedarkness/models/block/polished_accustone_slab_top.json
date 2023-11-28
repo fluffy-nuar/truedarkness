@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "truedarkness:block/polished_accustone",
+    "top": "truedarkness:block/polished_accustone",
+    "side": "truedarkness:block/polished_accustone"
+  },
+  "render_type": "solid"
+}

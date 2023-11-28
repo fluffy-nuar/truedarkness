@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:fruit_tea"
+    },
+    "title": {
+      "translate": "advancements.fruit_tea_adv.title"
+    },
+    "description": {
+      "translate": "advancements.fruit_tea_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fruit_tea_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:samovar_adv"
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 47,
+  "_type": "particle",
+  "definition": {
+    "texture": "corrupted_bubble_pop.png",
+    "animate": true,
+    "frameDuration": 2,
+    "width": 0.4,
+    "height": 0.4,
+    "scale": 1.0,
+    "speedFactor": 1.0,
+    "gravity": -0.05,
+    "maxAge": 68,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "LIT"
+  }
+}

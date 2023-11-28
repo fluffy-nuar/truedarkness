@@ -1,0 +1,33 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:DarknessSpruceFence"
+      },
+      {
+        "value": "CUSTOM:CyanFence"
+      },
+      {
+        "value": "CUSTOM:MyceliumFence"
+      },
+      {
+        "value": "CUSTOM:CryingFence"
+      },
+      {
+        "value": "CUSTOM:FakeFence"
+      },
+      {
+        "value": "CUSTOM:DriedFence"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "fences",
+    "namespace": "minecraft"
+  }
+}

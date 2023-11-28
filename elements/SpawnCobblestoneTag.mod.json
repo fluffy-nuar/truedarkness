@@ -1,0 +1,22 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [
+      {
+        "value": "CUSTOM:SwampCobblestone"
+      }
+    ],
+    "blocks": [
+      {
+        "value": "CUSTOM:SwampCobblestone"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "spawn_cobblestone_tag",
+    "namespace": "forge"
+  }
+}

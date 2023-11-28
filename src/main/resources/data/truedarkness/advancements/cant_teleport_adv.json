@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_rune"
+    },
+    "title": {
+      "translate": "advancements.cant_teleport_adv.title"
+    },
+    "description": {
+      "translate": "advancements.cant_teleport_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "cant_teleport_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:corrupted_bar_adv"
+}

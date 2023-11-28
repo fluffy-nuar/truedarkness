@@ -1,0 +1,25 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:Trudnite.helmet"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:MeteniteIngot"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:MeteniteArmor.helmet"
+    },
+    "name": "metenite_helmet_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 5,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Cvetaliy"
+      },
+      {
+        "value": "CUSTOM:Cvetaliy"
+      },
+      {
+        "value": "CUSTOM:CryerPlasm"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CryerPlasm"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.DIAMOND"
+    },
+    "name": "diamond_recipe",
+    "namespace": "mod"
+  }
+}

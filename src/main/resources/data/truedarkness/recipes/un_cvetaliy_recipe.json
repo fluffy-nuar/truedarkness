@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:cvetaliy"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cvetalit_shard",
+    "count": 9
+  }
+}

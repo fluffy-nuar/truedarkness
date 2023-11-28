@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "truedarkness:trudnite_helmet"
+  },
+  "addition": {
+    "item": "truedarkness:metenite_ingot"
+  },
+  "result": {
+    "item": "truedarkness:metenite_helmet"
+  }
+}

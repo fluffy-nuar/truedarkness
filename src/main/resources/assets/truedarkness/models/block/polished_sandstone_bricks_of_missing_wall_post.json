@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "truedarkness:block/polished_sandstone_bricks_of_missing",
+    "particle": "truedarkness:block/polished_sandstone_bricks_of_missing"
+  },
+  "render_type": "solid"
+}

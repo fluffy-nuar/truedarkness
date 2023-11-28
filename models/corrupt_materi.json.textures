@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "corrupt_matery_side",
+        "1": "corrupt",
+        "2": "corrupted_materi_top",
+        "3": "corrupted_materi_down",
+        "4": "corrupt",
+        "missing": "corrupt_heart"
+      },
+      "name": "default"
+    }
+  }
+}

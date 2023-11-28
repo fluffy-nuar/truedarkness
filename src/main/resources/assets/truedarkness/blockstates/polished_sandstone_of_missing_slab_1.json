@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/polished_sandstone_of_missing_slab_1"
+    },
+    "type=top": {
+      "model": "truedarkness:block/polished_sandstone_of_missing_slab_1_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/polished_sandstone_of_missing_slab_1_full"
+    }
+  }
+}

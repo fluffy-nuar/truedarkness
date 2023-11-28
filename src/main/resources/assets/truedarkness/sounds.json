@@ -1,0 +1,232 @@
+{
+  "record.warped_fear": {
+    "sounds": [
+      {
+        "name": "truedarkness:warped_fear",
+        "stream": true
+      }
+    ]
+  },
+  "music.rain": {
+    "sounds": [
+      {
+        "name": "truedarkness:rain",
+        "stream": true
+      }
+    ]
+  },
+  "music.beloud": {
+    "sounds": [
+      {
+        "name": "truedarkness:be_loud",
+        "stream": true
+      }
+    ]
+  },
+  "record.lapis": {
+    "sounds": [
+      {
+        "name": "truedarkness:lapis",
+        "stream": true
+      }
+    ]
+  },
+  "music.rudocity": {
+    "sounds": [
+      {
+        "name": "truedarkness:rudocity",
+        "stream": true
+      }
+    ]
+  },
+  "player.guitar": {
+    "subtitle": "subtitles.player.guitar",
+    "sounds": [
+      {
+        "name": "truedarkness:guitar",
+        "stream": false
+      }
+    ]
+  },
+  "music.turquoise_flower": {
+    "sounds": [
+      {
+        "name": "truedarkness:turquoise_flower",
+        "stream": true
+      }
+    ]
+  },
+  "ambient.gorn": {
+    "subtitle": "subtitles.ambient.gorn",
+    "sounds": [
+      {
+        "name": "truedarkness:gorn",
+        "stream": false
+      }
+    ]
+  },
+  "ambient.strange_gorn": {
+    "subtitle": "subtitles.ambient.strange_gorn",
+    "sounds": [
+      {
+        "name": "truedarkness:strange_gorn",
+        "stream": false
+      }
+    ]
+  },
+  "record.lonoliness": {
+    "sounds": [
+      {
+        "name": "truedarkness:loneliness",
+        "stream": true
+      }
+    ]
+  },
+  "record.be_loud": {
+    "sounds": [
+      {
+        "name": "truedarkness:be_loud",
+        "stream": true
+      }
+    ]
+  },
+  "ambient.noisiness": {
+    "sounds": [
+      {
+        "name": "truedarkness:noisiness",
+        "stream": false
+      }
+    ]
+  },
+  "entity.corrupted_knight_hurt": {
+    "subtitle": "subtitles.entity.corrupted_knight_hurt",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_knight_hurt",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_knight_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_knight_hurt_2",
+        "stream": false
+      }
+    ]
+  },
+  "block.proector": {
+    "subtitle": "subtitles.block.proector",
+    "sounds": [
+      {
+        "name": "truedarkness:proector",
+        "stream": false
+      }
+    ]
+  },
+  "entity.last_soul_death": {
+    "subtitle": "subtitles.entity.last_soul_death",
+    "sounds": [
+      {
+        "name": "truedarkness:chopot",
+        "stream": false
+      }
+    ]
+  },
+  "entity.grim_golem_hurt": {
+    "subtitle": "subtitles.entity.grim_golem_hurt",
+    "sounds": [
+      {
+        "name": "truedarkness:grim_golem_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "entity.grim_golem_death": {
+    "subtitle": "subtitles.entity.grim_golem_death",
+    "sounds": [
+      {
+        "name": "truedarkness:grim_golem_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.grim_golem_ambient": {
+    "subtitle": "subtitles.entity.grim_golem_ambient",
+    "sounds": [
+      {
+        "name": "truedarkness:grim_golem_ambient",
+        "stream": false
+      }
+    ]
+  },
+  "music.grief": {
+    "sounds": [
+      {
+        "name": "truedarkness:grief",
+        "stream": true
+      }
+    ]
+  },
+  "record.grief": {
+    "sounds": [
+      {
+        "name": "truedarkness:grief",
+        "stream": true
+      }
+    ]
+  },
+  "player.ring-dont-work": {
+    "subtitle": "subtitles.player.ring-dont-work",
+    "sounds": [
+      {
+        "name": "truedarkness:deactive",
+        "stream": false
+      }
+    ]
+  },
+  "record.forest_in_the_night": {
+    "sounds": [
+      {
+        "name": "truedarkness:forest_night",
+        "stream": true
+      }
+    ]
+  },
+  "record.humility": {
+    "sounds": [
+      {
+        "name": "truedarkness:humility",
+        "stream": true
+      }
+    ]
+  },
+  "record.hollow": {
+    "sounds": [
+      {
+        "name": "truedarkness:medit_hollow",
+        "stream": true
+      }
+    ]
+  },
+  "music.yteria": {
+    "sounds": [
+      {
+        "name": "truedarkness:medit_hollow",
+        "stream": true
+      },
+      {
+        "name": "truedarkness:turquoise_flower",
+        "stream": true
+      },
+      {
+        "name": "truedarkness:rain",
+        "stream": true
+      },
+      {
+        "name": "truedarkness:amphibiant",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "truedarkness:darknite_bricks"
+  },
+  "result": "truedarkness:chiseled_darknite_bricks"
+}

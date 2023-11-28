@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "truedarkness:block/polished_swamp_stone_bricks",
+    "top": "truedarkness:block/polished_swamp_stone_bricks",
+    "side": "truedarkness:block/polished_swamp_stone_bricks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "truedarkness:block/dried_planks",
+    "top": "truedarkness:block/dried_planks",
+    "side": "truedarkness:block/dried_planks"
+  },
+  "render_type": "solid"
+}

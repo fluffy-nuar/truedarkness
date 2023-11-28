@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/dark_crystal_block",
+    "up": "truedarkness:block/dark_crystal_block",
+    "north": "truedarkness:block/dark_crystal_block",
+    "east": "truedarkness:block/dark_crystal_block",
+    "south": "truedarkness:block/dark_crystal_block",
+    "west": "truedarkness:block/dark_crystal_block",
+    "particle": "truedarkness:block/dark_crystal_block"
+  },
+  "render_type": "solid"
+}

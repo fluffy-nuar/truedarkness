@@ -1,0 +1,7 @@
+{
+  "parent": "truedarkness:custom/corrupted_axe",
+  "textures": {
+    "0": "truedarkness:block/corrupted_axe",
+    "particle": "truedarkness:item/corrupted_axe"
+  }
+}

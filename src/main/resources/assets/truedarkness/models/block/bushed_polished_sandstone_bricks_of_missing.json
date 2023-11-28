@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/bushed_polished_sandstone_bricks_of_missing",
+    "up": "truedarkness:block/bushed_polished_sandstone_bricks_of_missing",
+    "north": "truedarkness:block/bushed_polished_sandstone_bricks_of_missing",
+    "east": "truedarkness:block/bushed_polished_sandstone_bricks_of_missing",
+    "south": "truedarkness:block/bushed_polished_sandstone_bricks_of_missing",
+    "west": "truedarkness:block/bushed_polished_sandstone_bricks_of_missing",
+    "particle": "truedarkness:block/bushed_polished_sandstone_bricks_of_missing"
+  },
+  "render_type": "solid"
+}

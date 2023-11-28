@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/darkness_spruce_chest",
+  "textures": {
+    "all": "truedarkness:block/darkness_spruce_chest",
+    "particle": "truedarkness:block/darkness_spruce_chest",
+    "0": "truedarkness:block/darkness_spruce_chest"
+  },
+  "render_type": "solid"
+}

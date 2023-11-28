@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "truedarkness:block/big_glownite_bricks",
+    "top": "truedarkness:block/big_glownite_bricks",
+    "side": "truedarkness:block/big_glownite_bricks"
+  },
+  "render_type": "solid"
+}

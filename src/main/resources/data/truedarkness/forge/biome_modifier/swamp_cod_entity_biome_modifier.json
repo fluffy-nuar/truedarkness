@@ -1,0 +1,16 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "truedarkness:swamps",
+    "truedarkness:mine",
+    "truedarkness:corrupted_place",
+    "truedarkness:swamp_wasteland",
+    "truedarkness:waterfall"
+  ],
+  "spawners": {
+    "type": "truedarkness:swamp_cod_entity",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

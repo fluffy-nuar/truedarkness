@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:gramite_shard"
+    },
+    "1": {
+      "item": "truedarkness:gramite_shard"
+    },
+    "3": {
+      "item": "truedarkness:gramite_shard"
+    },
+    "5": {
+      "item": "truedarkness:gramite_stick"
+    },
+    "7": {
+      "item": "truedarkness:gramite_stick"
+    }
+  },
+  "result": {
+    "item": "truedarkness:gramite_battle_axe",
+    "count": 1
+  }
+}

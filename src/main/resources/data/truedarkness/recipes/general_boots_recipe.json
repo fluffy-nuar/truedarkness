@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:general_scale"
+    },
+    "2": {
+      "item": "truedarkness:general_scale"
+    },
+    "3": {
+      "item": "truedarkness:general_scale"
+    },
+    "5": {
+      "item": "truedarkness:general_scale"
+    }
+  },
+  "result": {
+    "item": "truedarkness:general_boots",
+    "count": 1
+  }
+}

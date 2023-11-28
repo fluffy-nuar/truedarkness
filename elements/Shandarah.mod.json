@@ -1,0 +1,46 @@
+{
+  "_fv": 47,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "corrupt_rune_1",
+    "customModelName": "Normal",
+    "name": "Shandarah for Corrupted Hand",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 9.0,
+    "bulletKnockback": 3,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Corrupt"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "ShandarahKoghdaSnariadPrisdfziemliaietsiaNaBlok"
+    },
+    "onBulletHitsEntity": {
+      "name": "ShandarahKoghdaSnariadPopadaietVSushchnost"
+    },
+    "onBulletFlyingTick": {
+      "name": "ShandarahKoghdaSnariadLietitTakt"
+    }
+  }
+}

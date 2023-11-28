@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "truedarkness:block/polished_swamp_cobblestone",
+    "top": "truedarkness:block/polished_swamp_cobblestone",
+    "side": "truedarkness:block/polished_swamp_cobblestone"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "truedarkness:custom/block",
+  "textures": {
+    "all": "truedarkness:block/corrupted_catalyst_side",
+    "particle": "truedarkness:block/corrupted_catalyst_side",
+    "0": "truedarkness:block/corrupted_catalyst_top",
+    "1": "truedarkness:block/corrupted_catalyst_side",
+    "2": "truedarkness:block/corrupted_catalyst_bottom"
+  },
+  "render_type": "cutout"
+}

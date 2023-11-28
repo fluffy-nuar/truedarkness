@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "truedarkness:block/polished_accustone_bricks",
+    "top": "truedarkness:block/polished_accustone_bricks",
+    "side": "truedarkness:block/polished_accustone_bricks"
+  },
+  "render_type": "solid"
+}

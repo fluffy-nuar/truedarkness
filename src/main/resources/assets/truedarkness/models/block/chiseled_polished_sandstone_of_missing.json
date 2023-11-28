@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/chiseled_polished_sandstone_of_missing1",
+    "up": "truedarkness:block/chiseled_polished_sandstone_of_missing1",
+    "north": "truedarkness:block/chiseled_polished_sandstone_of_missing1",
+    "east": "truedarkness:block/chiseled_polished_sandstone_of_missing1",
+    "south": "truedarkness:block/chiseled_polished_sandstone_of_missing1",
+    "west": "truedarkness:block/chiseled_polished_sandstone_of_missing1",
+    "particle": "truedarkness:block/chiseled_polished_sandstone_of_missing1"
+  },
+  "render_type": "solid"
+}

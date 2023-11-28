@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:aquamarine_mirror"
+    },
+    "title": {
+      "translate": "advancements.sweet_home.title"
+    },
+    "description": {
+      "translate": "advancements.sweet_home.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sweet_home": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:calm_aquamarine_adv"
+}

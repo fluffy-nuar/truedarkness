@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "truedarkness:block/lavender_azalea",
+    "particle": "truedarkness:block/lavender_azalea"
+  }
+}

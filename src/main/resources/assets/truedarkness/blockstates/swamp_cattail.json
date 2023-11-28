@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "truedarkness:block/swamp_cattail"
+    },
+    "half=lower": {
+      "model": "truedarkness:block/swamp_cattail_bottom"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/cvetaliy_ore",
+    "up": "truedarkness:block/cvetaliy_ore",
+    "north": "truedarkness:block/cvetaliy_ore",
+    "east": "truedarkness:block/cvetaliy_ore",
+    "south": "truedarkness:block/cvetaliy_ore",
+    "west": "truedarkness:block/cvetaliy_ore",
+    "particle": "truedarkness:block/cvetaliy_ore"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightMushroomsActive"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightedBerry"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SwampChamomile"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BOWL"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SwampPlantsSalat"
+    },
+    "name": "swamp_salat_recipe",
+    "namespace": "mod"
+  }
+}

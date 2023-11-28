@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "truedarkness:darknite_bricks"
+  },
+  "result": "truedarkness:darknite_bricks_stairs"
+}

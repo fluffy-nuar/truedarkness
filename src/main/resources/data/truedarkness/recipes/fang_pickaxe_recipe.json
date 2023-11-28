@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:corrupted_hand_fangs"
+    },
+    "1": {
+      "item": "truedarkness:cursed_metal"
+    },
+    "2": {
+      "item": "truedarkness:corrupted_hand_fangs"
+    },
+    "4": {
+      "item": "truedarkness:soulsteal_pickaxe"
+    },
+    "7": {
+      "item": "truedarkness:eridium_heart"
+    }
+  },
+  "result": {
+    "item": "truedarkness:fang_pickaxe",
+    "count": 1
+  }
+}

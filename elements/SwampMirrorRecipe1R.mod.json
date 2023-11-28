@@ -1,0 +1,25 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:SwampTerracota"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:SwampMirror"
+    },
+    "smithingReturnStack": {
+      "value": "Blocks.STAINED_HARDENED_CLAY#8"
+    },
+    "name": "swamp_mirror_recipe_1_r",
+    "namespace": "mod"
+  }
+}

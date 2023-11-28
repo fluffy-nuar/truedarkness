@@ -1,0 +1,32 @@
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+dependencies {
+   compileOnly fg.deobf("curse.maven:dynamic-lights-227874:4721525")
+   runtimeOnly fg.deobf("curse.maven:dynamic-lights-227874:4721525")
+}
+
+repositories {
+  maven {
+    // location of the maven that hosts JEI files
+    name = "Progwml6 maven"
+    url = "https://dvs1.progwml6.com/files/maven/"
+  }    
+  maven {
+    // location of a maven mirror for JEI files, as a fallback
+    name = "ModMaven"
+    url = "https://modmaven.dev"
+  }   
+}
+
+dependencies {
+  compileOnly fg.deobf("mezz.jei:jei-1.20.1-common-api:15.2.0.27")
+  compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.2.0.27")
+  runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.2.0.27")
+}
+

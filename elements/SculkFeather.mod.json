@@ -1,0 +1,43 @@
+{
+  "_fv": 47,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "sculk_feather",
+    "customModelName": "Normal",
+    "name": "§3Sculk Feather",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 256,
+    "actionSound": {
+      "value": "entity.warden.sonic_boom"
+    },
+    "hasGlow": false,
+    "animation": "crossbow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "SculkFeatherPriIspolzovaniiStrielkovoghoPriedmieta"
+    },
+    "bulletPower": 8.0,
+    "bulletDamage": 8.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ChargeFeather"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletFlyingTick": {
+      "name": "SculkFeatherKoghdaSnariadLietitTakt"
+    }
+  }
+}

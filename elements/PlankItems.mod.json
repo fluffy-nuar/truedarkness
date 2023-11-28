@@ -1,0 +1,30 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CyanPlanks"
+      },
+      {
+        "value": "CUSTOM:DarknessSprucePlanks"
+      },
+      {
+        "value": "CUSTOM:MyceliumPlanks"
+      },
+      {
+        "value": "CUSTOM:CryingPlanks"
+      },
+      {
+        "value": "CUSTOM:FakePlanks"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "planks",
+    "namespace": "minecraft"
+  }
+}

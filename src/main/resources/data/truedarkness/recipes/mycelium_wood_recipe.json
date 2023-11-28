@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:mycelium_log"
+    },
+    "1": {
+      "item": "truedarkness:mycelium_log"
+    },
+    "2": {
+      "item": "truedarkness:mycelium_log"
+    },
+    "3": {
+      "item": "truedarkness:mycelium_log"
+    }
+  },
+  "result": {
+    "item": "truedarkness:mycelium_wood",
+    "count": 3
+  }
+}

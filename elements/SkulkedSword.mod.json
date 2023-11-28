@@ -1,0 +1,31 @@
+{
+  "_fv": 47,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "texture": "sculked_sword",
+    "customModelName": "Normal",
+    "name": "§3Sculked Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TrueDarknessElementariy"
+    },
+    "harvestLevel": 0,
+    "efficiency": 0.001,
+    "attackSpeed": 0.0,
+    "enchantability": 0,
+    "damageVsEntity": 1.0,
+    "usageCount": 12,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.ECHO_SHARD"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

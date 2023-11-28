@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "truedarkness:block/cyan_petal",
+    "particle": "truedarkness:block/cyan_petal"
+  }
+}

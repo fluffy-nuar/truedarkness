@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:lighted_berry"
+    },
+    {
+      "item": "truedarkness:swamp_bricks"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:mossy_swamp_bricks",
+    "count": 1
+  }
+}

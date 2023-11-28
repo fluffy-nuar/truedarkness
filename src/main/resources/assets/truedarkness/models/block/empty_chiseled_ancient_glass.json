@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/empty_darkness_glass",
+    "up": "truedarkness:block/empty_darkness_glass",
+    "north": "truedarkness:block/empty_darkness_glass",
+    "east": "truedarkness:block/empty_darkness_glass",
+    "south": "truedarkness:block/empty_darkness_glass",
+    "west": "truedarkness:block/empty_darkness_glass",
+    "particle": "truedarkness:block/empty_darkness_glass"
+  },
+  "render_type": "translucent"
+}

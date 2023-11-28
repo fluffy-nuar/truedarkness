@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "truedarkness:ancient_mirror"
+  },
+  "addition": {
+    "item": "truedarkness:letter"
+  },
+  "result": {
+    "item": "truedarkness:soul_mirror"
+  }
+}

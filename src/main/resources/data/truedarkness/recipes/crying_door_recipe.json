@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:crying_planks"
+    },
+    "1": {
+      "item": "truedarkness:crying_planks"
+    },
+    "2": {
+      "item": "truedarkness:crying_planks"
+    },
+    "3": {
+      "item": "truedarkness:crying_planks"
+    },
+    "4": {
+      "item": "truedarkness:crying_planks"
+    },
+    "5": {
+      "item": "truedarkness:crying_planks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:crying_door",
+    "count": 3
+  }
+}

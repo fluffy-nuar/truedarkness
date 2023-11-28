@@ -1,0 +1,63 @@
+{
+  "type": "truedarkness:dead_prismarine_coral_flashing",
+  "config": {
+    "size": 16,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:horn_coral_block"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:dead_prismarine_coral_flashing"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:horn_coral",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:dead_prismarine_coral_flashing"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:horn_coral_fan",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:dead_prismarine_coral_flashing"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:horn_coral_wall_fan",
+            "Properties": {
+              "facing": "north",
+              "waterlogged": "true"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:dead_prismarine_coral_flashing"
+        }
+      }
+    ]
+  }
+}

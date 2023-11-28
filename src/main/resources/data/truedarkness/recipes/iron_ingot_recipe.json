@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:gramite_shard"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "truedarkness:gramite_shard"
+    },
+    "3": {
+      "item": "truedarkness:gramite_shard"
+    }
+  },
+  "result": {
+    "item": "minecraft:iron_ingot",
+    "count": 3
+  }
+}

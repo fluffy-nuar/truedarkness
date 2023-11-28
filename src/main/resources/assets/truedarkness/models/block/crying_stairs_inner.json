@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "truedarkness:block/crying_planks",
+    "top": "truedarkness:block/crying_planks",
+    "side": "truedarkness:block/crying_planks"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": "CUSTOM:GlassBottleCorrupt"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RunedSwampStone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": "CUSTOM:GlassBottleCorrupt"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CorruptedRune"
+    },
+    "name": "corrupted_rune_recipe",
+    "namespace": "mod"
+  }
+}

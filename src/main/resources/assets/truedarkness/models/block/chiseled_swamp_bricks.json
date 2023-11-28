@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/chiseled_swamp_bricks",
+    "up": "truedarkness:block/chiseled_swamp_bricks",
+    "north": "truedarkness:block/chiseled_swamp_bricks",
+    "east": "truedarkness:block/chiseled_swamp_bricks",
+    "south": "truedarkness:block/chiseled_swamp_bricks",
+    "west": "truedarkness:block/chiseled_swamp_bricks",
+    "particle": "truedarkness:block/chiseled_swamp_bricks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:cvetalit_shard"
+    },
+    "1": {
+      "item": "truedarkness:cvetalit_shard"
+    },
+    "2": {
+      "item": "truedarkness:cvetalit_shard"
+    },
+    "3": {
+      "item": "truedarkness:cvetalit_shard"
+    },
+    "4": {
+      "item": "truedarkness:cvetalit_shard"
+    },
+    "5": {
+      "item": "truedarkness:cvetalit_shard"
+    },
+    "6": {
+      "item": "truedarkness:cvetalit_shard"
+    },
+    "7": {
+      "item": "truedarkness:cvetalit_shard"
+    },
+    "8": {
+      "item": "truedarkness:cvetalit_shard"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cvetaliy",
+    "count": 1
+  }
+}

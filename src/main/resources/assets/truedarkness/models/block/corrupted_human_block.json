@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/corrupted_human",
+  "textures": {
+    "all": "truedarkness:block/corrupted_human",
+    "particle": "truedarkness:block/corrupted_human",
+    "0": "truedarkness:block/corrupted_human"
+  },
+  "render_type": "cutout"
+}

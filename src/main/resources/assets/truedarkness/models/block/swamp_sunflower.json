@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "truedarkness:block/swamp_sunflower",
+    "particle": "truedarkness:block/swamp_sunflower"
+  },
+  "render_type": "cutout"
+}

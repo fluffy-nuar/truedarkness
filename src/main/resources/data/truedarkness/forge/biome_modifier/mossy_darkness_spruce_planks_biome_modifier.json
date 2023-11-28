@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "truedarkness:mossy_darkness_spruce_planks",
+  "step": "underground_ores"
+}

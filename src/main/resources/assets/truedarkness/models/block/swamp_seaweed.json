@@ -1,0 +1,8 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "truedarkness:block/swamp_seaweed",
+    "particle": "truedarkness:block/swamp_seaweed"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:eridium_shard"
+    },
+    {
+      "item": "truedarkness:glass_bottle_corrupt"
+    },
+    {
+      "item": "truedarkness:eridium_shard"
+    },
+    {
+      "item": "truedarkness:runed_swamp_stone"
+    },
+    {
+      "item": "truedarkness:eridium_shard"
+    },
+    {
+      "item": "truedarkness:glass_bottle_corrupt"
+    },
+    {
+      "item": "truedarkness:eridium_shard"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:corrupted_rune",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "truedarkness:swamp_terracota"
+  },
+  "addition": {
+    "item": "truedarkness:echo_mirror"
+  },
+  "result": {
+    "item": "minecraft:light_gray_terracotta"
+  }
+}

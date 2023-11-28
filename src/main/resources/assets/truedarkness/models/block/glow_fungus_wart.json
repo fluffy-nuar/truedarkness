@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/glow_fungus_wart",
+    "up": "truedarkness:block/glow_fungus_wart",
+    "north": "truedarkness:block/glow_fungus_wart",
+    "east": "truedarkness:block/glow_fungus_wart",
+    "south": "truedarkness:block/glow_fungus_wart",
+    "west": "truedarkness:block/glow_fungus_wart",
+    "particle": "truedarkness:block/glow_fungus_wart"
+  },
+  "render_type": "solid"
+}

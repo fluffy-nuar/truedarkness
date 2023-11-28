@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:swamps",
+  "features": "truedarkness:lapis_lazuli_swamp_ore",
+  "step": "underground_ores"
+}

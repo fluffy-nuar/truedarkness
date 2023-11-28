@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:swamps",
+  "features": "truedarkness:lighted_vine",
+  "step": "underground_ores"
+}

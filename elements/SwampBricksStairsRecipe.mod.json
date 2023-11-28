@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SwampBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SwampBricks"
+      },
+      {
+        "value": "CUSTOM:SwampBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SwampBricks"
+      },
+      {
+        "value": "CUSTOM:SwampBricks"
+      },
+      {
+        "value": "CUSTOM:SwampBricks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SwampBricksStairs"
+    },
+    "name": "swamp_bricks_stairs_recipe",
+    "namespace": "mod"
+  }
+}

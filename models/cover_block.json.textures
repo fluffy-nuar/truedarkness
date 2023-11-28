@@ -1,0 +1,39 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "swamp_grass_block_top",
+        "1": "swamp_grass_block"
+      },
+      "name": "default"
+    },
+    "eternal_garden": {
+      "map": {
+        "0": "eternal_garden_grass_block_top",
+        "1": "eternal_garden_grass_block"
+      },
+      "name": "eternal_garden"
+    },
+    "mycelium": {
+      "map": {
+        "0": "mycelium_cover_top",
+        "1": "mycelium_cover"
+      },
+      "name": "mycelium"
+    },
+    "moss": {
+      "map": {
+        "0": "moss_block",
+        "1": "moss_cover"
+      },
+      "name": "moss"
+    },
+    "sakura_petal": {
+      "map": {
+        "0": "sakura_leaves",
+        "1": "sakura_side"
+      },
+      "name": "sakura_petal"
+    }
+  }
+}

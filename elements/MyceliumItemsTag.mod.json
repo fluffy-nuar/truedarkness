@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:MyceliumWood"
+      },
+      {
+        "value": "CUSTOM:MyceliumLog"
+      },
+      {
+        "value": "CUSTOM:StrippedMyceliumLog"
+      },
+      {
+        "value": "CUSTOM:StrippedMyceliumLog1"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "mycelium_log",
+    "namespace": "forge"
+  }
+}

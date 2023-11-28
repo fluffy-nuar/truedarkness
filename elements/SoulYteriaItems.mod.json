@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SwampStone"
+      },
+      {
+        "value": "CUSTOM:SwampDirt"
+      },
+      {
+        "value": "CUSTOM:SwampBlackSoil"
+      },
+      {
+        "value": "CUSTOM:SwampSand"
+      },
+      {
+        "value": "CUSTOM:SwampSoil"
+      },
+      {
+        "value": "CUSTOM:SwampCobblestone"
+      },
+      {
+        "value": "CUSTOM:DustBlock"
+      },
+      {
+        "value": "CUSTOM:SwampMud"
+      },
+      {
+        "value": "CUSTOM:SwampTerracota"
+      },
+      {
+        "value": "CUSTOM:SandOfMissing"
+      },
+      {
+        "value": "CUSTOM:SandstoneOfMissing"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "soul_yteria_items",
+    "namespace": "forge"
+  }
+}

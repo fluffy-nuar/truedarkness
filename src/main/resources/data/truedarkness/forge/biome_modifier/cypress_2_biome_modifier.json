@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:lavender_field",
+  "features": "truedarkness:cypress_2",
+  "step": "surface_structures"
+}

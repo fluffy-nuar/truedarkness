@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "swamp_sand"
+      },
+      "name": "default"
+    },
+    "sand_of_missing": {
+      "map": {
+        "0": "sand_of_missing"
+      },
+      "name": "sand_of_missing"
+    },
+    "sakura_leaves": {
+      "map": {
+        "0": "sakura_leaves"
+      },
+      "name": "sakura_leaves"
+    }
+  }
+}

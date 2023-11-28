@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "music_disc_forest_night",
+    "description": "Nuar — Forest Night",
+    "creativeTab": {
+      "value": "CUSTOM:TrueDarknessElementariy"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:record.forest_in_the_night"
+    },
+    "lengthInTicks": 1480,
+    "analogOutput": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/1_layer_upjson",
+  "textures": {
+    "all": "truedarkness:block/sand_of_missing",
+    "particle": "truedarkness:block/sand_of_missing",
+    "0": "truedarkness:block/sand_of_missing"
+  },
+  "render_type": "cutout"
+}

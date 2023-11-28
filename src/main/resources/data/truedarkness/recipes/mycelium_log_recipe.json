@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:light_mushrooms_active"
+    },
+    "1": {
+      "item": "truedarkness:light_mushrooms_active"
+    },
+    "2": {
+      "item": "truedarkness:light_mushrooms_active"
+    },
+    "3": {
+      "item": "truedarkness:light_mushrooms_active"
+    }
+  },
+  "result": {
+    "item": "truedarkness:mycelium_log",
+    "count": 1
+  }
+}

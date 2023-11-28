@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 1 ",
+    "345"
+  ],
+  "key": {
+    "1": {
+      "item": "truedarkness:cvetaliy_grain"
+    },
+    "3": {
+      "item": "truedarkness:cvetaliy_grain"
+    },
+    "4": {
+      "item": "truedarkness:cvetalit_shard"
+    },
+    "5": {
+      "item": "truedarkness:cvetaliy_grain"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cvetaliy_crown_helmet",
+    "count": 1
+  }
+}

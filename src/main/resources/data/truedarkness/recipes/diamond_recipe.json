@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:cvetaliy"
+    },
+    {
+      "item": "truedarkness:cvetaliy"
+    },
+    {
+      "item": "truedarkness:cryer_tear"
+    },
+    {
+      "item": "truedarkness:cryer_tear"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond",
+    "count": 5
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:SwampDirt"
+      },
+      {
+        "value": "CUSTOM:SwampSoil"
+      },
+      {
+        "value": "CUSTOM:SandOfMissing"
+      },
+      {
+        "value": "CUSTOM:SwampStone"
+      },
+      {
+        "value": "CUSTOM:TrapSandOfMissing"
+      },
+      {
+        "value": "CUSTOM:UnclearSandOfMissing"
+      },
+      {
+        "value": "CUSTOM:Corrupt"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "dirt",
+    "namespace": "minecraft"
+  }
+}

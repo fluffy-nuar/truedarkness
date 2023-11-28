@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "truedarkness:block/corrupted_grass",
+    "particle": "truedarkness:block/corrupted_grass"
+  },
+  "render_type": "cutout"
+}

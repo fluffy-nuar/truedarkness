@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:pollen_feather",
+    "count": 1
+  }
+}

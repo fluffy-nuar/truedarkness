@@ -1,0 +1,11 @@
+{
+  "parent": "truedarkness:custom/sculk_grail",
+  "textures": {
+    "all": "truedarkness:block/soul_master_top",
+    "particle": "truedarkness:block/soul_master_top",
+    "0": "truedarkness:block/soul_master_top",
+    "1": "truedarkness:block/ancient_sculk",
+    "2": "truedarkness:block/soul_master"
+  },
+  "render_type": "solid"
+}

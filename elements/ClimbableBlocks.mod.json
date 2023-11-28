@@ -1,0 +1,24 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:LightedVine2"
+      },
+      {
+        "value": "CUSTOM:LightedVineActive"
+      },
+      {
+        "value": "CUSTOM:LightedVine"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "climbable",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_fv": 47,
+  "_type": "structure",
+  "definition": {
+    "structure": "swamp_flower",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 700000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 3,
+    "spawnLocation": "Underground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:SwampBlackSoil"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Swamps"
+      }
+    ],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+  }
+}

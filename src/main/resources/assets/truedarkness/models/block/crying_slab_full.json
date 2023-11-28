@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "truedarkness:block/crying_planks",
+    "top": "truedarkness:block/crying_planks",
+    "side": "truedarkness:block/crying_planks"
+  },
+  "render_type": "translucent"
+}

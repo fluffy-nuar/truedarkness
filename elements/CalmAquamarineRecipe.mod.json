@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CvetaliyGrain"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CvetaliyGrain"
+      },
+      {
+        "value": "CUSTOM:SoulBottle"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CvetaliyGrain"
+      },
+      {
+        "value": "CUSTOM:CvetaliyGrain"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CalmAquamarine"
+    },
+    "name": "calm_aquamarine_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:shandarah"
+    },
+    "title": {
+      "translate": "advancements.looking_closely_adv.title"
+    },
+    "description": {
+      "translate": "advancements.looking_closely_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "looking_closely_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:corrupted_place_adv"
+}

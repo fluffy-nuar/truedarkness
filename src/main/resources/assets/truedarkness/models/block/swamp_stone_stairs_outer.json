@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "truedarkness:block/swamp_stone",
+    "top": "truedarkness:block/swamp_stone",
+    "side": "truedarkness:block/swamp_stone"
+  },
+  "render_type": "solid"
+}

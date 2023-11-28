@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:cursed_metal"
+    },
+    "title": {
+      "translate": "advancements.cursing_and_curing.title"
+    },
+    "description": {
+      "translate": "advancements.cursing_and_curing.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cursing_and_curing": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:cursed_metal"
+            ],
+            "count": {
+              "min": 1,
+              "max": 999999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:corrupted_rune_adv"
+}

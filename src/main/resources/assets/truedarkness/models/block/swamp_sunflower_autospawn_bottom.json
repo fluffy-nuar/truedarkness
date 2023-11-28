@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "truedarkness:blocks/swamp_sunflower_1",
+    "particle": "truedarkness:blocks/swamp_sunflower_1"
+  }
+}

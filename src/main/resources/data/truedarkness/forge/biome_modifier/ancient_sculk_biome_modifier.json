@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:retroland",
+    "deep_dark"
+  ],
+  "features": "truedarkness:ancient_sculk",
+  "step": "underground_ores"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:retroland",
+  "features": "truedarkness:recra_grass",
+  "step": "vegetal_decoration"
+}

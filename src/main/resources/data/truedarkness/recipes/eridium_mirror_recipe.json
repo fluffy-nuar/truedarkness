@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "truedarkness:cursed_metal"
+    },
+    "3": {
+      "item": "truedarkness:eridium_bone"
+    },
+    "4": {
+      "item": "truedarkness:eridium_heart"
+    },
+    "5": {
+      "item": "truedarkness:eridium_bone"
+    },
+    "7": {
+      "item": "truedarkness:cursed_metal"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cursed_mirror",
+    "count": 1
+  }
+}

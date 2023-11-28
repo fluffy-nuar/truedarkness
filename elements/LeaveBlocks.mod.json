@@ -1,0 +1,30 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:GrapeAzaleaLeaves"
+      },
+      {
+        "value": "CUSTOM:BushyGrapeAzaleaLeaves"
+      },
+      {
+        "value": "CUSTOM:CyanLeaves"
+      },
+      {
+        "value": "CUSTOM:DarknessSpruceLeaves"
+      },
+      {
+        "value": "CUSTOM:FakeLeaves"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "leaves",
+    "namespace": "minecraft"
+  }
+}

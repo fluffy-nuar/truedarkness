@@ -1,0 +1,131 @@
+{
+  "_fv": 47,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "glow_fungus_small",
+    "textureBottom": "",
+    "customModelName": "Cross model",
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 100,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": false,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Light Mushrooms Active",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TrueDarknessElementriy"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 4,
+    "unbreakable": false,
+    "isSolid": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "SMALL_DRIPLEAF"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": true,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "XZ",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:SwampStone"
+      },
+      {
+        "value": "CUSTOM:SwampDirt"
+      },
+      {
+        "value": "CUSTOM:SwampBlackSoil"
+      },
+      {
+        "value": "CUSTOM:SwampSand"
+      },
+      {
+        "value": "CUSTOM:SwampSoil"
+      },
+      {
+        "value": "CUSTOM:SwampMud"
+      },
+      {
+        "value": "CUSTOM:SwampTerracota"
+      },
+      {
+        "value": "CUSTOM:RenteriaSand"
+      },
+      {
+        "value": "CUSTOM:Crenrit"
+      }
+    ],
+    "isBonemealable": true,
+    "bonemealSuccessCondition": {
+      "name": "LightMushroomsUsloviieUspiekhaKostnoiMuki"
+    },
+    "onBonemealSuccess": {
+      "name": "LightMushroo1msPriUspiekhieKostnoiMuki"
+    },
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [
+      "CUSTOM:Yteria"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Mine"
+      }
+    ],
+    "generationType": "Grass",
+    "patchSize": 64,
+    "generateAtAnyHeight": true,
+    "onRightClicked": {
+      "name": "LightMushroomPriNazhatiiPravoiKnopkiMyshiNaRastienii"
+    }
+  }
+}

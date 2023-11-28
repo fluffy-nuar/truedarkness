@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/cracked_accuswamp_mosaic_slab"
+    },
+    "type=top": {
+      "model": "truedarkness:block/cracked_accuswamp_mosaic_slab_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/cracked_accuswamp_mosaic_slab_full"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/swamp_grass_block"
+  },
+  "render_type": "translucent"
+}

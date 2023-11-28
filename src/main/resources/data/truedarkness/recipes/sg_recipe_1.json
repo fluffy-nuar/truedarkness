@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "truedarkness:darknite_bricks"
+  },
+  "addition": {
+    "item": "truedarkness:sandglass"
+  },
+  "result": {
+    "item": "truedarkness:cracked_darknite_bricks"
+  }
+}

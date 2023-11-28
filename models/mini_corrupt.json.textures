@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "small_corrupt"
+      },
+      "name": "default"
+    },
+    "vein": {
+      "map": {
+        "0": "corrupted_vein"
+      },
+      "name": "vein"
+    },
+    "swampsand": {
+      "map": {
+        "0": "swamp_sand"
+      },
+      "name": "swampsand"
+    },
+    "sandofmissing": {
+      "map": {
+        "0": "sand_of_missing"
+      },
+      "name": "sandofmissing"
+    }
+  }
+}

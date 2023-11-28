@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:firenite_block"
+    }
+  },
+  "result": {
+    "item": "truedarkness:firenite_ingot",
+    "count": 9
+  }
+}

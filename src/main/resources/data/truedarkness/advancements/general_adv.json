@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_sculk_catalyst"
+    },
+    "title": {
+      "translate": "advancements.general_adv.title"
+    },
+    "description": {
+      "translate": "advancements.general_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "general_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:corrupted_rune_adv_1"
+}

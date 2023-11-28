@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Trudnite.helmet"
+    },
+    "name": "trudnite_helmet_recipe",
+    "namespace": "mod"
+  }
+}

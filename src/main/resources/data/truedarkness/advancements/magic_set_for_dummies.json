@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:swamp_amulet_chestplate"
+    },
+    "title": {
+      "translate": "advancements.magic_set_for_dummies.title"
+    },
+    "description": {
+      "translate": "advancements.magic_set_for_dummies.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "magic_set_for_dummies": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:elder_document_adv"
+}

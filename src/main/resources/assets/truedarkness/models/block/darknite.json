@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/darknite",
+    "up": "truedarkness:block/darknite",
+    "north": "truedarkness:block/darknite",
+    "east": "truedarkness:block/darknite",
+    "south": "truedarkness:block/darknite",
+    "west": "truedarkness:block/darknite",
+    "particle": "truedarkness:block/darknite"
+  },
+  "render_type": "solid"
+}

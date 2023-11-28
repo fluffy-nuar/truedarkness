@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/glow_slab"
+    },
+    "type=top": {
+      "model": "truedarkness:block/glow_slab_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/glow_slab_full"
+    }
+  }
+}

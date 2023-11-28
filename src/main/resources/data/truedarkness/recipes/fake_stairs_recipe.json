@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "category": "building",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:fake_planks"
+    },
+    "3": {
+      "item": "truedarkness:fake_planks"
+    },
+    "4": {
+      "item": "truedarkness:fake_planks"
+    },
+    "6": {
+      "item": "truedarkness:fake_planks"
+    },
+    "7": {
+      "item": "truedarkness:fake_planks"
+    },
+    "8": {
+      "item": "truedarkness:fake_planks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:fake_stairs",
+    "count": 4
+  }
+}

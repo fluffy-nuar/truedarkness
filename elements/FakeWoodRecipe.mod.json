@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bark",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FakeLog"
+      },
+      {
+        "value": "CUSTOM:FakeLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FakeLog"
+      },
+      {
+        "value": "CUSTOM:FakeLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FakeWood"
+    },
+    "name": "fake_wood_recipe",
+    "namespace": "mod"
+  }
+}

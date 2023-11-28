@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:gramite_block",
+    "truedarkness:eridium_block",
+    "truedarkness:trudnite_block",
+    "truedarkness:dark_crystal_cluster_block",
+    "truedarkness:cry_block",
+    "truedarkness:metenite_block",
+    "truedarkness:firenite_block"
+  ]
+}

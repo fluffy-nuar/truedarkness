@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "music_disc_turquoise_flower",
+    "description": "Riryz — Turquoise Flower",
+    "creativeTab": {
+      "value": "CUSTOM:TrueDarknessElementariy"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:music.turquoise_flower"
+    },
+    "lengthInTicks": 1620,
+    "analogOutput": 0
+  }
+}

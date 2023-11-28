@@ -1,0 +1,12 @@
+{
+  "_fv": 47,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Limit of Sculk Mana",
+    "description": "How many points can be of Sculk Mana",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 50
+  }
+}

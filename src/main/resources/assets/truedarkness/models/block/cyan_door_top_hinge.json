@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top_rh",
+  "textures": {
+    "bottom": "truedarkness:blocks/cyan_door",
+    "top": "truedarkness:blocks/cyan_door_top"
+  }
+}

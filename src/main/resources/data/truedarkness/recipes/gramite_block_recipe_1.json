@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:gramite_block"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:deleted_mod_element",
+    "count": 9
+  }
+}

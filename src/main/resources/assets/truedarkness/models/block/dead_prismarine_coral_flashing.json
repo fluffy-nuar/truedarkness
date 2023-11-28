@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/dead_prismarine_coral_flashing",
+    "up": "truedarkness:block/dead_prismarine_coral_flashing",
+    "north": "truedarkness:block/dead_prismarine_coral_flashing",
+    "east": "truedarkness:block/dead_prismarine_coral_flashing",
+    "south": "truedarkness:block/dead_prismarine_coral_flashing",
+    "west": "truedarkness:block/dead_prismarine_coral_flashing",
+    "particle": "truedarkness:block/dead_prismarine_coral_flashing"
+  },
+  "render_type": "solid"
+}

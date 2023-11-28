@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:mine",
+    "truedarkness:corrupted_place"
+  ],
+  "features": "truedarkness:eridium_cluster",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,219 @@
+{
+  "type": "truedarkness:cobbled_darknite",
+  "config": {
+    "size": 27,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:darknite"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:coal_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:iron_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:redstone_ore",
+            "Properties": {
+              "lit": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:redstone_ore",
+            "Properties": {
+              "lit": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:gold_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:lapis_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:diamond_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:emerald_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:copper_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_coal_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_iron_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_redstone_ore",
+            "Properties": {
+              "lit": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_gold_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_lapis_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_diamond_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_emerald_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:cobbled_darknite"
+        }
+      }
+    ]
+  }
+}

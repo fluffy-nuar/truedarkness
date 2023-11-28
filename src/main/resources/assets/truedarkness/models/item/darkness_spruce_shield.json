@@ -1,0 +1,7 @@
+{
+  "parent": "truedarkness:custom/darkness_spruce_shield",
+  "textures": {
+    "0": "truedarkness:block/darkness_spruce_shield",
+    "particle": "truedarkness:item/darkness_spruce_shield"
+  }
+}

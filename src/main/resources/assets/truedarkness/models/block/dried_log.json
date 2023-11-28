@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/dried_wood_top",
+    "up": "truedarkness:block/dried_wood_top",
+    "north": "truedarkness:block/dried_wood",
+    "east": "truedarkness:block/dried_wood",
+    "south": "truedarkness:block/dried_wood",
+    "west": "truedarkness:block/dried_wood",
+    "particle": "truedarkness:block/dried_wood_top"
+  },
+  "render_type": "solid"
+}

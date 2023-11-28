@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:polished_accustone"
+    },
+    "1": {
+      "item": "truedarkness:polished_accustone"
+    },
+    "2": {
+      "item": "truedarkness:polished_accustone"
+    }
+  },
+  "result": {
+    "item": "truedarkness:polished_accustone_slab",
+    "count": 6
+  }
+}

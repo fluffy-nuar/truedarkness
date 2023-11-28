@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:cry_ingot"
+    },
+    "title": {
+      "translate": "advancements.cry_tool_adv.title"
+    },
+    "description": {
+      "translate": "advancements.cry_tool_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cry_tool_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:cryer_tear_adv"
+}

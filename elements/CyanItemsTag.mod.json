@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CyanWood"
+      },
+      {
+        "value": "CUSTOM:CyanLog"
+      },
+      {
+        "value": "CUSTOM:StrippedCyanLog"
+      },
+      {
+        "value": "CUSTOM:StrippedCyanWood"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "cyan_log",
+    "namespace": "forge"
+  }
+}

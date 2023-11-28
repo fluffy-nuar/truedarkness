@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "minecraft:stone_bricks"
+  },
+  "addition": {
+    "item": "truedarkness:sandglass"
+  },
+  "result": {
+    "item": "minecraft:cracked_stone_bricks"
+  }
+}

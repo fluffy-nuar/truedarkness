@@ -1,0 +1,11 @@
+{
+  "parent": "truedarkness:custom/sculk_grail",
+  "textures": {
+    "all": "truedarkness:block/sculk_grail_top",
+    "particle": "truedarkness:block/sculk_grail_top",
+    "0": "truedarkness:block/sculk_grail_top",
+    "1": "truedarkness:block/sculk_grail",
+    "2": "truedarkness:block/sculk_grail_side"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:prismarine_coral_rich",
+    "truedarkness:prismarine_coral_wave",
+    "truedarkness:prismarine_coral_darkness",
+    "minecraft:water",
+    "truedarkness:prismarine_coral_colourless",
+    "truedarkness:prismarine_coral_flashing"
+  ]
+}

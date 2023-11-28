@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "truedarkness:block/swamp_brick",
+    "top": "truedarkness:block/swamp_brick",
+    "side": "truedarkness:block/swamp_brick"
+  },
+  "render_type": "solid"
+}

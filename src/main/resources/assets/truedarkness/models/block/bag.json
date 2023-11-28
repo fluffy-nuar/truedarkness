@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/bag",
+  "textures": {
+    "all": "truedarkness:block/bag",
+    "particle": "truedarkness:block/bag",
+    "0": "truedarkness:block/bag"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/dust_clay_bricks_slab"
+    },
+    "type=top": {
+      "model": "truedarkness:block/dust_clay_bricks_slab_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/dust_clay_bricks_slab_full"
+    }
+  }
+}

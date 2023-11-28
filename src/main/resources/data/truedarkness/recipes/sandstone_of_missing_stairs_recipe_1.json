@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "truedarkness:sandstone_of_missing"
+  },
+  "result": "truedarkness:sandstone_of_missing_stairs"
+}

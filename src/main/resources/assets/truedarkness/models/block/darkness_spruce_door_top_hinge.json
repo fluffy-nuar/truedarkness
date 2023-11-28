@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top_rh",
+  "textures": {
+    "bottom": "truedarkness:blocks/darkness_spruce_door",
+    "top": "truedarkness:blocks/darkness_spruce_door_top"
+  }
+}

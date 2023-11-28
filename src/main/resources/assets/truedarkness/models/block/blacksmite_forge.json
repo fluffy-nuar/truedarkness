@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/forge",
+    "up": "truedarkness:block/forge_top",
+    "north": "truedarkness:block/forge_side",
+    "east": "truedarkness:block/forge_side",
+    "south": "truedarkness:block/forge_side",
+    "west": "truedarkness:block/forge_side",
+    "particle": "truedarkness:block/forge"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:elder_tear"
+    },
+    "title": {
+      "translate": "advancements.cryer_tear_adv.title"
+    },
+    "description": {
+      "translate": "advancements.cryer_tear_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cryer_tear_adv": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:elder_tear"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999999999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:sand_remnants_adv_2"
+}

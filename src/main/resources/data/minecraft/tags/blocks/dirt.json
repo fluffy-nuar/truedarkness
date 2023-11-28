@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:swamp_soil",
+    "truedarkness:trap_sand_of_missing",
+    "truedarkness:unclear_sand_of_missing",
+    "truedarkness:swamp_stone",
+    "truedarkness:sand_of_missing",
+    "truedarkness:swamp_dirt",
+    "truedarkness:corrupt"
+  ]
+}

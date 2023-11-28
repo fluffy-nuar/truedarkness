@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:chiseled_ancient_glass_shard"
+    }
+  },
+  "result": {
+    "item": "truedarkness:empty_chiseled_ancient_glass_shard",
+    "count": 1
+  }
+}

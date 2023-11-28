@@ -1,0 +1,45 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:FireniteBlock"
+      },
+      {
+        "value": "CUSTOM:EridiumBlock"
+      },
+      {
+        "value": "CUSTOM:ForgeteelBlock"
+      },
+      {
+        "value": "CUSTOM:GramiteBlock"
+      },
+      {
+        "value": "CUSTOM:ElectroMalachiteBlock"
+      },
+      {
+        "value": "CUSTOM:DarkCrystalBlock"
+      },
+      {
+        "value": "CUSTOM:TrudniteBlock"
+      },
+      {
+        "value": "CUSTOM:CryBlock"
+      },
+      {
+        "value": "CUSTOM:GroobentiyBlock"
+      },
+      {
+        "value": "CUSTOM:MeteniteBlock"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "beacon_base_blocks",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "truedarkness:block_of_writing"
+  },
+  "result": "truedarkness:block_of_writing_plus"
+}

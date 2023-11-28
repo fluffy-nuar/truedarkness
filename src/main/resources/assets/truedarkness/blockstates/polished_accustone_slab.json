@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/polished_accustone_slab"
+    },
+    "type=top": {
+      "model": "truedarkness:block/polished_accustone_slab_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/polished_accustone_slab_full"
+    }
+  }
+}

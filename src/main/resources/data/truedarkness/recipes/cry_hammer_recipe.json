@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "truedarkness:soulsteal_hammer"
+  },
+  "addition": {
+    "item": "truedarkness:cry_ingot"
+  },
+  "result": {
+    "item": "truedarkness:cry_hammer"
+  }
+}

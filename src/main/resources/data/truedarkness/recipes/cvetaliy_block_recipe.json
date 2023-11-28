@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:cvetaliy"
+    },
+    "1": {
+      "item": "truedarkness:cvetaliy"
+    },
+    "2": {
+      "item": "truedarkness:cvetaliy"
+    },
+    "3": {
+      "item": "truedarkness:cvetaliy"
+    },
+    "4": {
+      "item": "truedarkness:cvetaliy"
+    },
+    "5": {
+      "item": "truedarkness:cvetaliy"
+    },
+    "6": {
+      "item": "truedarkness:cvetaliy"
+    },
+    "7": {
+      "item": "truedarkness:cvetaliy"
+    },
+    "8": {
+      "item": "truedarkness:cvetaliy"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cvetaliy_block",
+    "count": 1
+  }
+}

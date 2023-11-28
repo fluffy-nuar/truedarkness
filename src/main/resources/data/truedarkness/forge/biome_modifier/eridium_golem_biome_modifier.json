@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "truedarkness:swamp_wasteland",
+  "spawners": {
+    "type": "truedarkness:eridium_golem",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

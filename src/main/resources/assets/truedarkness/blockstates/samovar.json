@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "truedarkness:block/samovar"
+    },
+    "facing=east": {
+      "model": "truedarkness:block/samovar",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "truedarkness:block/samovar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "truedarkness:block/samovar",
+      "y": 270
+    }
+  }
+}

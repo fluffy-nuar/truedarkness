@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/ancient_sculk",
+    "up": "truedarkness:block/ancient_sculk",
+    "north": "truedarkness:block/ancient_sculk",
+    "east": "truedarkness:block/ancient_sculk",
+    "south": "truedarkness:block/ancient_sculk",
+    "west": "truedarkness:block/ancient_sculk",
+    "particle": "truedarkness:block/ancient_sculk"
+  },
+  "render_type": "solid"
+}

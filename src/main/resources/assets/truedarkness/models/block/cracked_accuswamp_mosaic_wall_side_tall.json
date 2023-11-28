@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "truedarkness:block/cracked_accuswamp_mosaic",
+    "particle": "truedarkness:block/cracked_accuswamp_mosaic"
+  },
+  "render_type": "solid"
+}

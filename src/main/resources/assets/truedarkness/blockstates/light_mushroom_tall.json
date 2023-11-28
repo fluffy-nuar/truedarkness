@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "truedarkness:block/light_mushroom_tall"
+    },
+    "half=lower": {
+      "model": "truedarkness:block/light_mushroom_tall_bottom"
+    }
+  }
+}

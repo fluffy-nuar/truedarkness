@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/chiseled_glownite_slab"
+    },
+    "type=top": {
+      "model": "truedarkness:block/chiseled_glownite_slab_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/chiseled_glownite_slab_full"
+    }
+  }
+}

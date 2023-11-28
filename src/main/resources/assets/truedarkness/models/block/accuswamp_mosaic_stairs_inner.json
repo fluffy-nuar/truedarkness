@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "truedarkness:block/accuswamp_mosaic",
+    "top": "truedarkness:block/accuswamp_mosaic",
+    "side": "truedarkness:block/accuswamp_mosaic"
+  },
+  "render_type": "solid"
+}

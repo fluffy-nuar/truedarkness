@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/glownite_grid",
+    "up": "truedarkness:block/glownite_grid",
+    "north": "truedarkness:block/glownite_grid",
+    "east": "truedarkness:block/glownite_grid",
+    "south": "truedarkness:block/glownite_grid",
+    "west": "truedarkness:block/glownite_grid",
+    "particle": "truedarkness:block/glownite_grid"
+  },
+  "render_type": "cutout"
+}

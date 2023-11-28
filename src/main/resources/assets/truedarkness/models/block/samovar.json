@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/samovar",
+  "textures": {
+    "all": "truedarkness:block/samovar",
+    "particle": "truedarkness:block/samovar",
+    "1": "truedarkness:block/samovar"
+  },
+  "render_type": "cutout"
+}

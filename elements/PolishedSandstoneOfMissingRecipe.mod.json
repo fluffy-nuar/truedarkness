@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SandstoneOfMissing"
+      },
+      {
+        "value": "CUSTOM:SandstoneOfMissing"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SandstoneOfMissing"
+      },
+      {
+        "value": "CUSTOM:SandstoneOfMissing"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PolishedSandstoneOfMissing"
+    },
+    "name": "polished_sandstone_of_missing_recipe",
+    "namespace": "mod"
+  }
+}

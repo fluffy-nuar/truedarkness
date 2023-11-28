@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar_cane"
+    },
+    {
+      "item": "minecraft:flowering_azalea_leaves"
+    },
+    {
+      "item": "minecraft:azalea_leaves"
+    },
+    {
+      "item": "minecraft:rabbit_hide"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:sweet_herbs",
+    "count": 1
+  }
+}

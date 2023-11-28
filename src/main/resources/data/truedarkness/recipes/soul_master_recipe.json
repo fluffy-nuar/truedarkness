@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 1 ",
+    "345"
+  ],
+  "key": {
+    "1": {
+      "item": "truedarkness:cvetaliy"
+    },
+    "3": {
+      "item": "truedarkness:fake_log"
+    },
+    "4": {
+      "item": "minecraft:echo_shard"
+    },
+    "5": {
+      "item": "truedarkness:fake_log"
+    }
+  },
+  "result": {
+    "item": "truedarkness:soul_master",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "truedarkness:block/cyan_planks",
+    "top": "truedarkness:block/cyan_planks",
+    "side": "truedarkness:block/cyan_planks"
+  },
+  "render_type": "solid"
+}

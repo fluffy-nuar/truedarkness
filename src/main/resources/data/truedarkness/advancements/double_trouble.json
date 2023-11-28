@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:sculked_sword"
+    },
+    "title": {
+      "translate": "advancements.double_trouble.title"
+    },
+    "description": {
+      "translate": "advancements.double_trouble.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "double_trouble": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:root_adv"
+}

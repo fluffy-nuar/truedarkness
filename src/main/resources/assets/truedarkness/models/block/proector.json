@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/proector",
+  "textures": {
+    "all": "truedarkness:block/proector",
+    "particle": "truedarkness:block/proector",
+    "0": "truedarkness:block/proector"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:mycelium_planks"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:mycelium_button",
+    "count": 1
+  }
+}

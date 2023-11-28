@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:sandstone_of_missing"
+    },
+    "1": {
+      "item": "truedarkness:sandstone_of_missing"
+    },
+    "2": {
+      "item": "truedarkness:sandstone_of_missing"
+    }
+  },
+  "result": {
+    "item": "truedarkness:sandstone_of_missing_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "truedarkness:hanging_corrupt_another_biome",
+  "step": "underground_structures"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:cyan_planks"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:cyan_button",
+    "count": 1
+  }
+}

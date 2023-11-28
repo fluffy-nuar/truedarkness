@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:polished_swamp_cobblestone"
+    },
+    "3": {
+      "item": "truedarkness:polished_swamp_cobblestone"
+    },
+    "4": {
+      "item": "truedarkness:polished_swamp_cobblestone"
+    },
+    "6": {
+      "item": "truedarkness:polished_swamp_cobblestone"
+    },
+    "7": {
+      "item": "truedarkness:polished_swamp_cobblestone"
+    },
+    "8": {
+      "item": "truedarkness:polished_swamp_cobblestone"
+    }
+  },
+  "result": {
+    "item": "truedarkness:polished_swamp_cobblestone_stairs",
+    "count": 4
+  }
+}

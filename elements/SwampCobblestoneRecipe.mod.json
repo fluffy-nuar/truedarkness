@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 12,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SwampTerracota"
+      },
+      {
+        "value": "CUSTOM:SwampMud"
+      },
+      {
+        "value": "CUSTOM:SwampSand"
+      },
+      {
+        "value": "CUSTOM:SwampMud"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SwampMud"
+      },
+      {
+        "value": "CUSTOM:SwampSand"
+      },
+      {
+        "value": "CUSTOM:SwampMud"
+      },
+      {
+        "value": "CUSTOM:SwampTerracota"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SwampCobblestone"
+    },
+    "name": "swamp_cobblestone_recipe",
+    "namespace": "mod"
+  }
+}

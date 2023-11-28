@@ -1,0 +1,7 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "texture": "truedarkness:block/corrupt_rune_2"
+  },
+  "render_type": "cutout"
+}

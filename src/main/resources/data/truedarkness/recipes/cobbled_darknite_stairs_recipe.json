@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:cobbled_darknite"
+    },
+    "3": {
+      "item": "truedarkness:cobbled_darknite"
+    },
+    "4": {
+      "item": "truedarkness:cobbled_darknite"
+    },
+    "6": {
+      "item": "truedarkness:cobbled_darknite"
+    },
+    "7": {
+      "item": "truedarkness:cobbled_darknite"
+    },
+    "8": {
+      "item": "truedarkness:cobbled_darknite"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cobbled_darknite_stairs",
+    "count": 4
+  }
+}

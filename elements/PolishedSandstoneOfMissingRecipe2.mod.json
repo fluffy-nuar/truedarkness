@@ -1,0 +1,22 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:PolishedSandstoneOfMissing"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:ChiseledPolishedSandstoneOfMissing2"
+    },
+    "name": "polished_sandstone_of_missing_recipe_2",
+    "namespace": "mod"
+  }
+}

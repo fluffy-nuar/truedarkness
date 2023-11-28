@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:dried_log"
+    },
+    "1": {
+      "item": "truedarkness:dried_log"
+    },
+    "2": {
+      "item": "truedarkness:dried_log"
+    },
+    "3": {
+      "item": "truedarkness:dried_log"
+    }
+  },
+  "result": {
+    "item": "truedarkness:dried_wood",
+    "count": 3
+  }
+}

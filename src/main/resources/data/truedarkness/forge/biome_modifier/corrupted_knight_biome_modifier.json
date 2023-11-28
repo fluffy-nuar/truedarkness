@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "truedarkness:corrupted_place",
+  "spawners": {
+    "type": "truedarkness:corrupted_knight",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

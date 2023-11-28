@@ -1,0 +1,150 @@
+{
+  "_fv": 47,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar.png",
+          "use1Xscale": false,
+          "x": 105,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CorruptedBarProc"
+          },
+          "x": 105,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CorruptedBarProc1"
+          },
+          "x": 105,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CorruptedBarProc2"
+          },
+          "x": 105,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CorruptedBarProc3"
+          },
+          "x": 105,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CorruptedBarProc4"
+          },
+          "x": 105,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CorruptedBarProc5"
+          },
+          "x": 105,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CorruptedBarProc6"
+          },
+          "x": 105,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CorruptedBarProc7"
+          },
+          "x": 105,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CorruptedBarProc8"
+          },
+          "x": 105,
+          "y": -1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cirrupted_bar_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CorruptedBarProc9"
+          },
+          "x": 105,
+          "y": -1
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "CorruptedBarGUIOtobrazhatOvierlieiVIghrie"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

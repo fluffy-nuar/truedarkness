@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:glow_berries",
+    "truedarkness:grape",
+    "minecraft:sweet_berries",
+    "truedarkness:blueberry"
+  ]
+}

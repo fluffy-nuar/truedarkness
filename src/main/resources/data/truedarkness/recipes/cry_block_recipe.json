@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:cry_ingot"
+    },
+    "1": {
+      "item": "truedarkness:cry_ingot"
+    },
+    "2": {
+      "item": "truedarkness:cry_ingot"
+    },
+    "3": {
+      "item": "truedarkness:cry_ingot"
+    },
+    "4": {
+      "item": "truedarkness:cry_ingot"
+    },
+    "5": {
+      "item": "truedarkness:cry_ingot"
+    },
+    "6": {
+      "item": "truedarkness:cry_ingot"
+    },
+    "7": {
+      "item": "truedarkness:cry_ingot"
+    },
+    "8": {
+      "item": "truedarkness:cry_ingot"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cry_block",
+    "count": 1
+  }
+}

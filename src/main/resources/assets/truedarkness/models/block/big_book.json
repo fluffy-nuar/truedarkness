@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/book",
+  "textures": {
+    "all": "truedarkness:block/big_book",
+    "particle": "truedarkness:block/big_book",
+    "0": "truedarkness:block/tablecloth"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:flask"
+    },
+    {
+      "item": "truedarkness:coffee"
+    },
+    {
+      "item": "truedarkness:coffee"
+    },
+    {
+      "item": "truedarkness:coffee"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:coffee_flask",
+    "count": 1
+  }
+}

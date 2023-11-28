@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "truedarkness:block/stripped_mycelium_log",
+    "particle": "truedarkness:block/stripped_mycelium_log"
+  },
+  "render_type": "solid"
+}

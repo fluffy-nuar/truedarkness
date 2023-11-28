@@ -1,0 +1,30 @@
+{
+  "_fv": 47,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 1,
+    "texture": "corrupted_axe",
+    "customModelName": "corrupted_axe:default",
+    "name": "§5Corrupted Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TrueDarknessElementariy"
+    },
+    "harvestLevel": 1,
+    "efficiency": 9.0,
+    "attackSpeed": 1.5,
+    "enchantability": 0,
+    "damageVsEntity": 14.0,
+    "usageCount": 1021,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "CorruptedAxePriShchielchkiePKM"
+    }
+  }
+}

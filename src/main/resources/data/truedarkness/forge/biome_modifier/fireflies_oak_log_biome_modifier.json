@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "dark_forest",
+    "plains"
+  ],
+  "features": "truedarkness:fireflies_oak_log",
+  "step": "underground_ores"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_flower"
+    },
+    "title": {
+      "translate": "advancements.corrupted_bar_adv.title"
+    },
+    "description": {
+      "translate": "advancements.corrupted_bar_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "corrupted_bar_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:corrupted_place_adv"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "truedarkness:block/polished_swamp_cobblestone",
+    "particle": "truedarkness:block/polished_swamp_cobblestone"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:swamps",
+  "features": "truedarkness:swamp_tall_grass",
+  "step": "vegetal_decoration"
+}

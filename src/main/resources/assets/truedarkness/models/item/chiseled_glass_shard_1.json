@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/chiseled_glass_shard_1"
+  }
+}

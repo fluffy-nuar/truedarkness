@@ -1,0 +1,24 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Biomes",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [
+      {
+        "value": "CUSTOM:DenseLavenderField"
+      },
+      {
+        "value": "CUSTOM:GoldenBirchForest"
+      },
+      {
+        "value": "CUSTOM:GrimForest"
+      }
+    ],
+    "name": "is_overworld",
+    "namespace": "minecraft"
+  }
+}

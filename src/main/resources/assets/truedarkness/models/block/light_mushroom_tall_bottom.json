@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "truedarkness:block/glow_medium_fungus",
+    "particle": "truedarkness:block/glow_medium_fungus"
+  },
+  "render_type": "cutout"
+}

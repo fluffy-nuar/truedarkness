@@ -1,0 +1,27 @@
+{
+  "type": "truedarkness:darkness_spruce_fence",
+  "config": {
+    "size": 64,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:dark_oak_fence",
+            "Properties": {
+              "east": "false",
+              "north": "false",
+              "south": "false",
+              "waterlogged": "false",
+              "west": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:darkness_spruce_fence"
+        }
+      }
+    ]
+  }
+}

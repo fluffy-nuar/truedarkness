@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "edge": "truedarkness:block/glownite_grid",
+    "pane": "truedarkness:block/glownite_grid"
+  },
+  "render_type": "cutout"
+}

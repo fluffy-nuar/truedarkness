@@ -1,0 +1,15 @@
+{
+  "_fv": 47,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "Concentration",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "SplashPriNazhatiiKlavishi1"
+    },
+    "onKeyReleased": {
+      "name": "SplashPriOtpuskaniiKlavishi"
+    }
+  }
+}

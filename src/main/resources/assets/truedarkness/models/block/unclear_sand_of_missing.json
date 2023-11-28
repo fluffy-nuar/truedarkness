@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/mistful_sand_of_missing",
+    "up": "truedarkness:block/mistful_sand_of_missing",
+    "north": "truedarkness:block/mistful_sand_of_missing",
+    "east": "truedarkness:block/mistful_sand_of_missing",
+    "south": "truedarkness:block/mistful_sand_of_missing",
+    "west": "truedarkness:block/mistful_sand_of_missing",
+    "particle": "truedarkness:block/mistful_sand_of_missing"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/block_of_writings",
+    "up": "truedarkness:block/block_of_writings",
+    "north": "truedarkness:block/block_of_writings_glow_berry_jam",
+    "east": "truedarkness:block/block_of_writings_glow_berry_jam",
+    "south": "truedarkness:block/block_of_writings_glow_berry_jam",
+    "west": "truedarkness:block/block_of_writings_glow_berry_jam",
+    "particle": "truedarkness:block/block_of_writings"
+  },
+  "render_type": "solid"
+}

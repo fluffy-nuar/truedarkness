@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "truedarkness:cvetaliy_grain"
+    },
+    "3": {
+      "item": "truedarkness:cvetaliy_grain"
+    },
+    "4": {
+      "item": "truedarkness:swamp_pollen"
+    },
+    "5": {
+      "item": "truedarkness:cvetaliy_grain"
+    },
+    "7": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "truedarkness:deleted_mod_element",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "truedarkness:block/kettle"
+    },
+    "facing=east": {
+      "model": "truedarkness:block/kettle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "truedarkness:block/kettle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "truedarkness:block/kettle",
+      "y": 270
+    }
+  }
+}

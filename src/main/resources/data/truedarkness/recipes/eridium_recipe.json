@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:eridium_shard"
+    },
+    {
+      "item": "truedarkness:eridium_shard"
+    },
+    {
+      "item": "truedarkness:eridium_shard"
+    },
+    {
+      "item": "truedarkness:eridium_shard"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:eridium",
+    "count": 1
+  }
+}

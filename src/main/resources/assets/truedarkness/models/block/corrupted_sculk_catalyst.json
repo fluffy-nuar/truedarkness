@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/corrupted_catalyst_bottom",
+    "up": "truedarkness:block/corrupted_catalyst_top",
+    "north": "truedarkness:block/corrupted_catalyst_side",
+    "east": "truedarkness:block/corrupted_catalyst_side",
+    "south": "truedarkness:block/corrupted_catalyst_side",
+    "west": "truedarkness:block/corrupted_catalyst_side",
+    "particle": "truedarkness:block/corrupted_catalyst_bottom"
+  },
+  "render_type": "solid"
+}

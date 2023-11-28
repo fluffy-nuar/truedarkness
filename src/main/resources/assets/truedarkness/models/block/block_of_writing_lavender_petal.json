@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/block_of_writings",
+    "up": "truedarkness:block/block_of_writings",
+    "north": "truedarkness:block/block_of_writings_lavender_petal",
+    "east": "truedarkness:block/block_of_writings_lavender_petal",
+    "south": "truedarkness:block/block_of_writings_lavender_petal",
+    "west": "truedarkness:block/block_of_writings_lavender_petal",
+    "particle": "truedarkness:block/block_of_writings"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:blacksmite_forge"
+    },
+    "title": {
+      "translate": "advancements.use_blacksmite.title"
+    },
+    "description": {
+      "translate": "advancements.use_blacksmite.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "use_blacksmite": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:corrupted_human_adv"
+}

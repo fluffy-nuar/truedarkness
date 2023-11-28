@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "corrupted_bubble_top",
+        "3": "corrupted_bubble_side",
+        "4": "corrupt",
+        "5": "corrupted_bubble"
+      },
+      "name": "default"
+    },
+    "empty": {
+      "map": {
+        "1": "corrupted_bubble_top",
+        "3": "corrupted_bubble_side",
+        "4": "corrupt",
+        "5": "null"
+      },
+      "name": "empty"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GeneralArmor.body"
+    },
+    "name": "general_chestplate_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/gramite_ore",
+    "up": "truedarkness:block/gramite_ore",
+    "north": "truedarkness:block/gramite_ore",
+    "east": "truedarkness:block/gramite_ore",
+    "south": "truedarkness:block/gramite_ore",
+    "west": "truedarkness:block/gramite_ore",
+    "particle": "truedarkness:block/gramite_ore"
+  },
+  "render_type": "solid"
+}

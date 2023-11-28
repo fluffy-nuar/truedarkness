@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "4": "firenite_crossbow"
+      },
+      "name": "default"
+    },
+    "eridium": {
+      "map": {
+        "4": "firenite_crossbow_1"
+      },
+      "name": "eridium"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/polished_swamp_stone",
+    "up": "truedarkness:block/polished_swamp_stone",
+    "north": "truedarkness:block/polished_swamp_stone",
+    "east": "truedarkness:block/polished_swamp_stone",
+    "south": "truedarkness:block/polished_swamp_stone",
+    "west": "truedarkness:block/polished_swamp_stone",
+    "particle": "truedarkness:block/polished_swamp_stone"
+  },
+  "render_type": "solid"
+}

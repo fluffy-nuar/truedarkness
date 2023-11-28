@@ -1,0 +1,30 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:AquaticAmulet.body"
+      },
+      {
+        "value": "CUSTOM:SwampAmulet.body"
+      },
+      {
+        "value": "CUSTOM:SeaHeartAmulet.body"
+      },
+      {
+        "value": "CUSTOM:IcebergAmulet.body"
+      },
+      {
+        "value": "CUSTOM:CoralAmulet.body"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "amulets_tag",
+    "namespace": "forge"
+  }
+}

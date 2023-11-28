@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "truedarkness:block/cyan_planks",
+    "particle": "truedarkness:block/cyan_planks"
+  },
+  "render_type": "solid"
+}

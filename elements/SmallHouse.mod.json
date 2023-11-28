@@ -1,0 +1,30 @@
+{
+  "_fv": 47,
+  "_type": "structure",
+  "definition": {
+    "structure": "small_house",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 750000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Underground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 6,
+    "spawnZOffset": 6,
+    "spawnWorldTypes": [
+      "CUSTOM:Yteria"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:SwampBlackSoil"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Swamps"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

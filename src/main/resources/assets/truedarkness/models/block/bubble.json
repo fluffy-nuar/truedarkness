@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/bubble",
+  "textures": {
+    "all": "truedarkness:block/bubble",
+    "particle": "truedarkness:block/bubble",
+    "0": "truedarkness:block/bubble"
+  },
+  "render_type": "translucent"
+}

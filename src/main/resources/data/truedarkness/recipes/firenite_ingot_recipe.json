@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:cvetalit_shard"
+    },
+    {
+      "item": "truedarkness:raw_firenite"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:firenite_ingot",
+    "count": 1
+  }
+}

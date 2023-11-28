@@ -1,0 +1,7 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "truedarkness:block/darkness_spruce_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,20 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "sculk_grail_top",
+        "1": "sculk_grail",
+        "2": "sculk_grail_side"
+      },
+      "name": "default"
+    },
+    "soul_master": {
+      "map": {
+        "0": "soul_master_top",
+        "1": "ancient_sculk",
+        "2": "soul_master"
+      },
+      "name": "soul_master"
+    }
+  }
+}

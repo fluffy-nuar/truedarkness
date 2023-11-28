@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/kettle",
+  "textures": {
+    "all": "truedarkness:block/kettle",
+    "particle": "truedarkness:block/kettle",
+    "2": "truedarkness:block/kettle"
+  },
+  "render_type": "cutout"
+}

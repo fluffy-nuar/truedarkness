@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CvetaliyGrain"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CvetaliyGrain"
+      },
+      {
+        "value": "CUSTOM:SwampPollen"
+      },
+      {
+        "value": "CUSTOM:CvetaliyGrain"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BOWL"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CleaningDust"
+    },
+    "name": "cleaning_dust_recipe",
+    "namespace": "mod"
+  }
+}

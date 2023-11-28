@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0 2",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:cursed_metal"
+    },
+    "2": {
+      "item": "truedarkness:cursed_metal"
+    },
+    "3": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "4": {
+      "item": "truedarkness:gramite_stick"
+    },
+    "5": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "7": {
+      "item": "truedarkness:gramite_stick"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cursed_battle_axe",
+    "count": 1
+  }
+}

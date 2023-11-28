@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "truedarkness:swamp_lily"
+  },
+  "addition": {
+    "item": "truedarkness:echo_mirror"
+  },
+  "result": {
+    "item": "minecraft:lily_of_the_valley"
+  }
+}

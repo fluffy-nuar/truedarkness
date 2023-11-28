@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:crying_planks"
+    },
+    "3": {
+      "item": "truedarkness:crying_planks"
+    },
+    "4": {
+      "item": "truedarkness:crying_planks"
+    },
+    "6": {
+      "item": "truedarkness:crying_planks"
+    },
+    "7": {
+      "item": "truedarkness:crying_planks"
+    },
+    "8": {
+      "item": "truedarkness:crying_planks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:crying_stairs",
+    "count": 4
+  }
+}

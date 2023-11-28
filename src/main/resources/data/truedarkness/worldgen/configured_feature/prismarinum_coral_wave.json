@@ -1,0 +1,23 @@
+{
+  "type": "truedarkness:prismarinum_coral_wave",
+  "config": {
+    "size": 64,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:bubble_coral",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:prismarinum_coral_wave"
+        }
+      }
+    ]
+  }
+}

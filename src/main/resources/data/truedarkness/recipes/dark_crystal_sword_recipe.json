@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "truedarkness:firenite_sword"
+  },
+  "addition": {
+    "item": "truedarkness:dark_crystal"
+  },
+  "result": {
+    "item": "truedarkness:dark_crystal_sword"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "type": "truedarkness:ancient_sculk",
+  "config": {
+    "size": 30,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:ancient_sculk"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:ancient_sculk"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:sculk"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:ancient_sculk"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:swamp_stone"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:ancient_sculk"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:cobbled_deepslate"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:ancient_sculk"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:ancient_sculk"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:renteria_sand"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:ancient_sculk"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:crenrit"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:ancient_sculk"
+        }
+      }
+    ]
+  }
+}

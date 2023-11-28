@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:accustone_pebbles"
+    },
+    {
+      "item": "truedarkness:swamp_terracota"
+    },
+    {
+      "item": "truedarkness:accustone_pebbles"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:polished_accustone",
+    "count": 1
+  }
+}

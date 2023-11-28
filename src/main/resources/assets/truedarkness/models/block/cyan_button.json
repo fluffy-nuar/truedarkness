@@ -1,0 +1,7 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "truedarkness:block/cyan_planks"
+  },
+  "render_type": "solid"
+}

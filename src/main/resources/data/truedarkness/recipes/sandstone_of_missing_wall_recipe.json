@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:sandstone_of_missing"
+    },
+    "1": {
+      "item": "truedarkness:sandstone_of_missing"
+    },
+    "2": {
+      "item": "truedarkness:sandstone_of_missing"
+    },
+    "3": {
+      "item": "truedarkness:sandstone_of_missing"
+    },
+    "4": {
+      "item": "truedarkness:sandstone_of_missing"
+    },
+    "5": {
+      "item": "truedarkness:sandstone_of_missing"
+    }
+  },
+  "result": {
+    "item": "truedarkness:sandstone_of_missing_wall",
+    "count": 6
+  }
+}

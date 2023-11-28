@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/shabby_melon_top",
+    "up": "truedarkness:block/shabby_melon_top",
+    "north": "truedarkness:block/shabby_melon_side",
+    "east": "truedarkness:block/shabby_melon_side",
+    "south": "truedarkness:block/shabby_melon_side",
+    "west": "truedarkness:block/shabby_melon_side",
+    "particle": "truedarkness:block/shabby_melon_top"
+  },
+  "render_type": "solid"
+}

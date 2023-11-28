@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "truedarkness:block/dust_clay_bricks",
+    "top": "truedarkness:block/dust_clay_bricks",
+    "side": "truedarkness:block/dust_clay_bricks"
+  },
+  "render_type": "solid"
+}

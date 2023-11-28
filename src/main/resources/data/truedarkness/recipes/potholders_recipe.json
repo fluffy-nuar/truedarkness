@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01",
+    " 3"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "1": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "3": {
+      "item": "minecraft:rabbit_hide"
+    }
+  },
+  "result": {
+    "item": "truedarkness:potholders",
+    "count": 1
+  }
+}

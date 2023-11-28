@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "corrupted_human"
+      },
+      "name": "default"
+    }
+  }
+}

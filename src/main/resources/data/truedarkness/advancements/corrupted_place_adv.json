@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupt"
+    },
+    "title": {
+      "translate": "advancements.corrupted_place_adv.title"
+    },
+    "description": {
+      "translate": "advancements.corrupted_place_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "corrupted_place_adv": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "truedarkness:corrupted_place"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:yteria_adv"
+}

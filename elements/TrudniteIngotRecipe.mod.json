@@ -1,0 +1,22 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 250,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:RawTrudnite"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:TrudniteIngot"
+    },
+    "name": "trudnite_ingot_recipe",
+    "namespace": "mod"
+  }
+}

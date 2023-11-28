@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 250,
+  "ingredient": {
+    "item": "truedarkness:corrupted_firenite_sword"
+  },
+  "result": "truedarkness:firenite_scrap"
+}

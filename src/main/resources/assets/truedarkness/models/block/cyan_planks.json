@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "truedarkness:block/cyan_planks",
+    "particle": "truedarkness:block/cyan_planks"
+  },
+  "render_type": "solid"
+}

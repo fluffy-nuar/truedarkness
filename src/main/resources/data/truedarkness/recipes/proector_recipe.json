@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0 2",
+    " 4 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:reel"
+    },
+    "2": {
+      "item": "truedarkness:reel"
+    },
+    "4": {
+      "item": "minecraft:copper_ingot"
+    },
+    "6": {
+      "item": "minecraft:copper_ingot"
+    },
+    "7": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "8": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "truedarkness:proector",
+    "count": 1
+  }
+}

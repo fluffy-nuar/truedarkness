@@ -1,0 +1,20 @@
+{
+  "_fv": 47,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGH",
+    "components": [],
+    "baseTexture": "spore.png",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "SporesProc"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

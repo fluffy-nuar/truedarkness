@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:glow_berry_jam"
+    },
+    "title": {
+      "translate": "advancements.all_for_tea.title"
+    },
+    "description": {
+      "translate": "advancements.all_for_tea.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "all_for_tea": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:samovar_adv"
+}

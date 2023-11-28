@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:fake_fence",
+    "truedarkness:mycelium_fence",
+    "truedarkness:cyan_fence",
+    "truedarkness:crying_fence",
+    "truedarkness:dried_fence",
+    "truedarkness:darkness_spruce_fence"
+  ]
+}

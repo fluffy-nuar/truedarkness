@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "truedarkness:block/darknite",
+    "top": "truedarkness:block/darknite",
+    "side": "truedarkness:block/darknite"
+  },
+  "render_type": "solid"
+}

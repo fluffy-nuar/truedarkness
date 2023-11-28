@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/soul_anchor",
+  "textures": {
+    "all": "truedarkness:block/soul_anchor",
+    "particle": "truedarkness:block/soul_anchor",
+    "0": "truedarkness:block/soul_anchor"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:darknite"
+    },
+    "1": {
+      "item": "truedarkness:darknite"
+    },
+    "2": {
+      "item": "truedarkness:darknite"
+    },
+    "3": {
+      "item": "truedarkness:darknite"
+    },
+    "4": {
+      "item": "truedarkness:darknite"
+    },
+    "5": {
+      "item": "truedarkness:darknite"
+    }
+  },
+  "result": {
+    "item": "truedarkness:darknite_wall",
+    "count": 6
+  }
+}

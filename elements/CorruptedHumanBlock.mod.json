@@ -1,0 +1,122 @@
+{
+  "_fv": 47,
+  "_type": "plant",
+  "definition": {
+    "renderType": 2,
+    "texture": "corrupted_human",
+    "textureBottom": "",
+    "customModelName": "corrupted_human:default",
+    "itemTexture": "corrupted_human",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 0,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": true,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 12.0,
+        "My": 18.0,
+        "Mz": 12.0,
+        "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 4.0,
+        "My": 18.0,
+        "Mz": 16.0,
+        "subtract": true
+      },
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 18.0,
+        "Mz": 4.0,
+        "subtract": true
+      }
+    ],
+    "name": "Corrupted Human",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TrueDarknessElementriy"
+    },
+    "hardness": 2.0,
+    "resistance": 8.0,
+    "luminance": 0,
+    "unbreakable": false,
+    "isSolid": true,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "LANTERN"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": true,
+    "customDrop": {
+      "value": "Blocks.AIR"
+    },
+    "dropAmount": 0,
+    "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "XZ",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:Corrupt"
+      }
+    ],
+    "isBonemealable": false,
+    "frequencyOnChunks": 30,
+    "spawnWorldTypes": [
+      "CUSTOM:Yteria"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:CorruptedPlace"
+      }
+    ],
+    "generationType": "Grass",
+    "patchSize": 6,
+    "generateAtAnyHeight": true,
+    "onDestroyedByPlayer": {
+      "name": "CorruptedHumanBlockKoghdaRastieniieRazrushienoIghrokom"
+    },
+    "onStartToDestroy": {
+      "name": "CorruptedHumanBlockKoghdaNachnietsiaUnichtozhieniie"
+    }
+  }
+}

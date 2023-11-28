@@ -1,0 +1,22 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:SwampCobblestone"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:PolishedSwampCobblestone"
+    },
+    "name": "polished_swamp_cobblestone_recipe_1",
+    "namespace": "mod"
+  }
+}

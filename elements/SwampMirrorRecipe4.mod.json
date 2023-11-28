@@ -1,0 +1,25 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:SwampLily"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:SwampMirror"
+    },
+    "smithingReturnStack": {
+      "value": "Blocks.LILY_OF_THE_VALLEY"
+    },
+    "name": "swamp_mirror_recipe_4",
+    "namespace": "mod"
+  }
+}

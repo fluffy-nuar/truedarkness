@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "truedarkness:fake_planks"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:fake_button",
+    "count": 1
+  }
+}

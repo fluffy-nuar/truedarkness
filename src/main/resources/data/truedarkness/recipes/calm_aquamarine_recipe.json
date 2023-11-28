@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:cvetaliy_grain"
+    },
+    {
+      "item": "truedarkness:cvetaliy_grain"
+    },
+    {
+      "item": "truedarkness:soul_bottle"
+    },
+    {
+      "item": "truedarkness:cvetaliy_grain"
+    },
+    {
+      "item": "truedarkness:cvetaliy_grain"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:calm_aquamarine",
+    "count": 1
+  }
+}

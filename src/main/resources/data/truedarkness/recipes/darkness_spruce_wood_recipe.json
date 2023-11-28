@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:darkness_spruce_log"
+    },
+    "1": {
+      "item": "truedarkness:darkness_spruce_log"
+    },
+    "2": {
+      "item": "truedarkness:darkness_spruce_log"
+    },
+    "3": {
+      "item": "truedarkness:darkness_spruce_log"
+    }
+  },
+  "result": {
+    "item": "truedarkness:darkness_spruce_wood",
+    "count": 3
+  }
+}

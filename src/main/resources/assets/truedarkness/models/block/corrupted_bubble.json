@@ -1,0 +1,12 @@
+{
+  "parent": "truedarkness:custom/corrupted_bubble",
+  "textures": {
+    "all": "truedarkness:block/corrupted_bubble",
+    "particle": "truedarkness:block/corrupted_bubble",
+    "1": "truedarkness:block/corrupted_bubble_top",
+    "3": "truedarkness:block/corrupted_bubble_side",
+    "4": "truedarkness:block/corrupt",
+    "5": "truedarkness:block/corrupted_bubble"
+  },
+  "render_type": "cutout"
+}

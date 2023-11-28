@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "tag": "minecraft:sand"
+  },
+  "addition": {
+    "item": "truedarkness:echo_mirror"
+  },
+  "result": {
+    "item": "truedarkness:swamp_sand"
+  }
+}

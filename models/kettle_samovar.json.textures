@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "kettle"
+      },
+      "name": "default"
+    },
+    "copper": {
+      "map": {
+        "2": "copper_kettle"
+      },
+      "name": "copper"
+    }
+  }
+}

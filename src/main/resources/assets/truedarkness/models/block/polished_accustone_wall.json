@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "truedarkness:block/polished_accustone",
+    "particle": "truedarkness:block/polished_accustone"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "truedarkness:block/glow_planks",
+    "top": "truedarkness:block/glow_planks",
+    "side": "truedarkness:block/glow_planks"
+  },
+  "render_type": "solid"
+}

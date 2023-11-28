@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:deleted_mod_element"
+    },
+    "title": {
+      "translate": "advancements.antienite_adv.title"
+    },
+    "description": {
+      "translate": "advancements.antienite_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "antienite_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:gramite_weapon_adv"
+}

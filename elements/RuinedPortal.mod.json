@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "structure",
+  "definition": {
+    "structure": "ruin_of_portal",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 750000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Underground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 5,
+    "spawnZOffset": 2,
+    "spawnWorldTypes": [
+      "CUSTOM:Yteria"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:SandOfMissingLayer"
+      },
+      {
+        "value": "CUSTOM:SwampSand"
+      },
+      {
+        "value": "CUSTOM:SandOfMissing"
+      },
+      {
+        "value": "CUSTOM:SwampSandLayer"
+      },
+      {
+        "value": "CUSTOM:TrapSandOfMissing"
+      },
+      {
+        "value": "CUSTOM:UnclearSandOfMissing"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:SwamdWasteland"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "RuinedPortalDopolnitielnoieUsloviieGienieratsii"
+    }
+  }
+}

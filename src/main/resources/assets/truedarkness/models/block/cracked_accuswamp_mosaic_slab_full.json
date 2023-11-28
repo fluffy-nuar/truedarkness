@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "truedarkness:block/cracked_accuswamp_mosaic",
+    "top": "truedarkness:block/cracked_accuswamp_mosaic",
+    "side": "truedarkness:block/cracked_accuswamp_mosaic"
+  },
+  "render_type": "solid"
+}

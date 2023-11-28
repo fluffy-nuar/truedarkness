@@ -1,0 +1,22 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:SlicedStem"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:SmokedSlicedStem"
+    },
+    "name": "smoked_sliced_stem_recipe",
+    "namespace": "mod"
+  }
+}

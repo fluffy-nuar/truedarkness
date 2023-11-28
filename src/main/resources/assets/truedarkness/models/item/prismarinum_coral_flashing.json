@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/prismarinume_coral_flashing"
+  },
+  "render_type": "translucent"
+}

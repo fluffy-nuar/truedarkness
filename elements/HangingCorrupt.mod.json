@@ -1,0 +1,42 @@
+{
+  "_fv": 47,
+  "_type": "structure",
+  "definition": {
+    "structure": "hanging_corrupt",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 1000000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 5,
+    "spawnLocation": "Underground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:Yteria"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.VOID_AIR"
+      },
+      {
+        "value": "Blocks.CAVE_AIR"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:CorruptedPlace"
+      }
+    ],
+    "ignoreBlocks": "AIR",
+    "generateCondition": {
+      "name": "HangingCorruptDopolnitielnoieUsloviieGienieratsii"
+    },
+    "onStructureGenerated": {
+      "name": "HangingCorruptNaPrimierieStrukturySghienierirovano"
+    }
+  }
+}

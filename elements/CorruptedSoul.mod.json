@@ -1,0 +1,21 @@
+{
+  "_fv": 47,
+  "_type": "particle",
+  "definition": {
+    "texture": "corrupted_soul.png",
+    "animate": true,
+    "frameDuration": 2,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 1.0,
+    "speedFactor": 1.0,
+    "gravity": -0.1,
+    "maxAge": 40,
+    "maxAgeDiff": 12,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "TRANSLUCENT"
+  }
+}

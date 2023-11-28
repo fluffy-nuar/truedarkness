@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:polished_sandstone_bricks_of_missing"
+    },
+    "1": {
+      "item": "truedarkness:dead_bush_swamp"
+    }
+  },
+  "result": {
+    "item": "truedarkness:bushed_polished_sandstone_bricks_of_missing",
+    "count": 1
+  }
+}

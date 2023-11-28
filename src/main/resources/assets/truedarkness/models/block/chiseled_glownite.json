@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/chiseled_glownite_block",
+    "up": "truedarkness:block/chiseled_glownite_block",
+    "north": "truedarkness:block/chiseled_glownite_block",
+    "east": "truedarkness:block/chiseled_glownite_block",
+    "south": "truedarkness:block/chiseled_glownite_block",
+    "west": "truedarkness:block/chiseled_glownite_block",
+    "particle": "truedarkness:block/chiseled_glownite_block"
+  },
+  "render_type": "solid"
+}

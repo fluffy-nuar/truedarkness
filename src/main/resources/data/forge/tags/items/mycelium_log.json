@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:mycelium_wood",
+    "truedarkness:stripped_mycelium_wood",
+    "truedarkness:mycelium_log",
+    "truedarkness:stripped_mycelium_log"
+  ]
+}

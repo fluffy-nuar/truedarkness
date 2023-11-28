@@ -1,0 +1,25 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "soulsteal_grid",
+        "1": "light_of_soul"
+      },
+      "name": "default"
+    },
+    "strange_sorrupted_slime": {
+      "map": {
+        "0": "corrupted_bubble",
+        "1": "corrupted_slime"
+      },
+      "name": "strange_sorrupted_slime"
+    },
+    "glownite": {
+      "map": {
+        "0": "soulsteal_grid",
+        "1": "glow_glownite"
+      },
+      "name": "glownite"
+    }
+  }
+}

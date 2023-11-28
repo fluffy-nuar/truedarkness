@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/tablecloth",
+  "textures": {
+    "all": "truedarkness:block/tablecloth_block",
+    "particle": "truedarkness:block/tablecloth_block",
+    "0": "truedarkness:block/tablecloth"
+  },
+  "render_type": "cutout"
+}

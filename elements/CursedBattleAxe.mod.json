@@ -1,0 +1,34 @@
+{
+  "_fv": 47,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "texture": "cursed_axe",
+    "customModelName": "Normal",
+    "name": "Cursed Battle Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:TrueDarknessElementariy"
+    },
+    "harvestLevel": 5,
+    "efficiency": 4.0,
+    "attackSpeed": 1.1,
+    "enchantability": 1,
+    "damageVsEntity": 11.0,
+    "usageCount": 2031,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:CursedMetal"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "CursedBattleAxePriShchielchkiePravoiKnopkoiMyshiNaBlokie"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "truedarkness:lighted_vine_active",
+  "config": {
+    "size": 1,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:air"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:lighted_vine_active"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:lighted_vine"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:lighted_vine_active"
+        }
+      }
+    ]
+  }
+}

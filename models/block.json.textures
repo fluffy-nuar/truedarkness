@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "corrupted_catalyst_top",
+        "1": "corrupted_catalyst_side",
+        "2": "corrupted_catalyst_bottom"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/eridium_block",
+    "up": "truedarkness:block/eridium_block",
+    "north": "truedarkness:block/eridium_block",
+    "east": "truedarkness:block/eridium_block",
+    "south": "truedarkness:block/eridium_block",
+    "west": "truedarkness:block/eridium_block",
+    "particle": "truedarkness:block/eridium_block"
+  },
+  "render_type": "solid"
+}

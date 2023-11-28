@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "1": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "2": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "3": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "4": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "5": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "6": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "7": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "8": {
+      "item": "truedarkness:eridium_shard"
+    }
+  },
+  "result": {
+    "item": "truedarkness:eridium_block",
+    "count": 1
+  }
+}

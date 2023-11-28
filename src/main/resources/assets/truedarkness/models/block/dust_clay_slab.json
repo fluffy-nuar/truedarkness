@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "truedarkness:block/dust_clay",
+    "top": "truedarkness:block/dust_clay",
+    "side": "truedarkness:block/dust_clay"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:light_of_soul_gen",
+  "config": {
+    "size": 2,
+    "discard_chance_on_air_exposure": 1,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "block_match",
+          "block": "truedarkness:swamp_stone"
+        },
+        "state": {
+          "Name": "truedarkness:light_of_soul"
+        }
+      }
+    ]
+  }
+}

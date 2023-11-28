@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "truedarkness:cryer_tear"
+    },
+    "3": {
+      "item": "truedarkness:cryer_tear"
+    },
+    "4": {
+      "tag": "minecraft:planks"
+    },
+    "5": {
+      "item": "truedarkness:cryer_tear"
+    },
+    "7": {
+      "item": "truedarkness:cryer_tear"
+    }
+  },
+  "result": {
+    "item": "truedarkness:crying_planks",
+    "count": 1
+  }
+}

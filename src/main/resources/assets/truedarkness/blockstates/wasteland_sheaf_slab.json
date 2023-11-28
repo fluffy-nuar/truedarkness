@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/wasteland_sheaf_slab"
+    },
+    "type=top": {
+      "model": "truedarkness:block/wasteland_sheaf_slab_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/wasteland_sheaf_slab_full"
+    }
+  }
+}

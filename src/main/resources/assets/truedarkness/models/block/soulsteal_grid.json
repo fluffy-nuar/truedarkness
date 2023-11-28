@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/soulsteal_grid",
+    "up": "truedarkness:block/soulsteal_grid",
+    "north": "truedarkness:block/soulsteal_grid",
+    "east": "truedarkness:block/soulsteal_grid",
+    "south": "truedarkness:block/soulsteal_grid",
+    "west": "truedarkness:block/soulsteal_grid",
+    "particle": "truedarkness:block/soulsteal_grid"
+  },
+  "render_type": "cutout"
+}

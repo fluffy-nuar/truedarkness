@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "truedarkness:block/polished_swamp_stone",
+    "top": "truedarkness:block/polished_swamp_stone",
+    "side": "truedarkness:block/polished_swamp_stone"
+  },
+  "render_type": "solid"
+}

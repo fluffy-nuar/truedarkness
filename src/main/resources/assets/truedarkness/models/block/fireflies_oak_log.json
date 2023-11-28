@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/oak_log_top",
+    "up": "truedarkness:block/oak_log_top",
+    "north": "truedarkness:block/fireflies_oak_wood",
+    "east": "truedarkness:block/fireflies_oak_wood",
+    "south": "truedarkness:block/fireflies_oak_wood",
+    "west": "truedarkness:block/fireflies_oak_wood",
+    "particle": "truedarkness:block/oak_log_top"
+  },
+  "render_type": "solid"
+}

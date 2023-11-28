@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "truedarkness:swamp_pollen"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    }
+  ],
+  "result": {
+    "item": "minecraft:bone_meal",
+    "count": 7
+  }
+}

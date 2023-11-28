@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:cyan_log"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:cyan_planks",
+    "count": 4
+  }
+}

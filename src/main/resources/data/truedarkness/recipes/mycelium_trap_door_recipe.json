@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:mycelium_planks"
+    },
+    "1": {
+      "item": "truedarkness:mycelium_planks"
+    },
+    "2": {
+      "item": "truedarkness:mycelium_planks"
+    },
+    "3": {
+      "item": "truedarkness:mycelium_planks"
+    },
+    "4": {
+      "item": "truedarkness:mycelium_planks"
+    },
+    "5": {
+      "item": "truedarkness:mycelium_planks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:mycelium_trap_door",
+    "count": 2
+  }
+}

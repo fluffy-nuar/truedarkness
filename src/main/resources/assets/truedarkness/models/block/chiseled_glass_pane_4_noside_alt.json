@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_noside_alt",
+  "textures": {
+    "pane": "truedarkness:block/chiseled_glass_4"
+  },
+  "render_type": "translucent"
+}

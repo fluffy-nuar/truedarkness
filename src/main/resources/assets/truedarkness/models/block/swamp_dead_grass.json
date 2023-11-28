@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "truedarkness:block/swamp_daed_grass",
+    "particle": "truedarkness:block/swamp_daed_grass"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "truedarkness:block/cyan_stem",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "truedarkness:block/cyan_stem"
+    },
+    "axis=z": {
+      "model": "truedarkness:block/cyan_stem",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "truedarkness:swamp_black_soil"
+    }
+  ],
+  "result": {
+    "item": "truedarkness:swamp_blacksoil_cover",
+    "count": 1
+  }
+}

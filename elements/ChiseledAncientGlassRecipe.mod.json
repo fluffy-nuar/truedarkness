@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EmptyChiseledAncientGlassShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EmptyChiseledAncientGlassShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EmptyChiseledAncientGlassShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EmptyChiseledAncientGlassShard"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EmptyChiseledAncientGlass"
+    },
+    "name": "chiseled_ancient_glass_recipe",
+    "namespace": "mod"
+  }
+}

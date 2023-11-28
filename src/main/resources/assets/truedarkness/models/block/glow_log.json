@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/glow_fungus_top",
+    "up": "truedarkness:block/glow_fungus_top",
+    "north": "truedarkness:block/glow_fungus",
+    "east": "truedarkness:block/glow_fungus",
+    "south": "truedarkness:block/glow_fungus",
+    "west": "truedarkness:block/glow_fungus",
+    "particle": "truedarkness:block/glow_fungus_top"
+  },
+  "render_type": "solid"
+}

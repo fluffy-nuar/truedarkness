@@ -1,0 +1,23 @@
+{
+  "type": "truedarkness:swamp_seaweed",
+  "config": {
+    "size": 1,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:water",
+            "Properties": {
+              "level": "0"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:swamp_seaweed"
+        }
+      }
+    ]
+  }
+}

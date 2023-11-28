@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CyanPlanks"
+      },
+      {
+        "value": "CUSTOM:CyanPlanks"
+      },
+      {
+        "value": "CUSTOM:CyanPlanks"
+      },
+      {
+        "value": "Items.BOOK"
+      },
+      {
+        "value": "Items.BOOK"
+      },
+      {
+        "value": "Items.BOOK"
+      },
+      {
+        "value": "CUSTOM:CyanPlanks"
+      },
+      {
+        "value": "CUSTOM:CyanPlanks"
+      },
+      {
+        "value": "CUSTOM:CyanPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CyanBookshelf"
+    },
+    "name": "bookshelf_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:swamp_stone"
+    },
+    "1": {
+      "item": "truedarkness:swamp_stone"
+    },
+    "2": {
+      "item": "truedarkness:swamp_stone"
+    }
+  },
+  "result": {
+    "item": "truedarkness:swamp_stone_slab",
+    "count": 6
+  }
+}

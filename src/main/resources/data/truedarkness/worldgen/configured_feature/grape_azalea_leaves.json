@@ -1,0 +1,41 @@
+{
+  "type": "truedarkness:grape_azalea_leaves",
+  "config": {
+    "size": 2,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:azalea_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:grape_azalea_leaves"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:flowering_azalea_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:grape_azalea_leaves"
+        }
+      }
+    ]
+  }
+}

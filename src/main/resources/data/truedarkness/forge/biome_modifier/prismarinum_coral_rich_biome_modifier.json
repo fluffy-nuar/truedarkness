@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:swamps",
+    "truedarkness:mine"
+  ],
+  "features": "truedarkness:prismarinum_coral_rich",
+  "step": "underground_ores"
+}

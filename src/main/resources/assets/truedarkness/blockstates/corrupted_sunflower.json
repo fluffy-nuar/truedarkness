@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "truedarkness:block/corrupted_sunflower"
+    },
+    "half=lower": {
+      "model": "truedarkness:block/corrupted_sunflower_bottom"
+    }
+  }
+}

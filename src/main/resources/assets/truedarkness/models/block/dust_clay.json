@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/dust_clay",
+    "up": "truedarkness:block/dust_clay",
+    "north": "truedarkness:block/dust_clay",
+    "east": "truedarkness:block/dust_clay",
+    "south": "truedarkness:block/dust_clay",
+    "west": "truedarkness:block/dust_clay",
+    "particle": "truedarkness:block/dust_clay"
+  },
+  "render_type": "solid"
+}

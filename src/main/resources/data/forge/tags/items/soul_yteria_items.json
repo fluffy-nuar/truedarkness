@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:swamp_terracota",
+    "truedarkness:swamp_soil",
+    "truedarkness:swamp_cobblestone",
+    "truedarkness:swamp_stone",
+    "truedarkness:dust_block",
+    "truedarkness:swamp_mud",
+    "truedarkness:sand_of_missing",
+    "truedarkness:swamp_black_soil",
+    "truedarkness:swamp_sand",
+    "truedarkness:swamp_dirt",
+    "truedarkness:sandstone_of_missing"
+  ]
+}

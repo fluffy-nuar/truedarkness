@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "truedarkness:block/lavender_2",
+    "particle": "truedarkness:block/lavender_2"
+  },
+  "render_type": "cutout"
+}

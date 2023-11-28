@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "truedarkness:textures/screens/swamps_stone.png",
+    "icon": {
+      "item": "truedarkness:skrezhal"
+    },
+    "title": {
+      "translate": "advancements.yteria_adv.title"
+    },
+    "description": {
+      "translate": "advancements.yteria_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "yteria_adv": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "truedarkness:yteria"
+      }
+    }
+  }
+}
