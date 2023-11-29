@@ -15,7 +15,7 @@
         "value": "CUSTOM:SoulstealNugget"
       },
       {
-        "value": ""
+        "value": "CUSTOM:PollenFeather"
       },
       {
         "value": "CUSTOM:SoulstealNugget"
@@ -24,19 +24,19 @@
         "value": "CUSTOM:SoulstealIngot"
       },
       {
+        "value": "CUSTOM:PollenFeather"
+      },
+      {
+        "value": "CUSTOM:SoulstealIngot"
+      },
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      },
+      {
         "value": ""
       },
       {
-        "value": "CUSTOM:SoulstealIngot"
-      },
-      {
-        "value": "CUSTOM:SoulstealIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SoulstealIngot"
+        "value": "CUSTOM:SoulstealNugget"
       }
     ],
     "recipeReturnStack": {

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    " 4 ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "1": {
+      "item": "truedarkness:soulsteal_ingot"
+    },
+    "2": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "4": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "6": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "8": {
+      "item": "truedarkness:soulsteal_nugget"
+    }
+  },
+  "result": {
+    "item": "truedarkness:soulsteal_grid",
+    "count": 32
+  }
+}

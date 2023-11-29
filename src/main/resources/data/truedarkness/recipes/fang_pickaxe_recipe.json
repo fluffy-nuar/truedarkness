@@ -3,21 +3,27 @@
   "category": "misc",
   "pattern": [
     "012",
-    " 4 ",
+    "345",
     " 7 "
   ],
   "key": {
     "0": {
-      "item": "truedarkness:corrupted_hand_fangs"
+      "item": "truedarkness:eridium_shard"
     },
     "1": {
       "item": "truedarkness:cursed_metal"
     },
     "2": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "3": {
       "item": "truedarkness:corrupted_hand_fangs"
     },
     "4": {
       "item": "truedarkness:soulsteal_pickaxe"
+    },
+    "5": {
+      "item": "truedarkness:corrupted_hand_fangs"
     },
     "7": {
       "item": "truedarkness:eridium_heart"

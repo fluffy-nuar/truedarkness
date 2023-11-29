@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Crafting",
+    "recipeType": "Smithing",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
@@ -10,36 +10,13 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": "CUSTOM:CursedMetal"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CursedMetal"
-      },
-      {
-        "value": "CUSTOM:EridiumShard"
-      },
-      {
-        "value": "CUSTOM:GramiteStick"
-      },
-      {
-        "value": "CUSTOM:EridiumShard"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:GramiteStick"
-      },
-      {
-        "value": ""
-      }
-    ],
-    "recipeReturnStack": {
+    "smithingInputStack": {
+      "value": "CUSTOM:SoulstealAxe"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:CursedMetal"
+    },
+    "smithingReturnStack": {
       "value": "CUSTOM:CursedBattleAxe"
     },
     "name": "cursed_battle_axe_recipe",

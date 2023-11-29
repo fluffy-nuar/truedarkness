@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "Blocks.CHAIN"
+      },
+      {
+        "value": "CUSTOM:GeneralScale"
+      },
+      {
+        "value": "Blocks.CHAIN"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.CHAIN"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GeneralArmor.legs"
+    },
+    "name": "general_laggings",
+    "namespace": "mod"
+  }
+}

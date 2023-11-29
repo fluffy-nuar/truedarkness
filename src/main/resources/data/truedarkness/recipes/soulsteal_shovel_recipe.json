@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "minecraft:diamond_shovel"
+  },
+  "addition": {
+    "item": "truedarkness:soulsteal_ingot"
+  },
+  "result": {
+    "item": "truedarkness:soulsteal_shovel"
+  }
+}

@@ -2,15 +2,31 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0",
-    "1"
+    " 1 ",
+    "345",
+    "678"
   ],
   "key": {
-    "0": {
+    "1": {
       "item": "minecraft:copper_ingot"
     },
-    "1": {
+    "3": {
+      "item": "minecraft:copper_ingot"
+    },
+    "4": {
       "item": "minecraft:bucket"
+    },
+    "5": {
+      "item": "minecraft:copper_ingot"
+    },
+    "6": {
+      "item": "minecraft:copper_ingot"
+    },
+    "7": {
+      "item": "minecraft:copper_ingot"
+    },
+    "8": {
+      "item": "minecraft:copper_ingot"
     }
   },
   "result": {

@@ -2,25 +2,31 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
+    "012",
     "345",
     " 7 "
   ],
   "key": {
+    "0": {
+      "item": "truedarkness:cursed_metal"
+    },
     "1": {
+      "item": "truedarkness:eridium_heart"
+    },
+    "2": {
       "item": "truedarkness:cursed_metal"
     },
     "3": {
-      "item": "truedarkness:eridium_bone"
+      "item": "truedarkness:soulsteal_nugget"
     },
     "4": {
-      "item": "truedarkness:eridium_heart"
+      "item": "truedarkness:eridium_glass"
     },
     "5": {
-      "item": "truedarkness:eridium_bone"
+      "item": "truedarkness:soulsteal_nugget"
     },
     "7": {
-      "item": "truedarkness:cursed_metal"
+      "item": "minecraft:stick"
     }
   },
   "result": {

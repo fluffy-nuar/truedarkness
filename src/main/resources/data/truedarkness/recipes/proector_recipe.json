@@ -3,7 +3,7 @@
   "category": "misc",
   "pattern": [
     "0 2",
-    " 4 ",
+    "345",
     "678"
   ],
   "key": {
@@ -13,14 +13,20 @@
     "2": {
       "item": "truedarkness:reel"
     },
+    "3": {
+      "tag": "minecraft:planks"
+    },
     "4": {
       "item": "minecraft:copper_ingot"
     },
+    "5": {
+      "tag": "minecraft:planks"
+    },
     "6": {
-      "item": "minecraft:copper_ingot"
+      "tag": "minecraft:planks"
     },
     "7": {
-      "item": "minecraft:dark_oak_planks"
+      "item": "minecraft:lantern"
     },
     "8": {
       "item": "minecraft:copper_ingot"

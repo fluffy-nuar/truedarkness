@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 32,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      },
+      {
+        "value": "CUSTOM:SoulstealIngot"
+      },
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SoulstealGrid"
+    },
+    "name": "soulsteal_grid_recipe",
+    "namespace": "mod"
+  }
+}

@@ -216,12 +216,13 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.ERIDIUM_GOLEM_SPAWN_EGG.get());
 				tabData.accept(TruedarknessModItems.CRYER_SPAWN_EGG.get());
 				tabData.accept(TruedarknessModItems.FUNGUM_SPAWN_EGG.get());
+				tabData.accept(TruedarknessModItems.MUSIC_DISC_HOLLOW.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_LAPIS.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_RAIN.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_TURQUOISE_FLOWER.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_FOREST_NIGHT.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_HUMILITY.get());
-				tabData.accept(TruedarknessModItems.MUSIC_DISC_HOLLOW.get());
+				tabData.accept(TruedarknessModItems.SOULSTEAL_SMITHING_TEMPLATE.get());
 			})
 
 					.build());

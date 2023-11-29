@@ -12,22 +12,22 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:CorruptedHandFangs"
+        "value": "CUSTOM:EridiumShard"
       },
       {
         "value": "CUSTOM:CursedMetal"
       },
       {
-        "value": "CUSTOM:CorruptedHandFangs"
+        "value": "CUSTOM:EridiumShard"
       },
       {
-        "value": ""
+        "value": "CUSTOM:CorruptedHandFangs"
       },
       {
         "value": "CUSTOM:SoulstealPickaxe"
       },
       {
-        "value": ""
+        "value": "CUSTOM:CorruptedHandFangs"
       },
       {
         "value": ""

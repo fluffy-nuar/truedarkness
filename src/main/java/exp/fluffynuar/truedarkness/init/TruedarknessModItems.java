@@ -36,6 +36,7 @@ import exp.fluffynuar.truedarkness.item.StoneHeartItem;
 import exp.fluffynuar.truedarkness.item.SporeVineItemItem;
 import exp.fluffynuar.truedarkness.item.SoulstealWingsItem;
 import exp.fluffynuar.truedarkness.item.SoulstealSwordItem;
+import exp.fluffynuar.truedarkness.item.SoulstealSmithingTemplateItem;
 import exp.fluffynuar.truedarkness.item.SoulstealShovelItem;
 import exp.fluffynuar.truedarkness.item.SoulstealShardItem;
 import exp.fluffynuar.truedarkness.item.SoulstealPickaxeItem;
@@ -752,11 +753,13 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> ERIDIUM_GOLEM_SPAWN_EGG = REGISTRY.register("eridium_golem_spawn_egg", () -> new ForgeSpawnEggItem(TruedarknessModEntities.ERIDIUM_GOLEM, -12058463, -16447193, new Item.Properties()));
 	public static final RegistryObject<Item> CRYER_SPAWN_EGG = REGISTRY.register("cryer_spawn_egg", () -> new ForgeSpawnEggItem(TruedarknessModEntities.CRYER, -16705255, -16726300, new Item.Properties()));
 	public static final RegistryObject<Item> FUNGUM_SPAWN_EGG = REGISTRY.register("fungum_spawn_egg", () -> new ForgeSpawnEggItem(TruedarknessModEntities.FUNGUM, -11413010, -16376270, new Item.Properties()));
+	public static final RegistryObject<Item> MUSIC_DISC_HOLLOW = REGISTRY.register("music_disc_hollow", () -> new MusicDiscHollowItem());
 	public static final RegistryObject<Item> MUSIC_DISC_LAPIS = REGISTRY.register("music_disc_lapis", () -> new MusicDiscLapisItem());
 	public static final RegistryObject<Item> MUSIC_DISC_RAIN = REGISTRY.register("music_disc_rain", () -> new MusicDiscRainItem());
 	public static final RegistryObject<Item> MUSIC_DISC_TURQUOISE_FLOWER = REGISTRY.register("music_disc_turquoise_flower", () -> new MusicDiscTurquoiseFlowerItem());
 	public static final RegistryObject<Item> MUSIC_DISC_FOREST_NIGHT = REGISTRY.register("music_disc_forest_night", () -> new MusicDiscForestNightItem());
 	public static final RegistryObject<Item> MUSIC_DISC_HUMILITY = REGISTRY.register("music_disc_humility", () -> new MusicDiscHumilityItem());
+	public static final RegistryObject<Item> SOULSTEAL_SMITHING_TEMPLATE = REGISTRY.register("soulsteal_smithing_template", () -> new SoulstealSmithingTemplateItem());
 	public static final RegistryObject<Item> CUP_WATER = REGISTRY.register("cup_water", () -> new CupWaterItem());
 	public static final RegistryObject<Item> WATER_FLASK = REGISTRY.register("water_flask", () -> new WaterFlaskItem());
 	public static final RegistryObject<Item> LAVENDER_TEA = REGISTRY.register("lavender_tea", () -> new LavenderTeaItem());
@@ -831,7 +834,6 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> SPORE_VINE_1 = block(TruedarknessModBlocks.SPORE_VINE_1);
 	public static final RegistryObject<Item> SPORE_VINE_2 = block(TruedarknessModBlocks.SPORE_VINE_2);
 	public static final RegistryObject<Item> GLOW_FUNGUS_HAT_0 = block(TruedarknessModBlocks.GLOW_FUNGUS_HAT_0);
-	public static final RegistryObject<Item> MUSIC_DISC_HOLLOW = REGISTRY.register("music_disc_hollow", () -> new MusicDiscHollowItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -12,28 +12,28 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
-      },
-      {
         "value": "CUSTOM:CursedMetal"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:EridiumBone"
       },
       {
         "value": "CUSTOM:EridiumHeart"
       },
       {
-        "value": "CUSTOM:EridiumBone"
+        "value": "CUSTOM:CursedMetal"
+      },
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      },
+      {
+        "value": "CUSTOM:EridiumGlass"
+      },
+      {
+        "value": "CUSTOM:SoulstealNugget"
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:CursedMetal"
+        "value": "Items.STICK"
       },
       {
         "value": ""

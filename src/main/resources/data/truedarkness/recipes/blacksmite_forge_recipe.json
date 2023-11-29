@@ -4,29 +4,35 @@
   "pattern": [
     "012",
     "345",
-    " 7 "
+    "678"
   ],
   "key": {
     "0": {
-      "item": "truedarkness:swamp_cobblestone"
+      "item": "minecraft:iron_trapdoor"
     },
     "1": {
-      "item": "truedarkness:swamp_cobblestone"
+      "item": "minecraft:iron_trapdoor"
     },
     "2": {
-      "item": "truedarkness:swamp_cobblestone"
+      "item": "minecraft:iron_trapdoor"
     },
     "3": {
       "item": "truedarkness:gramite_shard"
     },
     "4": {
-      "item": "truedarkness:swamp_sand"
+      "item": "truedarkness:darknite"
     },
     "5": {
       "item": "truedarkness:gramite_shard"
     },
+    "6": {
+      "item": "truedarkness:gramite_shard"
+    },
     "7": {
       "item": "minecraft:bucket"
+    },
+    "8": {
+      "item": "truedarkness:gramite_shard"
     }
   },
   "result": {

@@ -2,21 +2,25 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    " 4 "
+    " 1 ",
+    "345",
+    " 7 "
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:soulsteal_shard"
-    },
     "1": {
       "item": "truedarkness:corrupted_slime"
     },
-    "2": {
-      "item": "truedarkness:soulsteal_shard"
+    "3": {
+      "item": "truedarkness:soulsteal_nugget"
     },
     "4": {
-      "item": "truedarkness:cursed_metal"
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "7": {
+      "item": "minecraft:stick"
     }
   },
   "result": {

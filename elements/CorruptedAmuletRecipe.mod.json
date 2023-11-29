@@ -12,28 +12,28 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CursedMetal"
+        "value": "CUSTOM:EridiumShard"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": "CUSTOM:CorruptedHandFangs"
       },
       {
         "value": "CUSTOM:EmptyTreasureAmulet"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
         "value": "CUSTOM:CorruptedHandFangs"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EridiumHeart"
       },
       {
         "value": ""

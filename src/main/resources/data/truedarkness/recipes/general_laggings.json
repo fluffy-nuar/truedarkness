@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:general_scale"
+    },
+    "1": {
+      "item": "truedarkness:general_scale"
+    },
+    "2": {
+      "item": "truedarkness:general_scale"
+    },
+    "3": {
+      "item": "truedarkness:general_scale"
+    },
+    "4": {
+      "item": "minecraft:chain"
+    },
+    "5": {
+      "item": "truedarkness:general_scale"
+    },
+    "6": {
+      "item": "minecraft:chain"
+    },
+    "8": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+    "item": "truedarkness:general_leggings",
+    "count": 1
+  }
+}

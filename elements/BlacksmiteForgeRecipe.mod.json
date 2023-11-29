@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:SwampCobblestone"
+        "value": "Blocks.IRON_TRAPDOOR"
       },
       {
-        "value": "CUSTOM:SwampCobblestone"
+        "value": "Blocks.IRON_TRAPDOOR"
       },
       {
-        "value": "CUSTOM:SwampCobblestone"
-      },
-      {
-        "value": "CUSTOM:GramiteShard"
-      },
-      {
-        "value": "CUSTOM:SwampSand"
+        "value": "Blocks.IRON_TRAPDOOR"
       },
       {
         "value": "CUSTOM:GramiteShard"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Darknite"
+      },
+      {
+        "value": "CUSTOM:GramiteShard"
+      },
+      {
+        "value": "CUSTOM:GramiteShard"
       },
       {
         "value": "Items.BUCKET"
       },
       {
-        "value": ""
+        "value": "CUSTOM:GramiteShard"
       }
     ],
     "recipeReturnStack": {
