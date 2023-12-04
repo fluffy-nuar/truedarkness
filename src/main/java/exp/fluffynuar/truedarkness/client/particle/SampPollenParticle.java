@@ -37,7 +37,7 @@ public class SampPollenParticle extends TextureSheetParticle {
 	protected SampPollenParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(0.2f, 0.2f);
+		this.setSize(1f, 1f);
 		this.lifetime = (int) Math.max(1, 20 + (this.random.nextInt(10) - 5));
 		this.gravity = 0.8f;
 		this.hasPhysics = true;

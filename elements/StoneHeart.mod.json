@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "soul_pierce",
+    "texture": "soul_heart",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

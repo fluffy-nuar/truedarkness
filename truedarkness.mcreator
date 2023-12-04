@@ -142,7 +142,7 @@
     {
       "name": "FireniteArmor",
       "type": "armor",
-      "sortid": 423,
+      "sortid": 424,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firenite_armor",
@@ -163,7 +163,7 @@
     {
       "name": "FireniteIngot",
       "type": "item",
-      "sortid": 417,
+      "sortid": 418,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firenite_ingot",
@@ -856,7 +856,7 @@
     {
       "name": "EridiumShard",
       "type": "item",
-      "sortid": 441,
+      "sortid": 442,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eridium_shard",
@@ -925,7 +925,7 @@
     {
       "name": "Corrupted",
       "type": "armor",
-      "sortid": 414,
+      "sortid": 415,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupted",
@@ -1046,7 +1046,7 @@
     {
       "name": "Flow",
       "type": "livingentity",
-      "sortid": 506,
+      "sortid": 507,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flow",
@@ -2022,7 +2022,7 @@
     {
       "name": "EridiumBone",
       "type": "item",
-      "sortid": 439,
+      "sortid": 440,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eridium_bone",
@@ -2262,7 +2262,7 @@
     {
       "name": "MusicDiscLapis",
       "type": "musicdisc",
-      "sortid": 516,
+      "sortid": 517,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_disc_lapis",
@@ -4087,7 +4087,7 @@
     {
       "name": "WasteRuner",
       "type": "livingentity",
-      "sortid": 511,
+      "sortid": 512,
       "compiles": true,
       "locked_code": false,
       "registry_name": "waste_runner",
@@ -4505,7 +4505,7 @@
     {
       "name": "FireniteSword",
       "type": "tool",
-      "sortid": 418,
+      "sortid": 419,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firenite_sword",
@@ -4519,7 +4519,7 @@
     {
       "name": "FireniteAxe",
       "type": "tool",
-      "sortid": 419,
+      "sortid": 420,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firenite_axe",
@@ -4533,7 +4533,7 @@
     {
       "name": "FireniteShovel",
       "type": "tool",
-      "sortid": 420,
+      "sortid": 421,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firenite_shovel",
@@ -4547,7 +4547,7 @@
     {
       "name": "FirenitePickaxe",
       "type": "tool",
-      "sortid": 421,
+      "sortid": 422,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firenite_pickaxe",
@@ -5233,7 +5233,7 @@
     {
       "name": "SkulkedSword",
       "type": "tool",
-      "sortid": 486,
+      "sortid": 487,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculked_sword",
@@ -5247,7 +5247,7 @@
     {
       "name": "SkulkedShovel",
       "type": "tool",
-      "sortid": 488,
+      "sortid": 489,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculked_shovel",
@@ -5261,7 +5261,7 @@
     {
       "name": "SkulkedAxe",
       "type": "tool",
-      "sortid": 487,
+      "sortid": 488,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculked_axe",
@@ -5275,7 +5275,7 @@
     {
       "name": "SkulkedPickaxe",
       "type": "tool",
-      "sortid": 489,
+      "sortid": 490,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculked_pickaxe",
@@ -5289,7 +5289,7 @@
     {
       "name": "SkulkedHoe",
       "type": "tool",
-      "sortid": 490,
+      "sortid": 491,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculked_hoe",
@@ -5495,7 +5495,7 @@
     {
       "name": "Cryer",
       "type": "livingentity",
-      "sortid": 513,
+      "sortid": 514,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cryer",
@@ -5557,7 +5557,7 @@
     {
       "name": "CorruptedAxe",
       "type": "tool",
-      "sortid": 453,
+      "sortid": 454,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupted_axe",
@@ -6725,7 +6725,7 @@
     {
       "name": "RawFirenite",
       "type": "item",
-      "sortid": 416,
+      "sortid": 417,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raw_firenite",
@@ -7506,7 +7506,7 @@
     {
       "name": "GramiteDagger",
       "type": "tool",
-      "sortid": 408,
+      "sortid": 409,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gramite_dagger",
@@ -7555,7 +7555,7 @@
     {
       "name": "GramitePickaxe",
       "type": "tool",
-      "sortid": 411,
+      "sortid": 412,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gramite_pickaxe",
@@ -7569,7 +7569,7 @@
     {
       "name": "GramiteHoe",
       "type": "tool",
-      "sortid": 412,
+      "sortid": 413,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gramite_hoe",
@@ -7583,7 +7583,7 @@
     {
       "name": "GramiteBattleAxe",
       "type": "tool",
-      "sortid": 409,
+      "sortid": 410,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gramite_battle_axe",
@@ -7597,7 +7597,7 @@
     {
       "name": "GramiteShovel",
       "type": "tool",
-      "sortid": 410,
+      "sortid": 411,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gramite_shovel",
@@ -7628,7 +7628,7 @@
     {
       "name": "GramiteStick",
       "type": "item",
-      "sortid": 407,
+      "sortid": 408,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gramite_stick",
@@ -8042,7 +8042,7 @@
     {
       "name": "FireniteHoe",
       "type": "tool",
-      "sortid": 422,
+      "sortid": 423,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firenite_hoe",
@@ -9219,7 +9219,7 @@
     {
       "name": "MusicDiscTurquoiseFlower",
       "type": "musicdisc",
-      "sortid": 518,
+      "sortid": 519,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_disc_turquoise_flower",
@@ -9233,7 +9233,7 @@
     {
       "name": "MusicDiscRain",
       "type": "musicdisc",
-      "sortid": 517,
+      "sortid": 518,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_disc_rain",
@@ -9759,7 +9759,7 @@
     {
       "name": "FireniteScrap",
       "type": "item",
-      "sortid": 413,
+      "sortid": 414,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firenite_scrap",
@@ -9867,7 +9867,7 @@
     {
       "name": "EridiumMirror",
       "type": "item",
-      "sortid": 442,
+      "sortid": 443,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cursed_mirror",
@@ -10309,7 +10309,7 @@
     {
       "name": "Cvetaliy",
       "type": "item",
-      "sortid": 403,
+      "sortid": 404,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cvetaliy",
@@ -10323,7 +10323,7 @@
     {
       "name": "CalmAquamarine",
       "type": "item",
-      "sortid": 459,
+      "sortid": 460,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calm_aquamarine",
@@ -10337,7 +10337,7 @@
     {
       "name": "AquamarineMirror",
       "type": "item",
-      "sortid": 457,
+      "sortid": 458,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aquamarine_mirror",
@@ -11168,7 +11168,7 @@
     {
       "name": "SwampSlimy",
       "type": "item",
-      "sortid": 397,
+      "sortid": 398,
       "compiles": true,
       "locked_code": false,
       "registry_name": "swamp_slimy",
@@ -11270,7 +11270,7 @@
     {
       "name": "CorruptedKnight",
       "type": "livingentity",
-      "sortid": 507,
+      "sortid": 508,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupted_knight",
@@ -11302,7 +11302,7 @@
     {
       "name": "DarknessSpruceShield",
       "type": "rangeditem",
-      "sortid": 424,
+      "sortid": 425,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkness_spruce_shield",
@@ -11356,7 +11356,7 @@
     {
       "name": "CorruptedFireniteSword",
       "type": "tool",
-      "sortid": 415,
+      "sortid": 416,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupted_firenite_sword",
@@ -11426,7 +11426,7 @@
     {
       "name": "GramiteShard",
       "type": "item",
-      "sortid": 406,
+      "sortid": 407,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gramite_shard",
@@ -12140,7 +12140,7 @@
     {
       "name": "Grimnite",
       "type": "item",
-      "sortid": 395,
+      "sortid": 396,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_crystal_shard",
@@ -12356,7 +12356,7 @@
     {
       "name": "SwampSalmon",
       "type": "livingentity",
-      "sortid": 505,
+      "sortid": 506,
       "compiles": true,
       "locked_code": false,
       "registry_name": "swamp_cod_entity",
@@ -12489,7 +12489,7 @@
     {
       "name": "EridiumZombie",
       "type": "livingentity",
-      "sortid": 510,
+      "sortid": 511,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eridium_zombie",
@@ -12742,7 +12742,7 @@
     {
       "name": "General",
       "type": "livingentity",
-      "sortid": 509,
+      "sortid": 510,
       "compiles": true,
       "locked_code": false,
       "registry_name": "general",
@@ -12791,7 +12791,7 @@
     {
       "name": "GeneralArmor",
       "type": "armor",
-      "sortid": 455,
+      "sortid": 456,
       "compiles": true,
       "locked_code": false,
       "registry_name": "general",
@@ -13612,7 +13612,7 @@
     {
       "name": "CvetaliyCrown",
       "type": "armor",
-      "sortid": 405,
+      "sortid": 406,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cvetaliy_crown",
@@ -14777,7 +14777,7 @@
     {
       "name": "CvetalitShard",
       "type": "item",
-      "sortid": 402,
+      "sortid": 403,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cvetalit_shard",
@@ -14791,7 +14791,7 @@
     {
       "name": "CvetaliyGrain",
       "type": "item",
-      "sortid": 401,
+      "sortid": 402,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cvetaliy_grain",
@@ -15046,7 +15046,7 @@
     {
       "name": "Fungum",
       "type": "livingentity",
-      "sortid": 514,
+      "sortid": 515,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fungum",
@@ -15082,7 +15082,7 @@
     {
       "name": "EridiumGolem",
       "type": "livingentity",
-      "sortid": 512,
+      "sortid": 513,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eridium_golem",
@@ -15210,7 +15210,7 @@
     {
       "name": "EridiumHeart",
       "type": "item",
-      "sortid": 440,
+      "sortid": 441,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eridium_heart",
@@ -15878,7 +15878,7 @@
     {
       "name": "DarkCrystalClaster",
       "type": "item",
-      "sortid": 396,
+      "sortid": 397,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_crystal",
@@ -15991,7 +15991,7 @@
     {
       "name": "AquamarineCoin",
       "type": "item",
-      "sortid": 458,
+      "sortid": 459,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aquamarine_coin",
@@ -16402,7 +16402,7 @@
     {
       "name": "CursedMetal",
       "type": "item",
-      "sortid": 444,
+      "sortid": 445,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cursed_metal",
@@ -16416,7 +16416,7 @@
     {
       "name": "EchoStone",
       "type": "item",
-      "sortid": 491,
+      "sortid": 492,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_stone",
@@ -16430,7 +16430,7 @@
     {
       "name": "CursedBattleAxe",
       "type": "tool",
-      "sortid": 445,
+      "sortid": 446,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cursed_battle_axe",
@@ -16444,7 +16444,7 @@
     {
       "name": "ScilkedApple",
       "type": "item",
-      "sortid": 484,
+      "sortid": 485,
       "compiles": true,
       "locked_code": false,
       "registry_name": "scuiked_apple",
@@ -16458,7 +16458,7 @@
     {
       "name": "SculkRing",
       "type": "item",
-      "sortid": 493,
+      "sortid": 494,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_sandglass",
@@ -16628,7 +16628,7 @@
     {
       "name": "EchoFeather",
       "type": "item",
-      "sortid": 500,
+      "sortid": 501,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_feather",
@@ -16698,7 +16698,7 @@
     {
       "name": "SculkRing1",
       "type": "item",
-      "sortid": 499,
+      "sortid": 500,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculk_ring",
@@ -16792,7 +16792,7 @@
     {
       "name": "EchoKnife",
       "type": "tool",
-      "sortid": 497,
+      "sortid": 498,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_knife",
@@ -16992,7 +16992,7 @@
     {
       "name": "CorruptedAmulet",
       "type": "armor",
-      "sortid": 452,
+      "sortid": 453,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupted_amulet",
@@ -17092,7 +17092,7 @@
     {
       "name": "MusicDiscHumility",
       "type": "musicdisc",
-      "sortid": 520,
+      "sortid": 521,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_disc_humility",
@@ -17106,7 +17106,7 @@
     {
       "name": "MusicDiscForestNight",
       "type": "musicdisc",
-      "sortid": 519,
+      "sortid": 520,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_disc_forest_night",
@@ -17611,7 +17611,7 @@
     {
       "name": "PhasmaSword",
       "type": "tool",
-      "sortid": 461,
+      "sortid": 462,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cry_sword",
@@ -17625,7 +17625,7 @@
     {
       "name": "CorruptedHand",
       "type": "livingentity",
-      "sortid": 508,
+      "sortid": 509,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupted_hand",
@@ -17910,7 +17910,7 @@
     {
       "name": "CorruptedHandFangs",
       "type": "item",
-      "sortid": 447,
+      "sortid": 448,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupted_hand_fangs",
@@ -18035,7 +18035,7 @@
     {
       "name": "CryHammer",
       "type": "tool",
-      "sortid": 463,
+      "sortid": 464,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cry_hammer",
@@ -18471,7 +18471,7 @@
     {
       "name": "TrudniteIngot",
       "type": "item",
-      "sortid": 478,
+      "sortid": 479,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trudnite_ingot",
@@ -18485,7 +18485,7 @@
     {
       "name": "RawTrudnite",
       "type": "item",
-      "sortid": 477,
+      "sortid": 478,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raw_trudnite",
@@ -18519,7 +18519,7 @@
     {
       "name": "CryIngot",
       "type": "item",
-      "sortid": 460,
+      "sortid": 461,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cry_ingot",
@@ -18880,7 +18880,7 @@
     {
       "name": "CryPickaxe",
       "type": "tool",
-      "sortid": 462,
+      "sortid": 463,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cry_pickaxe",
@@ -19384,7 +19384,7 @@
     {
       "name": "SwampMirror",
       "type": "item",
-      "sortid": 504,
+      "sortid": 505,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_mirror",
@@ -19803,7 +19803,7 @@
     {
       "name": "Trudnite",
       "type": "armor",
-      "sortid": 479,
+      "sortid": 480,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trudnite",
@@ -21032,7 +21032,7 @@
     {
       "name": "MeteniteShard",
       "type": "item",
-      "sortid": 480,
+      "sortid": 481,
       "compiles": true,
       "locked_code": false,
       "registry_name": "metenite_shard",
@@ -21421,7 +21421,7 @@
     {
       "name": "MeteniteIngot",
       "type": "item",
-      "sortid": 482,
+      "sortid": 483,
       "compiles": true,
       "locked_code": false,
       "registry_name": "metenite_ingot",
@@ -21435,7 +21435,7 @@
     {
       "name": "MeteniteArmor",
       "type": "armor",
-      "sortid": 483,
+      "sortid": 484,
       "compiles": true,
       "locked_code": false,
       "registry_name": "metenite",
@@ -21634,7 +21634,7 @@
     {
       "name": "FangPickaxe",
       "type": "tool",
-      "sortid": 448,
+      "sortid": 449,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fang_pickaxe",
@@ -22630,7 +22630,7 @@
     {
       "name": "SculkGrail",
       "type": "block",
-      "sortid": 495,
+      "sortid": 496,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculk_grail",
@@ -22726,7 +22726,7 @@
     {
       "name": "SoulMaster",
       "type": "block",
-      "sortid": 496,
+      "sortid": 497,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_master",
@@ -22806,7 +22806,7 @@
     {
       "name": "SoulStone",
       "type": "item",
-      "sortid": 472,
+      "sortid": 473,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_stone",
@@ -22820,7 +22820,7 @@
     {
       "name": "StoneHeart",
       "type": "item",
-      "sortid": 475,
+      "sortid": 476,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_heart",
@@ -22834,7 +22834,7 @@
     {
       "name": "SoulBottle",
       "type": "item",
-      "sortid": 471,
+      "sortid": 472,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_bottle",
@@ -22899,7 +22899,7 @@
     {
       "name": "AncientMirrorReinforce",
       "type": "item",
-      "sortid": 476,
+      "sortid": 477,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_mirror",
@@ -22975,7 +22975,7 @@
     {
       "name": "SoulWings",
       "type": "item",
-      "sortid": 474,
+      "sortid": 475,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_wings",
@@ -23121,7 +23121,7 @@
     {
       "name": "SoulSpool",
       "type": "item",
-      "sortid": 473,
+      "sortid": 474,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_spool",
@@ -23434,7 +23434,7 @@
     {
       "name": "StoneMetal",
       "type": "item",
-      "sortid": 425,
+      "sortid": 426,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_metal",
@@ -23518,7 +23518,7 @@
     {
       "name": "PoorSlime",
       "type": "item",
-      "sortid": 398,
+      "sortid": 399,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poor_slime",
@@ -23532,7 +23532,7 @@
     {
       "name": "SmallPoorSlime",
       "type": "item",
-      "sortid": 399,
+      "sortid": 400,
       "compiles": true,
       "locked_code": false,
       "registry_name": "small_poor_slime",
@@ -23574,7 +23574,7 @@
     {
       "name": "MushroomHat",
       "type": "item",
-      "sortid": 400,
+      "sortid": 401,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_hat",
@@ -23693,7 +23693,7 @@
     {
       "name": "SoulstealIngot",
       "type": "item",
-      "sortid": 426,
+      "sortid": 427,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_ingot",
@@ -23707,7 +23707,7 @@
     {
       "name": "SoulstealShard",
       "type": "item",
-      "sortid": 427,
+      "sortid": 428,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_shard",
@@ -23738,7 +23738,7 @@
     {
       "name": "SoulstealSword",
       "type": "tool",
-      "sortid": 432,
+      "sortid": 433,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_sword",
@@ -23752,7 +23752,7 @@
     {
       "name": "SoulstealAxe",
       "type": "tool",
-      "sortid": 433,
+      "sortid": 434,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_axe",
@@ -23766,7 +23766,7 @@
     {
       "name": "SoulstealPickaxe",
       "type": "tool",
-      "sortid": 435,
+      "sortid": 436,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_pickaxe",
@@ -23780,7 +23780,7 @@
     {
       "name": "SoulstealShovel",
       "type": "tool",
-      "sortid": 434,
+      "sortid": 435,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_shovel",
@@ -23794,7 +23794,7 @@
     {
       "name": "SoulstealHoe",
       "type": "tool",
-      "sortid": 436,
+      "sortid": 437,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_hoe",
@@ -23808,7 +23808,7 @@
     {
       "name": "SoulstealHammer",
       "type": "tool",
-      "sortid": 437,
+      "sortid": 438,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_hammer",
@@ -23822,7 +23822,7 @@
     {
       "name": "SoulstealKnife",
       "type": "tool",
-      "sortid": 438,
+      "sortid": 439,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_knife",
@@ -23872,7 +23872,7 @@
     {
       "name": "SoulstealHeart",
       "type": "item",
-      "sortid": 429,
+      "sortid": 430,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_heart",
@@ -23886,7 +23886,7 @@
     {
       "name": "SoulstealWings",
       "type": "item",
-      "sortid": 430,
+      "sortid": 431,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_wings",
@@ -23914,7 +23914,7 @@
     {
       "name": "SoulstealNugget",
       "type": "item",
-      "sortid": 428,
+      "sortid": 429,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_nugget",
@@ -24040,7 +24040,7 @@
     {
       "name": "SculkManaBottle",
       "type": "item",
-      "sortid": 485,
+      "sortid": 486,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculk_mana_bottle",
@@ -24114,7 +24114,7 @@
     {
       "name": "StoneSpool",
       "type": "item",
-      "sortid": 431,
+      "sortid": 432,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stone_spool",
@@ -24754,7 +24754,7 @@
     {
       "name": "BubbleRod",
       "type": "item",
-      "sortid": 446,
+      "sortid": 447,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bubble_rod",
@@ -24853,7 +24853,7 @@
     {
       "name": "ToolFang",
       "type": "item",
-      "sortid": 449,
+      "sortid": 450,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tool_fang",
@@ -25414,7 +25414,7 @@
     {
       "name": "CursedPapyrus",
       "type": "item",
-      "sortid": 451,
+      "sortid": 452,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cursed_papyrus",
@@ -25428,7 +25428,7 @@
     {
       "name": "CursedSword",
       "type": "tool",
-      "sortid": 450,
+      "sortid": 451,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cursed_sword",
@@ -25462,7 +25462,7 @@
     {
       "name": "GeneralKnife",
       "type": "tool",
-      "sortid": 456,
+      "sortid": 457,
       "compiles": true,
       "locked_code": false,
       "registry_name": "general_knife",
@@ -25476,7 +25476,7 @@
     {
       "name": "GeneralHeart",
       "type": "item",
-      "sortid": 467,
+      "sortid": 468,
       "compiles": true,
       "locked_code": false,
       "registry_name": "general_heart",
@@ -25510,7 +25510,7 @@
     {
       "name": "GeneralWings",
       "type": "item",
-      "sortid": 466,
+      "sortid": 467,
       "compiles": true,
       "locked_code": false,
       "registry_name": "general_wings",
@@ -25587,7 +25587,7 @@
     {
       "name": "GeneralRegulation",
       "type": "item",
-      "sortid": 465,
+      "sortid": 466,
       "compiles": true,
       "locked_code": false,
       "registry_name": "general_regulation",
@@ -25601,7 +25601,7 @@
     {
       "name": "HeartEridium",
       "type": "item",
-      "sortid": 443,
+      "sortid": 444,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heart_eridium",
@@ -25667,7 +25667,7 @@
     {
       "name": "RealGeneralSword",
       "type": "tool",
-      "sortid": 464,
+      "sortid": 465,
       "compiles": true,
       "locked_code": false,
       "registry_name": "real_general_sword",
@@ -25681,7 +25681,7 @@
     {
       "name": "GeneralMirror",
       "type": "item",
-      "sortid": 468,
+      "sortid": 469,
       "compiles": true,
       "locked_code": false,
       "registry_name": "general_mirror",
@@ -25748,7 +25748,7 @@
     {
       "name": "EchoHeart",
       "type": "item",
-      "sortid": 503,
+      "sortid": 504,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_heart",
@@ -25762,7 +25762,7 @@
     {
       "name": "EchoHammer",
       "type": "tool",
-      "sortid": 494,
+      "sortid": 495,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_hammer",
@@ -25812,7 +25812,7 @@
     {
       "name": "EchoSpool",
       "type": "item",
-      "sortid": 501,
+      "sortid": 502,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_spool",
@@ -25826,7 +25826,7 @@
     {
       "name": "EchoWings",
       "type": "item",
-      "sortid": 502,
+      "sortid": 503,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_wings",
@@ -25840,7 +25840,7 @@
     {
       "name": "EchoHarp",
       "type": "item",
-      "sortid": 492,
+      "sortid": 493,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_harp",
@@ -25854,7 +25854,7 @@
     {
       "name": "EchoPapyrus",
       "type": "item",
-      "sortid": 498,
+      "sortid": 499,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_papyrus",
@@ -26533,7 +26533,7 @@
     {
       "name": "GlowniteIngot",
       "type": "item",
-      "sortid": 404,
+      "sortid": 405,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glownite_ingot",
@@ -27190,7 +27190,7 @@
     {
       "name": "SoulGrain",
       "type": "item",
-      "sortid": 469,
+      "sortid": 470,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_grain",
@@ -27204,7 +27204,7 @@
     {
       "name": "SoulCrystal",
       "type": "item",
-      "sortid": 470,
+      "sortid": 471,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_crystal",
@@ -27266,7 +27266,7 @@
     {
       "name": "MeteniteCrystal",
       "type": "item",
-      "sortid": 481,
+      "sortid": 482,
       "compiles": true,
       "locked_code": false,
       "registry_name": "metenite_crystal",
@@ -27280,7 +27280,7 @@
     {
       "name": "GeneralScale",
       "type": "item",
-      "sortid": 454,
+      "sortid": 455,
       "compiles": true,
       "locked_code": false,
       "registry_name": "general_scale",
@@ -27593,7 +27593,7 @@
     {
       "name": "MusicDiscHollow",
       "type": "musicdisc",
-      "sortid": 515,
+      "sortid": 516,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_disc_hollow",
@@ -27621,7 +27621,7 @@
     {
       "name": "SoulstealSmithingTemplate",
       "type": "item",
-      "sortid": 521,
+      "sortid": 395,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsteal_smithing_template",

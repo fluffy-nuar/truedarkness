@@ -621,6 +621,7 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> AQUATIC_HELMET = REGISTRY.register("aquatic_helmet", () -> new AquaticItem.Helmet());
 	public static final RegistryObject<Item> AQUATIC_BOOTS = REGISTRY.register("aquatic_boots", () -> new AquaticItem.Boots());
 	public static final RegistryObject<Item> ENCORITE_SHARD = REGISTRY.register("encorite_shard", () -> new EncoriteShardItem());
+	public static final RegistryObject<Item> SOULSTEAL_SMITHING_TEMPLATE = REGISTRY.register("soulsteal_smithing_template", () -> new SoulstealSmithingTemplateItem());
 	public static final RegistryObject<Item> DARK_CRYSTAL_SHARD = REGISTRY.register("dark_crystal_shard", () -> new GrimniteItem());
 	public static final RegistryObject<Item> DARK_CRYSTAL = REGISTRY.register("dark_crystal", () -> new DarkCrystalClasterItem());
 	public static final RegistryObject<Item> SWAMP_SLIMY = REGISTRY.register("swamp_slimy", () -> new SwampSlimyItem());
@@ -759,7 +760,6 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> MUSIC_DISC_TURQUOISE_FLOWER = REGISTRY.register("music_disc_turquoise_flower", () -> new MusicDiscTurquoiseFlowerItem());
 	public static final RegistryObject<Item> MUSIC_DISC_FOREST_NIGHT = REGISTRY.register("music_disc_forest_night", () -> new MusicDiscForestNightItem());
 	public static final RegistryObject<Item> MUSIC_DISC_HUMILITY = REGISTRY.register("music_disc_humility", () -> new MusicDiscHumilityItem());
-	public static final RegistryObject<Item> SOULSTEAL_SMITHING_TEMPLATE = REGISTRY.register("soulsteal_smithing_template", () -> new SoulstealSmithingTemplateItem());
 	public static final RegistryObject<Item> CUP_WATER = REGISTRY.register("cup_water", () -> new CupWaterItem());
 	public static final RegistryObject<Item> WATER_FLASK = REGISTRY.register("water_flask", () -> new WaterFlaskItem());
 	public static final RegistryObject<Item> LAVENDER_TEA = REGISTRY.register("lavender_tea", () -> new LavenderTeaItem());

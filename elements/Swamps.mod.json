@@ -41,7 +41,7 @@
     "particleToSpawn": {
       "value": "CUSTOM:SampPollen"
     },
-    "particlesProbability": 0.4,
+    "particlesProbability": 0.7,
     "rainingPossibility": 0.0,
     "temperature": 0.5,
     "spawnBiome": false,
@@ -60,7 +60,7 @@
       "max": 0.71
     },
     "genErosion": {
-      "min": 0.5993000000000002,
+      "min": 0.5992000000000002,
       "max": 1.0
     },
     "genWeirdness": {

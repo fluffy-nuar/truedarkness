@@ -38,7 +38,7 @@ public class SoulAnchorBlock extends Block implements SimpleWaterloggedBlock {
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public SoulAnchorBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(5f, 99999f).lightLevel(s -> 3).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(-1, 3600000).lightLevel(s -> 3).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 

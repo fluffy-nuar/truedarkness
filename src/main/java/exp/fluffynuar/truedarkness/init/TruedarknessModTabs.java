@@ -84,6 +84,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.AQUATIC_HELMET.get());
 				tabData.accept(TruedarknessModItems.AQUATIC_BOOTS.get());
 				tabData.accept(TruedarknessModItems.ENCORITE_SHARD.get());
+				tabData.accept(TruedarknessModItems.SOULSTEAL_SMITHING_TEMPLATE.get());
 				tabData.accept(TruedarknessModItems.DARK_CRYSTAL_SHARD.get());
 				tabData.accept(TruedarknessModItems.DARK_CRYSTAL.get());
 				tabData.accept(TruedarknessModItems.SWAMP_SLIMY.get());
@@ -222,7 +223,6 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_TURQUOISE_FLOWER.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_FOREST_NIGHT.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_HUMILITY.get());
-				tabData.accept(TruedarknessModItems.SOULSTEAL_SMITHING_TEMPLATE.get());
 			})
 
 					.build());

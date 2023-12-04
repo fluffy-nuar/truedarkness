@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "truedarkness:block/cry_block",
-    "up": "truedarkness:block/cry_block",
-    "north": "truedarkness:block/cry_block",
-    "east": "truedarkness:block/cry_block",
-    "south": "truedarkness:block/cry_block",
-    "west": "truedarkness:block/cry_block",
-    "particle": "truedarkness:block/cry_block"
+    "down": "truedarkness:block/aquamarine_block",
+    "up": "truedarkness:block/aquamarine_block",
+    "north": "truedarkness:block/aquamarine_block",
+    "east": "truedarkness:block/aquamarine_block",
+    "south": "truedarkness:block/aquamarine_block",
+    "west": "truedarkness:block/aquamarine_block",
+    "particle": "truedarkness:block/aquamarine_block"
   },
   "render_type": "solid"
 }
