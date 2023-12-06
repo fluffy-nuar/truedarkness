@@ -1,0 +1,8 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "truedarkness:soul_spool",
+    "truedarkness:echo_spool"
+  ]
+}

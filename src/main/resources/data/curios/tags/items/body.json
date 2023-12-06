@@ -1,0 +1,9 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "truedarkness:general_heart",
+    "truedarkness:soul_heart",
+    "truedarkness:echo_heart"
+  ]
+}

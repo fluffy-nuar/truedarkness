@@ -1,14 +1,15 @@
 {
   "_fv": 47,
-  "_type": "item",
+  "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
     "texture": "general_heart",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
     "name": "General Heart",
     "rarity": "COMMON",
+    "slotType": "BODY",
+    "baubleModel": "Default",
+    "baubleModelTexture": "",
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
     },
@@ -25,16 +26,22 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
+    "addSlot": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInInventoryTick": {
+    "slotAmount": 1,
+    "curioTick": {
       "name": "GeneralHeartKazhdyiTikVInvientarie"
     },
     "isFood": false,
+    "friendlyPigs": false,
+    "enderMask": false,
+    "rotateModel": false,
+    "translateModel": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
@@ -42,6 +49,7 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
+    "hasModel": false,
     "animation": "none"
   }
 }

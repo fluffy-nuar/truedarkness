@@ -1,5 +1,7 @@
 package exp.fluffynuar.truedarkness.procedures;
 
+import top.theillusivec4.curios.api.CuriosApi;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -70,18 +72,22 @@ public class ForgeteelWeaponProcedure {
 				}
 			});
 		}
-		if ((sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.GENERAL_HEART.get())) : false)
-				&& (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem) {
-			if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 140, 3, true, false));
-			if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 140, 1, true, false));
-			if (sourceentity instanceof Player _player)
-				_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_HEART.get(), 140);
-			if (sourceentity instanceof Player _player)
-				_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), 140);
-			if (sourceentity instanceof Player _player)
-				_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), 140);
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem
+				&& !(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get()))) {
+			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.GENERAL_HEART.get(), lv).isPresent() : false) {
+				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 140, 3, true, false));
+				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 140, 1, true, false));
+				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), 140, 1, true, false));
+				if (sourceentity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_HEART.get(), 140);
+				if (sourceentity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), 140);
+				if (sourceentity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), 140);
+			}
 		}
 	}
 }

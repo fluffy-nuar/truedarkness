@@ -1,11 +1,13 @@
 
 package exp.fluffynuar.truedarkness.item;
 
+import top.theillusivec4.curios.api.type.capability.ICurioItem;
+
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 
-public class SoulWingsItem extends Item {
+public class SoulWingsItem extends Item implements ICurioItem {
 	public SoulWingsItem() {
-		super(new Item.Properties().durability(432).rarity(Rarity.RARE));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
 	}
 }

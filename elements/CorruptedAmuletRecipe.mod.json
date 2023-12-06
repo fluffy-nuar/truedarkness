@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CorruptedAmulet.body"
+      "value": "CUSTOM:CursedRing"
     },
     "name": "corrupted_amulet_recipe",
     "namespace": "mod"

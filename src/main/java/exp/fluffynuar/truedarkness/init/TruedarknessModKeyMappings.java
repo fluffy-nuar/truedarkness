@@ -62,7 +62,7 @@ public class TruedarknessModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping SPLASH = new KeyMapping("key.truedarkness.splash", GLFW.GLFW_KEY_Z, "key.categories.gameplay") {
+	public static final KeyMapping SPLASH = new KeyMapping("key.truedarkness.splash", GLFW.GLFW_KEY_R, "key.categories.gameplay") {
 		private boolean isDownOld = false;
 
 		@Override

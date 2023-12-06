@@ -146,7 +146,6 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.TOOL_FANG.get());
 				tabData.accept(TruedarknessModItems.CURSED_SWORD.get());
 				tabData.accept(TruedarknessModItems.CURSED_PAPYRUS.get());
-				tabData.accept(TruedarknessModItems.CORRUPTED_AMULET_CHESTPLATE.get());
 				tabData.accept(TruedarknessModItems.CORRUPTED_AXE.get());
 				tabData.accept(TruedarknessModItems.GENERAL_SCALE.get());
 				tabData.accept(TruedarknessModItems.GENERAL_CHESTPLATE.get());
@@ -169,8 +168,8 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.SOUL_CRYSTAL.get());
 				tabData.accept(TruedarknessModItems.SOUL_BOTTLE.get());
 				tabData.accept(TruedarknessModItems.SOUL_STONE.get());
-				tabData.accept(TruedarknessModItems.SOUL_SPOOL.get());
 				tabData.accept(TruedarknessModItems.SOUL_WINGS.get());
+				tabData.accept(TruedarknessModItems.SOUL_SPOOL.get());
 				tabData.accept(TruedarknessModItems.SOUL_HEART.get());
 				tabData.accept(TruedarknessModItems.SOUL_MIRROR.get());
 				tabData.accept(TruedarknessModItems.RAW_TRUDNITE.get());
@@ -199,13 +198,13 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.ECHO_HAMMER.get());
 				tabData.accept(TruedarknessModBlocks.SCULK_GRAIL.get().asItem());
 				tabData.accept(TruedarknessModBlocks.SOUL_MASTER.get().asItem());
+				tabData.accept(TruedarknessModItems.SCULK_RING.get());
+				tabData.accept(TruedarknessModItems.ECHO_WINGS.get());
+				tabData.accept(TruedarknessModItems.ECHO_SPOOL.get());
+				tabData.accept(TruedarknessModItems.ECHO_HEART.get());
 				tabData.accept(TruedarknessModItems.ECHO_KNIFE.get());
 				tabData.accept(TruedarknessModItems.ECHO_PAPYRUS.get());
-				tabData.accept(TruedarknessModItems.SCULK_RING.get());
 				tabData.accept(TruedarknessModItems.ECHO_FEATHER.get());
-				tabData.accept(TruedarknessModItems.ECHO_SPOOL.get());
-				tabData.accept(TruedarknessModItems.ECHO_WINGS.get());
-				tabData.accept(TruedarknessModItems.ECHO_HEART.get());
 				tabData.accept(TruedarknessModItems.ECHO_MIRROR.get());
 				tabData.accept(TruedarknessModItems.SWAMP_COD_ENTITY_SPAWN_EGG.get());
 				tabData.accept(TruedarknessModItems.FLOW_SPAWN_EGG.get());
@@ -568,6 +567,10 @@ public class TruedarknessModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+
+		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(TruedarknessModItems.CURSED_RING.get());
+		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(TruedarknessModItems.CUP_WATER.get());

@@ -16628,7 +16628,7 @@
     {
       "name": "EchoFeather",
       "type": "item",
-      "sortid": 501,
+      "sortid": 504,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_feather",
@@ -16694,20 +16694,6 @@
         ]
       },
       "path": "~/Proc"
-    },
-    {
-      "name": "SculkRing1",
-      "type": "item",
-      "sortid": 500,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sculk_ring",
-      "metadata": {
-        "files": [
-          "src/main/java/exp/fluffynuar/truedarkness/item/SculkRing1Item.java",
-          "src/main/resources/assets/truedarkness/models/item/sculk_ring.json"
-        ]
-      }
     },
     {
       "name": "SculkRingPriNazhatiiPravoiKnopkoiMyshi",
@@ -16792,7 +16778,7 @@
     {
       "name": "EchoKnife",
       "type": "tool",
-      "sortid": 498,
+      "sortid": 502,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_knife",
@@ -16988,20 +16974,6 @@
         ]
       },
       "path": "~/Proc"
-    },
-    {
-      "name": "CorruptedAmulet",
-      "type": "armor",
-      "sortid": 453,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "corrupted_amulet",
-      "metadata": {
-        "files": [
-          "src/main/java/exp/fluffynuar/truedarkness/item/CorruptedAmuletItem.java",
-          "src/main/resources/assets/truedarkness/models/item/corrupted_amulet_chestplate.json"
-        ]
-      }
     },
     {
       "name": "DistabilizatorWork",
@@ -22818,20 +22790,6 @@
       }
     },
     {
-      "name": "StoneHeart",
-      "type": "item",
-      "sortid": 476,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "soul_heart",
-      "metadata": {
-        "files": [
-          "src/main/java/exp/fluffynuar/truedarkness/item/StoneHeartItem.java",
-          "src/main/resources/assets/truedarkness/models/item/soul_heart.json"
-        ]
-      }
-    },
-    {
       "name": "SoulBottle",
       "type": "item",
       "sortid": 472,
@@ -22973,20 +22931,6 @@
       }
     },
     {
-      "name": "SoulWings",
-      "type": "item",
-      "sortid": 475,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "soul_wings",
-      "metadata": {
-        "files": [
-          "src/main/java/exp/fluffynuar/truedarkness/item/SoulWingsItem.java",
-          "src/main/resources/assets/truedarkness/models/item/soul_wings.json"
-        ]
-      }
-    },
-    {
       "name": "SoulSaberPriUdariePoSushchnostiInstrumientom",
       "type": "procedure",
       "sortid": 1381,
@@ -23117,20 +23061,6 @@
         ]
       },
       "path": "~/Effect"
-    },
-    {
-      "name": "SoulSpool",
-      "type": "item",
-      "sortid": 474,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "soul_spool",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/truedarkness/models/item/soul_spool.json",
-          "src/main/java/exp/fluffynuar/truedarkness/item/SoulSpoolItem.java"
-        ]
-      }
     },
     {
       "name": "DashPriNazhatiiKlavishi",
@@ -25474,20 +25404,6 @@
       }
     },
     {
-      "name": "GeneralHeart",
-      "type": "item",
-      "sortid": 468,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "general_heart",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/truedarkness/models/item/general_heart.json",
-          "src/main/java/exp/fluffynuar/truedarkness/item/GeneralHeartItem.java"
-        ]
-      }
-    },
-    {
       "name": "GeneralHeartKazhdyiTikVInvientarie",
       "type": "procedure",
       "sortid": 1465,
@@ -25506,20 +25422,6 @@
         ]
       },
       "path": "~/Proc"
-    },
-    {
-      "name": "GeneralWings",
-      "type": "item",
-      "sortid": 467,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "general_wings",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/truedarkness/models/item/general_wings.json",
-          "src/main/java/exp/fluffynuar/truedarkness/item/GeneralWingsItem.java"
-        ]
-      }
     },
     {
       "name": "Splash",
@@ -25746,20 +25648,6 @@
       "path": "~/Proc"
     },
     {
-      "name": "EchoHeart",
-      "type": "item",
-      "sortid": 504,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "echo_heart",
-      "metadata": {
-        "files": [
-          "src/main/java/exp/fluffynuar/truedarkness/item/EchoHeartItem.java",
-          "src/main/resources/assets/truedarkness/models/item/echo_heart.json"
-        ]
-      }
-    },
-    {
       "name": "EchoHammer",
       "type": "tool",
       "sortid": 495,
@@ -25810,34 +25698,6 @@
       "path": "~/Proc"
     },
     {
-      "name": "EchoSpool",
-      "type": "item",
-      "sortid": 502,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "echo_spool",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/truedarkness/models/item/echo_spool.json",
-          "src/main/java/exp/fluffynuar/truedarkness/item/EchoSpoolItem.java"
-        ]
-      }
-    },
-    {
-      "name": "EchoWings",
-      "type": "item",
-      "sortid": 503,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "echo_wings",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/truedarkness/models/item/echo_wings.json",
-          "src/main/java/exp/fluffynuar/truedarkness/item/EchoWingsItem.java"
-        ]
-      }
-    },
-    {
       "name": "EchoHarp",
       "type": "item",
       "sortid": 493,
@@ -25854,7 +25714,7 @@
     {
       "name": "EchoPapyrus",
       "type": "item",
-      "sortid": 499,
+      "sortid": 503,
       "compiles": true,
       "locked_code": false,
       "registry_name": "echo_papyrus",
@@ -27995,6 +27855,165 @@
         ]
       },
       "path": "~/Recipe/Soulsteal/Genetal"
+    },
+    {
+      "name": "SculkRing1",
+      "type": "curiosbauble",
+      "sortid": 498,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/item/SculkRing1Item.java",
+          "src/main/resources/assets/truedarkness/models/item/sculk_ring.json"
+        ]
+      }
+    },
+    {
+      "name": "SoulWings",
+      "type": "curiosbauble",
+      "sortid": 474,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_wings",
+      "metadata": {
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/item/SoulWingsItem.java",
+          "src/main/resources/assets/truedarkness/models/item/soul_wings.json"
+        ]
+      }
+    },
+    {
+      "name": "EchoWings",
+      "type": "curiosbauble",
+      "sortid": 499,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_wings",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/truedarkness/models/item/echo_wings.json",
+          "src/main/java/exp/fluffynuar/truedarkness/item/EchoWingsItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EchoHeart",
+      "type": "curiosbauble",
+      "sortid": 501,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_heart",
+      "metadata": {
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/item/EchoHeartItem.java",
+          "src/main/resources/assets/truedarkness/models/item/echo_heart.json"
+        ]
+      }
+    },
+    {
+      "name": "SoulHeart",
+      "type": "curiosbauble",
+      "sortid": 476,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_heart",
+      "metadata": {
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/item/SoulHeartItem.java",
+          "src/main/resources/assets/truedarkness/models/item/soul_heart.json"
+        ]
+      }
+    },
+    {
+      "name": "GeneralHeart",
+      "type": "curiosbauble",
+      "sortid": 468,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "general_heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/truedarkness/models/item/general_heart.json",
+          "src/main/java/exp/fluffynuar/truedarkness/item/GeneralHeartItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GeneralWings",
+      "type": "curiosbauble",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "general_wings",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/truedarkness/models/item/general_wings.json",
+          "src/main/java/exp/fluffynuar/truedarkness/item/GeneralWingsItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulSpool",
+      "type": "curiosbauble",
+      "sortid": 475,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_spool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/truedarkness/models/item/soul_spool.json",
+          "src/main/java/exp/fluffynuar/truedarkness/item/SoulSpoolItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EchoSpool",
+      "type": "curiosbauble",
+      "sortid": 500,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_spool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/truedarkness/models/item/echo_spool.json",
+          "src/main/java/exp/fluffynuar/truedarkness/item/EchoSpoolItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CursedAmuletWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "sortid": 1542,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_amulet_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/CursedAmuletWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CursedRing",
+      "type": "curiosbauble",
+      "sortid": 1543,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/item/CursedRingItem.java",
+          "src/main/resources/assets/truedarkness/models/item/cursed_ring.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -28268,17 +28287,17 @@
       "block.truedarkness.mycelium_roots": "Корни мицелья",
       "block.truedarkness.sandstone_of_missing": "Песчаник пропавших без вести",
       "another_dream.3": "§f\u003c§3Неизвестный§f\u003e Осколок ключа в зарытом кладе, что давно пропал.",
-      "item.truedarkness.ancient_mirror": "Древнее зеркало",
       "another_dream.4": "§f\u003c§3Неизвестный§f\u003e Потом вернись... Вернись...",
+      "item.truedarkness.ancient_mirror": "Древнее зеркало",
       "another_dream.1": "§f\u003c§3Неизвестный§f\u003e Путь, закопанный клад.",
       "another_dream.2": "§f\u003c§3Неизвестный§f\u003e Раздобудь ключ, земли тьмы.",
       "effect.truedarkness.falling_effect": "Падение",
-      "block.truedarkness.glow_fungus_hat_0": "Glow Fungus Hat",
-      "item.truedarkness.encorite_shard": "Энхо осколок",
       "block.truedarkness.empty_chiseled_ancient_glass": "Пустое резное древнее стекло",
+      "item.truedarkness.encorite_shard": "Энхо осколок",
+      "block.truedarkness.glow_fungus_hat_0": "Glow Fungus Hat",
       "block.truedarkness.corrupt_rune": "§5Руна",
-      "block.truedarkness.glownite_trap_door": "Glownite Trap Door",
       "effect.truedarkness.soulsteal_heart_cooldown": "Heartbeat",
+      "block.truedarkness.glownite_trap_door": "Glownite Trap Door",
       "advancements.cant_teleport_adv.descr": "Поймите, что заражение не пустит вас домой",
       "gamerule.infoAboutSkrezhal": "Гайд по Скрежали",
       "entity.truedarkness.swamp_cod_entity": "Болотная треска",
@@ -28295,17 +28314,17 @@
       "block.truedarkness.miners_pot": "Miners Pot",
       "advancements.sand_remnants_adv_2.title": "Не входило в их план",
       "advancements.lavender_tea_flask_adv.descr": "Возьмите флягу лавандового чая",
-      "advancements.general_armor_adv.title": "Равня-яйсь, сми-ирно",
       "item.truedarkness.dark_crystal_sword": "§1Мрачнитовый меч",
+      "advancements.general_armor_adv.title": "Равня-яйсь, сми-ирно",
       "item.truedarkness.cursed_papyrus": "Cursed Papyrus",
       "block.truedarkness.swamp_stone_wall": "Ограда из камня болот",
       "block.truedarkness.polished_sandstone_of_missing_wall": "Ограда из полированного песчаника пропавших без вести",
       "item.truedarkness.spore_vine": "Spore Vine",
-      "item.truedarkness.soul_wings": "Крылья души",
       "gui.truedarkness.blacksmite_forge_gui.label_blacksmite_forge": "Кузница",
+      "item.truedarkness.soul_wings": "WIngs of Soul",
       "block.truedarkness.corrupted_slime": "Corrupted Slime",
-      "block.truedarkness.waster_flower": "Цветок пустошей",
       "block.truedarkness.crying_fence_gate": "Плачущая калитка",
+      "block.truedarkness.waster_flower": "Цветок пустошей",
       "block.truedarkness.swamp_sand_layer": "Дополнительный слой песка болот",
       "item.truedarkness.coral_amulet_chestplate": "§eАмулет Коралла",
       "block.truedarkness.corrupted_flower": "§5Порочный цветок",
@@ -28325,22 +28344,22 @@
       "block.truedarkness.darkness_spruce_trap_door": "Люк из мрачной ели",
       "item.truedarkness.iceberg_amulet_chestplate": "§eАмулет Айсберга",
       "block.truedarkness.samovar": "Самовар",
-      "advancements.corrupted_rune_adv.descr": "Порокофицируйте руну",
       "block.truedarkness.cracked_polished_accustone_bricks": "Потрескавшиеся кирпичи полированного камня неволи",
-      "block.truedarkness.stripped_darkness_spruce": "Обтёсанная мрачная ель",
+      "advancements.corrupted_rune_adv.descr": "Порокофицируйте руну",
       "block.truedarkness.light_mushrooms_disable": "Яркий Гриб",
+      "block.truedarkness.stripped_darkness_spruce": "Обтёсанная мрачная ель",
       "item.truedarkness.general_knife": "General Knife",
-      "advancements.sand_remnants_adv_3.descr": "Найдите минералы в остатках песка",
-      "block.truedarkness.bushy_grape_azalea_leaves": "Густые виноградные листья азалии",
       "item.truedarkness.eridium_heart": "Эридиевое сердце",
+      "block.truedarkness.bushy_grape_azalea_leaves": "Густые виноградные листья азалии",
+      "advancements.sand_remnants_adv_3.descr": "Найдите минералы в остатках песка",
       "item.truedarkness.fruit_tea": "Фруктовый чай",
       "mana.saturation": "Вы чувствуете насыщение",
       "block.truedarkness.glownite_grid_lantern": "Glownite Grid Lantern",
       "item.truedarkness.soulsteal_wings": "Soulsteal Wings",
       "block.truedarkness.soulsteal_block": "Soulsteal Block",
       "item.truedarkness.bubble_rod": "Bubble Rod",
-      "item.truedarkness.music_disc_rain": "Пластинка",
       "item.truedarkness.dark_crystal_pickaxe": "§1Мрачнитовая кирка",
+      "item.truedarkness.music_disc_rain": "Пластинка",
       "block.truedarkness.dust_clay_bricks_slab": "Dust Clay Bricks Stairs",
       "gui.truedarkness.darkness_spruce_chest_gui.label_inventory": "Инвентарь",
       "item.truedarkness.fruit_tea_flask": "Склянка фруктового чая",
@@ -28349,7 +28368,6 @@
       "block.truedarkness.light_mushroom_top_1": "Высокий свето-гриб",
       "item.truedarkness.music_disc_turquoise_flower.desc": "Riryz — Turquoise Flower",
       "block.truedarkness.polished_sandstone_bricks_of_missing_stairs": "Ступеньки из полированного кирпича пропавших без вести",
-      "item.truedarkness.corrupted_amulet_chestplate": "§5Опороченный амулет",
       "block.truedarkness.darkness_spruce_log": "Бревно мрачной ели",
       "block.truedarkness.dust_clay_wall": "Dust Clay Slab",
       "item.truedarkness.lavender_petal": "Лепесток лаванды",
@@ -28369,14 +28387,14 @@
       "item.truedarkness.corrupted_hand_fangs": "Когти порука",
       "block.truedarkness.polished_sandstone_of_missing_stairs": "Ступеньки из полированного песчаника пропавших без вести",
       "block.truedarkness.darknite_bricks_stairs": "Ступеньки из кирпича темнита",
-      "gamerule.desireToTest": "Тестирование",
       "block.truedarkness.glow_fungus_0": "Light Shroom",
+      "gamerule.desireToTest": "Тестирование",
       "advancements.sea_of_tranquility.descr": "Найдите лавандовое поле",
       "block.truedarkness.cvetaliy_ore": "Руда цветалия",
       "item.truedarkness.soulsteal_heart": "Soulsteal Heart",
       "item.truedarkness.skrezhal.cantuse": "§3Не возможно прочитать",
       "block.truedarkness.crying_planks": "Плачущие доски",
-      "item.truedarkness.soul_heart": "Stone Heart",
+      "item.truedarkness.soul_heart": "Soul Heart",
       "block.truedarkness.darknite_wall": "Ограда из темнита",
       "advancements.firenite_weapon_adv.descr": "Получите каждый фиренидовый инструмент",
       "block.truedarkness.glow_fungus_2": "Light Shroom",
@@ -28387,11 +28405,11 @@
       "advancements.samovar_adv_1.title": "Подгорает?",
       "soul.wings.you_can": "Отожмите \u0027SPACE\u0027 в воздухе, что-бы подпрыгнуть дважды",
       "item.truedarkness.soul_crystal": "Soul Crystal",
-      "advancements.cvetaliy_adv.descr": "Добудьте цветалий",
       "item.truedarkness.dried_swamp_kelp": "тест",
+      "advancements.cvetaliy_adv.descr": "Добудьте цветалий",
       "block.truedarkness.cry_block": "§bПлако-блок",
-      "block.truedarkness.big_glownite_bricks_stairs": "Big Glownite Bricks",
       "item.truedarkness.echo_sandglass": "§3Silent Sandglass",
+      "block.truedarkness.big_glownite_bricks_stairs": "Big Glownite Bricks",
       "block.truedarkness.cracked_polished_swamp_stone_bricks": "Потресковшиеся кирпичи полированного камня болот",
       "block.truedarkness.cyan_fence": "Бирюзовый забор",
       "advancements.light_mushroom.title": "Обожаю эту мышь",
@@ -28427,8 +28445,8 @@
       "item.truedarkness.trudnite_chestplate": "Траднитовый нагрудник",
       "item.truedarkness.cursed_sword": "Cursed Sword",
       "item.truedarkness.drink_recipe": "Рецепт напитка",
-      "item.truedarkness.blueberry_juice": "Черничный сок",
       "block.truedarkness.swamp_dirt": "Болотная земля",
+      "item.truedarkness.blueberry_juice": "Черничный сок",
       "advancements.magic_set_for_dummies.descr": "Используйте один из амулетов",
       "advancements.swamd_wasteland_adv.descr": "Найти болотную пустошь",
       "item.truedarkness.eridium_golem_spawn_egg": "Яйцо призыва голема эридия",
@@ -28452,8 +28470,8 @@
       "block.truedarkness.darkness_spruce_wood": "Мрачной ель",
       "block.truedarkness.sandstone_of_missing_wall": "Ограда из песчаника пропавших без вести",
       "item.truedarkness.trudnite_leggings": "Траднитовые поножи",
-      "block.truedarkness.cobbled_darknite_wall": "Ограда из темнитового булыжника",
       "block.truedarkness.eridium_glass": "Эридиевое стекло",
+      "block.truedarkness.cobbled_darknite_wall": "Ограда из темнитового булыжника",
       "block.truedarkness.swamp_cattail": "Болотный рогоз",
       "item.truedarkness.metenite_leggings": "Метенитовые поножи",
       "advancements.sand_remnants_adv_1.title": "Только новое начало",
@@ -28463,13 +28481,13 @@
       "item.truedarkness.swamp_pollen": "Пыльца болот",
       "item.truedarkness.cryer_tear": "Cryer Plasm",
       "item.truedarkness.sieve": "Сито",
-      "block.truedarkness.block_of_writing": "Блок письмён",
       "block.truedarkness.sandstone_of_missing_stairs": "Ступеньки из песчаника пропавших без вести",
+      "block.truedarkness.block_of_writing": "Блок письмён",
       "enchantment.truedarkness.world_block_breaker": "Разрушитель блоков",
       "item.truedarkness.firenite_hoe": "Фиренидовая мотыга",
       "advancements.cry_tools_adv.descr": "Сделайте все плако-инстрмуенты",
-      "block.truedarkness.dust_clay_bricks": "Dust Clay",
       "block.truedarkness.block_of_writing_bag": "Блок письмён (Мешочек)",
+      "block.truedarkness.dust_clay_bricks": "Dust Clay",
       "block.truedarkness.corrupted_sculk_catalyst": "§5Порокофицированный скалк катализатор",
       "block.truedarkness.recra_grass": "Рекра-трава",
       "block.truedarkness.cyan_button": "Бирюзовая кнопка",
@@ -28485,14 +28503,14 @@
       "block.truedarkness.swamp_black_soil": "Болотный чернозем",
       "effect.truedarkness.third_hand_cooldwon": "Cooldown",
       "block.truedarkness.fake_wood": "Ложно-дерево",
-      "block.truedarkness.chiseled_glass": "Резное стекло",
-      "advancements.elder_document_adv.title": "Законспектирован",
       "effect.truedarkness.skrezhal_breaking": "Разрушение скрежали",
-      "advancements.fireflies_bottle_adv.title": "Я с тобой во тьме",
-      "block.truedarkness.gramite_block": "Грамитовый блок",
+      "advancements.elder_document_adv.title": "Законспектирован",
+      "block.truedarkness.chiseled_glass": "Резное стекло",
       "block.truedarkness.fake_fence_gate": "Калитка из ложно-дерева",
-      "block.truedarkness.cracked_sandstone_bricks_of_missing": "Потрескавшиеся полированные кирпичи пропавших без вести",
+      "block.truedarkness.gramite_block": "Грамитовый блок",
+      "advancements.fireflies_bottle_adv.title": "Я с тобой во тьме",
       "block.truedarkness.polished_sandstone_of_missing_slab": "Плита из полированного песчаника пропавших без вести",
+      "block.truedarkness.cracked_sandstone_bricks_of_missing": "Потрескавшиеся полированные кирпичи пропавших без вести",
       "block.truedarkness.swamp_stone_slab": "Плита из камня болот",
       "advancements.deep_dark_adv.descr": "Найдите Тёмные глубины",
       "block.truedarkness.light_mushroom_top": "Высокий свето-гриб",
@@ -28502,8 +28520,8 @@
       "block.truedarkness.recra_flower_1": "Рекра цветок",
       "gui.truedarkness.samovar_gui.label_samovar": "Приготовление напитков",
       "gamerule.doubleJumpCooldown.description": "Время (в тиках) перезарядки между использованием двойного прыжка",
-      "item.truedarkness.light_shroom_item": "Мега свето-гриб",
       "effect.truedarkness.the_alive": "Жизнь",
+      "item.truedarkness.light_shroom_item": "Мега свето-гриб",
       "advancements.swamp_slimy_adv.title": "Испытай удачу",
       "item.truedarkness.soulsteal_shard": "Soulsteal Shard",
       "biome.truedarkness.grim_forest": "Мрачный лес",
@@ -28517,8 +28535,8 @@
       "block.truedarkness.dead_prismarine_coral_colourless": "Мёртвый обесцвеченый призмариновый коралл",
       "block.truedarkness.darkness_spruce_fence": "Забор из мрачной ели",
       "block.truedarkness.polished_swamp_cobblestone_slab": "Плита из полированного булыжника болот",
-      "block.truedarkness.darkness_spruce_slab": "Плита из мрачной ели",
       "item.truedarkness.cursed_metal": "§5Проклятый метал",
+      "block.truedarkness.darkness_spruce_slab": "Плита из мрачной ели",
       "advancements.echo_stone_adv.title": "Эхолокация",
       "block.truedarkness.mossy_polished_accustone_bricks": "Замшелые кирпичи полированного камня неволи",
       "block.truedarkness.fake_stairs": "Ступеньки из ложно-дерева",
@@ -28530,6 +28548,7 @@
       "key.truedarkness.nosedive": "Пикирование",
       "entity.truedarkness.eridium_zombie": "Эридиевый зомби",
       "block.truedarkness.swamp_cobblestone_slab": "Плита из булыжника болот",
+      "item.truedarkness.cursed_ring": "Cursed Ring",
       "block.truedarkness.polished_swamp_stone_bricks_slab": "Плита из кирпича полированного камня болот",
       "effect.truedarkness.nosedive_effect": "Пикирование",
       "item.truedarkness.tool_fang": "Tool Fang",
@@ -28539,8 +28558,8 @@
       "subtitles.player.ring-dont-work": "Скалк инструмент не работает",
       "advancements.cryer_tear_adv.descr": "Подберите слезу плачущего",
       "block.truedarkness.cobbled_darknite_stairs": "Ступеньки из темнитового булыжника",
-      "item.truedarkness.stone_spool": "Stone Spool",
       "block.truedarkness.darkness_spruce_box": "Ящик из мрачной ели",
+      "item.truedarkness.stone_spool": "Stone Spool",
       "block.truedarkness.dried_stairs": "Dried Stairs",
       "effect.truedarkness.reduced_visibility": "Пониженная видимость",
       "block.truedarkness.dried_log": "Dried Log",
@@ -28565,13 +28584,13 @@
       "item.truedarkness.music_disc_humility": "Пластинка",
       "block.truedarkness.block_of_writing_glow_berry_jam": "Блок письмён (Джем из светящихся ягод)",
       "block.truedarkness.block_of_writing_cocoa": "Блок письмён (Какао)",
-      "block.truedarkness.crenrit": "Крэнарит",
       "block.truedarkness.swamp_grass": "Болотная трава",
+      "block.truedarkness.crenrit": "Крэнарит",
       "item.truedarkness.sandglass": "Песочные часы",
       "advancements.runed_swamp_stone_adv_1.descr": "Успокойтесь используя руну камня болот и спокойный аквамарин",
       "block.truedarkness.tablecloth": "Tablecloth",
-      "advancements.grim_forest_adv.descr": "Найдите мрачный лес",
       "effect.truedarkness.calm": "Спокойствие",
+      "advancements.grim_forest_adv.descr": "Найдите мрачный лес",
       "enchantment.truedarkness.curse_of_fang": "Curse Of Fang",
       "block.truedarkness.cyan": "Бирюза",
       "advancements.gramite_weapon_adv.title": "Глаза слепы",
@@ -28793,7 +28812,7 @@
       "key.truedarkness.dash": "Рывок",
       "effect.truedarkness.soulsteal_spool_cooldown": "Heartbeat",
       "block.truedarkness.chiseled_glass_1": "Резное стекло",
-      "item.truedarkness.sculk_ring": "§3Скалк-кольцо",
+      "item.truedarkness.sculk_ring": "§3Sculk Ring",
       "effect.truedarkness.run": "Беги",
       "block.truedarkness.trap_sand_of_missing": "Ловушка песка пропавших безвести",
       "block.truedarkness.soul_master": "Мастер души",
@@ -28884,7 +28903,7 @@
       "item.truedarkness.heart_eridium": "Heart Eridium",
       "item.truedarkness.flask": "Склянка",
       "item.truedarkness.chiseled_ancient_glass_shard": "Осколок резного древнего стекла",
-      "item.truedarkness.soul_spool": "Катушка души",
+      "item.truedarkness.soul_spool": "Soul Spool",
       "block.truedarkness.eridium_block": "Эридиевый блок",
       "block.truedarkness.accuswamp_mosaic_stairs": "Ступеньки из мозайки болот",
       "gamerule.skrezhalWayFromYteria.description": "Вы сможете выбраться из Итерии так-же как туда и попали. С помощи скрежали",
@@ -29139,17 +29158,17 @@
       "block.truedarkness.mycelium_roots": "Mycelium Roots",
       "block.truedarkness.sandstone_of_missing": "Sandstone Of Missing",
       "another_dream.3": "§f\u003c§3Unknown§f\u003e First Part In Buried Treasure",
-      "item.truedarkness.ancient_mirror": "Ancient Mirror",
       "another_dream.4": "§f\u003c§3Unknown§f\u003e Find It... And Come To Me",
+      "item.truedarkness.ancient_mirror": "Ancient Mirror",
       "another_dream.1": "§f\u003c§3Unknown§f\u003e Key... You Need",
       "another_dream.2": "§f\u003c§3Unknown§f\u003e Find a Key to True Darkness",
       "effect.truedarkness.falling_effect": "Falling",
-      "block.truedarkness.glow_fungus_hat_0": "Glow Fungus Hat",
-      "block.truedarkness.empty_chiseled_ancient_glass": "Empty Chiseled Ancient Glass",
       "item.truedarkness.encorite_shard": "Encorite Shard",
+      "block.truedarkness.empty_chiseled_ancient_glass": "Empty Chiseled Ancient Glass",
+      "block.truedarkness.glow_fungus_hat_0": "Glow Fungus Hat",
       "block.truedarkness.corrupt_rune": "Corrupt Rune",
-      "block.truedarkness.glownite_trap_door": "Glownite Trap Door",
       "effect.truedarkness.soulsteal_heart_cooldown": "Heartbeat",
+      "block.truedarkness.glownite_trap_door": "Glownite Trap Door",
       "advancements.cant_teleport_adv.descr": "Realize the impossibility of returning home due to infection",
       "gamerule.infoAboutSkrezhal": "Guide About Skrezhal",
       "entity.truedarkness.swamp_cod_entity": "Swamp Cod",
@@ -29166,17 +29185,17 @@
       "block.truedarkness.miners_pot": "Miners Pot",
       "advancements.sand_remnants_adv_2.title": "They Didn\u0027t Plan This",
       "advancements.lavender_tea_flask_adv.descr": "Take Lavender Tea Flask",
-      "item.truedarkness.dark_crystal_sword": "§1Grimnite Sword",
       "advancements.general_armor_adv.title": "Form Up, Stand At Attention",
+      "item.truedarkness.dark_crystal_sword": "§1Grimnite Sword",
       "item.truedarkness.cursed_papyrus": "Cursed Papyrus",
       "block.truedarkness.swamp_stone_wall": "Swamp Stone Wall",
       "block.truedarkness.polished_sandstone_of_missing_wall": "Polished Sandstone Of Missing Wall",
       "item.truedarkness.spore_vine": "Spore Vine",
-      "item.truedarkness.soul_wings": "Wings of Soul",
       "gui.truedarkness.blacksmite_forge_gui.label_blacksmite_forge": "Blacksmite Forge",
+      "item.truedarkness.soul_wings": "WIngs of Soul",
       "block.truedarkness.corrupted_slime": "Corrupted Slime",
-      "block.truedarkness.waster_flower": "Waster Flower",
       "block.truedarkness.crying_fence_gate": "Crying Fence Gate",
+      "block.truedarkness.waster_flower": "Waster Flower",
       "block.truedarkness.swamp_sand_layer": "Swamp Sand Layer",
       "item.truedarkness.coral_amulet_chestplate": "§eCoral Amulet",
       "block.truedarkness.corrupted_flower": "§5Corrupted Flower",
@@ -29196,22 +29215,22 @@
       "block.truedarkness.darkness_spruce_trap_door": "Darkness Spruce Trap Door",
       "item.truedarkness.iceberg_amulet_chestplate": "§eIceberg Amulet",
       "block.truedarkness.samovar": "Samovar",
-      "advancements.corrupted_rune_adv.descr": "Made Corrupted Rune",
       "block.truedarkness.cracked_polished_accustone_bricks": "Cracked Polished Accustone Bricks",
-      "block.truedarkness.stripped_darkness_spruce": "Stripped Darkness Spruce",
+      "advancements.corrupted_rune_adv.descr": "Made Corrupted Rune",
       "block.truedarkness.light_mushrooms_disable": "Light Mushrooms",
+      "block.truedarkness.stripped_darkness_spruce": "Stripped Darkness Spruce",
       "item.truedarkness.general_knife": "General Knife",
-      "item.truedarkness.eridium_heart": "Eridium Heart",
-      "block.truedarkness.bushy_grape_azalea_leaves": "Bushy Grape Azalea Leaves",
       "advancements.sand_remnants_adv_3.descr": "Find minerals in Sand Remnants",
+      "block.truedarkness.bushy_grape_azalea_leaves": "Bushy Grape Azalea Leaves",
+      "item.truedarkness.eridium_heart": "Eridium Heart",
       "item.truedarkness.fruit_tea": "Fruit Tea",
       "mana.saturation": "You Feel Saturation",
       "block.truedarkness.glownite_grid_lantern": "Glownite Grid Lantern",
       "item.truedarkness.soulsteal_wings": "Soulsteal Wings",
       "block.truedarkness.soulsteal_block": "Soulsteal Block",
       "item.truedarkness.bubble_rod": "Bubble Rod",
-      "item.truedarkness.dark_crystal_pickaxe": "§1Grimnite Pickaxe",
       "item.truedarkness.music_disc_rain": "Music Disc",
+      "item.truedarkness.dark_crystal_pickaxe": "§1Grimnite Pickaxe",
       "block.truedarkness.dust_clay_bricks_slab": "Dust Clay Bricks Slab",
       "gui.truedarkness.darkness_spruce_chest_gui.label_inventory": "Inventory",
       "item.truedarkness.fruit_tea_flask": "Fruit Tea Flask",
@@ -29219,7 +29238,6 @@
       "block.truedarkness.ancient_sculk": "Ancient Sculk",
       "block.truedarkness.light_mushroom_top_1": "Light Mushroom Top",
       "item.truedarkness.music_disc_turquoise_flower.desc": "Riryz — Turquoise Flower",
-      "item.truedarkness.corrupted_amulet_chestplate": "§5Corrupted Amulet",
       "block.truedarkness.polished_sandstone_bricks_of_missing_stairs": "Polished Sandstone Bricks Of Missing Stairs",
       "block.truedarkness.darkness_spruce_log": "Darkness Spruce Log",
       "block.truedarkness.dust_clay_wall": "Dust Clay Wall",
@@ -29240,8 +29258,8 @@
       "item.truedarkness.corrupted_hand_fangs": "Corrupted Hand\u0027s Fangs",
       "block.truedarkness.polished_sandstone_of_missing_stairs": "Polished Sandstone Of Missing Stairs",
       "block.truedarkness.darknite_bricks_stairs": "Darknite Bricks Stairs",
-      "block.truedarkness.glow_fungus_0": "Light Shroom",
       "gamerule.desireToTest": "Testing",
+      "block.truedarkness.glow_fungus_0": "Light Shroom",
       "advancements.sea_of_tranquility.descr": "Find Lavender field",
       "block.truedarkness.cvetaliy_ore": "Cvetaliy Ore",
       "item.truedarkness.soulsteal_heart": "Soulsteal Heart",
@@ -29257,11 +29275,11 @@
       "block.truedarkness.gramite_ore": "Gramite Ore",
       "advancements.samovar_adv_1.title": "Operation \"Ouch\"",
       "item.truedarkness.soul_crystal": "Soul Crystal",
-      "advancements.cvetaliy_adv.descr": "Take Cvetaliy",
       "item.truedarkness.dried_swamp_kelp": "Dried Swamp Kelp",
+      "advancements.cvetaliy_adv.descr": "Take Cvetaliy",
       "block.truedarkness.cry_block": "Cry Block",
-      "block.truedarkness.big_glownite_bricks_stairs": "Big Glownite Bricks Stairs",
       "item.truedarkness.echo_sandglass": "§3EchoSandglass",
+      "block.truedarkness.big_glownite_bricks_stairs": "Big Glownite Bricks Stairs",
       "block.truedarkness.cracked_polished_swamp_stone_bricks": "Cracked Polished Swamp Stone Bricks",
       "block.truedarkness.cyan_fence": "Cyan Fence",
       "advancements.light_mushroom.title": "Peep",
@@ -29297,8 +29315,8 @@
       "item.truedarkness.trudnite_chestplate": "Trudnite Chestplate",
       "item.truedarkness.cursed_sword": "Cursed Sword",
       "item.truedarkness.drink_recipe": "Drink Recipe",
-      "item.truedarkness.blueberry_juice": "Blueberry Juice",
       "block.truedarkness.swamp_dirt": "Swamp Dirt",
+      "item.truedarkness.blueberry_juice": "Blueberry Juice",
       "advancements.magic_set_for_dummies.descr": "Use one of all amulets",
       "advancements.swamd_wasteland_adv.descr": "Find Swamp WasteLand",
       "item.truedarkness.eridium_golem_spawn_egg": "Eridium Golem Spawn Egg",
@@ -29322,8 +29340,8 @@
       "block.truedarkness.darkness_spruce_wood": "Darkness Spruce",
       "block.truedarkness.sandstone_of_missing_wall": "Sandstone Of Missing Wall",
       "item.truedarkness.trudnite_leggings": "Trudnite Leggings",
-      "block.truedarkness.eridium_glass": "Eridium Glass",
       "block.truedarkness.cobbled_darknite_wall": "Cobbled Darknite Wall",
+      "block.truedarkness.eridium_glass": "Eridium Glass",
       "block.truedarkness.swamp_cattail": "Swamp Cattail",
       "item.truedarkness.metenite_leggings": "Metenite Leggings",
       "advancements.sand_remnants_adv_1.title": "New Past",
@@ -29333,13 +29351,13 @@
       "item.truedarkness.swamp_pollen": "Swamp Pollen",
       "item.truedarkness.cryer_tear": "Cryer Tear",
       "item.truedarkness.sieve": "Sieve",
-      "block.truedarkness.sandstone_of_missing_stairs": "Sandstone Of Missing Stairs",
       "block.truedarkness.block_of_writing": "Block Of Writing",
+      "block.truedarkness.sandstone_of_missing_stairs": "Sandstone Of Missing Stairs",
       "enchantment.truedarkness.world_block_breaker": "World Block Breaker",
       "item.truedarkness.firenite_hoe": "Firenite Hoe",
       "advancements.cry_tools_adv.descr": "Make all the cry tools",
-      "block.truedarkness.dust_clay_bricks": "Dust Clay Bricks",
       "block.truedarkness.block_of_writing_bag": "Block Of Writing Bag",
+      "block.truedarkness.dust_clay_bricks": "Dust Clay Bricks",
       "block.truedarkness.corrupted_sculk_catalyst": "§5Corrupted Sculk Catalyst",
       "block.truedarkness.recra_grass": "Recra Grass",
       "block.truedarkness.cyan_button": "Cyan Button",
@@ -29355,14 +29373,14 @@
       "block.truedarkness.swamp_black_soil": "Swamp Black Soil",
       "effect.truedarkness.third_hand_cooldwon": "Cooldown",
       "block.truedarkness.fake_wood": "Fake Wood",
-      "advancements.elder_document_adv.title": "Writing Notes",
-      "block.truedarkness.chiseled_glass": "Chiseled Glass",
       "effect.truedarkness.skrezhal_breaking": "Skrezhal Breaking",
-      "block.truedarkness.fake_fence_gate": "Fake Fence Gate",
-      "block.truedarkness.gramite_block": "Gramite Block",
+      "block.truedarkness.chiseled_glass": "Chiseled Glass",
+      "advancements.elder_document_adv.title": "Writing Notes",
       "advancements.fireflies_bottle_adv.title": "I\u0027m With You In The Dark",
-      "block.truedarkness.cracked_sandstone_bricks_of_missing": "Cracked Polished Sandstone Bricks Of Missing",
+      "block.truedarkness.gramite_block": "Gramite Block",
+      "block.truedarkness.fake_fence_gate": "Fake Fence Gate",
       "block.truedarkness.polished_sandstone_of_missing_slab": "Polished Sandstone Of Missing Slab",
+      "block.truedarkness.cracked_sandstone_bricks_of_missing": "Cracked Polished Sandstone Bricks Of Missing",
       "block.truedarkness.swamp_stone_slab": "Swamp Stone Slab",
       "advancements.deep_dark_adv.descr": "Find Deep Dark",
       "block.truedarkness.light_mushroom_top": "Light Mushroom Top",
@@ -29372,8 +29390,8 @@
       "block.truedarkness.recra_flower_1": "Recra Flower",
       "gui.truedarkness.samovar_gui.label_samovar": "Drinks Crafting",
       "gamerule.doubleJumpCooldown.description": "Time after what player can use double jump again (In ticks)",
-      "item.truedarkness.light_shroom_item": "Lightshroom",
       "effect.truedarkness.the_alive": "The Alive",
+      "item.truedarkness.light_shroom_item": "Lightshroom",
       "advancements.swamp_slimy_adv.title": "Try Your Luck",
       "item.truedarkness.soulsteal_shard": "Soulsteal Shard",
       "biome.truedarkness.grim_forest": "Grim Forest",
@@ -29387,8 +29405,8 @@
       "block.truedarkness.dead_prismarine_coral_colourless": "Dead Prismarine Coral Colourless",
       "block.truedarkness.darkness_spruce_fence": "Darkness Spruce Fence",
       "block.truedarkness.polished_swamp_cobblestone_slab": "Polished Swamp Cobblestone Slab",
-      "item.truedarkness.cursed_metal": "§5Cursed Metal",
       "block.truedarkness.darkness_spruce_slab": "Darkness Spruce Slab",
+      "item.truedarkness.cursed_metal": "§5Cursed Metal",
       "advancements.echo_stone_adv.title": "Echo Location",
       "block.truedarkness.mossy_polished_accustone_bricks": "Mossy Polished Accustone Bricks",
       "block.truedarkness.fake_stairs": "Fake Stairs",
@@ -29400,6 +29418,7 @@
       "key.truedarkness.nosedive": "Use heart",
       "entity.truedarkness.eridium_zombie": "Eridium Zombie",
       "block.truedarkness.swamp_cobblestone_slab": "Swamp Cobblestone Slab",
+      "item.truedarkness.cursed_ring": "Cursed Ring",
       "block.truedarkness.polished_swamp_stone_bricks_slab": "Polished Swamp Stone Bricks Slab",
       "effect.truedarkness.nosedive_effect": "Nosedive",
       "item.truedarkness.tool_fang": "Tool Fang",
@@ -29409,8 +29428,8 @@
       "subtitles.player.ring-dont-work": "Sculk Ring Don\u0027t Work",
       "advancements.cryer_tear_adv.descr": "Take Elder Tear",
       "block.truedarkness.cobbled_darknite_stairs": "Cobbled Darknite Stairs",
-      "item.truedarkness.stone_spool": "Stone Spool",
       "block.truedarkness.darkness_spruce_box": "Darkness Spruce Box",
+      "item.truedarkness.stone_spool": "Stone Spool",
       "block.truedarkness.dried_stairs": "Dried Stairs",
       "effect.truedarkness.reduced_visibility": "Reduced visibility",
       "block.truedarkness.dried_log": "Dried Log",
@@ -29435,13 +29454,13 @@
       "item.truedarkness.music_disc_humility": "Music Disc",
       "block.truedarkness.block_of_writing_glow_berry_jam": "Block Of Writing Glow Berry Jam",
       "block.truedarkness.block_of_writing_cocoa": "Block Of Writing Cocoa",
-      "block.truedarkness.crenrit": "Crenrit",
       "block.truedarkness.swamp_grass": "Swamp Grass",
+      "block.truedarkness.crenrit": "Crenrit",
       "item.truedarkness.sandglass": "Sandglass",
       "advancements.runed_swamp_stone_adv_1.descr": "Сalm down using Calm Aquamarine",
       "block.truedarkness.tablecloth": "Tablecloth",
-      "effect.truedarkness.calm": "Calm",
       "advancements.grim_forest_adv.descr": "Find Grim Forest",
+      "effect.truedarkness.calm": "Calm",
       "enchantment.truedarkness.curse_of_fang": "Curse Of Fang",
       "block.truedarkness.cyan": "Cyan",
       "advancements.gramite_weapon_adv.title": "Only Heart Can See",
@@ -30246,6 +30265,7 @@
     "dependants": [],
     "mcreatorDependencies": [
       "dynamic_lights",
+      "curios_api",
       "jei"
     ],
     "currentGenerator": "forge-1.20.1",

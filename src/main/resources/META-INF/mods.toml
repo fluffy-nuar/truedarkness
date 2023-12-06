@@ -28,6 +28,12 @@ description="§8Welcome to the world of Elementry. This is a place where even th
     ordering="NONE"
     side="BOTH"
 [[dependencies.truedarkness]]
+    modId="curios_api"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.truedarkness]]
     modId="jei"
     mandatory=false
     versionRange="[0,)"
