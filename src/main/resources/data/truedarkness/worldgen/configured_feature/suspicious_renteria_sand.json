@@ -1,0 +1,31 @@
+{
+  "type": "truedarkness:suspicious_renteria_sand",
+  "config": {
+    "size": 30,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:crenrit"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:suspicious_renteria_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:renteria_sand"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:suspicious_renteria_sand"
+        }
+      }
+    ]
+  }
+}

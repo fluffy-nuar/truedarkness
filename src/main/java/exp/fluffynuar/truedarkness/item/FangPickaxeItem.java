@@ -8,10 +8,13 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import exp.fluffynuar.truedarkness.procedures.FangPickaxeRightclickedProcedure;
+import exp.fluffynuar.truedarkness.procedures.FangPickaxeKazhdyiTikVRukieProcedure;
+import exp.fluffynuar.truedarkness.procedures.FangPickaxeKazhdyiTikVInvientarieProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
 public class FangPickaxeItem extends PickaxeItem {
@@ -63,5 +66,13 @@ public class FangPickaxeItem extends PickaxeItem {
 	@Override
 	public boolean isRepairable(ItemStack itemstack) {
 		return false;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		if (selected)
+			FangPickaxeKazhdyiTikVRukieProcedure.execute(entity);
+		FangPickaxeKazhdyiTikVInvientarieProcedure.execute(entity);
 	}
 }

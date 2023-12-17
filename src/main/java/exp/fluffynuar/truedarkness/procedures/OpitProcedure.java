@@ -35,15 +35,15 @@ public class OpitProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria"))) && sourceentity instanceof Player
-				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.CURSED_SWORD.get())) {
-			if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(), 200, 0, false, false));
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria"))) && sourceentity instanceof Player
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.CURSED_SWORD.get()) {
-			if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(),
-						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(TruedarknessModMobEffects.THE_ALIVE.get()) ? _livEnt.getEffect(TruedarknessModMobEffects.THE_ALIVE.get()).getDuration() : 0) + 100), 0, false, false));
+		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria"))) && sourceentity instanceof Player) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.CURSED_SWORD.get()) {
+				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(),
+							(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(TruedarknessModMobEffects.THE_ALIVE.get()) ? _livEnt.getEffect(TruedarknessModMobEffects.THE_ALIVE.get()).getDuration() : 0) + 100), 0, false, false));
+			} else {
+				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(), 200, 0, false, false));
+			}
 		}
 	}
 }

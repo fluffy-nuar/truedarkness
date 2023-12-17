@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.PickaxeItem;
@@ -29,6 +30,9 @@ import net.minecraft.core.BlockPos;
 
 import java.util.List;
 import java.util.Collections;
+
+import exp.fluffynuar.truedarkness.procedures.CvetaliyClusterPriRazrushieniiBlokaIghrokomProcedure;
+import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
 public class CvetaliyClusterBlock extends Block implements SimpleWaterloggedBlock {
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
@@ -95,6 +99,13 @@ public class CvetaliyClusterBlock extends Block implements SimpleWaterloggedBloc
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(TruedarknessModItems.CVETALIY_GRAIN.get(), 5));
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		CvetaliyClusterPriRazrushieniiBlokaIghrokomProcedure.execute(entity);
+		return retval;
 	}
 }

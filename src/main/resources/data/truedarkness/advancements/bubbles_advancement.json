@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_bubble_block"
+    },
+    "title": {
+      "translate": "advancements.bubbles_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.bubbles_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bubbles_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:corrupted_land_advancement"
+}

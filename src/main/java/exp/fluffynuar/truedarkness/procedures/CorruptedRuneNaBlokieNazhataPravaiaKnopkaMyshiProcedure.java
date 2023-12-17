@@ -10,10 +10,12 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
+import exp.fluffynuar.truedarkness.init.TruedarknessModParticleTypes;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
 
 public class CorruptedRuneNaBlokieNazhataPravaiaKnopkaMyshiProcedure {
@@ -34,12 +36,14 @@ public class CorruptedRuneNaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 			}
 		}
 		if (entity instanceof ServerPlayer _player) {
-			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:corrupted_rune_adv_1"));
+			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:general_advancement"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 			if (!_ap.isDone()) {
 				for (String criteria : _ap.getRemainingCriteria())
 					_player.getAdvancements().award(_adv, criteria);
 			}
 		}
+		if (world instanceof ServerLevel _level)
+			_level.sendParticles((SimpleParticleType) (TruedarknessModParticleTypes.CORRUPTED_SOUL.get()), (x + 0.5), (y + 0.5), (z + 0.5), 20, 0.1, 0.1, 0.1, 0.2);
 	}
 }

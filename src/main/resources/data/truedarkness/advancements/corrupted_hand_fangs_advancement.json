@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_hand_fangs"
+    },
+    "title": {
+      "translate": "advancements.corrupted_hand_fangs_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.corrupted_hand_fangs_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "corrupted_hand_fangs_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:general_defeat_advancement"
+}

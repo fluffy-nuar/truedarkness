@@ -13,6 +13,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -20,6 +21,8 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
@@ -29,7 +32,7 @@ public class GeneralRegulationPriShchielchkiePKMProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.DARKNESS)) && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.GENERAL_REGULATION.get()) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.CRY_SWORD.get()
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.AQUAMARINE_SWORD.get()
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_WINGS.get()
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_HEART.get()) {
 				if (entity instanceof Player _player)
@@ -139,6 +142,14 @@ public class GeneralRegulationPriShchielchkiePKMProcedure {
 									}
 									if (entity instanceof Player _player && !_player.level().isClientSide())
 										_player.displayClientMessage(Component.literal(("\u00A73" + Component.translatable("soul.general_wings").getString())), false);
+									if (entity instanceof ServerPlayer _player) {
+										Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:general_magic_advancement"));
+										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+										if (!_ap.isDone()) {
+											for (String criteria : _ap.getRemainingCriteria())
+												_player.getAdvancements().award(_adv, criteria);
+										}
+									}
 								} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_HEART.get()) {
 									if (entity instanceof LivingEntity _entity) {
 										ItemStack _setstack = new ItemStack(TruedarknessModItems.GENERAL_HEART.get());
@@ -149,13 +160,29 @@ public class GeneralRegulationPriShchielchkiePKMProcedure {
 									}
 									if (entity instanceof Player _player && !_player.level().isClientSide())
 										_player.displayClientMessage(Component.literal(("\u00A73" + Component.translatable("soul.general_heart").getString())), false);
-								} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.CRY_SWORD.get()) {
+									if (entity instanceof ServerPlayer _player) {
+										Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:general_magic_advancement"));
+										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+										if (!_ap.isDone()) {
+											for (String criteria : _ap.getRemainingCriteria())
+												_player.getAdvancements().award(_adv, criteria);
+										}
+									}
+								} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.AQUAMARINE_SWORD.get()) {
 									if (entity instanceof LivingEntity _entity) {
 										ItemStack _setstack = new ItemStack(TruedarknessModItems.REAL_GENERAL_SWORD.get());
 										_setstack.setCount(1);
 										_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
 										if (_entity instanceof Player _player)
 											_player.getInventory().setChanged();
+									}
+									if (entity instanceof ServerPlayer _player) {
+										Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:general_magic_advancement"));
+										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+										if (!_ap.isDone()) {
+											for (String criteria : _ap.getRemainingCriteria())
+												_player.getAdvancements().award(_adv, criteria);
+										}
 									}
 								}
 								if (entity instanceof LivingEntity _entity) {

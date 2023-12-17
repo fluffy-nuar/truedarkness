@@ -29,6 +29,12 @@
     "damageOnCrafting": false,
     "onRightClickedInAir": {
       "name": "FangPickaxeRightclicked"
+    },
+    "onItemInInventoryTick": {
+      "name": "FangPickaxeKazhdyiTikVInvientarie"
+    },
+    "onItemInUseTick": {
+      "name": "FangPickaxeKazhdyiTikVRukie"
     }
   }
 }

@@ -24,6 +24,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
@@ -37,6 +38,7 @@ import java.util.Collections;
 
 import exp.fluffynuar.truedarkness.procedures.CorruptedBubbleSpontannoNaStoronieKliientaProcedure;
 import exp.fluffynuar.truedarkness.procedures.CorruptedBubbleBlockPriShchielchkiePKMPoBlokuProcedure;
+import exp.fluffynuar.truedarkness.procedures.CorruptedBubbleBlockKoghdaSushchnostKhoditPoBlokuProcedure;
 import exp.fluffynuar.truedarkness.block.entity.CorruptedBubbleBlockBlockEntity;
 
 public class CorruptedBubbleBlockBlock extends Block implements SimpleWaterloggedBlock, EntityBlock {
@@ -118,6 +120,12 @@ public class CorruptedBubbleBlockBlock extends Block implements SimpleWaterlogge
 		int z = pos.getZ();
 		CorruptedBubbleSpontannoNaStoronieKliientaProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
+	}
+
+	@Override
+	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
+		super.stepOn(world, pos, blockstate, entity);
+		CorruptedBubbleBlockKoghdaSushchnostKhoditPoBlokuProcedure.execute(entity);
 	}
 
 	@Override

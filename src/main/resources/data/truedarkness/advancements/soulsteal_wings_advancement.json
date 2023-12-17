@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:soulsteal_wings"
+    },
+    "title": {
+      "translate": "advancements.soulsteal_wings_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.soulsteal_wings_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "soulsteal_wings_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:soulsteal_wings"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:soulsteal_advancement"
+}

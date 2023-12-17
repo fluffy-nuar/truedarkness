@@ -61,7 +61,7 @@ public class MirrorToHomeProcedure {
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 100);
 				if (entity instanceof ServerPlayer _player) {
-					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:sweet_home"));
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
 						for (String criteria : _ap.getRemainingCriteria())
@@ -71,7 +71,7 @@ public class MirrorToHomeProcedure {
 			} else {
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)), 5);
 				if (entity instanceof ServerPlayer _player) {
-					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:cant_teleport_adv"));
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
 						for (String criteria : _ap.getRemainingCriteria())

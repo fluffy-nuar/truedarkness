@@ -1,10 +1,13 @@
 package exp.fluffynuar.truedarkness.procedures;
 
+import top.theillusivec4.curios.api.CuriosApi;
+
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -32,28 +35,13 @@ public class CursedBattleAxePriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			}
 		}.checkGamemode(entity) || (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 0) {
 			if (world.isEmptyBlock(BlockPos.containing(x, y + 1, z)) && world.getBlockState(BlockPos.containing(x, y, z)).canOcclude()) {
-				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(TruedarknessModItems.CURSED_BATTLE_AXE.get(), 40);
-				if (Mth.nextInt(RandomSource.create(), 1, 100) >= 33) {
-					{
-						BlockPos _bp = BlockPos.containing(x, y + 1, z);
-						BlockState _bs = TruedarknessModBlocks.CORRUPT_RUNE.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
-						}
-						world.setBlock(_bp, _bs, 3);
-					}
-				} else {
-					if (Mth.nextInt(RandomSource.create(), 1, 100) >= 50) {
+				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.HEART_ERIDIUM.get(), lv).isPresent() : false) {
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(TruedarknessModItems.CURSED_BATTLE_AXE.get(), 40);
+					if (Mth.nextInt(RandomSource.create(), 1, 100) >= 33) {
 						{
 							BlockPos _bp = BlockPos.containing(x, y + 1, z);
-							BlockState _bs = TruedarknessModBlocks.CORRUPT_RUNE_1.get().defaultBlockState();
+							BlockState _bs = TruedarknessModBlocks.CORRUPT_RUNE.get().defaultBlockState();
 							BlockState _bso = world.getBlockState(_bp);
 							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 								Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -66,24 +54,41 @@ public class CursedBattleAxePriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 							world.setBlock(_bp, _bs, 3);
 						}
 					} else {
-						{
-							BlockPos _bp = BlockPos.containing(x, y + 1, z);
-							BlockState _bs = TruedarknessModBlocks.CORRUPT_RUNE_2.get().defaultBlockState();
-							BlockState _bso = world.getBlockState(_bp);
-							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-								Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-								if (_property != null && _bs.getValue(_property) != null)
-									try {
-										_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-									} catch (Exception e) {
-									}
+						if (Mth.nextInt(RandomSource.create(), 1, 100) >= 50) {
+							{
+								BlockPos _bp = BlockPos.containing(x, y + 1, z);
+								BlockState _bs = TruedarknessModBlocks.CORRUPT_RUNE_1.get().defaultBlockState();
+								BlockState _bso = world.getBlockState(_bp);
+								for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+									Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+									if (_property != null && _bs.getValue(_property) != null)
+										try {
+											_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+										} catch (Exception e) {
+										}
+								}
+								world.setBlock(_bp, _bs, 3);
 							}
-							world.setBlock(_bp, _bs, 3);
+						} else {
+							{
+								BlockPos _bp = BlockPos.containing(x, y + 1, z);
+								BlockState _bs = TruedarknessModBlocks.CORRUPT_RUNE_2.get().defaultBlockState();
+								BlockState _bso = world.getBlockState(_bp);
+								for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+									Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+									if (_property != null && _bs.getValue(_property) != null)
+										try {
+											_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+										} catch (Exception e) {
+										}
+								}
+								world.setBlock(_bp, _bs, 3);
+							}
 						}
 					}
+					if (entity instanceof Player _player)
+						_player.giveExperiencePoints(-(1));
 				}
-				if (entity instanceof Player _player)
-					_player.giveExperiencePoints(-(1));
 			}
 		}
 	}

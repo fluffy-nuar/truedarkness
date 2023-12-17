@@ -27,12 +27,12 @@
       "name": "SculkFeatherPriIspolzovaniiStrielkovoghoPriedmieta"
     },
     "bulletPower": 8.0,
-    "bulletDamage": 8.0,
+    "bulletDamage": 10.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "CUSTOM:ChargeFeather"
+      "value": "Blocks.SCULK"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",

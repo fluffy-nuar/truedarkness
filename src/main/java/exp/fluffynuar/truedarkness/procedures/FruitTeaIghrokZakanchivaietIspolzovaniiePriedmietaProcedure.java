@@ -20,7 +20,7 @@ public class FruitTeaIghrokZakanchivaietIspolzovaniiePriedmietaProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, (int) (20 * 60 * 6), 1, false, true));
 		if (entity instanceof ServerPlayer _player) {
-			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:fruit_tea_adv"));
+			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 			if (!_ap.isDone()) {
 				for (String criteria : _ap.getRemainingCriteria())

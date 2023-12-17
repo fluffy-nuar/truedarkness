@@ -1,0 +1,25 @@
+{
+  "_fv": 47,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "What Have You Added Here?",
+    "achievementDescription": "Eating this berries pretty good idea",
+    "achievementIcon": {
+      "value": "CUSTOM:LightedBerry"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:ReducedVisibleAdvancement"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"63\" y=\"103\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

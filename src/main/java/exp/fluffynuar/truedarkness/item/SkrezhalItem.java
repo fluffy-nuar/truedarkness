@@ -34,7 +34,7 @@ public class SkrezhalItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		SkrezhalPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure.execute(world, entity);
+		SkrezhalPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure.execute(world, x, y, z, entity);
 		return ar;
 	}
 }

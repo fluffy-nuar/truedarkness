@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:swamp_bush"
+    },
+    "title": {
+      "translate": "advancements.reduced_visible_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.reduced_visible_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "reduced_visible_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:swamps_advancement"
+}

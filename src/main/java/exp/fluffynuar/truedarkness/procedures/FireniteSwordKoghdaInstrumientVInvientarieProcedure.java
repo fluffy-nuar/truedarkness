@@ -21,7 +21,7 @@ public class FireniteSwordKoghdaInstrumientVInvientarieProcedure {
 				&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.FIRENITE_PICKAXE.get())) : false)
 				&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.FIRENITE_HOE.get())) : false)) {
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:firenite_weapon_adv"));
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
 					for (String criteria : _ap.getRemainingCriteria())
@@ -30,9 +30,9 @@ public class FireniteSwordKoghdaInstrumientVInvientarieProcedure {
 			}
 		}
 		if (!(entity instanceof ServerPlayer _plr6 && _plr6.level() instanceof ServerLevel
-				&& _plr6.getAdvancements().getOrStartProgress(_plr6.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:firenite_weapon_adv_1"))).isDone())) {
+				&& _plr6.getAdvancements().getOrStartProgress(_plr6.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"))).isDone())) {
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:firenite_weapon_adv_1"));
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
 					for (String criteria : _ap.getRemainingCriteria())

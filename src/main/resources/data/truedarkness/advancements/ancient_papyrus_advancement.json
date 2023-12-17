@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:ancient_papyrus"
+    },
+    "title": {
+      "translate": "advancements.ancient_papyrus_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.ancient_papyrus_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ancient_papyrus_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:metenite_advancement"
+}

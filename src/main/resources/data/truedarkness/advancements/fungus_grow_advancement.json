@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:light_shroom_item"
+    },
+    "title": {
+      "translate": "advancements.fungus_grow_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.fungus_grow_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fungus_grow_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:mines_advancement"
+}

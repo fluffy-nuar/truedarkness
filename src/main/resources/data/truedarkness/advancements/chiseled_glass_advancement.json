@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:chiseled_glass_shard"
+    },
+    "title": {
+      "translate": "advancements.chiseled_glass_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.chiseled_glass_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chiseled_glass_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:archeology_advancement"
+}

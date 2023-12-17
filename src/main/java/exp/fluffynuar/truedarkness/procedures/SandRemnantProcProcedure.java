@@ -60,7 +60,7 @@ public class SandRemnantProcProcedure {
 		}
 		if (Mth.nextInt(RandomSource.create(), 1, 100) <= (world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.SANDREMNANTSSUCCES))) {
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:sand_remnants_adv"));
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:archeology_advancement"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
 					for (String criteria : _ap.getRemainingCriteria())
@@ -70,7 +70,7 @@ public class SandRemnantProcProcedure {
 			if (Mth.nextInt(RandomSource.create(), 1, 500) <= 45) {
 				if (Mth.nextInt(RandomSource.create(), 1, 500) <= 45) {
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:sand_remnants_adv_2"));
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:real_archeology_advancement"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {
 							for (String criteria : _ap.getRemainingCriteria())
@@ -131,14 +131,6 @@ public class SandRemnantProcProcedure {
 						}
 					}
 				} else {
-					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:sand_remnants_adv_3"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
-					}
 					if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 						if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 							if (world instanceof ServerLevel _level) {
@@ -172,7 +164,7 @@ public class SandRemnantProcProcedure {
 			} else {
 				if (Mth.nextInt(RandomSource.create(), 1, 500) <= 100) {
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:sand_remnants_adv_1"));
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:chiseled_glass_advancement"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {
 							for (String criteria : _ap.getRemainingCriteria())

@@ -7,6 +7,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -20,7 +21,6 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import exp.fluffynuar.truedarkness.procedures.SculkFeatherKoghdaSnariadLietitTaktProcedure;
-import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
@@ -49,7 +49,7 @@ public class SculkFeatherEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(TruedarknessModItems.CHARGE_FEATHER.get());
+		return new ItemStack(Blocks.SCULK);
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class SculkFeatherEntity extends AbstractArrow implements ItemSupplier {
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 8f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(8);
+		entityarrow.setBaseDamage(10);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);

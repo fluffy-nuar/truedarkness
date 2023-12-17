@@ -228,5 +228,14 @@
         "stream": true
       }
     ]
+  },
+  "player.echo_harp": {
+    "subtitle": "subtitles.player.echo_harp",
+    "sounds": [
+      {
+        "name": "truedarkness:harp",
+        "stream": false
+      }
+    ]
   }
 }

@@ -10,7 +10,7 @@
     "name": "Cup Of Water",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:TrueDarknessElementariy"
     },
     "stackSize": 1,
     "enchantability": 0,

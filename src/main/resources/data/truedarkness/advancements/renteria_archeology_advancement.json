@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:renteria_sand_remnants"
+    },
+    "title": {
+      "translate": "advancements.renteria_archeology_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.renteria_archeology_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "renteria_archeology_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:archeology_advancement"
+}

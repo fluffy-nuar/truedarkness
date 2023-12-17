@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_flower"
+    },
+    "title": {
+      "translate": "advancements.teleport_back_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.teleport_back_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "teleport_back_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:more_corruption_advancement"
+}

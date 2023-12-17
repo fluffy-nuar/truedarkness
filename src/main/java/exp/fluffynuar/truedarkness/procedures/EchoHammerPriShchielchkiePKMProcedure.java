@@ -67,7 +67,7 @@ public class EchoHammerPriShchielchkiePKMProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 180, 1, false, false));
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HAMMER.get(), 180);
-					entity.setDeltaMovement(new Vec3((2.5 * entity.getLookAngle().x), (2.5 * entity.getLookAngle().y), (2.5 * entity.getLookAngle().z)));
+					entity.setDeltaMovement(new Vec3((2.5 * entity.getLookAngle().x), (4.5 * entity.getLookAngle().y), (2.5 * entity.getLookAngle().z)));
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.warden.sonic_boom")), SoundSource.PLAYERS, 1, 1);

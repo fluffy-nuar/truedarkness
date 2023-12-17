@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:eridium_heart"
+    },
+    "title": {
+      "translate": "advancements.eridium_golem_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.eridium_golem_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eridium_golem_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:wasterunner_advancement"
+}

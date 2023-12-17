@@ -58,7 +58,7 @@ public class CorruptedHumanBlockKoghdaRastieniieRazrushienoIghrokomProcedure {
 				}
 				if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupted >= 50) {
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:corrupted_bar_adv"));
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {
 							for (String criteria : _ap.getRemainingCriteria())
@@ -69,9 +69,9 @@ public class CorruptedHumanBlockKoghdaRastieniieRazrushienoIghrokomProcedure {
 			}
 		}
 		if (!(entity instanceof ServerPlayer _plr7 && _plr7.level() instanceof ServerLevel
-				&& _plr7.getAdvancements().getOrStartProgress(_plr7.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:corrupted_human_adv"))).isDone())) {
+				&& _plr7.getAdvancements().getOrStartProgress(_plr7.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"))).isDone())) {
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:corrupted_human_adv"));
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
 					for (String criteria : _ap.getRemainingCriteria())

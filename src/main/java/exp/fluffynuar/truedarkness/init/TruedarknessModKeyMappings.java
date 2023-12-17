@@ -15,7 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
-import exp.fluffynuar.truedarkness.network.SplashMessage;
+import exp.fluffynuar.truedarkness.network.UseMagicMessage;
 import exp.fluffynuar.truedarkness.network.NosediveMessage;
 import exp.fluffynuar.truedarkness.network.DoubleJumpMessage;
 import exp.fluffynuar.truedarkness.network.DashMessage;
@@ -62,32 +62,26 @@ public class TruedarknessModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping SPLASH = new KeyMapping("key.truedarkness.splash", GLFW.GLFW_KEY_R, "key.categories.gameplay") {
+	public static final KeyMapping USE_MAGIC = new KeyMapping("key.truedarkness.use_magic", GLFW.GLFW_KEY_V, "key.categories.misc") {
 		private boolean isDownOld = false;
 
 		@Override
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				TruedarknessMod.PACKET_HANDLER.sendToServer(new SplashMessage(0, 0));
-				SplashMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-				SPLASH_LASTPRESS = System.currentTimeMillis();
-			} else if (isDownOld != isDown && !isDown) {
-				int dt = (int) (System.currentTimeMillis() - SPLASH_LASTPRESS);
-				TruedarknessMod.PACKET_HANDLER.sendToServer(new SplashMessage(1, dt));
-				SplashMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+				TruedarknessMod.PACKET_HANDLER.sendToServer(new UseMagicMessage(0, 0));
+				UseMagicMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
 		}
 	};
-	private static long SPLASH_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(DOUBLE_JUMP);
 		event.register(NOSEDIVE);
 		event.register(DASH);
-		event.register(SPLASH);
+		event.register(USE_MAGIC);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -98,7 +92,7 @@ public class TruedarknessModKeyMappings {
 				DOUBLE_JUMP.consumeClick();
 				NOSEDIVE.consumeClick();
 				DASH.consumeClick();
-				SPLASH.consumeClick();
+				USE_MAGIC.consumeClick();
 			}
 		}
 	}

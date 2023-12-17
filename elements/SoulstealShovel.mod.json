@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "tool",
   "definition": {
-    "toolType": "Pickaxe",
+    "toolType": "Spade",
     "renderType": 0,
     "texture": "soulsteal_shovel",
     "customModelName": "Normal",

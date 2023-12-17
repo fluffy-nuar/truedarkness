@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "truedarkness:block/soulsteal_anchor"
+    },
+    "facing=east": {
+      "model": "truedarkness:block/soulsteal_anchor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "truedarkness:block/soulsteal_anchor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "truedarkness:block/soulsteal_anchor",
+      "y": 270
+    }
+  }
+}

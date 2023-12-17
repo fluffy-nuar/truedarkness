@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fruit_tea",
+    "texture": "berry_drink",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
     "name": "Fruit Tea",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:TrueDarknessElementariy"
     },
     "stackSize": 1,
     "enchantability": 0,

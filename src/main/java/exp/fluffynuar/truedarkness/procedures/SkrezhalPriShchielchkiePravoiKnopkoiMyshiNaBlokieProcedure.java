@@ -1,5 +1,7 @@
 package exp.fluffynuar.truedarkness.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GameType;
@@ -11,6 +13,8 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -31,7 +35,7 @@ import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
 public class SkrezhalPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruedarknessModMobEffects.SKREZHAL_BREAKING.get()))) {
@@ -121,20 +125,12 @@ public class SkrezhalPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 					}
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 100);
-					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:sweet_home"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
-					}
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SKREZHAL_BREAKING.get(), 2400, 0, true, false));
 				} else {
 					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)), 5);
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:cant_teleport_adv"));
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:teleport_back_advancement"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {
 							for (String criteria : _ap.getRemainingCriteria())
@@ -178,9 +174,26 @@ public class SkrezhalPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			}.checkGamemode(entity))) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-					if (_ist.hurt(1, RandomSource.create(), null)) {
+					if (_ist.hurt(Mth.nextInt(RandomSource.create(), 1, 3), RandomSource.create(), null)) {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
+					}
+				}
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 100);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.netherrack.break")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.netherrack.break")), SoundSource.PLAYERS, 1, 1, false);
+					}
+				}
+				if (entity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:teleport_advancement"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
 					}
 				}
 			}

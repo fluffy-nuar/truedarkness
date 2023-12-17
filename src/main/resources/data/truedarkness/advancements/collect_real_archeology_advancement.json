@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:crown_helmet"
+    },
+    "title": {
+      "translate": "advancements.collect_real_archeology_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.collect_real_archeology_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "collect_real_archeology_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:real_archeology_advancement"
+}

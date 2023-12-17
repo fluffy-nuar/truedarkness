@@ -11,8 +11,12 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import java.util.Map;
 
@@ -45,6 +49,14 @@ public class CorruptedHumanBlockKoghdaNachnietsiaUnichtozhieniieProcedure {
 				Entity entityToSpawn = TruedarknessModEntities.CORRUPTED_KNIGHT.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 				}
+			}
+		}
+		if (entity instanceof ServerPlayer _player) {
+			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:corrupted_human_advancement"));
+			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+			if (!_ap.isDone()) {
+				for (String criteria : _ap.getRemainingCriteria())
+					_player.getAdvancements().award(_adv, criteria);
 			}
 		}
 	}

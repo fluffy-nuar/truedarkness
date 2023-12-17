@@ -35,9 +35,9 @@ public class DisorientDustPriNazhatiiPravoiKnopkoiMyshiProcedure {
 			}
 		}
 		if (!(entity instanceof ServerPlayer _plr5 && _plr5.level() instanceof ServerLevel
-				&& _plr5.getAdvancements().getOrStartProgress(_plr5.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:disorient_dust_adv"))).isDone())) {
+				&& _plr5.getAdvancements().getOrStartProgress(_plr5.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"))).isDone())) {
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:disorient_dust_adv"));
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
 					for (String criteria : _ap.getRemainingCriteria())

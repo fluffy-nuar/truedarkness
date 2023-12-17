@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:cry_ingot"
+    },
+    "title": {
+      "translate": "advancements.aquamarine_tool_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.aquamarine_tool_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aquamarine_tool_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:real_archeology_advancement"
+}

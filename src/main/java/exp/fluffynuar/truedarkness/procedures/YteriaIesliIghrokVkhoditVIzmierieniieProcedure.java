@@ -6,9 +6,9 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -34,8 +34,6 @@ public class YteriaIesliIghrokVkhoditVIzmierieniieProcedure {
 		}
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(), (int) (20 * 60 * 4), 0, false, false));
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 60, 140, false, false));
 		TruedarknessMod.queueServerWork(40, () -> {
 			TruedarknessMod.queueServerWork(2, () -> {
 				{
@@ -52,6 +50,31 @@ public class YteriaIesliIghrokVkhoditVIzmierieniieProcedure {
 						} else {
 							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:ambient.strange_gorn")), SoundSource.NEUTRAL, 1, 1, false);
 						}
+					}
+					{
+						Entity _ent = entity;
+						_ent.teleportTo(
+								((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+										? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
+										: 0),
+								((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+										? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
+										: 0),
+								((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+										? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
+										: 0));
+						if (_ent instanceof ServerPlayer _serverPlayer)
+							_serverPlayer.connection.teleport(
+									((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
+											: 0),
+									((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
+											: 0),
+									((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
+											: 0),
+									_ent.getYRot(), _ent.getXRot());
 					}
 				});
 			});

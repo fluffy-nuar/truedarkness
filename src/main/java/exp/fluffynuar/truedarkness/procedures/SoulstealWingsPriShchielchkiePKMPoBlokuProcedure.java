@@ -14,10 +14,13 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import java.util.Map;
 
@@ -80,6 +83,14 @@ public class SoulstealWingsPriShchielchkiePKMPoBlokuProcedure {
 							if (_entity instanceof Player _player)
 								_player.getInventory().setChanged();
 						}
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:light_of_soul_advancement"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
 						if (entity instanceof LivingEntity _entity)
 							_entity.swing(InteractionHand.MAIN_HAND, true);
 					} else {
@@ -111,6 +122,14 @@ public class SoulstealWingsPriShchielchkiePKMPoBlokuProcedure {
 							_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
 							if (_entity instanceof Player _player)
 								_player.getInventory().setChanged();
+						}
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:light_of_soul_advancement"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 						if (entity instanceof LivingEntity _entity)
 							_entity.swing(InteractionHand.OFF_HAND, true);

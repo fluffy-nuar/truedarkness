@@ -11,7 +11,7 @@ import exp.fluffynuar.truedarkness.procedures.CocoaKoghdaPriedmietVInvientariePr
 
 public class LavenderPetalItem extends Item {
 	public LavenderPetalItem() {
-		super(new Item.Properties().stacksTo(6).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON));
 	}
 
 	@Override

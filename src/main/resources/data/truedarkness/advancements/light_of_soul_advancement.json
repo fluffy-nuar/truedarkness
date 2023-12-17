@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:soul_heart"
+    },
+    "title": {
+      "translate": "advancements.light_of_soul_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.light_of_soul_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "light_of_soul_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:cvetaliy_advancement"
+}

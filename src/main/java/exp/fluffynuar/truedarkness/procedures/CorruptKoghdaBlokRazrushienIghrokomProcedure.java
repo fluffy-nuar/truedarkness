@@ -51,20 +51,28 @@ public class CorruptKoghdaBlokRazrushienIghrokomProcedure {
 						});
 					}
 				}
-			} else {
-				if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupted == 100) {
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 9999999, 78, false, false));
-				}
 				if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupted >= 50) {
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:corrupted_bar_adv"));
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:more_corruption_advancement"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {
 							for (String criteria : _ap.getRemainingCriteria())
 								_player.getAdvancements().award(_adv, criteria);
 						}
 					}
+				}
+				if (entity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:corruption_advancement"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			} else {
+				if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupted == 100) {
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 9999999, 78, false, false));
 				}
 			}
 		}

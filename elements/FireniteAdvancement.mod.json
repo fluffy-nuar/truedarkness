@@ -1,0 +1,25 @@
+{
+  "_fv": 47,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Another Temperature",
+    "achievementDescription": "Make Firenite Ingot",
+    "achievementIcon": {
+      "value": "CUSTOM:FireniteIngot"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:BlacksmiteForgeAdvancement"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"-184\" y=\"53\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">9999999</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:FireniteIngot</field></block></value><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+  }
+}

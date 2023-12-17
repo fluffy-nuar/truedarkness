@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:general_chestplate"
+    },
+    "title": {
+      "translate": "advancements.general_defeat_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.general_defeat_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "general_defeat_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:general_advancement"
+}

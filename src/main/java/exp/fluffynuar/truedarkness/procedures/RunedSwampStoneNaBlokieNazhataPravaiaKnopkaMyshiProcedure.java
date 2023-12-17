@@ -42,7 +42,7 @@ public class RunedSwampStoneNaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 					_player.getInventory().setChanged();
 			}
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:runed_swamp_stone_adv_1"));
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
 					for (String criteria : _ap.getRemainingCriteria())

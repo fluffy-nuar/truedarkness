@@ -34,6 +34,9 @@
     "onRightClickedOnBlock": {
       "name": "SoulstealHeartPriShchielchkiePKMPoBloku"
     },
+    "onItemInUseTick": {
+      "name": "SoulstealHeartKazhdyiTikVRukie"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

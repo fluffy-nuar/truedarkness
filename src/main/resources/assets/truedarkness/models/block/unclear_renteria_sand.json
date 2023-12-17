@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/unclear_renteria_sand",
+    "up": "truedarkness:block/unclear_renteria_sand",
+    "north": "truedarkness:block/unclear_renteria_sand",
+    "east": "truedarkness:block/unclear_renteria_sand",
+    "south": "truedarkness:block/unclear_renteria_sand",
+    "west": "truedarkness:block/unclear_renteria_sand",
+    "particle": "truedarkness:block/unclear_renteria_sand"
+  },
+  "render_type": "solid"
+}

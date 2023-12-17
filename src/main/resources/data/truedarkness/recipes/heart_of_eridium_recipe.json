@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "1": {
+      "item": "truedarkness:eridium_heart"
+    },
+    "2": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "3": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "4": {
+      "item": "truedarkness:eridium_bone"
+    },
+    "5": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "7": {
+      "item": "truedarkness:soulsteal_heart"
+    }
+  },
+  "result": {
+    "item": "truedarkness:heart_eridium",
+    "count": 1
+  }
+}

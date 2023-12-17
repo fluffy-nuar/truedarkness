@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:metenite_crystal"
+    },
+    "title": {
+      "translate": "advancements.metenite_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.metenite_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "metenite_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:metenite_crystal"
+            ],
+            "count": {
+              "min": 1,
+              "max": 999999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:blacksmite_forge_advancement"
+}

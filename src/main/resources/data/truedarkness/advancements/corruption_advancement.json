@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_sculk_catalyst_spawn"
+    },
+    "title": {
+      "translate": "advancements.corruption_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.corruption_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "corruption_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:yteria_root"
+}

@@ -7,10 +7,12 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import exp.fluffynuar.truedarkness.procedures.ToolFangPriShchielchkiePKMProcedure;
+import exp.fluffynuar.truedarkness.procedures.ToolFangKazhdyiTikVInvientarieProcedure;
 
 public class ToolFangItem extends Item {
 	public ToolFangItem() {
@@ -36,5 +38,11 @@ public class ToolFangItem extends Item {
 		double z = entity.getZ();
 		ToolFangPriShchielchkiePKMProcedure.execute(world, x, y, z, entity);
 		return ar;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		ToolFangKazhdyiTikVInvientarieProcedure.execute(entity);
 	}
 }

@@ -3,13 +3,13 @@ package exp.fluffynuar.truedarkness.item;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
-public class SoulstealShovelItem extends PickaxeItem {
+public class SoulstealShovelItem extends ShovelItem {
 	public SoulstealShovelItem() {
 		super(new Tier() {
 			public int getUses() {

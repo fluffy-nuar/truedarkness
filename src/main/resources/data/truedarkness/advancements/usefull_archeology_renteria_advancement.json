@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:echo_stone"
+    },
+    "title": {
+      "translate": "advancements.usefull_archeology_renteria_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.usefull_archeology_renteria_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "usefull_archeology_renteria_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:renteria_archeology_advancement"
+}

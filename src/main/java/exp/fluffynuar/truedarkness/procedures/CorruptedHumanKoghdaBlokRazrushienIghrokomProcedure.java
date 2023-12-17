@@ -24,7 +24,7 @@ public class CorruptedHumanKoghdaBlokRazrushienIghrokomProcedure {
 		if (!(EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0)) {
 			if (Mth.nextInt(RandomSource.create(), 1, 10) <= 5) {
 				if (entity instanceof ServerPlayer _player) {
-					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:corrupted_human_adv"));
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
 						for (String criteria : _ap.getRemainingCriteria())
@@ -45,7 +45,7 @@ public class CorruptedHumanKoghdaBlokRazrushienIghrokomProcedure {
 				}
 			} else {
 				if (entity instanceof ServerPlayer _player) {
-					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:corrupted_human_adv"));
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
 						for (String criteria : _ap.getRemainingCriteria())

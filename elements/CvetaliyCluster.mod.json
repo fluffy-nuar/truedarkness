@@ -80,9 +80,9 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:CvetaliyGrain"
     },
-    "dropAmount": 1,
+    "dropAmount": 5,
     "useLootTableForDrops": false,
     "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
@@ -153,6 +153,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "CvetaliyClusterPriRazrushieniiBlokaIghrokom"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

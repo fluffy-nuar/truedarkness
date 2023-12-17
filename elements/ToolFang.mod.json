@@ -34,6 +34,9 @@
     "onRightClickedInAir": {
       "name": "ToolFangPriShchielchkiePKM"
     },
+    "onItemInInventoryTick": {
+      "name": "ToolFangKazhdyiTikVInvientarie"
+    },
     "isFood": false,
     "nutritionalValue": -4,
     "saturation": -0.7999999999999999,

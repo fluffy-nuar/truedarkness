@@ -12,9 +12,9 @@ public class SweetHerbsKoghdaPriedmietVInvientarieProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel
-				&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:bag_with_herbs_adv"))).isDone())) {
+				&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"))).isDone())) {
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:bag_with_herbs_adv"));
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
 					for (String criteria : _ap.getRemainingCriteria())

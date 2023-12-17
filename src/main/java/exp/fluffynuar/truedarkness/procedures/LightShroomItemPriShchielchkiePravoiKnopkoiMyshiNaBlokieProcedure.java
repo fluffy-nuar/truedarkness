@@ -115,7 +115,7 @@ public class LightShroomItemPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 					}
 				}
 				if (entity instanceof ServerPlayer _player) {
-					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:room_mush"));
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
 						for (String criteria : _ap.getRemainingCriteria())

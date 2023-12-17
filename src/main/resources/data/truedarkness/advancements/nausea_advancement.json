@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:lighted_berry"
+    },
+    "title": {
+      "translate": "advancements.nausea_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.nausea_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nausea_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:reduced_visible_advancement"
+}

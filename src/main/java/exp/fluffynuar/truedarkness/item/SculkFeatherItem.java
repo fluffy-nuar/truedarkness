@@ -44,7 +44,7 @@ public class SculkFeatherItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				SculkFeatherEntity entityarrow = SculkFeatherEntity.shoot(world, entity, world.getRandom(), 8f, 8, 0);
+				SculkFeatherEntity entityarrow = SculkFeatherEntity.shoot(world, entity, world.getRandom(), 8f, 10, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 				SculkFeatherPriIspolzovaniiStrielkovoghoPriedmietaProcedure.execute(entity);

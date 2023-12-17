@@ -9,6 +9,7 @@ import net.minecraftforge.event.entity.living.LivingHurtEvent;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.entity.player.Player;
@@ -48,14 +49,16 @@ public class ForgeteelWeaponProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof Player && (entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria")))) {
-			if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.CORRUPTING.get(), (int) (20 * 30), 0, true, false));
+			if (Mth.nextInt(RandomSource.create(), 1, 100) >= 75) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.CORRUPTING.get(), (int) (20 * 5), 0, true, false));
+			}
 		}
 		if (sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.CURSED_MIRROR.get())) : false) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, (int) (20 * 20), 0, true, false));
 		}
-		if (sourceentity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(TruedarknessModMobEffects.PARANOIA.get()) && Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
+		if (sourceentity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(TruedarknessModMobEffects.PARANOIA.get()) && Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
 				entityToSpawn.setPickUpDelay(60);
@@ -73,8 +76,8 @@ public class ForgeteelWeaponProcedure {
 			});
 		}
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem
-				&& !(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get()))) {
-			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.GENERAL_HEART.get(), lv).isPresent() : false) {
+				&& !(sourceentity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get()))) {
+			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.GENERAL_HEART.get(), lv).isPresent() : false) {
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 140, 3, true, false));
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -87,6 +90,28 @@ public class ForgeteelWeaponProcedure {
 					_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), 140);
 				if (sourceentity instanceof Player _player)
 					_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), 140);
+			}
+		}
+		if (((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof SwordItem
+				|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof SwordItem)
+				&& !(sourceentity instanceof LivingEntity _livEnt28 && _livEnt28.hasEffect(TruedarknessModMobEffects.SOULSTEAL_WINGS_COOLDOWN.get()))) {
+			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.GENERAL_WINGS.get(), lv).isPresent() : false) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 60, 3, true, false));
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 60, 1, true, false));
+				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 1, true, false));
+				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 60, 1, true, false));
+				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_WINGS_COOLDOWN.get(), 100, 0, true, false));
+				if (sourceentity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_WINGS.get(), 140);
+				if (sourceentity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_WINGS.get(), 140);
+				if (sourceentity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_WINGS.get(), 140);
 			}
 		}
 	}

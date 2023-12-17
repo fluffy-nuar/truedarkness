@@ -102,13 +102,13 @@ public class NosedivePriNazhatiiKlavishiProcedure {
 			if (!(entity instanceof LivingEntity _livEnt30 && _livEnt30.hasEffect(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get()))) {
 				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.ECHO_HEART.get(), lv).isPresent() : false) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), 140, 0, false, false));
+						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), 280, 0, false, false));
 					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), 140);
+						_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), 280);
 					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_HEART.get(), 140);
+						_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_HEART.get(), 280);
 					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), 140);
+						_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), 280);
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 120, 198, false, false));
 					{

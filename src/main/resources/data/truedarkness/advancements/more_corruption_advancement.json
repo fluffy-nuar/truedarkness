@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_sculk"
+    },
+    "title": {
+      "translate": "advancements.more_corruption_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.more_corruption_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "more_corruption_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:corruption_advancement"
+}

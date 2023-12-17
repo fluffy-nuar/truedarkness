@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:cave_skrezhal_part"
+    },
+    "title": {
+      "translate": "advancements.teleport_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.teleport_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "teleport_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:yteria_root"
+}

@@ -25,6 +25,7 @@ import exp.fluffynuar.truedarkness.potion.PhantomProtectionMobEffect;
 import exp.fluffynuar.truedarkness.potion.ParanoiaMobEffect;
 import exp.fluffynuar.truedarkness.potion.NosediveEffectMobEffect;
 import exp.fluffynuar.truedarkness.potion.LoseHideMobEffect;
+import exp.fluffynuar.truedarkness.potion.HarpEchoMobEffect;
 import exp.fluffynuar.truedarkness.potion.FallingEffectMobEffect;
 import exp.fluffynuar.truedarkness.potion.EffectCorruptedBarVisMobEffect;
 import exp.fluffynuar.truedarkness.potion.CorruptedEffectMobEffect;
@@ -52,4 +53,5 @@ public class TruedarknessModMobEffects {
 	public static final RegistryObject<MobEffect> SOULSTEAL_HEART_COOLDOWN = REGISTRY.register("soulsteal_heart_cooldown", () -> new SoulstealHeartCooldownMobEffect());
 	public static final RegistryObject<MobEffect> SOULSTEAL_WINGS_COOLDOWN = REGISTRY.register("soulsteal_wings_cooldown", () -> new SoulstealWingsCooldownMobEffect());
 	public static final RegistryObject<MobEffect> SOULSTEAL_SPOOL_COOLDOWN = REGISTRY.register("soulsteal_spool_cooldown", () -> new SoulstealSpoolCooldownMobEffect());
+	public static final RegistryObject<MobEffect> HARP_ECHO = REGISTRY.register("harp_echo", () -> new HarpEchoMobEffect());
 }

@@ -3,7 +3,6 @@
   "values": [
     "minecraft:glow_berries",
     "truedarkness:grape",
-    "minecraft:sweet_berries",
-    "truedarkness:blueberry"
+    "minecraft:sweet_berries"
   ]
 }

@@ -123,6 +123,9 @@
     "onTickUpdate": {
       "name": "CorruptedBubbleSpontannoNaStoronieKliienta"
     },
+    "onEntityWalksOn": {
+      "name": "CorruptedBubbleBlockKoghdaSushchnostKhoditPoBloku"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

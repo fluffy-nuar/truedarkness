@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": "CUSTOM:EridiumHeart"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": "CUSTOM:EridiumBone"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulstealHeart"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HeartEridium"
+    },
+    "name": "heart_of_eridium_recipe",
+    "namespace": "mod"
+  }
+}

@@ -2,7 +2,7 @@
   "replace": "false",
   "values": [
     "minecraft:air",
-    "truedarkness:sculk_ring",
-    "truedarkness:cursed_ring"
+    "truedarkness:cursed_ring",
+    "truedarkness:sculk_ring"
   ]
 }

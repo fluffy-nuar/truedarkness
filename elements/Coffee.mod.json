@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "coffee",
+    "texture": "cacao",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Coffee",
+    "name": "Cacao",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:TrueDarknessElementariy"
     },
     "stackSize": 1,
     "enchantability": 0,

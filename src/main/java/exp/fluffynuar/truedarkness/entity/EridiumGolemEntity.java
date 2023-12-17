@@ -33,6 +33,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
+import exp.fluffynuar.truedarkness.procedures.EridiumGolemPriGibieliSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.procedures.EridiumGolemNaturalnoieUsloviiePoiavlieniiaSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
@@ -121,6 +122,12 @@ public class EridiumGolemEntity extends Monster {
 		if (source.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		EridiumGolemPriGibieliSushchnostiProcedure.execute(source.getEntity());
 	}
 
 	public static void init() {

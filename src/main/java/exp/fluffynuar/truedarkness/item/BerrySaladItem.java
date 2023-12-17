@@ -12,7 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class BerrySaladItem extends Item {
 	public BerrySaladItem() {
-		super(new Item.Properties().stacksTo(6).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.3f).build()));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.3f).build()));
 	}
 
 	@Override

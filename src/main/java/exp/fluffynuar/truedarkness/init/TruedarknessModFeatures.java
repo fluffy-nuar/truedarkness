@@ -59,6 +59,7 @@ import exp.fluffynuar.truedarkness.world.features.ores.SwampSlimyOreFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.SwampSeaweedFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.SwampMudFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.SwampClayFeature;
+import exp.fluffynuar.truedarkness.world.features.ores.SuspiciousRenteriaSandFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.SandstoneOfMissingFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.SandOfMissingFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.PrismarinumCoralWaveFeature;
@@ -221,6 +222,7 @@ public class TruedarknessModFeatures {
 	public static final RegistryObject<Feature<?>> SWAMP_TALL_GRASS = REGISTRY.register("swamp_tall_grass", SwampTallGrassFeature::new);
 	public static final RegistryObject<Feature<?>> SWAMP_GRASS = REGISTRY.register("swamp_grass", SwampGrassFeature::new);
 	public static final RegistryObject<Feature<?>> SWAMP_BUSH = REGISTRY.register("swamp_bush", SwampBushFeature::new);
+	public static final RegistryObject<Feature<?>> SUSPICIOUS_RENTERIA_SAND = REGISTRY.register("suspicious_renteria_sand", SuspiciousRenteriaSandFeature::new);
 	public static final RegistryObject<Feature<?>> ANCIENT_SCULK = REGISTRY.register("ancient_sculk", AncientSculkFeature::new);
 	public static final RegistryObject<Feature<?>> RECRA_FLOWER = REGISTRY.register("recra_flower", RecraFlowerFeature::new);
 	public static final RegistryObject<Feature<?>> RECRA_FLOWER_2 = REGISTRY.register("recra_flower_2", RecraFlower2Feature::new);

@@ -40,4 +40,5 @@ public class TruedarknessModSounds {
 	public static final RegistryObject<SoundEvent> RECORD_HUMILITY = REGISTRY.register("record.humility", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "record.humility")));
 	public static final RegistryObject<SoundEvent> RECORD_HOLLOW = REGISTRY.register("record.hollow", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "record.hollow")));
 	public static final RegistryObject<SoundEvent> MUSIC_YTERIA = REGISTRY.register("music.yteria", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "music.yteria")));
+	public static final RegistryObject<SoundEvent> PLAYER_ECHO_HARP = REGISTRY.register("player.echo_harp", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.echo_harp")));
 }

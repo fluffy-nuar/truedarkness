@@ -11,7 +11,7 @@ public class ReducedVisibilityKoghdaEffiektNachatprimienienProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _player) {
-			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:spores_effect_adv"));
+			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:reduced_visible_advancement"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 			if (!_ap.isDone()) {
 				for (String criteria : _ap.getRemainingCriteria())

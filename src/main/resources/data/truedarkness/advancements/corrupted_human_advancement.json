@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:corrupted_chestplate"
+    },
+    "title": {
+      "translate": "advancements.corrupted_human_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.corrupted_human_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "corrupted_human_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:corrupted_land_advancement"
+}

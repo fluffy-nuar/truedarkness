@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:tool_fang"
+    },
+    "title": {
+      "translate": "advancements.tool_fang_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.tool_fang_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tool_fang_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:tool_fang"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:corrupted_hand_fangs_advancement"
+}

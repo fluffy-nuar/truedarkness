@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:general_heart"
+    },
+    "title": {
+      "translate": "advancements.general_magic_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.general_magic_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "general_magic_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:general_book_advancement"
+}

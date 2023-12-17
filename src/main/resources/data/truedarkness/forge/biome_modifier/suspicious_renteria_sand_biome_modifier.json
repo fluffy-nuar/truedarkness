@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:retroland",
+  "features": "truedarkness:suspicious_renteria_sand",
+  "step": "underground_ores"
+}
