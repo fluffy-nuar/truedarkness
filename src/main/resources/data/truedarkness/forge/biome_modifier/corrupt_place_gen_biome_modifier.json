@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:corrupted_place",
+  "features": "truedarkness:corrupt_place_gen",
+  "step": "surface_structures"
+}

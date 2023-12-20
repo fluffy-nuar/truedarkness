@@ -97,6 +97,12 @@
     "canBePlacedOn": [
       {
         "value": "CUSTOM:Corrupt"
+      },
+      {
+        "value": "CUSTOM:Corrupt1"
+      },
+      {
+        "value": "CUSTOM:Corrupt0"
       }
     ],
     "isBonemealable": false,

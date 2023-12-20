@@ -46,7 +46,7 @@ public class CorruptedFlowerBlock extends FlowerBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(TruedarknessModBlocks.CORRUPT.get());
+		return groundState.is(TruedarknessModBlocks.CORRUPT.get()) || groundState.is(TruedarknessModBlocks.CORRUPT_1.get()) || groundState.is(TruedarknessModBlocks.CORRUPT_0.get());
 	}
 
 	@Override

@@ -1,0 +1,33 @@
+{
+  "type": "truedarkness:corrupt_place_gen",
+  "config": {
+    "tries": 192,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "truedarkness:corrupt_1"
+            }
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "truedarkness:corrupt"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

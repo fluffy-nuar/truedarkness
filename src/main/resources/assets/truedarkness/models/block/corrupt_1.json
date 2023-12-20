@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/corrupt_unanimated",
+    "up": "truedarkness:block/corrupt_unanimated",
+    "north": "truedarkness:block/corrupt_unanimated",
+    "east": "truedarkness:block/corrupt_unanimated",
+    "south": "truedarkness:block/corrupt_unanimated",
+    "west": "truedarkness:block/corrupt_unanimated",
+    "particle": "truedarkness:block/corrupt_unanimated"
+  },
+  "render_type": "solid"
+}

@@ -567,6 +567,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModBlocks.DRIED_FENCE_GATE.get().asItem());
 				tabData.accept(TruedarknessModBlocks.DRIED_PRESSURE_PLATE.get().asItem());
 				tabData.accept(TruedarknessModBlocks.DRIED_BUTTON.get().asItem());
+				tabData.accept(TruedarknessModBlocks.CORRUPTED_ROOTS.get().asItem());
 			})
 
 			.build());

@@ -82,6 +82,12 @@
       },
       {
         "value": "CUSTOM:CorruptedSculk"
+      },
+      {
+        "value": "CUSTOM:Corrupt1"
+      },
+      {
+        "value": "CUSTOM:Corrupt0"
       }
     ],
     "isBonemealable": false,

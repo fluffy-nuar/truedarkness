@@ -82,6 +82,12 @@
       },
       {
         "value": "CUSTOM:SwampSoil"
+      },
+      {
+        "value": "CUSTOM:Corrupt1"
+      },
+      {
+        "value": "CUSTOM:Corrupt0"
       }
     ],
     "isBonemealable": false,

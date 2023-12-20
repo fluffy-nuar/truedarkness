@@ -828,6 +828,9 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> SPORE_VINE_1 = block(TruedarknessModBlocks.SPORE_VINE_1);
 	public static final RegistryObject<Item> SPORE_VINE_2 = block(TruedarknessModBlocks.SPORE_VINE_2);
 	public static final RegistryObject<Item> GLOW_FUNGUS_HAT_0 = block(TruedarknessModBlocks.GLOW_FUNGUS_HAT_0);
+	public static final RegistryObject<Item> CORRUPT_1 = block(TruedarknessModBlocks.CORRUPT_1);
+	public static final RegistryObject<Item> CORRUPT_0 = block(TruedarknessModBlocks.CORRUPT_0);
+	public static final RegistryObject<Item> CORRUPTED_ROOTS = block(TruedarknessModBlocks.CORRUPTED_ROOTS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

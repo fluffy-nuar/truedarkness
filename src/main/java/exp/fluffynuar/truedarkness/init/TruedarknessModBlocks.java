@@ -325,6 +325,7 @@ import exp.fluffynuar.truedarkness.block.CorruptedSkulkCatalystBlock;
 import exp.fluffynuar.truedarkness.block.CorruptedSculkCatalystBlock;
 import exp.fluffynuar.truedarkness.block.CorruptedSculkBlock;
 import exp.fluffynuar.truedarkness.block.CorruptedRuneBlock;
+import exp.fluffynuar.truedarkness.block.CorruptedRootsBlock;
 import exp.fluffynuar.truedarkness.block.CorruptedLeavesBlock;
 import exp.fluffynuar.truedarkness.block.CorruptedHumanBlockBlock;
 import exp.fluffynuar.truedarkness.block.CorruptedGrassBlock;
@@ -336,6 +337,8 @@ import exp.fluffynuar.truedarkness.block.CorruptRuneBlock;
 import exp.fluffynuar.truedarkness.block.CorruptRune2Block;
 import exp.fluffynuar.truedarkness.block.CorruptRune1Block;
 import exp.fluffynuar.truedarkness.block.CorruptBlock;
+import exp.fluffynuar.truedarkness.block.Corrupt1Block;
+import exp.fluffynuar.truedarkness.block.Corrupt0Block;
 import exp.fluffynuar.truedarkness.block.CopperKettleForSamovarBlock;
 import exp.fluffynuar.truedarkness.block.CopperKettleBlock;
 import exp.fluffynuar.truedarkness.block.CobbledDarkniteWallBlock;
@@ -772,4 +775,7 @@ public class TruedarknessModBlocks {
 	public static final RegistryObject<Block> SPORE_VINE_1 = REGISTRY.register("spore_vine_1", () -> new SporeVine1Block());
 	public static final RegistryObject<Block> SPORE_VINE_2 = REGISTRY.register("spore_vine_2", () -> new SporeVine2Block());
 	public static final RegistryObject<Block> GLOW_FUNGUS_HAT_0 = REGISTRY.register("glow_fungus_hat_0", () -> new GlowFungusHatBlock());
+	public static final RegistryObject<Block> CORRUPT_1 = REGISTRY.register("corrupt_1", () -> new Corrupt1Block());
+	public static final RegistryObject<Block> CORRUPT_0 = REGISTRY.register("corrupt_0", () -> new Corrupt0Block());
+	public static final RegistryObject<Block> CORRUPTED_ROOTS = REGISTRY.register("corrupted_roots", () -> new CorruptedRootsBlock());
 }

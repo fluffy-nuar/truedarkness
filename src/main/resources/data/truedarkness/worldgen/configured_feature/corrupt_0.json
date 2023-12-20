@@ -1,0 +1,53 @@
+{
+  "type": "truedarkness:corrupt_0",
+  "config": {
+    "size": 16,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:swamp_black_soil"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:corrupt_0"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:swamp_sand"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:corrupt_0"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:swamp_stone"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:corrupt_0"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "truedarkness:crenrit"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:corrupt_0"
+        }
+      }
+    ]
+  }
+}
