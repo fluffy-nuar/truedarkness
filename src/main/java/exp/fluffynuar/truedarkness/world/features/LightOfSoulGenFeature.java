@@ -2,7 +2,7 @@
 package exp.fluffynuar.truedarkness.world.features;
 
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.OreFeature;
+import net.minecraft.world.level.levelgen.feature.ScatteredOreFeature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
@@ -12,7 +12,7 @@ import net.minecraft.core.registries.Registries;
 
 import java.util.Set;
 
-public class LightOfSoulGenFeature extends OreFeature {
+public class LightOfSoulGenFeature extends ScatteredOreFeature {
 	private final Set<ResourceKey<Level>> generateDimensions = Set.of(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria")));
 
 	public LightOfSoulGenFeature() {

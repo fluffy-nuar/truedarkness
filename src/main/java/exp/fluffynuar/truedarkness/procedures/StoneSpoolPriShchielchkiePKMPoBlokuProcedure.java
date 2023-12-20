@@ -75,7 +75,7 @@ public class StoneSpoolPriShchielchkiePKMPoBlokuProcedure {
 							}
 						}
 						if (entity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal(("\u00A7b" + Component.translatable("soul.dash.you_can").getString())), true);
+							_player.displayClientMessage(Component.literal(("\u00A7b" + Component.translatable("soul.spool").getString())), true);
 						if (entity instanceof LivingEntity _entity) {
 							ItemStack _setstack = new ItemStack(TruedarknessModItems.SOUL_SPOOL.get());
 							_setstack.setCount(1);
@@ -115,7 +115,7 @@ public class StoneSpoolPriShchielchkiePKMPoBlokuProcedure {
 							}
 						}
 						if (entity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal(("\u00A7b" + Component.translatable("soul.dash.you_can").getString())), true);
+							_player.displayClientMessage(Component.literal(("\u00A7b" + Component.translatable("soul.spool").getString())), true);
 						if (entity instanceof LivingEntity _entity) {
 							ItemStack _setstack = new ItemStack(TruedarknessModItems.SOUL_SPOOL.get());
 							_setstack.setCount(1);

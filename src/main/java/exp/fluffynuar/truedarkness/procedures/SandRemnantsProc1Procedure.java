@@ -74,13 +74,13 @@ public class SandRemnantsProc1Procedure {
 						if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.ECHO_HARP.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						} else {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.ECHO_SHARD));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
@@ -88,13 +88,13 @@ public class SandRemnantsProc1Procedure {
 						if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.ECHO_STONE.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						} else {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.ECHO_SANDGLASS.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
@@ -104,13 +104,13 @@ public class SandRemnantsProc1Procedure {
 						if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.AQUAMARINE_COIN.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						} else {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.IRON_NUGGET));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
@@ -118,13 +118,13 @@ public class SandRemnantsProc1Procedure {
 						if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.GOLD_NUGGET));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						} else {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.CVETALIY_GRAIN.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}

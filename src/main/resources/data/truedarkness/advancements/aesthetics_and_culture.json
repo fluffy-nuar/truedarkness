@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "truedarkness:textures/screens/darkness_spruce_planks.png",
+    "icon": {
+      "item": "truedarkness:frozen_steal_key"
+    },
+    "title": {
+      "translate": "advancements.aesthetics_and_culture.title"
+    },
+    "description": {
+      "translate": "advancements.aesthetics_and_culture.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aesthetics_and_culture": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

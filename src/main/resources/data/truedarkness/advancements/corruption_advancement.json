@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:corrupted_sculk_catalyst_spawn"
+      "item": "truedarkness:corrupted_sculk_catalyst"
     },
     "title": {
       "translate": "advancements.corruption_advancement.title"

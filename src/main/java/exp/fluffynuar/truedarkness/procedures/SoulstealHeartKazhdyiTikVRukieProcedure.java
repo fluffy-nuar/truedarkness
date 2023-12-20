@@ -29,12 +29,10 @@ public class SoulstealHeartKazhdyiTikVRukieProcedure {
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_HEART.get()) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 60, 0, false, false));
-			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(TruedarknessModMobEffects.HARP_ECHO.get());
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.SCULK_SOUL, x, y, z, 10, 0.1, 0.1, 0.1, 0.2);
 			TruedarknessMod.queueServerWork(20, () -> {
-				if (entity instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(TruedarknessModMobEffects.HARP_ECHO.get())
+				if (entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(TruedarknessModMobEffects.HARP_ECHO.get())
 						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_HEART.get()) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
@@ -50,6 +48,8 @@ public class SoulstealHeartKazhdyiTikVRukieProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(TruedarknessModMobEffects.HARP_ECHO.get());
 				}
 			});
 		}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:lavender"
+    },
+    "title": {
+      "translate": "advancements.lavender_field_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.lavender_field_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lavender_field_advancement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "truedarkness:lavender_field"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:deep_dark_adv"
+}

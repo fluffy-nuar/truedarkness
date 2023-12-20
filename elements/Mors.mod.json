@@ -31,6 +31,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "MorsPriZaviershieniiIspolzovaniia"
+    },
     "isFood": true,
     "nutritionalValue": 0,
     "saturation": 0.0,

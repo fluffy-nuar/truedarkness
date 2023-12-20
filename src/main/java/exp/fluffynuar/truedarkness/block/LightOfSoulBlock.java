@@ -31,7 +31,7 @@ import java.util.List;
 import java.util.Collections;
 
 import exp.fluffynuar.truedarkness.procedures.LightOfSoulSpontannoNaStoronieKliientaProcedure;
-import exp.fluffynuar.truedarkness.init.TruedarknessModBlocks;
+import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
 public class LightOfSoulBlock extends Block {
 	public LightOfSoulBlock() {
@@ -76,7 +76,7 @@ public class LightOfSoulBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(TruedarknessModBlocks.SOULSTEAL_GRID.get()));
+		return Collections.singletonList(new ItemStack(TruedarknessModItems.SOULSTEAL_SHARD.get()));
 	}
 
 	@OnlyIn(Dist.CLIENT)

@@ -96,6 +96,9 @@
     ],
     "generationType": "Grass",
     "patchSize": 2,
-    "generateAtAnyHeight": true
+    "generateAtAnyHeight": true,
+    "onRightClicked": {
+      "name": "CorruptedSculkCatalystPriShchielchkiePKMPoRastieniiu"
+    }
   }
 }

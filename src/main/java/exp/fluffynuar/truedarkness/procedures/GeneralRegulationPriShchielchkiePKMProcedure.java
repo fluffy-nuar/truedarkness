@@ -32,7 +32,8 @@ public class GeneralRegulationPriShchielchkiePKMProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.DARKNESS)) && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.GENERAL_REGULATION.get()) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.AQUAMARINE_SWORD.get()
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_MARK.get()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.AQUAMARINE_SWORD.get()
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_WINGS.get()
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_HEART.get()) {
 				if (entity instanceof Player _player)
@@ -141,7 +142,7 @@ public class GeneralRegulationPriShchielchkiePKMProcedure {
 											_player.getInventory().setChanged();
 									}
 									if (entity instanceof Player _player && !_player.level().isClientSide())
-										_player.displayClientMessage(Component.literal(("\u00A73" + Component.translatable("soul.general_wings").getString())), false);
+										_player.displayClientMessage(Component.literal(("\u00A73" + Component.translatable("general.wings").getString())), false);
 									if (entity instanceof ServerPlayer _player) {
 										Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:general_magic_advancement"));
 										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -159,7 +160,7 @@ public class GeneralRegulationPriShchielchkiePKMProcedure {
 											_player.getInventory().setChanged();
 									}
 									if (entity instanceof Player _player && !_player.level().isClientSide())
-										_player.displayClientMessage(Component.literal(("\u00A73" + Component.translatable("soul.general_heart").getString())), false);
+										_player.displayClientMessage(Component.literal(("\u00A73" + Component.translatable("general.heart").getString())), false);
 									if (entity instanceof ServerPlayer _player) {
 										Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:general_magic_advancement"));
 										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -176,6 +177,26 @@ public class GeneralRegulationPriShchielchkiePKMProcedure {
 										if (_entity instanceof Player _player)
 											_player.getInventory().setChanged();
 									}
+									if (entity instanceof Player _player && !_player.level().isClientSide())
+										_player.displayClientMessage(Component.literal(("\u00A73" + Component.translatable("general.sword").getString())), false);
+									if (entity instanceof ServerPlayer _player) {
+										Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:general_magic_advancement"));
+										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+										if (!_ap.isDone()) {
+											for (String criteria : _ap.getRemainingCriteria())
+												_player.getAdvancements().award(_adv, criteria);
+										}
+									}
+								} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_MARK.get()) {
+									if (entity instanceof LivingEntity _entity) {
+										ItemStack _setstack = new ItemStack(TruedarknessModItems.GENERAL_MARK.get());
+										_setstack.setCount(1);
+										_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
+										if (_entity instanceof Player _player)
+											_player.getInventory().setChanged();
+									}
+									if (entity instanceof Player _player && !_player.level().isClientSide())
+										_player.displayClientMessage(Component.literal(("\u00A73" + Component.translatable("general.mark").getString())), false);
 									if (entity instanceof ServerPlayer _player) {
 										Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:general_magic_advancement"));
 										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

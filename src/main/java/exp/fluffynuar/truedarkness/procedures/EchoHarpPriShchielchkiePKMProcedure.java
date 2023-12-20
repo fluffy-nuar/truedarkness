@@ -54,7 +54,7 @@ public class EchoHarpPriShchielchkiePKMProcedure {
 					_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HARP.get(), (int) (20 * 60 * 3));
 				if (!(EnchantmentHelper.getItemEnchantmentLevel(TruedarknessModEnchantments.CURSE_OF_MUTING.get(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0)) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.HARP_ECHO.get(), 999999999, 0, false, false));
+						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.HARP_ECHO.get(), 2000, 0, false, false));
 					(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).enchant(TruedarknessModEnchantments.CURSE_OF_MUTING.get(), 1);
 				}
 			}

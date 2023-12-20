@@ -3,7 +3,7 @@
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "cursed_amulet",
+    "texture": "cursed_ring",
     "customModelName": "Normal",
     "name": "Cursed Ring",
     "rarity": "COMMON",

@@ -5,7 +5,7 @@
     "achievementName": "Chiller",
     "achievementDescription": "It got on me!",
     "achievementIcon": {
-      "value": "CUSTOM:CorruptedSculkCatalyst"
+      "value": "CUSTOM:CorruptedSkulkCatalyst"
     },
     "background": "Default",
     "disableDisplay": false,

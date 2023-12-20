@@ -81,13 +81,13 @@ public class SandRemnantProcProcedure {
 						if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.REEL.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						} else {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.LETTER.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
@@ -97,20 +97,20 @@ public class SandRemnantProcProcedure {
 								if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 									if (world instanceof ServerLevel _level) {
 										ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.ELDER_TEAR.get()));
-										entityToSpawn.setPickUpDelay(1);
+										entityToSpawn.setPickUpDelay(0);
 										_level.addFreshEntity(entityToSpawn);
 									}
 								} else {
 									if (world instanceof ServerLevel _level) {
 										ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.SANDGLASS.get()));
-										entityToSpawn.setPickUpDelay(1);
+										entityToSpawn.setPickUpDelay(0);
 										_level.addFreshEntity(entityToSpawn);
 									}
 								}
 							} else {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.ANCIENT_PAPYRUS.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							}
@@ -118,13 +118,13 @@ public class SandRemnantProcProcedure {
 							if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.CROWN_HELMET.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							} else {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.PHOTO.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							}
@@ -135,13 +135,13 @@ public class SandRemnantProcProcedure {
 						if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.CVETALIY_GRAIN.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						} else {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.METENITE_SHARD.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
@@ -149,13 +149,13 @@ public class SandRemnantProcProcedure {
 						if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.AQUAMARINE_COIN.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						} else {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.SOULSTEAL_SHARD.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
@@ -176,13 +176,13 @@ public class SandRemnantProcProcedure {
 							if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.CHISELED_GLASS_SHARD.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							} else {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.CHISELED_GLASS_SHARD_1.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							}
@@ -190,13 +190,13 @@ public class SandRemnantProcProcedure {
 							if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.CHISELED_GLASS_SHARD_2.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							} else {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.CHISELED_GLASS_SHARD_3.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							}
@@ -206,13 +206,13 @@ public class SandRemnantProcProcedure {
 							if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.CHISELED_GLASS_SHARD_4.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							} else {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.CHISELED_ANCIENT_GLASS_SHARD.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							}
@@ -220,13 +220,13 @@ public class SandRemnantProcProcedure {
 							if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.MUSIC_DISC_HUMILITY.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							} else {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.MUSIC_DISC_FOREST_NIGHT.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							}
@@ -238,13 +238,13 @@ public class SandRemnantProcProcedure {
 							if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.BONE));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							} else {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.BONE_MEAL));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							}
@@ -252,13 +252,13 @@ public class SandRemnantProcProcedure {
 							if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModBlocks.SWAMP_TALL_GRASS.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							} else {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModBlocks.SWAMP_BUSH.get()));
-									entityToSpawn.setPickUpDelay(1);
+									entityToSpawn.setPickUpDelay(0);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							}
@@ -267,13 +267,13 @@ public class SandRemnantProcProcedure {
 						if (Mth.nextInt(RandomSource.create(), 1, 500) >= 250) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModBlocks.SANDSTONE_OF_MISSING.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						} else {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModBlocks.SWAMP_SAND.get()));
-								entityToSpawn.setPickUpDelay(1);
+								entityToSpawn.setPickUpDelay(0);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}

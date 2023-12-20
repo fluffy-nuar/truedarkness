@@ -66,7 +66,7 @@ public class PriVziatiiPriedmietaSamovarProcedure {
 			}
 		}
 		if (entity instanceof ServerPlayer _player) {
-			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
+			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:samover_advancement"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 			if (!_ap.isDone()) {
 				for (String criteria : _ap.getRemainingCriteria())
@@ -88,7 +88,7 @@ public class PriVziatiiPriedmietaSamovarProcedure {
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_FIRE)), 5);
 						if (entity instanceof ServerPlayer _player) {
-							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:ouch_advancement"));
 							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 							if (!_ap.isDone()) {
 								for (String criteria : _ap.getRemainingCriteria())
@@ -102,7 +102,7 @@ public class PriVziatiiPriedmietaSamovarProcedure {
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_FIRE)), 5);
 						if (entity instanceof ServerPlayer _player) {
-							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:ouch_advancement"));
 							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 							if (!_ap.isDone()) {
 								for (String criteria : _ap.getRemainingCriteria())
@@ -113,7 +113,7 @@ public class PriVziatiiPriedmietaSamovarProcedure {
 				} else {
 					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_FIRE)), 5);
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:ouch_advancement"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {
 							for (String criteria : _ap.getRemainingCriteria())

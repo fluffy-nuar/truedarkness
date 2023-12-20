@@ -48,6 +48,8 @@ public class SoulstealHammerKazhdyiTikVRukieProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(TruedarknessModMobEffects.HARP_ECHO.get());
 				}
 			});
 		}

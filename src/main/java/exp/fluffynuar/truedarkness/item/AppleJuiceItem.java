@@ -10,6 +10,7 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 
+import exp.fluffynuar.truedarkness.procedures.AppleJuicePriZaviershieniiIspolzovaniiaProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
 public class AppleJuiceItem extends Item {
@@ -31,6 +32,10 @@ public class AppleJuiceItem extends Item {
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = new ItemStack(TruedarknessModItems.CUP.get());
 		super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		AppleJuicePriZaviershieniiIspolzovaniiaProcedure.execute(entity);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

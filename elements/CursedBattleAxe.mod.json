@@ -4,7 +4,7 @@
   "definition": {
     "toolType": "Axe",
     "renderType": 0,
-    "texture": "cursed_axe",
+    "texture": "cursed_battle_axe",
     "customModelName": "Normal",
     "name": "Cursed Battle Axe",
     "specialInfo": [],
@@ -29,6 +29,9 @@
     "damageOnCrafting": false,
     "onRightClickedOnBlock": {
       "name": "CursedBattleAxePriShchielchkiePravoiKnopkoiMyshiNaBlokie"
+    },
+    "onItemInInventoryTick": {
+      "name": "CursedBattleAxeKazhdyiTikVInvientarie"
     }
   }
 }

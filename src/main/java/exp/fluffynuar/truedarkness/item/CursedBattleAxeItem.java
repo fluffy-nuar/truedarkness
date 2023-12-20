@@ -1,15 +1,18 @@
 
 package exp.fluffynuar.truedarkness.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResult;
 
 import exp.fluffynuar.truedarkness.procedures.CursedBattleAxePriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure;
+import exp.fluffynuar.truedarkness.procedures.CursedBattleAxeKazhdyiTikVInvientarieProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
 public class CursedBattleAxeItem extends AxeItem {
@@ -46,5 +49,11 @@ public class CursedBattleAxeItem extends AxeItem {
 		super.useOn(context);
 		CursedBattleAxePriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer());
 		return InteractionResult.SUCCESS;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		CursedBattleAxeKazhdyiTikVInvientarieProcedure.execute(entity);
 	}
 }

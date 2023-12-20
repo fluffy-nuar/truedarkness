@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      },
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      },
+      {
+        "value": "CUSTOM:SoulstealIngot"
+      },
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      },
+      {
+        "value": "CUSTOM:SoulstealIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulstealIngot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SoulstealMark"
+    },
+    "name": "soulsteal_mark_recipe",
+    "namespace": "mod"
+  }
+}

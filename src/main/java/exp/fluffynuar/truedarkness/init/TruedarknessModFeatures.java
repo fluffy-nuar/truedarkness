@@ -126,7 +126,6 @@ import exp.fluffynuar.truedarkness.world.features.RuinedPortalFeature;
 import exp.fluffynuar.truedarkness.world.features.PitFeature;
 import exp.fluffynuar.truedarkness.world.features.PillarFeature;
 import exp.fluffynuar.truedarkness.world.features.OldShipFeature;
-import exp.fluffynuar.truedarkness.world.features.MinersPotGenFeature;
 import exp.fluffynuar.truedarkness.world.features.LightOfSoulGenFeature;
 import exp.fluffynuar.truedarkness.world.features.LampsFeature;
 import exp.fluffynuar.truedarkness.world.features.KelpOfYteriaFeature;
@@ -309,5 +308,4 @@ public class TruedarknessModFeatures {
 	public static final RegistryObject<Feature<?>> BUBBLE_YTERIA_0 = REGISTRY.register("bubble_yteria_0", BubbleYteria0Feature::new);
 	public static final RegistryObject<Feature<?>> CORRUPTED_PLACE_FLOOR = REGISTRY.register("corrupted_place_floor", CorruptedPlaceFloorFeature::new);
 	public static final RegistryObject<Feature<?>> CVETALIY_CLUSTER_GEN = REGISTRY.register("cvetaliy_cluster_gen", CvetaliyClusterGenFeature::new);
-	public static final RegistryObject<Feature<?>> MINERS_POT_GEN = REGISTRY.register("miners_pot_gen", MinersPotGenFeature::new);
 }

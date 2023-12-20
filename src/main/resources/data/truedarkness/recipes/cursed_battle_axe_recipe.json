@@ -1,13 +1,36 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "truedarkness:soulsteal_axe"
-  },
-  "addition": {
-    "item": "truedarkness:cursed_metal"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    " 45",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:eridium_bone"
+    },
+    "1": {
+      "item": "truedarkness:cursed_metal"
+    },
+    "2": {
+      "item": "truedarkness:cursed_metal"
+    },
+    "4": {
+      "item": "truedarkness:soulsteal_axe"
+    },
+    "5": {
+      "item": "truedarkness:cursed_metal"
+    },
+    "6": {
+      "item": "truedarkness:corrupted_hand_fangs"
+    },
+    "8": {
+      "item": "truedarkness:eridium_shard"
+    }
   },
   "result": {
-    "item": "truedarkness:cursed_battle_axe"
+    "item": "truedarkness:cursed_battle_axe",
+    "count": 1
   }
 }

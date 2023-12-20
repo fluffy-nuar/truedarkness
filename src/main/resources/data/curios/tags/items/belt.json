@@ -2,7 +2,9 @@
   "replace": "false",
   "values": [
     "minecraft:air",
+    "truedarkness:general_mark",
     "truedarkness:soul_spool",
+    "truedarkness:soul_mark",
     "truedarkness:echo_sandglass",
     "truedarkness:echo_spool"
   ]

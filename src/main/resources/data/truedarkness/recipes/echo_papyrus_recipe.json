@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0 2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:metenite_crystal"
+    },
+    "2": {
+      "item": "minecraft:echo_shard"
+    },
+    "4": {
+      "item": "truedarkness:ancient_papyrus"
+    },
+    "6": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "item": "truedarkness:echo_papyrus",
+    "count": 1
+  }
+}

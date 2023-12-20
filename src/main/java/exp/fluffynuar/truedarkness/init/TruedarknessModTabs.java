@@ -61,8 +61,8 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.REEL.get());
 				tabData.accept(TruedarknessModItems.PHOTO.get());
 				tabData.accept(TruedarknessModItems.SANDGLASS.get());
-				tabData.accept(TruedarknessModItems.LETTER.get());
 				tabData.accept(TruedarknessModItems.ANCIENT_PAPYRUS.get());
+				tabData.accept(TruedarknessModItems.LETTER.get());
 				tabData.accept(TruedarknessModItems.ELDER_DOCUMENT.get());
 				tabData.accept(TruedarknessModItems.DRINK_RECIPE.get());
 				tabData.accept(TruedarknessModItems.SIEVE.get());
@@ -118,9 +118,10 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.SOULSTEAL_INGOT.get());
 				tabData.accept(TruedarknessModItems.SOULSTEAL_SHARD.get());
 				tabData.accept(TruedarknessModItems.SOULSTEAL_NUGGET.get());
-				tabData.accept(TruedarknessModItems.SOULSTEAL_HEART.get());
 				tabData.accept(TruedarknessModItems.SOULSTEAL_WINGS.get());
 				tabData.accept(TruedarknessModItems.STONE_SPOOL.get());
+				tabData.accept(TruedarknessModItems.SOULSTEAL_HEART.get());
+				tabData.accept(TruedarknessModItems.SOULSTEAL_MARK.get());
 				tabData.accept(TruedarknessModItems.SOULSTEAL_SWORD.get());
 				tabData.accept(TruedarknessModItems.SOULSTEAL_AXE.get());
 				tabData.accept(TruedarknessModItems.SOULSTEAL_SHOVEL.get());
@@ -166,7 +167,6 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.GENERAL_CHESTPLATE.get());
 				tabData.accept(TruedarknessModItems.GENERAL_LEGGINGS.get());
 				tabData.accept(TruedarknessModItems.GENERAL_BOOTS.get());
-				tabData.accept(TruedarknessModItems.GENERAL_KNIFE.get());
 				tabData.accept(TruedarknessModItems.AQUAMARINE_MIRROR.get());
 				tabData.accept(TruedarknessModItems.AQUAMARINE_COIN.get());
 				tabData.accept(TruedarknessModItems.CALM_AQUAMARINE.get());
@@ -178,6 +178,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.GENERAL_REGULATION.get());
 				tabData.accept(TruedarknessModItems.GENERAL_WINGS.get());
 				tabData.accept(TruedarknessModItems.GENERAL_HEART.get());
+				tabData.accept(TruedarknessModItems.GENERAL_MARK.get());
 				tabData.accept(TruedarknessModItems.GENERAL_MIRROR.get());
 				tabData.accept(TruedarknessModItems.SOUL_GRAIN.get());
 				tabData.accept(TruedarknessModItems.SOUL_CRYSTAL.get());
@@ -186,6 +187,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.SOUL_WINGS.get());
 				tabData.accept(TruedarknessModItems.SOUL_SPOOL.get());
 				tabData.accept(TruedarknessModItems.SOUL_HEART.get());
+				tabData.accept(TruedarknessModItems.SOUL_MARK.get());
 				tabData.accept(TruedarknessModItems.SOUL_MIRROR.get());
 				tabData.accept(TruedarknessModItems.SCUIKED_APPLE.get());
 				tabData.accept(TruedarknessModItems.SCULK_MANA_BOTTLE.get());
@@ -195,8 +197,9 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.SCULKED_PICKAXE.get());
 				tabData.accept(TruedarknessModItems.SCULKED_HOE.get());
 				tabData.accept(TruedarknessModItems.ECHO_STONE.get());
-				tabData.accept(TruedarknessModItems.ECHO_HARP.get());
+				tabData.accept(TruedarknessModItems.ECHO_KNIFE.get());
 				tabData.accept(TruedarknessModItems.ECHO_HAMMER.get());
+				tabData.accept(TruedarknessModItems.ECHO_HARP.get());
 				tabData.accept(TruedarknessModBlocks.SCULK_GRAIL.get().asItem());
 				tabData.accept(TruedarknessModBlocks.SOUL_MASTER.get().asItem());
 				tabData.accept(TruedarknessModItems.ECHO_SANDGLASS.get());
@@ -204,7 +207,6 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.ECHO_WINGS.get());
 				tabData.accept(TruedarknessModItems.ECHO_SPOOL.get());
 				tabData.accept(TruedarknessModItems.ECHO_HEART.get());
-				tabData.accept(TruedarknessModItems.ECHO_KNIFE.get());
 				tabData.accept(TruedarknessModItems.ECHO_PAPYRUS.get());
 				tabData.accept(TruedarknessModItems.ECHO_FEATHER.get());
 				tabData.accept(TruedarknessModItems.ECHO_MIRROR.get());

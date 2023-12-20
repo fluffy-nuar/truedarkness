@@ -199,7 +199,7 @@
       {
         "type": "image",
         "data": {
-          "image": "s_1.png",
+          "image": "s1.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "S1"
@@ -211,7 +211,7 @@
       {
         "type": "image",
         "data": {
-          "image": "s_2.png",
+          "image": "s2.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "S2"
@@ -223,7 +223,7 @@
       {
         "type": "image",
         "data": {
-          "image": "s_3.png",
+          "image": "s3.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "S3"
@@ -235,7 +235,7 @@
       {
         "type": "image",
         "data": {
-          "image": "s_4.png",
+          "image": "s4.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "S4"
@@ -257,6 +257,42 @@
           },
           "x": 134,
           "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "s5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S5"
+          },
+          "x": 19,
+          "y": 123
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "s6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S6"
+          },
+          "x": 19,
+          "y": 141
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "s7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S7"
+          },
+          "x": 19,
+          "y": 159
         }
       }
     ],

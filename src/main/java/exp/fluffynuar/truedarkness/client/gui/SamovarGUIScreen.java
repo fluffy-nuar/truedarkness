@@ -11,6 +11,9 @@ import net.minecraft.client.gui.GuiGraphics;
 import java.util.HashMap;
 
 import exp.fluffynuar.truedarkness.world.inventory.SamovarGUIMenu;
+import exp.fluffynuar.truedarkness.procedures.S7Procedure;
+import exp.fluffynuar.truedarkness.procedures.S6Procedure;
+import exp.fluffynuar.truedarkness.procedures.S5Procedure;
 import exp.fluffynuar.truedarkness.procedures.S4Procedure;
 import exp.fluffynuar.truedarkness.procedures.S3Procedure;
 import exp.fluffynuar.truedarkness.procedures.S2Procedure;
@@ -62,16 +65,25 @@ public class SamovarGUIScreen extends AbstractContainerScreen<SamovarGUIMenu> {
 			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s_0.png"), this.leftPos + -131, this.topPos + 0, 0, 0, 131, 166, 131, 166);
 		}
 		if (S1Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s_1.png"), this.leftPos + -106, this.topPos + 14, 0, 0, 80, 18, 80, 18);
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s1.png"), this.leftPos + -106, this.topPos + 14, 0, 0, 80, 18, 80, 18);
 		}
 		if (S2Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s_2.png"), this.leftPos + -106, this.topPos + 32, 0, 0, 80, 18, 80, 18);
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s2.png"), this.leftPos + -106, this.topPos + 32, 0, 0, 80, 18, 80, 18);
 		}
 		if (S3Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s_3.png"), this.leftPos + -106, this.topPos + 50, 0, 0, 80, 18, 80, 18);
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s3.png"), this.leftPos + -106, this.topPos + 50, 0, 0, 80, 18, 80, 18);
 		}
 		if (S4Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s_4.png"), this.leftPos + -106, this.topPos + 68, 0, 0, 80, 18, 80, 18);
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s4.png"), this.leftPos + -106, this.topPos + 68, 0, 0, 80, 18, 80, 18);
+		}
+		if (S5Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s5.png"), this.leftPos + -106, this.topPos + 86, 0, 0, 80, 18, 80, 18);
+		}
+		if (S6Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s6.png"), this.leftPos + -106, this.topPos + 104, 0, 0, 80, 18, 80, 18);
+		}
+		if (S7Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s7.png"), this.leftPos + -106, this.topPos + 122, 0, 0, 80, 18, 80, 18);
 		}
 		RenderSystem.disableBlend();
 	}

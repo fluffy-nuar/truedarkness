@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "1": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "2": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "3": {
+      "item": "truedarkness:soulsteal_ingot"
+    },
+    "4": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "5": {
+      "item": "truedarkness:soulsteal_ingot"
+    },
+    "7": {
+      "item": "truedarkness:soulsteal_ingot"
+    }
+  },
+  "result": {
+    "item": "truedarkness:soulsteal_mark",
+    "count": 1
+  }
+}

@@ -44,7 +44,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:SoulstealGrid"
+      "value": "CUSTOM:SoulstealShard"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

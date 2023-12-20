@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:potholders"
+    },
+    "title": {
+      "translate": "advancements.ouch_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.ouch_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ouch_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:drink_advancement"
+}

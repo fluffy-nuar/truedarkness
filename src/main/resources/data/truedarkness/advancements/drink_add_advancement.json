@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:crushed_grape"
+    },
+    "title": {
+      "translate": "advancements.drink_add_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.drink_add_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "drink_add_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:samover_advancement"
+}
