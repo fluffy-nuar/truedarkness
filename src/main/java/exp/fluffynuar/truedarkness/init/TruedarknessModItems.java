@@ -96,6 +96,8 @@ import exp.fluffynuar.truedarkness.item.MeteniteIngotItem;
 import exp.fluffynuar.truedarkness.item.MeteniteCrystalItem;
 import exp.fluffynuar.truedarkness.item.MeteniteArmorItem;
 import exp.fluffynuar.truedarkness.item.MedicinalHerbsItem;
+import exp.fluffynuar.truedarkness.item.MariniteWingsItem;
+import exp.fluffynuar.truedarkness.item.MariniteMarkItem;
 import exp.fluffynuar.truedarkness.item.LightedBerryItem;
 import exp.fluffynuar.truedarkness.item.LightShroomItemItem;
 import exp.fluffynuar.truedarkness.item.LetterItem;
@@ -177,6 +179,7 @@ import exp.fluffynuar.truedarkness.item.CursedSwordItem;
 import exp.fluffynuar.truedarkness.item.CursedRingItem;
 import exp.fluffynuar.truedarkness.item.CursedPapyrusItem;
 import exp.fluffynuar.truedarkness.item.CursedMetalItem;
+import exp.fluffynuar.truedarkness.item.CursedMarkItem;
 import exp.fluffynuar.truedarkness.item.CursedBattleAxeItem;
 import exp.fluffynuar.truedarkness.item.CupWaterItem;
 import exp.fluffynuar.truedarkness.item.CupItem;
@@ -435,6 +438,7 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> CORRUPTED_SUNFLOWER = doubleBlock(TruedarknessModBlocks.CORRUPTED_SUNFLOWER);
 	public static final RegistryObject<Item> CORRUPTED_FLOWER = block(TruedarknessModBlocks.CORRUPTED_FLOWER);
 	public static final RegistryObject<Item> CORRUPTED_GRASS = block(TruedarknessModBlocks.CORRUPTED_GRASS);
+	public static final RegistryObject<Item> CORRUPTED_ROOTS = block(TruedarknessModBlocks.CORRUPTED_ROOTS);
 	public static final RegistryObject<Item> CORRUPTED_LEAVES = block(TruedarknessModBlocks.CORRUPTED_LEAVES);
 	public static final RegistryObject<Item> SWAMP_SOIL = block(TruedarknessModBlocks.SWAMP_SOIL);
 	public static final RegistryObject<Item> MYCELIUM_GRASS = block(TruedarknessModBlocks.MYCELIUM_GRASS);
@@ -680,6 +684,7 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> BUBBLE_ROD = REGISTRY.register("bubble_rod", () -> new BubbleRodItem());
 	public static final RegistryObject<Item> CURSED_RING = REGISTRY.register("cursed_ring", () -> new CursedRingItem());
 	public static final RegistryObject<Item> CORRUPTED_HAND_FANGS = REGISTRY.register("corrupted_hand_fangs", () -> new CorruptedHandFangsItem());
+	public static final RegistryObject<Item> CURSED_MARK = REGISTRY.register("cursed_mark", () -> new CursedMarkItem());
 	public static final RegistryObject<Item> FANG_PICKAXE = REGISTRY.register("fang_pickaxe", () -> new FangPickaxeItem());
 	public static final RegistryObject<Item> TOOL_FANG = REGISTRY.register("tool_fang", () -> new ToolFangItem());
 	public static final RegistryObject<Item> CURSED_SWORD = REGISTRY.register("cursed_sword", () -> new CursedSwordItem());
@@ -714,8 +719,10 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> AQUAMARINE_SWORD = REGISTRY.register("aquamarine_sword", () -> new PhasmaSwordItem());
 	public static final RegistryObject<Item> AQUAMARINE_PICKAXE = REGISTRY.register("aquamarine_pickaxe", () -> new CryPickaxeItem());
 	public static final RegistryObject<Item> AQUAMARINE_HAMMER = REGISTRY.register("aquamarine_hammer", () -> new CryHammerItem());
-	public static final RegistryObject<Item> REAL_GENERAL_SWORD = REGISTRY.register("real_general_sword", () -> new RealGeneralSwordItem());
+	public static final RegistryObject<Item> MARINITE_WINGS = REGISTRY.register("marinite_wings", () -> new MariniteWingsItem());
+	public static final RegistryObject<Item> MARINITE_MARK = REGISTRY.register("marinite_mark", () -> new MariniteMarkItem());
 	public static final RegistryObject<Item> GENERAL_REGULATION = REGISTRY.register("general_regulation", () -> new GeneralRegulationItem());
+	public static final RegistryObject<Item> REAL_GENERAL_SWORD = REGISTRY.register("real_general_sword", () -> new RealGeneralSwordItem());
 	public static final RegistryObject<Item> GENERAL_WINGS = REGISTRY.register("general_wings", () -> new GeneralWingsItem());
 	public static final RegistryObject<Item> GENERAL_HEART = REGISTRY.register("general_heart", () -> new GeneralHeartItem());
 	public static final RegistryObject<Item> GENERAL_MARK = REGISTRY.register("general_mark", () -> new GeneralMarkItem());
@@ -830,7 +837,7 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> GLOW_FUNGUS_HAT_0 = block(TruedarknessModBlocks.GLOW_FUNGUS_HAT_0);
 	public static final RegistryObject<Item> CORRUPT_1 = block(TruedarknessModBlocks.CORRUPT_1);
 	public static final RegistryObject<Item> CORRUPT_0 = block(TruedarknessModBlocks.CORRUPT_0);
-	public static final RegistryObject<Item> CORRUPTED_ROOTS = block(TruedarknessModBlocks.CORRUPTED_ROOTS);
+	public static final RegistryObject<Item> GLOW_FOG = block(TruedarknessModBlocks.GLOW_FOG);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

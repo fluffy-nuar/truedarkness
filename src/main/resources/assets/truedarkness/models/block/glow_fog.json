@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/glow_fog",
+    "up": "truedarkness:block/glow_fog",
+    "north": "truedarkness:block/glow_fog",
+    "east": "truedarkness:block/glow_fog",
+    "south": "truedarkness:block/glow_fog",
+    "west": "truedarkness:block/glow_fog",
+    "particle": "truedarkness:block/glow_fog"
+  },
+  "render_type": "translucent"
+}

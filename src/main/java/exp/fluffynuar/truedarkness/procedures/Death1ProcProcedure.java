@@ -1,5 +1,7 @@
 package exp.fluffynuar.truedarkness.procedures;
 
+import top.theillusivec4.curios.api.CuriosApi;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -10,6 +12,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
@@ -37,9 +41,10 @@ public class Death1ProcProcedure {
 			return;
 		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria"))) && sourceentity instanceof Player) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.CURSED_SWORD.get()) {
-				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(),
-							(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(TruedarknessModMobEffects.THE_ALIVE.get()) ? _livEnt.getEffect(TruedarknessModMobEffects.THE_ALIVE.get()).getDuration() : 0) + 100), 0, false, false));
+				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.HEART_ERIDIUM.get(), lv).isPresent() : false) {
+					if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(), Mth.nextInt(RandomSource.create(), 400, 600), 0, false, false));
+				}
 			} else {
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(), 200, 0, true, true));

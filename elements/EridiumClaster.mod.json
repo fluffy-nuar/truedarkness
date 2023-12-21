@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "eridium_claster",
+    "texture": "eridium_cluster",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",

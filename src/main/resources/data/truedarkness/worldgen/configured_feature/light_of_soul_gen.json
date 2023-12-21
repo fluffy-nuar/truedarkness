@@ -1,7 +1,7 @@
 {
   "type": "truedarkness:light_of_soul_gen",
   "config": {
-    "size": 3,
+    "size": 1,
     "discard_chance_on_air_exposure": 1,
     "targets": [
       {

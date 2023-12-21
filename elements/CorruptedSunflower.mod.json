@@ -3,8 +3,8 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "corrupted_sunflower",
-    "textureBottom": "corrupted_sunflower_1",
+    "texture": "corrupted_sunflower_top",
+    "textureBottom": "corrupted_sunflower",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
@@ -88,7 +88,7 @@
       }
     ],
     "isBonemealable": false,
-    "frequencyOnChunks": 35,
+    "frequencyOnChunks": 40,
     "spawnWorldTypes": [
       "CUSTOM:Yteria"
     ],

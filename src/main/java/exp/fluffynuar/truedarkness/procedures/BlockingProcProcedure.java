@@ -31,16 +31,16 @@ public class BlockingProcProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getAmount());
+			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getEntity(), event.getAmount());
 		}
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, double amount) {
-		execute(null, world, x, y, z, entity, amount);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity, double amount) {
+		execute(null, world, x, y, z, entity, sourceentity, amount);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, double amount) {
-		if (entity == null)
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity, double amount) {
+		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.isBlocking() : false) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.DARKNESS_SPRUCE_SHIELD.get()) {
@@ -66,10 +66,16 @@ public class BlockingProcProcedure {
 						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_WINGS_COOLDOWN.get(), 120, 0, false, false));
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 2, false, true));
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_WINGS.get(), 60);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_WINGS.get(), 60);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_WINGS.get(), 60);
 				}
 			}
 		}
-		if (entity instanceof LivingEntity _livEnt13 && _livEnt13.hasEffect(TruedarknessModMobEffects.PARANOIA.get()) && Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
+		if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(TruedarknessModMobEffects.PARANOIA.get()) && Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
 				entityToSpawn.setPickUpDelay(60);
@@ -82,6 +88,24 @@ public class BlockingProcProcedure {
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
+			}
+		}
+		if (!(entity instanceof LivingEntity _livEnt21 && _livEnt21.hasEffect(TruedarknessModMobEffects.SOULSTEAL_SPOOL_COOLDOWN.get())) && Mth.nextInt(RandomSource.create(), 1, 100) >= 75) {
+			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.CURSED_MARK.get(), lv).isPresent() : false) {
+				if (sourceentity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1));
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_SPOOL_COOLDOWN.get(), 60, 0, false, false));
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.CURSED_MARK.get(), 60);
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_MARK.get(), 60);
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_MARK.get(), 60);
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_SPOOL.get(), 60);
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_SPOOL.get(), 60);
 			}
 		}
 	}

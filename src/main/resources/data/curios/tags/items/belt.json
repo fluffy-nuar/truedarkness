@@ -2,6 +2,8 @@
   "replace": "false",
   "values": [
     "minecraft:air",
+    "truedarkness:cursed_mark",
+    "truedarkness:marinite_mark",
     "truedarkness:general_mark",
     "truedarkness:soul_spool",
     "truedarkness:soul_mark",

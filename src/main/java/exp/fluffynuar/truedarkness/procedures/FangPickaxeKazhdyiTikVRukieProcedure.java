@@ -15,7 +15,7 @@ public class FangPickaxeKazhdyiTikVRukieProcedure {
 			return;
 		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.HEART_ERIDIUM.get(), lv).isPresent() : false) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(MobEffects.DIG_SLOWDOWN);
+				_entity.removeEffect(MobEffects.LUCK);
 		} else {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 120, 2, false, false));

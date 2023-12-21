@@ -14,11 +14,9 @@ public class PhasmaSwordKoghdaZhivaiaSushchnostPopadaietSPomoshchiuInstrumientaP
 			return;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruedarknessModMobEffects.PHANTOM_PROTECTION.get()))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.PHANTOM_PROTECTION.get(), (int) (20 * 30 * 1), 0, false, false));
+				_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.PHANTOM_PROTECTION.get(), (int) (20 * 10), 0, false, false));
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(TruedarknessModItems.AQUAMARINE_SWORD.get(), (int) (20 * 60 * 10));
-			if (entity instanceof Player _player)
-				_player.causeFoodExhaustion((float) 0.5);
+				_player.getCooldowns().addCooldown(TruedarknessModItems.AQUAMARINE_SWORD.get(), (int) (20 * 60));
 		}
 	}
 }

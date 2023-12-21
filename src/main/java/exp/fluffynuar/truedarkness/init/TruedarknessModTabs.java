@@ -140,6 +140,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.BUBBLE_ROD.get());
 				tabData.accept(TruedarknessModItems.CURSED_RING.get());
 				tabData.accept(TruedarknessModItems.CORRUPTED_HAND_FANGS.get());
+				tabData.accept(TruedarknessModItems.CURSED_MARK.get());
 				tabData.accept(TruedarknessModItems.FANG_PICKAXE.get());
 				tabData.accept(TruedarknessModItems.TOOL_FANG.get());
 				tabData.accept(TruedarknessModItems.CURSED_SWORD.get());
@@ -174,8 +175,10 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.AQUAMARINE_SWORD.get());
 				tabData.accept(TruedarknessModItems.AQUAMARINE_PICKAXE.get());
 				tabData.accept(TruedarknessModItems.AQUAMARINE_HAMMER.get());
-				tabData.accept(TruedarknessModItems.REAL_GENERAL_SWORD.get());
+				tabData.accept(TruedarknessModItems.MARINITE_WINGS.get());
+				tabData.accept(TruedarknessModItems.MARINITE_MARK.get());
 				tabData.accept(TruedarknessModItems.GENERAL_REGULATION.get());
+				tabData.accept(TruedarknessModItems.REAL_GENERAL_SWORD.get());
 				tabData.accept(TruedarknessModItems.GENERAL_WINGS.get());
 				tabData.accept(TruedarknessModItems.GENERAL_HEART.get());
 				tabData.accept(TruedarknessModItems.GENERAL_MARK.get());
@@ -444,6 +447,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModBlocks.CORRUPTED_SUNFLOWER.get().asItem());
 				tabData.accept(TruedarknessModBlocks.CORRUPTED_FLOWER.get().asItem());
 				tabData.accept(TruedarknessModBlocks.CORRUPTED_GRASS.get().asItem());
+				tabData.accept(TruedarknessModBlocks.CORRUPTED_ROOTS.get().asItem());
 				tabData.accept(TruedarknessModBlocks.CORRUPTED_LEAVES.get().asItem());
 				tabData.accept(TruedarknessModBlocks.SWAMP_SOIL.get().asItem());
 				tabData.accept(TruedarknessModBlocks.MYCELIUM_GRASS.get().asItem());
@@ -567,7 +571,6 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModBlocks.DRIED_FENCE_GATE.get().asItem());
 				tabData.accept(TruedarknessModBlocks.DRIED_PRESSURE_PLATE.get().asItem());
 				tabData.accept(TruedarknessModBlocks.DRIED_BUTTON.get().asItem());
-				tabData.accept(TruedarknessModBlocks.CORRUPTED_ROOTS.get().asItem());
 			})
 
 			.build());

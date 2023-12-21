@@ -2,6 +2,7 @@
   "replace": "false",
   "values": [
     "minecraft:air",
+    "truedarkness:marinite_wings",
     "truedarkness:general_wings",
     "truedarkness:soul_wings",
     "truedarkness:echo_wings"

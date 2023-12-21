@@ -202,6 +202,7 @@ import exp.fluffynuar.truedarkness.block.GlowPressurePlateBlock;
 import exp.fluffynuar.truedarkness.block.GlowPlanksBlock;
 import exp.fluffynuar.truedarkness.block.GlowLogBlock;
 import exp.fluffynuar.truedarkness.block.GlowFungusHatBlock;
+import exp.fluffynuar.truedarkness.block.GlowFogBlock;
 import exp.fluffynuar.truedarkness.block.GlowFenceGateBlock;
 import exp.fluffynuar.truedarkness.block.GlowFenceBlock;
 import exp.fluffynuar.truedarkness.block.GlowDoorBlock;
@@ -607,6 +608,7 @@ public class TruedarknessModBlocks {
 	public static final RegistryObject<Block> CORRUPTED_SUNFLOWER = REGISTRY.register("corrupted_sunflower", () -> new CorruptedSunflowerBlock());
 	public static final RegistryObject<Block> CORRUPTED_FLOWER = REGISTRY.register("corrupted_flower", () -> new CorruptedFlowerBlock());
 	public static final RegistryObject<Block> CORRUPTED_GRASS = REGISTRY.register("corrupted_grass", () -> new CorruptedGrassBlock());
+	public static final RegistryObject<Block> CORRUPTED_ROOTS = REGISTRY.register("corrupted_roots", () -> new CorruptedRootsBlock());
 	public static final RegistryObject<Block> CORRUPTED_LEAVES = REGISTRY.register("corrupted_leaves", () -> new CorruptedLeavesBlock());
 	public static final RegistryObject<Block> SWAMP_SOIL = REGISTRY.register("swamp_soil", () -> new SwampSoilBlock());
 	public static final RegistryObject<Block> MYCELIUM_GRASS = REGISTRY.register("mycelium_grass", () -> new MyceliumGrassBlock());
@@ -777,5 +779,5 @@ public class TruedarknessModBlocks {
 	public static final RegistryObject<Block> GLOW_FUNGUS_HAT_0 = REGISTRY.register("glow_fungus_hat_0", () -> new GlowFungusHatBlock());
 	public static final RegistryObject<Block> CORRUPT_1 = REGISTRY.register("corrupt_1", () -> new Corrupt1Block());
 	public static final RegistryObject<Block> CORRUPT_0 = REGISTRY.register("corrupt_0", () -> new Corrupt0Block());
-	public static final RegistryObject<Block> CORRUPTED_ROOTS = REGISTRY.register("corrupted_roots", () -> new CorruptedRootsBlock());
+	public static final RegistryObject<Block> GLOW_FOG = REGISTRY.register("glow_fog", () -> new GlowFogBlock());
 }

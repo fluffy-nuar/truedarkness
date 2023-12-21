@@ -80,6 +80,7 @@ import exp.fluffynuar.truedarkness.world.features.ores.LightedVine2Feature;
 import exp.fluffynuar.truedarkness.world.features.ores.LapisLazuliSwampOreFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.GrapeAzaleaLeavesFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.GramiteOreFeature;
+import exp.fluffynuar.truedarkness.world.features.ores.GlowFogFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.FirefliesOakLogFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.DustBlockFeature;
 import exp.fluffynuar.truedarkness.world.features.ores.DeadPrismarineCoralWaveFeature;
@@ -213,6 +214,7 @@ public class TruedarknessModFeatures {
 	public static final RegistryObject<Feature<?>> CORRUPTED_SUNFLOWER = REGISTRY.register("corrupted_sunflower", CorruptedSunflowerFeature::new);
 	public static final RegistryObject<Feature<?>> CORRUPTED_FLOWER = REGISTRY.register("corrupted_flower", CorruptedFlowerFeature::new);
 	public static final RegistryObject<Feature<?>> CORRUPTED_GRASS = REGISTRY.register("corrupted_grass", CorruptedGrassFeature::new);
+	public static final RegistryObject<Feature<?>> CORRUPTED_ROOTS = REGISTRY.register("corrupted_roots", CorruptedRootsFeature::new);
 	public static final RegistryObject<Feature<?>> CORRUPTED_LEAVES = REGISTRY.register("corrupted_leaves", CorruptedLeavesFeature::new);
 	public static final RegistryObject<Feature<?>> SWAMP_SOIL = REGISTRY.register("swamp_soil", SwampSoilFeature::new);
 	public static final RegistryObject<Feature<?>> MYCELIUM_GRASS = REGISTRY.register("mycelium_grass", MyceliumGrassFeature::new);
@@ -317,5 +319,5 @@ public class TruedarknessModFeatures {
 	public static final RegistryObject<Feature<?>> CORRUPT_0 = REGISTRY.register("corrupt_0", Corrupt0Feature::new);
 	public static final RegistryObject<Feature<?>> CORRUPT_PLACE_GEN = REGISTRY.register("corrupt_place_gen", CorruptPlaceGenFeature::new);
 	public static final RegistryObject<Feature<?>> CORRUPT_PLACE_GEN_0 = REGISTRY.register("corrupt_place_gen_0", CorruptPlaceGen0Feature::new);
-	public static final RegistryObject<Feature<?>> CORRUPTED_ROOTS = REGISTRY.register("corrupted_roots", CorruptedRootsFeature::new);
+	public static final RegistryObject<Feature<?>> GLOW_FOG = REGISTRY.register("glow_fog", GlowFogFeature::new);
 }

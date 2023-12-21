@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 13,
-    "texture": "corrupted_leaves",
+    "texture": "corrupted_leaves_1",
     "textureBottom": "",
     "customModelName": "Crop model",
     "itemTexture": "corrupted_leaves",
@@ -91,7 +91,7 @@
       }
     ],
     "isBonemealable": false,
-    "frequencyOnChunks": 35,
+    "frequencyOnChunks": 40,
     "spawnWorldTypes": [
       "CUSTOM:Yteria"
     ],
@@ -101,7 +101,7 @@
       }
     ],
     "generationType": "Grass",
-    "patchSize": 10,
+    "patchSize": 35,
     "generateAtAnyHeight": true
   }
 }
