@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "prismarinume_coral_rich",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Prismarinum Coral Rich",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 0.0,
     "resistance": 0.3,
     "hasGravity": false,
@@ -117,9 +119,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": false,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Mine"
@@ -137,9 +137,6 @@
     "frequencyPerChunks": 64,
     "frequencyOnChunk": 64,
     "minGenerateHeight": 10,
-    "maxGenerateHeight": 33,
-    "generateCondition": {
-      "name": "PrismarinumCoralColourlessDopolnitielnoieUsloviieGienieratsii"
-    }
+    "maxGenerateHeight": 33
   }
 }

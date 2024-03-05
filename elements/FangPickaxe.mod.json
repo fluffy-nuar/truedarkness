@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "fang_pickaxe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Fang Pickaxe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 3.0,
     "usageCount": 4021,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:CorruptedHandFangs"

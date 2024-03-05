@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "dust_block",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Dust Block",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 0.0,
     "resistance": 0.0,
     "hasGravity": true,
@@ -123,9 +125,7 @@
     "onEntityWalksOn": {
       "name": "DustBlockKoghdaSushchnostKhoditPoBloku"
     },
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:SwamdWasteland"

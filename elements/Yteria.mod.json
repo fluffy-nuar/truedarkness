@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -51,7 +51,9 @@
     },
     "enableIgniter": true,
     "igniterName": "Yteria Portal Igniter",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "igniterTab": {
       "value": "TOOLS"
     },

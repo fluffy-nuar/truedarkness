@@ -1,0 +1,12 @@
+{
+  "type": "truedarkness:structure_feature",
+  "config": {
+    "structure": "truedarkness:yterias_structure_2",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ]
+  }
+}

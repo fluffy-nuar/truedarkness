@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "corrupt_rune_1",
@@ -35,7 +35,9 @@
       }
     ],
     "name": "Corrupt Rune",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -124,7 +126,7 @@
     "onEntityWalksOn": {
       "name": "CorruptRune1KoghdaSushchnostKhoditPoBloku"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

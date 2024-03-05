@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "samovar",
@@ -52,7 +52,9 @@
       }
     ],
     "name": "Samovar",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -148,7 +150,7 @@
     "onNeighbourBlockChanges": {
       "name": "SamovarKoghdaSosiedniiBlokMieniaietsia"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

@@ -1,15 +1,21 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "livingentity",
   "definition": {
     "mobName": "Eridium Golem",
     "mobLabel": "",
     "mobModelName": "Modeliridiumoviy_Golem",
     "mobModelTexture": "eridium_golem.png",
-    "mobModelGlowTexture": "eridium_golem_light.png",
     "solidBoundingBox": {
       "fixedValue": false
     },
+    "modelLayers": [
+      {
+        "model": "Default",
+        "texture": "eridium_golem_light.png",
+        "glow": true
+      }
+    ],
     "modelWidth": 2.0,
     "modelHeight": 2.9,
     "modelShadowSize": 0.5,
@@ -60,6 +66,9 @@
     "health": 150,
     "xpAmount": 40,
     "waterMob": false,
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -96,6 +105,7 @@
     "stepSound": {
       "value": "block.basalt.step"
     },
+    "entityDataEntries": [],
     "whenMobDies": {
       "name": "EridiumGolemPriGibieliSushchnosti"
     },

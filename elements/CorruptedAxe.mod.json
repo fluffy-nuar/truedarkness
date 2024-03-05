@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
     "renderType": 1,
+    "blockingRenderType": 0,
     "texture": "corrupted_axe",
     "customModelName": "corrupted_axe:default",
+    "blockingModelName": "Normal blocking",
     "name": "§5Corrupted Axe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 14.0,
     "usageCount": 1021,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,

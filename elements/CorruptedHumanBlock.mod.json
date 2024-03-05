@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 2,
@@ -47,7 +47,9 @@
       }
     ],
     "name": "Corrupted Human",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementriy"
     },
@@ -107,9 +109,7 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 30,
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:CorruptedPlace"

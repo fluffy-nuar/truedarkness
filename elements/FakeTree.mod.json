@@ -1,11 +1,8 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "feature",
   "definition": {
     "generationStep": "FLUID_SPRINGS",
-    "restrictionDimensions": [
-      "CUSTOM:Yteria"
-    ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Retroland"

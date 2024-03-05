@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "darkness_spruce_planks",
@@ -35,7 +35,9 @@
       }
     ],
     "name": "Darkness Spruce Fence",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 2.0,
     "resistance": 3.0,
     "hasGravity": false,
@@ -118,10 +120,24 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Swamps"
+      },
+      {
+        "value": "CUSTOM:CorruptedPlace"
+      },
+      {
+        "value": "CUSTOM:Mine"
+      },
+      {
+        "value": "CUSTOM:Retroland"
+      },
+      {
+        "value": "CUSTOM:SwamdWasteland"
+      }
     ],
-    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.DARK_OAK_FENCE"

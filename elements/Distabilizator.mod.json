@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "distabilizator",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "§dDistabilizator",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 1.0,
     "usageCount": 0,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,

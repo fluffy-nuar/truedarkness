@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "cvetaliy_ore",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Cvetaliy Ore",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -120,16 +122,13 @@
     "onDestroyedByPlayer": {
       "name": "CvetaliyOreKoghdaBlokRazrushienIghrokom"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 22,
     "frequencyOnChunk": 3,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 128,
-    "generateCondition": {
-      "name": "CvetaliyOreDopolnitielnoieUsloviieGienieratsii"
-    }
+    "maxGenerateHeight": 128
   }
 }

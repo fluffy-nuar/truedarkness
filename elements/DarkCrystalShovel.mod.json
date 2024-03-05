@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "dark_crystal_shovel",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "§1Grimnite Shovel",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 6.5,
     "usageCount": 2031,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,

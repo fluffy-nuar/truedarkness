@@ -11,6 +11,7 @@ dependencies {
    runtimeOnly fg.deobf("curse.maven:dynamic-lights-227874:4721525")
 }
 
+
 repositories {
 maven {
   url = "https://maven.theillusivec4.top/"
@@ -39,6 +40,7 @@ minecraft {
   }
 }
 
+
 repositories {
   maven {
     // location of the maven that hosts JEI files
@@ -57,4 +59,5 @@ dependencies {
   compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.2.0.27")
   runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.2.0.27")
 }
+
 

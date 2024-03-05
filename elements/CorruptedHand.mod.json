@@ -1,15 +1,21 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "livingentity",
   "definition": {
     "mobName": "Corrupted Hand",
     "mobLabel": "",
     "mobModelName": "Modelcorrupted_hand",
     "mobModelTexture": "corrupted_hand.png",
-    "mobModelGlowTexture": "corrupted_hand_light.png",
     "solidBoundingBox": {
       "fixedValue": false
     },
+    "modelLayers": [
+      {
+        "model": "Default",
+        "texture": "corrupted_hand_light.png",
+        "glow": true
+      }
+    ],
     "modelWidth": 1.0,
     "modelHeight": 3.8,
     "modelShadowSize": 0.5,
@@ -60,6 +66,9 @@
     "health": 500,
     "xpAmount": 0,
     "waterMob": false,
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -96,6 +105,7 @@
     "stepSound": {
       "value": ""
     },
+    "entityDataEntries": [],
     "whenMobDies": {
       "name": "CorruptedHandKoghdaSushchnostUmiraiet"
     },
@@ -112,7 +122,7 @@
     "rangedAttackItem": {
       "value": ""
     },
-    "rangedItemType": "Shandarah",
+    "rangedItemType": "ShandarahProjectile",
     "rangedAttackInterval": 32,
     "rangedAttackRadius": 60.0,
     "spawnThisMob": false,

@@ -18,14 +18,14 @@ import net.minecraft.world.entity.Entity;
 
 import exp.fluffynuar.truedarkness.entity.WasteRunerEntity;
 import exp.fluffynuar.truedarkness.entity.SwampSalmonEntity;
-import exp.fluffynuar.truedarkness.entity.ShandarahEntity;
-import exp.fluffynuar.truedarkness.entity.SculkFeatherEntity;
+import exp.fluffynuar.truedarkness.entity.ShandarahProjectileEntity;
+import exp.fluffynuar.truedarkness.entity.SculkFeatherProjectileEntity;
 import exp.fluffynuar.truedarkness.entity.GeneralEntity;
 import exp.fluffynuar.truedarkness.entity.FungumEntity;
 import exp.fluffynuar.truedarkness.entity.FlowEntity;
 import exp.fluffynuar.truedarkness.entity.EridiumZombieEntity;
 import exp.fluffynuar.truedarkness.entity.EridiumGolemEntity;
-import exp.fluffynuar.truedarkness.entity.DarknessSpruceShieldEntity;
+import exp.fluffynuar.truedarkness.entity.DarknessSpruceShieldProjectileEntity;
 import exp.fluffynuar.truedarkness.entity.CryerEntity;
 import exp.fluffynuar.truedarkness.entity.CorruptedKnightEntity;
 import exp.fluffynuar.truedarkness.entity.CorruptedHandEntity;
@@ -34,8 +34,6 @@ import exp.fluffynuar.truedarkness.TruedarknessMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TruedarknessModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, TruedarknessMod.MODID);
-	public static final RegistryObject<EntityType<DarknessSpruceShieldEntity>> DARKNESS_SPRUCE_SHIELD = register("projectile_darkness_spruce_shield", EntityType.Builder.<DarknessSpruceShieldEntity>of(DarknessSpruceShieldEntity::new, MobCategory.MISC)
-			.setCustomClientFactory(DarknessSpruceShieldEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<SwampSalmonEntity>> SWAMP_COD_ENTITY = register("swamp_cod_entity",
 			EntityType.Builder.<SwampSalmonEntity>of(SwampSalmonEntity::new, MobCategory.UNDERGROUND_WATER_CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SwampSalmonEntity::new)
 
@@ -68,10 +66,14 @@ public class TruedarknessModEntities {
 			EntityType.Builder.<FungumEntity>of(FungumEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FungumEntity::new)
 
 					.sized(0.6f, 0.9f));
-	public static final RegistryObject<EntityType<SculkFeatherEntity>> SCULK_FEATHER_SPELL = register("projectile_sculk_feather_spell",
-			EntityType.Builder.<SculkFeatherEntity>of(SculkFeatherEntity::new, MobCategory.MISC).setCustomClientFactory(SculkFeatherEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<ShandarahEntity>> SHANDARAH = register("projectile_shandarah",
-			EntityType.Builder.<ShandarahEntity>of(ShandarahEntity::new, MobCategory.MISC).setCustomClientFactory(ShandarahEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<SculkFeatherProjectileEntity>> SCULK_FEATHER_PROJECTILE = register("projectile_sculk_feather_projectile",
+			EntityType.Builder.<SculkFeatherProjectileEntity>of(SculkFeatherProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(SculkFeatherProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DarknessSpruceShieldProjectileEntity>> DARKNESS_SPRUCE_SHIELD_PROJECTILE = register("projectile_darkness_spruce_shield_projectile",
+			EntityType.Builder.<DarknessSpruceShieldProjectileEntity>of(DarknessSpruceShieldProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(DarknessSpruceShieldProjectileEntity::new).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ShandarahProjectileEntity>> SHANDARAH_PROJECTILE = register("projectile_shandarah_projectile", EntityType.Builder.<ShandarahProjectileEntity>of(ShandarahProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(ShandarahProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

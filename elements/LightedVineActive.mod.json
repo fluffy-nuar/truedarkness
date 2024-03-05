@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "swamp_berry_vine_1",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Lighted Vine",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 0.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -126,9 +128,7 @@
     "onEntityCollides": {
       "name": "YteriaPlantsProc"
     },
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Swamps"

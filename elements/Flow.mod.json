@@ -1,15 +1,21 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "livingentity",
   "definition": {
     "mobName": "Flow",
     "mobLabel": "",
     "mobModelName": "Modelflow",
     "mobModelTexture": "flow.png",
-    "mobModelGlowTexture": "flow_light.png",
     "solidBoundingBox": {
       "fixedValue": false
     },
+    "modelLayers": [
+      {
+        "model": "Default",
+        "texture": "flow_light.png",
+        "glow": true
+      }
+    ],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
@@ -60,6 +66,9 @@
     "health": 10,
     "xpAmount": 1,
     "waterMob": false,
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -96,6 +105,7 @@
     "stepSound": {
       "value": ""
     },
+    "entityDataEntries": [],
     "whenMobDies": {
       "name": "FlowKoghdaSushchnostUmiraiet"
     },

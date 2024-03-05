@@ -1,11 +1,8 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "feature",
   "definition": {
     "generationStep": "RAW_GENERATION",
-    "restrictionDimensions": [
-      "CUSTOM:Yteria"
-    ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Swamps"

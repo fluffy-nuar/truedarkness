@@ -1,15 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Music Disc",
+    "rarity": "RARE",
     "texture": "music_disc_humility",
     "description": "Nuar — Humility",
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
     },
-    "specialInfo": [],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": []
+    },
     "music": {
       "value": "CUSTOM:record.humility"
     },

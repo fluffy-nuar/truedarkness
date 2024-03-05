@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "corrupt_unanimated",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "§5Corrupt",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 0.5,
     "resistance": 10.0,
     "hasGravity": false,
@@ -126,9 +128,7 @@
     "onEntityWalksOn": {
       "name": "CorruptKoghdaSushchnostKhoditPoBloku"
     },
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": false,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:CorruptedPlace"
@@ -161,9 +161,6 @@
     "frequencyPerChunks": 20,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 178,
-    "generateCondition": {
-      "name": "CorruptDopolnitielnoieUsloviieGienieratsii"
-    }
+    "maxGenerateHeight": 178
   }
 }

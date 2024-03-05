@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Light Mushrooms",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
@@ -113,7 +115,7 @@
       "name": "LightMushroo1msPriUspiekhieKostnoiMuki"
     },
     "frequencyOnChunks": 35,
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "generationType": "Grass",
     "patchSize": 64,

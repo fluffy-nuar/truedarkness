@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "grape_azalea_leaves",
@@ -35,7 +35,9 @@
       }
     ],
     "name": "Grape Azalea Leaves",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -121,10 +123,12 @@
     "onTickUpdate": {
       "name": "GrapeAzaleaLeavesObnovitTakt"
     },
-    "spawnWorldTypes": [
-      "Surface"
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "#is_overworld"
+      }
     ],
-    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.AZALEA_LEAVES"

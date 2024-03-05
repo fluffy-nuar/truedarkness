@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Swamp Bush",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementriy"
     },
@@ -83,9 +85,7 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 40,
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Swamps"

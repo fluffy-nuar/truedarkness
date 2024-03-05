@@ -1,0 +1,9 @@
+{
+  "type": "truedarkness:hanging_corrupt_another_biome_feature",
+  "config": {
+    "structure": "truedarkness:hanging_corrupt",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

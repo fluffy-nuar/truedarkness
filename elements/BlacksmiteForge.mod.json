@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "forge",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Blacksmite Forge",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -125,10 +127,24 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Swamps"
+      },
+      {
+        "value": "CUSTOM:CorruptedPlace"
+      },
+      {
+        "value": "CUSTOM:Mine"
+      },
+      {
+        "value": "CUSTOM:Retroland"
+      },
+      {
+        "value": "CUSTOM:SwamdWasteland"
+      }
     ],
-    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.MOB_SPAWNER"

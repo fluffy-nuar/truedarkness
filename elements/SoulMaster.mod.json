@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "soul_master_top",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Soul Master",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.2,
     "resistance": 7.0,
     "hasGravity": false,
@@ -120,7 +122,7 @@
     "onRightClicked": {
       "name": "SoulMasterPriShchielchkiePKMPoBloku"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

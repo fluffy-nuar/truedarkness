@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Corrupt"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 9.0,
+    "knockback": 3,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "ShandarahKoghdaSnariadPrisdfziemliaietsiaNaBlok"
+    },
+    "onHitsEntity": {
+      "name": "ShandarahKoghdaSnariadPopadaietVSushchnost"
+    },
+    "onFlyingTick": {
+      "name": "ShandarahKoghdaSnariadLietitTakt"
+    }
+  }
+}

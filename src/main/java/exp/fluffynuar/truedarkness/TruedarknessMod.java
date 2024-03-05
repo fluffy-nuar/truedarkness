@@ -38,6 +38,7 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
+import exp.fluffynuar.truedarkness.world.features.StructureFeature;
 import exp.fluffynuar.truedarkness.init.TruedarknessModTabs;
 import exp.fluffynuar.truedarkness.init.TruedarknessModSounds;
 import exp.fluffynuar.truedarkness.init.TruedarknessModParticleTypes;
@@ -66,6 +67,7 @@ public class TruedarknessMod {
 		TruedarknessModEnchantments.REGISTRY.register(bus);
 		TruedarknessModTabs.REGISTRY.register(bus);
 		TruedarknessModFeatures.REGISTRY.register(bus);
+		StructureFeature.REGISTRY.register(bus);
 		TruedarknessModMobEffects.REGISTRY.register(bus);
 
 		TruedarknessModParticleTypes.REGISTRY.register(bus);

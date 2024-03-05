@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Fireflies Flower",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementriy"
     },
@@ -86,9 +88,7 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 35,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "roofed_forest"

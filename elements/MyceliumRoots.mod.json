@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Mycelium Roots",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementriy"
     },
@@ -107,9 +109,7 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 32,
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Mine"

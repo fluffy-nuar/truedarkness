@@ -1,0 +1,14 @@
+{
+  "type": "truedarkness:ruined_portal_feature",
+  "config": {
+    "structure": "truedarkness:ruin_of_portal",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block",
+    "offset": [
+      5,
+      0,
+      2
+    ]
+  }
+}

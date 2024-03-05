@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "sandstone_of_missing",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Sandstone Of Missing",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -117,9 +119,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": false,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:SwamdWasteland"
@@ -134,9 +134,6 @@
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64,
-    "generateCondition": {
-      "name": "SandstoneOfMissingDopolnitielnoieUsloviieGienieratsii"
-    }
+    "maxGenerateHeight": 64
   }
 }

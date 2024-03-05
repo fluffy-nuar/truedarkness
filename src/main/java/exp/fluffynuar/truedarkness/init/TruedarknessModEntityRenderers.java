@@ -26,7 +26,6 @@ import exp.fluffynuar.truedarkness.client.renderer.CorruptedHandRenderer;
 public class TruedarknessModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(TruedarknessModEntities.DARKNESS_SPRUCE_SHIELD.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(TruedarknessModEntities.SWAMP_COD_ENTITY.get(), SwampSalmonRenderer::new);
 		event.registerEntityRenderer(TruedarknessModEntities.FLOW.get(), FlowRenderer::new);
 		event.registerEntityRenderer(TruedarknessModEntities.CORRUPTED_KNIGHT.get(), CorruptedKnightRenderer::new);
@@ -37,7 +36,8 @@ public class TruedarknessModEntityRenderers {
 		event.registerEntityRenderer(TruedarknessModEntities.ERIDIUM_GOLEM.get(), EridiumGolemRenderer::new);
 		event.registerEntityRenderer(TruedarknessModEntities.CRYER.get(), CryerRenderer::new);
 		event.registerEntityRenderer(TruedarknessModEntities.FUNGUM.get(), FungumRenderer::new);
-		event.registerEntityRenderer(TruedarknessModEntities.SCULK_FEATHER_SPELL.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(TruedarknessModEntities.SHANDARAH.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(TruedarknessModEntities.SCULK_FEATHER_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(TruedarknessModEntities.DARKNESS_SPRUCE_SHIELD_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(TruedarknessModEntities.SHANDARAH_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

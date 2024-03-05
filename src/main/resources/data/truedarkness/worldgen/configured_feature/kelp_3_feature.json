@@ -1,0 +1,9 @@
+{
+  "type": "truedarkness:kelp_3_feature",
+  "config": {
+    "structure": "truedarkness:swamp_kelp",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

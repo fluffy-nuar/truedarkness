@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "swamp_seaweed",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Swamp Seaweed",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 0.0,
     "resistance": 0.0,
     "hasGravity": false,
@@ -156,9 +158,7 @@
     "onHitByProjectile": {
       "name": "SwampSeaweedObnovlieniieTika"
     },
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -169,9 +169,6 @@
     "frequencyPerChunks": 64,
     "frequencyOnChunk": 1,
     "minGenerateHeight": 20,
-    "maxGenerateHeight": 31,
-    "generateCondition": {
-      "name": "SwampSeaweedDopolnitielnoieUsloviieGienieratsii"
-    }
+    "maxGenerateHeight": 31
   }
 }

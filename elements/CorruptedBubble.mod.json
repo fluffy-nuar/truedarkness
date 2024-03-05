@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 2,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Corrupted Bubble",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
@@ -92,9 +94,7 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 30,
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:CorruptedPlace"

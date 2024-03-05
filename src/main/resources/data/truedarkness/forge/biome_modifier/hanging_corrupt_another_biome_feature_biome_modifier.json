@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:swamps",
+    "truedarkness:corrupted_place",
+    "truedarkness:mine",
+    "truedarkness:retroland",
+    "truedarkness:swamp_wasteland"
+  ],
+  "features": "truedarkness:hanging_corrupt_another_biome_feature",
+  "step": "underground_structures"
+}

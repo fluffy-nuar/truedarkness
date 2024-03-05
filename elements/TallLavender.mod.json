@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Tall Lavender",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementriy"
     },
@@ -89,9 +91,7 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 40,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:DenseLavenderField"

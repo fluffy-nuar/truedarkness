@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "dark_crystal_hoe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "§1Grimnite Hoe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 1.0,
     "usageCount": 2031,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,

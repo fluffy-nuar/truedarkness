@@ -113,7 +113,6 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.FIRENITE_ARMOR_CHESTPLATE.get());
 				tabData.accept(TruedarknessModItems.FIRENITE_ARMOR_LEGGINGS.get());
 				tabData.accept(TruedarknessModItems.FIRENITE_ARMOR_BOOTS.get());
-				tabData.accept(TruedarknessModItems.DARKNESS_SPRUCE_SHIELD.get());
 				tabData.accept(TruedarknessModItems.SOULSTEAL_METAL.get());
 				tabData.accept(TruedarknessModItems.SOULSTEAL_INGOT.get());
 				tabData.accept(TruedarknessModItems.SOULSTEAL_SHARD.get());
@@ -229,6 +228,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_TURQUOISE_FLOWER.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_FOREST_NIGHT.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_HUMILITY.get());
+				tabData.accept(TruedarknessModItems.DARKNESS_SPRUCE_SHIELD.get());
 			})
 
 					.build());

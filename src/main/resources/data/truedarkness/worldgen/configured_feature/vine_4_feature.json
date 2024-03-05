@@ -1,0 +1,9 @@
+{
+  "type": "truedarkness:vine_4_feature",
+  "config": {
+    "structure": "truedarkness:vine",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

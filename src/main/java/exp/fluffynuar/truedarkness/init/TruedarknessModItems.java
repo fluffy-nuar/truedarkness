@@ -657,7 +657,6 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> FIRENITE_ARMOR_CHESTPLATE = REGISTRY.register("firenite_armor_chestplate", () -> new FireniteArmorItem.Chestplate());
 	public static final RegistryObject<Item> FIRENITE_ARMOR_LEGGINGS = REGISTRY.register("firenite_armor_leggings", () -> new FireniteArmorItem.Leggings());
 	public static final RegistryObject<Item> FIRENITE_ARMOR_BOOTS = REGISTRY.register("firenite_armor_boots", () -> new FireniteArmorItem.Boots());
-	public static final RegistryObject<Item> DARKNESS_SPRUCE_SHIELD = REGISTRY.register("darkness_spruce_shield", () -> new DarknessSpruceShieldItem());
 	public static final RegistryObject<Item> SOULSTEAL_METAL = REGISTRY.register("soulsteal_metal", () -> new StoneMetalItem());
 	public static final RegistryObject<Item> SOULSTEAL_INGOT = REGISTRY.register("soulsteal_ingot", () -> new SoulstealIngotItem());
 	public static final RegistryObject<Item> SOULSTEAL_SHARD = REGISTRY.register("soulsteal_shard", () -> new SoulstealShardItem());
@@ -816,11 +815,9 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> LIGHT_MUSHROOM_TOP_1 = block(TruedarknessModBlocks.LIGHT_MUSHROOM_TOP_1);
 	public static final RegistryObject<Item> DRIED_SWAMP_KELP = REGISTRY.register("dried_swamp_kelp", () -> new DriedSwampKelpItem());
 	public static final RegistryObject<Item> CHARGE_FEATHER = REGISTRY.register("charge_feather", () -> new ChargeFeatherItem());
-	public static final RegistryObject<Item> SCULK_FEATHER_SPELL = REGISTRY.register("sculk_feather_spell", () -> new SculkFeatherItem());
 	public static final RegistryObject<Item> CORRUPT_RUNE = block(TruedarknessModBlocks.CORRUPT_RUNE);
 	public static final RegistryObject<Item> CORRUPT_RUNE_1 = block(TruedarknessModBlocks.CORRUPT_RUNE_1);
 	public static final RegistryObject<Item> CORRUPT_RUNE_2 = block(TruedarknessModBlocks.CORRUPT_RUNE_2);
-	public static final RegistryObject<Item> SHANDARAH = REGISTRY.register("shandarah", () -> new ShandarahItem());
 	public static final RegistryObject<Item> CORRUPTED_SCULK_CATALYST_SPAWN = block(TruedarknessModBlocks.CORRUPTED_SCULK_CATALYST_SPAWN);
 	public static final RegistryObject<Item> SWAMP_SAND_LAYER_1 = block(TruedarknessModBlocks.SWAMP_SAND_LAYER_1);
 	public static final RegistryObject<Item> SWAMP_SAND_LAYER_2 = block(TruedarknessModBlocks.SWAMP_SAND_LAYER_2);
@@ -838,6 +835,9 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> CORRUPT_1 = block(TruedarknessModBlocks.CORRUPT_1);
 	public static final RegistryObject<Item> CORRUPT_0 = block(TruedarknessModBlocks.CORRUPT_0);
 	public static final RegistryObject<Item> GLOW_FOG = block(TruedarknessModBlocks.GLOW_FOG);
+	public static final RegistryObject<Item> DARKNESS_SPRUCE_SHIELD = REGISTRY.register("darkness_spruce_shield", () -> new DarknessSpruceShieldItem());
+	public static final RegistryObject<Item> SCULK_FEATHER = REGISTRY.register("sculk_feather", () -> new SculkFeatherItem());
+	public static final RegistryObject<Item> SHANDARAH = REGISTRY.register("shandarah", () -> new ShandarahItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "sand_of_missing",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Sand Of Missing",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.2,
     "resistance": 12.0,
     "hasGravity": false,
@@ -126,9 +128,7 @@
     "onEntityWalksOn": {
       "name": "TrapSandOfMissingKoghdaSushchnostKhoditPoBloku"
     },
-    "spawnWorldTypes": [
-      "CUSTOM:Yteria"
-    ],
+    "generateFeature": false,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:SwamdWasteland"
@@ -143,9 +143,6 @@
     "frequencyPerChunks": 16,
     "frequencyOnChunk": 6,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 69,
-    "generateCondition": {
-      "name": "TrapSandOfMissingDopolnitielnoieUsloviieGienieratsii"
-    }
+    "maxGenerateHeight": 69
   }
 }

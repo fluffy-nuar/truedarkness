@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "soulsteal_grid",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Light Of Soul",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 10.0,
     "resistance": 30.0,
     "hasGravity": false,
@@ -120,7 +122,7 @@
     "onRandomUpdateEvent": {
       "name": "LightOfSoulSpontannoNaStoronieKliienta"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "UNIFORM",

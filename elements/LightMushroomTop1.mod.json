@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "glow_medium_fungus",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Light Mushroom Top",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 0.0,
     "resistance": 0.5,
     "hasGravity": false,
@@ -126,7 +128,7 @@
     "onNeighbourBlockChanges": {
       "name": "LightMushroomTop1KoghdaSosiedniiBlokMieniaietsia"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

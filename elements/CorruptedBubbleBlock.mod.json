@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "corrupted_bubble_side",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Corrupted Bubble",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -126,7 +128,7 @@
     "onEntityWalksOn": {
       "name": "CorruptedBubbleBlockKoghdaSushchnostKhoditPoBloku"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
