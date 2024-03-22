@@ -8,9 +8,10 @@
     "texture": "dark_crystal_axe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "§1Grimnite Axe",
+    "name": "Dark Crystal Axe",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "BirthdayAuthor"
     },
     "creativeTab": {
       "value": "No creative tab entry"
@@ -22,12 +23,15 @@
     "damageVsEntity": 10.0,
     "usageCount": 2031,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "DarkCrystalSwordKoghdaZhivaiaSushchnostPopadaietSPomoshchiuInstrumienta"
+    "onRightClickedOnBlock": {
+      "name": "DarkCrystalAxePriShchielchkiePKMPoBloku"
     }
   }
 }

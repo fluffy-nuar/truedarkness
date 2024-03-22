@@ -1,13 +1,21 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "minecraft:diamond_hoe"
-  },
-  "addition": {
-    "item": "truedarkness:firenite_ingot"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    " b",
+    " b"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:firenite_ingot"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "item": "truedarkness:firenite_hoe"
+    "item": "truedarkness:firenite_hoe",
+    "count": 1
   }
 }

@@ -2,10 +2,10 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "crying_planks",
-    "textureTop": "crying_planks",
+    "texture": "cry_planks",
+    "textureTop": "cry_planks",
     "textureLeft": "",
-    "textureFront": "crying_planks",
+    "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 10,

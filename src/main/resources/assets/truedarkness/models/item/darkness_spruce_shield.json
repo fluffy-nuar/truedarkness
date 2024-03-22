@@ -3,5 +3,13 @@
   "textures": {
     "0": "truedarkness:block/darkness_spruce_shield",
     "particle": "truedarkness:item/darkness_spruce_shield"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "truedarkness:item/darkness_spruce_shield_0"
+    }
+  ]
 }

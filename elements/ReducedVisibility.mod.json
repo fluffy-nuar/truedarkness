@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Reduced visibility",
@@ -9,10 +9,10 @@
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": true,
+    "isBad": false,
     "isBenefitical": false,
-    "renderStatusInInventory": true,
-    "renderStatusInHUD": true,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
     "onStarted": {
       "name": "ReducedVisibilityKoghdaEffiektNachatprimienien"
     }

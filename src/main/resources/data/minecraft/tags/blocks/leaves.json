@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
+    "truedarkness:grape_azalea_leaves",
     "truedarkness:bushy_grape_azalea_leaves",
     "truedarkness:cyan_petal",
-    "truedarkness:fake_leaves",
     "truedarkness:darkness_spruce_leaves",
-    "truedarkness:grape_azalea_leaves"
+    "truedarkness:fake_leaves"
   ]
 }

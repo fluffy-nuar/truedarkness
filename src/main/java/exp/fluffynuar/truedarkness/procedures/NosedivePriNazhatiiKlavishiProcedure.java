@@ -13,19 +13,16 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
 import exp.fluffynuar.truedarkness.init.TruedarknessModMobEffects;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
-import exp.fluffynuar.truedarkness.init.TruedarknessModGameRules;
+import exp.fluffynuar.truedarkness.TruedarknessMod;
 
 public class NosedivePriNazhatiiKlavishiProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -54,55 +51,55 @@ public class NosedivePriNazhatiiKlavishiProcedure {
 						}
 					}
 					entity.setDeltaMovement(new Vec3(0, (-4), 0));
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 80, 255, false, false));
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.NOSEDIVE_EFFECT.get(), 60, 0, false, false));
-					if (entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(TruedarknessModMobEffects.SOUL_SPEED.get())) {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), (int) ((world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.NOSEDIVE_COOLDOWN)) / 2), 0, false, false));
-						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), (int) ((world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.NOSEDIVE_COOLDOWN)) / 2));
-						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_HEART.get(), (int) ((world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.NOSEDIVE_COOLDOWN)) / 2));
-						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), (int) ((world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.NOSEDIVE_COOLDOWN)) / 2));
-					} else {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), (world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.NOSEDIVE_COOLDOWN)), 0, false, false));
-						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), (world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.NOSEDIVE_COOLDOWN)));
-						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_HEART.get(), (world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.NOSEDIVE_COOLDOWN)));
-						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), (world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.NOSEDIVE_COOLDOWN)));
-					}
-					if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SoulCount
-							+ 1 <= (world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.SOUL_COUNT))) {
-						if (Mth.nextInt(RandomSource.create(), 1, 100) <= 10) {
-							{
-								double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SoulCount + 1;
-								entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-									capability.SoulCount = _setval;
-									capability.syncPlayerVariables(entity);
-								});
+					if (!(new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayer _serverPlayer) {
+								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
+							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
 							}
-							if (entity instanceof Player _player && !_player.level().isClientSide())
-								_player.displayClientMessage(Component.literal(("\u00A7b" + "+1")), true);
+							return false;
 						}
+					}.checkGamemode(entity)) && !(new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayer _serverPlayer) {
+								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+							}
+							return false;
+						}
+					}.checkGamemode(entity))) {
+						if (entity instanceof Player _player) {
+							_player.getAbilities().invulnerable = true;
+							_player.onUpdateAbilities();
+						}
+						TruedarknessMod.queueServerWork(60, () -> {
+							if (entity instanceof Player _player) {
+								_player.getAbilities().invulnerable = false;
+								_player.onUpdateAbilities();
+							}
+						});
 					}
-					if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SoulCount >= (world.getLevelData().getGameRules()
-							.getInt(TruedarknessModGameRules.SOUL_COUNT))) {
-						if (entity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal(("\u00A7b" + Component.translatable("mana.overdrive").getString())), true);
-					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.NOSEDIVE_EFFECT.get(), 60, 0, true, false));
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), 200, 0, true, false));
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), 200);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_HEART.get(), 200);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), 200);
 				}
 			}
 		} else {
-			if (!(entity instanceof LivingEntity _livEnt30 && _livEnt30.hasEffect(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get()))) {
+			if (!(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get()))) {
 				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.ECHO_HEART.get(), lv).isPresent() : false) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), 280, 0, false, false));
+						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), 280, 0, true, false));
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), 280);
 					if (entity instanceof Player _player)
@@ -112,7 +109,7 @@ public class NosedivePriNazhatiiKlavishiProcedure {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 120, 198, false, false));
 					{
-						double _setval = (world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.SCULKMANALIMIT));
+						double _setval = 8;
 						entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.SculkedMana = _setval;
 							capability.syncPlayerVariables(entity);

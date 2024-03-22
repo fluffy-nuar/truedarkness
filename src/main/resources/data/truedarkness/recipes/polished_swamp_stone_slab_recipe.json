@@ -2,16 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012"
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:polished_swamp_stone"
-    },
-    "1": {
-      "item": "truedarkness:polished_swamp_stone"
-    },
-    "2": {
+    "a": {
       "item": "truedarkness:polished_swamp_stone"
     }
   },

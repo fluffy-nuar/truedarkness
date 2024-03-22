@@ -33,7 +33,7 @@ public class EchoKnifePriNazhatiiPravoiKnopkoiMyshiProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana >= 6
-				|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.SCULK_RING.get())) : false)
+				|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.ECHO_RING.get())) : false)
 						&& (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana >= 3
 				|| new Object() {
 					public boolean checkGamemode(Entity _ent) {
@@ -72,7 +72,7 @@ public class EchoKnifePriNazhatiiPravoiKnopkoiMyshiProcedure {
 					return false;
 				}
 			}.checkGamemode(entity))) {
-				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.SCULK_RING.get(), lv).isPresent() : false) {
+				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.ECHO_RING.get(), lv).isPresent() : false) {
 					{
 						double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana - 3;
 						entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -91,7 +91,7 @@ public class EchoKnifePriNazhatiiPravoiKnopkoiMyshiProcedure {
 				}
 			}
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_KNIFE.get(), 60);
+				_player.getCooldowns().addCooldown(TruedarknessModItems.REINFORCED_KNIFE.get(), 60);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(("\u00A73" + Component.translatable("mana.dont_enough").getString())), true);

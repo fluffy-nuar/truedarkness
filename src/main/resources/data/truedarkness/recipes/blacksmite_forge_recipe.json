@@ -2,37 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "bcb",
+    "bdb"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:iron_trapdoor"
     },
-    "1": {
-      "item": "minecraft:iron_trapdoor"
-    },
-    "2": {
-      "item": "minecraft:iron_trapdoor"
-    },
-    "3": {
+    "b": {
       "item": "truedarkness:gramite_shard"
     },
-    "4": {
+    "c": {
       "item": "truedarkness:darknite"
     },
-    "5": {
-      "item": "truedarkness:gramite_shard"
-    },
-    "6": {
-      "item": "truedarkness:gramite_shard"
-    },
-    "7": {
+    "d": {
       "item": "minecraft:bucket"
-    },
-    "8": {
-      "item": "truedarkness:gramite_shard"
     }
   },
   "result": {

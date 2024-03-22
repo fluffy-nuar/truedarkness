@@ -5,10 +5,10 @@
     "toolType": "Axe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "cursed_battle_axe",
+    "texture": "fang_axe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Cursed Battle Axe",
+    "name": "§5Cursed Battle Axe",
     "specialInformation": {
       "fixedValue": []
     },
@@ -22,9 +22,12 @@
     "damageVsEntity": 11.0,
     "usageCount": 2031,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
-        "value": "CUSTOM:CursedMetal"
+        "value": "CUSTOM:CorruptedHandFangs"
       }
     ],
     "immuneToFire": false,

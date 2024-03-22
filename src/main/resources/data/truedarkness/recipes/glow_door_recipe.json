@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:glow_planks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:glow_door",
+    "count": 3
+  }
+}

@@ -30,9 +30,8 @@
     "truedarkness:corrupted_bubble_empty",
     "truedarkness:swamp_blacksoil_cover",
     "truedarkness:ancient_sculk",
+    "truedarkness:echo_master",
     "truedarkness:grape_azalea_leaves",
-    "truedarkness:sculk_grail",
-    "truedarkness:soul_master",
     "truedarkness:lighted_vine",
     "truedarkness:lighted_vine_active",
     "truedarkness:glow_fungus_0",
@@ -40,8 +39,8 @@
     "truedarkness:glow_fungus_2",
     "truedarkness:light_shroom_3",
     "truedarkness:lighted_vine_2",
-    "truedarkness:lavender_azalea_leaves",
     "truedarkness:corrupt_1",
-    "truedarkness:corrupt_0"
+    "truedarkness:corrupt_0",
+    "truedarkness:lighted_vine_active_0"
   ]
 }

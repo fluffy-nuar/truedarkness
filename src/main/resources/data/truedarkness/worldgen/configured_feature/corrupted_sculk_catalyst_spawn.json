@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:corrupted_sculk_catalyst_spawn",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 2,
     "feature": {

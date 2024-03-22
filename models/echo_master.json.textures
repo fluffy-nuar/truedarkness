@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "soul_master",
+        "1": "soul_master_top"
+      },
+      "name": "default"
+    }
+  }
+}

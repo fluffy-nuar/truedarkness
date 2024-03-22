@@ -7,12 +7,17 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.client.Minecraft;
+
+import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
 public class TrudniteOreKoghdaBlokRazrushienIghrokomProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -32,6 +37,13 @@ public class TrudniteOreKoghdaBlokRazrushienIghrokomProcedure {
 				}.checkGamemode(entity))) {
 			if (world instanceof ServerLevel _level)
 				_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, 4));
+			if (Mth.nextInt(RandomSource.create(), 0, 10) > 8) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.SOULSTEAL_SHARD.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
 		}
 	}
 }

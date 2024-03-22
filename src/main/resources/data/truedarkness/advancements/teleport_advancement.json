@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:cave_skrezhal_part"
+      "item": "truedarkness:tablet_cave"
     },
     "title": {
       "translate": "advancements.teleport_advancement.title"

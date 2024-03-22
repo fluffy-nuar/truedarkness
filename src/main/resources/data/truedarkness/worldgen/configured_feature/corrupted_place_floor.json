@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:corrupted_place_floor",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 192,
     "feature": {

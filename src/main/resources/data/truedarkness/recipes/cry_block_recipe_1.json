@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0"
+    "a"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:cry_block"
+    "a": {
+      "item": "truedarkness:marinite_block"
     }
   },
   "result": {

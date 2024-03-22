@@ -1,13 +1,21 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "minecraft:diamond_axe"
-  },
-  "addition": {
-    "item": "truedarkness:firenite_ingot"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "ab",
+    " b"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:firenite_ingot"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "item": "truedarkness:firenite_axe"
+    "item": "truedarkness:firenite_axe",
+    "count": 1
   }
 }

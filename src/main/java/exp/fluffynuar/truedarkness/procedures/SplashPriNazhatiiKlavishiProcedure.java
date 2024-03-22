@@ -18,7 +18,7 @@ import net.minecraft.core.BlockPos;
 
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
-import exp.fluffynuar.truedarkness.entity.SculkFeatherEntity;
+import exp.fluffynuar.truedarkness.entity.SculkFeatherProjectileEntity;
 
 public class SplashPriNazhatiiKlavishiProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -32,7 +32,7 @@ public class SplashPriNazhatiiKlavishiProcedure {
 				if (!projectileLevel.isClientSide()) {
 					Projectile _entityToSpawn = new Object() {
 						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-							AbstractArrow entityToSpawn = new SculkFeatherEntity(TruedarknessModEntities.SCULK_FEATHER_SPELL.get(), level);
+							AbstractArrow entityToSpawn = new SculkFeatherProjectileEntity(TruedarknessModEntities.SCULK_FEATHER_PROJECTILE.get(), level);
 							entityToSpawn.setOwner(shooter);
 							entityToSpawn.setBaseDamage(damage);
 							entityToSpawn.setKnockback(knockback);

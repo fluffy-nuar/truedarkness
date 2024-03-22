@@ -1,7 +1,7 @@
 {
   "parent": "block/pressure_plate_down",
   "textures": {
-    "texture": "truedarkness:block/crying_planks"
+    "texture": "truedarkness:block/cry_planks"
   },
   "render_type": "translucent"
 }

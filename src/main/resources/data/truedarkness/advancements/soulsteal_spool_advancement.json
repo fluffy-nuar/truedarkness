@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:stone_spool"
+      "item": "truedarkness:soulsteal_spool"
     },
     "title": {
       "translate": "advancements.soulsteal_spool_advancement.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "truedarkness:stone_spool"
+              "truedarkness:soulsteal_spool"
             ],
             "count": {
               "min": 1,

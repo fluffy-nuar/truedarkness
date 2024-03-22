@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "truedarkness:block/dried_wood",
-    "particle": "truedarkness:block/dried_wood"
-  },
-  "render_type": "solid"
-}

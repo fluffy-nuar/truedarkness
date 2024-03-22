@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "truedarkness:cave_skrezhal_part"
+      "item": "truedarkness:tablet_cave"
     },
     {
-      "item": "truedarkness:ocean_skrezhal_part"
+      "item": "truedarkness:tablet_ocean"
     }
   ],
   "result": {
-    "item": "truedarkness:skrezhal",
+    "item": "truedarkness:tablet",
     "count": 1
   }
 }

@@ -8,7 +8,7 @@
     "texture": "marinite_sword",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "§bMarinite Sword",
+    "name": "Marinite Sword",
     "specialInformation": {
       "fixedValue": []
     },
@@ -18,10 +18,13 @@
     "harvestLevel": 2,
     "efficiency": 4.0,
     "attackSpeed": 1.8,
-    "enchantability": 0,
+    "enchantability": 14,
     "damageVsEntity": 8.0,
     "usageCount": 2031,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CryIngot"

@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:lighted_vine",
+  "type": "minecraft:ore",
   "config": {
     "size": 1,
     "discard_chance_on_air_exposure": 0,

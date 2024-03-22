@@ -8,11 +8,11 @@
     "customProperties": {},
     "states": [],
     "name": "Aquamarine Coin",
-    "rarity": "RARE",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
     },
-    "stackSize": 16,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -29,6 +29,9 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -37,6 +40,9 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:DarknessSpruceShieldProjectile"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

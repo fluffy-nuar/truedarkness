@@ -8,7 +8,7 @@
     "customProperties": {},
     "states": [],
     "name": "Sculk Mana Bottle",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
     },
@@ -29,6 +29,9 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -37,6 +40,9 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:DarknessSpruceShieldProjectile"
+    },
     "isFood": true,
     "nutritionalValue": 0,
     "saturation": 0.0,
@@ -44,7 +50,7 @@
       "value": "Items.GLASS_BOTTLE"
     },
     "isMeat": false,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "drink"
   }
 }

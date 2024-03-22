@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:soul_grain"
+    },
+    "b": {
+      "item": "truedarkness:soul_crystal"
+    },
+    "c": {
+      "item": "truedarkness:accustone_pebbles"
+    }
+  },
+  "result": {
+    "item": "truedarkness:soul_stone",
+    "count": 1
+  }
+}

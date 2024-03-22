@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "milk_cup",
+    "texture": "drink_milk",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
@@ -14,11 +14,11 @@
     },
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 30,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
-      "value": ""
+      "value": "CUSTOM:Cup"
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
@@ -29,15 +29,21 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "MilkCupPriZaviershieniiIspolzovaniia"
+    "onRightClickedInAir": {
+      "name": "CupWaterPriShchielchkiePKM"
     },
     "enableRanged": false,
     "shootConstantly": false,
-    "isFood": true,
+    "projectile": {
+      "value": "CUSTOM:DarknessSpruceShieldProjectile"
+    },
+    "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.0,
     "eatResultItem": {
@@ -45,6 +51,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "drink"
+    "animation": "none"
   }
 }

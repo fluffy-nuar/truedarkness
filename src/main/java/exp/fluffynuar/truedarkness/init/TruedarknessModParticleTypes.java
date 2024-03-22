@@ -19,11 +19,10 @@ public class TruedarknessModParticleTypes {
 	public static final RegistryObject<SimpleParticleType> WASTELAND_POLLEN = REGISTRY.register("wasteland_pollen", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> DUST = REGISTRY.register("dust", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> CORRUPT_POLLEN = REGISTRY.register("corrupt_pollen", () -> new SimpleParticleType(false));
-	public static final RegistryObject<SimpleParticleType> FIRE_FLIES = REGISTRY.register("fire_flies", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> FIREFLIES_PARTICLE = REGISTRY.register("fireflies_particle", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> CORRUPTED_SOUL = REGISTRY.register("corrupted_soul", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> CORRUPTED_SPELL = REGISTRY.register("corrupted_spell", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> CORRUPTED_BUBBLE_POP = REGISTRY.register("corrupted_bubble_pop", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> VANILLA_BUBBLE = REGISTRY.register("vanilla_bubble", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> MINE_GLOW = REGISTRY.register("mine_glow", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> SOUL_FEATHER = REGISTRY.register("soul_feather", () -> new SimpleParticleType(false));
 }

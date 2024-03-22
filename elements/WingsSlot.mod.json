@@ -1,0 +1,9 @@
+{
+  "_fv": 57,
+  "_type": "curiosslot",
+  "definition": {
+    "texture": "wings_slot.png",
+    "name": "Wings",
+    "amount": 1
+  }
+}

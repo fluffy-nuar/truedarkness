@@ -32,7 +32,7 @@ public class EchoHammerPriShchielchkiePKMProcedure {
 			return;
 		if (((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana >= 8
 				|| (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana >= 4
-						&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.SCULK_RING.get())) : false))
+						&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.ECHO_RING.get())) : false))
 				&& (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Jump == true || new Object() {
 					public boolean checkGamemode(Entity _ent) {
 						if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -66,7 +66,7 @@ public class EchoHammerPriShchielchkiePKMProcedure {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 180, 1, false, false));
 					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HAMMER.get(), 180);
+						_player.getCooldowns().addCooldown(TruedarknessModItems.REINFORCED_HAMMER.get(), 180);
 					entity.setDeltaMovement(new Vec3((2.5 * entity.getLookAngle().x), (4.5 * entity.getLookAngle().y), (2.5 * entity.getLookAngle().z)));
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
@@ -89,7 +89,7 @@ public class EchoHammerPriShchielchkiePKMProcedure {
 							return false;
 						}
 					}.checkGamemode(entity))) {
-						if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.SCULK_RING.get(), lv).isPresent() : false) {
+						if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.ECHO_RING.get(), lv).isPresent() : false) {
 							{
 								double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana - 4;
 								entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:cvetaliy_grain"
+    },
+    "b": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "truedarkness:glownite_ingot",
+    "count": 1
+  }
+}

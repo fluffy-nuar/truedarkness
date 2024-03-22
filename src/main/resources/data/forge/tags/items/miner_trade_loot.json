@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:eridium_shard",
+    "truedarkness:darknite",
+    "truedarkness:firenite_scrap",
+    "truedarkness:gramite_shard",
+    "truedarkness:dark_crystal_shard",
+    "truedarkness:sandstone_of_missing",
+    "truedarkness:aquamarine_coin",
+    "truedarkness:metenite_shard",
+    "truedarkness:soul_bottle",
+    "truedarkness:soulsteal_shard",
+    "truedarkness:glownite_ingot",
+    "minecraft:cobblestone",
+    "minecraft:raw_iron",
+    "minecraft:raw_copper",
+    "minecraft:raw_gold",
+    "minecraft:diamond",
+    "minecraft:emerald",
+    "minecraft:iron_pickaxe",
+    "truedarkness:marinite_upgrade"
+  ]
+}

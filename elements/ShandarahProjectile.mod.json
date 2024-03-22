@@ -7,17 +7,14 @@
     },
     "showParticles": false,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": "block.beacon.deactivate"
     },
     "igniteFire": false,
     "power": 1.0,
-    "damage": 9.0,
-    "knockback": 3,
+    "damage": 2.0,
+    "knockback": 0,
     "entityModel": "Default",
     "customModelTexture": "",
-    "onHitsBlock": {
-      "name": "ShandarahKoghdaSnariadPrisdfziemliaietsiaNaBlok"
-    },
     "onHitsEntity": {
       "name": "ShandarahKoghdaSnariadPopadaietVSushchnost"
     },

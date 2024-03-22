@@ -1,13 +1,24 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "minecraft:diamond_shovel"
-  },
-  "addition": {
-    "item": "truedarkness:soulsteal_ingot"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:soulsteal_ingot"
+    },
+    "b": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "item": "truedarkness:soulsteal_shovel"
+    "item": "truedarkness:soulsteal_shovel",
+    "count": 1
   }
 }

@@ -3,13 +3,10 @@
   "group": "wooden_pressure_plate",
   "category": "redstone",
   "pattern": [
-    "01"
+    "aa"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:fake_planks"
-    },
-    "1": {
+    "a": {
       "item": "truedarkness:fake_planks"
     }
   },

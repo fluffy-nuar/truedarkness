@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "truedarkness:item/tool_fang"
+    "layer0": "truedarkness:item/fang_tool"
   }
 }

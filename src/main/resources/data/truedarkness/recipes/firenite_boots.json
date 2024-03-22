@@ -1,13 +1,21 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "minecraft:diamond_boots"
-  },
-  "addition": {
-    "item": "truedarkness:firenite_ingot"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:firenite_ingot"
+    },
+    "b": {
+      "item": "minecraft:leather_boots"
+    }
   },
   "result": {
-    "item": "truedarkness:firenite_armor_boots"
+    "item": "truedarkness:firenite_armor_boots",
+    "count": 1
   }
 }

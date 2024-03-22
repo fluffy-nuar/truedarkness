@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bab",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:glownite_ingot"
+    },
+    "b": {
+      "item": "truedarkness:spore_vine"
+    }
+  },
+  "result": {
+    "item": "truedarkness:glownite_grid",
+    "count": 16
+  }
+}

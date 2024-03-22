@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -24,7 +24,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
+          "onTakenFromSlot": {
             "name": "VziatiiePriedmietaIzSlota"
           },
           "x": 151,
@@ -45,7 +45,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
+          "onTakenFromSlot": {
             "name": "VziatiiePriedmietaIzSlota"
           },
           "x": 187,
@@ -66,7 +66,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
+          "onTakenFromSlot": {
             "name": "VziatiiePriedmietaIzSlota"
           },
           "x": 205,
@@ -87,7 +87,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
+          "onTakenFromSlot": {
             "name": "VziatiiePriedmietaIzSlota"
           },
           "x": 223,
@@ -95,9 +95,27 @@
         }
       },
       {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ElderDocument"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 259,
+          "y": 91
+        }
+      },
+      {
         "type": "outputslot",
         "data": {
-          "id": 4,
+          "id": 5,
           "disablePickup": {
             "fixedValue": false
           },
@@ -107,6 +125,99 @@
           },
           "x": 205,
           "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blacksmite_forge_gui_layer.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blacksmite_forge_lava.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Lava"
+          },
+          "x": 156,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bf_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BF0"
+          },
+          "x": -5,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bf_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BF1"
+          },
+          "x": 11,
+          "y": 59
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bf_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BF2"
+          },
+          "x": 11,
+          "y": 77
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bf_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BF3"
+          },
+          "x": 11,
+          "y": 95
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bf_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BF4"
+          },
+          "x": 11,
+          "y": 113
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bf_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BF5"
+          },
+          "x": 11,
+          "y": 131
         }
       },
       {
@@ -125,93 +236,6 @@
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "blacksmite_forge_graph.png",
-          "use1Xscale": false,
-          "x": 125,
-          "y": 37
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "bf_0.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "BF0"
-          },
-          "x": 300,
-          "y": 36
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "blacksmite_forge_lava.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Lava"
-          },
-          "x": 156,
-          "y": 62
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 5,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 259,
-          "y": 91
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ancient_recipe_0.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "BF1"
-          },
-          "x": 318,
-          "y": 57
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ancient_recipe_1.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "BF2"
-          },
-          "x": 318,
-          "y": 75
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ancient_recipe_2.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "BF3"
-          },
-          "x": 318,
-          "y": 93
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_inventory",
@@ -224,30 +248,6 @@
           },
           "x": 134,
           "y": 110
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ancient_recipe_3.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "BF4"
-          },
-          "x": 318,
-          "y": 111
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ancient_recipe_4.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "BF5"
-          },
-          "x": 318,
-          "y": 129
         }
       }
     ],

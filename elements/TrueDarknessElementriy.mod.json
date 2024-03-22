@@ -1,10 +1,10 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tab",
   "definition": {
     "name": "True Darkness — Elementriy",
     "icon": {
-      "value": "CUSTOM:ChiseledPolishedAccustoneBricks"
+      "value": "CUSTOM:PolishedAccustoneBricks"
     },
     "showSearch": false
   }

@@ -15,7 +15,10 @@
           }
         },
         "state": {
-          "Name": "truedarkness:prismarinum_coral_rich"
+          "Name": "truedarkness:prismarinum_coral_rich",
+          "Properties": {
+            "waterlogged": "false"
+          }
         }
       }
     ]

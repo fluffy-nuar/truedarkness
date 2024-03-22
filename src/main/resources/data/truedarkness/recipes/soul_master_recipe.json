@@ -2,25 +2,29 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345"
+    "aba",
+    " c ",
+    "ded"
   ],
   "key": {
-    "1": {
+    "a": {
+      "item": "truedarkness:fake_log"
+    },
+    "b": {
       "item": "truedarkness:cvetaliy"
     },
-    "3": {
-      "item": "truedarkness:fake_log"
-    },
-    "4": {
+    "c": {
       "item": "minecraft:echo_shard"
     },
-    "5": {
-      "item": "truedarkness:fake_log"
+    "d": {
+      "item": "truedarkness:fake_planks"
+    },
+    "e": {
+      "item": "truedarkness:metenite_crystal"
     }
   },
   "result": {
-    "item": "truedarkness:soul_master",
+    "item": "truedarkness:echo_master",
     "count": 1
   }
 }

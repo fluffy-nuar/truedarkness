@@ -3,11 +3,8 @@
   "values": [
     "minecraft:air",
     "truedarkness:cursed_mark",
-    "truedarkness:marinite_mark",
-    "truedarkness:general_mark",
     "truedarkness:soul_spool",
-    "truedarkness:soul_mark",
     "truedarkness:echo_sandglass",
-    "truedarkness:echo_spool"
+    "truedarkness:echo_shell"
   ]
 }

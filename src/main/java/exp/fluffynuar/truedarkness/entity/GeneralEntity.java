@@ -23,6 +23,7 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
@@ -90,46 +91,49 @@ public class GeneralEntity extends Monster {
 	}
 
 	@Override
-	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:entity.grim_golem_death"));
-	}
+	public boolean hurt(DamageSource damagesource, float amount) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		Entity sourceentity = damagesource.getEntity();
+		Entity immediatesourceentity = damagesource.getDirectEntity();
 
-	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		GeneralKoghdaSushchnostRanienaProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this, source.getEntity());
-		if (source.is(DamageTypes.IN_FIRE))
+		GeneralKoghdaSushchnostRanienaProcedure.execute(world, x, y, z, entity, sourceentity);
+		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
-		if (source.getDirectEntity() instanceof AbstractArrow)
+		if (damagesource.getDirectEntity() instanceof AbstractArrow)
 			return false;
-		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
+		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud)
 			return false;
-		if (source.is(DamageTypes.FALL))
+		if (damagesource.is(DamageTypes.FALL))
 			return false;
-		if (source.is(DamageTypes.CACTUS))
+		if (damagesource.is(DamageTypes.CACTUS))
 			return false;
-		if (source.is(DamageTypes.DROWN))
+		if (damagesource.is(DamageTypes.DROWN))
 			return false;
-		if (source.is(DamageTypes.LIGHTNING_BOLT))
+		if (damagesource.is(DamageTypes.LIGHTNING_BOLT))
 			return false;
-		if (source.is(DamageTypes.EXPLOSION))
+		if (damagesource.is(DamageTypes.EXPLOSION))
 			return false;
-		if (source.is(DamageTypes.TRIDENT))
+		if (damagesource.is(DamageTypes.TRIDENT))
 			return false;
-		if (source.is(DamageTypes.FALLING_ANVIL))
+		if (damagesource.is(DamageTypes.FALLING_ANVIL))
 			return false;
-		if (source.is(DamageTypes.DRAGON_BREATH))
+		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
-		if (source.is(DamageTypes.WITHER))
+		if (damagesource.is(DamageTypes.WITHER))
 			return false;
-		if (source.is(DamageTypes.WITHER_SKULL))
+		if (damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
-		return super.hurt(source, amount);
+		return super.hurt(damagesource, amount);
 	}
 
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		GeneralKoghdaSushchnostUmiraietProcedure.execute(source.getEntity());
+		GeneralKoghdaSushchnostUmiraietProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), source.getEntity());
 	}
 
 	public static void init() {

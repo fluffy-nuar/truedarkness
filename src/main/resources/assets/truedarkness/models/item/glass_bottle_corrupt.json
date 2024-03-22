@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "truedarkness:item/corrupted_bottle"
+    "layer0": "truedarkness:item/corrupt_bottle"
   }
 }

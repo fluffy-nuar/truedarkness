@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "01"
+    "ab"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "truedarkness:polished_accustone_bricks"
     },
-    "1": {
+    "b": {
       "item": "minecraft:vine"
     }
   },

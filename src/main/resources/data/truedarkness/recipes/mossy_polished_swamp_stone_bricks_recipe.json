@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "01"
+    "ab"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "truedarkness:swamp_bush"
     },
-    "1": {
+    "b": {
       "item": "truedarkness:polished_swamp_stone_bricks"
     }
   },

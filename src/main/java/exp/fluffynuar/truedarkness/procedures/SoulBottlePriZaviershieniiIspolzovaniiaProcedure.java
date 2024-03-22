@@ -11,7 +11,6 @@ public class SoulBottlePriZaviershieniiIspolzovaniiaProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOUL_SPEED.get(),
-					(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(TruedarknessModMobEffects.SOUL_SPEED.get()) ? _livEnt.getEffect(TruedarknessModMobEffects.SOUL_SPEED.get()).getDuration() : 0) + 600), 0));
+			_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.CORRUPTING.get(), (int) (20 * 60 * 5), 0));
 	}
 }

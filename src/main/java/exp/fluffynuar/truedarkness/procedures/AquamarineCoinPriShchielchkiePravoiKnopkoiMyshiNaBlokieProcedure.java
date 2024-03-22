@@ -35,7 +35,7 @@ public class AquamarineCoinPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			return;
 		if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria")))
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.AQUAMARINE_COIN.get()) {
-			if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupted < 50) {
+			if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).corrupt_second <= 5) {
 				if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 					ResourceKey<Level> destinationType = Level.OVERWORLD;
 					if (_player.level().dimension() == destinationType)

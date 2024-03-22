@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:cracked_accuswamp_mosaic"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cracked_accuswamp_mosaic_wall",
+    "count": 6
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "parent": "truedarkness:custom/clay_jug_4",
-  "textures": {
-    "all": "truedarkness:block/clay_jug_4",
-    "particle": "truedarkness:block/clay_jug_4",
-    "0": "truedarkness:block/clay_jug_4"
-  },
-  "render_type": "solid"
-}

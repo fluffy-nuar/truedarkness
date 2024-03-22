@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:eridium_cluster",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 12,
     "feature": {

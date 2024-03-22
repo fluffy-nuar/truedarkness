@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tag",
   "definition": {
     "type": "Biomes",
@@ -18,6 +18,7 @@
         "value": "CUSTOM:GrimForest"
       }
     ],
+    "damageTypes": [],
     "name": "is_overworld",
     "namespace": "minecraft"
   }

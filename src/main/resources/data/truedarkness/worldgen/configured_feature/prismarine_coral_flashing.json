@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:prismarine_coral_flashing",
+  "type": "minecraft:ore",
   "config": {
     "size": 64,
     "discard_chance_on_air_exposure": 0,

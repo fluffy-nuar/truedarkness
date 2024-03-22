@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:corrupted_human_block",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 6,
     "feature": {

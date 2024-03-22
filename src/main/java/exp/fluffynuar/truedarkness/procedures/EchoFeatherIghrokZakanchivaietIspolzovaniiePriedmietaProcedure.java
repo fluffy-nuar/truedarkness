@@ -23,15 +23,15 @@ import net.minecraft.client.Minecraft;
 import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
-import exp.fluffynuar.truedarkness.entity.SculkFeatherEntity;
+import exp.fluffynuar.truedarkness.entity.SculkFeatherProjectileEntity;
 
 public class EchoFeatherIghrokZakanchivaietIspolzovaniiePriedmietaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana >= 6
-				|| (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana >= 3
-						&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.SCULK_RING.get())) : false)
+		if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana >= 1
+				|| (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana >= 0.5
+						&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.ECHO_RING.get())) : false)
 				|| new Object() {
 					public boolean checkGamemode(Entity _ent) {
 						if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -50,7 +50,7 @@ public class EchoFeatherIghrokZakanchivaietIspolzovaniiePriedmietaProcedure {
 					if (!projectileLevel.isClientSide()) {
 						Projectile _entityToSpawn = new Object() {
 							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-								AbstractArrow entityToSpawn = new SculkFeatherEntity(TruedarknessModEntities.SCULK_FEATHER_SPELL.get(), level);
+								AbstractArrow entityToSpawn = new SculkFeatherProjectileEntity(TruedarknessModEntities.SCULK_FEATHER_PROJECTILE.get(), level);
 								entityToSpawn.setOwner(shooter);
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
@@ -105,9 +105,9 @@ public class EchoFeatherIghrokZakanchivaietIspolzovaniiePriedmietaProcedure {
 						return false;
 					}
 				}.checkGamemode(entity))) {
-					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.SCULK_RING.get())) : false) {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(TruedarknessModItems.ECHO_RING.get())) : false) {
 						{
-							double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana - 3;
+							double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana - 0.5;
 							entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.SculkedMana = _setval;
 								capability.syncPlayerVariables(entity);
@@ -115,7 +115,7 @@ public class EchoFeatherIghrokZakanchivaietIspolzovaniiePriedmietaProcedure {
 						}
 					} else {
 						{
-							double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana - 6;
+							double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana - 1;
 							entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.SculkedMana = _setval;
 								capability.syncPlayerVariables(entity);
@@ -126,7 +126,7 @@ public class EchoFeatherIghrokZakanchivaietIspolzovaniiePriedmietaProcedure {
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((Component.translatable(("\u00A73" + Component.translatable("mana.dont_enough").getString())).getString())), true);
+				_player.displayClientMessage(Component.literal((Component.translatable(("\u00A73" + Component.translatable("item.truedarkness.echo_harp.mana.dont_enough").getString())).getString())), true);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:player.ring-dont-work")), SoundSource.PLAYERS, 1, 1);

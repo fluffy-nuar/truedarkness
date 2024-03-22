@@ -66,16 +66,21 @@ public class TruedarknessModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-			clone.Corrupted = original.Corrupted;
 			clone.DreamFirst = original.DreamFirst;
 			clone.DreamSecond = original.DreamSecond;
 			clone.DreamThird = original.DreamThird;
 			clone.SculkedMana = original.SculkedMana;
-			clone.SoulCount = original.SoulCount;
 			if (!event.isWasDeath()) {
 				clone.MiningFatigue = original.MiningFatigue;
-				clone.Jump = original.Jump;
 				clone.Charge = original.Charge;
+				clone.Trade = original.Trade;
+				clone.corrupt_first = original.corrupt_first;
+				clone.corrupt_second = original.corrupt_second;
+				clone.magic_up = original.magic_up;
+				clone.magic_side = original.magic_side;
+				clone.magic_down = original.magic_down;
+				clone.Dash = original.Dash;
+				clone.Jump = original.Jump;
 			}
 		}
 	}
@@ -111,15 +116,20 @@ public class TruedarknessModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double Corrupted = 0.0;
 		public boolean DreamFirst = false;
 		public boolean DreamSecond = false;
 		public boolean DreamThird = false;
 		public double SculkedMana = 0.0;
 		public boolean MiningFatigue = true;
-		public double SoulCount = 0.0;
-		public boolean Jump = true;
 		public boolean Charge = false;
+		public boolean Trade = false;
+		public double corrupt_first = 0;
+		public double corrupt_second = 0;
+		public String magic_up = "";
+		public String magic_side = "";
+		public String magic_down = "";
+		public boolean Dash = true;
+		public boolean Jump = true;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -128,29 +138,39 @@ public class TruedarknessModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putDouble("Corrupted", Corrupted);
 			nbt.putBoolean("DreamFirst", DreamFirst);
 			nbt.putBoolean("DreamSecond", DreamSecond);
 			nbt.putBoolean("DreamThird", DreamThird);
 			nbt.putDouble("SculkedMana", SculkedMana);
 			nbt.putBoolean("MiningFatigue", MiningFatigue);
-			nbt.putDouble("SoulCount", SoulCount);
-			nbt.putBoolean("Jump", Jump);
 			nbt.putBoolean("Charge", Charge);
+			nbt.putBoolean("Trade", Trade);
+			nbt.putDouble("corrupt_first", corrupt_first);
+			nbt.putDouble("corrupt_second", corrupt_second);
+			nbt.putString("magic_up", magic_up);
+			nbt.putString("magic_side", magic_side);
+			nbt.putString("magic_down", magic_down);
+			nbt.putBoolean("Dash", Dash);
+			nbt.putBoolean("Jump", Jump);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			Corrupted = nbt.getDouble("Corrupted");
 			DreamFirst = nbt.getBoolean("DreamFirst");
 			DreamSecond = nbt.getBoolean("DreamSecond");
 			DreamThird = nbt.getBoolean("DreamThird");
 			SculkedMana = nbt.getDouble("SculkedMana");
 			MiningFatigue = nbt.getBoolean("MiningFatigue");
-			SoulCount = nbt.getDouble("SoulCount");
-			Jump = nbt.getBoolean("Jump");
 			Charge = nbt.getBoolean("Charge");
+			Trade = nbt.getBoolean("Trade");
+			corrupt_first = nbt.getDouble("corrupt_first");
+			corrupt_second = nbt.getDouble("corrupt_second");
+			magic_up = nbt.getString("magic_up");
+			magic_side = nbt.getString("magic_side");
+			magic_down = nbt.getString("magic_down");
+			Dash = nbt.getBoolean("Dash");
+			Jump = nbt.getBoolean("Jump");
 		}
 	}
 
@@ -175,15 +195,20 @@ public class TruedarknessModVariables {
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.Corrupted = message.data.Corrupted;
 					variables.DreamFirst = message.data.DreamFirst;
 					variables.DreamSecond = message.data.DreamSecond;
 					variables.DreamThird = message.data.DreamThird;
 					variables.SculkedMana = message.data.SculkedMana;
 					variables.MiningFatigue = message.data.MiningFatigue;
-					variables.SoulCount = message.data.SoulCount;
-					variables.Jump = message.data.Jump;
 					variables.Charge = message.data.Charge;
+					variables.Trade = message.data.Trade;
+					variables.corrupt_first = message.data.corrupt_first;
+					variables.corrupt_second = message.data.corrupt_second;
+					variables.magic_up = message.data.magic_up;
+					variables.magic_side = message.data.magic_side;
+					variables.magic_down = message.data.magic_down;
+					variables.Dash = message.data.Dash;
+					variables.Jump = message.data.Jump;
 				}
 			});
 			context.setPacketHandled(true);

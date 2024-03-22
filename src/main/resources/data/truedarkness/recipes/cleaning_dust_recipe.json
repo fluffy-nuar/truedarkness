@@ -2,24 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "aba",
+    " c "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "truedarkness:cvetaliy_grain"
     },
-    "3": {
-      "item": "truedarkness:cvetaliy_grain"
-    },
-    "4": {
+    "b": {
       "item": "truedarkness:swamp_pollen"
     },
-    "5": {
-      "item": "truedarkness:cvetaliy_grain"
-    },
-    "7": {
+    "c": {
       "item": "minecraft:bowl"
     }
   },

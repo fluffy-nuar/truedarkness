@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "truedarkness:cyan_stem",
     "truedarkness:cyan",
+    "truedarkness:cyan_stem",
     "truedarkness:stripped_cyan_log",
     "truedarkness:stripped_cyan_wood"
   ]

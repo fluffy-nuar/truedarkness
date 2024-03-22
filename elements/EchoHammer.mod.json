@@ -8,7 +8,7 @@
     "texture": "echo_hammer",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Echo Hammer",
+    "name": "§3Reinforced Hammer",
     "specialInformation": {
       "fixedValue": []
     },
@@ -22,6 +22,9 @@
     "damageVsEntity": 8.0,
     "usageCount": 2031,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:EchoStone"
@@ -29,9 +32,6 @@
     ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "EchoHammerPriShchielchkiePKM"
-    }
+    "damageOnCrafting": false
   }
 }

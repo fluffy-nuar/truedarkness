@@ -2,18 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0",
-    "1",
-    "2"
+    "a",
+    "a",
+    "a"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:polished_sandstone_bricks_of_missing"
-    },
-    "1": {
-      "item": "truedarkness:polished_sandstone_bricks_of_missing"
-    },
-    "2": {
+    "a": {
       "item": "truedarkness:polished_sandstone_bricks_of_missing"
     }
   },

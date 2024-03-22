@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GlowniteIngot"
+      },
+      {
+        "value": "CUSTOM:GlowniteIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GlowniteIngot"
+      },
+      {
+        "value": "CUSTOM:GlowniteIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GlowniteIngot"
+      },
+      {
+        "value": "CUSTOM:GlowniteIngot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GlowniteDoor"
+    },
+    "name": "glow_block_door_recipe",
+    "namespace": "mod"
+  }
+}

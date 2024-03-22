@@ -114,7 +114,7 @@ public class SamovarActiveBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
-		if (index == 4)
+		if (index == 6)
 			return false;
 		return true;
 	}
@@ -138,6 +138,10 @@ public class SamovarActiveBlockEntity extends RandomizableContainerBlockEntity i
 		if (index == 2)
 			return false;
 		if (index == 3)
+			return false;
+		if (index == 4)
+			return false;
+		if (index == 5)
 			return false;
 		return true;
 	}

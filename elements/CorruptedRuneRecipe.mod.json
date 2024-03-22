@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -21,13 +21,13 @@
         "value": "CUSTOM:EridiumShard"
       },
       {
-        "value": ""
+        "value": "CUSTOM:SwampStone"
       },
       {
-        "value": "CUSTOM:RunedSwampStone"
+        "value": "CUSTOM:Eridium"
       },
       {
-        "value": ""
+        "value": "CUSTOM:SwampStone"
       },
       {
         "value": "CUSTOM:EridiumShard"

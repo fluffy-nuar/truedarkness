@@ -18,7 +18,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
@@ -85,14 +87,8 @@ public class SamovarGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 116, 30) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 54) {
 			private final int slot = 0;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(0, 1, 0);
-			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 44, 54) {
 			private final int slot = 1;
@@ -107,9 +103,26 @@ public class SamovarGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 			private final int slot = 2;
 
 			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(2, 0, 0);
+			}
+
+			@Override
 			public void onTake(Player entity, ItemStack stack) {
 				super.onTake(entity, stack);
 				slotChanged(2, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(2, 2, b.getCount() - a.getCount());
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(new ResourceLocation("minecraft:bag_herbs")));
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 80, 54) {
@@ -121,18 +134,13 @@ public class SamovarGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 				slotChanged(3, 1, 0);
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 62, 17) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 116, 30) {
 			private final int slot = 4;
 
 			@Override
 			public void onTake(Player entity, ItemStack stack) {
 				super.onTake(entity, stack);
 				slotChanged(4, 1, 0);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 134, 30) {
@@ -144,8 +152,19 @@ public class SamovarGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 				slotChanged(5, 1, 0);
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 8, 54) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 62, 17) {
 			private final int slot = 6;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(6, 1, 0);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -311,7 +330,7 @@ public class SamovarGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			SamovarGUIPokaEtotGUIOtkrytProcedure.execute(entity);
+			SamovarGUIPokaEtotGUIOtkrytProcedure.execute(world, entity);
 		}
 	}
 }

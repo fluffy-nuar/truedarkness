@@ -1,13 +1,21 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "minecraft:diamond_sword"
-  },
-  "addition": {
-    "item": "truedarkness:firenite_ingot"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:firenite_ingot"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "item": "truedarkness:firenite_sword"
+    "item": "truedarkness:firenite_sword",
+    "count": 1
   }
 }

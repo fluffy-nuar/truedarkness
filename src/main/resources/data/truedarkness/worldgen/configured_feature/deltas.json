@@ -1,11 +1,8 @@
 {
-  "type": "truedarkness:deltas",
+  "type": "minecraft:delta_feature",
   "config": {
     "contents": {
-      "Name": "minecraft:water",
-      "Properties": {
-        "level": "0"
-      }
+      "Name": "truedarkness:swamp_soil"
     },
     "rim": {
       "Name": "truedarkness:swamp_soil"
@@ -13,8 +10,8 @@
     "size": {
       "type": "uniform",
       "value": {
-        "min_inclusive": 3,
-        "max_inclusive": 7
+        "min_inclusive": 1,
+        "max_inclusive": 4
       }
     },
     "rim_size": {

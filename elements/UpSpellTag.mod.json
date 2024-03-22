@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:UpSpell0"
+      },
+      {
+        "value": "CUSTOM:UpSpell1"
+      },
+      {
+        "value": "CUSTOM:UpSpell2"
+      },
+      {
+        "value": "CUSTOM:UpSpell3"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "up_spell_tag",
+    "namespace": "mod"
+  }
+}

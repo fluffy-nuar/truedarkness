@@ -122,6 +122,9 @@
     "onRandomUpdateEvent": {
       "name": "LightOfSoulSpontannoNaStoronieKliienta"
     },
+    "onDestroyedByPlayer": {
+      "name": "LightOfSoulPriRazrushieniiBlokaIghrokom"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],

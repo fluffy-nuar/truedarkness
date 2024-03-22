@@ -3,20 +3,11 @@
   "group": "bark",
   "category": "building",
   "pattern": [
-    "01",
-    "23"
+    "aa",
+    "aa"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:glow_log"
-    },
-    "1": {
-      "item": "truedarkness:glow_log"
-    },
-    "2": {
-      "item": "truedarkness:glow_log"
-    },
-    "3": {
+    "a": {
       "item": "truedarkness:glow_log"
     }
   },

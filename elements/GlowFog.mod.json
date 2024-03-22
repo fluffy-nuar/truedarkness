@@ -120,22 +120,8 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "generateFeature": true,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Mine"
-      }
-    ],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.AIR"
-      },
-      {
-        "value": "Blocks.VOID_AIR"
-      },
-      {
-        "value": "Blocks.CAVE_AIR"
-      }
-    ],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
     "generationShape": "TRIANGLE",
     "frequencyPerChunks": 32,
     "frequencyOnChunk": 32,

@@ -4,25 +4,24 @@ package exp.fluffynuar.truedarkness.entity;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
@@ -35,12 +34,14 @@ import net.minecraft.nbt.CompoundTag;
 
 import javax.annotation.Nullable;
 
+import exp.fluffynuar.truedarkness.procedures.CorruptedHandUsloviieGienieratsiiSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.procedures.CorruptedHandNaNachalnomPoiavlieniiSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.procedures.CorruptedHandKoghdaSushchnostUmiraietProcedure;
+import exp.fluffynuar.truedarkness.procedures.AttackPlayerProcProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
 import exp.fluffynuar.truedarkness.init.TruedarknessModBlocks;
 
-public class CorruptedHandEntity extends Monster implements RangedAttackMob {
+public class CorruptedHandEntity extends Monster {
 	public CorruptedHandEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(TruedarknessModEntities.CORRUPTED_HAND.get(), world);
 	}
@@ -50,7 +51,6 @@ public class CorruptedHandEntity extends Monster implements RangedAttackMob {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		setPersistenceRequired();
 	}
 
 	@Override
@@ -63,11 +63,25 @@ public class CorruptedHandEntity extends Monster implements RangedAttackMob {
 		super.registerGoals();
 		this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 32, 60f) {
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canUse() {
+				double x = CorruptedHandEntity.this.getX();
+				double y = CorruptedHandEntity.this.getY();
+				double z = CorruptedHandEntity.this.getZ();
+				Entity entity = CorruptedHandEntity.this;
+				Level world = CorruptedHandEntity.this.level();
+				return super.canUse() && AttackPlayerProcProcedure.execute(entity);
+			}
+
 			@Override
 			public boolean canContinueToUse() {
-				return this.canUse();
+				double x = CorruptedHandEntity.this.getX();
+				double y = CorruptedHandEntity.this.getY();
+				double z = CorruptedHandEntity.this.getZ();
+				Entity entity = CorruptedHandEntity.this;
+				Level world = CorruptedHandEntity.this.level();
+				return super.canContinueToUse() && AttackPlayerProcProcedure.execute(entity);
 			}
 		});
 	}
@@ -77,45 +91,40 @@ public class CorruptedHandEntity extends Monster implements RangedAttackMob {
 		return MobType.UNDEAD;
 	}
 
-	@Override
-	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-		return false;
-	}
-
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(TruedarknessModBlocks.CORRUPT.get()));
 	}
 
 	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source.is(DamageTypes.IN_FIRE))
+	public boolean hurt(DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
-		if (source.getDirectEntity() instanceof AbstractArrow)
+		if (damagesource.getDirectEntity() instanceof AbstractArrow)
 			return false;
-		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
+		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud)
 			return false;
-		if (source.is(DamageTypes.FALL))
+		if (damagesource.is(DamageTypes.FALL))
 			return false;
-		if (source.is(DamageTypes.CACTUS))
+		if (damagesource.is(DamageTypes.CACTUS))
 			return false;
-		if (source.is(DamageTypes.DROWN))
+		if (damagesource.is(DamageTypes.DROWN))
 			return false;
-		if (source.is(DamageTypes.LIGHTNING_BOLT))
+		if (damagesource.is(DamageTypes.LIGHTNING_BOLT))
 			return false;
-		if (source.is(DamageTypes.EXPLOSION))
+		if (damagesource.is(DamageTypes.EXPLOSION))
 			return false;
-		if (source.is(DamageTypes.TRIDENT))
+		if (damagesource.is(DamageTypes.TRIDENT))
 			return false;
-		if (source.is(DamageTypes.FALLING_ANVIL))
+		if (damagesource.is(DamageTypes.FALLING_ANVIL))
 			return false;
-		if (source.is(DamageTypes.DRAGON_BREATH))
+		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
-		if (source.is(DamageTypes.WITHER))
+		if (damagesource.is(DamageTypes.WITHER))
 			return false;
-		if (source.is(DamageTypes.WITHER_SKULL))
+		if (damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
-		return super.hurt(source, amount);
+		return super.hurt(damagesource, amount);
 	}
 
 	@Override
@@ -132,11 +141,6 @@ public class CorruptedHandEntity extends Monster implements RangedAttackMob {
 	}
 
 	@Override
-	public void performRangedAttack(LivingEntity target, float flval) {
-		ShandarahEntity.shoot(this, target);
-	}
-
-	@Override
 	public boolean isPushable() {
 		return false;
 	}
@@ -150,6 +154,12 @@ public class CorruptedHandEntity extends Monster implements RangedAttackMob {
 	}
 
 	public static void init() {
+		SpawnPlacements.register(TruedarknessModEntities.CORRUPTED_HAND.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return CorruptedHandUsloviieGienieratsiiSushchnostiProcedure.execute(world, x, y, z);
+		});
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -157,7 +167,7 @@ public class CorruptedHandEntity extends Monster implements RangedAttackMob {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0);
 		builder = builder.add(Attributes.MAX_HEALTH, 500);
 		builder = builder.add(Attributes.ARMOR, 64);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 19);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 64);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 10);
 		return builder;

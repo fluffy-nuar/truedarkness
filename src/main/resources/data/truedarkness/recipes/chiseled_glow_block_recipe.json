@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:glownite_slab"
+    }
+  },
+  "result": {
+    "item": "truedarkness:chiseled_glownite",
+    "count": 1
+  }
+}

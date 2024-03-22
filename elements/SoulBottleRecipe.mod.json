@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Brewing",
@@ -14,7 +14,7 @@
       "value": "Items.GLASS_BOTTLE"
     },
     "brewingIngredientStack": {
-      "value": "CUSTOM:SoulGrain"
+      "value": "CUSTOM:SoulCrystal"
     },
     "brewingReturnStack": {
       "value": "CUSTOM:SoulBottle"

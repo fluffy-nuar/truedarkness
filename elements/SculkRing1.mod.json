@@ -1,11 +1,11 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "sculk_ring",
+    "texture": "echo_ring",
     "customModelName": "Normal",
-    "name": "§3Sculk Ring",
+    "name": "§3Echo Ring",
     "rarity": "COMMON",
     "slotType": "RING",
     "baubleModel": "Default",
@@ -28,8 +28,12 @@
     "enableMeleeDamage": false,
     "addSlot": true,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hasGlow": false,
+    "customProperties": {},
+    "states": [],
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,

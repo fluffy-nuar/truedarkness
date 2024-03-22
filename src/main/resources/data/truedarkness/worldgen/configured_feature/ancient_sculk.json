@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:ancient_sculk",
+  "type": "minecraft:ore",
   "config": {
     "size": 30,
     "discard_chance_on_air_exposure": 0,

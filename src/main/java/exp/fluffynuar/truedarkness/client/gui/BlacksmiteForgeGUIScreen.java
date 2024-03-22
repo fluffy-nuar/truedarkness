@@ -54,28 +54,28 @@ public class BlacksmiteForgeGUIScreen extends AbstractContainerScreen<Blacksmite
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/blacksmite_forge_graph.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/blacksmite_forge_gui_layer.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 
-		if (BF0Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_0.png"), this.leftPos + 174, this.topPos + -1, 0, 0, 131, 166, 131, 166);
-		}
 		if (LavaProcedure.execute(world, x, y, z)) {
 			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/blacksmite_forge_lava.png"), this.leftPos + 30, this.topPos + 25, 0, 0, 9, 27, 9, 27);
 		}
+		if (BF0Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_0.png"), this.leftPos + -131, this.topPos + 1, 0, 0, 131, 166, 131, 166);
+		}
 		if (BF1Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/ancient_recipe_0.png"), this.leftPos + 192, this.topPos + 20, 0, 0, 98, 18, 98, 18);
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_1.png"), this.leftPos + -115, this.topPos + 22, 0, 0, 98, 18, 98, 18);
 		}
 		if (BF2Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/ancient_recipe_1.png"), this.leftPos + 192, this.topPos + 38, 0, 0, 98, 18, 98, 18);
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_2.png"), this.leftPos + -115, this.topPos + 40, 0, 0, 98, 18, 98, 18);
 		}
 		if (BF3Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/ancient_recipe_2.png"), this.leftPos + 192, this.topPos + 56, 0, 0, 98, 18, 98, 18);
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_5.png"), this.leftPos + -115, this.topPos + 58, 0, 0, 98, 18, 98, 18);
 		}
 		if (BF4Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/ancient_recipe_3.png"), this.leftPos + 192, this.topPos + 74, 0, 0, 98, 18, 98, 18);
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_4.png"), this.leftPos + -115, this.topPos + 76, 0, 0, 98, 18, 98, 18);
 		}
 		if (BF5Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/ancient_recipe_4.png"), this.leftPos + 192, this.topPos + 92, 0, 0, 98, 18, 98, 18);
+			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_3.png"), this.leftPos + -115, this.topPos + 94, 0, 0, 98, 18, 98, 18);
 		}
 		RenderSystem.disableBlend();
 	}

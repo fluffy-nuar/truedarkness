@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:soul_crystal"
+    }
+  },
+  "result": {
+    "item": "truedarkness:soul_grain",
+    "count": 9
+  }
+}

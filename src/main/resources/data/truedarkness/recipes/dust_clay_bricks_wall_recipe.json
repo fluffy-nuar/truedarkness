@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:dust_clay_bricks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:dust_clay_bricks_wall",
+    "count": 6
+  }
+}

@@ -11,15 +11,30 @@ import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import java.util.List;
 import java.util.Collections;
 
+import exp.fluffynuar.truedarkness.procedures.ChiseledGlassText5Procedure;
+
 public class DarknessStainedPaneBlock extends IronBarsBlock {
 	public DarknessStainedPaneBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GLASS).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+		Entity entity = itemstack.getEntityRepresentation();
+		double x = entity != null ? entity.getX() : 0.0;
+		double y = entity != null ? entity.getY() : 0.0;
+		double z = entity != null ? entity.getZ() : 0.0;
+		list.add(Component.literal(ChiseledGlassText5Procedure.execute()));
 	}
 
 	@Override

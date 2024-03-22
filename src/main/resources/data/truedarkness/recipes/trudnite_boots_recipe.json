@@ -2,20 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0 2",
-    "3 5"
+    "a a",
+    "a a"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:trudnite_ingot"
-    },
-    "2": {
-      "item": "truedarkness:trudnite_ingot"
-    },
-    "3": {
-      "item": "truedarkness:trudnite_ingot"
-    },
-    "5": {
+    "a": {
       "item": "truedarkness:trudnite_ingot"
     }
   },

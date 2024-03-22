@@ -1,0 +1,12 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "truedarkness:echo_heart",
+    "truedarkness:soul_heart",
+    "truedarkness:general_heart",
+    "truedarkness:heart_eridium",
+    "truedarkness:warrior_heart",
+    "truedarkness:marinite_heart"
+  ]
+}

@@ -21,7 +21,7 @@ public class S3Procedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 6)).getItem() == TruedarknessModItems.DRINK_RECIPE.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == TruedarknessModItems.DRINK_RECIPE.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -29,7 +29,7 @@ public class S3Procedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 6)).getCount() >= 3) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getCount() >= 3) {
 			return true;
 		}
 		return false;

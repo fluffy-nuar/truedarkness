@@ -2,21 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345"
+    " a ",
+    "aba"
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "truedarkness:cvetaliy_grain"
     },
-    "3": {
-      "item": "truedarkness:cvetaliy_grain"
-    },
-    "4": {
+    "b": {
       "item": "truedarkness:cvetalit_shard"
-    },
-    "5": {
-      "item": "truedarkness:cvetaliy_grain"
     }
   },
   "result": {

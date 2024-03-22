@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "truedarkness:block/recra_flower",
-    "particle": "truedarkness:block/recra_flower"
-  },
-  "render_type": "cutout"
-}

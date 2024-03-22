@@ -1,18 +1,19 @@
 {
   "_fv": 57,
-  "_type": "item",
+  "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
     "texture": "soul_stone",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
     "name": "Soul Stone",
-    "rarity": "COMMON",
+    "rarity": "RARE",
+    "slotType": "HANDS",
+    "baubleModel": "Default",
+    "baubleModelTexture": "",
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -25,16 +26,23 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
+    "addSlot": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": []
     },
+    "hasGlow": false,
+    "customProperties": {},
+    "states": [],
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "enableRanged": false,
-    "shootConstantly": false,
+    "slotAmount": 1,
     "isFood": false,
+    "friendlyPigs": false,
+    "enderMask": false,
+    "rotateModel": false,
+    "translateModel": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
@@ -42,6 +50,7 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
+    "hasModel": false,
     "animation": "none"
   }
 }

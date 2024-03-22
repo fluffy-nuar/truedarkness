@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "water_cup",
+    "texture": "drink_water",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Cup Of Water",
+    "name": "Water Cup",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
     },
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 30,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -29,12 +29,21 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "CupWaterPriShchielchkiePKM"
+    },
     "enableRanged": false,
     "shootConstantly": false,
-    "isFood": true,
+    "projectile": {
+      "value": "CUSTOM:DarknessSpruceShieldProjectile"
+    },
+    "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.0,
     "eatResultItem": {
@@ -42,6 +51,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": true,
-    "animation": "drink"
+    "animation": "none"
   }
 }

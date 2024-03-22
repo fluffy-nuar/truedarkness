@@ -42,7 +42,7 @@ public class SoulstealHammerKazhdyiTikVRukieProcedure {
 						}
 					}
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(TruedarknessModItems.ECHO_HAMMER.get());
+						ItemStack _setstack = new ItemStack(TruedarknessModItems.REINFORCED_HAMMER.get());
 						_setstack.setCount(1);
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)

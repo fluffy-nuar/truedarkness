@@ -61,7 +61,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:WastelandWheat"
     },
     "dropAmount": 1,
     "forceTicking": false,

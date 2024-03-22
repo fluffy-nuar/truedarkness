@@ -6,8 +6,20 @@
     "mobLabel": "",
     "mobModelName": "Modelgeneral",
     "mobModelTexture": "eye_texture.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [
       {
@@ -66,6 +78,9 @@
     "health": 210,
     "xpAmount": 0,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -100,7 +115,7 @@
       "value": "CUSTOM:entity.grim_golem_hurt"
     },
     "deathSound": {
-      "value": "CUSTOM:entity.grim_golem_death"
+      "value": ""
     },
     "stepSound": {
       "value": ""

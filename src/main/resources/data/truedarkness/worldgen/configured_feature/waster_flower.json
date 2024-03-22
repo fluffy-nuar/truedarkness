@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:waster_flower",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 2,
     "feature": {

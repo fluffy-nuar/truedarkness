@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "truedarkness:item/darkness_spruce_door"
+    "layer0": "truedarkness:item/darkness_spruce_door_item"
   },
   "render_type": "translucent"
 }

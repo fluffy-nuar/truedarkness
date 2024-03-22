@@ -21,7 +21,7 @@ public class BF1Procedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == TruedarknessModItems.ELDER_DOCUMENT.get()) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == TruedarknessModItems.ELDER_DOCUMENT.get()) {
 			return true;
 		}
 		return false;

@@ -1,0 +1,10 @@
+{
+  "parent": "truedarkness:custom/echo_master",
+  "textures": {
+    "all": "truedarkness:block/soul_master_top",
+    "particle": "truedarkness:block/soul_master_top",
+    "0": "truedarkness:block/soul_master",
+    "1": "truedarkness:block/soul_master_top"
+  },
+  "render_type": "solid"
+}

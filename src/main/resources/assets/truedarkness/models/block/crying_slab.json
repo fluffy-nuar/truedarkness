@@ -1,9 +1,9 @@
 {
   "parent": "block/slab",
   "textures": {
-    "bottom": "truedarkness:block/crying_planks",
-    "top": "truedarkness:block/crying_planks",
-    "side": "truedarkness:block/crying_planks"
+    "bottom": "truedarkness:block/cry_planks",
+    "top": "truedarkness:block/cry_planks",
+    "side": "truedarkness:block/cry_planks"
   },
   "render_type": "translucent"
 }

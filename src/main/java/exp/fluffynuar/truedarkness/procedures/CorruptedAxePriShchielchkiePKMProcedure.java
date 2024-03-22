@@ -27,7 +27,7 @@ import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
 import exp.fluffynuar.truedarkness.init.TruedarknessModParticleTypes;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
-import exp.fluffynuar.truedarkness.entity.ShandarahEntity;
+import exp.fluffynuar.truedarkness.entity.ShandarahProjectileEntity;
 
 public class CorruptedAxePriShchielchkiePKMProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -111,7 +111,7 @@ public class CorruptedAxePriShchielchkiePKMProcedure {
 						if (!projectileLevel.isClientSide()) {
 							Projectile _entityToSpawn = new Object() {
 								public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-									AbstractArrow entityToSpawn = new ShandarahEntity(TruedarknessModEntities.SHANDARAH.get(), level);
+									AbstractArrow entityToSpawn = new ShandarahProjectileEntity(TruedarknessModEntities.SHANDARAH_PROJECTILE.get(), level);
 									entityToSpawn.setOwner(shooter);
 									entityToSpawn.setBaseDamage(damage);
 									entityToSpawn.setKnockback(knockback);

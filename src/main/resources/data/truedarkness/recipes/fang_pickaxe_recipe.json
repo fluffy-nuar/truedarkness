@@ -2,30 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    " 7 "
+    "aba",
+    "cdc",
+    " e "
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "truedarkness:eridium_shard"
     },
-    "1": {
+    "b": {
       "item": "truedarkness:cursed_metal"
     },
-    "2": {
-      "item": "truedarkness:eridium_shard"
-    },
-    "3": {
+    "c": {
       "item": "truedarkness:corrupted_hand_fangs"
     },
-    "4": {
+    "d": {
       "item": "truedarkness:soulsteal_pickaxe"
     },
-    "5": {
-      "item": "truedarkness:corrupted_hand_fangs"
-    },
-    "7": {
+    "e": {
       "item": "truedarkness:eridium_heart"
     }
   },

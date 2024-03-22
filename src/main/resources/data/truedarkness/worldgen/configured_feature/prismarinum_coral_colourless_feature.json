@@ -15,7 +15,10 @@
           }
         },
         "state": {
-          "Name": "truedarkness:prismarinum_coral_colourless"
+          "Name": "truedarkness:prismarinum_coral_colourless",
+          "Properties": {
+            "waterlogged": "false"
+          }
         }
       }
     ]

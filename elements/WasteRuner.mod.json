@@ -6,8 +6,20 @@
     "mobLabel": "",
     "mobModelName": "Modelwaster",
     "mobModelTexture": "waste_runer.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [
       {
@@ -55,7 +67,7 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEAD",
-    "attackStrength": 5,
+    "attackStrength": 0,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.30000000000000004,
@@ -66,6 +78,9 @@
     "health": 15,
     "xpAmount": 2,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },

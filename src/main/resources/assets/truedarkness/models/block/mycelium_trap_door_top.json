@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_orientable_trapdoor_top",
-  "textures": {
-    "texture": "truedarkness:block/mycelium_trap_door",
-    "particle": "truedarkness:block/mycelium_trap_door"
-  },
-  "render_type": "cutout"
-}

@@ -1,8 +1,8 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "truedarkness:block/swamp_flower1",
-    "particle": "truedarkness:block/swamp_flower1"
+    "cross": "truedarkness:block/swamp_flower_1",
+    "particle": "truedarkness:block/swamp_flower_1"
   },
   "render_type": "cutout"
 }

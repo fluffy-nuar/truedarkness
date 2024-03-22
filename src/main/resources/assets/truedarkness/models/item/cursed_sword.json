@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "truedarkness:item/cursed_sword"
+    "layer0": "truedarkness:item/fang_sword"
   }
 }

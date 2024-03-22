@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:polished_accustone"
+    },
+    "b": {
+      "item": "truedarkness:polished_swamp_cobblestone"
+    }
+  },
+  "result": {
+    "item": "truedarkness:accuswamp_mosaic",
+    "count": 4
+  }
+}

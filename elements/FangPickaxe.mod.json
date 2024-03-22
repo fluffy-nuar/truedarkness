@@ -8,7 +8,7 @@
     "texture": "fang_pickaxe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Fang Pickaxe",
+    "name": "§5Fang Pickaxe",
     "specialInformation": {
       "fixedValue": []
     },
@@ -22,6 +22,9 @@
     "damageVsEntity": 3.0,
     "usageCount": 4021,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CorruptedHandFangs"

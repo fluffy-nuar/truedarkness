@@ -2,25 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "aba",
+    " a "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "truedarkness:cryer_tear"
     },
-    "3": {
-      "item": "truedarkness:cryer_tear"
-    },
-    "4": {
+    "b": {
       "tag": "minecraft:planks"
-    },
-    "5": {
-      "item": "truedarkness:cryer_tear"
-    },
-    "7": {
-      "item": "truedarkness:cryer_tear"
     }
   },
   "result": {

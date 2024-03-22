@@ -1,13 +1,13 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
     "texture": "general_wings",
     "customModelName": "Normal",
     "name": "General Wings",
-    "rarity": "COMMON",
-    "slotType": "BACK",
+    "rarity": "RARE",
+    "slotType": "WingsSlot",
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {
@@ -28,8 +28,12 @@
     "enableMeleeDamage": false,
     "addSlot": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hasGlow": false,
+    "customProperties": {},
+    "states": [],
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,

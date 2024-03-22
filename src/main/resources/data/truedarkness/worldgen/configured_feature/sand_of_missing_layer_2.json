@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:sand_of_missing_layer_2",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 64,
     "feature": {

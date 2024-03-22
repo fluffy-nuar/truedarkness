@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -24,13 +24,13 @@
         "value": "CUSTOM:AccustonePebbles"
       },
       {
-        "value": "CUSTOM:SwampTerracota"
+        "value": "CUSTOM:AccustonePebbles"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:AccustonePebbles"
       },
       {
         "value": "CUSTOM:AccustonePebbles"

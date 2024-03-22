@@ -1,10 +1,10 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "truedarkness:retroland",
-    "truedarkness:swamps",
     "truedarkness:mine",
-    "truedarkness:swamp_wasteland"
+    "truedarkness:retroland",
+    "truedarkness:swamp_wasteland",
+    "truedarkness:swamps"
   ],
   "features": "truedarkness:kelp_of_yteria",
   "step": "local_modifications"

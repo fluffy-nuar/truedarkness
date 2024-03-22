@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "truedarkness:item/ancient_mirror_will"
-  }
-}

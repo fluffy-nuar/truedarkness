@@ -6,7 +6,7 @@
     "1": "truedarkness:block/corrupted_bubble_top",
     "3": "truedarkness:block/corrupted_bubble_side",
     "4": "truedarkness:block/corrupt",
-    "5": "truedarkness:block/null"
+    "5": "truedarkness:block/0"
   },
   "render_type": "translucent"
 }

@@ -4,7 +4,7 @@
   "definition": {
     "priority": "HIGH",
     "components": [],
-    "baseTexture": "spore.png",
+    "baseTexture": "spores.png",
     "overlayTarget": "Ingame",
     "displayCondition": {
       "name": "SporesProc"

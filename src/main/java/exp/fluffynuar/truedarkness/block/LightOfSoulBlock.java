@@ -19,10 +19,12 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.util.RandomSource;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
@@ -31,12 +33,18 @@ import java.util.List;
 import java.util.Collections;
 
 import exp.fluffynuar.truedarkness.procedures.LightOfSoulSpontannoNaStoronieKliientaProcedure;
+import exp.fluffynuar.truedarkness.procedures.LightOfSoulPriRazrushieniiBlokaIghrokomProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
 public class LightOfSoulBlock extends Block {
 	public LightOfSoulBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.NETHERITE_BLOCK).strength(10f, 30f).lightLevel(s -> 6).requiresCorrectToolForDrops().speedFactor(0.8f).jumpFactor(0.8f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override
@@ -88,5 +96,12 @@ public class LightOfSoulBlock extends Block {
 		int y = pos.getY();
 		int z = pos.getZ();
 		LightOfSoulSpontannoNaStoronieKliientaProcedure.execute(world, x, y, z);
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		LightOfSoulPriRazrushieniiBlokaIghrokomProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		return retval;
 	}
 }

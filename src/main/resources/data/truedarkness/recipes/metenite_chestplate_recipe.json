@@ -1,13 +1,21 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "truedarkness:trudnite_chestplate"
-  },
-  "addition": {
-    "item": "truedarkness:metenite_ingot"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:metenite_ingot"
+    },
+    "b": {
+      "item": "truedarkness:trudnite_chestplate"
+    }
   },
   "result": {
-    "item": "truedarkness:metenite_chestplate"
+    "item": "truedarkness:metenite_chestplate",
+    "count": 1
   }
 }

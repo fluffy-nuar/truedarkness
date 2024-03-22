@@ -2,24 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "bcb",
+    " c "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "truedarkness:corrupted_slime"
     },
-    "3": {
+    "b": {
       "item": "truedarkness:soulsteal_nugget"
     },
-    "4": {
-      "item": "minecraft:stick"
-    },
-    "5": {
-      "item": "truedarkness:soulsteal_nugget"
-    },
-    "7": {
+    "c": {
       "item": "minecraft:stick"
     }
   },

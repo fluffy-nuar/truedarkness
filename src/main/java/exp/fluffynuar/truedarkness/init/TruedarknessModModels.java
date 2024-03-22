@@ -10,20 +10,26 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import exp.fluffynuar.truedarkness.client.model.Modelwaster;
+import exp.fluffynuar.truedarkness.client.model.Modelminer;
 import exp.fluffynuar.truedarkness.client.model.Modeliridiumoviy_Golem;
+import exp.fluffynuar.truedarkness.client.model.Modelglow_bug;
+import exp.fluffynuar.truedarkness.client.model.Modelgloomer;
 import exp.fluffynuar.truedarkness.client.model.Modelgeneral_armor;
 import exp.fluffynuar.truedarkness.client.model.Modelgeneral;
 import exp.fluffynuar.truedarkness.client.model.Modelfungun;
 import exp.fluffynuar.truedarkness.client.model.Modelflow;
 import exp.fluffynuar.truedarkness.client.model.Modeleye;
 import exp.fluffynuar.truedarkness.client.model.Modeleridium_zombie;
-import exp.fluffynuar.truedarkness.client.model.Modeleridium_helmet_with_feather;
 import exp.fluffynuar.truedarkness.client.model.Modelcustom_model;
 import exp.fluffynuar.truedarkness.client.model.Modelcryer;
 import exp.fluffynuar.truedarkness.client.model.Modelcrown;
+import exp.fluffynuar.truedarkness.client.model.Modelcorrupted_soulsteal;
+import exp.fluffynuar.truedarkness.client.model.Modelcorrupted_mage;
 import exp.fluffynuar.truedarkness.client.model.Modelcorrupted_knight;
+import exp.fluffynuar.truedarkness.client.model.Modelcorrupted_human;
 import exp.fluffynuar.truedarkness.client.model.Modelcorrupted_hand;
 import exp.fluffynuar.truedarkness.client.model.Modelbelt;
+import exp.fluffynuar.truedarkness.client.model.Modelaxolotl_hat;
 import exp.fluffynuar.truedarkness.client.model.Modelarmor;
 import exp.fluffynuar.truedarkness.client.model.Modelarfin;
 import exp.fluffynuar.truedarkness.client.model.Modelamulet;
@@ -43,6 +49,8 @@ public class TruedarknessModModels {
 		event.registerLayerDefinition(Modelgeneral_armor.LAYER_LOCATION, Modelgeneral_armor::createBodyLayer);
 		event.registerLayerDefinition(Modelflow.LAYER_LOCATION, Modelflow::createBodyLayer);
 		event.registerLayerDefinition(Modelcorrupted_knight.LAYER_LOCATION, Modelcorrupted_knight::createBodyLayer);
+		event.registerLayerDefinition(Modelaxolotl_hat.LAYER_LOCATION, Modelaxolotl_hat::createBodyLayer);
+		event.registerLayerDefinition(Modelgloomer.LAYER_LOCATION, Modelgloomer::createBodyLayer);
 		event.registerLayerDefinition(Modeleridium_zombie.LAYER_LOCATION, Modeleridium_zombie::createBodyLayer);
 		event.registerLayerDefinition(Modelamulet.LAYER_LOCATION, Modelamulet::createBodyLayer);
 		event.registerLayerDefinition(Modelarmor.LAYER_LOCATION, Modelarmor::createBodyLayer);
@@ -51,6 +59,10 @@ public class TruedarknessModModels {
 		event.registerLayerDefinition(Modeleye.LAYER_LOCATION, Modeleye::createBodyLayer);
 		event.registerLayerDefinition(Modelcorrupted_hand.LAYER_LOCATION, Modelcorrupted_hand::createBodyLayer);
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
-		event.registerLayerDefinition(Modeleridium_helmet_with_feather.LAYER_LOCATION, Modeleridium_helmet_with_feather::createBodyLayer);
+		event.registerLayerDefinition(Modelcorrupted_soulsteal.LAYER_LOCATION, Modelcorrupted_soulsteal::createBodyLayer);
+		event.registerLayerDefinition(Modelcorrupted_human.LAYER_LOCATION, Modelcorrupted_human::createBodyLayer);
+		event.registerLayerDefinition(Modelminer.LAYER_LOCATION, Modelminer::createBodyLayer);
+		event.registerLayerDefinition(Modelglow_bug.LAYER_LOCATION, Modelglow_bug::createBodyLayer);
+		event.registerLayerDefinition(Modelcorrupted_mage.LAYER_LOCATION, Modelcorrupted_mage::createBodyLayer);
 	}
 }

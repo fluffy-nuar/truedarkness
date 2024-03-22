@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:corrupted_bubble",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 2,
     "feature": {

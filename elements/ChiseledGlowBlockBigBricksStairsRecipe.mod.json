@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BigGlowniteBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BigGlowniteBricks"
+      },
+      {
+        "value": "CUSTOM:BigGlowniteBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BigGlowniteBricks"
+      },
+      {
+        "value": "CUSTOM:BigGlowniteBricks"
+      },
+      {
+        "value": "CUSTOM:BigGlowniteBricks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BigGlowniteBricksStairs"
+    },
+    "name": "chiseled_glow_block_big_bricks_stairs_recipe",
+    "namespace": "mod"
+  }
+}

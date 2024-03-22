@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:glow_fungus_0_generation",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 999,
     "feature": {

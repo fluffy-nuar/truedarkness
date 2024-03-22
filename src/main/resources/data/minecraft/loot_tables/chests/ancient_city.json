@@ -116,7 +116,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "truedarkness:cave_skrezhal_part",
+          "name": "truedarkness:tablet_cave",
           "weight": 1
         },
         {
@@ -148,7 +148,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "truedarkness:sculk_ring",
+          "name": "truedarkness:echo_ring",
           "weight": 1
         },
         {

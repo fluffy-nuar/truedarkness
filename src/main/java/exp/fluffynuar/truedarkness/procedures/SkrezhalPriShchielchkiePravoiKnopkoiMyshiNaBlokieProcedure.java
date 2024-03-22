@@ -39,9 +39,9 @@ public class SkrezhalPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruedarknessModMobEffects.SKREZHAL_BREAKING.get()))) {
-			if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.OVERWORLD && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SKREZHAL.get()) {
+			if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.OVERWORLD && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.TABLET.get()) {
 				if (world.isClientSide())
-					Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(TruedarknessModItems.SKREZHAL.get()));
+					Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(TruedarknessModItems.TABLET.get()));
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 50);
 				if (!(new Object() {
@@ -82,8 +82,8 @@ public class SkrezhalPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SKREZHAL_BREAKING.get(), (int) (60 * 20 * 8), 0, true, false));
 			} else if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria")))
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SKREZHAL.get()) {
-				if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupted < 50) {
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.TABLET.get()) {
+				if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).corrupt_second <= 5) {
 					if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 						ResourceKey<Level> destinationType = Level.OVERWORLD;
 						if (_player.level().dimension() == destinationType)

@@ -3,14 +3,11 @@
   "group": "sticks",
   "category": "misc",
   "pattern": [
-    "0",
-    "1"
+    "a",
+    "a"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:glow_planks"
-    },
-    "1": {
+    "a": {
       "item": "truedarkness:glow_planks"
     }
   },

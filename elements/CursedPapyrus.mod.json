@@ -1,14 +1,15 @@
 {
   "_fv": 57,
-  "_type": "item",
+  "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "corrupted_papyrus",
+    "texture": "cursed_scroll",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
-    "name": "Cursed Papyrus",
-    "rarity": "UNCOMMON",
+    "name": "§5Cursed Papyrus",
+    "rarity": "COMMON",
+    "slotType": "ScrollSlot",
+    "baubleModel": "Default",
+    "baubleModelTexture": "",
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
     },
@@ -25,19 +26,23 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
+    "addSlot": true,
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": []
     },
+    "hasGlow": false,
+    "customProperties": {},
+    "states": [],
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInInventoryTick": {
-      "name": "EchoPapyrusKazhdyiTikVInvientarie"
-    },
-    "enableRanged": false,
-    "shootConstantly": false,
+    "slotAmount": 1,
     "isFood": false,
+    "friendlyPigs": false,
+    "enderMask": false,
+    "rotateModel": false,
+    "translateModel": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
@@ -45,6 +50,7 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
+    "hasModel": false,
     "animation": "none"
   }
 }

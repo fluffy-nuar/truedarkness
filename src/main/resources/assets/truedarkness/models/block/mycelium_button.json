@@ -1,7 +1,0 @@
-{
-  "parent": "block/button",
-  "textures": {
-    "texture": "truedarkness:block/mycelium_planks"
-  },
-  "render_type": "solid"
-}

@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "swamp_tall_grass",
+    "texture": "swamp_grass_1",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",

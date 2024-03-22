@@ -15,7 +15,10 @@
           }
         },
         "state": {
-          "Name": "truedarkness:prismarinum_coral_wave"
+          "Name": "truedarkness:prismarinum_coral_wave",
+          "Properties": {
+            "waterlogged": "false"
+          }
         }
       }
     ]

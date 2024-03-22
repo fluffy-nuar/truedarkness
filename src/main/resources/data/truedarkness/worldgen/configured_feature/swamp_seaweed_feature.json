@@ -15,7 +15,10 @@
           }
         },
         "state": {
-          "Name": "truedarkness:swamp_seaweed"
+          "Name": "truedarkness:swamp_seaweed",
+          "Properties": {
+            "waterlogged": "false"
+          }
         }
       }
     ]

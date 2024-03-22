@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "truedarkness:marinite_upgrade"
+  },
+  "base": {
+    "item": "truedarkness:soulsteal_wings"
+  },
+  "addition": {
+    "item": "truedarkness:cry_ingot"
+  },
+  "result": {
+    "item": "truedarkness:marinite_wings"
+  }
+}

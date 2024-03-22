@@ -2,12 +2,16 @@
 package exp.fluffynuar.truedarkness.item;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
 
-import exp.fluffynuar.truedarkness.procedures.SweetHerbsKoghdaPriedmietVInvientarieProcedure;
+import java.util.List;
+
+import exp.fluffynuar.truedarkness.procedures.Herbs4TextProcedure;
 
 public class SweetHerbsItem extends Item {
 	public SweetHerbsItem() {
@@ -15,8 +19,12 @@ public class SweetHerbsItem extends Item {
 	}
 
 	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		SweetHerbsKoghdaPriedmietVInvientarieProcedure.execute(entity);
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+		Entity entity = itemstack.getEntityRepresentation();
+		double x = entity != null ? entity.getX() : 0.0;
+		double y = entity != null ? entity.getY() : 0.0;
+		double z = entity != null ? entity.getZ() : 0.0;
+		list.add(Component.literal(Herbs4TextProcedure.execute()));
 	}
 }

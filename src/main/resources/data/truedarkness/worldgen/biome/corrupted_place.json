@@ -13,12 +13,12 @@
       "options": {
         "type": "truedarkness:corrupt_pollen"
       },
-      "probability": 0.008
+      "probability": 0.022
     },
     "foliage_color": 10387789,
     "grass_color": 9470285,
-    "sky_color": -15466186,
-    "fog_color": -15466186,
+    "sky_color": -13428891,
+    "fog_color": -13428891,
     "water_color": -16681265,
     "water_fog_color": -16757069
   },

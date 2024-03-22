@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:corrupted_flower",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 15,
     "feature": {

@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:swamp_sand_layer_2",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 64,
     "feature": {

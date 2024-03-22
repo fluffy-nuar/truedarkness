@@ -8,30 +8,33 @@
     "texture": "echo_knife",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "§3Echo Knife",
+    "name": "§3Reinforced Knife",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
     },
-    "harvestLevel": 1,
-    "efficiency": 4.0,
+    "harvestLevel": 4,
+    "efficiency": 9.0,
     "attackSpeed": 5.0,
-    "enchantability": 2,
+    "enchantability": 15,
     "damageVsEntity": 2.0,
-    "usageCount": 562,
+    "usageCount": 2031,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:ReinforcedShell"
       }
     ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "EchoKnifePriNazhatiiPravoiKnopkoiMyshi"
-    }
+    "damageOnCrafting": false
   }
 }

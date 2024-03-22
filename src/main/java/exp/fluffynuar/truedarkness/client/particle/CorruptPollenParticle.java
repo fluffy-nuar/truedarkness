@@ -31,17 +31,22 @@ public class CorruptPollenParticle extends TextureSheetParticle {
 	}
 
 	private final SpriteSet spriteSet;
+	private float angularVelocity;
+	private float angularAcceleration;
 
 	protected CorruptPollenParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
+		this.quadSize *= 1.5f;
 		this.lifetime = (int) Math.max(1, 80 + (this.random.nextInt(40) - 20));
 		this.gravity = -0.2f;
 		this.hasPhysics = true;
-		this.xd = vx * 1;
-		this.yd = vy * 1;
-		this.zd = vz * 1;
+		this.xd = vx * 3;
+		this.yd = vy * 3;
+		this.zd = vz * 3;
+		this.angularVelocity = 0.02f;
+		this.angularAcceleration = 0f;
 		this.pickSprite(spriteSet);
 	}
 
@@ -53,5 +58,8 @@ public class CorruptPollenParticle extends TextureSheetParticle {
 	@Override
 	public void tick() {
 		super.tick();
+		this.oRoll = this.roll;
+		this.roll += this.angularVelocity;
+		this.angularVelocity += this.angularAcceleration;
 	}
 }

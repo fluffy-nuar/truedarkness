@@ -25,6 +25,14 @@ public class PriVziatiiPriedmietaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				ItemStack _setstack = new ItemStack(Items.BUCKET);
+				_setstack.setCount(1);
+				((Slot) _slots.get(0)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
+			}
+		}
 		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 			((Slot) _slots.get(1)).remove(1);
 			_player.containerMenu.broadcastChanges();
@@ -37,19 +45,11 @@ public class PriVziatiiPriedmietaProcedure {
 			((Slot) _slots.get(3)).remove(Mth.nextInt(RandomSource.create(), 8, 10));
 			_player.containerMenu.broadcastChanges();
 		}
-		if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.BUCKET);
-				_setstack.setCount(1);
-				((Slot) _slots.get(0)).set(_setstack);
-				_player.containerMenu.broadcastChanges();
-			}
-		}
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava")), SoundSource.BLOCKS, 1, 1);
+				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava")), SoundSource.BLOCKS, 1, (float) 0.7);
 			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava")), SoundSource.BLOCKS, 1, 1, false);
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava")), SoundSource.BLOCKS, 1, (float) 0.7, false);
 			}
 		}
 		if (entity instanceof ServerPlayer _player) {

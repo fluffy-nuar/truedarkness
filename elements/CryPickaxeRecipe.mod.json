@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -15,6 +15,9 @@
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:CryIngot"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:MariniteUpgrade"
     },
     "smithingReturnStack": {
       "value": "CUSTOM:CryPickaxe"

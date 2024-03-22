@@ -1,13 +1,13 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
     "texture": "echo_wings",
     "customModelName": "Normal",
-    "name": "Echo Wings",
+    "name": "§3Echo Wings",
     "rarity": "COMMON",
-    "slotType": "BACK",
+    "slotType": "WingsSlot",
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {
@@ -28,12 +28,107 @@
     "enableMeleeDamage": false,
     "addSlot": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hasGlow": false,
+    "customProperties": {
+      "trim": {
+        "name": "EchoWingsZnachieniieSvoistva"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "echo_wings_0",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:trim",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "echo_shriek_wings",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:trim",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "echo_wings_1",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:trim",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "echo_wings_2.png.",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:trim",
+              "type": "number"
+            },
+            "value": 4.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "echo_wings_4.png.",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:trim",
+              "type": "number"
+            },
+            "value": 5.0
+          }
+        ]
+      }
+    ],
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "slotAmount": 1,
+    "onRightClickedInAir": {
+      "name": "EchoWingsPriShchielchkiePKM"
+    },
+    "onEquip": {
+      "name": "EchoWingsBaubleIsEquipped"
+    },
     "isFood": false,
     "friendlyPigs": false,
     "enderMask": false,

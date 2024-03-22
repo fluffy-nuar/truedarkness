@@ -1,14 +1,22 @@
 
 package exp.fluffynuar.truedarkness.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.network.chat.Component;
 
-import exp.fluffynuar.truedarkness.procedures.DarkCrystalSwordKoghdaZhivaiaSushchnostPopadaietSPomoshchiuInstrumientaProcedure;
+import java.util.List;
+
+import exp.fluffynuar.truedarkness.procedures.DarkCrystalAxePriShchielchkiePKMPoBlokuProcedure;
+import exp.fluffynuar.truedarkness.procedures.BirthdayAuthorProcedure;
 
 public class DarkCrystalAxeItem extends AxeItem {
 	public DarkCrystalAxeItem() {
@@ -40,9 +48,19 @@ public class DarkCrystalAxeItem extends AxeItem {
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		DarkCrystalSwordKoghdaZhivaiaSushchnostPopadaietSPomoshchiuInstrumientaProcedure.execute(entity);
-		return retval;
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+		Entity entity = itemstack.getEntityRepresentation();
+		double x = entity != null ? entity.getX() : 0.0;
+		double y = entity != null ? entity.getY() : 0.0;
+		double z = entity != null ? entity.getZ() : 0.0;
+		list.add(Component.literal(BirthdayAuthorProcedure.execute()));
+	}
+
+	@Override
+	public InteractionResult useOn(UseOnContext context) {
+		super.useOn(context);
+		DarkCrystalAxePriShchielchkiePKMPoBlokuProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ());
+		return InteractionResult.SUCCESS;
 	}
 }

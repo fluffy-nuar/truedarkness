@@ -1,0 +1,33 @@
+{
+  "feature": "truedarkness:glow_fog_gen",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "uniform",
+        "value": {
+          "min_inclusive": 32,
+          "max_inclusive": 219
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 17
+        },
+        "max_inclusive": {
+          "above_bottom": 37
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

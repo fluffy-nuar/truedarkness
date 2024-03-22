@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:dried_swamp_bush",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 80,
     "feature": {

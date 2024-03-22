@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:glow_planks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:glow_trap_door",
+    "count": 2
+  }
+}

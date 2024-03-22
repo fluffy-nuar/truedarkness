@@ -1,8 +1,8 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
@@ -10,13 +10,36 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "Items.DIAMOND_HOE"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:SoulstealIngot"
-    },
-    "smithingReturnStack": {
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SoulstealNugget"
+      },
+      {
+        "value": "CUSTOM:SoulstealIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:SoulstealHoe"
     },
     "name": "soulsteal_hoe_recipe",

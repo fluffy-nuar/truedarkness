@@ -1,8 +1,8 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "SLASH",
+    "triggerKey": "B",
     "keyBindingName": "Dash",
     "keyBindingCategoryKey": "gameplay",
     "onKeyPressed": {

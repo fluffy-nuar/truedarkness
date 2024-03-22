@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:corrupted_leaves",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 35,
     "feature": {

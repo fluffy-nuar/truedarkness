@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:swamp_sunflower",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 64,
     "feature": {

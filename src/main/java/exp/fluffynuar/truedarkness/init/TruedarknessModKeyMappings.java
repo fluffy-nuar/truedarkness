@@ -36,7 +36,7 @@ public class TruedarknessModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping NOSEDIVE = new KeyMapping("key.truedarkness.nosedive", GLFW.GLFW_KEY_LEFT_SHIFT, "key.categories.gameplay") {
+	public static final KeyMapping NOSEDIVE = new KeyMapping("key.truedarkness.nosedive", GLFW.GLFW_KEY_N, "key.categories.gameplay") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -49,7 +49,7 @@ public class TruedarknessModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping DASH = new KeyMapping("key.truedarkness.dash", GLFW.GLFW_KEY_SLASH, "key.categories.gameplay") {
+	public static final KeyMapping DASH = new KeyMapping("key.truedarkness.dash", GLFW.GLFW_KEY_B, "key.categories.gameplay") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -62,7 +62,7 @@ public class TruedarknessModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping USE_MAGIC = new KeyMapping("key.truedarkness.use_magic", GLFW.GLFW_KEY_V, "key.categories.misc") {
+	public static final KeyMapping USE_MAGIC = new KeyMapping("key.truedarkness.use_magic", GLFW.GLFW_KEY_V, "key.categories.gameplay") {
 		private boolean isDownOld = false;
 
 		@Override

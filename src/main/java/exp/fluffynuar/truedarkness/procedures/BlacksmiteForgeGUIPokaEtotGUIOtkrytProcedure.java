@@ -16,20 +16,19 @@ public class BlacksmiteForgeGUIPokaEtotGUIOtkrytProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (Blocks.AIR.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY).getItem()
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getCount() >= 10
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getCount() >= 10) {
 			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SCULK_MANA_BOTTLE
-					.get() && (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.AMETHYST_SHARD) {
-				if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.METENITE_SHARD
-						.get()) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(TruedarknessModItems.METENITE_CRYSTAL.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get(4)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
+					.get() && (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.AMETHYST_SHARD
+					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
+							.getItem() == TruedarknessModItems.METENITE_SHARD.get()) {
+				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+					ItemStack _setstack = new ItemStack(TruedarknessModItems.METENITE_CRYSTAL.get());
+					_setstack.setCount(1);
+					((Slot) _slots.get(5)).set(_setstack);
+					_player.containerMenu.broadcastChanges();
 				}
 			}
 			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOUL_BOTTLE.get()
@@ -39,7 +38,7 @@ public class BlacksmiteForgeGUIPokaEtotGUIOtkrytProcedure {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(TruedarknessModItems.SOULSTEAL_METAL.get());
 					_setstack.setCount(1);
-					((Slot) _slots.get(4)).set(_setstack);
+					((Slot) _slots.get(5)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 			}
@@ -51,7 +50,7 @@ public class BlacksmiteForgeGUIPokaEtotGUIOtkrytProcedure {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(TruedarknessModItems.RAW_FIRENITE.get());
 					_setstack.setCount(1);
-					((Slot) _slots.get(4)).set(_setstack);
+					((Slot) _slots.get(5)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 			}
@@ -63,7 +62,7 @@ public class BlacksmiteForgeGUIPokaEtotGUIOtkrytProcedure {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(TruedarknessModItems.CRY_INGOT.get());
 					_setstack.setCount(1);
-					((Slot) _slots.get(4)).set(_setstack);
+					((Slot) _slots.get(5)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 			}
@@ -74,7 +73,7 @@ public class BlacksmiteForgeGUIPokaEtotGUIOtkrytProcedure {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(TruedarknessModItems.DARK_CRYSTAL.get());
 					_setstack.setCount(1);
-					((Slot) _slots.get(4)).set(_setstack);
+					((Slot) _slots.get(5)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 			}

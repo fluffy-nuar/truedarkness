@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "truedarkness:textures/screens/swamps_stone.png",
+    "background": "truedarkness:textures/screens/swamp_stone.png",
     "icon": {
       "item": "truedarkness:swamp_stone"
     },

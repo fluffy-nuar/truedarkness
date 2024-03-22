@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:calm_aquamarine"
+    }
+  },
+  "result": {
+    "item": "truedarkness:aquamarine_coin",
+    "count": 5
+  }
+}

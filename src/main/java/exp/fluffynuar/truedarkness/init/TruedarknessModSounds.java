@@ -41,4 +41,15 @@ public class TruedarknessModSounds {
 	public static final RegistryObject<SoundEvent> RECORD_HOLLOW = REGISTRY.register("record.hollow", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "record.hollow")));
 	public static final RegistryObject<SoundEvent> MUSIC_YTERIA = REGISTRY.register("music.yteria", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "music.yteria")));
 	public static final RegistryObject<SoundEvent> PLAYER_ECHO_HARP = REGISTRY.register("player.echo_harp", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.echo_harp")));
+	public static final RegistryObject<SoundEvent> ENTITY_MINER_AMBIENT = REGISTRY.register("entity.miner.ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.miner.ambient")));
+	public static final RegistryObject<SoundEvent> ENTITY_MINER_DEATH = REGISTRY.register("entity.miner.death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.miner.death")));
+	public static final RegistryObject<SoundEvent> ENTITY_GENERAL_DEATH_NEW = REGISTRY.register("entity.general.death_new", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.general.death_new")));
+	public static final RegistryObject<SoundEvent> ENTITY_MINER_TRAID_FAIL = REGISTRY.register("entity.miner.traid.fail", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.miner.traid.fail")));
+	public static final RegistryObject<SoundEvent> ENTITY_MINER_TRADE_SUCCES = REGISTRY.register("entity.miner.trade.succes", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.miner.trade.succes")));
+	public static final RegistryObject<SoundEvent> PLAYER_SOUL_WINGS_USE = REGISTRY.register("player.soul_wings.use", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.soul_wings.use")));
+	public static final RegistryObject<SoundEvent> ITEM_AMOGUS_MORS_USE = REGISTRY.register("item.amogus_mors.use", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "item.amogus_mors.use")));
+	public static final RegistryObject<SoundEvent> ENTITY_GLOOMER_AMBIENT = REGISTRY.register("entity.gloomer.ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.gloomer.ambient")));
+	public static final RegistryObject<SoundEvent> ENTITY_GLOOMER_DEATH = REGISTRY.register("entity.gloomer.death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.gloomer.death")));
+	public static final RegistryObject<SoundEvent> ENTITY_GLOOMER_HURT = REGISTRY.register("entity.gloomer.hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.gloomer.hurt")));
+	public static final RegistryObject<SoundEvent> ENTITY_GLOOMER_STEP = REGISTRY.register("entity.gloomer.step", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.gloomer.step")));
 }

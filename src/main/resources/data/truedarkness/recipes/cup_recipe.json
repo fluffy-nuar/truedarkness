@@ -2,17 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "3 5"
+    " a ",
+    "a a"
   ],
   "key": {
-    "1": {
-      "item": "minecraft:glass"
-    },
-    "3": {
-      "item": "minecraft:glass"
-    },
-    "5": {
+    "a": {
       "item": "minecraft:glass"
     }
   },

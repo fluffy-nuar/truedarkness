@@ -1,8 +1,8 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Effect.Dream.Vis",
+    "effectName": "Story Mode",
     "icon": "story.png",
     "color": {
       "value": -1,

@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tag",
   "definition": {
     "type": "Items",
@@ -11,19 +11,23 @@
         "value": "CUSTOM:DarknessSprucePlanks"
       },
       {
-        "value": "CUSTOM:MyceliumPlanks"
-      },
-      {
         "value": "CUSTOM:CryingPlanks"
       },
       {
         "value": "CUSTOM:FakePlanks"
+      },
+      {
+        "value": "CUSTOM:GlowPlanks"
+      },
+      {
+        "value": "CUSTOM:WastelandSheaf"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "planks",
     "namespace": "minecraft"
   }

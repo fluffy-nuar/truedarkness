@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -18,17 +19,21 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
 import java.util.function.Consumer;
 import java.util.Map;
+import java.util.List;
 import java.util.Collections;
 
 import exp.fluffynuar.truedarkness.procedures.FyvProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.client.model.Modelarmor;
+
+import com.google.common.collect.Iterables;
 
 public abstract class CorruptedItem extends ArmorItem {
 	public CorruptedItem(ArmorItem.Type type, Item.Properties properties) {
@@ -99,13 +104,21 @@ public abstract class CorruptedItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "truedarkness:textures/entities/corrupted_armor.png";
 		}
 
 		@Override
-		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
-			FyvProcedure.execute(world, entity);
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				FyvProcedure.execute(world, entity);
+			}
 		}
 	}
 
@@ -130,6 +143,11 @@ public abstract class CorruptedItem extends ArmorItem {
 					return armorModel;
 				}
 			});
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override

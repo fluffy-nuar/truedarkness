@@ -1,0 +1,9 @@
+{
+  "_fv": 57,
+  "_type": "curiosslot",
+  "definition": {
+    "texture": "heart_slot.png",
+    "name": "Heart",
+    "amount": 1
+  }
+}

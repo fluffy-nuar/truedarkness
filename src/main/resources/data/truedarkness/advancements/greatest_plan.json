@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:cave_skrezhal_part"
+      "item": "truedarkness:tablet_cave"
     },
     "title": {
       "translate": "advancements.greatest_plan.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "truedarkness:cave_skrezhal_part"
+              "truedarkness:tablet_cave"
             ],
             "count": {
               "min": 1,

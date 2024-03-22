@@ -11,15 +11,18 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import javax.annotation.Nullable;
 
+import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
 import exp.fluffynuar.truedarkness.init.TruedarknessModMobEffects;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
@@ -48,6 +51,35 @@ public class Death1ProcProcedure {
 			} else {
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(), 200, 0, true, true));
+			}
+		}
+		if (Mth.nextInt(RandomSource.create(), 0, 100) >= 70 && (sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana <= 7.5) {
+			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.ECHO_SHELL.get(), lv).isPresent() : false) {
+				if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.ECHO_HEART.get(), lv).isPresent() : false) {
+					{
+						double _setval = (sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana + 0.5;
+						sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.SculkedMana = _setval;
+							capability.syncPlayerVariables(sourceentity);
+						});
+					}
+					if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 80, 0));
+					if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 0));
+					if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("\u00A73+"), true);
+				} else {
+					{
+						double _setval = (sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana + 0.5;
+						sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.SculkedMana = _setval;
+							capability.syncPlayerVariables(sourceentity);
+						});
+					}
+					if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("\u00A73+"), true);
+				}
 			}
 		}
 	}

@@ -3,8 +3,8 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "swamp_sunflower",
-    "textureBottom": "swamp_sunflower_1",
+    "texture": "swamp_sunflower_top",
+    "textureBottom": "swamp_sunflower",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",

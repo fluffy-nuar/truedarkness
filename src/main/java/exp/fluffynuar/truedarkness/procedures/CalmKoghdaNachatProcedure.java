@@ -16,20 +16,21 @@ public class CalmKoghdaNachatProcedure {
 		if (entity == null)
 			return;
 		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria")))) {
-			TruedarknessMod.queueServerWork((int) (20 * 3), () -> {
-				if (entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(TruedarknessModMobEffects.CALM.get())) {
-					CalmKoghdaNachatProcedure.execute(world, entity);
-					if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupted > 0) {
-						{
-							double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupted - 1;
-							entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.Corrupted = _setval;
-								capability.syncPlayerVariables(entity);
-							});
+			TruedarknessMod.queueServerWork(
+					(int) (20 + 20 * (19 - Math.round(entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(TruedarknessModMobEffects.CALM.get()) ? _livEnt.getEffect(TruedarknessModMobEffects.CALM.get()).getAmplifier() : 0))), () -> {
+						if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(TruedarknessModMobEffects.CALM.get())) {
+							CalmKoghdaNachatProcedure.execute(world, entity);
+							if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).corrupt_second > 0) {
+								{
+									double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).corrupt_second - 1;
+									entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+										capability.corrupt_second = _setval;
+										capability.syncPlayerVariables(entity);
+									});
+								}
+							}
 						}
-					}
-				}
-			});
+					});
 		}
 	}
 }

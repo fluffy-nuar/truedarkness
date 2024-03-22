@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft:sweet_berries",
     "minecraft:glow_berries",
-    "truedarkness:grape",
-    "minecraft:sweet_berries"
+    "truedarkness:grape"
   ]
 }

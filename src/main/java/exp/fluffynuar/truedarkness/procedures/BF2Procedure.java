@@ -22,7 +22,7 @@ public class BF2Procedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 5) >= 2 && (new Object() {
+		}.getAmount(world, BlockPos.containing(x, y, z), 4) >= 2 && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -30,7 +30,7 @@ public class BF2Procedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == TruedarknessModItems.ELDER_DOCUMENT.get()) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == TruedarknessModItems.ELDER_DOCUMENT.get()) {
 			return true;
 		}
 		return false;

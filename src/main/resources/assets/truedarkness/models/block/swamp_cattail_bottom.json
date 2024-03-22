@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "truedarkness:block/swamp_cattail",
-    "particle": "truedarkness:block/swamp_cattail"
-  },
-  "render_type": "cutout"
-}

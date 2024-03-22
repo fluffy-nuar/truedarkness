@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:metenite_shard"
+    }
+  },
+  "result": {
+    "item": "truedarkness:metenite_block",
+    "count": 1
+  }
+}

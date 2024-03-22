@@ -1,13 +1,21 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "minecraft:diamond_chestplate"
-  },
-  "addition": {
-    "item": "truedarkness:firenite_ingot"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:firenite_ingot"
+    },
+    "b": {
+      "item": "minecraft:leather_chestplate"
+    }
   },
   "result": {
-    "item": "truedarkness:firenite_armor_chestplate"
+    "item": "truedarkness:firenite_armor_chestplate",
+    "count": 1
   }
 }

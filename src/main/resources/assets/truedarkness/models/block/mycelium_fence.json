@@ -1,8 +1,0 @@
-{
-  "parent": "block/fence_side",
-  "textures": {
-    "texture": "truedarkness:block/mycelium_planks",
-    "particle": "truedarkness:block/mycelium_planks"
-  },
-  "render_type": "solid"
-}

@@ -1,6 +1,6 @@
 {
   "has_precipitation": false,
-  "temperature": 0,
+  "temperature": 0.2,
   "downfall": 0,
   "effects": {
     "music": {
@@ -42,7 +42,7 @@
     "axolotls": [],
     "underground_water_creature": [
       {
-        "type": "truedarkness:swamp_cod_entity",
+        "type": "truedarkness:corrupted_hand",
         "weight": 10,
         "minCount": 1,
         "maxCount": 4

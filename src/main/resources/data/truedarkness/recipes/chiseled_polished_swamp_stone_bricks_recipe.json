@@ -2,14 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0",
-    "1"
+    "a",
+    "a"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:polished_swamp_stone_bricks_slab"
-    },
-    "1": {
+    "a": {
       "item": "truedarkness:polished_swamp_stone_bricks_slab"
     }
   },

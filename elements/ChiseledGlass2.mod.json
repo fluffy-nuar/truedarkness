@@ -35,7 +35,8 @@
     ],
     "name": "Chiseled Glass",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "ChiseledGlassText2"
     },
     "hardness": 1.0,
     "resistance": 10.0,

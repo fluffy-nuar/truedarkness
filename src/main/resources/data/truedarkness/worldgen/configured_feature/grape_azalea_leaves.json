@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:grape_azalea_leaves",
+  "type": "minecraft:ore",
   "config": {
     "size": 2,
     "discard_chance_on_air_exposure": 0,

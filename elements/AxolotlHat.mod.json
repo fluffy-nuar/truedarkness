@@ -1,0 +1,57 @@
+{
+  "_fv": 57,
+  "_type": "curiosbauble",
+  "definition": {
+    "renderType": 0,
+    "texture": "axolotl_hat",
+    "customModelName": "Normal",
+    "name": "Axolotl Hat",
+    "rarity": "RARE",
+    "slotType": "HEAD",
+    "baubleModel": "Modelaxolotl_hat",
+    "baubleModelTexture": "axolotl_hat.png",
+    "creativeTab": {
+      "value": "CUSTOM:TrueDarknessElementariy"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "addSlot": true,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "GridExpertText"
+    },
+    "hasGlow": false,
+    "customProperties": {},
+    "states": [],
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "slotAmount": 1,
+    "isFood": false,
+    "friendlyPigs": false,
+    "enderMask": false,
+    "rotateModel": false,
+    "translateModel": true,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "hasModel": true,
+    "animation": "none"
+  }
+}

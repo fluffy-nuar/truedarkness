@@ -2,26 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0 2",
-    " 4 ",
-    "6  "
+    "a b",
+    " c ",
+    "b  "
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "truedarkness:metenite_crystal"
     },
-    "2": {
+    "b": {
       "item": "minecraft:echo_shard"
     },
-    "4": {
+    "c": {
       "item": "truedarkness:ancient_papyrus"
-    },
-    "6": {
-      "item": "minecraft:echo_shard"
     }
   },
   "result": {
-    "item": "truedarkness:echo_papyrus",
+    "item": "truedarkness:deleted_mod_element",
     "count": 1
   }
 }

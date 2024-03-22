@@ -1,10 +1,11 @@
 {
   "replace": false,
   "values": [
-    "truedarkness:darkness_spruce_planks",
     "truedarkness:cyan_planks",
+    "truedarkness:darkness_spruce_planks",
     "truedarkness:crying_planks",
-    "truedarkness:mycelium_planks",
-    "truedarkness:fake_planks"
+    "truedarkness:fake_planks",
+    "truedarkness:glow_planks",
+    "truedarkness:wasteland_sheaf"
   ]
 }

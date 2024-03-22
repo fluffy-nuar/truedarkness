@@ -26,8 +26,6 @@ public class SporesOverlay {
 	public static void eventHandler(RenderGuiEvent.Pre event) {
 		int w = event.getWindow().getGuiScaledWidth();
 		int h = event.getWindow().getGuiScaledHeight();
-		int posX = w / 2;
-		int posY = h / 2;
 		Level world = null;
 		double x = 0;
 		double y = 0;
@@ -46,7 +44,7 @@ public class SporesOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (SporesProcProcedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spore.png"), 0, 0, 0, 0, w, h, w, h);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spores.png"), 0, 0, 0, 0, w, h, w, h);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

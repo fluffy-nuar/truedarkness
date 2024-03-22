@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "truedarkness:block/swamp_flower1"
+    "layer0": "truedarkness:block/swamp_flower_1"
   }
 }

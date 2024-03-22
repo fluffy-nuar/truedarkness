@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tag",
   "definition": {
     "type": "Blocks",
@@ -12,21 +12,22 @@
         "value": "CUSTOM:CyanFence"
       },
       {
-        "value": "CUSTOM:MyceliumFence"
-      },
-      {
         "value": "CUSTOM:CryingFence"
       },
       {
         "value": "CUSTOM:FakeFence"
       },
       {
-        "value": "CUSTOM:DriedFence"
+        "value": "CUSTOM:GlowFence"
+      },
+      {
+        "value": "CUSTOM:WastelandSheafFence"
       }
     ],
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "fences",
     "namespace": "minecraft"
   }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:swamp_mud"
+    },
+    "b": {
+      "item": "truedarkness:swamp_terracota"
+    }
+  },
+  "result": {
+    "item": "truedarkness:accustone_pebbles",
+    "count": 16
+  }
+}

@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "tool_fang",
+    "texture": "fang_tool",
     "customModelName": "Tool",
     "customProperties": {},
     "states": [],
-    "name": "Tool Fang",
+    "name": "§5Tool Fang",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:TrueDarknessElementariy"
@@ -29,6 +29,9 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -40,6 +43,9 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:DarknessSpruceShieldProjectile"
+    },
     "isFood": false,
     "nutritionalValue": -4,
     "saturation": -0.7999999999999999,

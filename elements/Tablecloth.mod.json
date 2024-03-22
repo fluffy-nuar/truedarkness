@@ -179,7 +179,8 @@
     ],
     "name": "Tablecloth",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "WIPText"
     },
     "hardness": 1.0,
     "resistance": 10.0,

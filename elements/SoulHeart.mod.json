@@ -1,13 +1,13 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
     "texture": "soul_heart",
     "customModelName": "Normal",
     "name": "Soul Heart",
-    "rarity": "COMMON",
-    "slotType": "BODY",
+    "rarity": "RARE",
+    "slotType": "HeartSlot",
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {
@@ -28,8 +28,12 @@
     "enableMeleeDamage": false,
     "addSlot": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hasGlow": false,
+    "customProperties": {},
+    "states": [],
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,

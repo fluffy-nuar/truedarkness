@@ -21,7 +21,6 @@ import net.minecraft.core.BlockPos;
 import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
 import exp.fluffynuar.truedarkness.init.TruedarknessModMobEffects;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
-import exp.fluffynuar.truedarkness.init.TruedarknessModGameRules;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEnchantments;
 
 public class EchoHarpPriShchielchkiePKMProcedure {
@@ -44,7 +43,7 @@ public class EchoHarpPriShchielchkiePKMProcedure {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 60, 1, false, false));
 				{
-					double _setval = (world.getLevelData().getGameRules().getInt(TruedarknessModGameRules.SCULKMANALIMIT));
+					double _setval = 8;
 					entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.SculkedMana = _setval;
 						capability.syncPlayerVariables(entity);

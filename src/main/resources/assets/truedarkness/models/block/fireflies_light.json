@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "truedarkness:block/null",
-    "particle": "truedarkness:block/null"
-  },
-  "render_type": "translucent"
-}

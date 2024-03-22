@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SweetHerbs"
+      },
+      {
+        "value": "CUSTOM:MedicinalHerbs"
+      },
+      {
+        "value": "CUSTOM:SoothingHerbs"
+      },
+      {
+        "value": "CUSTOM:FruitsAndBerries"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "bag_herbs",
+    "namespace": "minecraft"
+  }
+}

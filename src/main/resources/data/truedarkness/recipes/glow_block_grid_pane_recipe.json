@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:glownite_grid"
+    }
+  },
+  "result": {
+    "item": "truedarkness:glownite_grid_pane",
+    "count": 16
+  }
+}

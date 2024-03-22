@@ -2,20 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "01",
-    "23"
+    "aa",
+    "aa"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:darkness_spruce_log"
-    },
-    "1": {
-      "item": "truedarkness:darkness_spruce_log"
-    },
-    "2": {
-      "item": "truedarkness:darkness_spruce_log"
-    },
-    "3": {
+    "a": {
       "item": "truedarkness:darkness_spruce_log"
     }
   },

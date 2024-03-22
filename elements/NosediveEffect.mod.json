@@ -1,9 +1,9 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Nosedive",
-    "icon": "falling_effect.png",
+    "icon": "nosedive_effect.png",
     "color": {
       "value": -16777114,
       "falpha": 0.0

@@ -1,8 +1,12 @@
 {
   "type": "forge:add_features",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "truedarkness:swamps",
+    "truedarkness:corrupted_place",
+    "truedarkness:mine",
+    "truedarkness:retroland",
+    "truedarkness:swamp_wasteland"
+  ],
   "features": "truedarkness:darkness_spruce_planks",
   "step": "underground_ores"
 }

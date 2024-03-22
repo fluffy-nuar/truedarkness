@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,22 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.DIAMOND"
+        "value": "CUSTOM:SoulstealIngot"
       },
       {
         "value": "CUSTOM:SoulstealIngot"
       },
       {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "Items.DIAMOND"
+        "value": "CUSTOM:SoulstealIngot"
       },
       {
         "value": "CUSTOM:SoulstealNugget"
@@ -37,6 +28,15 @@
       },
       {
         "value": "CUSTOM:SoulstealNugget"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {

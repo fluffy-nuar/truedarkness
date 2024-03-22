@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
     "truedarkness:cyan_stem",
-    "truedarkness:dried_log",
-    "truedarkness:darkness_spruce_log",
-    "truedarkness:mycelium_log"
+    "truedarkness:darkness_spruce_log"
   ]
 }

@@ -1,9 +1,0 @@
-{
-  "type": "truedarkness:old_ship_feature",
-  "config": {
-    "structure": "truedarkness:old_ship",
-    "random_rotation": true,
-    "random_mirror": true,
-    "ignored_blocks": "minecraft:air"
-  }
-}

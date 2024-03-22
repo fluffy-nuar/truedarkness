@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:cobbled_darknite",
+  "type": "minecraft:ore",
   "config": {
     "size": 27,
     "discard_chance_on_air_exposure": 0,

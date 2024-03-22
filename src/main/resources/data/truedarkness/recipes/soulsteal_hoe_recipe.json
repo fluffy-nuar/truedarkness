@@ -1,13 +1,24 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "minecraft:diamond_hoe"
-  },
-  "addition": {
-    "item": "truedarkness:soulsteal_ingot"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    " c",
+    " c"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "b": {
+      "item": "truedarkness:soulsteal_ingot"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "item": "truedarkness:soulsteal_hoe"
+    "item": "truedarkness:soulsteal_hoe",
+    "count": 1
   }
 }

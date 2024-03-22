@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "recra_flower_1",
+    "texture": "recra_roots",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",

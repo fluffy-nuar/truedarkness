@@ -2,21 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345"
+    " a ",
+    "aba"
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:gold_nugget"
     },
-    "3": {
-      "item": "minecraft:gold_nugget"
-    },
-    "4": {
+    "b": {
       "item": "minecraft:gold_ingot"
-    },
-    "5": {
-      "item": "minecraft:gold_nugget"
     }
   },
   "result": {

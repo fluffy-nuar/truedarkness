@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "biome",
   "definition": {
     "name": "Swamd Wasteland",
@@ -43,7 +43,7 @@
     },
     "particlesProbability": 0.7999999999999999,
     "rainingPossibility": 0.0,
-    "temperature": 0.0,
+    "temperature": 0.2,
     "spawnBiome": false,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
@@ -130,7 +130,7 @@
       },
       {
         "entity": {
-          "value": "CUSTOM:SwampSalmon"
+          "value": "CUSTOM:CorruptedHand"
         },
         "minGroup": 1,
         "maxGroup": 4,

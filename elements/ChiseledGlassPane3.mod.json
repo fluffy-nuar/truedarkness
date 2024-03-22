@@ -36,7 +36,8 @@
     ],
     "name": "Chiseled Glass Pane",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "ChiseledGlassText3"
     },
     "hardness": 1.0,
     "resistance": 10.0,

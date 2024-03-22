@@ -34,7 +34,7 @@ import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
 import exp.fluffynuar.truedarkness.init.TruedarknessModMobEffects;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
-import exp.fluffynuar.truedarkness.entity.SculkFeatherEntity;
+import exp.fluffynuar.truedarkness.entity.SculkFeatherProjectileEntity;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
 public class SplashPriOtpuskaniiKlavishiProcedure {
@@ -200,7 +200,7 @@ public class SplashPriOtpuskaniiKlavishiProcedure {
 							if (!projectileLevel.isClientSide()) {
 								Projectile _entityToSpawn = new Object() {
 									public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-										AbstractArrow entityToSpawn = new SculkFeatherEntity(TruedarknessModEntities.SCULK_FEATHER_SPELL.get(), level);
+										AbstractArrow entityToSpawn = new SculkFeatherProjectileEntity(TruedarknessModEntities.SCULK_FEATHER_PROJECTILE.get(), level);
 										entityToSpawn.setOwner(shooter);
 										entityToSpawn.setBaseDamage(damage);
 										entityToSpawn.setKnockback(knockback);

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:big_glownite_bricks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:big_glownite_bricks_slab",
+    "count": 6
+  }
+}

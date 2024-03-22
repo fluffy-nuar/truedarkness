@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "biome",
   "definition": {
     "name": "Corrupted Place",
@@ -13,7 +13,7 @@
       "value": "CUSTOM:Corrupt"
     },
     "airColor": {
-      "value": -15466186,
+      "value": -13428891,
       "falpha": 0.0
     },
     "waterColor": {
@@ -41,7 +41,7 @@
     "particleToSpawn": {
       "value": "CUSTOM:CorruptPollen"
     },
-    "particlesProbability": 0.8,
+    "particlesProbability": 2.2,
     "rainingPossibility": 0.0,
     "temperature": 0.5,
     "spawnBiome": false,

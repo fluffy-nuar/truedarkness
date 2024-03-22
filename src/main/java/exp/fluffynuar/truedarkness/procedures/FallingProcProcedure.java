@@ -9,57 +9,115 @@ import net.minecraftforge.event.entity.living.LivingFallEvent;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.GameType;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
+import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
 
 import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
 import exp.fluffynuar.truedarkness.init.TruedarknessModMobEffects;
+import exp.fluffynuar.truedarkness.TruedarknessMod;
 
 @Mod.EventBusSubscriber
 public class FallingProcProcedure {
 	@SubscribeEvent
 	public static void onEntityFall(LivingFallEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getDamageMultiplier(), event.getDistance());
 		}
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, double damagemultiplier, double distance) {
+		execute(null, world, x, y, z, entity, damagemultiplier, distance);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, double damagemultiplier, double distance) {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruedarknessModMobEffects.FALLING_EFFECT.get())) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(TruedarknessModMobEffects.FALLING_EFFECT.get());
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20, 254, false, false));
-		}
-		if (entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(TruedarknessModMobEffects.NOSEDIVE_EFFECT.get())) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(TruedarknessModMobEffects.NOSEDIVE_EFFECT.get());
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 254, false, false));
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y + 1, z)));
-				entityToSpawn.setVisualOnly(true);
-				_level.addFreshEntity(entityToSpawn);
+			if (!(new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+					}
+					return false;
+				}
+			}.checkGamemode(entity)) && !(new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
+					}
+					return false;
+				}
+			}.checkGamemode(entity))) {
+				if (entity instanceof Player _player) {
+					_player.getAbilities().invulnerable = true;
+					_player.onUpdateAbilities();
+				}
+				TruedarknessMod.queueServerWork(5, () -> {
+					if (entity instanceof Player _player) {
+						_player.getAbilities().invulnerable = false;
+						_player.onUpdateAbilities();
+					}
+				});
 			}
+		}
+		if (entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(TruedarknessModMobEffects.ECHO_NOSEDIVE_EFFECT.get()) && !world.isEmptyBlock(BlockPos.containing(x, y - 0.01, z))) {
+			if (!(new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+					}
+					return false;
+				}
+			}.checkGamemode(entity)) && !(new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
+					}
+					return false;
+				}
+			}.checkGamemode(entity))) {
+				if (entity instanceof Player _player) {
+					_player.getAbilities().invulnerable = true;
+					_player.onUpdateAbilities();
+				}
+				TruedarknessMod.queueServerWork(5, () -> {
+					if (entity instanceof Player _player) {
+						_player.getAbilities().invulnerable = false;
+						_player.onUpdateAbilities();
+					}
+				});
+			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(TruedarknessModMobEffects.ECHO_NOSEDIVE_EFFECT.get());
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.thunder")), SoundSource.PLAYERS, 1, 1);
@@ -71,33 +129,114 @@ public class FallingProcProcedure {
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0.1 25 force");
+				}
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level().getServer(), _ent),
+							"execute as @e[type=!minecraft:armor_stand,type=!minecraft:item,type=!minecraft:item_frame,type=!minecraft:glow_item_frame,type=!minecraft:experience_orb,distance=0..10] run damage @s 12 minecraft:wither by @p");
+				}
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+									_ent.level().getServer(), _ent),
+							"execute as @e[type=!minecraft:armor_stand,type=!minecraft:item,type=!minecraft:item_frame,type=!minecraft:glow_item_frame,type=!minecraft:experience_orb,distance=0..20] run damage @s 6 minecraft:wither by @p");
+				}
+			}
+		}
+		if (entity instanceof LivingEntity _livEnt19 && _livEnt19.hasEffect(TruedarknessModMobEffects.NOSEDIVE_EFFECT.get())) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(TruedarknessModMobEffects.NOSEDIVE_EFFECT.get());
+			if (!(new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+					}
+					return false;
+				}
+			}.checkGamemode(entity)) && !(new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
+					}
+					return false;
+				}
+			}.checkGamemode(entity))) {
+				if (entity instanceof Player _player) {
+					_player.getAbilities().invulnerable = true;
+					_player.onUpdateAbilities();
+				}
+				TruedarknessMod.queueServerWork(5, () -> {
+					if (entity instanceof Player _player) {
+						_player.getAbilities().invulnerable = false;
+						_player.onUpdateAbilities();
+					}
+				});
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
 							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "particle minecraft:soul ~ ~ ~ 0.1 0.1 0.1 0.1 25 force");
 				}
 			}
-			{
-				Entity _ent = entity;
-				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-									_ent.level().getServer(), _ent),
-							"execute as @e[type=!minecraft:armor_stand,type=!minecraft:item,type=!minecraft:item_frame,type=!minecraft:glow_item_frame,type=!minecraft:experience_orb,distance=0..5] run damage @s 10 minecraft:wither by @p");
+			if (Math.round(damagemultiplier) > 0) {
+				{
+					Entity _ent = entity;
+					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+										_ent.level().getServer(), _ent),
+								("execute as @e[type=!minecraft:armor_stand,type=!minecraft:item,type=!minecraft:item_frame,type=!minecraft:glow_item_frame,type=!minecraft:experience_orb,distance=0..7] run damage @s "
+										+ Math.round(damagemultiplier) * 1.2 + " minecraft:wither by @p"));
+					}
+				}
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y + 1, z)));
+					entityToSpawn.setVisualOnly(true);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.thunder")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.thunder")), SoundSource.PLAYERS, 1, 1, false);
+					}
 				}
 			}
-			{
-				Entity _ent = entity;
-				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-									_ent.level().getServer(), _ent),
-							"execute as @e[type=!minecraft:armor_stand,type=!minecraft:item,type=!minecraft:item_frame,type=!minecraft:glow_item_frame,type=!minecraft:experience_orb,distance=0..10] run damage @s 6 minecraft:wither by @p");
-				}
-			}
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal(("" + damagemultiplier)), false);
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal(("" + distance)), false);
 		}
 		if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Jump == false) {
 			{
 				boolean _setval = true;
 				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Jump = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		}
+		if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Dash == false) {
+			{
+				boolean _setval = true;
+				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Dash = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

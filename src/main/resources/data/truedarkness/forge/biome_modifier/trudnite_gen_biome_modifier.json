@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:mine",
+  "features": "truedarkness:trudnite_gen",
+  "step": "surface_structures"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:swamp_cobblestone"
+    }
+  },
+  "result": {
+    "item": "truedarkness:swamp_cobblestone_slab",
+    "count": 6
+  }
+}

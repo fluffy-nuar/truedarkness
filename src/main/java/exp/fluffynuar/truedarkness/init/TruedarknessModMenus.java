@@ -12,6 +12,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import exp.fluffynuar.truedarkness.world.inventory.SamovarGUIMenu;
+import exp.fluffynuar.truedarkness.world.inventory.EchoMasterGUIMenu;
 import exp.fluffynuar.truedarkness.world.inventory.DarknessSpruceChestGUIMenu;
 import exp.fluffynuar.truedarkness.world.inventory.BlacksmiteForgeGUIMenu;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
@@ -21,4 +22,5 @@ public class TruedarknessModMenus {
 	public static final RegistryObject<MenuType<BlacksmiteForgeGUIMenu>> BLACKSMITE_FORGE_GUI = REGISTRY.register("blacksmite_forge_gui", () -> IForgeMenuType.create(BlacksmiteForgeGUIMenu::new));
 	public static final RegistryObject<MenuType<SamovarGUIMenu>> SAMOVAR_GUI = REGISTRY.register("samovar_gui", () -> IForgeMenuType.create(SamovarGUIMenu::new));
 	public static final RegistryObject<MenuType<DarknessSpruceChestGUIMenu>> DARKNESS_SPRUCE_CHEST_GUI = REGISTRY.register("darkness_spruce_chest_gui", () -> IForgeMenuType.create(DarknessSpruceChestGUIMenu::new));
+	public static final RegistryObject<MenuType<EchoMasterGUIMenu>> ECHO_MASTER_GUI = REGISTRY.register("echo_master_gui", () -> IForgeMenuType.create(EchoMasterGUIMenu::new));
 }

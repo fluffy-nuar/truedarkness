@@ -8,7 +8,7 @@
     "texture": "marinite_pickaxe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "§bMarinite Pickaxe",
+    "name": "Marinite Pickaxe",
     "specialInformation": {
       "fixedValue": []
     },
@@ -16,12 +16,15 @@
       "value": "CUSTOM:TrueDarknessElementariy"
     },
     "harvestLevel": 3,
-    "efficiency": 4.0,
+    "efficiency": 9.0,
     "attackSpeed": 1.5,
-    "enchantability": 0,
+    "enchantability": 14,
     "damageVsEntity": 4.0,
     "usageCount": 2031,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CryIngot"

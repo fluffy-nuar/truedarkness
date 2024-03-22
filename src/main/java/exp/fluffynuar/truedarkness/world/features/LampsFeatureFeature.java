@@ -4,6 +4,7 @@ package exp.fluffynuar.truedarkness.world.features;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.WorldGenLevel;
 
+import exp.fluffynuar.truedarkness.world.features.configurations.StructureFeatureConfiguration;
 import exp.fluffynuar.truedarkness.procedures.LampsDopolnitielnoieUsloviieGienieratsiiProcedure;
 
 public class LampsFeatureFeature extends StructureFeature {

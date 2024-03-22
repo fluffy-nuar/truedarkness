@@ -237,5 +237,140 @@
         "stream": false
       }
     ]
+  },
+  "entity.miner.ambient": {
+    "subtitle": "subtitles.entity.miner.ambient",
+    "sounds": [
+      {
+        "name": "truedarkness:miner_ambient_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:miner_ambient_1",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:miner_ambient_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.miner.death": {
+    "subtitle": "subtitles.entity.miner.death",
+    "sounds": [
+      {
+        "name": "truedarkness:miner_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.general.death_new": {
+    "subtitle": "subtitles.entity.general.death_new",
+    "sounds": [
+      {
+        "name": "truedarkness:general_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.miner.traid.fail": {
+    "subtitle": "subtitles.entity.miner.traid.fail",
+    "sounds": [
+      {
+        "name": "truedarkness:miner_trade_fail",
+        "stream": false
+      }
+    ]
+  },
+  "entity.miner.trade.succes": {
+    "subtitle": "subtitles.entity.miner.trade.succes",
+    "sounds": [
+      {
+        "name": "truedarkness:miner_trade_succes",
+        "stream": false
+      }
+    ]
+  },
+  "player.soul_wings.use": {
+    "subtitle": "subtitles.player.soul_wings.use",
+    "sounds": [
+      {
+        "name": "truedarkness:soul_wings_use_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:soul_wings_use_1",
+        "stream": false
+      }
+    ]
+  },
+  "item.amogus_mors.use": {
+    "subtitle": "subtitles.item.amogus_mors.use",
+    "sounds": [
+      {
+        "name": "truedarkness:round-start",
+        "stream": false
+      }
+    ]
+  },
+  "entity.gloomer.ambient": {
+    "subtitle": "subtitles.entity.gloomer.ambient",
+    "sounds": [
+      {
+        "name": "truedarkness:gloomer_ambient_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:gloomer_ambient_1",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:gloomer_ambient_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.gloomer.death": {
+    "subtitle": "subtitles.entity.gloomer.death",
+    "sounds": [
+      {
+        "name": "truedarkness:gloomer_death_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:gloomer_death_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.gloomer.hurt": {
+    "subtitle": "subtitles.entity.gloomer.hurt",
+    "sounds": [
+      {
+        "name": "truedarkness:gloomer_hurt_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:gloomer_hurt_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.gloomer.step": {
+    "subtitle": "subtitles.entity.gloomer.step",
+    "sounds": [
+      {
+        "name": "truedarkness:gloomer_step_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:gloomer_step_1",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:gloomer_step_2",
+        "stream": false
+      }
+    ]
   }
 }

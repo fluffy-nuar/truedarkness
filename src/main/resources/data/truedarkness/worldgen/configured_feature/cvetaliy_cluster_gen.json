@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:cvetaliy_cluster_gen",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 96,
     "feature": {

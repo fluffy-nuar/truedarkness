@@ -2,34 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "3 5",
-    "678"
+    "aaa",
+    "b b",
+    "aaa"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "truedarkness:darkness_spruce_slab"
     },
-    "1": {
-      "item": "truedarkness:darkness_spruce_slab"
-    },
-    "2": {
-      "item": "truedarkness:darkness_spruce_slab"
-    },
-    "3": {
+    "b": {
       "item": "truedarkness:darkness_spruce_planks"
-    },
-    "5": {
-      "item": "truedarkness:darkness_spruce_planks"
-    },
-    "6": {
-      "item": "truedarkness:darkness_spruce_slab"
-    },
-    "7": {
-      "item": "truedarkness:darkness_spruce_slab"
-    },
-    "8": {
-      "item": "truedarkness:darkness_spruce_slab"
     }
   },
   "result": {

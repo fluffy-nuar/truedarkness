@@ -8,7 +8,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -21,7 +20,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import exp.fluffynuar.truedarkness.procedures.ShandarahKoghdaSnariadPrisdfziemliaietsiaNaBlokProcedure;
 import exp.fluffynuar.truedarkness.procedures.ShandarahKoghdaSnariadPopadaietVSushchnostProcedure;
 import exp.fluffynuar.truedarkness.procedures.ShandarahKoghdaSnariadLietitTaktProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
@@ -76,12 +74,6 @@ public class ShandarahProjectileEntity extends AbstractArrow implements ItemSupp
 	}
 
 	@Override
-	public void onHitBlock(BlockHitResult blockHitResult) {
-		super.onHitBlock(blockHitResult);
-		ShandarahKoghdaSnariadPrisdfziemliaietsiaNaBlokProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
-	}
-
-	@Override
 	public void tick() {
 		super.tick();
 		ShandarahKoghdaSnariadLietitTaktProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
@@ -90,7 +82,7 @@ public class ShandarahProjectileEntity extends AbstractArrow implements ItemSupp
 	}
 
 	public static ShandarahProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 1f, 9, 3);
+		return shoot(world, entity, source, 1f, 2, 0);
 	}
 
 	public static ShandarahProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -101,7 +93,7 @@ public class ShandarahProjectileEntity extends AbstractArrow implements ItemSupp
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
-		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.beacon.deactivate")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -112,11 +104,11 @@ public class ShandarahProjectileEntity extends AbstractArrow implements ItemSupp
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(9);
-		entityarrow.setKnockback(3);
+		entityarrow.setBaseDamage(2);
+		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);
-		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.beacon.deactivate")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

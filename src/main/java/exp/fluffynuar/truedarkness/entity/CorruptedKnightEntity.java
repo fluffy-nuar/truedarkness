@@ -38,6 +38,7 @@ import net.minecraft.core.BlockPos;
 
 import exp.fluffynuar.truedarkness.procedures.EridiumGolemNaturalnoieUsloviiePoiavlieniiaSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.procedures.CorruptedKnightKoghdaEtotObiektUbivaietDrughoghoProcedure;
+import exp.fluffynuar.truedarkness.procedures.AttackPlayerProcProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
 
@@ -69,11 +70,52 @@ public class CorruptedKnightEntity extends Monster {
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
+
+			@Override
+			public boolean canUse() {
+				double x = CorruptedKnightEntity.this.getX();
+				double y = CorruptedKnightEntity.this.getY();
+				double z = CorruptedKnightEntity.this.getZ();
+				Entity entity = CorruptedKnightEntity.this;
+				Level world = CorruptedKnightEntity.this.level();
+				return super.canUse() && AttackPlayerProcProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = CorruptedKnightEntity.this.getX();
+				double y = CorruptedKnightEntity.this.getY();
+				double z = CorruptedKnightEntity.this.getZ();
+				Entity entity = CorruptedKnightEntity.this;
+				Level world = CorruptedKnightEntity.this.level();
+				return super.canContinueToUse() && AttackPlayerProcProcedure.execute(entity);
+			}
+
 		});
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canUse() {
+				double x = CorruptedKnightEntity.this.getX();
+				double y = CorruptedKnightEntity.this.getY();
+				double z = CorruptedKnightEntity.this.getZ();
+				Entity entity = CorruptedKnightEntity.this;
+				Level world = CorruptedKnightEntity.this.level();
+				return super.canUse() && AttackPlayerProcProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = CorruptedKnightEntity.this.getX();
+				double y = CorruptedKnightEntity.this.getY();
+				double z = CorruptedKnightEntity.this.getZ();
+				Entity entity = CorruptedKnightEntity.this;
+				Level world = CorruptedKnightEntity.this.level();
+				return super.canContinueToUse() && AttackPlayerProcProcedure.execute(entity);
+			}
+		});
 	}
 
 	@Override
@@ -97,26 +139,26 @@ public class CorruptedKnightEntity extends Monster {
 	}
 
 	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source.getDirectEntity() instanceof AbstractArrow)
+	public boolean hurt(DamageSource damagesource, float amount) {
+		if (damagesource.getDirectEntity() instanceof AbstractArrow)
 			return false;
-		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
+		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud)
 			return false;
-		if (source.is(DamageTypes.FALL))
+		if (damagesource.is(DamageTypes.FALL))
 			return false;
-		if (source.is(DamageTypes.CACTUS))
+		if (damagesource.is(DamageTypes.CACTUS))
 			return false;
-		if (source.is(DamageTypes.DROWN))
+		if (damagesource.is(DamageTypes.DROWN))
 			return false;
-		if (source.is(DamageTypes.EXPLOSION))
+		if (damagesource.is(DamageTypes.EXPLOSION))
 			return false;
-		if (source.is(DamageTypes.TRIDENT))
+		if (damagesource.is(DamageTypes.TRIDENT))
 			return false;
-		if (source.is(DamageTypes.WITHER))
+		if (damagesource.is(DamageTypes.WITHER))
 			return false;
-		if (source.is(DamageTypes.WITHER_SKULL))
+		if (damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
-		return super.hurt(source, amount);
+		return super.hurt(damagesource, amount);
 	}
 
 	@Override

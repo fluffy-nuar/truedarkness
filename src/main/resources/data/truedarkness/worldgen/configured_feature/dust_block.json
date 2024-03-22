@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:dust_block",
+  "type": "minecraft:ore",
   "config": {
     "size": 8,
     "discard_chance_on_air_exposure": 0,

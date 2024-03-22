@@ -3,6 +3,7 @@ package exp.fluffynuar.truedarkness.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
@@ -11,6 +12,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 import exp.fluffynuar.truedarkness.procedures.FangPickaxeRightclickedProcedure;
 import exp.fluffynuar.truedarkness.procedures.FangPickaxeKazhdyiTikVRukieProcedure;
@@ -66,6 +70,11 @@ public class FangPickaxeItem extends PickaxeItem {
 	@Override
 	public boolean isRepairable(ItemStack itemstack) {
 		return false;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override

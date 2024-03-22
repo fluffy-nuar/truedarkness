@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:glownite_block"
+    }
+  },
+  "result": {
+    "item": "truedarkness:big_glownite_bricks",
+    "count": 4
+  }
+}

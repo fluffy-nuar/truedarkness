@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:recra_grass",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 256,
     "feature": {

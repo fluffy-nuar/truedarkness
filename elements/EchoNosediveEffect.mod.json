@@ -1,0 +1,20 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Nosedive",
+    "icon": "echo_nosedive.png",
+    "color": {
+      "value": -14858951,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onActiveTick": {
+      "name": "EchoNosediveEffectKazhdyiTikVoVriemiaEffiekta"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "truedarkness:item/cursed_mark"
+    "layer0": "truedarkness:item/fang_mark"
   }
 }

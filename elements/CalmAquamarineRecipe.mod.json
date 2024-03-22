@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -15,10 +15,10 @@
         "value": "CUSTOM:CvetaliyGrain"
       },
       {
-        "value": ""
+        "value": "CUSTOM:CvetaliyGrain"
       },
       {
-        "value": ""
+        "value": "CUSTOM:CvetaliyGrain"
       },
       {
         "value": "CUSTOM:CvetaliyGrain"
@@ -27,16 +27,16 @@
         "value": "CUSTOM:SoulBottle"
       },
       {
-        "value": ""
-      },
-      {
         "value": "CUSTOM:CvetaliyGrain"
       },
       {
         "value": "CUSTOM:CvetaliyGrain"
       },
       {
-        "value": ""
+        "value": "CUSTOM:CvetaliyGrain"
+      },
+      {
+        "value": "CUSTOM:CvetaliyGrain"
       }
     ],
     "recipeReturnStack": {

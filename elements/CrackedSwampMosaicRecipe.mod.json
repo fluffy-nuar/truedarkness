@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:AccuswampMosaic"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:CrackedAccuswampMosaic"
+    },
+    "name": "cracked_swamp_mosaic_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:cvetaliy_ore_generation",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 189,
     "feature": {

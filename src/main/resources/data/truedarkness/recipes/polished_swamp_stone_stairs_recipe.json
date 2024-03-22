@@ -2,27 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0  ",
-    "34 ",
-    "678"
+    "a  ",
+    "aa ",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:polished_swamp_stone"
-    },
-    "3": {
-      "item": "truedarkness:polished_swamp_stone"
-    },
-    "4": {
-      "item": "truedarkness:polished_swamp_stone"
-    },
-    "6": {
-      "item": "truedarkness:polished_swamp_stone"
-    },
-    "7": {
-      "item": "truedarkness:polished_swamp_stone"
-    },
-    "8": {
+    "a": {
       "item": "truedarkness:polished_swamp_stone"
     }
   },

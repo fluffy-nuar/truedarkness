@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "truedarkness:item/heart_of_eridium"
+    "layer0": "truedarkness:item/cursed_heart"
   }
 }

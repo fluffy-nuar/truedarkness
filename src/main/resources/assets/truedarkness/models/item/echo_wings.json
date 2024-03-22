@@ -2,5 +2,37 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "truedarkness:item/echo_wings"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:echo_wings_trim": 1
+      },
+      "model": "truedarkness:item/echo_wings_0"
+    },
+    {
+      "predicate": {
+        "truedarkness:echo_wings_trim": 2
+      },
+      "model": "truedarkness:item/echo_wings_1"
+    },
+    {
+      "predicate": {
+        "truedarkness:echo_wings_trim": 3
+      },
+      "model": "truedarkness:item/echo_wings_2"
+    },
+    {
+      "predicate": {
+        "truedarkness:echo_wings_trim": 4
+      },
+      "model": "truedarkness:item/echo_wings_3"
+    },
+    {
+      "predicate": {
+        "truedarkness:echo_wings_trim": 5
+      },
+      "model": "truedarkness:item/echo_wings_4"
+    }
+  ]
 }

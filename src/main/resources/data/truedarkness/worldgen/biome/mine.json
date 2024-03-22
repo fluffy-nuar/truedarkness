@@ -29,7 +29,7 @@
     "axolotls": [],
     "underground_water_creature": [
       {
-        "type": "truedarkness:swamp_cod_entity",
+        "type": "truedarkness:deleted_mod_element",
         "weight": 10,
         "minCount": 1,
         "maxCount": 4

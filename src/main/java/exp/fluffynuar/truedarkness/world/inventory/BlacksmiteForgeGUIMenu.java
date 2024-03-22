@@ -31,6 +31,7 @@ import exp.fluffynuar.truedarkness.procedures.BlacksmiteForgeGUIPriZakrytiiGUIPr
 import exp.fluffynuar.truedarkness.procedures.BlacksmiteForgeGUIPokaEtotGUIOtkrytProcedure;
 import exp.fluffynuar.truedarkness.network.BlacksmiteForgeGUISlotMessage;
 import exp.fluffynuar.truedarkness.init.TruedarknessModMenus;
+import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
 @Mod.EventBusSubscriber
@@ -90,9 +91,9 @@ public class BlacksmiteForgeGUIMenu extends AbstractContainerMenu implements Sup
 			private final int slot = 0;
 
 			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(0, 0, 0);
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(0, 1, 0);
 			}
 
 			@Override
@@ -104,45 +105,50 @@ public class BlacksmiteForgeGUIMenu extends AbstractContainerMenu implements Sup
 			private final int slot = 1;
 
 			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(1, 0, 0);
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(1, 1, 0);
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 55) {
 			private final int slot = 2;
 
 			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(2, 0, 0);
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(2, 1, 0);
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 98, 55) {
 			private final int slot = 3;
 
 			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(3, 0, 0);
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(3, 1, 0);
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 80, 17) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 134, 55) {
 			private final int slot = 4;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return TruedarknessModItems.ELDER_DOCUMENT.get() == stack.getItem();
+			}
+		}));
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 80, 17) {
+			private final int slot = 5;
 
 			@Override
 			public void onTake(Player entity, ItemStack stack) {
 				super.onTake(entity, stack);
-				slotChanged(4, 1, 0);
+				slotChanged(5, 1, 0);
 			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
-		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 134, 55) {
-			private final int slot = 5;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)

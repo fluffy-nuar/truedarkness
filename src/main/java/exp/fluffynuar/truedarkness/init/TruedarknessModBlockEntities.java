@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 import exp.fluffynuar.truedarkness.block.entity.SamovarActiveBlockEntity;
+import exp.fluffynuar.truedarkness.block.entity.EchoMasterBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.DarknessSpruceChestBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.CorruptedBubbleEmptyBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.CorruptedBubbleBlockEntity;
@@ -24,6 +25,7 @@ public class TruedarknessModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CORRUPTED_BUBBLE_BLOCK = register("corrupted_bubble_block", TruedarknessModBlocks.CORRUPTED_BUBBLE_BLOCK, CorruptedBubbleBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CORRUPTED_BUBBLE_EMPTY = register("corrupted_bubble_empty", TruedarknessModBlocks.CORRUPTED_BUBBLE_EMPTY, CorruptedBubbleEmptyBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BLACKSMITE_FORGE = register("blacksmite_forge", TruedarknessModBlocks.BLACKSMITE_FORGE, BlacksmiteForgeBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> ECHO_MASTER = register("echo_master", TruedarknessModBlocks.ECHO_MASTER, EchoMasterBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DARKNESS_SPRUCE_CHEST = register("darkness_spruce_chest", TruedarknessModBlocks.DARKNESS_SPRUCE_CHEST, DarknessSpruceChestBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SAMOVAR_ACTIVE = register("samovar_active", TruedarknessModBlocks.SAMOVAR_ACTIVE, SamovarActiveBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CORRUPTED_BUBBLE = register("corrupted_bubble", TruedarknessModBlocks.CORRUPTED_BUBBLE, CorruptedBubbleBlockEntity::new);

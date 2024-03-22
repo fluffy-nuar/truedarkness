@@ -17,8 +17,8 @@
     },
     "foliage_color": 10387789,
     "grass_color": 9470285,
-    "sky_color": -16771023,
-    "fog_color": -16771023,
+    "sky_color": -13022602,
+    "fog_color": -13022602,
     "water_color": -16681265,
     "water_fog_color": -16757069
   },
@@ -29,7 +29,7 @@
     "axolotls": [],
     "underground_water_creature": [
       {
-        "type": "truedarkness:swamp_cod_entity",
+        "type": "truedarkness:corrupted_hand",
         "weight": 10,
         "minCount": 1,
         "maxCount": 4

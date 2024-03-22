@@ -71,23 +71,23 @@ public class BlacksmiteForgeGUISlotMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (slot == 0 && changeType == 0) {
+		if (slot == 0 && changeType == 1) {
 
 			VziatiiePriedmietaIzSlotaProcedure.execute(world, entity);
 		}
-		if (slot == 1 && changeType == 0) {
+		if (slot == 1 && changeType == 1) {
 
 			VziatiiePriedmietaIzSlotaProcedure.execute(world, entity);
 		}
-		if (slot == 2 && changeType == 0) {
+		if (slot == 2 && changeType == 1) {
 
 			VziatiiePriedmietaIzSlotaProcedure.execute(world, entity);
 		}
-		if (slot == 3 && changeType == 0) {
+		if (slot == 3 && changeType == 1) {
 
 			VziatiiePriedmietaIzSlotaProcedure.execute(world, entity);
 		}
-		if (slot == 4 && changeType == 1) {
+		if (slot == 5 && changeType == 1) {
 
 			PriVziatiiPriedmietaProcedure.execute(world, x, y, z, entity);
 		}

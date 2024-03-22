@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 16,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MeteniteGlass"
+      },
+      {
+        "value": "CUSTOM:MeteniteGlass"
+      },
+      {
+        "value": "CUSTOM:MeteniteGlass"
+      },
+      {
+        "value": "CUSTOM:MeteniteGlass"
+      },
+      {
+        "value": "CUSTOM:MeteniteGlass"
+      },
+      {
+        "value": "CUSTOM:MeteniteGlass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MeteniteGlassPane"
+    },
+    "name": "metenite_glass_pane_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "type": "truedarkness:vines_of_tears",
   "config": {
-    "tries": 1,
+    "tries": 98,
     "y_spread": 120,
     "feature": {
       "feature": {

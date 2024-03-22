@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:trudnite_ore",
+  "type": "minecraft:ore",
   "config": {
     "size": 13,
     "discard_chance_on_air_exposure": 0,

@@ -14,7 +14,7 @@ public class BlacksmiteForgeGUIPriZakrytiiGUIProcedure {
 		{
 			BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 			if (_ent != null) {
-				final int _slotid = 4;
+				final int _slotid = 5;
 				final ItemStack _setstack = new ItemStack(Blocks.AIR);
 				_setstack.setCount(1);
 				_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {

@@ -28,7 +28,8 @@ public class LightedVineActiveKoghdaSosiedniiBlokMieniaietsiaProcedure {
 		});
 		if (!((world.getBlockState(BlockPos.containing(x, y - 1, z))) == TruedarknessModBlocks.LIGHTED_VINE_2.get().defaultBlockState())
 				&& !((world.getBlockState(BlockPos.containing(x, y - 1, z))) == TruedarknessModBlocks.LIGHTED_VINE.get().defaultBlockState())
-				&& !((world.getBlockState(BlockPos.containing(x, y - 1, z))) == TruedarknessModBlocks.LIGHTED_VINE_ACTIVE.get().defaultBlockState())) {
+				&& !((world.getBlockState(BlockPos.containing(x, y - 1, z))) == TruedarknessModBlocks.LIGHTED_VINE_ACTIVE.get().defaultBlockState())
+				&& !((world.getBlockState(BlockPos.containing(x, y - 1, z))) == TruedarknessModBlocks.LIGHTED_VINE_ACTIVE_0.get().defaultBlockState())) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = TruedarknessModBlocks.LIGHTED_VINE_2.get().defaultBlockState();

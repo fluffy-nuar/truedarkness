@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,35 +12,35 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:FakeLog"
       },
       {
         "value": "CUSTOM:Cvetaliy"
       },
       {
-        "value": ""
+        "value": "CUSTOM:FakeLog"
       },
       {
-        "value": "CUSTOM:FakeLog"
+        "value": ""
       },
       {
         "value": "Items.ECHO_SHARD"
       },
       {
-        "value": "CUSTOM:FakeLog"
-      },
-      {
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:FakePlanks"
       },
       {
-        "value": ""
+        "value": "CUSTOM:MeteniteCrystal"
+      },
+      {
+        "value": "CUSTOM:FakePlanks"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SoulMaster"
+      "value": "CUSTOM:EchoMaster"
     },
     "name": "soul_master_recipe",
     "namespace": "mod"

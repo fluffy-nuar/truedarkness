@@ -2,30 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    " 7 "
+    "aba",
+    "aca",
+    " d "
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "truedarkness:eridium_shard"
     },
-    "1": {
+    "b": {
       "item": "truedarkness:eridium_heart"
     },
-    "2": {
-      "item": "truedarkness:eridium_shard"
-    },
-    "3": {
-      "item": "truedarkness:eridium_shard"
-    },
-    "4": {
+    "c": {
       "item": "truedarkness:eridium_bone"
     },
-    "5": {
-      "item": "truedarkness:eridium_shard"
-    },
-    "7": {
+    "d": {
       "item": "truedarkness:soulsteal_heart"
     }
   },

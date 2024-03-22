@@ -7,141 +7,245 @@
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar.png",
+          "image": "corrupted_bar_0_0.png",
           "use1Xscale": false,
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar_1.png",
+          "image": "corrupted_bar_1_0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "CorruptedBarProc"
           },
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar_2.png",
+          "image": "corrupted_bar_2_0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "CorruptedBarProc1"
           },
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar_3.png",
+          "image": "corrupted_bar_3_0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "CorruptedBarProc2"
           },
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar_4.png",
+          "image": "corrupted_bar_4_0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "CorruptedBarProc3"
           },
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar_5.png",
+          "image": "corrupted_bar_5_0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "CorruptedBarProc4"
           },
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar_6.png",
+          "image": "corrupted_bar_6_0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "CorruptedBarProc5"
           },
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar_7.png",
+          "image": "corrupted_bar_7_0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "CorruptedBarProc6"
           },
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar_8.png",
+          "image": "corrupted_bar_8_0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "CorruptedBarProc7"
           },
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar_9.png",
+          "image": "corrupted_bar_9_0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "CorruptedBarProc8"
           },
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "cirrupted_bar_10.png",
+          "image": "corrupted_bar_10_0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "CorruptedBarProc9"
           },
-          "anchorPoint": "CENTER",
-          "x": 105,
-          "y": -1
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "corrupted_bar_0_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CB1"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "corrupted_bar_0_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CB2"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "corrupted_bar_0_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CB3"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "corrupted_bar_0_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CB4"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "corrupted_bar_0_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CB5"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "corrupted_bar_0_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CB6"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "corrupted_bar_0_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CB7"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "corrupted_bar_0_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CB8"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
         }
       }
     ],
@@ -155,7 +259,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

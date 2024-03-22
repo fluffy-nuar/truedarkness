@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:big_light_fungus",
+  "type": "minecraft:huge_fungus",
   "config": {
     "valid_base_block": {
       "Name": "truedarkness:swamp_soil"

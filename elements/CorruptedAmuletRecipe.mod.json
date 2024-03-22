@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -24,7 +24,7 @@
         "value": "CUSTOM:CorruptedHandFangs"
       },
       {
-        "value": "CUSTOM:EmptyTreasureAmulet"
+        "value": "CUSTOM:SoulstealNugget"
       },
       {
         "value": "CUSTOM:CorruptedHandFangs"

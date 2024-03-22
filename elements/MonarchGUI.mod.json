@@ -1,0 +1,460 @@
+{
+  "_fv": 57,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_gui.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_RIGHT",
+          "x": 235,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc05"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 401,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc1"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 401,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc15"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 381,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc2"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 381,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc25"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 361,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc3"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 361,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc35"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 341,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc4"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 341,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc45"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 321,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc5"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 321,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc55"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 301,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc6"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 301,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc65"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 281,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc7"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 281,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc75"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 261,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_mana_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManabarProc8"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 261,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_ring_layer.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MonarchbarRingProc"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 303,
+          "y": 14
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_sandglass_layer.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MonarchbarSandglassProc"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 291,
+          "y": 14
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_heart_layer.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MonarchbarHeartProc"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 267,
+          "y": 14
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_shell_layer.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MonarchbarShellProc"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 279,
+          "y": 14
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD0"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD1"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD2"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD3"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMS0"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 383,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMS1"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 383,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMS2"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 383,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMS3"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 383,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMU0"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 359,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMU1"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 359,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMU2"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 359,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMU3"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 359,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_cooldown_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MonarchCooldownProc"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 235,
+          "y": 0
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "MonarchGUIProc"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

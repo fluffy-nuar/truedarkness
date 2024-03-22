@@ -1,6 +1,8 @@
 {
   "type": "forge:add_features",
-  "biomes": "truedarkness:mine",
+  "biomes": {
+    "type": "forge:any"
+  },
   "features": "truedarkness:glow_fog",
   "step": "underground_ores"
 }

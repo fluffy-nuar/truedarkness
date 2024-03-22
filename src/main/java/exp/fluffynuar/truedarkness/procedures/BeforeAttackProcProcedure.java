@@ -8,29 +8,28 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
 
@@ -64,25 +63,8 @@ public class BeforeAttackProcProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, (int) (20 * 20), 0, true, false));
 		}
-		if (sourceentity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(TruedarknessModMobEffects.PARANOIA.get()) && Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
-			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-				entityToSpawn.setPickUpDelay(60);
-				entityToSpawn.setUnlimitedLifetime();
-				_level.addFreshEntity(entityToSpawn);
-			}
-			TruedarknessMod.queueServerWork(1, () -> {
-				if (sourceentity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(Blocks.AIR);
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
-				}
-			});
-		}
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem
-				&& !(sourceentity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get()))) {
+				&& !(sourceentity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get()))) {
 			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.GENERAL_HEART.get(), lv).isPresent() : false) {
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 140, 3, true, false));
@@ -100,8 +82,8 @@ public class BeforeAttackProcProcedure {
 		}
 		if (((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof SwordItem
 				|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof SwordItem)
-				&& !(sourceentity instanceof LivingEntity _livEnt28 && _livEnt28.hasEffect(TruedarknessModMobEffects.SOULSTEAL_SPOOL_COOLDOWN.get()))) {
-			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.GENERAL_MARK.get(), lv).isPresent() : false) {
+				&& !(sourceentity instanceof LivingEntity _livEnt22 && _livEnt22.hasEffect(TruedarknessModMobEffects.SOULSTEAL_SPOOL_COOLDOWN.get()))) {
+			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.WARRIOR_HEART.get(), lv).isPresent() : false) {
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 60, 3, true, false));
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -113,16 +95,12 @@ public class BeforeAttackProcProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 60, 50, true, false));
 				});
 				if (sourceentity instanceof Player _player)
-					_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_SPOOL.get(), 120);
+					_player.getCooldowns().addCooldown(TruedarknessModItems.WARRIOR_HEART.get(), 120);
 				if (sourceentity instanceof Player _player)
-					_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_SPOOL.get(), 120);
-				if (sourceentity instanceof Player _player)
-					_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_MARK.get(), 120);
-				if (sourceentity instanceof Player _player)
-					_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_MARK.get(), 120);
+					_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_SPOOL.get(), 120);
 			}
 		}
-		if (entity instanceof LivingEntity _livEnt39 && _livEnt39.hasEffect(TruedarknessModMobEffects.PHANTOM_PROTECTION.get())) {
+		if (entity instanceof LivingEntity _livEnt31 && _livEnt31.hasEffect(TruedarknessModMobEffects.PHANTOM_PROTECTION.get())) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), SoundSource.PLAYERS, 1, (float) 0.5);
@@ -130,7 +108,7 @@ public class BeforeAttackProcProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), SoundSource.PLAYERS, 1, (float) 0.5, false);
 				}
 			}
-			if (!(sourceentity instanceof LivingEntity _livEnt ? _livEnt.isBlocking() : false)) {
+			if (!(sourceentity instanceof LivingEntity _livEnt33 && _livEnt33.isBlocking())) {
 				sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)),
 						(float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage()
 								* (1 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(TruedarknessModMobEffects.PHANTOM_PROTECTION.get()) ? _livEnt.getEffect(TruedarknessModMobEffects.PHANTOM_PROTECTION.get()).getAmplifier() : 0))));
@@ -149,6 +127,21 @@ public class BeforeAttackProcProcedure {
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_WINGS.get(), 400);
 			}
+		}
+		if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.TOTEM_OF_DYING.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.TOTEM_OF_DYING.get()) && !(new Object() {
+					public boolean checkGamemode(Entity _ent) {
+						if (_ent instanceof ServerPlayer _serverPlayer) {
+							return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+						} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+							return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+									&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+						}
+						return false;
+					}
+				}.checkGamemode(entity))) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1200, 5, false, false));
 		}
 	}
 }

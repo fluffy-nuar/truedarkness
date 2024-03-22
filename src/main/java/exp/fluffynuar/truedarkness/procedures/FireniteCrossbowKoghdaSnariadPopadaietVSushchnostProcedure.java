@@ -11,7 +11,7 @@ public class FireniteCrossbowKoghdaSnariadPopadaietVSushchnostProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (sourceentity instanceof LivingEntity _livEnt ? _livEnt.isBlocking() : false) {
+		if (sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.isBlocking()) {
 			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)), 5);
 		}
 	}

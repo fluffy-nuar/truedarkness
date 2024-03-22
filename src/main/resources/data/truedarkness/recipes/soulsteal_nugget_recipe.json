@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0"
+    "a"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "truedarkness:soulsteal_ingot"
     }
   },

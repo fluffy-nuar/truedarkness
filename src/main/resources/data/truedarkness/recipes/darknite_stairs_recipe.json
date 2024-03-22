@@ -2,27 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0  ",
-    "34 ",
-    "678"
+    "a  ",
+    "aa ",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:darknite"
-    },
-    "3": {
-      "item": "truedarkness:darknite"
-    },
-    "4": {
-      "item": "truedarkness:darknite"
-    },
-    "6": {
-      "item": "truedarkness:darknite"
-    },
-    "7": {
-      "item": "truedarkness:darknite"
-    },
-    "8": {
+    "a": {
       "item": "truedarkness:darknite"
     }
   },

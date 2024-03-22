@@ -1,22 +1,24 @@
 
 package exp.fluffynuar.truedarkness.item;
 
+import top.theillusivec4.curios.api.type.capability.ICurioItem;
+
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
 
-import exp.fluffynuar.truedarkness.procedures.EchoPapyrusKazhdyiTikVInvientarieProcedure;
+import java.util.List;
 
-public class CursedPapyrusItem extends Item {
+public class CursedPapyrusItem extends Item implements ICurioItem {
 	public CursedPapyrusItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		EchoPapyrusKazhdyiTikVInvientarieProcedure.execute(entity);
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 }

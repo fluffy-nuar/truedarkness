@@ -1,8 +1,8 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
@@ -10,13 +10,36 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "Items.DIAMOND_BOOTS"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:FireniteIngot"
-    },
-    "smithingReturnStack": {
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FireniteIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FireniteIngot"
+      },
+      {
+        "value": "CUSTOM:FireniteIngot"
+      },
+      {
+        "value": "Items.LEATHER_BOOTS"
+      },
+      {
+        "value": "CUSTOM:FireniteIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FireniteIngot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:FireniteArmor.boots"
     },
     "name": "firenite_boots",

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SwampClay"
+      },
+      {
+        "value": "CUSTOM:DustBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DustBlock"
+      },
+      {
+        "value": "CUSTOM:SwampClay"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DustClay"
+    },
+    "name": "dust_clay_recipe",
+    "namespace": "mod"
+  }
+}

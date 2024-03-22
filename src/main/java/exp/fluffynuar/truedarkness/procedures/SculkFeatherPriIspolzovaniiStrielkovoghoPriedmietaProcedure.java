@@ -15,6 +15,6 @@ public class SculkFeatherPriIspolzovaniiStrielkovoghoPriedmietaProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 60, 0, false, false));
 		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(TruedarknessModItems.SCULK_FEATHER_SPELL.get(), 100);
+			_player.getCooldowns().addCooldown(TruedarknessModItems.SCULK_FEATHER.get(), 100);
 	}
 }

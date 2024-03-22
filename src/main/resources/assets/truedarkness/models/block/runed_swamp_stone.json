@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "truedarkness:block/runed_grimstone_2",
-    "up": "truedarkness:block/runed_grimstone_1",
-    "north": "truedarkness:block/runed_grimstone_1",
-    "east": "truedarkness:block/runed_grimstone",
-    "south": "truedarkness:block/runed_grimstone_2",
-    "west": "truedarkness:block/runed_grimstone",
-    "particle": "truedarkness:block/runed_grimstone_2"
+    "down": "truedarkness:block/swamp_rune",
+    "up": "truedarkness:block/swamp_rune",
+    "north": "truedarkness:block/swamp_rune",
+    "east": "truedarkness:block/swamp_rune",
+    "south": "truedarkness:block/swamp_rune",
+    "west": "truedarkness:block/swamp_rune",
+    "particle": "truedarkness:block/swamp_rune"
   },
   "render_type": "solid"
 }

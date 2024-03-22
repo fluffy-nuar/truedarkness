@@ -3,11 +3,15 @@ package exp.fluffynuar.truedarkness.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 import exp.fluffynuar.truedarkness.procedures.CursedSwordKazhdyiTikVInvientarieProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
@@ -28,7 +32,7 @@ public class CursedSwordItem extends SwordItem {
 			}
 
 			public int getLevel() {
-				return 1;
+				return 2;
 			}
 
 			public int getEnchantmentValue() {
@@ -39,6 +43,11 @@ public class CursedSwordItem extends SwordItem {
 				return Ingredient.of(new ItemStack(TruedarknessModItems.CORRUPTED_HAND_FANGS.get()));
 			}
 		}, 3, -2.5f, new Item.Properties());
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override

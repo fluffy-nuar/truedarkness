@@ -1,0 +1,73 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": "CUSTOM:Darknite"
+      },
+      {
+        "value": "CUSTOM:FireniteScrap"
+      },
+      {
+        "value": "CUSTOM:GramiteShard"
+      },
+      {
+        "value": "CUSTOM:Grimnite"
+      },
+      {
+        "value": "CUSTOM:SandstoneOfMissing"
+      },
+      {
+        "value": "CUSTOM:AquamarineCoin"
+      },
+      {
+        "value": "CUSTOM:MeteniteShard"
+      },
+      {
+        "value": "CUSTOM:SoulBottle"
+      },
+      {
+        "value": "CUSTOM:SoulstealShard"
+      },
+      {
+        "value": "CUSTOM:GlowniteIngot"
+      },
+      {
+        "value": "Blocks.COBBLESTONE"
+      },
+      {
+        "value": "Items.RAW_IRON"
+      },
+      {
+        "value": "Items.RAW_COPPER"
+      },
+      {
+        "value": "Items.RAW_GOLD"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "Items.IRON_PICKAXE"
+      },
+      {
+        "value": "CUSTOM:MariniteUpgrade"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "miner_trade_loot",
+    "namespace": "forge"
+  }
+}

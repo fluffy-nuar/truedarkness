@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DustClayBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DustClayBricks"
+      },
+      {
+        "value": "CUSTOM:DustClayBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DustClayBricks"
+      },
+      {
+        "value": "CUSTOM:DustClayBricks"
+      },
+      {
+        "value": "CUSTOM:DustClayBricks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DustClayBricksStairs"
+    },
+    "name": "dust_clay_bricks_stairs_recipe",
+    "namespace": "mod"
+  }
+}

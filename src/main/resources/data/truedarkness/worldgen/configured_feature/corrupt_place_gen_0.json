@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:corrupt_place_gen_0",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 192,
     "feature": {

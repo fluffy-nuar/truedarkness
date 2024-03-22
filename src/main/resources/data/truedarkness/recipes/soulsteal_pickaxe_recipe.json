@@ -1,13 +1,24 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "minecraft:diamond_pickaxe"
-  },
-  "addition": {
-    "item": "truedarkness:soulsteal_ingot"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:soulsteal_ingot"
+    },
+    "b": {
+      "item": "truedarkness:soulsteal_nugget"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "item": "truedarkness:soulsteal_pickaxe"
+    "item": "truedarkness:soulsteal_pickaxe",
+    "count": 1
   }
 }

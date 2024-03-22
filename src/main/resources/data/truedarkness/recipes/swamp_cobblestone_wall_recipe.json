@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:swamp_cobblestone"
+    }
+  },
+  "result": {
+    "item": "truedarkness:swamp_cobblestone_wall",
+    "count": 6
+  }
+}

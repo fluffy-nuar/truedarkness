@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "darkness_spruce_door",
+    "itemTexture": "darkness_spruce_door_item",
     "particleTexture": "",
     "blockBase": "Door",
     "tintType": "No tint",

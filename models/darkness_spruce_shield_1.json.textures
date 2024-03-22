@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "darkness_spruce_shield"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -21,7 +21,7 @@ public class S1Procedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 6)).getItem() == TruedarknessModItems.DRINK_RECIPE.get()) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == TruedarknessModItems.DRINK_RECIPE.get()) {
 			return true;
 		}
 		return false;

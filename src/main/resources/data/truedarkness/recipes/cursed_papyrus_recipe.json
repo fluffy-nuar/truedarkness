@@ -2,38 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "67 "
+    " ab",
+    "aca",
+    "ba "
   ],
   "key": {
-    "0": {
-      "item": "truedarkness:metenite_crystal"
-    },
-    "1": {
+    "a": {
       "item": "truedarkness:eridium_shard"
     },
-    "2": {
+    "b": {
       "item": "truedarkness:eridium_bone"
     },
-    "3": {
-      "item": "truedarkness:corrupted_hand_fangs"
-    },
-    "4": {
+    "c": {
       "item": "truedarkness:ancient_papyrus"
-    },
-    "5": {
-      "item": "truedarkness:eridium_shard"
-    },
-    "6": {
-      "item": "truedarkness:eridium_bone"
-    },
-    "7": {
-      "item": "truedarkness:eridium_shard"
     }
   },
   "result": {
-    "item": "truedarkness:cursed_papyrus",
+    "item": "truedarkness:cursed_scroll",
     "count": 1
   }
 }

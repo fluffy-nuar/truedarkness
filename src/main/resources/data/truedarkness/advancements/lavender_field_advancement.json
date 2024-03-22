@@ -32,5 +32,5 @@
       }
     }
   },
-  "parent": "truedarkness:deep_dark_adv"
+  "parent": "minecraft:adventure/sleep_in_bed"
 }

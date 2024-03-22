@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "truedarkness:mine",
+  "spawners": {
+    "type": "truedarkness:glow_bug",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "stone_spool",
+    "texture": "soulsteal_spool",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
@@ -29,17 +29,20 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedOnBlock": {
       "name": "StoneSpoolPriShchielchkiePKMPoBloku"
     },
-    "onItemInUseTick": {
-      "name": "StoneSpoolKazhdyiTikVRukie"
-    },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:DarknessSpruceShieldProjectile"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

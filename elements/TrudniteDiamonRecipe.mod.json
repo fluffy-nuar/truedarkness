@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.DIAMOND"
+    },
+    "name": "trudnite_diamon_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "type": "truedarkness:recra_flower_1",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 256,
     "feature": {
