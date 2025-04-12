@@ -43,7 +43,7 @@ public class SwampSunflowerPriNazhatiiPravoiKnopkiMyshiNaRastieniiProcedure {
 				}
 			}.checkGamemode(entity))) {
 				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(Items.BONE_MEAL);
+					ItemStack _setstack = new ItemStack(Items.BONE_MEAL).copy();
 					_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 					if (_entity instanceof Player _player)

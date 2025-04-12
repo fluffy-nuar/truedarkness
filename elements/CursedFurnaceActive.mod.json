@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "CursedFurnace",
+    "blockstateList": [
+      {
+        "texture": "cursed_furnace_top",
+        "textureTop": "cursed_furnace_top",
+        "textureLeft": "cursed_furnace_side",
+        "textureFront": "cursed_furnace_active",
+        "textureRight": "cursed_furnace_side",
+        "textureBack": "cursed_furnace_side",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 10,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

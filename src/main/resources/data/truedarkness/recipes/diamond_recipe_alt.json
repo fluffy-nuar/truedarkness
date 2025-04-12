@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_ore"
+    },
+    {
+      "item": "truedarkness:echo_carving_knife"
+    }
+  ],
+  "output": {
+    "item": "minecraft:diamond",
+    "count": 1
+  }
+}

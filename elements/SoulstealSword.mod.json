@@ -1,33 +1,38 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "soulsteal_sword",
+    "texture": "fantal_sword",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Soulsteal Sword",
+    "name": "Fantal Sword",
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 1,
-    "efficiency": 4.0,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
+    "efficiency": 8.0,
     "attackSpeed": 1.6,
     "enchantability": 2,
     "damageVsEntity": 7.0,
-    "usageCount": 100,
-    "blocksAffected": [],
+    "usageCount": 1561,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
-        "value": "CUSTOM:SoulstealIngot"
+        "value": "CUSTOM:FantalIngot"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

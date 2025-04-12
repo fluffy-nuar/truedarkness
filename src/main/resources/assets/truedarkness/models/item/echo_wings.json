@@ -33,6 +33,24 @@
         "truedarkness:echo_wings_trim": 5
       },
       "model": "truedarkness:item/echo_wings_4"
+    },
+    {
+      "predicate": {
+        "truedarkness:echo_wings_trim": 6
+      },
+      "model": "truedarkness:item/echo_wings_5"
+    },
+    {
+      "predicate": {
+        "truedarkness:echo_wings_trim": 7
+      },
+      "model": "truedarkness:item/echo_wings_6"
+    },
+    {
+      "predicate": {
+        "truedarkness:echo_wings_trim": 8
+      },
+      "model": "truedarkness:item/echo_wings_7"
     }
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "truedarkness:block/neasky_planks",
+    "bottom": "truedarkness:block/neasky_planks",
+    "top": "truedarkness:block/neasky_planks",
+    "side": "truedarkness:block/neasky_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,18 +1,21 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Reduced visibility",
-    "icon": "reduced_visibility.png",
+    "icon": "reduced_visibility",
     "color": {
       "value": -13421773,
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": false,
-    "isBenefitical": false,
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": false,
     "renderStatusInHUD": false,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "modifiers": [],
     "onStarted": {
       "name": "ReducedVisibilityKoghdaEffiektNachatprimienien"
     }

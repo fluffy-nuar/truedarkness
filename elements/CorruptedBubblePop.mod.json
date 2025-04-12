@@ -1,13 +1,15 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "particle",
   "definition": {
-    "texture": "corrupted_bubble_pop.png",
+    "texture": "corrupted_bubble_pop",
     "animate": true,
     "frameDuration": 2,
-    "width": 0.4,
-    "height": 0.4,
-    "scale": 1.0,
+    "width": 0.1,
+    "height": 0.1,
+    "scale": {
+      "fixedValue": 1.0
+    },
     "speedFactor": 1.0,
     "gravity": -0.05,
     "maxAge": 68,

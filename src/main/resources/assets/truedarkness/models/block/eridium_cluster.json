@@ -1,8 +1,9 @@
 {
-  "parent": "block/cross",
+  "parent": "truedarkness:custom/eridium_cluster",
   "textures": {
-    "cross": "truedarkness:block/eridium_cluster",
-    "particle": "truedarkness:block/eridium_cluster"
+    "all": "truedarkness:block/eridium_cluster",
+    "particle": "truedarkness:block/eridium_cluster",
+    "0": "truedarkness:block/eridium_cluster"
   },
   "render_type": "cutout"
 }

@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:samovar_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:cup_water"
+    },
+    {
+      "item": "truedarkness:fruits_and_berries"
+    },
+    {
+      "item": "truedarkness:cuted_apple"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:apple_juice",
+    "count": 1
+  }
+}

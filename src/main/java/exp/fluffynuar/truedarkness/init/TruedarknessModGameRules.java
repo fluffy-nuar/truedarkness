@@ -10,8 +10,10 @@ import net.minecraft.world.level.GameRules;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TruedarknessModGameRules {
-	public static final GameRules.Key<GameRules.BooleanValue> INFOABOUTSKREZHAL = GameRules.register("infoAboutSkrezhal", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 	public static final GameRules.Key<GameRules.BooleanValue> DISTABILIZATORWORK = GameRules.register("distabilizatorWork", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
-	public static final GameRules.Key<GameRules.IntegerValue> SANDREMNANTSSUCCES = GameRules.register("sandRemnantsSucces", GameRules.Category.DROPS, GameRules.IntegerValue.create(50));
+	public static final GameRules.Key<GameRules.IntegerValue> SANDREMNANTSSUCCES = GameRules.register("sandRemnantsSucces", GameRules.Category.DROPS, GameRules.IntegerValue.create(65));
 	public static final GameRules.Key<GameRules.BooleanValue> BUBBLES = GameRules.register("bubbles", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
+	public static final GameRules.Key<GameRules.IntegerValue> REINFORCED_SHELL_CHANCE = GameRules.register("reinforcedShellChance", GameRules.Category.DROPS, GameRules.IntegerValue.create(50));
+	public static final GameRules.Key<GameRules.BooleanValue> INFO_TABLET = GameRules.register("infoTablet", GameRules.Category.MISC, GameRules.BooleanValue.create(false));
+	public static final GameRules.Key<GameRules.BooleanValue> TEST_OF_TRIALS = GameRules.register("testOfTrials", GameRules.Category.MISC, GameRules.BooleanValue.create(false));
 }

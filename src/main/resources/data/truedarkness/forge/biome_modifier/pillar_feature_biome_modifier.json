@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "truedarkness:corrupted_place",
+  "biomes": "truedarkness:corrupted_forest",
   "features": "truedarkness:pillar_feature",
   "step": "underground_structures"
 }

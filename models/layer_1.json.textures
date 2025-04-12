@@ -11,6 +11,12 @@
         "0": "swamp_sand"
       },
       "name": "swamp_sand"
+    },
+    "corrupted_leaves": {
+      "map": {
+        "0": "corrupted_leaves"
+      },
+      "name": "corrupted_leaves"
     }
   }
 }

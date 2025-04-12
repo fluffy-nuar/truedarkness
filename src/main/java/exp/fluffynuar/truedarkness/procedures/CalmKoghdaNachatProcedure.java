@@ -15,7 +15,7 @@ public class CalmKoghdaNachatProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria")))) {
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria"))) {
 			TruedarknessMod.queueServerWork(
 					(int) (20 + 20 * (19 - Math.round(entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(TruedarknessModMobEffects.CALM.get()) ? _livEnt.getEffect(TruedarknessModMobEffects.CALM.get()).getAmplifier() : 0))), () -> {
 						if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(TruedarknessModMobEffects.CALM.get())) {

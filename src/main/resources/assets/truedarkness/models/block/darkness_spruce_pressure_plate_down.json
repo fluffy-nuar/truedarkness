@@ -1,6 +1,7 @@
 {
   "parent": "block/pressure_plate_down",
   "textures": {
+    "particle": "truedarkness:block/darkness_spruce_planks",
     "texture": "truedarkness:block/darkness_spruce_planks"
   },
   "render_type": "solid"

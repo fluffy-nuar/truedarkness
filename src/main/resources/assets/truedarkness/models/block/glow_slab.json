@@ -1,6 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
+    "particle": "truedarkness:block/glow_planks",
     "bottom": "truedarkness:block/glow_planks",
     "top": "truedarkness:block/glow_planks",
     "side": "truedarkness:block/glow_planks"

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/darkness_purulent_spruce_top",
+    "up": "truedarkness:block/darkness_purulent_spruce_top",
+    "north": "truedarkness:block/darkness_purulent_spruce",
+    "east": "truedarkness:block/darkness_purulent_spruce",
+    "south": "truedarkness:block/darkness_purulent_spruce",
+    "west": "truedarkness:block/darkness_purulent_spruce",
+    "particle": "truedarkness:block/darkness_purulent_spruce_top"
+  },
+  "render_type": "solid"
+}

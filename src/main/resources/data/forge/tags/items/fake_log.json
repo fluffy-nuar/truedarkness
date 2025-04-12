@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "truedarkness:fake_wood",
-    "truedarkness:fake_log"
+    "truedarkness:fake_log",
+    "truedarkness:stripped_fake_wood",
+    "truedarkness:stripped_fake_log"
   ]
 }

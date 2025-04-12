@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "measky_bush_side",
+        "top": "measky_bush_top",
+        "tree": "measky_bush"
+      },
+      "name": "default"
+    }
+  }
+}

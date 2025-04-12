@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "xz_spread": 14,
+    "y_spread": 26,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "truedarkness:neasky_vines"
+            }
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "truedarkness:neasky_log",
+                  "truedarkness:neasky_leaves"
+                ],
+                "offset": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

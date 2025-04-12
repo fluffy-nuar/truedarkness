@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:cursed_anvil_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:firenite_pickaxe"
+    },
+    {
+      "item": "truedarkness:corrupted_hand_fangs"
+    },
+    {
+      "item": "truedarkness:evolution_eridium_shard"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:fang_pickaxe",
+    "count": 1
+  }
+}

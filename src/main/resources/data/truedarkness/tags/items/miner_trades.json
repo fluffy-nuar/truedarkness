@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:aquamarine_coin",
+    "truedarkness:raw_trudnite",
+    "truedarkness:metenite_shard",
+    "truedarkness:soul_bottle",
+    "truedarkness:fantal_shard",
+    "truedarkness:soul_grain",
+    "minecraft:stone_pickaxe",
+    "minecraft:iron_pickaxe",
+    "minecraft:diamond",
+    "minecraft:emerald",
+    "minecraft:raw_iron",
+    "minecraft:raw_copper",
+    "truedarkness:marinite_upgrade_smithing_template",
+    "truedarkness:dark_crystal_shard",
+    "truedarkness:glownite_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:gold_ingot"
+  ]
+}

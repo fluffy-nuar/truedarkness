@@ -11,26 +11,20 @@ import exp.fluffynuar.truedarkness.init.TruedarknessModGameRules;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
 public class DistabilizatorKoghdaZhivaiaSushchnostPopadaietSPomoshchiuInstrumientaProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(TruedarknessModGameRules.DISTABILIZATORWORK) == true) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, x, y, z, 5, 3, 3, 3, 1);
+				_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, (entity.getX()), (entity.getY() + 0.65), (entity.getZ()), 26, 0.2, 0.25, 0.2, 0.1);
 			TruedarknessMod.queueServerWork(5, () -> {
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, x, y, z, 5, 3, 3, 3, 1);
-				TruedarknessMod.queueServerWork(5, () -> {
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, x, y, z, 5, 3, 3, 3, 1);
-					{
-						Entity _ent = entity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "kill");
-						}
+				{
+					Entity _ent = entity;
+					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "kill");
 					}
-				});
+				}
 			});
 		}
 	}

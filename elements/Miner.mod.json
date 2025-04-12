@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
     "mobName": "Miner",
@@ -25,25 +25,29 @@
       {
         "model": "Default",
         "texture": "miner_light.png",
+        "disableHurtOverlay": false,
         "glow": true
       }
     ],
+    "animations": [],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -8982567,
+      "value": -9267055,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -9469310,
+      "value": -14992334,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -66,7 +70,7 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEFINED",
+    "mobCreatureType": "UNDEAD",
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
@@ -85,7 +89,6 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -120,6 +123,9 @@
     "stepSound": {
       "value": "entity.skeleton.step"
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "onRightClickedOn": {
       "name": "RMBProc"
@@ -151,6 +157,15 @@
         "value": "CUSTOM:Mine"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

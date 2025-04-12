@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/cursed_fangs"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:steel_fangs_active": 1
+      },
+      "model": "truedarkness:item/steel_fangs_0"
+    }
+  ]
+}

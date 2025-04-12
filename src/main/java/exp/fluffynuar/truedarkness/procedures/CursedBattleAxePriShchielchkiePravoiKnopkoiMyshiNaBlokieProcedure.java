@@ -35,9 +35,9 @@ public class CursedBattleAxePriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			}
 		}.checkGamemode(entity) || (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 0) {
 			if (world.isEmptyBlock(BlockPos.containing(x, y + 1, z)) && world.getBlockState(BlockPos.containing(x, y, z)).canOcclude()) {
-				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.HEART_ERIDIUM.get(), lv).isPresent() : false) {
+				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.ALIVE_CORE.get(), lv).isPresent() : false) {
 					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(TruedarknessModItems.CURSED_BATTLE_AXE.get(), 40);
+						_player.getCooldowns().addCooldown(TruedarknessModItems.FANG_BATTLE_AXE.get(), 40);
 					if (Mth.nextInt(RandomSource.create(), 1, 100) >= 33) {
 						{
 							BlockPos _bp = BlockPos.containing(x, y + 1, z);

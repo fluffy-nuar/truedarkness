@@ -1,10 +1,11 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "truedarkness:corrupted_place",
+    "truedarkness:corrupted_forest",
     "truedarkness:mine",
     "truedarkness:retroland",
-    "truedarkness:swamps"
+    "truedarkness:crying_swamps",
+    "truedarkness:crying_forest"
   ],
   "features": "truedarkness:corrupt_1_feature",
   "step": "underground_ores"

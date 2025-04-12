@@ -2,7 +2,7 @@
   "parent": "block/cross",
   "textures": {
     "cross": "truedarkness:block/swamp_sunflower",
-    "particle": "truedarkness:block/swamp_sunflower"
+    "particle": "truedarkness:block/swamp_sunflower_top"
   },
   "render_type": "cutout"
 }

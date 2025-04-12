@@ -9,12 +9,6 @@
       "max_delay": 24000,
       "replace_current_music": true
     },
-    "particle": {
-      "options": {
-        "type": "truedarkness:mine_glow"
-      },
-      "probability": 0.018
-    },
     "foliage_color": 10387789,
     "grass_color": 9470285,
     "sky_color": -14451863,
@@ -29,7 +23,7 @@
     "axolotls": [],
     "underground_water_creature": [
       {
-        "type": "truedarkness:deleted_mod_element",
+        "type": "truedarkness:corrupted_hand",
         "weight": 10,
         "minCount": 1,
         "maxCount": 4

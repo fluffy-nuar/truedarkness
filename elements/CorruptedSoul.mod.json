@@ -1,21 +1,23 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "particle",
   "definition": {
-    "texture": "corrupted_soul.png",
+    "texture": "corrupted_soul",
     "animate": true,
     "frameDuration": 2,
     "width": 0.2,
     "height": 0.2,
-    "scale": 1.0,
+    "scale": {
+      "fixedValue": 1.5
+    },
     "speedFactor": 1.0,
-    "gravity": -0.1,
-    "maxAge": 40,
-    "maxAgeDiff": 12,
+    "gravity": -0.08,
+    "maxAge": 21,
+    "maxAgeDiff": 0,
     "angularVelocity": 0.0,
     "angularAcceleration": 0.0,
     "canCollide": true,
     "alwaysShow": false,
-    "renderType": "TRANSLUCENT"
+    "renderType": "LIT"
   }
 }

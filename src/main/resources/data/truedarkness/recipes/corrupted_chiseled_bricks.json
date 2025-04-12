@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:corrupt_bricks_slab"
+    }
+  },
+  "result": {
+    "item": "truedarkness:chiseled_corrupt_bricks",
+    "count": 1
+  }
+}

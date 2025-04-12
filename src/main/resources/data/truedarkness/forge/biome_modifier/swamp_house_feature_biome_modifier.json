@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "truedarkness:swamps",
+  "biomes": "truedarkness:crying_swamps",
   "features": "truedarkness:swamp_house_feature",
   "step": "underground_structures"
 }

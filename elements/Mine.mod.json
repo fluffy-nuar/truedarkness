@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Mine",
@@ -13,6 +13,10 @@
       "value": "CUSTOM:SwampSoil"
     },
     "airColor": {
+      "value": -14451863,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -14451863,
       "falpha": 0.0
     },
@@ -37,11 +41,11 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "CUSTOM:MineGlow"
     },
-    "particlesProbability": 1.7999999999999998,
+    "particlesProbability": 1.5,
     "rainingPossibility": 0.0,
     "temperature": 0.5,
     "spawnBiome": false,
@@ -100,8 +104,8 @@
     "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
-    "spawnShipwreck": true,
-    "spawnShipwreckBeached": true,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
@@ -112,7 +116,7 @@
     "spawnEntries": [
       {
         "entity": {
-          "value": "CUSTOM:SwampSalmon"
+          "value": "CUSTOM:CorruptedHand"
         },
         "minGroup": 1,
         "maxGroup": 4,

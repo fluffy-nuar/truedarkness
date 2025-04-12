@@ -64,7 +64,7 @@ public class MinerEntity extends Monster {
 
 	@Override
 	public MobType getMobType() {
-		return MobType.UNDEFINED;
+		return MobType.UNDEAD;
 	}
 
 	@Override
@@ -105,7 +105,7 @@ public class MinerEntity extends Monster {
 	@Override
 	public void awardKillScore(Entity entity, int score, DamageSource damageSource) {
 		super.awardKillScore(entity, score, damageSource);
-		FungumKoghdaEtotObiektUbivaietDrughoghoProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		FungumKoghdaEtotObiektUbivaietDrughoghoProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	public static void init() {

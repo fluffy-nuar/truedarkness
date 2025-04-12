@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:general_scale"
+    },
+    "b": {
+      "item": "truedarkness:ancient_regulation"
+    },
+    "c": {
+      "item": "truedarkness:aquamarine_coin"
+    },
+    "d": {
+      "item": "truedarkness:calm_aquamarine"
+    }
+  },
+  "result": {
+    "item": "truedarkness:general_regulation",
+    "count": 1
+  }
+}

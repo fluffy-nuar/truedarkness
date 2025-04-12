@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_side",
   "textures": {
+    "particle": "truedarkness:block/eridium_glass",
     "edge": "truedarkness:block/eridium_glass_top",
     "pane": "truedarkness:block/eridium_glass"
   },

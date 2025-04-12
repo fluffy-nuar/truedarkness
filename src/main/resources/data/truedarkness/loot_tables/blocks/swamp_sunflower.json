@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/swamp_sunflower",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:swamp_sunflower",
+          "conditions": [
+            {
+              "block": "truedarkness:swamp_sunflower",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,14 +1,16 @@
 {
   "replace": false,
   "values": [
+    "truedarkness:cobbled_accustone_wall",
+    "truedarkness:corrupt_bricks_wall",
+    "truedarkness:swamp_cobblestone_wall",
     "truedarkness:swamp_bricks_wall",
     "truedarkness:polished_swamp_cobblestone_wall",
     "truedarkness:darknite_wall",
     "truedarkness:cobbled_darknite_wall",
     "truedarkness:darknite_bricks_wall",
     "truedarkness:sandstone_of_missing_wall",
-    "truedarkness:polished_sandstone_of_missing_wall",
-    "truedarkness:polished_sandstone_bricks_of_missing_wall",
+    "truedarkness:polished_sandstone_of_missing_bricks_wall",
     "truedarkness:polished_accustone_wall",
     "truedarkness:polished_accustone_bricks_wall",
     "truedarkness:accuswamp_mosaic_wall",

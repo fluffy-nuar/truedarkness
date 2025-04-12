@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "truedarkness:block/cobbled_darknite_top",
     "bottom": "truedarkness:block/cobbled_darknite_top",
     "top": "truedarkness:block/cobbled_darknite_top",
     "side": "truedarkness:block/cobbled_darknite"

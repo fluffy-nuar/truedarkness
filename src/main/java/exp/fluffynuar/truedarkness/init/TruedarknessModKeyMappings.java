@@ -15,15 +15,16 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
-import exp.fluffynuar.truedarkness.network.UseMagicMessage;
-import exp.fluffynuar.truedarkness.network.NosediveMessage;
+import exp.fluffynuar.truedarkness.network.ShowHideScrollMessage;
 import exp.fluffynuar.truedarkness.network.DoubleJumpMessage;
-import exp.fluffynuar.truedarkness.network.DashMessage;
+import exp.fluffynuar.truedarkness.network.ActiveAbility3Message;
+import exp.fluffynuar.truedarkness.network.ActiveAbility2Message;
+import exp.fluffynuar.truedarkness.network.ActiveAbility1Message;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class TruedarknessModKeyMappings {
-	public static final KeyMapping DOUBLE_JUMP = new KeyMapping("key.truedarkness.double_jump", GLFW.GLFW_KEY_SPACE, "key.categories.gameplay") {
+	public static final KeyMapping DOUBLE_JUMP = new KeyMapping("key.truedarkness.double_jump", GLFW.GLFW_KEY_SPACE, "key.categories.truedarkness") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -36,52 +37,84 @@ public class TruedarknessModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping NOSEDIVE = new KeyMapping("key.truedarkness.nosedive", GLFW.GLFW_KEY_N, "key.categories.gameplay") {
+	public static final KeyMapping ACTIVE_ABILITY_1 = new KeyMapping("key.truedarkness.active_ability_1", GLFW.GLFW_KEY_B, "key.categories.truedarkness") {
 		private boolean isDownOld = false;
 
 		@Override
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				TruedarknessMod.PACKET_HANDLER.sendToServer(new NosediveMessage(0, 0));
-				NosediveMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				TruedarknessMod.PACKET_HANDLER.sendToServer(new ActiveAbility1Message(0, 0));
+				ActiveAbility1Message.pressAction(Minecraft.getInstance().player, 0, 0);
+				ACTIVE_ABILITY_1_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - ACTIVE_ABILITY_1_LASTPRESS);
+				TruedarknessMod.PACKET_HANDLER.sendToServer(new ActiveAbility1Message(1, dt));
+				ActiveAbility1Message.pressAction(Minecraft.getInstance().player, 1, dt);
 			}
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping DASH = new KeyMapping("key.truedarkness.dash", GLFW.GLFW_KEY_B, "key.categories.gameplay") {
+	public static final KeyMapping ACTIVE_ABILITY_2 = new KeyMapping("key.truedarkness.active_ability_2", GLFW.GLFW_KEY_M, "key.categories.truedarkness") {
 		private boolean isDownOld = false;
 
 		@Override
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				TruedarknessMod.PACKET_HANDLER.sendToServer(new DashMessage(0, 0));
-				DashMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				TruedarknessMod.PACKET_HANDLER.sendToServer(new ActiveAbility2Message(0, 0));
+				ActiveAbility2Message.pressAction(Minecraft.getInstance().player, 0, 0);
+				ACTIVE_ABILITY_2_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - ACTIVE_ABILITY_2_LASTPRESS);
+				TruedarknessMod.PACKET_HANDLER.sendToServer(new ActiveAbility2Message(1, dt));
+				ActiveAbility2Message.pressAction(Minecraft.getInstance().player, 1, dt);
 			}
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping USE_MAGIC = new KeyMapping("key.truedarkness.use_magic", GLFW.GLFW_KEY_V, "key.categories.gameplay") {
+	public static final KeyMapping SHOW_HIDE_SCROLL = new KeyMapping("key.truedarkness.show_hide_scroll", GLFW.GLFW_KEY_UNKNOWN, "key.categories.truedarkness") {
 		private boolean isDownOld = false;
 
 		@Override
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				TruedarknessMod.PACKET_HANDLER.sendToServer(new UseMagicMessage(0, 0));
-				UseMagicMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				TruedarknessMod.PACKET_HANDLER.sendToServer(new ShowHideScrollMessage(0, 0));
+				ShowHideScrollMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping ACTIVE_ABILITY_3 = new KeyMapping("key.truedarkness.active_ability_3", GLFW.GLFW_KEY_N, "key.categories.truedarkness") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				TruedarknessMod.PACKET_HANDLER.sendToServer(new ActiveAbility3Message(0, 0));
+				ActiveAbility3Message.pressAction(Minecraft.getInstance().player, 0, 0);
+				ACTIVE_ABILITY_3_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - ACTIVE_ABILITY_3_LASTPRESS);
+				TruedarknessMod.PACKET_HANDLER.sendToServer(new ActiveAbility3Message(1, dt));
+				ActiveAbility3Message.pressAction(Minecraft.getInstance().player, 1, dt);
+			}
+			isDownOld = isDown;
+		}
+	};
+	private static long ACTIVE_ABILITY_1_LASTPRESS = 0;
+	private static long ACTIVE_ABILITY_2_LASTPRESS = 0;
+	private static long ACTIVE_ABILITY_3_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(DOUBLE_JUMP);
-		event.register(NOSEDIVE);
-		event.register(DASH);
-		event.register(USE_MAGIC);
+		event.register(ACTIVE_ABILITY_1);
+		event.register(ACTIVE_ABILITY_2);
+		event.register(SHOW_HIDE_SCROLL);
+		event.register(ACTIVE_ABILITY_3);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -90,9 +123,10 @@ public class TruedarknessModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				DOUBLE_JUMP.consumeClick();
-				NOSEDIVE.consumeClick();
-				DASH.consumeClick();
-				USE_MAGIC.consumeClick();
+				ACTIVE_ABILITY_1.consumeClick();
+				ACTIVE_ABILITY_2.consumeClick();
+				SHOW_HIDE_SCROLL.consumeClick();
+				ACTIVE_ABILITY_3.consumeClick();
 			}
 		}
 	}

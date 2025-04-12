@@ -15,9 +15,9 @@
     "hidden": true
   },
   "criteria": {
-    "general_advancement": {
+    "general_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "truedarkness:cursed_metal_advancement"
+  "parent": "truedarkness:corrupted_land_advancement"
 }

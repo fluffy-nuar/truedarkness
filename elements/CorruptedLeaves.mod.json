@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "plant",
   "definition": {
     "renderType": 13,
@@ -13,6 +13,19 @@
     "plantType": "normal",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 0,
+    "secondaryTreeChance": 0.1,
+    "trees": [
+      null,
+      null
+    ],
+    "flowerTrees": [
+      null,
+      null
+    ],
+    "megaTrees": [
+      null,
+      null
+    ],
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "customBoundingBox": false,
@@ -28,18 +41,21 @@
         "subtract": false
       }
     ],
-    "name": "§5Corrupted Leaves",
+    "name": "§5Corrupted Leaf",
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementriy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "hardness": 0.0,
     "resistance": 0.0,
     "luminance": 6,
     "unbreakable": false,
     "isSolid": false,
+    "isWaterloggable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "SMALL_DRIPLEAF"
@@ -90,6 +106,9 @@
       },
       {
         "value": "CUSTOM:Corrupt0"
+      },
+      {
+        "value": "CUSTOM:CorruptedSoil"
       }
     ],
     "isBonemealable": false,
@@ -98,6 +117,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:CorruptedPlace"
+      },
+      {
+        "value": "CUSTOM:CorruptedField"
       }
     ],
     "generationType": "Grass",

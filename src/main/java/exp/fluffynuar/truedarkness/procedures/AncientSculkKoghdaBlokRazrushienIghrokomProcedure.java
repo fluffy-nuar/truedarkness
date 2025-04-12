@@ -44,7 +44,7 @@ public class AncientSculkKoghdaBlokRazrushienIghrokomProcedure {
 				if (Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof SwordItem) {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_SWORD.get());
+							ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_SWORD.get()).copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)
@@ -53,7 +53,7 @@ public class AncientSculkKoghdaBlokRazrushienIghrokomProcedure {
 					}
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof PickaxeItem) {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_PICKAXE.get());
+							ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_PICKAXE.get()).copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)
@@ -62,7 +62,7 @@ public class AncientSculkKoghdaBlokRazrushienIghrokomProcedure {
 					}
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem) {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_AXE.get());
+							ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_AXE.get()).copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)
@@ -71,7 +71,7 @@ public class AncientSculkKoghdaBlokRazrushienIghrokomProcedure {
 					}
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof ShovelItem) {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_SHOVEL.get());
+							ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_SHOVEL.get()).copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)
@@ -80,7 +80,7 @@ public class AncientSculkKoghdaBlokRazrushienIghrokomProcedure {
 					}
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof HoeItem) {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_HOE.get());
+							ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_HOE.get()).copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)
@@ -92,7 +92,7 @@ public class AncientSculkKoghdaBlokRazrushienIghrokomProcedure {
 							|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.ENCHANTED_GOLDEN_APPLE) {
 						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() == 1) {
 							if (entity instanceof LivingEntity _entity) {
-								ItemStack _setstack = new ItemStack(TruedarknessModItems.SCUIKED_APPLE.get());
+								ItemStack _setstack = new ItemStack(TruedarknessModItems.SCULKED_APPLE.get()).copy();
 								_setstack.setCount(1);
 								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 								if (_entity instanceof Player _player)
@@ -100,13 +100,13 @@ public class AncientSculkKoghdaBlokRazrushienIghrokomProcedure {
 							}
 						} else {
 							if (world instanceof ServerLevel _level) {
-								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.SCUIKED_APPLE.get()));
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.SCULKED_APPLE.get()));
 								entityToSpawn.setPickUpDelay(10);
 								_level.addFreshEntity(entityToSpawn);
 							}
 							if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_APPLE) {
 								if (entity instanceof LivingEntity _entity) {
-									ItemStack _setstack = new ItemStack(Items.GOLDEN_APPLE);
+									ItemStack _setstack = new ItemStack(Items.GOLDEN_APPLE).copy();
 									_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 									_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 									if (_entity instanceof Player _player)
@@ -115,7 +115,7 @@ public class AncientSculkKoghdaBlokRazrushienIghrokomProcedure {
 							}
 							if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.ENCHANTED_GOLDEN_APPLE) {
 								if (entity instanceof LivingEntity _entity) {
-									ItemStack _setstack = new ItemStack(Items.ENCHANTED_GOLDEN_APPLE);
+									ItemStack _setstack = new ItemStack(Items.ENCHANTED_GOLDEN_APPLE).copy();
 									_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 									_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 									if (_entity instanceof Player _player)
@@ -124,7 +124,7 @@ public class AncientSculkKoghdaBlokRazrushienIghrokomProcedure {
 							}
 							if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.APPLE) {
 								if (entity instanceof LivingEntity _entity) {
-									ItemStack _setstack = new ItemStack(Items.APPLE);
+									ItemStack _setstack = new ItemStack(Items.APPLE).copy();
 									_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 									_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 									if (_entity instanceof Player _player)
@@ -134,7 +134,7 @@ public class AncientSculkKoghdaBlokRazrushienIghrokomProcedure {
 						}
 					}
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:deleted_mod_element"));
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:double_trouble_advancement"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {
 							for (String criteria : _ap.getRemainingCriteria())

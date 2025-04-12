@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "trudnite_ore",
@@ -12,7 +12,7 @@
     "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Trudnite Ore",
     "specialInformation": {
       "fixedValue": []
@@ -41,12 +42,14 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementriy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:RawTrudnite"
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -98,12 +101,11 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 3,
+    "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

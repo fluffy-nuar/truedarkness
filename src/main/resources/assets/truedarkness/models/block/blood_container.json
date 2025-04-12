@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/blood_container",
+    "up": "truedarkness:block/blood_container",
+    "north": "truedarkness:block/blood_container_side",
+    "east": "truedarkness:block/blood_container",
+    "south": "truedarkness:block/blood_container",
+    "west": "truedarkness:block/blood_container",
+    "particle": "truedarkness:block/blood_container"
+  },
+  "render_type": "cutout"
+}

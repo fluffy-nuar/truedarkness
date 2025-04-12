@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/corrupted_rune",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:corrupted_rune"
+        }
+      ]
+    }
+  ]
+}

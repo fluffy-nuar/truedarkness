@@ -35,7 +35,7 @@ public class RunedSwampStoneNaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.CALM.get(), 200, 0, true, true));
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(TruedarknessModItems.CALM_AQUAMARINE.get());
+				ItemStack _setstack = new ItemStack(TruedarknessModItems.CALM_AQUAMARINE.get()).copy();
 				_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)

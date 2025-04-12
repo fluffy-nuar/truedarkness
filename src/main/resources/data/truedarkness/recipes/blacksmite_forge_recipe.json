@@ -8,13 +8,13 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_trapdoor"
+      "item": "truedarkness:polished_swamp_cobblestone"
     },
     "b": {
-      "item": "truedarkness:gramite_shard"
+      "item": "minecraft:iron_ingot"
     },
     "c": {
-      "item": "truedarkness:darknite"
+      "item": "minecraft:coal"
     },
     "d": {
       "item": "minecraft:bucket"

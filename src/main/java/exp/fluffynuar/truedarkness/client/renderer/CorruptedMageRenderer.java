@@ -17,14 +17,14 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class CorruptedMageRenderer extends MobRenderer<CorruptedMageEntity, Modelcorrupted_mage<CorruptedMageEntity>> {
 	public CorruptedMageRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcorrupted_mage(context.bakeLayer(Modelcorrupted_mage.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelcorrupted_mage<CorruptedMageEntity>(context.bakeLayer(Modelcorrupted_mage.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new RenderLayer<CorruptedMageEntity, Modelcorrupted_mage<CorruptedMageEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("truedarkness:textures/entities/corrupted_light.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, CorruptedMageEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, 15728640, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
 			}
 		});
 	}

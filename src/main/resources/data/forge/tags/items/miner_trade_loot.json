@@ -4,13 +4,12 @@
     "truedarkness:eridium_shard",
     "truedarkness:darknite",
     "truedarkness:firenite_scrap",
-    "truedarkness:gramite_shard",
     "truedarkness:dark_crystal_shard",
     "truedarkness:sandstone_of_missing",
     "truedarkness:aquamarine_coin",
     "truedarkness:metenite_shard",
     "truedarkness:soul_bottle",
-    "truedarkness:soulsteal_shard",
+    "truedarkness:fantal_shard",
     "truedarkness:glownite_ingot",
     "minecraft:cobblestone",
     "minecraft:raw_iron",
@@ -19,6 +18,7 @@
     "minecraft:diamond",
     "minecraft:emerald",
     "minecraft:iron_pickaxe",
-    "truedarkness:marinite_upgrade"
+    "truedarkness:marinite_upgrade_smithing_template",
+    "truedarkness:lavender_tea"
   ]
 }

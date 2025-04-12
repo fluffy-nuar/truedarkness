@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -13,9 +13,11 @@
     "onBodyTick": {
       "name": "GeneralArmorSobytiieTaktovKirasy"
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "armorTextureFile": "null__",
     "helmetName": "",
     "bodyName": "General Chestplate",

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/measky_wild_moss",
+    "up": "truedarkness:block/measky_wild_moss",
+    "north": "truedarkness:block/measky_wild_moss",
+    "east": "truedarkness:block/measky_wild_moss",
+    "south": "truedarkness:block/measky_wild_moss",
+    "west": "truedarkness:block/measky_wild_moss",
+    "particle": "truedarkness:block/measky_wild_moss"
+  },
+  "render_type": "solid"
+}

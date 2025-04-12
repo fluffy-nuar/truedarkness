@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "ccc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:chiseled_corrupt_bricks"
+    },
+    "b": {
+      "item": "truedarkness:corrupted_bubble_block"
+    },
+    "c": {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cursed_bookshelf",
+    "count": 1
+  }
+}

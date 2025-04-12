@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:the_sky",
+  "features": "truedarkness:ice_gen",
+  "step": "surface_structures"
+}

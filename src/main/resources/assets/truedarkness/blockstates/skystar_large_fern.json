@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "truedarkness:block/skystar_large_fern"
+    },
+    "half=lower": {
+      "model": "truedarkness:block/skystar_large_fern_bottom"
+    }
+  }
+}

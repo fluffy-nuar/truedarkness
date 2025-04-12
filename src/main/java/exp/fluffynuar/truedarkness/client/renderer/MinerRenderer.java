@@ -17,14 +17,14 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class MinerRenderer extends MobRenderer<MinerEntity, Modelminer<MinerEntity>> {
 	public MinerRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelminer(context.bakeLayer(Modelminer.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelminer<MinerEntity>(context.bakeLayer(Modelminer.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new RenderLayer<MinerEntity, Modelminer<MinerEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("truedarkness:textures/entities/miner_light.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, MinerEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, 15728640, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
 			}
 		});
 	}

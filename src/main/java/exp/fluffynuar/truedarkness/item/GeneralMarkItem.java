@@ -8,9 +8,12 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
+
+import exp.fluffynuar.truedarkness.procedures.WIPTextProcedure;
 
 public class GeneralMarkItem extends Item implements ICurioItem {
 	public GeneralMarkItem() {
@@ -18,7 +21,14 @@ public class GeneralMarkItem extends Item implements ICurioItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
+		Entity entity = itemstack.getEntityRepresentation();
+		String hoverText = WIPTextProcedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 }

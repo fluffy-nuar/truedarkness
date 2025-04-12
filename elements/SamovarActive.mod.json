@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "samovar",
@@ -51,6 +51,7 @@
         "subtract": true
       }
     ],
+    "customProperties": [],
     "name": "Samovar",
     "specialInformation": {
       "fixedValue": []
@@ -59,9 +60,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": true,
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "CUSTOM:Samovar"
@@ -118,7 +117,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": -1,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "SamovarGUI",
@@ -130,14 +129,7 @@
     "inventoryOutSlotIDs": [
       6
     ],
-    "inventoryInSlotIDs": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5
-    ],
+    "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
     "energyCapacity": 1,

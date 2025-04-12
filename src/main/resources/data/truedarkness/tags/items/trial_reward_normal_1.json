@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:cvetaliy_grain",
+    "truedarkness:fantal_shard",
+    "truedarkness:dark_crystal_shard",
+    "truedarkness:firenite_scrap",
+    "minecraft:copper_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:iron_helmet",
+    "minecraft:iron_boots",
+    "minecraft:emerald",
+    "minecraft:iron_ingot"
+  ]
+}

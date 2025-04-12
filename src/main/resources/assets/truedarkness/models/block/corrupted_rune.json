@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "truedarkness:block/corrupted_rune",
-    "up": "truedarkness:block/corrupted_rune",
-    "north": "truedarkness:block/corrupted_rune",
-    "east": "truedarkness:block/corrupted_rune",
-    "south": "truedarkness:block/corrupted_rune",
-    "west": "truedarkness:block/corrupted_rune",
-    "particle": "truedarkness:block/corrupted_rune"
+    "down": "truedarkness:block/runed_corrupted_bricks",
+    "up": "truedarkness:block/runed_corrupted_bricks",
+    "north": "truedarkness:block/runed_corrupted_bricks",
+    "east": "truedarkness:block/runed_corrupted_bricks",
+    "south": "truedarkness:block/runed_corrupted_bricks",
+    "west": "truedarkness:block/runed_corrupted_bricks",
+    "particle": "truedarkness:block/runed_corrupted_bricks"
   },
   "render_type": "solid"
 }

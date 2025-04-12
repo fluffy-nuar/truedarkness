@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "glow_fungus_0",
@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": true,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "glow_fungus_0",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -24,16 +24,17 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
+        "mx": 1.0,
+        "my": 3.0,
+        "mz": 1.0,
+        "Mx": 15.0,
         "My": 16.0,
-        "Mz": 16.0,
+        "Mz": 15.0,
         "subtract": false
       }
     ],
-    "name": "Glow Fungus Hat",
+    "customProperties": [],
+    "name": "Glow Fungus Vine",
     "specialInformation": {
       "fixedValue": []
     },
@@ -41,12 +42,14 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": true,
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:GlowFungusHatItem"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -67,7 +70,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:GlowFungusHatItem"
+      "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -100,10 +103,12 @@
     },
     "luminance": 3,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "vanillaToolTier": "STONE",
+    "placingCondition": {
+      "name": "NeaskyVinesUsloviieRazmieshchieniiaBloka"
+    },
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -121,6 +126,9 @@
     "fluidRestrictions": [],
     "onNeighbourBlockChanges": {
       "name": "GlowFungusHatPriIzmienieniiSosiednieghoBloka"
+    },
+    "onRandomUpdateEvent": {
+      "name": "SporeVine2SpontannoNaStoronieKliienta"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

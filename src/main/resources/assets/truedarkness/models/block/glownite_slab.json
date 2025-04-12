@@ -1,6 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
+    "particle": "truedarkness:block/glownite_block",
     "bottom": "truedarkness:block/glownite_block",
     "top": "truedarkness:block/glownite_block",
     "side": "truedarkness:block/glownite_block"

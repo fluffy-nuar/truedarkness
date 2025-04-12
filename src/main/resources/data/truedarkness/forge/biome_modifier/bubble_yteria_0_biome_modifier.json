@@ -4,7 +4,8 @@
     "truedarkness:mine",
     "truedarkness:retroland",
     "truedarkness:swamp_wasteland",
-    "truedarkness:swamps"
+    "truedarkness:crying_swamps",
+    "truedarkness:crying_forest"
   ],
   "features": "truedarkness:bubble_yteria_0",
   "step": "local_modifications"

@@ -1,0 +1,49 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="truedarkness"
+version="2.3"
+displayName="True Darkness Elementriy"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/true-darkness-elementriy"
+logoFile="logo.png"
+credits="§3Fluffy_Nuar"
+authors="Fluffy Nuar"
+description="§8Welcome to the world of Elementry. This is a place where even the strangest and most incomprehensible things take on a double meaning. In True Darkness, you will be able to imagine the world from which sculk got out (or is it not him yet?). You will be able to travel through the lavender fields or make delicious tea. Create new sets of armor, and maybe unravel the mystery of a long-dying world? It's up to you! The mod is in development, so it's worth getting ready for future content."
+displayTest="IGNORE_SERVER_VERSION"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.truedarkness]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.6.117,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.truedarkness]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.6]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.truedarkness]]
+    modId="curios_api"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.truedarkness]]
+    modId="jei"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

@@ -11,6 +11,6 @@ public class GlassBottleCorruptIghrokZakanchivaietIspolzovaniiePriedmietaProcedu
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.CORRUPTING.get(), 600, 0, true, false));
+			_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(), 600, 0, true, false));
 	}
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/sculk_soil",
+    "up": "truedarkness:block/sculk_soil",
+    "north": "truedarkness:block/sculk_soil",
+    "east": "truedarkness:block/sculk_soil",
+    "south": "truedarkness:block/sculk_soil",
+    "west": "truedarkness:block/sculk_soil",
+    "particle": "truedarkness:block/sculk_soil"
+  },
+  "render_type": "solid"
+}

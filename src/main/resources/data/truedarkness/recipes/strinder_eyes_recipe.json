@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "bb"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:corrupt"
+    },
+    "b": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "result": {
+    "item": "truedarkness:strinder_eyes",
+    "count": 1
+  }
+}

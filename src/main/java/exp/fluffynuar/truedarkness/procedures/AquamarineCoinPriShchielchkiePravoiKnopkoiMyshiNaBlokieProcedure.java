@@ -2,6 +2,7 @@ package exp.fluffynuar.truedarkness.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GameType;
@@ -33,7 +34,7 @@ public class AquamarineCoinPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria")))
+		if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria"))
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.AQUAMARINE_COIN.get()) {
 			if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).corrupt_second <= 5) {
 				if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
@@ -70,7 +71,7 @@ public class AquamarineCoinPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(TruedarknessModItems.AQUAMARINE_COIN.get());
+						ItemStack _setstack = new ItemStack(TruedarknessModItems.AQUAMARINE_COIN.get()).copy();
 						_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
@@ -97,7 +98,7 @@ public class AquamarineCoinPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(TruedarknessModItems.AQUAMARINE_COIN.get());
+						ItemStack _setstack = new ItemStack(TruedarknessModItems.AQUAMARINE_COIN.get()).copy();
 						_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)

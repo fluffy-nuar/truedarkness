@@ -1,6 +1,7 @@
 {
   "parent": "block/door_bottom_right_open",
   "textures": {
+    "particle": "truedarkness:block/cyan_door",
     "bottom": "truedarkness:block/cyan_door",
     "top": "truedarkness:block/cyan_door_top"
   },

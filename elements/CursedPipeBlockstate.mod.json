@@ -1,0 +1,114 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "CursedPipe",
+    "blockstateList": [
+      {
+        "texture": "cursed_pipe",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cursed_pipe_connected_f:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 5.0,
+            "my": 5.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 11.0,
+            "Mz": 15.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.0,
+            "my": 4.0,
+            "mz": 13.0,
+            "Mx": 12.0,
+            "My": 12.0,
+            "Mz": 14.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.0,
+            "my": 4.0,
+            "mz": 15.0,
+            "Mx": 12.0,
+            "My": 12.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "cursed_pipe",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cursed_pipe_connected_b:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 5.0,
+            "my": 5.0,
+            "mz": 1.0,
+            "Mx": 11.0,
+            "My": 11.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.0,
+            "my": 4.0,
+            "mz": 2.0,
+            "Mx": 12.0,
+            "My": 12.0,
+            "Mz": 3.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.0,
+            "my": 4.0,
+            "mz": 0.0,
+            "Mx": 12.0,
+            "My": 12.0,
+            "Mz": 1.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "cursed_pipe",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cursed_pipe_connected_fb:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 5.0,
+            "my": 5.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 11.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

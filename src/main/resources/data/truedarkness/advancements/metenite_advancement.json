@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "metenite_advancement": {
+    "metenite_advancement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

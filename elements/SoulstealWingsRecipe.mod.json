@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -15,19 +15,19 @@
         "value": "CUSTOM:SoulstealNugget"
       },
       {
-        "value": "CUSTOM:PollenFeather"
+        "value": "Items.FEATHER"
       },
       {
         "value": "CUSTOM:SoulstealNugget"
       },
       {
-        "value": "CUSTOM:SoulstealIngot"
+        "value": "CUSTOM:Synteriy"
       },
       {
-        "value": "CUSTOM:PollenFeather"
+        "value": "Items.FEATHER"
       },
       {
-        "value": "CUSTOM:SoulstealIngot"
+        "value": "CUSTOM:Synteriy"
       },
       {
         "value": "CUSTOM:SoulstealNugget"

@@ -1,8 +1,8 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "ancient_sculk",
+    "texture": "minecraft:sculk",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Ancient Sculk",
     "specialInformation": {
       "fixedValue": []
@@ -41,9 +42,11 @@
     "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementriy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "destroyTool": "hoe",
     "customDrop": {
       "value": "Blocks.AIR"
@@ -56,7 +59,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "SCULK"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -100,10 +103,9 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

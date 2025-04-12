@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:soulsteal_wings"
+      "item": "truedarkness:fantal_wings"
     },
     "title": {
       "translate": "advancements.soulsteal_wings_advancement.title"
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "soulsteal_wings_advancement": {
+    "soulsteal_wings_advancement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "truedarkness:soulsteal_wings"
+              "truedarkness:fantal_wings"
             ],
             "count": {
               "min": 1,

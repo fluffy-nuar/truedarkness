@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "lantern": "corrupted_lantern"
+      },
+      "name": "default"
+    }
+  }
+}

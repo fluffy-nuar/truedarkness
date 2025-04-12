@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
     "mobName": "Glow Bug",
@@ -25,25 +25,29 @@
       {
         "model": "Default",
         "texture": "glow_bug_light.png",
+        "disableHurtOverlay": false,
         "glow": true
       }
     ],
+    "animations": [],
     "modelWidth": 0.6,
     "modelHeight": 0.6,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -13710930,
+      "value": -11159385,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -14336193,
+      "value": -12421771,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -75,7 +79,7 @@
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 10,
+    "health": 5,
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
@@ -85,7 +89,6 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -120,16 +123,32 @@
     "stepSound": {
       "value": ""
     },
-    "entityDataEntries": [],
-    "whenThisMobKillsAnother": {
-      "name": "FungumKoghdaEtotObiektUbivaietDrughogho"
+    "raidCelebrationSound": {
+      "value": ""
+    },
+    "entityDataEntries": [
+      {
+        "name": "sit",
+        "type": "logic",
+        "value": true
+      }
+    ],
+    "onRightClickedOn": {
+      "name": "GlowBugPriShchielchkiePKMPoSushchnosti"
+    },
+    "onPlayerCollidesWith": {
+      "name": "GlowBugPriStolknovieniiIghrokaSSushchnostiu"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": false,
-    "tameable": false,
-    "breedTriggerItems": [],
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">3</field><field name=\"max_distance\">2</field><field name=\"condition\">BushTravel,BushTravel</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">BushTravel,BushTravel</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
+    "tameable": true,
+    "breedTriggerItems": [
+      {
+        "value": "CUSTOM:CvetaliyGrain"
+      }
+    ],
     "ranged": false,
     "rangedAttackItem": {
       "value": ""
@@ -142,12 +161,21 @@
     "spawningProbability": 1,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Mine"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

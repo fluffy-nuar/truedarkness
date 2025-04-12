@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "deep_dark_adv": {
+    "deep_dark_adv_0": {
       "trigger": "minecraft:location",
       "conditions": {
         "player": [

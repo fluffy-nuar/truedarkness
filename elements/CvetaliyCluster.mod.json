@@ -1,21 +1,21 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "cvetaliy_block",
+    "texture": "cvetaliy_cluster",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "cvetaliy_cluster:default",
-    "rotationMode": 0,
+    "customModelName": "cvetaliy_cluster_1:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "cvetaliy_block",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -24,51 +24,16 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 5.0,
-        "my": 0.0,
-        "mz": 4.0,
-        "Mx": 13.0,
-        "My": 2.0,
-        "Mz": 12.0,
-        "subtract": false
-      },
-      {
-        "mx": 6.0,
-        "my": 0.0,
-        "mz": 6.0,
-        "Mx": 10.0,
-        "My": 8.0,
-        "Mz": 10.0,
-        "subtract": false
-      },
-      {
-        "mx": 7.0,
-        "my": 0.0,
-        "mz": 5.0,
-        "Mx": 11.0,
-        "My": 6.0,
-        "Mz": 9.0,
-        "subtract": false
-      },
-      {
-        "mx": 8.0,
-        "my": 0.0,
-        "mz": 7.0,
-        "Mx": 12.0,
-        "My": 10.0,
-        "Mz": 11.0,
-        "subtract": false
-      },
-      {
         "mx": 3.0,
         "my": 0.0,
-        "mz": 5.0,
-        "Mx": 11.0,
-        "My": 1.0,
-        "Mz": 11.0,
+        "mz": 3.0,
+        "Mx": 13.0,
+        "My": 14.0,
+        "Mz": 13.0,
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Cvetaliy Cluster",
     "specialInformation": {
       "fixedValue": []
@@ -77,9 +42,11 @@
     "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": true,
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementriy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": "CUSTOM:CvetaliyGrain"
@@ -136,10 +103,9 @@
     },
     "luminance": 6,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "vanillaToolTier": "STONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

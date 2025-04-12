@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -21,13 +21,13 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "Items.SWEET_BERRIES"
+      },
+      {
+        "value": "Items.GLOW_BERRIES"
       },
       {
         "value": "CUSTOM:Grape"
-      },
-      {
-        "value": "Items.SWEET_BERRIES"
       },
       {
         "value": ""

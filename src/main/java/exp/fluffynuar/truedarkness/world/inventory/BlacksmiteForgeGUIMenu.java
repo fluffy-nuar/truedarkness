@@ -27,11 +27,10 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-import exp.fluffynuar.truedarkness.procedures.BlacksmiteForgeGUIPriZakrytiiGUIProcedure;
+import exp.fluffynuar.truedarkness.procedures.BlacksmiteForgeGUIPriZakrytiiIntierfieisaProcedure;
 import exp.fluffynuar.truedarkness.procedures.BlacksmiteForgeGUIPokaEtotGUIOtkrytProcedure;
 import exp.fluffynuar.truedarkness.network.BlacksmiteForgeGUISlotMessage;
 import exp.fluffynuar.truedarkness.init.TruedarknessModMenus;
-import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
 @Mod.EventBusSubscriber
@@ -89,12 +88,8 @@ public class BlacksmiteForgeGUIMenu extends AbstractContainerMenu implements Sup
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 55) {
 			private final int slot = 0;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(0, 1, 0);
-			}
+			private int x = BlacksmiteForgeGUIMenu.this.x;
+			private int y = BlacksmiteForgeGUIMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -103,41 +98,23 @@ public class BlacksmiteForgeGUIMenu extends AbstractContainerMenu implements Sup
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 62, 55) {
 			private final int slot = 1;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(1, 1, 0);
-			}
+			private int x = BlacksmiteForgeGUIMenu.this.x;
+			private int y = BlacksmiteForgeGUIMenu.this.y;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 55) {
 			private final int slot = 2;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(2, 1, 0);
-			}
+			private int x = BlacksmiteForgeGUIMenu.this.x;
+			private int y = BlacksmiteForgeGUIMenu.this.y;
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 98, 55) {
 			private final int slot = 3;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(3, 1, 0);
-			}
-		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 134, 55) {
-			private final int slot = 4;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return TruedarknessModItems.ELDER_DOCUMENT.get() == stack.getItem();
-			}
+			private int x = BlacksmiteForgeGUIMenu.this.x;
+			private int y = BlacksmiteForgeGUIMenu.this.y;
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 80, 17) {
 			private final int slot = 5;
+			private int x = BlacksmiteForgeGUIMenu.this.x;
+			private int y = BlacksmiteForgeGUIMenu.this.y;
 
 			@Override
 			public void onTake(Player entity, ItemStack stack) {
@@ -177,16 +154,16 @@ public class BlacksmiteForgeGUIMenu extends AbstractContainerMenu implements Sup
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 6) {
-				if (!this.moveItemStackTo(itemstack1, 6, this.slots.size(), true))
+			if (index < 5) {
+				if (!this.moveItemStackTo(itemstack1, 5, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 6, false)) {
-				if (index < 6 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 6 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 5, false)) {
+				if (index < 5 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 5 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 6, 6 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 5, 5 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -281,7 +258,7 @@ public class BlacksmiteForgeGUIMenu extends AbstractContainerMenu implements Sup
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		BlacksmiteForgeGUIPriZakrytiiGUIProcedure.execute(world, x, y, z);
+		BlacksmiteForgeGUIPriZakrytiiIntierfieisaProcedure.execute(entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
@@ -318,7 +295,7 @@ public class BlacksmiteForgeGUIMenu extends AbstractContainerMenu implements Sup
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			BlacksmiteForgeGUIPokaEtotGUIOtkrytProcedure.execute(entity);
+			BlacksmiteForgeGUIPokaEtotGUIOtkrytProcedure.execute(world, entity);
 		}
 	}
 }

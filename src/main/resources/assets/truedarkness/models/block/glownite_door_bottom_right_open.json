@@ -1,6 +1,7 @@
 {
   "parent": "block/door_bottom_right_open",
   "textures": {
+    "particle": "truedarkness:block/glownite_door",
     "bottom": "truedarkness:block/glownite_door",
     "top": "truedarkness:block/glownite_door_top"
   },

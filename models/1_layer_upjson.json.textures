@@ -17,6 +17,12 @@
         "0": "sakura_leaves"
       },
       "name": "sakura_leaves"
+    },
+    "neasky_moss": {
+      "map": {
+        "0": "measky_wild_moss"
+      },
+      "name": "neasky_moss"
     }
   }
 }

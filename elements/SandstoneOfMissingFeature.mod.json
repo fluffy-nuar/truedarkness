@@ -1,7 +1,8 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "feature",
   "definition": {
+    "skipPlacement": false,
     "generationStep": "UNDERGROUND_ORES",
     "restrictionBiomes": [
       {
@@ -11,6 +12,6 @@
     "generateCondition": {
       "name": "SandstoneOfMissingDopolnitielnoieUsloviieGienieratsii"
     },
-    "featurexml": "<xml><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\">\n<value name=\"feature\"><block type=\"feature_ore\">\n<mutation inputs=\"1\"></mutation>\n<field name=\"discardOnAirChance\">0</field>\n<field name=\"size\">16</field><value name=\"target0\"><block type=\"ore_target\">\n\t<value name=\"target\"><block type=\"rule_test_blockstate_match\">\n\t\t<value name=\"blockstate\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:SwampStone</field></block></value>\n\t</block></value>\n\t<value name=\"state\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:SandstoneOfMissing</field></block></value>\n</block></value></block></value>\n<next><block type=\"placement_count\">\n\t<value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">10</field></block></value>\n<next>\n<block type=\"placement_in_square\"><next>\n<block type=\"placement_height_uniform\">\n\t<value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">0</field></block></value>\n\t<value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">64</field></block></value>\n<next>\n<block type=\"placement_biome_filter\"></block>\n</next></block></next></block></next></block></next></block></xml>\n"
+    "featurexml": "<xml><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\">\n<value name=\"feature\"><block type=\"feature_ore\">\n<mutation inputs=\"1\"></mutation>\n<field name=\"discardOnAirChance\">0</field>\n<field name=\"size\">16</field><value name=\"target0\"><block type=\"ore_target\">\n\t<value name=\"target\"><block type=\"rule_test_blockstate_match\">\n\t\t<value name=\"blockstate\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">CUSTOM:SwampStone</field></block></value>\n\t</block></value>\n\t<value name=\"state\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">CUSTOM:SandstoneOfMissing</field></block></value>\n</block></value></block></value>\n<next><block type=\"placement_count\">\n\t<value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">10</field></block></value>\n<next>\n<block type=\"placement_in_square\"><next>\n<block type=\"placement_height_uniform\">\n\t<value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">0</field></block></value>\n\t<value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">64</field></block></value>\n<next>\n<block type=\"placement_biome_filter\"></block>\n</next></block></next></block></next></block></next></block></xml>\n"
   }
 }

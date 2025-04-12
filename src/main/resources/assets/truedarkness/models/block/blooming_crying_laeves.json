@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/blooming_crying_leaves",
+  "textures": {
+    "all": "truedarkness:block/blooming_crying_leaves",
+    "particle": "truedarkness:block/blooming_crying_leaves",
+    "0": "truedarkness:block/blooming_crying_leaves_model"
+  },
+  "render_type": "cutout"
+}

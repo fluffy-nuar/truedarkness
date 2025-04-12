@@ -1,9 +1,9 @@
 {
   "parent": "truedarkness:custom/light_of_soul",
   "textures": {
-    "all": "truedarkness:block/soulsteal_grid",
-    "particle": "truedarkness:block/soulsteal_grid",
-    "0": "truedarkness:block/soulsteal_grid",
+    "all": "truedarkness:block/fantal_grid",
+    "particle": "truedarkness:block/fantal_grid",
+    "0": "truedarkness:block/fantal_grid",
     "1": "truedarkness:block/light_of_soul"
   },
   "render_type": "cutout"

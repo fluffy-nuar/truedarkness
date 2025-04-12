@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:sandglass"
+    },
+    {
+      "item": "truedarkness:light_of_soul"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:soul_sandglass",
+    "count": 1
+  }
+}

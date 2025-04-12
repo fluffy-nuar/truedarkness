@@ -10,11 +10,6 @@ public class SkrezhalBreakingMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.truedarkness.skrezhal_breaking";
-	}
-
-	@Override
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}

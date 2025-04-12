@@ -6,12 +6,7 @@ import net.minecraft.world.effect.MobEffect;
 
 public class DealCooldownMobEffect extends MobEffect {
 	public DealCooldownMobEffect() {
-		super(MobEffectCategory.NEUTRAL, -8923206);
-	}
-
-	@Override
-	public String getDescriptionId() {
-		return "effect.truedarkness.deal_cooldown";
+		super(MobEffectCategory.NEUTRAL, -4141093);
 	}
 
 	@Override

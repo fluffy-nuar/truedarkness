@@ -1,0 +1,26 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Reactor Radient",
+    "icon": "reactor_radient",
+    "color": {
+      "value": -8121926,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "ReactorRadientKazhdyiTikVoVriemiaEffiekta"
+    },
+    "onExpired": {
+      "name": "ReactorRadientPriNalozhieniiEffiekta"
+    }
+  }
+}

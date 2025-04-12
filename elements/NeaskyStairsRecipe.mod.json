@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "wooden_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NeaskyPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:NeaskyPlanks"
+      },
+      {
+        "value": "CUSTOM:NeaskyPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:NeaskyPlanks"
+      },
+      {
+        "value": "CUSTOM:NeaskyPlanks"
+      },
+      {
+        "value": "CUSTOM:NeaskyPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NeaskyStairs"
+    },
+    "name": "neasky_stairs_recipe",
+    "namespace": "mod"
+  }
+}

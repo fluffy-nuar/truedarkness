@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/corrupted_sunflower",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:corrupted_sunflower",
+          "conditions": [
+            {
+              "block": "truedarkness:corrupted_sunflower",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

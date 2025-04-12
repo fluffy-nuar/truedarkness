@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:corrupted_forest",
+  "features": "truedarkness:corrupted_bush_gen",
+  "step": "surface_structures"
+}

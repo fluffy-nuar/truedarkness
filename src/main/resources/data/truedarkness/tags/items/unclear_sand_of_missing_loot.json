@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:chiseled_glass_shard",
+    "truedarkness:chiseled_glass_shard_1",
+    "truedarkness:chiseled_glass_shard_2",
+    "truedarkness:chiseled_glass_shard_3",
+    "truedarkness:chiseled_glass_shard_4",
+    "truedarkness:empty_chiseled_glass_shard",
+    "truedarkness:letter",
+    "truedarkness:sandglass",
+    "truedarkness:reel",
+    "truedarkness:chiseled_ancient_glass_shard",
+    "truedarkness:empty_chiseled_ancient_glass_shard",
+    "truedarkness:ancient_papyrus",
+    "truedarkness:elder_tear",
+    "truedarkness:music_disc_forest_night",
+    "truedarkness:music_disc_humility",
+    "truedarkness:aquamarine_coin",
+    "truedarkness:fantal_shard",
+    "truedarkness:metenite_shard",
+    "truedarkness:dark_crystal_shard",
+    "truedarkness:cvetaliy_grain",
+    "truedarkness:ancient_regulation",
+    "truedarkness:soul_grain",
+    "truedarkness:marinite_upgrade_smithing_template",
+    "truedarkness:metamorphosis_armor_trim_smithing_template"
+  ]
+}

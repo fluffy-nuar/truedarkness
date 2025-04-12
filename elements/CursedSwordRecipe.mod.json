@@ -1,48 +1,22 @@
 {
-  "_fv": 57,
-  "_type": "recipe",
+  "_fv": 73,
+  "_type": "jeirecipe",
   "definition": {
-    "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
-    "group": "",
-    "cookingBookCategory": "MISC",
-    "xpReward": 0.0,
-    "cookingTime": 200,
-    "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CorruptedHandFangs"
-      },
-      {
-        "value": "CUSTOM:CorruptedHandFangs"
-      },
-      {
-        "value": "CUSTOM:CorruptedHandFangs"
-      },
-      {
-        "value": "CUSTOM:EridiumHeart"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CursedMetal"
-      },
-      {
-        "value": "CUSTOM:SoulstealSword"
-      },
-      {
-        "value": ""
-      }
-    ],
-    "recipeReturnStack": {
+    "category": "cursed_anvil_recipe_type",
+    "result": {
       "value": "CUSTOM:CursedSword"
     },
-    "name": "cursed_sword_recipe",
-    "namespace": "mod"
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:FireniteSword"
+      },
+      {
+        "value": "CUSTOM:CorruptedHandFangs"
+      },
+      {
+        "value": "CUSTOM:EvolutionEridiumShard"
+      }
+    ]
   }
 }

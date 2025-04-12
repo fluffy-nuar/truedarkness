@@ -1,0 +1,25 @@
+package exp.fluffynuar.truedarkness.procedures;
+
+import top.theillusivec4.curios.api.CuriosApi;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+
+import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
+import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
+
+public class MMD5Procedure {
+	public static boolean execute(Entity entity) {
+		if (entity == null)
+			return false;
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SPELL_REGEN.get() && !WingsNoneEquippedProcedure.execute(entity)
+				|| ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("spell")).equals("regen") && !WingsNoneEquippedProcedure.execute(entity)
+				|| (("" + (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).magic_down).equals("regen") && entity instanceof LivingEntity lv
+						? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.ECHO_WINGS.get(), lv).isPresent()
+						: false)) {
+			return true;
+		}
+		return false;
+	}
+}

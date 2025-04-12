@@ -228,29 +228,30 @@
       }
     }
   ],
+  "gui_light": "front",
   "display": {
     "thirdperson_righthand": {
       "rotation": [
-        -25,
-        -90,
-        -25
+        45.55,
+        -56.2,
+        29.51
       ],
       "translation": [
         0,
-        -11,
-        0
+        -8.25,
+        -4.5
       ]
     },
     "thirdperson_lefthand": {
       "rotation": [
-        25.5,
-        -90,
-        25
+        45.55,
+        -56.2,
+        29.51
       ],
       "translation": [
         0,
-        -11.5,
-        0
+        -8.25,
+        -4.5
       ]
     },
     "firstperson_righthand": {
@@ -286,12 +287,12 @@
     },
     "gui": {
       "rotation": [
-        -170,
-        26,
-        -180
+        -170.67,
+        15.63,
+        -178.13
       ],
       "translation": [
-        0.25,
+        -0.5,
         -3.25,
         0
       ],

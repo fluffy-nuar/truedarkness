@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "berries": "lighted_vine_stem_full_0",
+        "stem": "lighted_berry_stem"
+      },
+      "name": "default"
+    }
+  }
+}

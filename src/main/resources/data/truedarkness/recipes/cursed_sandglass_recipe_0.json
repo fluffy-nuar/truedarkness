@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:cursed_anvil_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:sandglass"
+    },
+    {
+      "item": "truedarkness:corrupted_hand_fangs"
+    },
+    {
+      "item": "truedarkness:evolution_eridium_shard"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:cursed_sandglass",
+    "count": 1
+  }
+}

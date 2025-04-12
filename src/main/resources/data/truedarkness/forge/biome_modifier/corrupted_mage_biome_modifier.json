@@ -1,6 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "truedarkness:corrupted_place",
+  "biomes": "truedarkness:corrupted_forest",
   "spawners": {
     "type": "truedarkness:corrupted_mage",
     "weight": 2,

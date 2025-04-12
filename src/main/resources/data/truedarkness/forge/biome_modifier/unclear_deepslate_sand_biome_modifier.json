@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "deep_dark",
+  "features": "truedarkness:unclear_deepslate_sand",
+  "step": "underground_ores"
+}

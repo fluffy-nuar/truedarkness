@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/eridium_magnifier"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:cursed_magnifier_active": 1
+      },
+      "model": "truedarkness:item/cursed_magnifier_0"
+    }
+  ]
+}

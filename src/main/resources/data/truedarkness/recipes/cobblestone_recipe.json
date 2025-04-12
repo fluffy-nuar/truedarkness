@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa ",
+    "aab",
+    " bb"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:swamp_cobblestone"
+    },
+    "b": {
+      "item": "truedarkness:swamp_kelp"
+    }
+  },
+  "result": {
+    "item": "minecraft:cobblestone",
+    "count": 4
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/cry_log_top",
+    "up": "truedarkness:block/cry_log_top",
+    "north": "truedarkness:block/cry_wood",
+    "east": "truedarkness:block/cry_wood",
+    "south": "truedarkness:block/cry_wood",
+    "west": "truedarkness:block/cry_wood",
+    "particle": "truedarkness:block/cry_log_top"
+  },
+  "render_type": "translucent"
+}

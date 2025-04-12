@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "samovar_recipe_type",
+    "result": {
+      "value": "CUSTOM:Coffee"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:MilkCup"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "CUSTOM:SweetHerbs"
+      }
+    ]
+  }
+}

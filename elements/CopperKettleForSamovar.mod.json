@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "copper_kettle",
@@ -60,6 +60,7 @@
         "subtract": true
       }
     ],
+    "customProperties": [],
     "name": "Kettle For Samover",
     "specialInformation": {
       "fixedValue": []
@@ -68,9 +69,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "CUSTOM:SamovarActive"
@@ -127,10 +126,9 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": -1,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

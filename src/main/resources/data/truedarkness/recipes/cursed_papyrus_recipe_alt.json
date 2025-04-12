@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:ancient_papyrus"
+    },
+    {
+      "item": "truedarkness:corrupted_sculk_catalyst"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:cursed_scroll",
+    "count": 1
+  }
+}

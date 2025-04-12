@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:echo_stone",
+    "truedarkness:sculked_apple",
+    "truedarkness:shaddy_melon_item",
+    "truedarkness:sculk_mana_bottle",
+    "truedarkness:sculk_ring",
+    "truedarkness:reinforced_shell",
+    "truedarkness:echo_shell",
+    "truedarkness:echo_bottle",
+    "truedarkness:reinforced_key",
+    "truedarkness:reinforced_ring",
+    "truedarkness:seeker_plant_item",
+    "truedarkness:echo_reel_5",
+    "truedarkness:echo_reel_6",
+    "truedarkness:echo_reel_7",
+    "truedarkness:music_disc_humility"
+  ]
+}

@@ -1,9 +1,0 @@
-{
-  "parent": "truedarkness:custom/inks",
-  "textures": {
-    "all": "truedarkness:block/inks",
-    "particle": "truedarkness:block/inks",
-    "0": "truedarkness:block/tablecloth"
-  },
-  "render_type": "cutout"
-}

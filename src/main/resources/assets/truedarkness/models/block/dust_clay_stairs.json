@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "truedarkness:block/dust_clay",
     "bottom": "truedarkness:block/dust_clay",
     "top": "truedarkness:block/dust_clay",
     "side": "truedarkness:block/dust_clay"

@@ -1,25 +1,30 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "CUSTOM:Corrupt"
+      "value": "Blocks.AIR"
     },
     "showParticles": false,
     "actionSound": {
-      "value": "block.beacon.deactivate"
+      "value": "block.enchantment_table.use"
     },
     "igniteFire": false,
-    "power": 1.0,
-    "damage": 2.0,
+    "power": 0.0,
+    "damage": 0.0,
     "knockback": 0,
     "entityModel": "Default",
     "customModelTexture": "",
-    "onHitsEntity": {
-      "name": "ShandarahKoghdaSnariadPopadaietVSushchnost"
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "ShandarahProjectileKoghdaSnariadPopadaietVIghroka"
     },
-    "onFlyingTick": {
-      "name": "ShandarahKoghdaSnariadLietitTakt"
+    "onHitsPlayer": {
+      "name": "ShandarahProjectileKoghdaSnariadPopadaietVIghroka"
+    },
+    "onHitsEntity": {
+      "name": "ShandarahProjectileKoghdaSnariadPopadaietVIghroka"
     }
   }
 }

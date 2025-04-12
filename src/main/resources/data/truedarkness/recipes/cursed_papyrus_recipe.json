@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " ab",
-    "aca",
-    "ba "
+    "a b",
+    " c ",
+    "b  "
   ],
   "key": {
     "a": {
-      "item": "truedarkness:eridium_shard"
+      "item": "truedarkness:eridium_heart"
     },
     "b": {
-      "item": "truedarkness:eridium_bone"
+      "item": "truedarkness:corrupted_hand_fangs"
     },
     "c": {
       "item": "truedarkness:ancient_papyrus"

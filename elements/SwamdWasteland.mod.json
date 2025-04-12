@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Swamd Wasteland",
@@ -13,6 +13,10 @@
       "value": "CUSTOM:SwampSand"
     },
     "airColor": {
+      "value": -9736850,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -9736850,
       "falpha": 0.0
     },
@@ -41,9 +45,9 @@
     "particleToSpawn": {
       "value": "CUSTOM:WastelandPollen"
     },
-    "particlesProbability": 0.7999999999999999,
+    "particlesProbability": 1.7000000000000002,
     "rainingPossibility": 0.0,
-    "temperature": 0.2,
+    "temperature": 1.5,
     "spawnBiome": false,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
@@ -100,10 +104,10 @@
     "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
-    "spawnShipwreck": true,
+    "spawnShipwreck": false,
     "spawnShipwreckBeached": false,
     "spawnBuriedTreasure": false,
-    "oceanRuinType": "COLD",
+    "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
     "spawnNetherFossil": true,
     "spawnBastionRemnant": false,

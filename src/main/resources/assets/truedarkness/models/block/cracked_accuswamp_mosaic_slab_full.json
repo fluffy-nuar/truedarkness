@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "truedarkness:block/cracked_accuswamp_mosaic",
     "bottom": "truedarkness:block/cracked_accuswamp_mosaic",
     "top": "truedarkness:block/cracked_accuswamp_mosaic",
     "side": "truedarkness:block/cracked_accuswamp_mosaic"

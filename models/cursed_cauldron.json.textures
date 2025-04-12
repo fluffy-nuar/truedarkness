@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "cursed_cauldron",
+        "2": "cursed_cauldron_inside",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

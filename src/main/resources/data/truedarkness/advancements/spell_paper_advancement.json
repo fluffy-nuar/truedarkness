@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:empty_spell"
+    },
+    "title": {
+      "translate": "advancements.spell_paper_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.spell_paper_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spell_paper_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:empty_spell"
+            ],
+            "count": {
+              "min": 1,
+              "max": 100000000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:be_quiet_advancement"
+}

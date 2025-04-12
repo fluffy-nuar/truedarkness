@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "cursed_smelting",
+    "result": {
+      "value": "CUSTOM:Grimnite"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:MeteniteShard"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      }
+    ]
+  }
+}

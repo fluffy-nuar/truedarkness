@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "truedarkness:block/wasteland_sheaf",
     "bottom": "truedarkness:block/wasteland_sheaf",
     "top": "truedarkness:block/wasteland_sheaf",
     "side": "truedarkness:block/wasteland_sheaf"

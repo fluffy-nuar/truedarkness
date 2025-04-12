@@ -1,8 +1,8 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Corrupted Human",
+    "mobName": "§5Corrupted Human",
     "mobLabel": "",
     "mobModelName": "Modelcorrupted_human",
     "mobModelTexture": "corrupted.png",
@@ -25,25 +25,29 @@
       {
         "model": "Default",
         "texture": "corrupted_light.png",
+        "disableHurtOverlay": false,
         "glow": true
       }
     ],
+    "animations": [],
     "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelHeight": 1.9000000000000001,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -12765877,
+      "value": -14277052,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -8693856,
+      "value": -12379806,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -85,7 +89,6 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -109,24 +112,33 @@
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:entity.corrupted_creature.ambient"
     },
     "hurtSound": {
-      "value": "CUSTOM:entity.corrupted_knight_hurt"
+      "value": "CUSTOM:entity.corrupted_creature.hurt"
     },
     "deathSound": {
-      "value": "block.respawn_anchor.deplete"
+      "value": "CUSTOM:entity.corrupted_creature.death"
     },
     "stepSound": {
       "value": "block.sculk.step"
     },
-    "entityDataEntries": [],
-    "whenThisMobKillsAnother": {
-      "name": "CorruptedKnightKoghdaEtotObiektUbivaietDrughogho"
+    "raidCelebrationSound": {
+      "value": ""
+    },
+    "entityDataEntries": [
+      {
+        "name": "aggresive",
+        "type": "logic",
+        "value": false
+      }
+    ],
+    "whenMobIsHurt": {
+      "name": "CorruptedHumanPriRanieniiSushchnosti"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">AttackPlayerProc,AttackPlayerProc</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">AttackPlayerProc,AttackPlayerProcWithAdd</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">AttackPlayerProc,AttackPlayerProcWithAdd</field></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -151,6 +163,15 @@
         "value": "CUSTOM:CorruptedPlace"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

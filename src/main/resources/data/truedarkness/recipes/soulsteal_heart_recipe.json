@@ -8,17 +8,17 @@
   ],
   "key": {
     "a": {
-      "item": "truedarkness:soulsteal_nugget"
+      "item": "truedarkness:fantal_nugget"
     },
     "b": {
       "item": "minecraft:diamond"
     },
     "c": {
-      "item": "truedarkness:soulsteal_ingot"
+      "item": "truedarkness:synteriy"
     }
   },
   "result": {
-    "item": "truedarkness:soulsteal_heart",
+    "item": "truedarkness:fantal_heart",
     "count": 1
   }
 }

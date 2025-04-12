@@ -11,13 +11,6 @@ import net.minecraft.client.gui.GuiGraphics;
 import java.util.HashMap;
 
 import exp.fluffynuar.truedarkness.world.inventory.SamovarGUIMenu;
-import exp.fluffynuar.truedarkness.procedures.S7Procedure;
-import exp.fluffynuar.truedarkness.procedures.S6Procedure;
-import exp.fluffynuar.truedarkness.procedures.S5Procedure;
-import exp.fluffynuar.truedarkness.procedures.S4Procedure;
-import exp.fluffynuar.truedarkness.procedures.S3Procedure;
-import exp.fluffynuar.truedarkness.procedures.S2Procedure;
-import exp.fluffynuar.truedarkness.procedures.S1Procedure;
 import exp.fluffynuar.truedarkness.procedures.BonfireProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -57,32 +50,8 @@ public class SamovarGUIScreen extends AbstractContainerScreen<SamovarGUIMenu> {
 
 		guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/samovar_gui_layer.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 
-		if (BonfireProcedure.execute(world, x, y, z)) {
+		if (BonfireProcedure.execute(entity)) {
 			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/samovar_gui_bonfire.png"), this.leftPos + 123, this.topPos + 51, 0, 0, 19, 16, 19, 16);
-		}
-		if (S1Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s_0.png"), this.leftPos + -132, this.topPos + 0, 0, 0, 131, 166, 131, 166);
-		}
-		if (S1Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s1.png"), this.leftPos + -107, this.topPos + 14, 0, 0, 80, 18, 80, 18);
-		}
-		if (S2Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s2.png"), this.leftPos + -107, this.topPos + 32, 0, 0, 80, 18, 80, 18);
-		}
-		if (S3Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s3.png"), this.leftPos + -107, this.topPos + 50, 0, 0, 80, 18, 80, 18);
-		}
-		if (S4Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s4.png"), this.leftPos + -107, this.topPos + 68, 0, 0, 80, 18, 80, 18);
-		}
-		if (S5Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s5.png"), this.leftPos + -107, this.topPos + 86, 0, 0, 80, 18, 80, 18);
-		}
-		if (S6Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s6.png"), this.leftPos + -107, this.topPos + 104, 0, 0, 80, 18, 80, 18);
-		}
-		if (S7Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/s7.png"), this.leftPos + -107, this.topPos + 122, 0, 0, 80, 18, 80, 18);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -97,19 +66,9 @@ public class SamovarGUIScreen extends AbstractContainerScreen<SamovarGUIMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.truedarkness.samovar_gui.label_samovar"), 8, 6, -13421773, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.truedarkness.samovar_gui.label_inventory"), 8, 73, -13421773, false);
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
 	}
 
 	@Override

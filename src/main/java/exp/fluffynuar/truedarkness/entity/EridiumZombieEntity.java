@@ -112,11 +112,14 @@ public class EridiumZombieEntity extends Monster {
 			return false;
 		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
-		if (damagesource.is(DamageTypes.WITHER))
-			return false;
-		if (damagesource.is(DamageTypes.WITHER_SKULL))
+		if (damagesource.is(DamageTypes.WITHER) || damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public boolean fireImmune() {
+		return true;
 	}
 
 	public static void init() {

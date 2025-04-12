@@ -1,0 +1,331 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 2024-05-27 18:46:36
+Description: Rendering entity in world
+
+java.util.NoSuchElementException: Can't find part EarRight
+	at net.minecraft.client.model.geom.ModelPart.getChild(ModelPart.java:90) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at exp.fluffynuar.truedarkness.client.model.Modelnatural_armor.<init>(Modelnatural_armor.java:38) ~[main/:?] {re:classloading}
+	at exp.fluffynuar.truedarkness.item.NaturalArmorItem$Chestplate$1.getHumanoidArmorModel(NaturalArmorItem.java:113) ~[main/:?] {re:classloading}
+	at net.neoforged.neoforge.client.extensions.common.IClientItemExtensions.getGenericArmorModel(IClientItemExtensions.java:118) ~[neoforge-20.4.223.jar:?] {re:classloading}
+	at net.neoforged.neoforge.client.ClientHooks.getArmorModel(ClientHooks.java:300) ~[neoforge-20.4.223.jar:?] {re:classloading}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.getArmorModelHook(HumanoidArmorLayer.java:177) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.renderArmorPiece(HumanoidArmorLayer.java:68) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.render(HumanoidArmorLayer.java:55) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.render(HumanoidArmorLayer.java:29) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.LivingEntityRenderer.render(LivingEntityRenderer.java:135) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.player.PlayerRenderer.render(PlayerRenderer.java:72) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.player.PlayerRenderer.render(PlayerRenderer.java:46) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.EntityRenderDispatcher.render(EntityRenderDispatcher.java:158) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.lambda$renderEntityInInventory$1(InventoryScreen.java:192) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.systems.RenderSystem.runAsFancy(RenderSystem.java:774) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventory(InventoryScreen.java:192) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsAngle(InventoryScreen.java:160) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsMouse(InventoryScreen.java:126) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.renderBg(CreativeModeInventoryScreen.java:767) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.renderBackground(AbstractContainerScreen.java:161) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.render(AbstractContainerScreen.java:95) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen.render(EffectRenderingInventoryScreen.java:33) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.render(CreativeModeInventoryScreen.java:680) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.renderWithTooltip(Screen.java:106) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.neoforged.neoforge.client.ClientHooks.drawScreenInternal(ClientHooks.java:399) ~[neoforge-20.4.223.jar:?] {re:classloading}
+	at net.neoforged.neoforge.client.ClientHooks.drawScreen(ClientHooks.java:393) ~[neoforge-20.4.223.jar:?] {re:classloading}
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:1137) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1263) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:818) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:244) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar:2.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.model.geom.ModelPart.getChild(ModelPart.java:90) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at exp.fluffynuar.truedarkness.client.model.Modelnatural_armor.<init>(Modelnatural_armor.java:38) ~[%23193!/:?] {re:classloading}
+	at exp.fluffynuar.truedarkness.item.NaturalArmorItem$Chestplate$1.getHumanoidArmorModel(NaturalArmorItem.java:113) ~[%23193!/:?] {re:classloading}
+	at net.neoforged.neoforge.client.extensions.common.IClientItemExtensions.getGenericArmorModel(IClientItemExtensions.java:118) ~[neoforge-20.4.223.jar%23191%23194!/:?] {re:classloading}
+	at net.neoforged.neoforge.client.ClientHooks.getArmorModel(ClientHooks.java:300) ~[neoforge-20.4.223.jar%23191%23194!/:?] {re:classloading}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.getArmorModelHook(HumanoidArmorLayer.java:177) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.renderArmorPiece(HumanoidArmorLayer.java:68) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.render(HumanoidArmorLayer.java:55) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.render(HumanoidArmorLayer.java:29) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.LivingEntityRenderer.render(LivingEntityRenderer.java:135) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.player.PlayerRenderer.render(PlayerRenderer.java:72) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.player.PlayerRenderer.render(PlayerRenderer.java:46) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.EntityRenderDispatcher.render(EntityRenderDispatcher.java:158) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.lambda$renderEntityInInventory$1(InventoryScreen.java:192) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.systems.RenderSystem.runAsFancy(RenderSystem.java:774) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventory(InventoryScreen.java:192) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsAngle(InventoryScreen.java:160) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsMouse(InventoryScreen.java:126) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.renderBg(CreativeModeInventoryScreen.java:767) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.renderBackground(AbstractContainerScreen.java:161) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.render(AbstractContainerScreen.java:95) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen.render(EffectRenderingInventoryScreen.java:33) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.render(CreativeModeInventoryScreen.java:680) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.renderWithTooltip(Screen.java:106) ~[neoforge-20.4.223.jar%23192!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.neoforged.neoforge.client.ClientHooks.drawScreenInternal(ClientHooks.java:399) ~[neoforge-20.4.223.jar%23191%23194!/:?] {re:classloading}
+	at net.neoforged.neoforge.client.ClientHooks.drawScreen(ClientHooks.java:393) ~[neoforge-20.4.223.jar%23191%23194!/:?] {re:classloading}
+-- Entity being rendered --
+Details:
+	Entity Type: minecraft:player (net.minecraft.client.player.LocalPlayer)
+	Entity ID: 62
+	Entity Name: Dev
+	Entity's Exact location: -1790.12, 75.00, 188.87
+	Entity's Block location: World: (-1791,75,188), Section: (at 1,11,12 in -112,4,11; chunk contains blocks -1792,0,176 to -1777,255,191), Region: (-4,0; contains chunks -128,0 to -97,31, blocks -2048,0,0 to -1537,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.client.renderer.entity.EntityRenderDispatcher.render(EntityRenderDispatcher.java:158) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.lambda$renderEntityInInventory$1(InventoryScreen.java:192) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.systems.RenderSystem.runAsFancy(RenderSystem.java:774) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventory(InventoryScreen.java:192) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsAngle(InventoryScreen.java:160) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsMouse(InventoryScreen.java:126) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.renderBg(CreativeModeInventoryScreen.java:767) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.renderBackground(AbstractContainerScreen.java:161) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.render(AbstractContainerScreen.java:95) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen.render(EffectRenderingInventoryScreen.java:33) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.render(CreativeModeInventoryScreen.java:680) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.renderWithTooltip(Screen.java:106) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.neoforged.neoforge.client.ClientHooks.drawScreenInternal(ClientHooks.java:399) ~[neoforge-20.4.223.jar:?] {re:classloading}
+	at net.neoforged.neoforge.client.ClientHooks.drawScreen(ClientHooks.java:393) ~[neoforge-20.4.223.jar:?] {re:classloading}
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:1137) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1263) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:818) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:244) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar:2.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Renderer details --
+Details:
+	Assigned renderer: net.minecraft.client.renderer.entity.player.PlayerRenderer@79337388
+	Location: 0.00,0.00,0.00 - World: (0,0,0), Section: (at 0,0,0 in 0,0,0; chunk contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Rotation: 0.0
+	Delta: 1.0
+Stacktrace:
+	at net.minecraft.client.renderer.entity.EntityRenderDispatcher.render(EntityRenderDispatcher.java:158) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.lambda$renderEntityInInventory$1(InventoryScreen.java:192) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.systems.RenderSystem.runAsFancy(RenderSystem.java:774) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventory(InventoryScreen.java:192) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsAngle(InventoryScreen.java:160) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsMouse(InventoryScreen.java:126) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.renderBg(CreativeModeInventoryScreen.java:767) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.renderBackground(AbstractContainerScreen.java:161) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.render(AbstractContainerScreen.java:95) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen.render(EffectRenderingInventoryScreen.java:33) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen.render(CreativeModeInventoryScreen.java:680) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.renderWithTooltip(Screen.java:106) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.neoforged.neoforge.client.ClientHooks.drawScreenInternal(ClientHooks.java:399) ~[neoforge-20.4.223.jar:?] {re:classloading}
+	at net.neoforged.neoforge.client.ClientHooks.drawScreen(ClientHooks.java:393) ~[neoforge-20.4.223.jar:?] {re:classloading}
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:1137) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1263) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:818) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:244) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar:2.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen
+	Mouse location: Scaled: (320, 212). Absolute: (1283.000000, 848.000000)
+	Screen size: Scaled: (480, 265). Absolute: (1920, 1057). Scale factor of 4.000000
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:1137) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1263) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:818) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:244) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar:2.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Uptime --
+Details:
+	JVM uptime: 30.987s
+	Wall uptime: 20.743s
+	High-res time: 28.428s
+	Client ticks: 224 ticks / 11.200s
+Stacktrace:
+	at net.minecraft.client.Minecraft.fillReport(Minecraft.java:2482) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:941) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:836) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:244) ~[neoforge-20.4.223.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar:2.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [LocalPlayer['Dev'/62, l='ClientLevel', x=-1790.12, y=75.00, z=188.87]]
+	Chunk stats: 529, 313
+	Level dimension: truedarkness:yteria
+	Level spawn location: World: (0,113,0), Section: (at 0,1,0 in 0,7,0; chunk contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 1602093 game time, 83790 day time
+	Server brand: neoforge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 110
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: mod_resources, mod:truedarkness, mod:curios, mod:neoforge, mod:jei, vanilla, file/Element, file/Уд
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.4
+	Minecraft Version ID: 1.20.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.10, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 912518400 bytes (870 MiB) / 2195718144 bytes (2094 MiB) up to 4280287232 bytes (4082 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+	Identifier: Intel64 Family 6 Model 165 Stepping 3
+	Microarchitecture: unknown
+	Frequency (GHz): 2.90
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: Radeon RX550/550 Series
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 2048.00
+	Graphics card #0 deviceId: 0x699f
+	Graphics card #0 versionInfo: DriverVersion=31.0.21905.1001
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.40
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 25538.01
+	Virtual memory used (MB): 22007.29
+	Swap memory total (MB): 9216.00
+	Swap memory used (MB): 797.88
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Launched Version: 20.4.223
+	Backend library: LWJGL version 3.3.2+13
+	Backend API: Radeon RX550/550 Series GL version 4.6.0 Core Profile Context 23.11.1.231017, ATI Technologies Inc.
+	Window size: 1920x1057
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fancy
+	Render Distance: 8/8 chunks
+	Resource Packs: mod_resources, vanilla, file/Element (incompatible), file/Уд (incompatible)
+	Current Language: ru_ru
+	Locale: ru_RU
+	CPU: 12x Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/62, l='ServerLevel[Новый мир]', x=-1790.12, y=75.00, z=188.87]]
+	Data Packs: vanilla, mod_data, mod:truedarkness (incompatible), mod:curios (incompatible), mod:neoforge, mod:jei (incompatible)
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		sponge-mixin-0.13.1+mixin.0.8.5.jar mixin PLUGINSERVICE 
+		loader-2.0.17.jar slf4jfixer PLUGINSERVICE 
+		loader-2.0.17.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-2.0.17.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar mixin-synthetic-package TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@2.0
+		lowcodefml@2.0
+		minecraft@2.0
+	Mod List: 
+		neoforge-20.4.223.jar                             |Minecraft                     |minecraft                     |1.20.4              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |True Darkness Elementriy      |truedarkness                  |2.2                 |DONE      |Manifest: NOSIGNATURE
+		curios-neoforge-7.3.4+1.20.4.jar                  |Curios API                    |curios                        |7.3.4+1.20.4        |DONE      |Manifest: NOSIGNATURE
+		                                                  |NeoForge                      |neoforge                      |20.4.223            |DONE      |Manifest: NOSIGNATURE
+		jei-1.20.4-neoforge-17.3.0.49.jar                 |Just Enough Items             |jei                           |17.3.0.49           |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 3817c788-9d0d-41c7-a0eb-c40c63562798
+	FML: 20.4
+	NeoForge: net.neoforged:20.4.223

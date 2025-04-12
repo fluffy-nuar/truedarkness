@@ -1,0 +1,28 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:SkyfallSword"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:SkyfallIngot"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:EnderSkyfallUpgradeSmithingTemplate"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:EnderSkyfallSword"
+    },
+    "name": "ender_skyfall_sword_recipe",
+    "namespace": "mod"
+  }
+}

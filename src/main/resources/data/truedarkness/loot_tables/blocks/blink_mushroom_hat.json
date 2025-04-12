@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/blink_mushroom_hat",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:blink_mushroom_hat"
+        }
+      ]
+    }
+  ]
+}

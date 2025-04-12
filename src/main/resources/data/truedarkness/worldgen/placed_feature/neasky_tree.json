@@ -1,0 +1,12 @@
+{
+  "feature": "truedarkness:neasky_tree",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 28
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

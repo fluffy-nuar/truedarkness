@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_side",
   "textures": {
+    "particle": "truedarkness:block/empty_darkness_glass",
     "edge": "truedarkness:block/darkness_glass_top",
     "pane": "truedarkness:block/empty_darkness_glass"
   },

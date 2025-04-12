@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:darkness_spruce_box"
+    },
+    {
+      "item": "truedarkness:carving_knife"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:loot_table",
+    "count": 1
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "_fv": 73,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Corrupted Unformed Remnants",
+    "mobLabel": "",
+    "mobModelName": "Modelunformed_corrupted_remnant",
+    "mobModelTexture": "corrupted_necromancer.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false,
+      "name": "SpawningCooldwon"
+    },
+    "solidBoundingBox": {
+      "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
+    },
+    "modelLayers": [],
+    "animations": [],
+    "modelWidth": 0.4,
+    "modelHeight": 1.4,
+    "modelShadowSize": 0.2,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -14084558,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -9873301,
+      "falpha": 0.0
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEAD",
+    "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.31,
+    "stepHeight": 0.6,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "followRange": 22,
+    "health": 7,
+    "xpAmount": 0,
+    "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
+    "pushedByFluids": {
+      "fixedValue": true
+    },
+    "flyingMob": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": "CUSTOM:entity.corrupted_skeleton.ambient"
+    },
+    "hurtSound": {
+      "value": "CUSTOM:entity.corrupted_seleton.hurt"
+    },
+    "deathSound": {
+      "value": "CUSTOM:entity.corrupted_skeleton.death"
+    },
+    "stepSound": {
+      "value": "CUSTOM:entity.corrupted_skeleton.step"
+    },
+    "raidCelebrationSound": {
+      "value": ""
+    },
+    "entityDataEntries": [
+      {
+        "name": "aggresive",
+        "type": "logic",
+        "value": false
+      },
+      {
+        "name": "spawning",
+        "type": "logic",
+        "value": true
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "timer",
+        "type": "integer",
+        "value": 60
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "his_y",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "spawn_time",
+        "type": "integer",
+        "value": 0
+      }
+    ],
+    "whenMobIsHurt": {
+      "name": "CorruptedHumanPriRanieniiSushchnosti"
+    },
+    "onMobTickUpdate": {
+      "name": "CorruptedSkeletonPriObnovlieniiTikaSushchnosti"
+    },
+    "onInitialSpawn": {
+      "name": "CorruptedSkeletonPriNachalnomPrizyvieSushchnosti"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">SpawningCooldown,SpawningCooldown</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">SpawningCooldown,SpawningCooldown</field><next><block type=\"wander\"><field name=\"speed\">0.5</field><field name=\"condition\">SpawningCooldown,SpawningCooldown</field><next><block type=\"look_around\"><field name=\"condition\">SpawningCooldown,SpawningCooldown</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">AttackPlayerProcUndead,AttackPlayerProcUndead</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "rangedAttackInterval": 20,
+    "rangedAttackRadius": 10.0,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [],
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
+  }
+}

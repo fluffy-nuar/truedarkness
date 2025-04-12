@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "eridium_golem_advancement": {
+    "eridium_golem_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

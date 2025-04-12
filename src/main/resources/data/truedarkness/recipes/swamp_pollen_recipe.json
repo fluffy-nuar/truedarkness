@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "truedarkness:swamp_plants"
+    },
+    "b": {
+      "item": "truedarkness:swamp_sunflower"
+    }
+  },
+  "result": {
+    "item": "truedarkness:swamp_pollen",
+    "count": 3
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:apple"
+    },
+    "b": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cuted_apple",
+    "count": 1
+  }
+}

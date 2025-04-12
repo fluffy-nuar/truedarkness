@@ -26,9 +26,9 @@ public class SandRemnantsIghrokZakanchivaietIspolzovaniiePriedmietaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SAND_REMNANTS.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SAND_OF_MISSING_REMNANTS.get()) {
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(TruedarknessModItems.SAND_REMNANTS.get(), 60);
+				_player.getCooldowns().addCooldown(TruedarknessModItems.SAND_OF_MISSING_REMNANTS.get(), 60);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.brush.brushing.generic")), SoundSource.PLAYERS, 1, 1);
@@ -48,7 +48,7 @@ public class SandRemnantsIghrokZakanchivaietIspolzovaniiePriedmietaProcedure {
 				}
 			}
 			TruedarknessMod.queueServerWork(20, () -> {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SAND_REMNANTS.get()) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SAND_OF_MISSING_REMNANTS.get()) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.brush.brushing.generic")), SoundSource.PLAYERS, 1, 1);
@@ -68,7 +68,7 @@ public class SandRemnantsIghrokZakanchivaietIspolzovaniiePriedmietaProcedure {
 						}
 					}
 					TruedarknessMod.queueServerWork(20, () -> {
-						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SAND_REMNANTS.get()) {
+						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SAND_OF_MISSING_REMNANTS.get()) {
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
 									_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.brush.brushing.generic")), SoundSource.PLAYERS, 1, 1);
@@ -88,7 +88,7 @@ public class SandRemnantsIghrokZakanchivaietIspolzovaniiePriedmietaProcedure {
 								}
 							}
 							TruedarknessMod.queueServerWork(20, () -> {
-								if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SAND_REMNANTS.get()) {
+								if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SAND_OF_MISSING_REMNANTS.get()) {
 									if (entity instanceof LivingEntity _entity)
 										_entity.swing(InteractionHand.MAIN_HAND, true);
 									if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "blacksmite_forge_recipe_type",
+    "result": {
+      "value": "CUSTOM:CryIngot"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:ElderTear"
+      },
+      {
+        "value": "CUSTOM:TrudniteIngot"
+      },
+      {
+        "value": "CUSTOM:CalmAquamarine"
+      }
+    ]
+  }
+}

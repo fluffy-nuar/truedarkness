@@ -1,20 +1,26 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Corrupt",
-    "icon": "corrupting.png",
+    "icon": "corrupting",
     "color": {
       "value": -15527659,
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": false,
-    "isBenefitical": false,
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
-    "onStarted": {
-      "name": "TheAliveKoghdaEffiektNachatprimienien"
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "TheAliveKazhdyiTikVoVriemiaEffiekta"
+    },
+    "onExpired": {
+      "name": "TheAlivePriIstiechieniiEffiekta"
     }
   }
 }

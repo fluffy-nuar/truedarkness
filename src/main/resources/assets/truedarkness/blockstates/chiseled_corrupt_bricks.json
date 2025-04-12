@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "truedarkness:block/chiseled_corrupt_bricks",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "truedarkness:block/chiseled_corrupt_bricks"
+    },
+    "axis=z": {
+      "model": "truedarkness:block/chiseled_corrupt_bricks",
+      "x": 90
+    }
+  }
+}

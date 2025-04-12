@@ -3,8 +3,8 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "ccc",
-    "d d"
+    "aaa",
+    " a "
   ],
   "key": {
     "a": {
@@ -12,12 +12,6 @@
     },
     "b": {
       "item": "minecraft:chain"
-    },
-    "c": {
-      "item": "truedarkness:darkness_spruce_log"
-    },
-    "d": {
-      "item": "truedarkness:gramite_shard"
     }
   },
   "result": {

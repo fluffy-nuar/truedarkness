@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diamond",
+    "minecraft:diamond_boots",
+    "minecraft:iron_chestplate",
+    "minecraft:iron_leggings",
+    "truedarkness:eridium_heart",
+    "truedarkness:fantal_ore",
+    "truedarkness:raw_firenite",
+    "truedarkness:trudnite_ingot",
+    "truedarkness:skyfall_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:gold_ingot",
+    "truedarkness:reinforced_shell",
+    "minecraft:raw_iron_block",
+    "minecraft:raw_copper_block",
+    "truedarkness:split_armor_trim_smithing_template"
+  ]
+}

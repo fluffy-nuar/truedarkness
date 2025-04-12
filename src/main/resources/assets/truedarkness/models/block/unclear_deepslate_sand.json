@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/unclear_deepslate_sand",
+    "up": "truedarkness:block/unclear_deepslate_sand",
+    "north": "truedarkness:block/unclear_deepslate_sand",
+    "east": "truedarkness:block/unclear_deepslate_sand",
+    "south": "truedarkness:block/unclear_deepslate_sand",
+    "west": "truedarkness:block/unclear_deepslate_sand",
+    "particle": "truedarkness:block/unclear_deepslate_sand"
+  },
+  "render_type": "solid"
+}

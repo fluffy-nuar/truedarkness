@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/cursed_pipe_connected_b",
+  "textures": {
+    "all": "truedarkness:block/cursed_pipe",
+    "particle": "truedarkness:block/cursed_furnace_top",
+    "3": "truedarkness:block/cursed_pipe"
+  },
+  "render_type": "solid"
+}

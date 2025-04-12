@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/corrupted_knight_remnants",
+  "textures": {
+    "all": "truedarkness:block/corrupted_human",
+    "particle": "truedarkness:block/corrupted_human",
+    "0": "truedarkness:block/corrupted_knight_remnants"
+  },
+  "render_type": "cutout"
+}

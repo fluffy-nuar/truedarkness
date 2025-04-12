@@ -1,0 +1,11 @@
+{
+  "parent": "truedarkness:custom/cursed_cauldron",
+  "textures": {
+    "all": "truedarkness:block/cursed_furnace_top",
+    "particle": "truedarkness:block/cursed_furnace_top",
+    "1": "truedarkness:block/cursed_cauldron",
+    "2": "truedarkness:block/cursed_cauldron_inside",
+    "missing": "truedarkness:block/"
+  },
+  "render_type": "cutout"
+}

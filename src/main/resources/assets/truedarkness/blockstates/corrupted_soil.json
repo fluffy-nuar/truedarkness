@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "truedarkness:block/corrupted_soil"
+      },
+      {
+        "model": "truedarkness:block/corrupted_soil",
+        "y": 90
+      },
+      {
+        "model": "truedarkness:block/corrupted_soil",
+        "y": 180
+      },
+      {
+        "model": "truedarkness:block/corrupted_soil",
+        "y": 270
+      }
+    ]
+  }
+}

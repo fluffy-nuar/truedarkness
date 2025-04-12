@@ -1,21 +1,23 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "particle",
   "definition": {
-    "texture": "cyan_pollen.png",
+    "texture": "swamp_rain.png",
     "animate": false,
     "frameDuration": 1,
     "width": 1.0,
     "height": 1.0,
-    "scale": 1.0,
-    "speedFactor": 1.0,
-    "gravity": 0.7999999999999999,
+    "scale": {
+      "fixedValue": 2.0
+    },
+    "speedFactor": 3.0,
+    "gravity": 1.0,
     "maxAge": 20,
     "maxAgeDiff": 5,
     "angularVelocity": 0.0,
-    "angularAcceleration": 0.01,
-    "canCollide": true,
+    "angularAcceleration": 0.0,
+    "canCollide": false,
     "alwaysShow": false,
-    "renderType": "TRANSLUCENT"
+    "renderType": "LIT"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Potholders",
     "rarity": "COMMON",
-    "slotType": "HANDS",
+    "slotType": "Addon3Slot",
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {

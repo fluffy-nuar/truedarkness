@@ -26,14 +26,11 @@
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:grass_block",
-          "minecraft:air"
-        ],
+        "blocks": "minecraft:grass_block",
         "offset": [
-          0,
+          1,
           -1,
-          0
+          1
         ]
       }
     },

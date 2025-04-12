@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "truedarkness:block/corrupted_bricks",
+    "particle": "truedarkness:block/corrupted_bricks"
+  },
+  "render_type": "solid"
+}

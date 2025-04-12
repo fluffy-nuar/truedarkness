@@ -1,0 +1,22 @@
+package exp.fluffynuar.truedarkness.procedures;
+
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.Screen;
+
+public class EchoHornDopolnitielnaiaInformatsiiaProcedure {
+	public static String execute(ItemStack itemstack) {
+		if (Screen.hasShiftDown()) {
+			if ((itemstack.getOrCreateTag().getString("desc")).equals(ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString())) {
+				return Component.translatable("item.truedarkness.echo_horn.description").getString();
+			} else {
+				return Component.translatable("item.truedarkness.metenite_crystal.desc").getString();
+			}
+		} else if (!(itemstack.getOrCreateTag().getString("spell")).equals("")) {
+			return "\u00A77" + Component.translatable(("item.truedarkness.spell_" + itemstack.getOrCreateTag().getString("spell") + ".desc")).getString();
+		}
+		return Component.translatable("item.truedarkness.echo_horn.desc").getString();
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "truedarkness:custom/measky_bush",
+  "textures": {
+    "all": "truedarkness:block/fantal_grid",
+    "particle": "truedarkness:block/fantal_grid",
+    "side": "truedarkness:block/measky_bush_side",
+    "top": "truedarkness:block/measky_bush_top",
+    "tree": "truedarkness:block/measky_bush"
+  },
+  "render_type": "cutout"
+}

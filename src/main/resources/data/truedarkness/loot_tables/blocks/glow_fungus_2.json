@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/glow_fungus_2",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:light_shroom_item"
+        }
+      ]
+    }
+  ]
+}

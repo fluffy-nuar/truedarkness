@@ -1,0 +1,15 @@
+{
+  "_fv": 73,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "M",
+    "keyBindingName": "Active Ability 2",
+    "keyBindingCategoryKey": "truedarkness",
+    "onKeyPressed": {
+      "name": "ActiveAbility2PriNazhatiiKlavishi"
+    },
+    "onKeyReleased": {
+      "name": "ActiveAbility2PriOtpuskaniiKlavishi"
+    }
+  }
+}

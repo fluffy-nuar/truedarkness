@@ -1,18 +1,21 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Nosedive",
-    "icon": "nosedive_effect.png",
+    "icon": "soul_nosedive.png",
     "color": {
       "value": -16777114,
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": false,
-    "isBenefitical": false,
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": false,
     "renderStatusInHUD": false,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
     "onActiveTick": {
       "name": "NosediveEffectKazhdyiTikVoVriemiaEffiekta"
     }

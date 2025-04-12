@@ -8,11 +8,11 @@
   ],
   "key": {
     "a": {
-      "item": "truedarkness:polished_sandstone_bricks_of_missing"
+      "item": "truedarkness:polished_sandstone_of_missing_bricks"
     }
   },
   "result": {
-    "item": "truedarkness:polished_sandstone_bricks_of_missing_stairs",
+    "item": "truedarkness:polished_sandstone_of_missing_bricks_stairs",
     "count": 4
   }
 }

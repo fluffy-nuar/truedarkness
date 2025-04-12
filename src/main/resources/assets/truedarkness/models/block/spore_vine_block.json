@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "truedarkness:block/spore_vine",
-    "particle": "truedarkness:block/spore_vine"
-  },
-  "render_type": "cutout"
-}

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:soulsteal_spool"
+      "item": "truedarkness:fantal_spool"
     },
     "title": {
       "translate": "advancements.soulsteal_spool_advancement.title"
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "soulsteal_spool_advancement": {
+    "soulsteal_spool_advancement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "truedarkness:soulsteal_spool"
+              "truedarkness:fantal_spool"
             ],
             "count": {
               "min": 1,

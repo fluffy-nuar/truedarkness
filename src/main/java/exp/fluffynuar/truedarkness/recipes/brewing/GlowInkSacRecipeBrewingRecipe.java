@@ -11,7 +11,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 
-import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
+import exp.fluffynuar.truedarkness.init.TruedarknessModBlocks;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class GlowInkSacRecipeBrewingRecipe implements IBrewingRecipe {
@@ -27,7 +27,7 @@ public class GlowInkSacRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return Ingredient.of(new ItemStack(TruedarknessModItems.SWAMP_SEAWEED_ITEM.get())).test(ingredient);
+		return Ingredient.of(new ItemStack(TruedarknessModBlocks.SWAMP_SEAWEED.get())).test(ingredient);
 	}
 
 	@Override

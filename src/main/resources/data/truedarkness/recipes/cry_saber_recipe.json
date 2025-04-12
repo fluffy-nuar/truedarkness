@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smithing_transform",
   "template": {
-    "item": "truedarkness:marinite_upgrade"
+    "item": "truedarkness:marinite_upgrade_smithing_template"
   },
   "base": {
-    "item": "truedarkness:soulsteal_sword"
+    "item": "truedarkness:fantal_sword"
   },
   "addition": {
-    "item": "truedarkness:cry_ingot"
+    "item": "truedarkness:marinite_ingot"
   },
   "result": {
     "item": "truedarkness:aquamarine_sword"

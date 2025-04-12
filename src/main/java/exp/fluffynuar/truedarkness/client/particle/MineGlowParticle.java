@@ -4,6 +4,7 @@ package exp.fluffynuar.truedarkness.client.particle;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.client.particle.TextureSheetParticle;
 import net.minecraft.client.particle.SpriteSet;
@@ -11,6 +12,8 @@ import net.minecraft.client.particle.ParticleRenderType;
 import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.multiplayer.ClientLevel;
+
+import exp.fluffynuar.truedarkness.procedures.MineGlowDopUsloviieIschieznovieniiaChastitsyProcedure;
 
 @OnlyIn(Dist.CLIENT)
 public class MineGlowParticle extends TextureSheetParticle {
@@ -36,9 +39,9 @@ public class MineGlowParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.lifetime = (int) Math.max(1, 20 + (this.random.nextInt(18) - 9));
-		this.gravity = 0.1f;
-		this.hasPhysics = true;
+		this.lifetime = (int) Math.max(1, 20 + (this.random.nextInt(20) - 10));
+		this.gravity = 0f;
+		this.hasPhysics = false;
 		this.xd = vx * 1;
 		this.yd = vy * 1;
 		this.zd = vz * 1;
@@ -46,12 +49,20 @@ public class MineGlowParticle extends TextureSheetParticle {
 	}
 
 	@Override
+	public int getLightColor(float partialTick) {
+		return 15728880;
+	}
+
+	@Override
 	public ParticleRenderType getRenderType() {
-		return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
+		return ParticleRenderType.PARTICLE_SHEET_LIT;
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
+		Level world = this.level;
+		if (MineGlowDopUsloviieIschieznovieniiaChastitsyProcedure.execute(y))
+			this.remove();
 	}
 }

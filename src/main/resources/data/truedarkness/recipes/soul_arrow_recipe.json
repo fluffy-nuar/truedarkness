@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "minecraft:arrow"
+    },
+    {
+      "item": "truedarkness:light_of_soul"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:soul_arrow",
+    "count": 1
+  }
+}

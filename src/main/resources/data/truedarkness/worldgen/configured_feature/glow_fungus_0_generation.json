@@ -9,10 +9,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "truedarkness:glow_fungus_hat_0",
-              "Properties": {
-                "waterlogged": "false"
-              }
+              "Name": "truedarkness:glow_fungus_hat_0"
             }
           }
         }

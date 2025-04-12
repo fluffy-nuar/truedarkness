@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:dust_block"
+    },
+    "b": {
+      "item": "truedarkness:sieve"
+    },
+    "c": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "truedarkness:disorient_dust",
+    "count": 1
+  }
+}

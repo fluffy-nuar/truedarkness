@@ -2,8 +2,8 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "corrupted_catalyst_top",
-        "1": "corrupted_catalyst_side",
+        "0": "corrupted_catalyst_blooming_top",
+        "1": "corrupted_catalyst_blooming",
         "2": "corrupted_catalyst_bottom"
       },
       "name": "default"

@@ -4,7 +4,9 @@
     "truedarkness:mine",
     "truedarkness:retroland",
     "truedarkness:swamp_wasteland",
-    "truedarkness:swamps"
+    "truedarkness:crying_swamps",
+    "truedarkness:the_sky",
+    "truedarkness:crying_forest"
   ],
   "features": "truedarkness:seawead_ofyteria_0",
   "step": "local_modifications"

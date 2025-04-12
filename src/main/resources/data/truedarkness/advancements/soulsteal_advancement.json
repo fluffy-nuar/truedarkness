@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:soulsteal_ingot"
+      "item": "truedarkness:fantal_ingot"
     },
     "title": {
       "translate": "advancements.soulsteal_advancement.title"
@@ -15,13 +15,13 @@
     "hidden": true
   },
   "criteria": {
-    "soulsteal_advancement": {
+    "soulsteal_advancement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "truedarkness:soulsteal_ingot"
+              "truedarkness:fantal_ingot"
             ],
             "count": {
               "min": 1,

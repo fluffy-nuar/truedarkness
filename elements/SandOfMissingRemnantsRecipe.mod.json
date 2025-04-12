@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "converting",
+    "result": {
+      "value": "CUSTOM:LootTable"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:UnclearSandOfMissing"
+      },
+      {
+        "value": "CUSTOM:Sieve"
+      }
+    ]
+  }
+}

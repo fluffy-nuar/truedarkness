@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Brewing",
@@ -14,7 +14,7 @@
       "value": "Items.DYE#0"
     },
     "brewingIngredientStack": {
-      "value": "CUSTOM:SwampSeaweedItem"
+      "value": "CUSTOM:SwampSeaweed"
     },
     "brewingReturnStack": {
       "value": "Items.GLOW_INK_SAC"

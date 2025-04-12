@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,12 +9,14 @@
     "states": [],
     "name": "Corrupt Bottle",
     "rarity": "UNCOMMON",
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "stackSize": 16,
     "enchantability": 0,
-    "useDuration": 10,
+    "useDuration": 53,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -32,25 +34,26 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "GlassBottleCorruptIghrokZakanchivaietIspolzovaniiePriedmieta"
-    },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "CUSTOM:DarknessSpruceShieldProjectile"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 0,
+    "nutritionalValue": 8,
     "saturation": 0.0,
     "eatResultItem": {
       "value": "Items.GLASS_BOTTLE"
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "drink",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

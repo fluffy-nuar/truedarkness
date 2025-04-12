@@ -6,11 +6,11 @@
   ],
   "key": {
     "a": {
-      "item": "truedarkness:soulsteal_ingot"
+      "item": "truedarkness:raw_fantal"
     }
   },
   "result": {
-    "item": "truedarkness:soulsteal_nugget",
+    "item": "truedarkness:fantal_nugget",
     "count": 9
   }
 }

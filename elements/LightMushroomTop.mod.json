@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "glow_medium_fungus_top",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Light Mushroom Top",
     "specialInformation": {
       "fixedValue": []
@@ -41,9 +42,7 @@
     "resistance": 0.5,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "Blocks.AIR"
@@ -100,7 +99,7 @@
     },
     "luminance": 3,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "vanillaToolTier": "STONE",
     "isBonemealable": true,
     "bonemealSuccessCondition": {
       "name": "LightMushroomTopUsloviieUspiekhaKostnoiMuki"
@@ -109,7 +108,6 @@
       "name": "LightMushroo1msPriUspiekhieKostnoiMuki"
     },
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

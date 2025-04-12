@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "Grape",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 32,
@@ -29,11 +31,21 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "guiBoundTo": "<NONE>",
+    "glowCondition": {
+      "fixedValue": false
+    },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "GrapePriShchielchkiePKMPoBloku"
+    },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:DarknessSpruceShieldProjectile"
+    },
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 2,
     "saturation": 0.3,
@@ -42,6 +54,9 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "eat",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "truedarkness:block/chiseled_polished_sandstone_bricks_of_missing",
-    "up": "truedarkness:block/chiseled_polished_sandstone_bricks_of_missing",
-    "north": "truedarkness:block/chiseled_polished_sandstone_bricks_of_missing",
-    "east": "truedarkness:block/chiseled_polished_sandstone_bricks_of_missing",
-    "south": "truedarkness:block/chiseled_polished_sandstone_bricks_of_missing",
-    "west": "truedarkness:block/chiseled_polished_sandstone_bricks_of_missing",
-    "particle": "truedarkness:block/chiseled_polished_sandstone_bricks_of_missing"
+    "down": "truedarkness:block/chiseled_polished_sandstone_of_missing_bricks_top",
+    "up": "truedarkness:block/chiseled_polished_sandstone_of_missing_bricks_top",
+    "north": "truedarkness:block/chiseled_polished_sandstone_of_missing_bricks",
+    "east": "truedarkness:block/chiseled_polished_sandstone_of_missing_bricks",
+    "south": "truedarkness:block/chiseled_polished_sandstone_of_missing_bricks",
+    "west": "truedarkness:block/chiseled_polished_sandstone_of_missing_bricks",
+    "particle": "truedarkness:block/chiseled_polished_sandstone_of_missing_bricks_top"
   },
   "render_type": "solid"
 }

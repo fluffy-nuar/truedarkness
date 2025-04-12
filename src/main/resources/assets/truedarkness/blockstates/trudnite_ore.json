@@ -1,7 +1,21 @@
 {
   "variants": {
-    "": {
-      "model": "truedarkness:block/trudnite_ore"
-    }
+    "": [
+      {
+        "model": "truedarkness:block/trudnite_ore"
+      },
+      {
+        "model": "truedarkness:block/trudnite_ore",
+        "y": 90
+      },
+      {
+        "model": "truedarkness:block/trudnite_ore",
+        "y": 180
+      },
+      {
+        "model": "truedarkness:block/trudnite_ore",
+        "y": 270
+      }
+    ]
   }
 }

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:corrupted_human",
+    "truedarkness:corrupted_knight",
+    "truedarkness:corrupted_mage",
+    "truedarkness:soulsteal_warrior",
+    "skeleton",
+    "wither_skeleton",
+    "stray",
+    "zombie",
+    "zombie_villager",
+    "zombified_piglin",
+    "wither",
+    "drowned",
+    "husk",
+    "vex"
+  ]
+}

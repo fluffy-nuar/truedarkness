@@ -1,0 +1,10 @@
+{
+  "_fv": 73,
+  "_type": "command",
+  "definition": {
+    "commandName": "setmana",
+    "type": "STANDARD",
+    "permissionLevel": "2",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"358\" y=\"59\"><next><block type=\"entity\"><field name=\"name\">Target</field><field name=\"type\">players</field><statement name=\"args\"><block type=\"number_min_max\"><field name=\"name\">Mana</field><field name=\"min\">0</field><field name=\"max\">16</field><statement name=\"args\"><block type=\"number_min_max\"><field name=\"name\">Prays</field><field name=\"min\">0</field><field name=\"max\">10</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SetManaProc</field></block></statement></block></statement></block></statement></block></next></block></xml>"
+  }
+}

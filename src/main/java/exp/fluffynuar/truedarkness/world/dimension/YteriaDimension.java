@@ -22,7 +22,7 @@ import exp.fluffynuar.truedarkness.procedures.YteriaIesliIghrokVkhoditVIzmierien
 @Mod.EventBusSubscriber
 public class YteriaDimension {
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	public static class DimensionSpecialEffectsHandler {
+	public static class YteriaSpecialEffectsHandler {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public static void registerDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
@@ -49,12 +49,10 @@ public class YteriaDimension {
 		double y = entity.getY();
 		double z = entity.getZ();
 		if (event.getFrom() == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria"))) {
-
 			YteriaKoghdaIghrokPokidaietIzmierieniieProcedure.execute(entity);
 		}
 		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("truedarkness:yteria"))) {
-
-			YteriaIesliIghrokVkhoditVIzmierieniieProcedure.execute(world, entity);
+			YteriaIesliIghrokVkhoditVIzmierieniieProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }

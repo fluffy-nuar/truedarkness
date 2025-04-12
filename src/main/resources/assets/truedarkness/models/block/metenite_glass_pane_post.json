@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_post",
   "textures": {
+    "particle": "truedarkness:block/metenite_glass",
     "edge": "truedarkness:block/metenite_glass_top",
     "pane": "truedarkness:block/metenite_glass"
   },

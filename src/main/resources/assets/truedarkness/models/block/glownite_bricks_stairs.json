@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "truedarkness:block/glownite_bricks",
     "bottom": "truedarkness:block/glownite_bricks",
     "top": "truedarkness:block/glownite_bricks",
     "side": "truedarkness:block/glownite_bricks"

@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/cursed_catalyst"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:corrupted_catalyst_active": 1
+      },
+      "model": "truedarkness:item/corrupted_catalyst_0"
+    }
+  ]
+}

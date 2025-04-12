@@ -1,0 +1,7 @@
+{  
+  "asset_id": "truedarkness:memory",  
+  "description": {  
+    "translate": "trim_pattern.truedarkness.memory"  
+  },  
+  "template_item": "truedarkness:memory_armor_trim_smithing_template"  
+}

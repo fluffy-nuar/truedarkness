@@ -2,23 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a",
-    "ba",
-    " c"
+    "a",
+    "a",
+    "b"
   ],
   "key": {
     "a": {
-      "item": "truedarkness:soulsteal_ingot"
+      "item": "truedarkness:fantal_ingot"
     },
     "b": {
-      "item": "truedarkness:soulsteal_nugget"
-    },
-    "c": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "truedarkness:soulsteal_sword",
+    "item": "truedarkness:fantal_sword",
     "count": 1
   }
 }

@@ -1,0 +1,23 @@
+{
+  "_fv": 73,
+  "_type": "particle",
+  "definition": {
+    "texture": "neasky_leaves_particle",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": {
+      "fixedValue": 0.5
+    },
+    "speedFactor": 0.5,
+    "gravity": -0.02,
+    "maxAge": 180,
+    "maxAgeDiff": 60,
+    "angularVelocity": 0.03,
+    "angularAcceleration": 0.0,
+    "canCollide": false,
+    "alwaysShow": false,
+    "renderType": "LIT"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MeteniteCrystal"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:MeteniteShard"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "Items.NAUTILUS_SHELL"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:MeteniteShard"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:MeteniteShard"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EchoShell"
+    },
+    "name": "echo_shell_recipe",
+    "namespace": "mod"
+  }
+}

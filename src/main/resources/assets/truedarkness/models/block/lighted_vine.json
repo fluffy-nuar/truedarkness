@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "truedarkness:block/lighted_berry_stem",
-    "particle": "truedarkness:block/lighted_berry_stem"
-  },
-  "render_type": "cutout"
-}

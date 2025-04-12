@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cursed_scale_model"
+      },
+      "name": "default"
+    }
+  }
+}

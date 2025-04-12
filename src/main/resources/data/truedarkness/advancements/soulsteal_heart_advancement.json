@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:soulsteal_heart"
+      "item": "truedarkness:fantal_heart"
     },
     "title": {
       "translate": "advancements.soulsteal_heart_advancement.title"
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "soulsteal_heart_advancement": {
+    "soulsteal_heart_advancement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "truedarkness:soulsteal_heart"
+              "truedarkness:fantal_heart"
             ],
             "count": {
               "min": 1,

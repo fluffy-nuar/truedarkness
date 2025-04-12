@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:neasky_pumpkin"
+    },
+    "b": {
+      "item": "truedarkness:wasteland_wheat"
+    },
+    "c": {
+      "item": "truedarkness:tear_berry"
+    }
+  },
+  "result": {
+    "item": "truedarkness:swamp_pie",
+    "count": 1
+  }
+}

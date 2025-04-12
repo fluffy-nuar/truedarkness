@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "minecraft:beacon"
+    },
+    {
+      "item": "truedarkness:echo_carving_knife"
+    }
+  ],
+  "output": {
+    "item": "minecraft:nether_star",
+    "count": 1
+  }
+}

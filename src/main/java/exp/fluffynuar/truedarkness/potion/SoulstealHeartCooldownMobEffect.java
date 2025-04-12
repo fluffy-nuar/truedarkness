@@ -13,11 +13,6 @@ public class SoulstealHeartCooldownMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.truedarkness.soulsteal_heart_cooldown";
-	}
-
-	@Override
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}

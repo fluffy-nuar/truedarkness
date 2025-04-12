@@ -1,8 +1,13 @@
 {
-  "parent": "block/crop",
+  "parent": "block/cube",
   "textures": {
-    "crop": "truedarkness:block/corrupted_leaves_1",
-    "particle": "truedarkness:block/corrupted_leaves_1"
+    "down": "truedarkness:block/corrupted_leaves",
+    "up": "truedarkness:block/corrupted_leaves",
+    "north": "truedarkness:block/corrupted_leaves",
+    "east": "truedarkness:block/corrupted_leaves",
+    "south": "truedarkness:block/corrupted_leaves",
+    "west": "truedarkness:block/corrupted_leaves",
+    "particle": "truedarkness:block/corrupted_leaves"
   },
   "render_type": "cutout"
 }

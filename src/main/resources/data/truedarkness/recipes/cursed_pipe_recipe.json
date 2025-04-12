@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " b ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:chiseled_corrupt_bricks"
+    },
+    "b": {
+      "item": "truedarkness:eridium_shard"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cursed_pipe",
+    "count": 8
+  }
+}

@@ -1,6 +1,7 @@
 {
   "parent": "block/template_fence_gate_open",
   "textures": {
+    "particle": "truedarkness:block/glow_planks",
     "texture": "truedarkness:block/glow_planks"
   },
   "render_type": "solid"

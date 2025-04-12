@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:crying_forest",
+  "features": "truedarkness:crying_forest_trees",
+  "step": "surface_structures"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:fantal_sword"
+    },
+    {
+      "item": "truedarkness:general_regulation"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:real_general_sword",
+    "count": 1
+  }
+}

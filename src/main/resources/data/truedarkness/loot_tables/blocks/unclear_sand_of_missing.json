@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/unclear_sand_of_missing",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:unclear_sand_of_missing"
+        }
+      ]
+    }
+  ]
+}

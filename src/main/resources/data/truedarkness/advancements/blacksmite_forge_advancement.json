@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "blacksmite_forge_advancement": {
+    "blacksmite_forge_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

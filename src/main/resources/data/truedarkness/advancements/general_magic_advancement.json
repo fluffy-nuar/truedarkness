@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "general_magic_advancement": {
+    "general_magic_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

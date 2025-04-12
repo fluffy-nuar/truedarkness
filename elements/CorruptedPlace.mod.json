@@ -1,10 +1,10 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Corrupted Place",
     "groundBlock": {
-      "value": "CUSTOM:Corrupt"
+      "value": "CUSTOM:CorruptedSoil"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Corrupt"
@@ -13,7 +13,11 @@
       "value": "CUSTOM:Corrupt"
     },
     "airColor": {
-      "value": -13428891,
+      "value": -10736267,
+      "falpha": 0.0
+    },
+    "fogColor": {
+      "value": -10736267,
       "falpha": 0.0
     },
     "waterColor": {
@@ -37,11 +41,11 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "CUSTOM:CorruptPollen"
     },
-    "particlesProbability": 2.2,
+    "particlesProbability": 1.7999999999999998,
     "rainingPossibility": 0.0,
     "temperature": 0.5,
     "spawnBiome": false,
@@ -72,16 +76,16 @@
     "treeType": 1,
     "minHeight": 14,
     "treeStem": {
-      "value": "CUSTOM:DriedLog"
+      "value": "Blocks.AIR"
     },
     "treeBranch": {
-      "value": "CUSTOM:SwampCobblestone"
+      "value": "Blocks.AIR"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": "CUSTOM:CorruptedSlime"
+      "value": "Blocks.AIR"
     },
     "defaultFeatures": [],
     "spawnStronghold": false,

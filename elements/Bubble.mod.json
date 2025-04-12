@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "bubble",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Bubble",
     "specialInformation": {
       "fixedValue": []
@@ -41,9 +42,11 @@
     "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": true,
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementriy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "Blocks.AIR"
@@ -100,10 +103,12 @@
     },
     "luminance": 3,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "vanillaToolTier": "STONE",
+    "placingCondition": {
+      "name": "BubbleUsloviieRazmieshchieniiaBloka"
+    },
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -119,6 +124,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onEntityCollides": {
+      "name": "BubbleKoghdaSushchnostKhoditPoBloku"
+    },
+    "onEntityWalksOn": {
+      "name": "BubbleKoghdaSushchnostKhoditPoBloku"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

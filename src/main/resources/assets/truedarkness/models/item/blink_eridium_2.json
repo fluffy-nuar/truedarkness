@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/evolution_eridium"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:blink_eridium_2_active": 1
+      },
+      "model": "truedarkness:item/blink_eridium_2_0"
+    }
+  ]
+}

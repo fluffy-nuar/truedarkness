@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -12,16 +12,16 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "efficiency": 9.0,
     "attackSpeed": 1.9000000000000001,
     "enchantability": 15,
     "damageVsEntity": 6.0,
     "usageCount": 1561,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -31,6 +31,8 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedInAir": {

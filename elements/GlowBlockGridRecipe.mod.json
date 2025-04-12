@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -15,25 +15,25 @@
         "value": "CUSTOM:GlowniteIngot"
       },
       {
-        "value": "CUSTOM:SporeVineItem"
+        "value": "CUSTOM:SporeVine2"
       },
       {
         "value": "CUSTOM:GlowniteIngot"
       },
       {
-        "value": "CUSTOM:SporeVineItem"
+        "value": "CUSTOM:SporeVine2"
       },
       {
         "value": "CUSTOM:GlowniteIngot"
       },
       {
-        "value": "CUSTOM:SporeVineItem"
+        "value": "CUSTOM:SporeVine2"
       },
       {
         "value": "CUSTOM:GlowniteIngot"
       },
       {
-        "value": "CUSTOM:SporeVineItem"
+        "value": "CUSTOM:SporeVine2"
       },
       {
         "value": "CUSTOM:GlowniteIngot"

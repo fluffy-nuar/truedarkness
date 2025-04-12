@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "truedarkness:block/polished_accustone",
     "bottom": "truedarkness:block/polished_accustone",
     "top": "truedarkness:block/polished_accustone",
     "side": "truedarkness:block/polished_accustone"

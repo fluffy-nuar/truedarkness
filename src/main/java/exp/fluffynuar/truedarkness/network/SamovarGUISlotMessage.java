@@ -15,8 +15,8 @@ import java.util.function.Supplier;
 import java.util.HashMap;
 
 import exp.fluffynuar.truedarkness.world.inventory.SamovarGUIMenu;
+import exp.fluffynuar.truedarkness.procedures.SamovarChtotoTamProcedure;
 import exp.fluffynuar.truedarkness.procedures.PriVziatiiPriedmietaSamovarProcedure;
-import exp.fluffynuar.truedarkness.procedures.PriVziatiiPriedmietaIzSlotaProcedure;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -71,34 +71,18 @@ public class SamovarGUISlotMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (slot == 1 && changeType == 1) {
-
-			PriVziatiiPriedmietaIzSlotaProcedure.execute(world, entity);
-		}
 		if (slot == 2 && changeType == 0) {
 
-			PriVziatiiPriedmietaIzSlotaProcedure.execute(world, entity);
+			SamovarChtotoTamProcedure.execute();
 		}
 		if (slot == 2 && changeType == 1) {
 
-			PriVziatiiPriedmietaIzSlotaProcedure.execute(world, entity);
+			SamovarChtotoTamProcedure.execute();
 		}
 		if (slot == 2 && changeType == 2) {
 			int amount = meta;
 
-			PriVziatiiPriedmietaIzSlotaProcedure.execute(world, entity);
-		}
-		if (slot == 3 && changeType == 1) {
-
-			PriVziatiiPriedmietaIzSlotaProcedure.execute(world, entity);
-		}
-		if (slot == 4 && changeType == 1) {
-
-			PriVziatiiPriedmietaIzSlotaProcedure.execute(world, entity);
-		}
-		if (slot == 5 && changeType == 1) {
-
-			PriVziatiiPriedmietaIzSlotaProcedure.execute(world, entity);
+			SamovarChtotoTamProcedure.execute();
 		}
 		if (slot == 6 && changeType == 1) {
 

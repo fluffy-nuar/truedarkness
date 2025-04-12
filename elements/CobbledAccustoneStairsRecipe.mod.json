@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CobbledAccustone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CobbledAccustone"
+      },
+      {
+        "value": "CUSTOM:CobbledAccustone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CobbledAccustone"
+      },
+      {
+        "value": "CUSTOM:CobbledAccustone"
+      },
+      {
+        "value": "CUSTOM:CobbledAccustone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CobbledAccustoneStairs"
+    },
+    "name": "cobbled_accustone_stairs_recipe",
+    "namespace": "mod"
+  }
+}

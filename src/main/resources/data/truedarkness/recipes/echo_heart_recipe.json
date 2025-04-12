@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:fantal_heart"
+    },
+    {
+      "item": "truedarkness:echo_harp"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:echo_heart",
+    "count": 1
+  }
+}

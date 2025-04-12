@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "light_of_soul_advancement": {
+    "light_of_soul_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

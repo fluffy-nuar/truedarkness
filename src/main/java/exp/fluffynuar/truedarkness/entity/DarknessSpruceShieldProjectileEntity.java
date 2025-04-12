@@ -72,6 +72,10 @@ public class DarknessSpruceShieldProjectileEntity extends AbstractArrow implemen
 		return shoot(world, entity, source, 1f, 5, 5);
 	}
 
+	public static DarknessSpruceShieldProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 1f, 5, 5);
+	}
+
 	public static DarknessSpruceShieldProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		DarknessSpruceShieldProjectileEntity entityarrow = new DarknessSpruceShieldProjectileEntity(TruedarknessModEntities.DARKNESS_SPRUCE_SHIELD_PROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

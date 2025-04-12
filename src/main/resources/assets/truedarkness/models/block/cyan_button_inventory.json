@@ -1,6 +1,7 @@
 {
   "parent": "block/button_inventory",
   "textures": {
+    "particle": "truedarkness:block/cyan_planks",
     "texture": "truedarkness:block/cyan_planks"
   },
   "render_type": "solid"

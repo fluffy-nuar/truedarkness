@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ore"
+    },
+    {
+      "item": "truedarkness:echo_carving_knife"
+    }
+  ],
+  "output": {
+    "item": "minecraft:raw_iron",
+    "count": 1
+  }
+}

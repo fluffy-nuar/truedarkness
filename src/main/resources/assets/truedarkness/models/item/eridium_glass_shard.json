@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/eridium_glass_shard"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:eridium_glass_shard_active": 1
+      },
+      "model": "truedarkness:item/eridium_glass_shard_0"
+    }
+  ]
+}

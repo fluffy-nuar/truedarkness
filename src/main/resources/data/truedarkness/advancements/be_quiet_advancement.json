@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:reinforced_crystal"
+    },
+    "title": {
+      "translate": "advancements.be_quiet_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.be_quiet_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "be_quiet_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:another_level_advancement"
+}

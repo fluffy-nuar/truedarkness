@@ -9,7 +9,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "truedarkness:corrupted_sculk"
+              "Name": "truedarkness:unclear_corrupt"
             }
           }
         }

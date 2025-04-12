@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/cvetaliy_cluster_0",
+  "textures": {
+    "all": "truedarkness:block/cvetaliy_cluster",
+    "particle": "truedarkness:block/cvetaliy_block",
+    "3": "truedarkness:block/cvetaliy_cluster"
+  },
+  "render_type": "solid"
+}

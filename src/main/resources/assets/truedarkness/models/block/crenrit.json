@@ -2,7 +2,7 @@
   "parent": "block/cube",
   "textures": {
     "down": "truedarkness:block/renteria_sand",
-    "up": "truedarkness:block/crenrit_top",
+    "up": "minecraft:block/sculk",
     "north": "truedarkness:block/crenrit",
     "east": "truedarkness:block/crenrit",
     "south": "truedarkness:block/crenrit",

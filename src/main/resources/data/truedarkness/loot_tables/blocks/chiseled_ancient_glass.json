@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/chiseled_ancient_glass",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:chiseled_ancient_glass_shard",
+          "functions": [
+            {
+              "count": 3,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

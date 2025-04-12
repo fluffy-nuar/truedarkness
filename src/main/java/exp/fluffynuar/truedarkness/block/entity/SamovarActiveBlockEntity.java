@@ -131,18 +131,6 @@ public class SamovarActiveBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direction) {
-		if (index == 0)
-			return false;
-		if (index == 1)
-			return false;
-		if (index == 2)
-			return false;
-		if (index == 3)
-			return false;
-		if (index == 4)
-			return false;
-		if (index == 5)
-			return false;
 		return true;
 	}
 

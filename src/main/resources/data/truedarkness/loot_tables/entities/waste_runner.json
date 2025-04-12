@@ -22,11 +22,6 @@
                 "min": 0,
                 "max": 1
               }
-            },
-            {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:ore_drops"
             }
           ]
         },
@@ -41,11 +36,6 @@
                 "min": 0,
                 "max": 1
               }
-            },
-            {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:ore_drops"
             }
           ]
         }
@@ -68,11 +58,6 @@
                 "min": 1,
                 "max": 1
               }
-            },
-            {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:ore_drops"
             }
           ]
         }
@@ -95,11 +80,6 @@
                 "min": 1,
                 "max": 1
               }
-            },
-            {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:ore_drops"
             }
           ]
         },
@@ -114,11 +94,6 @@
                 "min": 1,
                 "max": 1
               }
-            },
-            {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:ore_drops"
             }
           ]
         }

@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:fantal_heart"
+    },
+    {
+      "item": "truedarkness:light_of_soul"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:soul_heart",
+    "count": 1
+  }
+}

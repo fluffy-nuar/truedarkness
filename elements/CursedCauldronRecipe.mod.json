@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CorruptedHandFangs"
+      },
+      {
+        "value": "CUSTOM:EridiumBlock"
+      },
+      {
+        "value": "CUSTOM:CorruptedHandFangs"
+      },
+      {
+        "value": "CUSTOM:CorruptedBubbleBlock"
+      },
+      {
+        "value": "Blocks.CAULDRON"
+      },
+      {
+        "value": "CUSTOM:CorruptedBubbleBlock"
+      },
+      {
+        "value": "CUSTOM:ChiseledCorruptedBricks"
+      },
+      {
+        "value": "CUSTOM:BloodContainer"
+      },
+      {
+        "value": "CUSTOM:ChiseledCorruptedBricks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CursedCauldron"
+    },
+    "name": "cursed_cauldron_recipe",
+    "namespace": "mod"
+  }
+}

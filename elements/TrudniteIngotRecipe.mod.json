@@ -1,19 +1,45 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Blasting",
+    "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
-    "xpReward": 1.0,
-    "cookingTime": 250,
+    "xpReward": 0.0,
+    "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:RawTrudnite"
-    },
-    "blastingReturnStack": {
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CvetalitShard"
+      },
+      {
+        "value": "CUSTOM:RawTrudnite"
+      },
+      {
+        "value": "CUSTOM:RawTrudnite"
+      },
+      {
+        "value": "CUSTOM:RawTrudnite"
+      },
+      {
+        "value": "CUSTOM:RawTrudnite"
+      },
+      {
+        "value": "CUSTOM:CvetalitShard"
+      },
+      {
+        "value": "CUSTOM:CvetalitShard"
+      },
+      {
+        "value": "CUSTOM:CvetalitShard"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:TrudniteIngot"
     },
     "name": "trudnite_ingot_recipe",

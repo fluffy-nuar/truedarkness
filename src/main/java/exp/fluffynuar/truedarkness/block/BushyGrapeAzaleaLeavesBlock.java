@@ -1,39 +1,23 @@
 
 package exp.fluffynuar.truedarkness.block;
 
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.BonemealableBlock;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import java.util.List;
-import java.util.Collections;
+import exp.fluffynuar.truedarkness.procedures.BushyGrapeAzaleaLeavesPriIspolzovaniiKostnoiMukiProcedure;
 
-import exp.fluffynuar.truedarkness.procedures.BushyGrapeAzaleaLeavesObnovitTaktProcedure;
-import exp.fluffynuar.truedarkness.procedures.BushyGrapeAzaleaLeavesNaBlokieNazhataPravaiaKnopkaMyshiProcedure;
-
-public class BushyGrapeAzaleaLeavesBlock extends LeavesBlock {
+public class BushyGrapeAzaleaLeavesBlock extends LeavesBlock implements BonemealableBlock {
 	public BushyGrapeAzaleaLeavesBlock() {
 		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.AZALEA_LEAVES).strength(1f, 10f).noOcclusion());
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override
@@ -47,33 +31,17 @@ public class BushyGrapeAzaleaLeavesBlock extends LeavesBlock {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate, boolean clientSide) {
+		return true;
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		BushyGrapeAzaleaLeavesObnovitTaktProcedure.execute(world, x, y, z);
+	public boolean isBonemealSuccess(Level world, RandomSource random, BlockPos pos, BlockState blockstate) {
+		return true;
 	}
 
 	@Override
-	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
-		super.use(blockstate, world, pos, entity, hand, hit);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		double hitX = hit.getLocation().x;
-		double hitY = hit.getLocation().y;
-		double hitZ = hit.getLocation().z;
-		Direction direction = hit.getDirection();
-		BushyGrapeAzaleaLeavesNaBlokieNazhataPravaiaKnopkaMyshiProcedure.execute(world, x, y, z);
-		return InteractionResult.SUCCESS;
+	public void performBonemeal(ServerLevel world, RandomSource random, BlockPos pos, BlockState blockstate) {
+		BushyGrapeAzaleaLeavesPriIspolzovaniiKostnoiMukiProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

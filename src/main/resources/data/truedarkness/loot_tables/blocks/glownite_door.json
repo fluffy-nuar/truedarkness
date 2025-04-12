@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/glownite_door",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:glownite_door",
+          "conditions": [
+            {
+              "block": "truedarkness:glownite_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

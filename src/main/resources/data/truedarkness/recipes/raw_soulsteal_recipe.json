@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:blacksmite_forge_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:soul_bottle"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "truedarkness:fantal_shard"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:raw_fantal",
+    "count": 1
+  }
+}

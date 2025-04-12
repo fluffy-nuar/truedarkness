@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " a ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:skyfall_ingot"
+    },
+    "b": {
+      "item": "minecraft:ender_eye"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "truedarkness:star_magnifier",
+    "count": 1
+  }
+}

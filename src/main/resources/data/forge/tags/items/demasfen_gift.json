@@ -34,7 +34,6 @@
     "minecraft:pumpkin_seeds",
     "minecraft:brick",
     "truedarkness:bag",
-    "truedarkness:pollen_feather",
-    "truedarkness:marinite_upgrade"
+    "truedarkness:marinite_upgrade_smithing_template"
   ]
 }

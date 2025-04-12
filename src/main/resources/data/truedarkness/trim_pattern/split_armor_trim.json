@@ -1,0 +1,7 @@
+{  
+  "asset_id": "truedarkness:split",  
+  "description": {  
+    "translate": "trim_pattern.truedarkness.split"  
+  },  
+  "template_item": "truedarkness:split_armor_trim_smithing_template"  
+}

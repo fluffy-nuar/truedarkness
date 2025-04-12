@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:the_sky",
+  "features": "truedarkness:skyfall_ore",
+  "step": "underground_ores"
+}

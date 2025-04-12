@@ -1,81 +1,116 @@
 package exp.fluffynuar.truedarkness.procedures;
 
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.core.NonNullList;
 
 import java.util.function.Supplier;
 import java.util.Map;
+import java.util.List;
 
-import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
+import exp.fluffynuar.truedarkness.jei_recipes.BlacksmiteForgeRecipeTypeRecipe;
 
 public class BlacksmiteForgeGUIPokaEtotGUIOtkrytProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+		if (((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				|| (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).getItem() == (new Object() {
+					public ItemStack getResult() {
+						if (world instanceof Level _lvl) {
+							net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
+							List<BlacksmiteForgeRecipeTypeRecipe> recipes = rm.getAllRecipesFor(BlacksmiteForgeRecipeTypeRecipe.Type.INSTANCE);
+							for (BlacksmiteForgeRecipeTypeRecipe recipe : recipes) {
+								NonNullList<Ingredient> ingredients = recipe.getIngredients();
+								if (!ingredients.get(0).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)))
+									continue;
+								if (!ingredients.get(1).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)))
+									continue;
+								if (!ingredients.get(2).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)))
+									continue;
+								return recipe.getResultItem(null);
+							}
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getResult()).getItem())
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET
-				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getCount() >= 10
-				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getCount() >= 10) {
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SCULK_MANA_BOTTLE
-					.get() && (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.AMETHYST_SHARD
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
-							.getItem() == TruedarknessModItems.METENITE_SHARD.get()) {
+				&& !((new Object() {
+					public ItemStack getResult() {
+						if (world instanceof Level _lvl) {
+							net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
+							List<BlacksmiteForgeRecipeTypeRecipe> recipes = rm.getAllRecipesFor(BlacksmiteForgeRecipeTypeRecipe.Type.INSTANCE);
+							for (BlacksmiteForgeRecipeTypeRecipe recipe : recipes) {
+								NonNullList<Ingredient> ingredients = recipe.getIngredients();
+								if (!ingredients.get(0).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)))
+									continue;
+								if (!ingredients.get(1).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)))
+									continue;
+								if (!ingredients.get(2).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)))
+									continue;
+								return recipe.getResultItem(null);
+							}
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getResult()).getItem() == Blocks.AIR.asItem())) {
+			if (!((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).getItem() == (new Object() {
+				public ItemStack getResult() {
+					if (world instanceof Level _lvl) {
+						net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
+						List<BlacksmiteForgeRecipeTypeRecipe> recipes = rm.getAllRecipesFor(BlacksmiteForgeRecipeTypeRecipe.Type.INSTANCE);
+						for (BlacksmiteForgeRecipeTypeRecipe recipe : recipes) {
+							NonNullList<Ingredient> ingredients = recipe.getIngredients();
+							if (!ingredients.get(0).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)))
+								continue;
+							if (!ingredients.get(1).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)))
+								continue;
+							if (!ingredients.get(2).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)))
+								continue;
+							return recipe.getResultItem(null);
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getResult()).getItem())) {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(TruedarknessModItems.METENITE_CRYSTAL.get());
+					ItemStack _setstack = (new Object() {
+						public ItemStack getResult() {
+							if (world instanceof Level _lvl) {
+								net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
+								List<BlacksmiteForgeRecipeTypeRecipe> recipes = rm.getAllRecipesFor(BlacksmiteForgeRecipeTypeRecipe.Type.INSTANCE);
+								for (BlacksmiteForgeRecipeTypeRecipe recipe : recipes) {
+									NonNullList<Ingredient> ingredients = recipe.getIngredients();
+									if (!ingredients.get(0).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)))
+										continue;
+									if (!ingredients.get(1).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)))
+										continue;
+									if (!ingredients.get(2).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)))
+										continue;
+									return recipe.getResultItem(null);
+								}
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getResult()).copy();
 					_setstack.setCount(1);
 					((Slot) _slots.get(5)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 			}
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOUL_BOTTLE.get()
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.IRON_INGOT
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
-							.getItem() == TruedarknessModItems.SOULSTEAL_SHARD.get()) {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(TruedarknessModItems.SOULSTEAL_METAL.get());
-					_setstack.setCount(1);
-					((Slot) _slots.get(5)).set(_setstack);
-					_player.containerMenu.broadcastChanges();
-				}
-			}
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-					.getItem() == TruedarknessModItems.GLASS_BOTTLE_CORRUPT.get()
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.IRON_INGOT
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
-							.getItem() == TruedarknessModItems.FIRENITE_SCRAP.get()) {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(TruedarknessModItems.RAW_FIRENITE.get());
-					_setstack.setCount(1);
-					((Slot) _slots.get(5)).set(_setstack);
-					_player.containerMenu.broadcastChanges();
-				}
-			}
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.ELDER_TEAR.get()
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
-							.getItem() == TruedarknessModItems.TRUDNITE_INGOT.get()
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
-							.getItem() == TruedarknessModItems.CALM_AQUAMARINE.get()) {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(TruedarknessModItems.CRY_INGOT.get());
-					_setstack.setCount(1);
-					((Slot) _slots.get(5)).set(_setstack);
-					_player.containerMenu.broadcastChanges();
-				}
-			}
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOUL_BOTTLE.get()
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.AMETHYST_SHARD
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
-							.getItem() == TruedarknessModItems.DARK_CRYSTAL_SHARD.get()) {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(TruedarknessModItems.DARK_CRYSTAL.get());
-					_setstack.setCount(1);
-					((Slot) _slots.get(5)).set(_setstack);
-					_player.containerMenu.broadcastChanges();
-				}
+		} else {
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				ItemStack _setstack = new ItemStack(Blocks.AIR).copy();
+				_setstack.setCount(1);
+				((Slot) _slots.get(5)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
 			}
 		}
 	}

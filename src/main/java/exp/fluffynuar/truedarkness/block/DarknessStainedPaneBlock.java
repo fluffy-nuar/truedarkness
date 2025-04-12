@@ -1,14 +1,12 @@
 
 package exp.fluffynuar.truedarkness.block;
 
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.IronBarsBlock;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.item.TooltipFlag;
@@ -18,7 +16,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import java.util.List;
-import java.util.Collections;
 
 import exp.fluffynuar.truedarkness.procedures.ChiseledGlassText5Procedure;
 
@@ -28,13 +25,15 @@ public class DarknessStainedPaneBlock extends IronBarsBlock {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		Entity entity = itemstack.getEntityRepresentation();
-		double x = entity != null ? entity.getX() : 0.0;
-		double y = entity != null ? entity.getY() : 0.0;
-		double z = entity != null ? entity.getZ() : 0.0;
-		list.add(Component.literal(ChiseledGlassText5Procedure.execute()));
+		String hoverText = ChiseledGlassText5Procedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 
 	@Override
@@ -45,13 +44,5 @@ public class DarknessStainedPaneBlock extends IronBarsBlock {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(Blocks.AIR));
 	}
 }

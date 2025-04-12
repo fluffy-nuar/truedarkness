@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -12,16 +12,12 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [],
     "efficiency": 9.0,
     "attackSpeed": 0.6,
     "enchantability": 14,
     "damageVsEntity": 14.0,
     "usageCount": 2031,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -31,6 +27,8 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onItemInInventoryTick": {

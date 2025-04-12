@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/renteria_sand",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:renteria_sand"
+        }
+      ]
+    }
+  ]
+}

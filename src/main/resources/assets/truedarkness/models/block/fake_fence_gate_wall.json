@@ -1,6 +1,7 @@
 {
   "parent": "block/template_fence_gate_wall",
   "textures": {
+    "particle": "truedarkness:block/fake_planks",
     "texture": "truedarkness:block/fake_planks"
   },
   "render_type": "solid"

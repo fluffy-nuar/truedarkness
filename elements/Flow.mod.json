@@ -1,37 +1,53 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
     "mobName": "Flow",
     "mobLabel": "",
     "mobModelName": "Modelflow",
     "mobModelTexture": "flow.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [
       {
         "model": "Default",
         "texture": "flow_light.png",
+        "disableHurtOverlay": false,
         "glow": true
       }
     ],
+    "animations": [],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16776916,
+      "value": -15658435,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16770374,
+      "value": -3479300,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -66,11 +82,13 @@
     "health": 10,
     "xpAmount": 1,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -105,10 +123,10 @@
     "stepSound": {
       "value": ""
     },
-    "entityDataEntries": [],
-    "whenMobDies": {
-      "name": "FlowKoghdaSushchnostUmiraiet"
+    "raidCelebrationSound": {
+      "value": ""
     },
+    "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
@@ -133,6 +151,15 @@
         "value": "CUSTOM:Swamps"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

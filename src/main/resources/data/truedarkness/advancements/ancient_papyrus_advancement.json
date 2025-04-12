@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "ancient_papyrus_advancement": {
+    "ancient_papyrus_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

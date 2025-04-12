@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "lit_log": "corrupted_campfire_burning",
+        "3": "corrupted_campfire_fire",
+        "log": "corrupted_campfire_log"
+      },
+      "name": "default"
+    }
+  }
+}

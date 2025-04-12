@@ -1,0 +1,28 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:SoulstealHoe"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:CryIngot"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:MariniteUpgrade"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:MariniteHoe"
+    },
+    "name": "marinite_hoe_recipe",
+    "namespace": "mod"
+  }
+}

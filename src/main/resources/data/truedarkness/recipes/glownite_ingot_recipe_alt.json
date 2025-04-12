@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:blacksmite_forge_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:poison_fog"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "truedarkness:cvetaliy_grain"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:glownite_ingot",
+    "count": 1
+  }
+}

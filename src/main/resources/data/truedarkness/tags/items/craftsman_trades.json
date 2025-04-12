@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:reinforced_sword",
+    "truedarkness:reinforced_pickaxe",
+    "truedarkness:reinforced_axe",
+    "truedarkness:reinforced_shovel",
+    "truedarkness:reinforced_hoe",
+    "truedarkness:memory_armor_trim_smithing_template"
+  ]
+}

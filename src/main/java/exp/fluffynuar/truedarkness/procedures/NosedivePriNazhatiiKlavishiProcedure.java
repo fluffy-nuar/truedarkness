@@ -15,8 +15,11 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 import net.minecraft.client.Minecraft;
 
 import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
@@ -84,7 +87,7 @@ public class NosedivePriNazhatiiKlavishiProcedure {
 						});
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.NOSEDIVE_EFFECT.get(), 60, 0, true, false));
+						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.NOSEDIVE_EFFECT.get(), 80, 0, true, false));
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), 200, 0, true, false));
 					if (entity instanceof Player _player)
@@ -95,32 +98,77 @@ public class NosedivePriNazhatiiKlavishiProcedure {
 						_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), 200);
 				}
 			}
-		} else {
-			if (!(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get()))) {
-				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.ECHO_HEART.get(), lv).isPresent() : false) {
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), 280, 0, true, false));
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), 280);
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_HEART.get(), 280);
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), 280);
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 120, 198, false, false));
-					{
-						double _setval = 8;
-						entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.SculkedMana = _setval;
-							capability.syncPlayerVariables(entity);
-						});
+		}
+		if (!(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get()))
+				&& !((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Faction).equals("corrupt")) {
+			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.ECHO_HEART.get(), lv).isPresent() : false) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_HEART_COOLDOWN.get(), 280, 0, true, false));
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_HEART.get(), 280);
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_HEART.get(), 280);
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_HEART.get(), 280);
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 120, 198, false, false));
+				{
+					double _setval = 8;
+					entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.SculkedMana = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.warden.roar")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.warden.roar")), SoundSource.PLAYERS, 1, 1, false);
 					}
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.warden.roar")), SoundSource.PLAYERS, 1, 1);
-						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.warden.roar")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+		}
+		if (((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Faction).equals("corrupt")) {
+			if (entity instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(TruedarknessModMobEffects.HUNTING.get())) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.removeEffect(TruedarknessModMobEffects.HUNTING.get());
+				if (entity instanceof LivingEntity _entity)
+					_entity.removeEffect(MobEffects.DIG_SLOWDOWN);
+				{
+					Entity _ent = entity;
+					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "particle truedarkness:corrupted_spell ~ ~0.5 ~ 0.1 0.1 0.1 0.01 15 normal");
+					}
+				}
+				if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage >= 4) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(TruedarknessModMobEffects.SNAKE_MASTER.get());
+				}
+				if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage >= 5) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(MobEffects.MOVEMENT_SPEED);
+				}
+			} else {
+				if (!(entity instanceof LivingEntity _livEnt29 && _livEnt29.hasEffect(MobEffects.DIG_SLOWDOWN))) {
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.HUNTING.get(), 9999999, 0, false, false));
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 9999999, 3, false, false));
+					{
+						Entity _ent = entity;
+						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "particle truedarkness:corrupted_spell ~ ~0.5 ~ 0.1 0.1 0.1 0.01 15 normal");
 						}
+					}
+					if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage >= 4) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SNAKE_MASTER.get(), 9999999, 0, false, false));
+					}
+					if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage >= 5) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9999999, 0, false, false));
 					}
 				}
 			}

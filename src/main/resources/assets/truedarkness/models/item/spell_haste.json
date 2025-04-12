@@ -1,0 +1,50 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/spell_up"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:spell_haste_corrupted": 1,
+        "truedarkness:spell_haste_eridium_stage": 0
+      },
+      "model": "truedarkness:item/spell_haste_0"
+    },
+    {
+      "predicate": {
+        "truedarkness:spell_haste_corrupted": 1,
+        "truedarkness:spell_haste_eridium_stage": 1
+      },
+      "model": "truedarkness:item/spell_haste_1"
+    },
+    {
+      "predicate": {
+        "truedarkness:spell_haste_corrupted": 1,
+        "truedarkness:spell_haste_eridium_stage": 2
+      },
+      "model": "truedarkness:item/spell_haste_2"
+    },
+    {
+      "predicate": {
+        "truedarkness:spell_haste_corrupted": 1,
+        "truedarkness:spell_haste_eridium_stage": 3
+      },
+      "model": "truedarkness:item/spell_haste_3"
+    },
+    {
+      "predicate": {
+        "truedarkness:spell_haste_corrupted": 1,
+        "truedarkness:spell_haste_eridium_stage": 4
+      },
+      "model": "truedarkness:item/spell_haste_4"
+    },
+    {
+      "predicate": {
+        "truedarkness:spell_haste_corrupted": 1,
+        "truedarkness:spell_haste_eridium_stage": 5
+      },
+      "model": "truedarkness:item/spell_haste_5"
+    }
+  ]
+}

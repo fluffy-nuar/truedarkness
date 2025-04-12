@@ -2,5 +2,13 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "truedarkness:item/eridium_heart"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:eridium_heart_type": 1
+      },
+      "model": "truedarkness:item/eridium_heart_0"
+    }
+  ]
 }

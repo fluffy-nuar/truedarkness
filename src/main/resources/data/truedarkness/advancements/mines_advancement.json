@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:spore_vine"
+      "item": "truedarkness:glow_vine"
     },
     "title": {
       "translate": "advancements.mines_advancement.title"
@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "mines_advancement": {
+    "mines_advancement_0": {
       "trigger": "minecraft:location",
       "conditions": {
         "player": [

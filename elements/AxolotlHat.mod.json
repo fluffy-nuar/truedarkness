@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Axolotl Hat",
     "rarity": "RARE",
-    "slotType": "HEAD",
+    "slotType": "Addon1Slot",
     "baubleModel": "Modelaxolotl_hat",
     "baubleModelTexture": "axolotl_hat.png",
     "creativeTab": {

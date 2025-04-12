@@ -1,37 +1,53 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
     "mobName": "Eridium Zombie",
     "mobLabel": "",
     "mobModelName": "Modeleridium_zombie",
     "mobModelTexture": "eridium_zombie.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [
       {
         "model": "Default",
         "texture": "eridium_zombie_light.png",
+        "disableHurtOverlay": false,
         "glow": true
       }
     ],
+    "animations": [],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -15655366,
+      "value": -12824972,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -3901969,
+      "value": -4678202,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -66,11 +82,13 @@
     "health": 15,
     "xpAmount": 3,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -130,6 +148,15 @@
         "value": "CUSTOM:SwamdWasteland"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

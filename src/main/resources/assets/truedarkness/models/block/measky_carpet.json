@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/neasky_moss_carpet",
+  "textures": {
+    "all": "truedarkness:block/measky_wild_moss",
+    "particle": "truedarkness:block/measky_wild_moss",
+    "0": "truedarkness:block/measky_wild_moss"
+  },
+  "render_type": "solid"
+}

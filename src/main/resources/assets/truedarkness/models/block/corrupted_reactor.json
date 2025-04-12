@@ -1,0 +1,10 @@
+{
+  "parent": "truedarkness:custom/light_of_soul",
+  "textures": {
+    "all": "truedarkness:block/corrupted_reactor_overlay",
+    "particle": "truedarkness:block/corrupted_reactor_overlay",
+    "0": "truedarkness:block/corrupted_reactor_overlay",
+    "1": "truedarkness:block/corrupted_reactor_core"
+  },
+  "render_type": "cutout"
+}

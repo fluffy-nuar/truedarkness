@@ -18,11 +18,6 @@ public class EchoNosediveEffectMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.truedarkness.echo_nosedive_effect";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		EchoNosediveEffectKazhdyiTikVoVriemiaEffiektaProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}

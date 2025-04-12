@@ -98,23 +98,6 @@
       }
     ]
   },
-  "entity.corrupted_knight_hurt": {
-    "subtitle": "subtitles.entity.corrupted_knight_hurt",
-    "sounds": [
-      {
-        "name": "truedarkness:corrupted_knight_hurt",
-        "stream": false
-      },
-      {
-        "name": "truedarkness:corrupted_knight_hurt_1",
-        "stream": false
-      },
-      {
-        "name": "truedarkness:corrupted_knight_hurt_2",
-        "stream": false
-      }
-    ]
-  },
   "block.proector": {
     "subtitle": "subtitles.block.proector",
     "sounds": [
@@ -369,6 +352,279 @@
       },
       {
         "name": "truedarkness:gloomer_step_2",
+        "stream": false
+      }
+    ]
+  },
+  "player.roar": {
+    "subtitle": "subtitles.player.roar",
+    "sounds": [
+      {
+        "name": "truedarkness:roar",
+        "stream": false
+      }
+    ]
+  },
+  "ambient.corrupted_bell": {
+    "subtitle": "subtitles.ambient.corrupted_bell",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_bell",
+        "stream": false
+      }
+    ]
+  },
+  "player.corrupted.teleport.use": {
+    "subtitle": "subtitles.player.corrupted.teleport.use",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_teleport.use",
+        "stream": false
+      }
+    ]
+  },
+  "player.corrupted.teleport.summon": {
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_teleport.start",
+        "stream": false
+      }
+    ]
+  },
+  "player.corrupted.ability.ready": {
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_ability.ready",
+        "stream": false
+      }
+    ]
+  },
+  "player.corrupted.teleport.stop": {
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_teleport.stop",
+        "stream": false
+      }
+    ]
+  },
+  "player.mana.restored": {
+    "subtitle": "subtitles.player.mana.restored",
+    "sounds": [
+      {
+        "name": "truedarkness:echo_bell",
+        "stream": false
+      }
+    ]
+  },
+  "player.echo.teleport": {
+    "sounds": [
+      {
+        "name": "truedarkness:echo_teleport.use",
+        "stream": false
+      }
+    ]
+  },
+  "player.corrupted.teleport.restoring_item": {
+    "subtitle": "subtitles.player.corrupted.teleport.restoring_item",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_teleport.restore_item",
+        "stream": false
+      }
+    ]
+  },
+  "entity.corrupted_creature.ambient": {
+    "subtitle": "subtitles.entity.corrupted_creature.ambient",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_creature_idle_1",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_creature_idle_0",
+        "stream": false
+      }
+    ]
+  },
+  "entity.corrupted_creature.hurt": {
+    "subtitle": "subtitles.entity.corrupted_creature.hurt",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_creature_hurt_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_creature_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_creature_hurt_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.soulsteal_warrior.hurt": {
+    "subtitle": "subtitles.entity.soulsteal_warrior.hurt",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_warrior_hurt_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_warrior_hurt_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.soulsteal_warrior.death": {
+    "subtitle": "subtitles.entity.soulsteal_warrior.death",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_warrior_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.corrupted_creature.death": {
+    "subtitle": "subtitles.entity.corrupted_creature.death",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_creature_death_0",
+        "stream": false
+      }
+    ]
+  },
+  "entity.corrupted_creature.turns_aggresive": {
+    "subtitle": "subtitles.entity.corrupted_creature.turns_aggresive",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_creature_turn_aggresive",
+        "stream": false
+      }
+    ]
+  },
+  "entity.corrupted_knight.hurt": {
+    "subtitle": "subtitles.entity.corrupted_knight.hurt",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_knight_hurt",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_knight_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_knight_hurt_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.hex.hurt": {
+    "subtitle": "subtitles.entity.hex.hurt",
+    "sounds": [
+      {
+        "name": "truedarkness:hex_hurt_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:hex_hurt_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.hex.death": {
+    "subtitle": "subtitles.entity.hex.death",
+    "sounds": [
+      {
+        "name": "truedarkness:hex_death_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.hex.ambient": {
+    "subtitle": "subtitles.entity.hex.ambient",
+    "sounds": [
+      {
+        "name": "truedarkness:hex_idle_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:hex_idle_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.corrupted_skeleton.step": {
+    "subtitle": "subtitles.entity.corrupted_skeleton.step",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_skeleton_step_1",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_skeleton_step_0",
+        "stream": false
+      }
+    ]
+  },
+  "entity.corrupted_skeleton.ambient": {
+    "subtitle": "subtitles.entity.corrupted_skeleton.ambient",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_skeleton_idle_1",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_skeleton_step_0",
+        "stream": false
+      }
+    ]
+  },
+  "entity.corrupted_skeleton.death": {
+    "subtitle": "subtitles.entity.corrupted_skeleton.death",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_skeleton_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.corrupted_seleton.hurt": {
+    "subtitle": "subtitles.entity.corrupted_seleton.hurt",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_skeleton_hurt_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_skeleton_hurt_1",
+        "stream": false
+      }
+    ]
+  },
+  "player.corrupted.teleport.eradicated": {
+    "subtitle": "subtitles.player.corrupted.teleport.eradicated",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_teleport.eradicated_0",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_teleport.eradicated_1",
+        "stream": false
+      },
+      {
+        "name": "truedarkness:corrupted_teleport.eradicated_2",
+        "stream": false
+      }
+    ]
+  },
+  "player.corrupted.teleport.casting": {
+    "subtitle": "subtitles.player.corrupted.teleport.casting",
+    "sounds": [
+      {
+        "name": "truedarkness:corrupted_teleport.casting",
         "stream": false
       }
     ]

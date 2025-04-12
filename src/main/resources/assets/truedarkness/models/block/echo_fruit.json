@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/echo_fruit",
+    "up": "truedarkness:block/echo_fruit",
+    "north": "truedarkness:block/echo_fruit",
+    "east": "truedarkness:block/echo_fruit",
+    "south": "truedarkness:block/echo_fruit",
+    "west": "truedarkness:block/echo_fruit",
+    "particle": "truedarkness:block/echo_fruit"
+  },
+  "render_type": "solid"
+}

@@ -1,12 +1,4 @@
 {
-  "type": "truedarkness:structure_feature",
-  "config": {
-    "structure": "truedarkness:swamp_flower",
-    "random_rotation": true,
-    "random_mirror": true,
-    "ignored_blocks": [
-      "minecraft:structure_block",
-      "minecraft:air"
-    ]
-  }
+  "type": "minecraft:no_op",
+  "config": {}
 }

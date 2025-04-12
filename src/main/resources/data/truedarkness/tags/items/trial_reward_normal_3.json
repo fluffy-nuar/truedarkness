@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:emerald_block",
+    "minecraft:iron_block",
+    "minecraft:gold_block",
+    "minecraft:diamond",
+    "minecraft:diamond_helmet",
+    "minecraft:diamond_chestplate",
+    "minecraft:diamond_leggings",
+    "minecraft:diamond_boots",
+    "truedarkness:dark_crystal",
+    "truedarkness:metenite_crystal",
+    "minecraft:ender_pearl",
+    "minecraft:ender_eye",
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    "truedarkness:fantal_ingot",
+    "truedarkness:split_armor_trim_smithing_template",
+    "truedarkness:marinite_upgrade_smithing_template",
+    "truedarkness:trudnite_block",
+    "truedarkness:reinforced_stone"
+  ]
+}

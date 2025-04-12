@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "lighted_berry_stem_end",
@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "lighted_berry",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -24,29 +24,28 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
+        "mx": 2.0,
+        "my": 2.0,
+        "mz": 2.0,
+        "Mx": 14.0,
         "My": 16.0,
-        "Mz": 16.0,
+        "Mz": 14.0,
         "subtract": false
       }
     ],
-    "name": "Lighted Vine",
+    "customProperties": [],
+    "name": "Tear Berry Block",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 0.1,
-    "resistance": 10.0,
+    "hardness": 0.0,
+    "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "destroyTool": "hoe",
     "customDrop": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:LightedBerry"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -100,10 +99,12 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
-    "isBonemealable": false,
+    "vanillaToolTier": "STONE",
+    "isBonemealable": true,
+    "onBonemealSuccess": {
+      "name": "LightedVine2PriIspolzovaniiKostnoiMuki"
+    },
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -119,26 +120,18 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "LightedBerryPriShchielchkiePravoiKnopkoiMyshiNaBlokie"
-    },
     "onNeighbourBlockChanges": {
       "name": "LightedVineKoghdaSosiedniiBlokMieniaietsia"
+    },
+    "onRandomUpdateEvent": {
+      "name": "LightedVineActiveSpontannoNaStoronieKliienta"
     },
     "onEntityCollides": {
       "name": "YteriaPlantsProc"
     },
-    "generateFeature": true,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Swamps"
-      }
-    ],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.AIR"
-      }
-    ],
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 64,
     "frequencyOnChunk": 1,

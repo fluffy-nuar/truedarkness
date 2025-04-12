@@ -14,12 +14,8 @@ public class CalmMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.truedarkness.calm";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
+		super.addAttributeModifiers(entity, attributeMap, amplifier);
 		CalmKoghdaNachatProcedure.execute(entity.level(), entity);
 	}
 

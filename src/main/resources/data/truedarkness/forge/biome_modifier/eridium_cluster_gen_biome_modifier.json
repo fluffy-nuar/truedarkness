@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:corrupted_forest",
+    "truedarkness:corrupted_field"
+  ],
+  "features": "truedarkness:eridium_cluster_gen",
+  "step": "vegetal_decoration"
+}

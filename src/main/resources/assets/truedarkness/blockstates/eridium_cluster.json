@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "truedarkness:block/eridium_cluster"
+    },
+    "facing=east": {
+      "model": "truedarkness:block/eridium_cluster",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "truedarkness:block/eridium_cluster",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "truedarkness:block/eridium_cluster",
+      "y": 270
     }
   }
 }

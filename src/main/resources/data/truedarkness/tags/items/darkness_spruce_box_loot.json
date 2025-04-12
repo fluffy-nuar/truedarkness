@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:copper_ingot",
+    "truedarkness:soul_bottle",
+    "truedarkness:chiseled_glass_shard_1",
+    "truedarkness:chiseled_glass_shard_4",
+    "truedarkness:chiseled_ancient_glass_shard",
+    "truedarkness:tear_berry",
+    "truedarkness:cvetaliy_grain",
+    "truedarkness:aquamarine_coin",
+    "truedarkness:accustone_pebbles",
+    "truedarkness:swamp_pollen",
+    "truedarkness:cryer_tear",
+    "truedarkness:ancient_papyrus"
+  ]
+}

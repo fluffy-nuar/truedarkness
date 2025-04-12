@@ -1,0 +1,29 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Trial",
+    "icon": "trial",
+    "color": {
+      "value": -12701105,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": {
+      "name": "TrialPriNalozhieniiEffiekta"
+    },
+    "onActiveTick": {
+      "name": "TrialKazhdyiTikVoVriemiaEffiekta"
+    },
+    "onExpired": {
+      "name": "TrialPriIstiechieniiEffiekta"
+    }
+  }
+}

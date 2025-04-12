@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:carving_knife"
+    },
+    {
+      "item": "truedarkness:echo_harp"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:echo_carving_knife",
+    "count": 1
+  }
+}

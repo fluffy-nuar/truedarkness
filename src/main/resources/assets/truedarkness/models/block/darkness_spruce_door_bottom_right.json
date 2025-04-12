@@ -1,6 +1,7 @@
 {
   "parent": "block/door_bottom_right",
   "textures": {
+    "particle": "truedarkness:block/darkness_spruce_door",
     "bottom": "truedarkness:block/darkness_spruce_door",
     "top": "truedarkness:block/darkness_spruce_door_top"
   },

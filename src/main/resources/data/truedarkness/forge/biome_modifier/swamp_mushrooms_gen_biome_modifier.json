@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "truedarkness:swamps",
+  "biomes": "truedarkness:crying_swamps",
   "features": "truedarkness:swamp_mushrooms_gen",
   "step": "underground_structures"
 }

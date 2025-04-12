@@ -3,10 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "truedarkness:grape"
+      "item": "minecraft:sweet_berries"
     },
     {
-      "item": "minecraft:sweet_berries"
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "truedarkness:grape"
     },
     {
       "item": "minecraft:bowl"

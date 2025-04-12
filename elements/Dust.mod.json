@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "particle",
   "definition": {
     "texture": "dust.png",
@@ -7,7 +7,9 @@
     "frameDuration": 1,
     "width": 0.2,
     "height": 0.2,
-    "scale": 1.0,
+    "scale": {
+      "fixedValue": 1.0
+    },
     "speedFactor": 1.0,
     "gravity": 0.30000000000000004,
     "maxAge": 60,

@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "truedarkness:chiseled_polished_sandstone_of_missing"
+    "item": "truedarkness:deleted_mod_element"
   },
-  "result": "truedarkness:polished_sandstone_bricks_of_missing"
+  "result": "truedarkness:polished_sandstone_of_missing_bricks"
 }

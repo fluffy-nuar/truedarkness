@@ -1,0 +1,340 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 12,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:cobbled_deepslate"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:cobbled_deepslate_stairs",
+            "Properties": {
+              "facing": "north",
+              "half": "bottom",
+              "shape": "straight",
+              "waterlogged": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:cobbled_deepslate_slab",
+            "Properties": {
+              "type": "bottom",
+              "waterlogged": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:cobbled_deepslate_wall",
+            "Properties": {
+              "east": "none",
+              "north": "none",
+              "south": "none",
+              "up": "true",
+              "waterlogged": "false",
+              "west": "none"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:polished_deepslate"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:polished_deepslate_stairs",
+            "Properties": {
+              "facing": "north",
+              "half": "bottom",
+              "shape": "straight",
+              "waterlogged": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:polished_deepslate_slab",
+            "Properties": {
+              "type": "bottom",
+              "waterlogged": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:polished_deepslate_wall",
+            "Properties": {
+              "east": "none",
+              "north": "none",
+              "south": "none",
+              "up": "true",
+              "waterlogged": "false",
+              "west": "none"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_tiles"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_tile_stairs",
+            "Properties": {
+              "facing": "north",
+              "half": "bottom",
+              "shape": "straight",
+              "waterlogged": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_tile_slab",
+            "Properties": {
+              "type": "bottom",
+              "waterlogged": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_tile_wall",
+            "Properties": {
+              "east": "none",
+              "north": "none",
+              "south": "none",
+              "up": "true",
+              "waterlogged": "false",
+              "west": "none"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_bricks"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_brick_stairs",
+            "Properties": {
+              "facing": "north",
+              "half": "bottom",
+              "shape": "straight",
+              "waterlogged": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_brick_slab",
+            "Properties": {
+              "type": "bottom",
+              "waterlogged": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_brick_wall",
+            "Properties": {
+              "east": "none",
+              "north": "none",
+              "south": "none",
+              "up": "true",
+              "waterlogged": "false",
+              "west": "none"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:chiseled_deepslate"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:cracked_deepslate_bricks"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:cracked_deepslate_tiles"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate_coal_ore"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:infested_deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:polished_basalt",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:gray_wool"
+          }
+        },
+        "state": {
+          "Name": "truedarkness:unclear_deepslate_sand"
+        }
+      }
+    ]
+  }
+}

@@ -1,17 +1,20 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Deal Cooldown",
     "icon": "deal_cooldown.png",
     "color": {
-      "value": -8923206,
+      "value": -4141093,
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": false,
-    "isBenefitical": false,
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
-    "renderStatusInHUD": true
+    "renderStatusInHUD": true,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": []
   }
 }

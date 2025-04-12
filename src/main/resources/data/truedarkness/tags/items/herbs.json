@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:sweet_herbs",
+    "truedarkness:medicinal_herbs",
+    "truedarkness:soothing_herbs",
+    "truedarkness:fruits_and_berries",
+    "minecraft:air"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/cursed_scales",
+  "textures": {
+    "all": "truedarkness:block/cursed_scale",
+    "particle": "truedarkness:block/cursed_scale",
+    "0": "truedarkness:block/cursed_scale_model"
+  },
+  "render_type": "cutout"
+}

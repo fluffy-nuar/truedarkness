@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -18,7 +18,7 @@
         "value": ""
       },
       {
-        "value": "Items.ECHO_SHARD"
+        "value": "CUSTOM:EchoStone"
       },
       {
         "value": ""
@@ -30,7 +30,7 @@
         "value": ""
       },
       {
-        "value": "Items.ECHO_SHARD"
+        "value": "CUSTOM:EchoStone"
       },
       {
         "value": ""
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:EchoPapyrus"
+      "value": "CUSTOM:EchoPapryrus"
     },
     "name": "echo_papyrus_recipe",
     "namespace": "mod"

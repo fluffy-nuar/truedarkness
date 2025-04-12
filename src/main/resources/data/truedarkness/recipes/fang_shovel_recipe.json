@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:cursed_anvil_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:fang_shovel"
+    },
+    {
+      "tag": "truedarkness:cursed_tales"
+    },
+    {
+      "item": "truedarkness:evolution_eridium_shard"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:fang_shovel",
+    "count": 1
+  }
+}

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "truedarkness:waste_runner"
+    "truedarkness:waste_runner",
+    "truedarkness:corrupted_human",
+    "truedarkness:corrupted_mage",
+    "truedarkness:soulsteal_warrior"
   ]
 }

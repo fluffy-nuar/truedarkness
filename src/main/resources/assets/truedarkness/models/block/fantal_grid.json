@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/fantal_grid",
+    "up": "truedarkness:block/fantal_grid",
+    "north": "truedarkness:block/fantal_grid",
+    "east": "truedarkness:block/fantal_grid",
+    "south": "truedarkness:block/fantal_grid",
+    "west": "truedarkness:block/fantal_grid",
+    "particle": "truedarkness:block/fantal_grid"
+  },
+  "render_type": "cutout"
+}

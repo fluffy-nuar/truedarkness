@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "converting",
+    "result": {
+      "value": "Items.AMETHYST_SHARD"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "CUSTOM:EchoCarvingKnife"
+      }
+    ]
+  }
+}

@@ -31,34 +31,33 @@ public class SampPollenParticle extends TextureSheetParticle {
 	}
 
 	private final SpriteSet spriteSet;
-	private float angularVelocity;
-	private float angularAcceleration;
 
 	protected SampPollenParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(1f, 1f);
+		this.quadSize *= 2f;
 		this.lifetime = (int) Math.max(1, 20 + (this.random.nextInt(10) - 5));
-		this.gravity = 0.8f;
-		this.hasPhysics = true;
-		this.xd = vx * 1;
-		this.yd = vy * 1;
-		this.zd = vz * 1;
-		this.angularVelocity = 0f;
-		this.angularAcceleration = 0.01f;
+		this.gravity = 1f;
+		this.hasPhysics = false;
+		this.xd = vx * 3;
+		this.yd = vy * 3;
+		this.zd = vz * 3;
 		this.pickSprite(spriteSet);
 	}
 
 	@Override
+	public int getLightColor(float partialTick) {
+		return 15728880;
+	}
+
+	@Override
 	public ParticleRenderType getRenderType() {
-		return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
+		return ParticleRenderType.PARTICLE_SHEET_LIT;
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
-		this.oRoll = this.roll;
-		this.roll += this.angularVelocity;
-		this.angularVelocity += this.angularAcceleration;
 	}
 }

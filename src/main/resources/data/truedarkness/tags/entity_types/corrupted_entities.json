@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:corrupted_hand",
+    "truedarkness:corrupted_human",
+    "truedarkness:corrupted_knight",
+    "truedarkness:corrupted_mage",
+    "truedarkness:eridium_golem",
+    "truedarkness:eridium_zombie",
+    "truedarkness:general",
+    "truedarkness:hex",
+    "truedarkness:soulsteal_warrior",
+    "truedarkness:waste_runner",
+    "truedarkness:corrupted_necromancer",
+    "truedarkness:corrupted_skeleton",
+    "truedarkness:corrupted_unformed_remnants",
+    "truedarkness:corrupted_assassin"
+  ]
+}

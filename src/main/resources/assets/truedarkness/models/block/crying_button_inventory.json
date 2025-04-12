@@ -1,6 +1,7 @@
 {
   "parent": "block/button_inventory",
   "textures": {
+    "particle": "truedarkness:block/cry_planks",
     "texture": "truedarkness:block/cry_planks"
   },
   "render_type": "translucent"

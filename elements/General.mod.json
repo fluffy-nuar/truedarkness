@@ -1,8 +1,8 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
-    "mobName": "General",
+    "mobName": "§5General",
     "mobLabel": "",
     "mobModelName": "Modelgeneral",
     "mobModelTexture": "eye_texture.png",
@@ -25,7 +25,18 @@
       {
         "model": "Default",
         "texture": "eye_light.png",
+        "disableHurtOverlay": false,
         "glow": true
+      }
+    ],
+    "animations": [
+      {
+        "animation": {
+          "value": "SNIFFER_WALK"
+        },
+        "speed": 1.0,
+        "walking": true,
+        "amplitude": 1.0
       }
     ],
     "modelWidth": 0.6,
@@ -34,19 +45,17 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -13418408,
+      "value": -15655627,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -7067431,
+      "value": -3562801,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "isBoss": false,
+    "creativeTabs": [],
+    "isBoss": true,
     "bossBarColor": "PURPLE",
-    "bossBarType": "PROGRESS",
+    "bossBarType": "NOTCHED_6",
     "equipmentMainHand": {
       "value": ""
     },
@@ -66,7 +75,7 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEFINED",
+    "mobCreatureType": "UNDEAD",
     "attackStrength": 12,
     "attackKnockback": 0.1,
     "knockbackResistance": 0.7999999999999999,
@@ -75,7 +84,7 @@
     "armorBaseValue": 10.0,
     "trackingRange": 64,
     "followRange": 64,
-    "health": 210,
+    "health": 200,
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
@@ -85,7 +94,6 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -115,21 +123,58 @@
       "value": "CUSTOM:entity.grim_golem_hurt"
     },
     "deathSound": {
-      "value": ""
+      "value": "CUSTOM:entity.general.death_new"
     },
     "stepSound": {
       "value": ""
     },
-    "entityDataEntries": [],
-    "whenMobDies": {
-      "name": "GeneralKoghdaSushchnostUmiraiet"
+    "raidCelebrationSound": {
+      "value": ""
     },
+    "entityDataEntries": [
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "aggresion",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "mana",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "name": "spawning",
+        "type": "logic",
+        "value": false
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "timer",
+        "type": "integer",
+        "value": 60
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "his_y",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "whenMobIsHurt": {
       "name": "GeneralKoghdaSushchnostRaniena"
     },
+    "onMobTickUpdate": {
+      "name": "GeneralPriObnovlieniiTikaSushchnosti"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"92\" y=\"72\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"break_blocks\"><field name=\"speed\">1</field><field name=\"y_max\">3</field><field name=\"condition\">null,null</field><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.FLOWING_LAVA</field></block></value><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"92\" y=\"72\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -147,6 +192,15 @@
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

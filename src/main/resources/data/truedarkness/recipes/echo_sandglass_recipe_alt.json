@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:sandglass"
+    },
+    {
+      "item": "truedarkness:echo_harp"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:echo_sandglass",
+    "count": 1
+  }
+}

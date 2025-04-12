@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/template_hanging_lantern",
+  "textures": {
+    "all": "truedarkness:block/corrupted_lantern",
+    "particle": "truedarkness:block/corrupted_lantern",
+    "lantern": "truedarkness:block/corrupted_lantern"
+  },
+  "render_type": "cutout"
+}

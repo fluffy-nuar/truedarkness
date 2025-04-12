@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "yteria_root": {
+    "yteria_root_0": {
       "trigger": "minecraft:changed_dimension",
       "conditions": {
         "to": "truedarkness:yteria"

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -8,26 +8,31 @@
     "texture": "soulsteal_hammer",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Soulsteal Hammer",
+    "name": "Fantal Hammer",
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 1,
-    "efficiency": 4.0,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
+    "efficiency": 8.0,
     "attackSpeed": 0.30000000000000004,
     "enchantability": 2,
     "damageVsEntity": 14.0,
-    "usageCount": 2031,
-    "blocksAffected": [],
+    "usageCount": 1561,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
-        "value": "CUSTOM:SoulstealIngot"
+        "value": "CUSTOM:FantalIngot"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onItemInUseTick": {

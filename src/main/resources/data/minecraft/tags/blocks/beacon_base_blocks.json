@@ -3,10 +3,10 @@
   "values": [
     "truedarkness:firenite_block",
     "truedarkness:eridium_block",
-    "truedarkness:gramite_block",
     "truedarkness:dark_crystal_cluster_block",
     "truedarkness:trudnite_block",
     "truedarkness:marinite_block",
-    "truedarkness:metenite_block"
+    "truedarkness:metenite_block",
+    "truedarkness:fantal_block"
   ]
 }

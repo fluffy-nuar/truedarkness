@@ -1,0 +1,9 @@
+{  
+  "replace": false,  
+  "values": [  
+    "truedarkness:split_armor_trim_smithing_template",  
+    "truedarkness:metamorphosis_armor_trim_smithing_template",
+    "truedarkness:memory_armor_trim_smithing_template",  
+    "truedarkness:spirit_armor_trim_smithing_template"
+  ]  
+}

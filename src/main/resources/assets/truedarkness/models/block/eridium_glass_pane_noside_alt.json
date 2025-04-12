@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_noside_alt",
   "textures": {
+    "particle": "truedarkness:block/eridium_glass",
     "pane": "truedarkness:block/eridium_glass"
   },
   "render_type": "translucent"

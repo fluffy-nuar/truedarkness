@@ -1,27 +1,23 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "echo_knife",
+    "texture": "reinforced_knife",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "§3Reinforced Knife",
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 4,
+    "creativeTabs": [],
     "efficiency": 9.0,
     "attackSpeed": 5.0,
     "enchantability": 15,
     "damageVsEntity": 2.0,
     "usageCount": 2031,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -34,6 +30,8 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

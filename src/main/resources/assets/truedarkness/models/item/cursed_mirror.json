@@ -2,5 +2,13 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "truedarkness:item/cursed_mirror"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:cursed_mirror_type": 1
+      },
+      "model": "truedarkness:item/cursed_mirror_0"
+    }
+  ]
 }

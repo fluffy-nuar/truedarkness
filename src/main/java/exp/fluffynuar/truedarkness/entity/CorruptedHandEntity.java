@@ -12,9 +12,8 @@ import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -28,20 +27,25 @@ import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
 import javax.annotation.Nullable;
 
+import exp.fluffynuar.truedarkness.procedures.CorruptedHumanPriRanieniiSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.procedures.CorruptedHandUsloviieGienieratsiiSushchnostiProcedure;
+import exp.fluffynuar.truedarkness.procedures.CorruptedHandPriObnovlieniiTikaSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.procedures.CorruptedHandNaNachalnomPoiavlieniiSushchnostiProcedure;
-import exp.fluffynuar.truedarkness.procedures.CorruptedHandKoghdaSushchnostUmiraietProcedure;
-import exp.fluffynuar.truedarkness.procedures.AttackPlayerProcProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
 import exp.fluffynuar.truedarkness.init.TruedarknessModBlocks;
 
 public class CorruptedHandEntity extends Monster {
+	public static final EntityDataAccessor<Boolean> DATA_aggresive = SynchedEntityData.defineId(CorruptedHandEntity.class, EntityDataSerializers.BOOLEAN);
+
 	public CorruptedHandEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(TruedarknessModEntities.CORRUPTED_HAND.get(), world);
 	}
@@ -59,36 +63,26 @@ public class CorruptedHandEntity extends Monster {
 	}
 
 	@Override
+	protected void defineSynchedData() {
+		super.defineSynchedData();
+		this.entityData.define(DATA_aggresive, false);
+	}
+
+	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(1, new LookAtPlayerGoal(this, Player.class, (float) 6));
 		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Player.class, false, false) {
-			@Override
-			public boolean canUse() {
-				double x = CorruptedHandEntity.this.getX();
-				double y = CorruptedHandEntity.this.getY();
-				double z = CorruptedHandEntity.this.getZ();
-				Entity entity = CorruptedHandEntity.this;
-				Level world = CorruptedHandEntity.this.level();
-				return super.canUse() && AttackPlayerProcProcedure.execute(entity);
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				double x = CorruptedHandEntity.this.getX();
-				double y = CorruptedHandEntity.this.getY();
-				double z = CorruptedHandEntity.this.getZ();
-				Entity entity = CorruptedHandEntity.this;
-				Level world = CorruptedHandEntity.this.level();
-				return super.canContinueToUse() && AttackPlayerProcProcedure.execute(entity);
-			}
-		});
 	}
 
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEAD;
+	}
+
+	@Override
+	public double getPassengersRidingOffset() {
+		return super.getPassengersRidingOffset() + -0.9;
 	}
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
@@ -98,6 +92,15 @@ public class CorruptedHandEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource damagesource, float amount) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		Entity sourceentity = damagesource.getEntity();
+		Entity immediatesourceentity = damagesource.getDirectEntity();
+
+		CorruptedHumanPriRanieniiSushchnostiProcedure.execute(world, x, y, z, sourceentity);
 		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
 		if (damagesource.getDirectEntity() instanceof AbstractArrow)
@@ -112,7 +115,7 @@ public class CorruptedHandEntity extends Monster {
 			return false;
 		if (damagesource.is(DamageTypes.LIGHTNING_BOLT))
 			return false;
-		if (damagesource.is(DamageTypes.EXPLOSION))
+		if (damagesource.is(DamageTypes.EXPLOSION) || damagesource.is(DamageTypes.PLAYER_EXPLOSION))
 			return false;
 		if (damagesource.is(DamageTypes.TRIDENT))
 			return false;
@@ -120,17 +123,19 @@ public class CorruptedHandEntity extends Monster {
 			return false;
 		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
-		if (damagesource.is(DamageTypes.WITHER))
-			return false;
-		if (damagesource.is(DamageTypes.WITHER_SKULL))
+		if (damagesource.is(DamageTypes.WITHER) || damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(damagesource, amount);
 	}
 
 	@Override
-	public void die(DamageSource source) {
-		super.die(source);
-		CorruptedHandKoghdaSushchnostUmiraietProcedure.execute(source.getEntity());
+	public boolean ignoreExplosion() {
+		return true;
+	}
+
+	@Override
+	public boolean fireImmune() {
+		return true;
 	}
 
 	@Override
@@ -138,6 +143,25 @@ public class CorruptedHandEntity extends Monster {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
 		CorruptedHandNaNachalnomPoiavlieniiSushchnostiProcedure.execute(this);
 		return retval;
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putBoolean("Dataaggresive", this.entityData.get(DATA_aggresive));
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Dataaggresive"))
+			this.entityData.set(DATA_aggresive, compound.getBoolean("Dataaggresive"));
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		CorruptedHandPriObnovlieniiTikaSushchnostiProcedure.execute(this.level(), this);
 	}
 
 	@Override

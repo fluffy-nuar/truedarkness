@@ -8,17 +8,17 @@
   ],
   "key": {
     "a": {
-      "item": "truedarkness:soulsteal_nugget"
+      "item": "truedarkness:fantal_nugget"
     },
     "b": {
-      "item": "truedarkness:pollen_feather"
+      "item": "minecraft:feather"
     },
     "c": {
-      "item": "truedarkness:soulsteal_ingot"
+      "item": "truedarkness:synteriy"
     }
   },
   "result": {
-    "item": "truedarkness:soulsteal_wings",
+    "item": "truedarkness:fantal_wings",
     "count": 1
   }
 }

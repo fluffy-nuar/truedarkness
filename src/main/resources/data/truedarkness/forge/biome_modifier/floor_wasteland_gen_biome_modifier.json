@@ -2,7 +2,8 @@
   "type": "forge:add_features",
   "biomes": [
     "truedarkness:swamp_wasteland",
-    "truedarkness:mine"
+    "truedarkness:mine",
+    "truedarkness:retroland"
   ],
   "features": "truedarkness:floor_wasteland_gen",
   "step": "surface_structures"

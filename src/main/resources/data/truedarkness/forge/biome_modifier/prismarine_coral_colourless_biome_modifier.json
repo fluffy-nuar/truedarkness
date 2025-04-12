@@ -2,7 +2,7 @@
   "type": "forge:add_features",
   "biomes": [
     "truedarkness:mine",
-    "truedarkness:swamps"
+    "truedarkness:crying_swamps"
   ],
   "features": "truedarkness:prismarine_coral_colourless",
   "step": "underground_ores"

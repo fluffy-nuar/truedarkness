@@ -1,0 +1,50 @@
+/advancement grant @a everything
+/effect clear
+/give Dev truedarkness:ancient_regulation
+/tp -671 65.00 -525
+/tp 90432ba3-970a-49ff-b704-c0de52ff6153
+/tp 10000 ~ 10000
+/kill Dev
+/give Dev truedarkness:shiny_eridium_dash{ActiveStage:10}
+/time set midnight
+/give Dev minecraft:ender_dragon_spawn_egg
+/give Dev minecraft:wither_spawn_egg
+/kill @e[type=minecraft:ender_dragon]
+/effect give @e[type=minecraft:wither] minecraft:slow_falling infinite 0 true
+/effect clear @e[type=minecraft:wither]
+/attribute @e[type=minecraft:wither,limit=1] minecraft:generic.flying_speed modifier value get
+/attribute @e[type=minecraft:wither,limit=1] minecraft:generic.flying_speed modifier add 5b965a89-fe56-435a-99df-6c7dab76560e 3 -199 multiply
+/attribute Dev neoforge:creative_flight modifier add 5b965a89-fe56-435a-99df-6c7dab76570e 3 -199 multiply
+/attribute Dev neoforge:creative_flight modifier remove 5b965a89-fe56-435a-99df-6c7dab76570e
+/attribute Dev neoforge:creative_flight modifier add 5b965a89-fe56-435a-99df-6c7dab76570e 3 20 multiply
+/attribute Dev neoforge:creative_flight modifier remove 5b965a89-fe56-435a-99df-6c7dab76570e
+/attribute Dev neoforge:creative_flight modifier add 5b965a89-fe56-435a-99df-6c7dab76570e 3 20 multiply
+/attribute Dev neoforge:creative_flight modifier remove 5b965a89-fe56-435a-99df-6c7dab76570e
+/attribute Dev neoforge:step_height modifier add 5b965a89-fe56-435a-99df-6c7dab76570e 63 200 multiply
+/attribute Dev neoforge:step_height modifier add 5b965a89-fe56-435a-99df-6c7dab76570e 63 200 multiply_base
+/attribute Dev neoforge:step_height modifier remove 5b965a89-fe56-435a-99df-6c7dab76570e
+/attribute Dev neoforge:step_height modifier add 5b965a89-fe56-435a-99df-6c7dab76570e 63 200 multiply_base
+/attribute Dev neoforge:step_height modifier remove 5b965a89-fe56-435a-99df-6c7dab76570e
+/attribute Dev neoforge:step_height modifier add 5b965a89-fe56-435a-99df-6c7dab76570e 63 2002342 add
+/time set noon
+/gamerule doDaylightCycle false
+/attribute Dev neoforge:creative_flight modifier add 5b965a89-fe56-435a-79df-6c7dab76570e 63 2002342 add
+/attribute Dev neoforge:step_height modifier add 5b965a89-fe56-435a-99df-6c7dab76570e 63 200234223 add
+/locate biome #forge:is_mountain
+/tp @s -1542 128 285
+/fill -1533 312 98 -1533 -64 98 minecraft:bedrock
+/fill -1533 312 99 -1533 -64 99 minecraft:air
+/fill ~ 312 ~ ~ -64 ~ minecraft:bedrock
+/fill -1533 312 99 -1533 -64 99 minecraft:air
+/attribute Dev neoforge:step_height get
+/attribute Dev neoforge:step_height get 1
+/attribute Dev neoforge:step_height get 2
+/attribute Dev neoforge:step_height base get
+/give Dev truedarkness:jump_test_block
+/give Dev truedarkness:ice_test_block
+/give Dev truedarkness:ice
+/give Dev truedarkness:ice_test_block
+/locate biome truedarkness:retroland
+/tp @s 310 41 -817
+/give Dev truedarkness:corrupted_ritual_knife{Pray:1222}
+/give Dev truedarkness:corrupted_ritual_knife{Prey:1222}

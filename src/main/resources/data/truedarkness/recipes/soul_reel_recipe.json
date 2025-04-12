@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:reel"
+    },
+    {
+      "item": "truedarkness:light_of_soul"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:soul_reel",
+    "count": 1
+  }
+}

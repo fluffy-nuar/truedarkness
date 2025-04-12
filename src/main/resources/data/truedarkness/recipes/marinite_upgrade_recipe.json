@@ -14,11 +14,11 @@
       "item": "truedarkness:sandstone_of_missing"
     },
     "c": {
-      "item": "truedarkness:marinite_upgrade"
+      "item": "truedarkness:marinite_upgrade_smithing_template"
     }
   },
   "result": {
-    "item": "truedarkness:marinite_upgrade",
+    "item": "truedarkness:marinite_upgrade_smithing_template",
     "count": 2
   }
 }

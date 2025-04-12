@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:cursed_anvil_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:shiny_eridium_footstep"
+    },
+    {
+      "item": "truedarkness:corrupted_hand_fangs"
+    },
+    {
+      "item": "truedarkness:evolution_eridium_shard"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:shiny_eridium_footstep",
+    "count": 1
+  }
+}

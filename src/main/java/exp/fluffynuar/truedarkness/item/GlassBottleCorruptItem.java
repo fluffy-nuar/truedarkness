@@ -2,7 +2,7 @@
 package exp.fluffynuar.truedarkness.item;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -10,35 +10,26 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
-
-import exp.fluffynuar.truedarkness.procedures.GlassBottleCorruptIghrokZakanchivaietIspolzovaniiePriedmietaProcedure;
 
 public class GlassBottleCorruptItem extends Item {
 	public GlassBottleCorruptItem() {
-		super(new Item.Properties().stacksTo(16).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).build()));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(0f).build()));
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.DRINK;
 	}
 
 	@Override
 	public int getUseDuration(ItemStack itemstack) {
-		return 10;
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+		return 53;
 	}
 
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = new ItemStack(Items.GLASS_BOTTLE);
 		super.finishUsingItem(itemstack, world, entity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		GlassBottleCorruptIghrokZakanchivaietIspolzovaniiePriedmietaProcedure.execute(entity);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

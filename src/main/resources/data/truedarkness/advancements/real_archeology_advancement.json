@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "real_archeology_advancement": {
+    "real_archeology_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

@@ -2,23 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "ab",
-    " c",
-    " c"
+    "aa",
+    " b",
+    " b"
   ],
   "key": {
     "a": {
-      "item": "truedarkness:soulsteal_nugget"
+      "item": "truedarkness:fantal_ingot"
     },
     "b": {
-      "item": "truedarkness:soulsteal_ingot"
-    },
-    "c": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "truedarkness:soulsteal_hoe",
+    "item": "truedarkness:fantal_hoe",
     "count": 1
   }
 }

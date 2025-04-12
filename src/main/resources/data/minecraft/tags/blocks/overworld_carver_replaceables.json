@@ -1,14 +1,17 @@
 {
   "replace": false,
   "values": [
-    "truedarkness:swamp_stone",
-    "truedarkness:swamp_black_soil",
-    "truedarkness:swamp_dirt",
     "truedarkness:corrupt",
-    "truedarkness:swamp_soil",
-    "truedarkness:crenrit",
-    "truedarkness:renteria_sand",
+    "truedarkness:swamp_dirt",
     "truedarkness:swamp_sand",
+    "truedarkness:crenrit",
+    "truedarkness:cobbled_accustone",
+    "truedarkness:swamp_black_soil",
+    "truedarkness:renteria_sand",
+    "truedarkness:corrupted_soil",
+    "truedarkness:undesky_blacksoil",
+    "truedarkness:swamp_stone",
+    "truedarkness:swamp_soil",
     "truedarkness:swamp_terracota"
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
@@ -29,7 +29,8 @@
     "addSlot": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "WIPText"
     },
     "hasGlow": false,
     "customProperties": {},

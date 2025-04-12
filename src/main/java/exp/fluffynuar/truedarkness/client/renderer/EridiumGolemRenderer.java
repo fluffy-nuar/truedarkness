@@ -17,14 +17,14 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class EridiumGolemRenderer extends MobRenderer<EridiumGolemEntity, Modeliridiumoviy_Golem<EridiumGolemEntity>> {
 	public EridiumGolemRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modeliridiumoviy_Golem(context.bakeLayer(Modeliridiumoviy_Golem.LAYER_LOCATION)), 0.5f);
+		super(context, new Modeliridiumoviy_Golem<EridiumGolemEntity>(context.bakeLayer(Modeliridiumoviy_Golem.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new RenderLayer<EridiumGolemEntity, Modeliridiumoviy_Golem<EridiumGolemEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("truedarkness:textures/entities/eridium_golem_light.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, EridiumGolemEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, 15728640, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
 			}
 		});
 	}

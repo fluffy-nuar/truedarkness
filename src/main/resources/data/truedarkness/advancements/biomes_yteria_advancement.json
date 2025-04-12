@@ -1,0 +1,116 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:firenite_boots"
+    },
+    "title": {
+      "translate": "advancements.biomes_yteria_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.biomes_yteria_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "biomes_yteria_advancement_0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "truedarkness:corrupted_forest"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "biomes_yteria_advancement_1": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "truedarkness:crying_swamps"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "biomes_yteria_advancement_2": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "truedarkness:swamp_wasteland"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "biomes_yteria_advancement_3": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "truedarkness:retroland"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "biomes_yteria_advancement_4": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "truedarkness:the_sky"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "biomes_yteria_advancement_5": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "truedarkness:mine"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "truedarkness:yteria_root"
+}

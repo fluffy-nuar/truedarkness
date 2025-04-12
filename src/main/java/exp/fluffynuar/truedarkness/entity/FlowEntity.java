@@ -26,7 +26,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import exp.fluffynuar.truedarkness.procedures.FlowKoghdaSushchnostUmiraietProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
 
@@ -83,12 +82,6 @@ public class FlowEntity extends PathfinderMob {
 		if (damagesource.is(DamageTypes.DROWN))
 			return false;
 		return super.hurt(damagesource, amount);
-	}
-
-	@Override
-	public void die(DamageSource source) {
-		super.die(source);
-		FlowKoghdaSushchnostUmiraietProcedure.execute(this, source.getEntity());
 	}
 
 	public static void init() {

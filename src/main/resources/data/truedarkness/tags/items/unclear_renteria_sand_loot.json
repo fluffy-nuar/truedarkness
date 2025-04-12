@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:echo_stone",
+    "truedarkness:sculked_apple",
+    "truedarkness:metenite_shard",
+    "truedarkness:shaddy_melon_item",
+    "truedarkness:sculk_ring",
+    "truedarkness:echo_shell",
+    "truedarkness:echo_bottle",
+    "truedarkness:reinforced_key",
+    "truedarkness:reinforced_ring",
+    "truedarkness:echo_reel_3",
+    "truedarkness:echo_reel_4",
+    "minecraft:echo_shard",
+    "minecraft:iron_nugget",
+    "minecraft:gold_nugget",
+    "truedarkness:aquamarine_coin",
+    "truedarkness:cvetaliy_grain",
+    "truedarkness:echo_harp"
+  ]
+}

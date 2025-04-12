@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:light_of_soul"
+    },
+    {
+      "item": "truedarkness:eridium_carving_knife"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:fantal_ore",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "truedarkness:block/polished_sandstone_of_missing_bricks",
+    "bottom": "truedarkness:block/polished_sandstone_of_missing_bricks",
+    "top": "truedarkness:block/polished_sandstone_of_missing_bricks",
+    "side": "truedarkness:block/polished_sandstone_of_missing_bricks"
+  },
+  "render_type": "solid"
+}

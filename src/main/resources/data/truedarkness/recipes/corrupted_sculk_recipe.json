@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:unclear_corrupt"
+    },
+    {
+      "item": "truedarkness:sieve"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:loot_table",
+    "count": 1
+  }
+}

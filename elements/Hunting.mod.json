@@ -1,0 +1,26 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Hunting",
+    "icon": "hunting",
+    "color": {
+      "value": -10924693,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": false,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "HuntingKazhdyiTikVoVriemiaEffiekta"
+    },
+    "onExpired": {
+      "name": "HuntingPriIstiechieniiEffiekta"
+    }
+  }
+}

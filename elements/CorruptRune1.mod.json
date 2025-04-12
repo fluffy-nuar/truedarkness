@@ -1,8 +1,8 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "corrupt_rune_1",
+    "texture": "rune_1",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -12,16 +12,16 @@
     "customModelName": "Single texture",
     "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "corrupt_rune_1",
+    "itemTexture": "rune_1",
     "particleTexture": "",
     "blockBase": "PressurePlate",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": true,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -34,6 +34,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Corrupt Rune",
     "specialInformation": {
       "fixedValue": []
@@ -42,9 +43,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": "Blocks.AIR"
@@ -101,10 +100,9 @@
     },
     "luminance": 0,
     "unbreakable": true,
-    "breakHarvestLevel": 1,
+    "vanillaToolTier": "STONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/neasky_punpkin_top",
+    "up": "truedarkness:block/neasky_punpkin_top",
+    "north": "truedarkness:block/neasky_punpkin",
+    "east": "truedarkness:block/neasky_punpkin",
+    "south": "truedarkness:block/neasky_punpkin",
+    "west": "truedarkness:block/neasky_punpkin",
+    "particle": "truedarkness:block/neasky_punpkin_top"
+  },
+  "render_type": "solid"
+}

@@ -27,7 +27,7 @@ public class SculkManaBottleRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return Ingredient.of(new ItemStack(TruedarknessModItems.SCUIKED_APPLE.get())).test(ingredient);
+		return Ingredient.of(new ItemStack(TruedarknessModItems.SCULKED_APPLE.get())).test(ingredient);
 	}
 
 	@Override

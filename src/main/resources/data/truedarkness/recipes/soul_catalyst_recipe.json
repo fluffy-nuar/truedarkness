@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa ",
+    "aba",
+    " aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "truedarkness:soul_crystal"
+    }
+  },
+  "result": {
+    "item": "truedarkness:soul_catalyst",
+    "count": 1
+  }
+}

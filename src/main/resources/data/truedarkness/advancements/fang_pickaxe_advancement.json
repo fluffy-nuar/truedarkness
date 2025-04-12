@@ -15,9 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "fang_pickaxe_advancement": {
+    "fang_pickaxe_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "truedarkness:corrupted_hand_fangs_advancement"
+  "parent": "truedarkness:lost_advancement"
 }

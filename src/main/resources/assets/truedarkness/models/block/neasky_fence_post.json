@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "truedarkness:block/neasky_planks",
+    "particle": "truedarkness:block/neasky_planks"
+  },
+  "render_type": "solid"
+}

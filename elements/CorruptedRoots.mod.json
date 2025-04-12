@@ -1,9 +1,9 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "corrupted_roots",
+    "texture": "corrupt_roots",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
@@ -13,6 +13,19 @@
     "plantType": "normal",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 0,
+    "secondaryTreeChance": 0.1,
+    "trees": [
+      null,
+      null
+    ],
+    "flowerTrees": [
+      null,
+      null
+    ],
+    "megaTrees": [
+      null,
+      null
+    ],
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "customBoundingBox": false,
@@ -32,14 +45,17 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementriy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "hardness": 0.0,
     "resistance": 0.0,
     "luminance": 6,
     "unbreakable": false,
     "isSolid": false,
+    "isWaterloggable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "PLANT"
@@ -87,6 +103,9 @@
       },
       {
         "value": "CUSTOM:Corrupt0"
+      },
+      {
+        "value": "CUSTOM:CorruptedSoil"
       }
     ],
     "isBonemealable": false,
@@ -95,6 +114,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:CorruptedPlace"
+      },
+      {
+        "value": "CUSTOM:CorruptedField"
       }
     ],
     "generationType": "Grass",

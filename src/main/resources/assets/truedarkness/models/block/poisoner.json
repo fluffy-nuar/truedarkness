@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/poisoner",
+  "textures": {
+    "all": "truedarkness:block/poisoner",
+    "particle": "truedarkness:block/poisoner",
+    "0": "truedarkness:block/poisoner"
+  },
+  "render_type": "cutout"
+}

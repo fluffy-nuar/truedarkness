@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Lavender Field",
@@ -13,11 +13,11 @@
       "value": "Blocks.SAND#0"
     },
     "grassColor": {
-      "value": -9847507,
+      "value": -4793503,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -15033551,
+      "value": -4793503,
       "falpha": 0.0
     },
     "waterColor": {
@@ -48,24 +48,24 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.7,
     "temperature": 0.7,
-    "spawnBiome": false,
+    "spawnBiome": true,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
       "min": 0.2,
-      "max": 0.55
+      "max": 0.9
     },
     "genHumidity": {
-      "min": -0.5,
+      "min": -0.2,
       "max": 0.3
     },
     "genContinentalness": {
-      "min": 0.3026,
-      "max": 1.0021
+      "min": -1.0,
+      "max": 1.0E-4
     },
     "genErosion": {
       "min": 0.0,
-      "max": 0.4
+      "max": 0.1
     },
     "genWeirdness": {
       "min": -1.0,
@@ -94,7 +94,8 @@
       "AmethystGeodes",
       "ExtraEmeraldOre",
       "ForestGrass",
-      "DesertFeatures"
+      "TallSeagrassLush",
+      "MonsterRooms"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "truedarkness:item/corrupt_rune"
+    "layer0": "truedarkness:item/rune_0"
   },
   "render_type": "translucent"
 }

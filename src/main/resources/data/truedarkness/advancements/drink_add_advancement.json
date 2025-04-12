@@ -15,8 +15,117 @@
     "hidden": false
   },
   "criteria": {
-    "drink_add_advancement": {
-      "trigger": "minecraft:impossible"
+    "drink_add_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:lavender_petal"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999999
+            }
+          }
+        ]
+      }
+    },
+    "drink_add_advancement_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:berry_salad"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999999
+            }
+          }
+        ]
+      }
+    },
+    "drink_add_advancement_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:cocoa"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999999
+            }
+          }
+        ]
+      }
+    },
+    "drink_add_advancement_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:crushed_grape"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999999
+            }
+          }
+        ]
+      }
+    },
+    "drink_add_advancement_4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:crushed_sweet_berries"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999999
+            }
+          }
+        ]
+      }
+    },
+    "drink_add_advancement_5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:cuted_apple"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999999
+            }
+          }
+        ]
+      }
+    },
+    "drink_add_advancement_6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "truedarkness:crumpled_wheat"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999999
+            }
+          }
+        ]
+      }
     }
   },
   "parent": "truedarkness:samover_advancement"

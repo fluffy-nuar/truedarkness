@@ -43,7 +43,7 @@ public class PriVziatiiPriedmietaSamovarProcedure {
 				|| (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY).getItem() == Items.POWDER_SNOW_BUCKET
 				|| (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY).getItem() == Items.MILK_BUCKET) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.BUCKET);
+				ItemStack _setstack = new ItemStack(Items.BUCKET).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(4)).set(_setstack);
 				_player.containerMenu.broadcastChanges();

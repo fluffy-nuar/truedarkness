@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "converting",
+    "result": {
+      "value": "Items.RAW_GOLD"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Blocks.NETHER_GOLD_ORE"
+      },
+      {
+        "value": "CUSTOM:CarvingKnife"
+      }
+    ]
+  }
+}

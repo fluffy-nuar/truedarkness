@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "eridium_book": "cursed_anvil"
+      },
+      "name": "default"
+    }
+  }
+}

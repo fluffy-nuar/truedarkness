@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:lavender_field",
+    "truedarkness:grim_forest"
+  ],
+  "features": "truedarkness:coarsed_dirt",
+  "step": "surface_structures"
+}

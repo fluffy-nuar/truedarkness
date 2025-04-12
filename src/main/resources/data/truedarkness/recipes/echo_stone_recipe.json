@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:blacksmite_forge_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:sculk_mana_bottle"
+    },
+    {
+      "item": "truedarkness:accustone_pebbles"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:echo_stone",
+    "count": 1
+  }
+}

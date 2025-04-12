@@ -1,7 +1,7 @@
 {
-  "parent": "block/cross",
+  "parent": "block/crop",
   "textures": {
-    "cross": "truedarkness:block/lavender",
+    "crop": "truedarkness:block/lavender",
     "particle": "truedarkness:block/lavender"
   },
   "render_type": "cutout"

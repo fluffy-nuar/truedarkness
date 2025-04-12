@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:corrupted_light",
+    "truedarkness:swamp_star_grass",
+    "truedarkness:recra_grass",
+    "truedarkness:waster_flower",
+    "truedarkness:sand_of_missing_layer_2",
+    "truedarkness:sand_of_missing_layer_1",
+    "truedarkness:swamp_sand_layer_2",
+    "truedarkness:swamp_sand_layer_1",
+    "truedarkness:swamp_dead_grass",
+    "truedarkness:sand_of_missing_layer",
+    "truedarkness:swamp_sand_layer",
+    "truedarkness:swamp_tall_grass",
+    "truedarkness:dead_bush_swamp",
+    "truedarkness:swamp_grass"
+  ]
+}

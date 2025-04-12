@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "power_of_neo_adv": {
+    "power_of_neo_adv_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

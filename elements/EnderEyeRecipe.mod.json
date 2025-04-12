@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "converting",
+    "result": {
+      "value": "Items.ENDER_EYE"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Blocks.ENDER_CHEST"
+      },
+      {
+        "value": "CUSTOM:EchoCarvingKnife"
+      }
+    ]
+  }
+}

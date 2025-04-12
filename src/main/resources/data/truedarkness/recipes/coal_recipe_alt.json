@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "minecraft:coal_ore"
+    },
+    {
+      "item": "truedarkness:echo_carving_knife"
+    }
+  ],
+  "output": {
+    "item": "minecraft:coal",
+    "count": 1
+  }
+}

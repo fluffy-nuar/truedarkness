@@ -1,17 +1,29 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Target",
-    "icon": "target.png",
+    "icon": "target",
     "color": {
       "value": -9690829,
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": false,
-    "isBenefitical": false,
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
-    "renderStatusInHUD": true
+    "renderStatusInHUD": true,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": {
+      "name": "TargetPriNalozhieniiEffiekta"
+    },
+    "onActiveTick": {
+      "name": "TargetKazhdyiTikVoVriemiaEffiekta"
+    },
+    "onExpired": {
+      "name": "TargetPriIstiechieniiEffiekta"
+    }
   }
 }

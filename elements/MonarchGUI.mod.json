@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -7,11 +7,12 @@
       {
         "type": "image",
         "data": {
-          "image": "monarch_gui.png",
+          "image": "monarch_bar.png",
           "use1Xscale": false,
           "anchorPoint": "TOP_RIGHT",
-          "x": 235,
-          "y": 0
+          "x": 255,
+          "y": 0,
+          "locked": false
         }
       },
       {
@@ -24,7 +25,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 401,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -37,7 +39,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 401,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -50,7 +53,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 381,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -63,7 +67,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 381,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -76,7 +81,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 361,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -89,7 +95,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 361,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -102,7 +109,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 341,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -115,7 +123,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 341,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -128,7 +137,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 321,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -141,7 +151,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 321,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -154,7 +165,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 301,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -167,7 +179,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 301,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -180,7 +193,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 281,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -193,7 +207,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 281,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -206,7 +221,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 261,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
@@ -219,33 +235,78 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 261,
-          "y": 4
+          "y": 4,
+          "locked": false
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "monarch_ring_layer.png",
+          "image": "monarch_bar_cooldwon.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "MonarchbarRingProc"
+            "name": "MonarchCooldownProc"
           },
           "anchorPoint": "TOP_RIGHT",
-          "x": 303,
-          "y": 14
+          "x": 313,
+          "y": 14,
+          "locked": false
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "monarch_sandglass_layer.png",
+          "image": "monarch_spell_bar.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "MonarchbarSandglassProc"
+            "name": "SpellBarProc"
           },
           "anchorPoint": "TOP_RIGHT",
-          "x": 291,
-          "y": 14
+          "x": 401,
+          "y": 18,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_bar_side.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "WingsNoneEquipped"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 377,
+          "y": 18,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_bar_up.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "WingsNoneEquipped"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 353,
+          "y": 18,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_cooldown_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CooldownWithWings"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 357,
+          "y": 38,
+          "locked": false
         }
       },
       {
@@ -258,7 +319,50 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 267,
-          "y": 14
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_sandglass_layer.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MonarchbarSandglassProc"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 279,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_bottle_layer.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MonarchbarBottleProc"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 279,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_paper_layer.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MonarchbarPaperProc"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 279,
+          "y": 14,
+          "locked": false
         }
       },
       {
@@ -271,59 +375,36 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 279,
-          "y": 14
+          "y": 14,
+          "locked": false
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "monarch_spell_down_0.png",
+          "image": "monarch_key_layer.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "MMD0"
+            "name": "MonarchbarKeyProc"
           },
           "anchorPoint": "TOP_RIGHT",
-          "x": 407,
-          "y": 16
+          "x": 279,
+          "y": 14,
+          "locked": false
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "monarch_spell_down_1.png",
+          "image": "monarch_ring_layer.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "MMD1"
+            "name": "MonarchbarRingProc"
           },
           "anchorPoint": "TOP_RIGHT",
-          "x": 407,
-          "y": 16
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "monarch_spell_down_2.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "MMD2"
-          },
-          "anchorPoint": "TOP_RIGHT",
-          "x": 407,
-          "y": 16
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "monarch_spell_down_3.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "MMD3"
-          },
-          "anchorPoint": "TOP_RIGHT",
-          "x": 407,
-          "y": 16
+          "x": 291,
+          "y": 14,
+          "locked": false
         }
       },
       {
@@ -336,7 +417,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 383,
-          "y": 16
+          "y": 20,
+          "locked": false
         }
       },
       {
@@ -349,7 +431,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 383,
-          "y": 16
+          "y": 20,
+          "locked": false
         }
       },
       {
@@ -362,7 +445,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 383,
-          "y": 16
+          "y": 20,
+          "locked": false
         }
       },
       {
@@ -375,7 +459,64 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 383,
-          "y": 16
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMS4"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 383,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMS5"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 383,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMS6"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 383,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMS7"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 383,
+          "y": 20,
+          "locked": false
         }
       },
       {
@@ -388,7 +529,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 359,
-          "y": 16
+          "y": 20,
+          "locked": false
         }
       },
       {
@@ -401,7 +543,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 359,
-          "y": 16
+          "y": 20,
+          "locked": false
         }
       },
       {
@@ -414,7 +557,8 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 359,
-          "y": 16
+          "y": 20,
+          "locked": false
         }
       },
       {
@@ -427,20 +571,708 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 359,
-          "y": 16
+          "y": 20,
+          "locked": false
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "monarch_cooldown_gui.png",
+          "image": "monarch_spell_up_4.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "MonarchCooldownProc"
+            "name": "MMU4"
           },
           "anchorPoint": "TOP_RIGHT",
-          "x": 235,
-          "y": 0
+          "x": 359,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMU5"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 359,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMU6"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 359,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMU7"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 359,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMSD0"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMSD1"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMSD2"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMSD3"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMSD4"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMSD5"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMSD6"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_side_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMSD7"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMUD0"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMUD1"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMUD2"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMUD3"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMUD4"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMUD5"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMUD6"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_up_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMUD7"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_bar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "WingsNoneEquipped"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 401,
+          "y": 18,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD0"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD1"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD2"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD3"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD4"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD5"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD6"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_down_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MMD7"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 407,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "monarch_spell_cooldown.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellBarProcCooldown"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 409,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ptays0"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 415,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Prays1"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 405,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Prays2"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 395,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Prays3"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 385,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Prays4"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 375,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Prays5"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 365,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Prays6"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 355,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Prays7"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 345,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Prays8"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 335,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Prays9"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 325,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays_use.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PraysUse1"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 325,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays_use.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PraysUse2"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 335,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays_use.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PraysUse3"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 345,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays_use.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PraysUse4"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 355,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays_use.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PraysUse5"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 365,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays_use.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PraysUse6"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 375,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays_use.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PraysUse7"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 385,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays_use.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PraysUse8"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 395,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays_use.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PraysUse9"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 405,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "prays_use.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PraysUse10"
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 415,
+          "y": 14,
+          "locked": false
         }
       }
     ],

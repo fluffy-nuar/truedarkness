@@ -1,8 +1,8 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Corrupted Hand",
+    "mobName": "§5Corrupted Hand",
     "mobLabel": "",
     "mobModelName": "Modelcorrupted_hand",
     "mobModelTexture": "corrupted_hand.png",
@@ -21,29 +21,26 @@
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
-    "modelLayers": [
-      {
-        "model": "Default",
-        "texture": "corrupted_hand_light.png",
-        "glow": true
-      }
-    ],
+    "modelLayers": [],
+    "animations": [],
     "modelWidth": 1.0,
-    "modelHeight": 3.8,
+    "modelHeight": 4.8,
     "modelShadowSize": 0.5,
-    "mountedYOffset": 0.0,
+    "mountedYOffset": -0.9,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -15069902,
+      "value": -5525626,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -7194374,
+      "value": -10869097,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -85,7 +82,6 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": true,
@@ -120,16 +116,28 @@
     "stepSound": {
       "value": ""
     },
-    "entityDataEntries": [],
-    "whenMobDies": {
-      "name": "CorruptedHandKoghdaSushchnostUmiraiet"
+    "raidCelebrationSound": {
+      "value": ""
+    },
+    "entityDataEntries": [
+      {
+        "name": "aggresive",
+        "type": "logic",
+        "value": false
+      }
+    ],
+    "whenMobIsHurt": {
+      "name": "CorruptedHumanPriRanieniiSushchnosti"
+    },
+    "onMobTickUpdate": {
+      "name": "CorruptedHandPriObnovlieniiTikaSushchnosti"
     },
     "onInitialSpawn": {
       "name": "CorruptedHandNaNachalnomPoiavlieniiSushchnosti"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">AttackPlayerProc,AttackPlayerProc</field></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">6</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -154,6 +162,15 @@
         "value": "CUSTOM:CorruptedPlace"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

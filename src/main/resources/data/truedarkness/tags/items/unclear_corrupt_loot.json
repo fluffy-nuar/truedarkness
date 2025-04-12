@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stick",
+    "minecraft:iron_nugget",
+    "minecraft:gold_nugget",
+    "minecraft:glass_bottle",
+    "truedarkness:dark_crystal_shard",
+    "truedarkness:corrupty_roots_small",
+    "truedarkness:cvetaliy_grain",
+    "truedarkness:corrupted_flower"
+  ]
+}

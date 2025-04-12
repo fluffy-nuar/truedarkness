@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "truedarkness:block/swamp_cobblestone",
     "bottom": "truedarkness:block/swamp_cobblestone",
     "top": "truedarkness:block/swamp_cobblestone",
     "side": "truedarkness:block/swamp_cobblestone"

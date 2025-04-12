@@ -1,0 +1,35 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "converting.png",
+    "width": 112,
+    "height": 80,
+    "icon": {
+      "value": "CUSTOM:ConvertingGUIItem"
+    },
+    "craftingtables": [],
+    "enableCraftingtable": false,
+    "title": "Converting",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 21,
+        "y": 43,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 48,
+        "y": 21,
+        "slotid": 1
+      },
+      {
+        "type": "OUTPUT",
+        "x": 75,
+        "y": 43,
+        "slotid": 2
+      }
+    ]
+  }
+}

@@ -91,7 +91,7 @@ public class CorruptedBubbleEmptyBlockEntity extends RandomizableContainerBlockE
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Corrupted Bubble");
+		return Component.literal("§5Corrupted Bubble");
 	}
 
 	@Override

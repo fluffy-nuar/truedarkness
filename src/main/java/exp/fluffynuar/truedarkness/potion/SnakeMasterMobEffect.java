@@ -9,12 +9,7 @@ import exp.fluffynuar.truedarkness.procedures.SnakeMasterKazhdyiTikVoVriemiaEffi
 
 public class SnakeMasterMobEffect extends MobEffect {
 	public SnakeMasterMobEffect() {
-		super(MobEffectCategory.BENEFICIAL, -14651821);
-	}
-
-	@Override
-	public String getDescriptionId() {
-		return "effect.truedarkness.snake_master";
+		super(MobEffectCategory.BENEFICIAL, -11051937);
 	}
 
 	@Override

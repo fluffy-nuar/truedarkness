@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "measky_wild_moss"
+      },
+      "name": "default"
+    }
+  }
+}

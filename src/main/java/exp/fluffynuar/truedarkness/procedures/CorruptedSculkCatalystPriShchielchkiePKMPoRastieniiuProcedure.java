@@ -2,9 +2,10 @@ package exp.fluffynuar.truedarkness.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -15,28 +16,64 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.NonNullList;
 import net.minecraft.core.BlockPos;
 
+import java.util.List;
+
+import exp.fluffynuar.truedarkness.jei_recipes.ConvertingRecipe;
 import exp.fluffynuar.truedarkness.init.TruedarknessModParticleTypes;
-import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
+import exp.fluffynuar.truedarkness.init.TruedarknessModBlocks;
 
 public class CorruptedSculkCatalystPriShchielchkiePKMPoRastieniiuProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_INGOT) {
+		if (!((new Object() {
+			public ItemStack getResult() {
+				if (world instanceof Level _lvl) {
+					net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
+					List<ConvertingRecipe> recipes = rm.getAllRecipesFor(ConvertingRecipe.Type.INSTANCE);
+					for (ConvertingRecipe recipe : recipes) {
+						NonNullList<Ingredient> ingredients = recipe.getIngredients();
+						if (!ingredients.get(0).test((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)))
+							continue;
+						if (!ingredients.get(1).test(new ItemStack(TruedarknessModBlocks.CORRUPTED_SCULK_CATALYST.get())))
+							continue;
+						return recipe.getResultItem(null);
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getResult()).getItem() == Blocks.AIR.asItem())) {
+			world.destroyBlock(BlockPos.containing(x, y, z), false);
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, (new Object() {
+					public ItemStack getResult() {
+						if (world instanceof Level _lvl) {
+							net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
+							List<ConvertingRecipe> recipes = rm.getAllRecipesFor(ConvertingRecipe.Type.INSTANCE);
+							for (ConvertingRecipe recipe : recipes) {
+								NonNullList<Ingredient> ingredients = recipe.getIngredients();
+								if (!ingredients.get(0).test((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)))
+									continue;
+								if (!ingredients.get(1).test(new ItemStack(TruedarknessModBlocks.CORRUPTED_SCULK_CATALYST.get())))
+									continue;
+								return recipe.getResultItem(null);
+							}
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getResult()));
+				entityToSpawn.setPickUpDelay(0);
+				_level.addFreshEntity(entityToSpawn);
+			}
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(Items.IRON_INGOT);
+				ItemStack _setstack = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 				_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
-			}
-			world.destroyBlock(BlockPos.containing(x, y, z), false);
-			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.RAW_CURSED_METAL.get()));
-				entityToSpawn.setPickUpDelay(0);
-				_level.addFreshEntity(entityToSpawn);
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {

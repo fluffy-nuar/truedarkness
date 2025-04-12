@@ -11,14 +11,14 @@
       "item": "truedarkness:metenite_crystal"
     },
     "b": {
-      "item": "minecraft:echo_shard"
+      "item": "truedarkness:echo_stone"
     },
     "c": {
       "item": "truedarkness:ancient_papyrus"
     }
   },
   "result": {
-    "item": "truedarkness:deleted_mod_element",
+    "item": "truedarkness:echo_scroll",
     "count": 1
   }
 }

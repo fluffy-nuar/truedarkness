@@ -37,7 +37,7 @@ public class DreamProcProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (world.getLevelData().getGameRules().getBoolean(TruedarknessModGameRules.INFOABOUTSKREZHAL) == true) {
+		if (world.getLevelData().getGameRules().getBoolean(TruedarknessModGameRules.INFO_TABLET) == true) {
 			if (!(entity instanceof ServerPlayer _plr1 && _plr1.level() instanceof ServerLevel
 					&& _plr1.getAdvancements().getOrStartProgress(_plr1.server.getAdvancements().getAdvancement(new ResourceLocation("truedarkness:power_of_neo_adv"))).isDone())) {
 				if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(TruedarknessModMobEffects.CALM.get())
@@ -93,7 +93,7 @@ public class DreamProcProcedure {
 					}
 					TruedarknessMod.queueServerWork(20, () -> {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal((Component.translatable("another_dream.1").getString())), false);
+							_player.displayClientMessage(Component.literal((Component.translatable("sleep.truedarkness.first_0").getString())), false);
 						{
 							Entity _ent = entity;
 							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -110,7 +110,7 @@ public class DreamProcProcedure {
 								}
 							}
 							if (entity instanceof Player _player && !_player.level().isClientSide())
-								_player.displayClientMessage(Component.literal((Component.translatable("another_dream.2").getString())), false);
+								_player.displayClientMessage(Component.literal((Component.translatable("sleep.truedarkness.first_1").getString())), false);
 							TruedarknessMod.queueServerWork(50, () -> {
 								{
 									Entity _ent = entity;
@@ -121,7 +121,7 @@ public class DreamProcProcedure {
 									}
 								}
 								if (entity instanceof Player _player && !_player.level().isClientSide())
-									_player.displayClientMessage(Component.literal((Component.translatable("another_dream.3").getString())), false);
+									_player.displayClientMessage(Component.literal((Component.translatable("sleep.truedarkness.first_2").getString())), false);
 								TruedarknessMod.queueServerWork(40, () -> {
 									{
 										Entity _ent = entity;
@@ -132,7 +132,7 @@ public class DreamProcProcedure {
 										}
 									}
 									if (entity instanceof Player _player && !_player.level().isClientSide())
-										_player.displayClientMessage(Component.literal((Component.translatable("another_dream.4").getString())), false);
+										_player.displayClientMessage(Component.literal((Component.translatable("sleep.truedarkness.first_3").getString())), false);
 									{
 										boolean _setval = true;
 										entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -202,7 +202,7 @@ public class DreamProcProcedure {
 					}
 					TruedarknessMod.queueServerWork(20, () -> {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal((Component.translatable("another_dream.second.1").getString())), false);
+							_player.displayClientMessage(Component.literal((Component.translatable("sleep.truedarkness.second_0").getString())), false);
 						{
 							Entity _ent = entity;
 							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -219,7 +219,7 @@ public class DreamProcProcedure {
 								}
 							}
 							if (entity instanceof Player _player && !_player.level().isClientSide())
-								_player.displayClientMessage(Component.literal((Component.translatable("another_dream.second.2").getString())), false);
+								_player.displayClientMessage(Component.literal((Component.translatable("sleep.truedarkness.second_1").getString())), false);
 							TruedarknessMod.queueServerWork(50, () -> {
 								{
 									Entity _ent = entity;
@@ -230,7 +230,7 @@ public class DreamProcProcedure {
 									}
 								}
 								if (entity instanceof Player _player && !_player.level().isClientSide())
-									_player.displayClientMessage(Component.literal((Component.translatable("another_dream.second.3").getString())), false);
+									_player.displayClientMessage(Component.literal((Component.translatable("sleep.truedarkness.second_2").getString())), false);
 								TruedarknessMod.queueServerWork(40, () -> {
 									{
 										Entity _ent = entity;
@@ -241,7 +241,7 @@ public class DreamProcProcedure {
 										}
 									}
 									if (entity instanceof Player _player && !_player.level().isClientSide())
-										_player.displayClientMessage(Component.literal((Component.translatable("another_dream.second.4").getString())), false);
+										_player.displayClientMessage(Component.literal((Component.translatable("sleep.truedarkness.second_3").getString())), false);
 									{
 										boolean _setval = false;
 										entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

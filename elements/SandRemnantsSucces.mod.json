@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "gamerule",
   "definition": {
     "type": "Number",
@@ -7,6 +7,6 @@
     "description": "How Many Chances Are There When The Sand Remnants Give Loot",
     "category": "DROPS",
     "defaultValueLogic": false,
-    "defaultValueNumber": 50
+    "defaultValueNumber": 65
   }
 }

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:the_sky",
+  "features": "truedarkness:skystar_small_roots",
+  "step": "vegetal_decoration"
+}

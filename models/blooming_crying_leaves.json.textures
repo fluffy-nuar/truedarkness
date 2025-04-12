@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "blooming_crying_leaves_model"
+      },
+      "name": "default"
+    }
+  }
+}

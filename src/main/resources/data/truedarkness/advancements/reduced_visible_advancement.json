@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "reduced_visible_advancement": {
+    "reduced_visible_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

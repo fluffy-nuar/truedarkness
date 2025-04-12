@@ -1,18 +1,21 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "The Alive",
-    "icon": "the_alive.png",
+    "icon": "the_alive",
     "color": {
       "value": -14808011,
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": true,
-    "isBenefitical": false,
+    "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": false,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "modifiers": [],
     "onStarted": {
       "name": "CorruptedEffectKoghdaEffiektNachatprimienien"
     }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "truedarkness:block/corrupted_knight_remnants"
+    },
+    "facing=east": {
+      "model": "truedarkness:block/corrupted_knight_remnants",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "truedarkness:block/corrupted_knight_remnants",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "truedarkness:block/corrupted_knight_remnants",
+      "y": 270
+    }
+  }
+}

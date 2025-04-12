@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "truedarkness:block/neasky_slab"
+    },
+    "type=top": {
+      "model": "truedarkness:block/neasky_slab_top"
+    },
+    "type=double": {
+      "model": "truedarkness:block/neasky_slab_full"
+    }
+  }
+}

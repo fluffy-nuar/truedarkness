@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "glow_trap_door",
@@ -34,7 +34,8 @@
         "subtract": false
       }
     ],
-    "name": "Glow Door",
+    "customProperties": [],
+    "name": "Glow Trap Door",
     "specialInformation": {
       "fixedValue": []
     },
@@ -42,9 +43,11 @@
     "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementriy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "destroyTool": "axe",
     "customDrop": {
       "value": ""
@@ -101,10 +104,9 @@
     },
     "luminance": 1,
     "unbreakable": false,
-    "breakHarvestLevel": -1,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

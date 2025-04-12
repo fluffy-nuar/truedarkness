@@ -6,7 +6,7 @@
     "1": "truedarkness:block/corrupted_bubble_top",
     "3": "truedarkness:block/corrupted_bubble_side",
     "4": "truedarkness:block/corrupt",
-    "5": "truedarkness:block/0"
+    "5": "truedarkness:block/empty_texture"
   },
-  "render_type": "translucent"
+  "render_type": "cutout"
 }

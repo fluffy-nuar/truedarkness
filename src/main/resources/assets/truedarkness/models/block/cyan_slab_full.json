@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "truedarkness:block/cyan_planks",
     "bottom": "truedarkness:block/cyan_planks",
     "top": "truedarkness:block/cyan_planks",
     "side": "truedarkness:block/cyan_planks"

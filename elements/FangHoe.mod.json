@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Hoe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "fang_hoe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§5Fang Hoe",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
+    "efficiency": 22.0,
+    "attackSpeed": 8.0,
+    "enchantability": 0,
+    "damageVsEntity": 1.0,
+    "usageCount": 4021,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CorruptedHandFangs"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "CorruptedRitualKnifePriShchielchkiePKM"
+    },
+    "onEntityHitWith": {
+      "name": "CursedSwordPriUdariePoSushchnostiInstrumientom"
+    },
+    "onItemInUseTick": {
+      "name": "FangPickaxeKazhdyiTikVRukie"
+    }
+  }
+}

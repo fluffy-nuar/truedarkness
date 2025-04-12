@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "truedarkness:block/neasky_small_roots",
+    "particle": "truedarkness:block/neasky_small_roots"
+  },
+  "render_type": "cutout"
+}

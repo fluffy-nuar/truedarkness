@@ -18,9 +18,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
@@ -87,20 +85,15 @@ public class SamovarGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 54) {
-			private final int slot = 0;
-		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 44, 54) {
 			private final int slot = 1;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(1, 1, 0);
-			}
+			private int x = SamovarGUIMenu.this.x;
+			private int y = SamovarGUIMenu.this.y;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 62, 54) {
 			private final int slot = 2;
+			private int x = SamovarGUIMenu.this.x;
+			private int y = SamovarGUIMenu.this.y;
 
 			@Override
 			public void setChanged() {
@@ -119,41 +112,26 @@ public class SamovarGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 				super.onQuickCraft(a, b);
 				slotChanged(2, 2, b.getCount() - a.getCount());
 			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(new ResourceLocation("minecraft:bag_herbs")));
-			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 80, 54) {
 			private final int slot = 3;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(3, 1, 0);
-			}
+			private int x = SamovarGUIMenu.this.x;
+			private int y = SamovarGUIMenu.this.y;
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 116, 30) {
 			private final int slot = 4;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(4, 1, 0);
-			}
+			private int x = SamovarGUIMenu.this.x;
+			private int y = SamovarGUIMenu.this.y;
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 134, 30) {
 			private final int slot = 5;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(5, 1, 0);
-			}
+			private int x = SamovarGUIMenu.this.x;
+			private int y = SamovarGUIMenu.this.y;
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 62, 17) {
 			private final int slot = 6;
+			private int x = SamovarGUIMenu.this.x;
+			private int y = SamovarGUIMenu.this.y;
 
 			@Override
 			public void onTake(Player entity, ItemStack stack) {
@@ -193,16 +171,16 @@ public class SamovarGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 7) {
-				if (!this.moveItemStackTo(itemstack1, 7, this.slots.size(), true))
+			if (index < 6) {
+				if (!this.moveItemStackTo(itemstack1, 6, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 7, false)) {
-				if (index < 7 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 7 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 6, false)) {
+				if (index < 6 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 6 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 7, 7 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 6, 6 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -297,7 +275,7 @@ public class SamovarGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		BlacksmiteForgeGUIPriZakrytiiGUIProcedure.execute(world, x, y, z);
+		BlacksmiteForgeGUIPriZakrytiiGUIProcedure.execute(entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

@@ -9,10 +9,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "minecraft:sculk_catalyst",
-              "Properties": {
-                "bloom": "false"
-              }
+              "Name": "minecraft:sculk_catalyst"
             }
           }
         }

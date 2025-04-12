@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/cursed_leather"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:cursed_leather_type": 1
+      },
+      "model": "truedarkness:item/cursed_leather_0"
+    },
+    {
+      "predicate": {
+        "truedarkness:cursed_leather_type": 2
+      },
+      "model": "truedarkness:item/cursed_leather_1"
+    },
+    {
+      "predicate": {
+        "truedarkness:cursed_leather_type": 3
+      },
+      "model": "truedarkness:item/cursed_leather_2"
+    }
+  ]
+}

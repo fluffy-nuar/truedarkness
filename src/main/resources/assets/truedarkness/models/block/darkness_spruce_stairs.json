@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "truedarkness:block/darkness_spruce_planks",
     "bottom": "truedarkness:block/darkness_spruce_planks",
     "top": "truedarkness:block/darkness_spruce_planks",
     "side": "truedarkness:block/darkness_spruce_planks"

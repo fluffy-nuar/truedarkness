@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "converting",
+    "result": {
+      "value": "Items.REDSTONE"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Blocks.REDSTONE_ORE"
+      },
+      {
+        "value": "CUSTOM:EchoCarvingKnife"
+      }
+    ]
+  }
+}

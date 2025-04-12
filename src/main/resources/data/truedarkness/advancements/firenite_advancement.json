@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "firenite_advancement": {
+    "firenite_advancement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

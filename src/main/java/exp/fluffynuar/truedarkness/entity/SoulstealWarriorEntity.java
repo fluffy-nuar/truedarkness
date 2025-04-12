@@ -14,7 +14,6 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -32,18 +31,24 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
 import exp.fluffynuar.truedarkness.procedures.EridiumGolemNaturalnoieUsloviiePoiavlieniiaSushchnostiProcedure;
-import exp.fluffynuar.truedarkness.procedures.CorruptedKnightKoghdaEtotObiektUbivaietDrughoghoProcedure;
+import exp.fluffynuar.truedarkness.procedures.CorruptedHumanPriRanieniiSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.procedures.AttackPlayerProcProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
 import exp.fluffynuar.truedarkness.init.TruedarknessModBlocks;
 
 public class SoulstealWarriorEntity extends Monster {
+	public static final EntityDataAccessor<Boolean> DATA_aggresive = SynchedEntityData.defineId(SoulstealWarriorEntity.class, EntityDataSerializers.BOOLEAN);
+
 	public SoulstealWarriorEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(TruedarknessModEntities.SOULSTEAL_WARRIOR.get(), world);
 	}
@@ -53,16 +58,22 @@ public class SoulstealWarriorEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 12;
 		setNoAi(false);
-		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(TruedarknessModItems.SOULSTEAL_SHARD.get()));
+		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(TruedarknessModItems.FANTAL_SHARD.get()));
 		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(TruedarknessModBlocks.CORRUPT.get()));
-		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(TruedarknessModItems.SOULSTEAL_SHARD.get()));
-		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(TruedarknessModItems.SOULSTEAL_SHARD.get()));
-		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(TruedarknessModItems.SOULSTEAL_SHARD.get()));
+		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(TruedarknessModItems.FANTAL_SHARD.get()));
+		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(TruedarknessModItems.FANTAL_SHARD.get()));
+		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(TruedarknessModItems.FANTAL_SHARD.get()));
 	}
 
 	@Override
 	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
+	}
+
+	@Override
+	protected void defineSynchedData() {
+		super.defineSynchedData();
+		this.entityData.define(DATA_aggresive, false);
 	}
 
 	@Override
@@ -73,11 +84,31 @@ public class SoulstealWarriorEntity extends Monster {
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
+
+			@Override
+			public boolean canUse() {
+				double x = SoulstealWarriorEntity.this.getX();
+				double y = SoulstealWarriorEntity.this.getY();
+				double z = SoulstealWarriorEntity.this.getZ();
+				Entity entity = SoulstealWarriorEntity.this;
+				Level world = SoulstealWarriorEntity.this.level();
+				return super.canUse() && AttackPlayerProcProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = SoulstealWarriorEntity.this.getX();
+				double y = SoulstealWarriorEntity.this.getY();
+				double z = SoulstealWarriorEntity.this.getZ();
+				Entity entity = SoulstealWarriorEntity.this;
+				Level world = SoulstealWarriorEntity.this.level();
+				return super.canContinueToUse() && AttackPlayerProcProcedure.execute(entity);
+			}
+
 		});
-		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false) {
 			@Override
 			public boolean canUse() {
 				double x = SoulstealWarriorEntity.this.getX();
@@ -117,16 +148,25 @@ public class SoulstealWarriorEntity extends Monster {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:entity.corrupted_knight_hurt"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:entity.soulsteal_warrior.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.respawn_anchor.deplete"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:entity.soulsteal_warrior.death"));
 	}
 
 	@Override
 	public boolean hurt(DamageSource damagesource, float amount) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		Entity sourceentity = damagesource.getEntity();
+		Entity immediatesourceentity = damagesource.getDirectEntity();
+
+		CorruptedHumanPriRanieniiSushchnostiProcedure.execute(world, x, y, z, sourceentity);
 		if (damagesource.getDirectEntity() instanceof AbstractArrow)
 			return false;
 		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud)
@@ -137,21 +177,31 @@ public class SoulstealWarriorEntity extends Monster {
 			return false;
 		if (damagesource.is(DamageTypes.DROWN))
 			return false;
-		if (damagesource.is(DamageTypes.EXPLOSION))
+		if (damagesource.is(DamageTypes.EXPLOSION) || damagesource.is(DamageTypes.PLAYER_EXPLOSION))
 			return false;
 		if (damagesource.is(DamageTypes.TRIDENT))
 			return false;
-		if (damagesource.is(DamageTypes.WITHER))
-			return false;
-		if (damagesource.is(DamageTypes.WITHER_SKULL))
+		if (damagesource.is(DamageTypes.WITHER) || damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(damagesource, amount);
 	}
 
 	@Override
-	public void awardKillScore(Entity entity, int score, DamageSource damageSource) {
-		super.awardKillScore(entity, score, damageSource);
-		CorruptedKnightKoghdaEtotObiektUbivaietDrughoghoProcedure.execute(this);
+	public boolean ignoreExplosion() {
+		return true;
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putBoolean("Dataaggresive", this.entityData.get(DATA_aggresive));
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Dataaggresive"))
+			this.entityData.set(DATA_aggresive, compound.getBoolean("Dataaggresive"));
 	}
 
 	public static void init() {
@@ -165,7 +215,7 @@ public class SoulstealWarriorEntity extends Monster {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.1);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.4);
 		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 12);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);

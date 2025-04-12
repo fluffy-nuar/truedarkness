@@ -1,8 +1,8 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "truedarkness:swamps",
-    "truedarkness:corrupted_place",
+    "truedarkness:crying_swamps",
+    "truedarkness:corrupted_forest",
     "truedarkness:mine",
     "truedarkness:retroland",
     "truedarkness:swamp_wasteland"

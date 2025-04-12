@@ -11,7 +11,8 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-import exp.fluffynuar.truedarkness.procedures.BirthdayAuthorProcedure;
+import exp.fluffynuar.truedarkness.procedures.DarkCrystalClasterKazhdyiTikVInvientarieProcedure;
+import exp.fluffynuar.truedarkness.procedures.DarkCrystalClasterDopolnitielnaiaInformatsiiaProcedure;
 
 public class DarkCrystalClasterItem extends Item {
 	public DarkCrystalClasterItem() {
@@ -19,12 +20,20 @@ public class DarkCrystalClasterItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		Entity entity = itemstack.getEntityRepresentation();
-		double x = entity != null ? entity.getX() : 0.0;
-		double y = entity != null ? entity.getY() : 0.0;
-		double z = entity != null ? entity.getZ() : 0.0;
-		list.add(Component.literal(BirthdayAuthorProcedure.execute()));
+		String hoverText = DarkCrystalClasterDopolnitielnaiaInformatsiiaProcedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		DarkCrystalClasterKazhdyiTikVInvientarieProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 	}
 }

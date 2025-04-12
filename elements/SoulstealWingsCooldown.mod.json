@@ -1,17 +1,20 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Losing Of Wings",
-    "icon": "soulsteal_wings_cooldown.png",
+    "icon": "cooldown_wings.png",
     "color": {
       "value": -15788518,
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": false,
-    "isBenefitical": false,
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
-    "renderStatusInHUD": false
+    "renderStatusInHUD": false,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": []
   }
 }

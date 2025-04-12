@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:cursed_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_iron"
+    },
+    {
+      "item": "truedarkness:eridium_heart"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:firenite_ingot",
+    "count": 1
+  }
+}

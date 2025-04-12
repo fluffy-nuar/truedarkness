@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "general_defeat_advancement": {
+    "general_defeat_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

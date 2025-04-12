@@ -1,20 +1,22 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "sculk_mana_bottle",
+    "texture": "sculk_bottle",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
     "name": "Sculk Mana Bottle",
     "rarity": "UNCOMMON",
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "stackSize": 16,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 12,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -32,7 +34,6 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
@@ -40,9 +41,11 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "CUSTOM:DarknessSpruceShieldProjectile"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 0,
     "saturation": 0.0,
@@ -51,6 +54,9 @@
     },
     "isMeat": false,
     "isAlwaysEdible": true,
-    "animation": "drink"
+    "animation": "drink",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

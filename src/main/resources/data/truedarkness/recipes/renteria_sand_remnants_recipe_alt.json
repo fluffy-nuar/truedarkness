@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:unclear_renteria_sand"
+    },
+    {
+      "item": "truedarkness:sieve"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:loot_table",
+    "count": 1
+  }
+}

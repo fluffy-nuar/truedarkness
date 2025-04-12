@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:cyan",
+    "truedarkness:cyan_stem",
+    "truedarkness:darkness_spruce_wood",
+    "truedarkness:darkness_spruce_log",
+    "truedarkness:fake_wood",
+    "truedarkness:fake_log",
+    "truedarkness:glow_wood",
+    "truedarkness:glow_log",
+    "truedarkness:neasky_wood",
+    "truedarkness:neasky_log",
+    "truedarkness:crying_wood",
+    "truedarkness:crying_log"
+  ]
+}

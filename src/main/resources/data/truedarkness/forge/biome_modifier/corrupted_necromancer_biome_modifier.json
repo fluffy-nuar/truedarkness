@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "truedarkness:corrupted_forest",
+  "spawners": {
+    "type": "truedarkness:corrupted_necromancer",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

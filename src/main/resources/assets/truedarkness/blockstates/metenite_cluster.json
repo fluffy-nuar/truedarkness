@@ -1,7 +1,27 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "truedarkness:block/metenite_cluster"
+    },
+    "facing=east": {
+      "model": "truedarkness:block/metenite_cluster",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "truedarkness:block/metenite_cluster",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "truedarkness:block/metenite_cluster",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "truedarkness:block/metenite_cluster",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "truedarkness:block/metenite_cluster",
+      "x": 90
     }
   }
 }

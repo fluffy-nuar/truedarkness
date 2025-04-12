@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "minecraft:map"
+    },
+    {
+      "item": "truedarkness:light_of_soul"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:soul_map",
+    "count": 1
+  }
+}

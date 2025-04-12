@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:corrupted_forest",
+    "truedarkness:mine",
+    "truedarkness:retroland",
+    "truedarkness:swamp_wasteland",
+    "truedarkness:crying_swamps",
+    "truedarkness:the_sky"
+  ],
+  "features": "truedarkness:no_bedrock",
+  "step": "raw_generation"
+}

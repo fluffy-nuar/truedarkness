@@ -1,11 +1,12 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "truedarkness:swamps",
-    "truedarkness:corrupted_place",
+    "truedarkness:crying_swamps",
     "truedarkness:mine",
     "truedarkness:retroland",
-    "truedarkness:swamp_wasteland"
+    "truedarkness:swamp_wasteland",
+    "truedarkness:the_sky",
+    "truedarkness:crying_forest"
   ],
   "features": "truedarkness:swamp_seaweed_feature",
   "step": "underground_ores"

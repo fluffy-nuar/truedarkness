@@ -9,8 +9,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -25,24 +23,22 @@ public class PriVziatiiPriedmietaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.BUCKET);
-				_setstack.setCount(1);
-				((Slot) _slots.get(0)).set(_setstack);
-				_player.containerMenu.broadcastChanges();
-			}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			ItemStack _setstack = new ItemStack(Items.BUCKET).copy();
+			_setstack.setCount(1);
+			((Slot) _slots.get(0)).set(_setstack);
+			_player.containerMenu.broadcastChanges();
 		}
 		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 			((Slot) _slots.get(1)).remove(1);
 			_player.containerMenu.broadcastChanges();
 		}
 		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get(2)).remove(Mth.nextInt(RandomSource.create(), 8, 10));
+			((Slot) _slots.get(2)).remove(1);
 			_player.containerMenu.broadcastChanges();
 		}
 		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get(3)).remove(Mth.nextInt(RandomSource.create(), 8, 10));
+			((Slot) _slots.get(3)).remove(1);
 			_player.containerMenu.broadcastChanges();
 		}
 		if (world instanceof Level _level) {

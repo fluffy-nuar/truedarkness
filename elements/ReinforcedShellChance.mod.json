@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Chance Of Reinforced Shell",
+    "description": "% of taking Reinforced Shell",
+    "category": "DROPS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 50
+  }
+}

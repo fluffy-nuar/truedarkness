@@ -1,0 +1,23 @@
+{
+  "_fv": 73,
+  "_type": "particle",
+  "definition": {
+    "texture": "star_partcile",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": {
+      "fixedValue": 2.0
+    },
+    "speedFactor": 1.0,
+    "gravity": 0.09,
+    "maxAge": 24,
+    "maxAgeDiff": 6,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": false,
+    "alwaysShow": false,
+    "renderType": "TRANSLUCENT"
+  }
+}

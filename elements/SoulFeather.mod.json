@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "particle",
   "definition": {
     "texture": "soul_feather.png",
@@ -7,7 +7,9 @@
     "frameDuration": 2,
     "width": 0.2,
     "height": 0.2,
-    "scale": 0.7000000000000001,
+    "scale": {
+      "fixedValue": 0.7000000000000001
+    },
     "speedFactor": 0.0,
     "gravity": 0.2,
     "maxAge": 15,

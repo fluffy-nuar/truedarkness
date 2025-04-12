@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:corrupted_hand",
+    "truedarkness:corrupted_human",
+    "truedarkness:corrupted_knight",
+    "truedarkness:corrupted_mage",
+    "truedarkness:eridium_zombie",
+    "truedarkness:general",
+    "truedarkness:waste_runner",
+    "truedarkness:soulsteal_warrior",
+    "skeleton",
+    "skeleton_horse",
+    "wither_skeleton",
+    "zoglin",
+    "zombie",
+    "zombie_horse",
+    "zombie_villager",
+    "zombified_piglin",
+    "stray",
+    "drowned",
+    "husk",
+    "ghast",
+    "phantom",
+    "wither",
+    "truedarkness:corrupted_assassin",
+    "truedarkness:corrupted_necromancer",
+    "truedarkness:corrupted_skeleton",
+    "truedarkness:corrupted_unformed_remnants",
+    "truedarkness:hex"
+  ]
+}

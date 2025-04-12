@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EridiumHeart"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CorruptedHandFangs"
+      },
+      {
+        "value": "CUSTOM:CorruptedSlime"
+      },
+      {
+        "value": "CUSTOM:CorruptedHandFangs"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EridiumBone"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BubbleRod"
+    },
+    "name": "eridium_rod_recipe",
+    "namespace": "mod"
+  }
+}

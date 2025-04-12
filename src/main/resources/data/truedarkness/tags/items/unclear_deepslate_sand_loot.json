@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:music_disc_turquoise_flower",
+    "truedarkness:sand_of_missing",
+    "truedarkness:swamp_sand",
+    "truedarkness:music_disc_rain",
+    "truedarkness:swamp_sunflower",
+    "truedarkness:tablet_cave",
+    "truedarkness:echo_stone",
+    "truedarkness:metenite_shard",
+    "truedarkness:dark_crystal_shard",
+    "truedarkness:sculk_ring",
+    "truedarkness:reinforced_shell",
+    "truedarkness:eridium_shard",
+    "truedarkness:aquamarine_coin",
+    "minecraft:echo_shard",
+    "truedarkness:echo_heart"
+  ]
+}

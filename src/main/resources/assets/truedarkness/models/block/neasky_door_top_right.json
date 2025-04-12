@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_right",
+  "textures": {
+    "particle": "truedarkness:block/neasky_door",
+    "bottom": "truedarkness:block/neasky_door",
+    "top": "truedarkness:block/neasky_door_top"
+  },
+  "render_type": "cutout"
+}

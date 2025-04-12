@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
@@ -12,16 +12,16 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 4,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "efficiency": 9.0,
     "attackSpeed": 4.0,
     "enchantability": 15,
     "damageVsEntity": 1.0,
     "usageCount": 2031,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -34,7 +34,15 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ReinforcedSwordPriShchielchkiePKM"
+    },
+    "onItemInInventoryTick": {
+      "name": "Cooldown"
+    }
   }
 }

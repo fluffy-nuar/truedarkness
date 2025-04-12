@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "chiseled_glass_3",
@@ -34,6 +34,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Chiseled Glass Pane",
     "specialInformation": {
       "fixedValue": [],
@@ -43,9 +44,11 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementriy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
@@ -102,10 +105,9 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": -1,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:corrupted_slime"
+    },
+    "b": {
+      "item": "truedarkness:corrupted_bubble_empty"
+    }
+  },
+  "result": {
+    "item": "truedarkness:corrupted_bubble_block",
+    "count": 1
+  }
+}

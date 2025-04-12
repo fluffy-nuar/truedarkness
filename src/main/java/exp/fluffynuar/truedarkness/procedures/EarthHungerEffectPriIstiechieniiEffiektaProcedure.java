@@ -15,14 +15,12 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
-import exp.fluffynuar.truedarkness.init.TruedarknessModMobEffects;
-
 public class EarthHungerEffectPriIstiechieniiEffiektaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.onGround() && !(entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(TruedarknessModMobEffects.EARTH_SATURATION.get())) && !(entity instanceof ArmorStand) && !(entity instanceof ExperienceOrb)
-				&& !(entity instanceof ItemEntity) && !(entity instanceof GlowItemFrame) && !(entity instanceof ItemFrame)) {
+		if (!(entity instanceof ArmorStand) && !(entity instanceof ExperienceOrb) && !(entity instanceof ItemEntity) && !(entity instanceof GlowItemFrame) && !(entity instanceof ItemFrame)
+				&& world.getBlockState(BlockPos.containing(x, entity.getY() - 0.3, z)).canOcclude()) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 8, false, false));
 			if (world instanceof ServerLevel _level) {

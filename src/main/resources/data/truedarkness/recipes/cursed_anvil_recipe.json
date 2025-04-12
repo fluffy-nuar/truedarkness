@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " b ",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:corrupted_hand_fangs"
+    },
+    "b": {
+      "item": "minecraft:anvil"
+    },
+    "c": {
+      "item": "truedarkness:chiseled_corrupt_bricks"
+    },
+    "d": {
+      "item": "truedarkness:eridium_block"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cursed_anvil",
+    "count": 1
+  }
+}

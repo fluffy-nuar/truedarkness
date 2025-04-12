@@ -1,29 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "aba",
-    "cdc",
-    " e "
-  ],
-  "key": {
-    "a": {
-      "item": "truedarkness:eridium_shard"
+  "type": "truedarkness:cursed_anvil_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:fang_pickaxe"
     },
-    "b": {
-      "item": "truedarkness:cursed_metal"
+    {
+      "tag": "truedarkness:cursed_tales"
     },
-    "c": {
-      "item": "truedarkness:corrupted_hand_fangs"
-    },
-    "d": {
-      "item": "truedarkness:soulsteal_pickaxe"
-    },
-    "e": {
-      "item": "truedarkness:eridium_heart"
+    {
+      "item": "truedarkness:evolution_eridium_shard"
     }
-  },
-  "result": {
+  ],
+  "output": {
     "item": "truedarkness:fang_pickaxe",
     "count": 1
   }

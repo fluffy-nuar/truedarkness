@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:seeker_plant_item",
+    "truedarkness:tear_berry",
+    "truedarkness:wasteland_wheat",
+    "minecraft:lapis_lazuli",
+    "truedarkness:eridium_bone",
+    "truedarkness:accustone_pebbles",
+    "truedarkness:ignime",
+    "truedarkness:swamp_pollen",
+    "truedarkness:shaddy_melon_item",
+    "truedarkness:swamp_kelp",
+    "truedarkness:corrupted_vines_2"
+  ]
+}

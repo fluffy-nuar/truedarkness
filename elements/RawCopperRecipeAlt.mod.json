@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "converting",
+    "result": {
+      "value": "Items.RAW_COPPER"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Blocks.COPPER_ORE"
+      },
+      {
+        "value": "CUSTOM:EchoCarvingKnife"
+      }
+    ]
+  }
+}

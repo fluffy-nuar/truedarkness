@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:cobbled_accustone"
+    }
+  },
+  "result": {
+    "item": "truedarkness:accustone_pebbles",
+    "count": 4
+  }
+}

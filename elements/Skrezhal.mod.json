@@ -1,17 +1,19 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "skrezhal",
+    "texture": "tablet",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
     "name": "Tablet",
     "rarity": "RARE",
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 30,
@@ -32,17 +34,18 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
+    "onFinishUsingItem": {
       "name": "SkrezhalPriShchielchkiePravoiKnopkoiMyshiNaBlokie"
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "CUSTOM:DarknessSpruceShieldProjectile"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
@@ -51,6 +54,13 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "bow"
+    "animation": "bow",
+    "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

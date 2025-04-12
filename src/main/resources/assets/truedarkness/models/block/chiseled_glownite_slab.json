@@ -1,6 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
+    "particle": "truedarkness:block/chiseled_glownite_block",
     "bottom": "truedarkness:block/chiseled_glownite_block",
     "top": "truedarkness:block/chiseled_glownite_block",
     "side": "truedarkness:block/chiseled_glownite_block"

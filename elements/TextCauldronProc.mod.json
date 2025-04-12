@@ -1,0 +1,7 @@
+{
+  "_fv": 73,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable id=\"add_add_number\" type=\"Number\">add_add_number</variable></variables><block deletable=\"false\" type=\"event_trigger\" x=\"39\" y=\"-33\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"return_logic\"><value name=\"return\"><block type=\"logic_negate\"><value name=\"BOOL\"><block type=\"text_binary_ops\"><value name=\"A\"><block type=\"procedure_retval_string\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"procedure\">TextCauldronProcText</field></block></value><value name=\"B\"><block type=\"text\"><field name=\"TEXT\"/></block></value></block></value></block></value></block></next></block></xml>"
+  }
+}

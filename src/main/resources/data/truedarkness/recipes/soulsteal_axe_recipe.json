@@ -3,22 +3,19 @@
   "category": "misc",
   "pattern": [
     "aa",
-    "bc",
-    " c"
+    "ab",
+    " b"
   ],
   "key": {
     "a": {
-      "item": "truedarkness:soulsteal_ingot"
+      "item": "truedarkness:fantal_ingot"
     },
     "b": {
-      "item": "truedarkness:soulsteal_nugget"
-    },
-    "c": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "truedarkness:soulsteal_axe",
+    "item": "truedarkness:fantal_axe",
     "count": 1
   }
 }

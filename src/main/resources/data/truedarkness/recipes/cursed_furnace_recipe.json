@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:chiseled_corrupt_bricks"
+    },
+    "b": {
+      "item": "truedarkness:corrupted_sculk_catalyst"
+    },
+    "c": {
+      "item": "minecraft:blast_furnace"
+    },
+    "d": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "e": {
+      "item": "truedarkness:blood_container"
+    }
+  },
+  "result": {
+    "item": "truedarkness:cursed_furnace",
+    "count": 1
+  }
+}

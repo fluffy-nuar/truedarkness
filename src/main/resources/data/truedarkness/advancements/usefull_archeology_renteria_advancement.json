@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "usefull_archeology_renteria_advancement": {
+    "usefull_archeology_renteria_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

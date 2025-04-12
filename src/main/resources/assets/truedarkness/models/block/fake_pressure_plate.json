@@ -1,6 +1,7 @@
 {
   "parent": "block/pressure_plate_up",
   "textures": {
+    "particle": "truedarkness:block/fake_planks",
     "texture": "truedarkness:block/fake_planks"
   },
   "render_type": "solid"

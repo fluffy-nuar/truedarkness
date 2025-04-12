@@ -12,12 +12,6 @@ import java.util.HashMap;
 
 import exp.fluffynuar.truedarkness.world.inventory.BlacksmiteForgeGUIMenu;
 import exp.fluffynuar.truedarkness.procedures.LavaProcedure;
-import exp.fluffynuar.truedarkness.procedures.BF5Procedure;
-import exp.fluffynuar.truedarkness.procedures.BF4Procedure;
-import exp.fluffynuar.truedarkness.procedures.BF3Procedure;
-import exp.fluffynuar.truedarkness.procedures.BF2Procedure;
-import exp.fluffynuar.truedarkness.procedures.BF1Procedure;
-import exp.fluffynuar.truedarkness.procedures.BF0Procedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -56,26 +50,8 @@ public class BlacksmiteForgeGUIScreen extends AbstractContainerScreen<Blacksmite
 
 		guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/blacksmite_forge_gui_layer.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 
-		if (LavaProcedure.execute(world, x, y, z)) {
+		if (LavaProcedure.execute(entity)) {
 			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/blacksmite_forge_lava.png"), this.leftPos + 30, this.topPos + 25, 0, 0, 9, 27, 9, 27);
-		}
-		if (BF0Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_0.png"), this.leftPos + -131, this.topPos + 1, 0, 0, 131, 166, 131, 166);
-		}
-		if (BF1Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_1.png"), this.leftPos + -115, this.topPos + 22, 0, 0, 98, 18, 98, 18);
-		}
-		if (BF2Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_2.png"), this.leftPos + -115, this.topPos + 40, 0, 0, 98, 18, 98, 18);
-		}
-		if (BF3Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_5.png"), this.leftPos + -115, this.topPos + 58, 0, 0, 98, 18, 98, 18);
-		}
-		if (BF4Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_4.png"), this.leftPos + -115, this.topPos + 76, 0, 0, 98, 18, 98, 18);
-		}
-		if (BF5Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("truedarkness:textures/screens/bf_3.png"), this.leftPos + -115, this.topPos + 94, 0, 0, 98, 18, 98, 18);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -90,19 +66,9 @@ public class BlacksmiteForgeGUIScreen extends AbstractContainerScreen<Blacksmite
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.truedarkness.blacksmite_forge_gui.label_blacksmite_forge"), 8, 6, -13421773, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.truedarkness.blacksmite_forge_gui.label_inventory"), 8, 73, -13421773, false);
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
 	}
 
 	@Override

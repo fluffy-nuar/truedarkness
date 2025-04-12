@@ -38,21 +38,26 @@ public class CorruptPollenParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.quadSize *= 1.5f;
-		this.lifetime = (int) Math.max(1, 80 + (this.random.nextInt(40) - 20));
-		this.gravity = -0.2f;
-		this.hasPhysics = true;
-		this.xd = vx * 3;
-		this.yd = vy * 3;
-		this.zd = vz * 3;
-		this.angularVelocity = 0.02f;
+		this.quadSize *= 11.5f;
+		this.lifetime = (int) Math.max(1, 60 + (this.random.nextInt(40) - 20));
+		this.gravity = -0.1f;
+		this.hasPhysics = false;
+		this.xd = vx * 5;
+		this.yd = vy * 5;
+		this.zd = vz * 5;
+		this.angularVelocity = 0.05f;
 		this.angularAcceleration = 0f;
-		this.pickSprite(spriteSet);
+		this.setSpriteFromAge(spriteSet);
+	}
+
+	@Override
+	public int getLightColor(float partialTick) {
+		return 15728880;
 	}
 
 	@Override
 	public ParticleRenderType getRenderType() {
-		return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
+		return ParticleRenderType.PARTICLE_SHEET_LIT;
 	}
 
 	@Override
@@ -61,5 +66,8 @@ public class CorruptPollenParticle extends TextureSheetParticle {
 		this.oRoll = this.roll;
 		this.roll += this.angularVelocity;
 		this.angularVelocity += this.angularAcceleration;
+		if (!this.removed) {
+			this.setSprite(this.spriteSet.get((this.age / 1) % 1 + 1, 1));
+		}
 	}
 }

@@ -8,17 +8,11 @@
         "target": {
           "predicate_type": "blockstate_match",
           "block_state": {
-            "Name": "minecraft:water",
-            "Properties": {
-              "level": "0"
-            }
+            "Name": "minecraft:water"
           }
         },
         "state": {
-          "Name": "truedarkness:swamp_seaweed",
-          "Properties": {
-            "waterlogged": "false"
-          }
+          "Name": "truedarkness:swamp_seaweed"
         }
       }
     ]

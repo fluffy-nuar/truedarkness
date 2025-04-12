@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "aca",
+    "ba "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:echo_shard"
+    },
+    "b": {
+      "item": "truedarkness:echo_stone"
+    },
+    "c": {
+      "item": "minecraft:goat_horn"
+    }
+  },
+  "result": {
+    "item": "truedarkness:echo_horn",
+    "count": 1
+  }
+}

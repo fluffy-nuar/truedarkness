@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "swamp_wasteland_advancement": {
+    "swamp_wasteland_advancement_0": {
       "trigger": "minecraft:location",
       "conditions": {
         "player": [

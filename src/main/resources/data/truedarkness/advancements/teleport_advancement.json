@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "teleport_advancement": {
+    "teleport_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

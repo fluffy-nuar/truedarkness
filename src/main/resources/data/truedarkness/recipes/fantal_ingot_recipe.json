@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:blacksmite_forge_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:poison_fog"
+    },
+    {
+      "item": "truedarkness:raw_fantal"
+    },
+    {
+      "item": "truedarkness:fantal_ore"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:fantal_ingot",
+    "count": 1
+  }
+}

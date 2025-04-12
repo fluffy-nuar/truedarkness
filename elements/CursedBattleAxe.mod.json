@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -12,16 +12,16 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "efficiency": 4.0,
     "attackSpeed": 1.1,
-    "enchantability": 1,
+    "enchantability": 2,
     "damageVsEntity": 11.0,
     "usageCount": 2031,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -31,13 +31,18 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedOnBlock": {
-      "name": "CursedBattleAxePriShchielchkiePravoiKnopkoiMyshiNaBlokie"
+    "onRightClickedInAir": {
+      "name": "CorruptedRitualKnifePriShchielchkiePKM"
     },
-    "onItemInInventoryTick": {
-      "name": "CursedBattleAxeKazhdyiTikVInvientarie"
+    "onEntityHitWith": {
+      "name": "CursedSwordPriUdariePoSushchnostiInstrumientom"
+    },
+    "onItemInUseTick": {
+      "name": "FangPickaxeKazhdyiTikVRukie"
     }
   }
 }

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "chiseled_glass_advancement": {
+    "chiseled_glass_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

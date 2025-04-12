@@ -1,9 +1,0 @@
-{
-  "parent": "truedarkness:custom/pot",
-  "textures": {
-    "all": "truedarkness:block/miners_pot",
-    "particle": "truedarkness:block/miners_pot",
-    "0": "truedarkness:block/miners_pot"
-  },
-  "render_type": "solid"
-}

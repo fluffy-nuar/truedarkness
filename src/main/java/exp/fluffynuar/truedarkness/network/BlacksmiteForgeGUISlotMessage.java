@@ -15,7 +15,6 @@ import java.util.function.Supplier;
 import java.util.HashMap;
 
 import exp.fluffynuar.truedarkness.world.inventory.BlacksmiteForgeGUIMenu;
-import exp.fluffynuar.truedarkness.procedures.VziatiiePriedmietaIzSlotaProcedure;
 import exp.fluffynuar.truedarkness.procedures.PriVziatiiPriedmietaProcedure;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
@@ -71,22 +70,6 @@ public class BlacksmiteForgeGUISlotMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (slot == 0 && changeType == 1) {
-
-			VziatiiePriedmietaIzSlotaProcedure.execute(world, entity);
-		}
-		if (slot == 1 && changeType == 1) {
-
-			VziatiiePriedmietaIzSlotaProcedure.execute(world, entity);
-		}
-		if (slot == 2 && changeType == 1) {
-
-			VziatiiePriedmietaIzSlotaProcedure.execute(world, entity);
-		}
-		if (slot == 3 && changeType == 1) {
-
-			VziatiiePriedmietaIzSlotaProcedure.execute(world, entity);
-		}
 		if (slot == 5 && changeType == 1) {
 
 			PriVziatiiPriedmietaProcedure.execute(world, x, y, z, entity);

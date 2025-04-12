@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_noside",
   "textures": {
+    "particle": "truedarkness:block/glownite_grid",
     "pane": "truedarkness:block/glownite_grid"
   },
   "render_type": "cutout"

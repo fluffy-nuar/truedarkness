@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "soulsteal_grid",
+        "0": "fantal_grid",
         "1": "light_of_soul"
       },
       "name": "default"
@@ -16,10 +16,24 @@
     },
     "glownite": {
       "map": {
-        "0": "soulsteal_grid",
+        "0": "fantal_grid",
         "1": "glow_glownite"
       },
       "name": "glownite"
+    },
+    "corrupted_reactor": {
+      "map": {
+        "0": "corrupted_reactor_overlay",
+        "1": "corrupted_reactor_core"
+      },
+      "name": "corrupted_reactor"
+    },
+    "neasky_leaves": {
+      "map": {
+        "0": "neasky_leaves",
+        "1": "neasky_blacksoil_top"
+      },
+      "name": "neasky_leaves"
     }
   }
 }

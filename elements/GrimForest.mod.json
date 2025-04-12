@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Grim Forest",
@@ -13,6 +13,10 @@
       "value": ""
     },
     "airColor": {
+      "value": -10317129,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -10317129,
       "falpha": 0.0
     },
@@ -83,7 +87,7 @@
       "value": "CUSTOM:DarknessSpruceLog"
     },
     "treeBranch": {
-      "value": "CUSTOM:DarknessSpruceLeaves"
+      "value": "Blocks.LEAVES#1"
     },
     "treeVines": {
       "value": ""

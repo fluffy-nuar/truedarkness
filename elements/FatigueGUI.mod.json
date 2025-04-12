@@ -1,0 +1,666 @@
+{
+  "_fv": 73,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_background.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 2,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayerProc"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 2,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayerProc1"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 20,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayerProc2"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 38,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayerProc3"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 56,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayerProc4"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 74,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayerProc5"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 92,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayerProc6"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 110,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayerProc7"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 128,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayerProc8"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 146,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayerProc9"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 164,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayer1Proc"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 4,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayer1Proc1"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 4,
+          "y": 24,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayer1Proc2"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 4,
+          "y": 22,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayer1Proc3"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 4,
+          "y": 20,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayer1Proc4"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 4,
+          "y": 18,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayer1Proc5"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 4,
+          "y": 16,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayer1Proc6"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 4,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayer1Proc7"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 4,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token_ready.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FatigueGuiLayer1Proc8"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 4,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_token_closed.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HideFatigueProc4"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 2,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_evolution_ready.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReadyProcGuiCorrupt"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 30,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_0_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "UndyingPerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_1_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RunePerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_2_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DashPerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_3_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SeerPerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_4_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TeleportPerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_5_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FootstepPerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_6_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EchoPerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_7_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LightPerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_8_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ToolPerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_9_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SmeltPerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "perk_10_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SkullPerkShow"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hunt_0_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HuntStandartProc"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 50,
+          "y": 10,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hunt_1_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SteelHuntProc"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 50,
+          "y": 10,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hunt_2_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "WitherHuntProc"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 50,
+          "y": 10,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hunt_3_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HideHuntProc"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 50,
+          "y": 10,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_bloodshed.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HuntBiteProc"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 16,
+          "y": 30,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hunt_4_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MoonHuntProc"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 50,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hunt_5_corrupted_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FearHuntProc"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 50,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "reaper_gui_blood_counter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ActiveAbilitySelect"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 70,
+          "y": 6,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "",
+            "name": "TextFatigueBlood"
+          },
+          "color": {
+            "value": -1854492,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ActiveAbilitySelect"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 86,
+          "y": 11,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "",
+            "name": "TextFatigueSelect"
+          },
+          "color": {
+            "value": -1854492,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ActiveAbilitySelectNot"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 74,
+          "y": 11,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_text_fatigue_blood_count",
+          "text": {
+            "fixedValue": "",
+            "name": "TextFatigueBloodCount"
+          },
+          "color": {
+            "value": -5209167,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FatigueBloodCount"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 86,
+          "y": 25,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "FatigueGuiLayer2Proc"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

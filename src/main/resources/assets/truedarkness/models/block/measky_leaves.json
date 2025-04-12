@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/measky_leaves",
+    "up": "truedarkness:block/measky_leaves",
+    "north": "truedarkness:block/measky_leaves",
+    "east": "truedarkness:block/measky_leaves",
+    "south": "truedarkness:block/measky_leaves",
+    "west": "truedarkness:block/measky_leaves",
+    "particle": "truedarkness:block/measky_leaves"
+  },
+  "render_type": "cutout"
+}

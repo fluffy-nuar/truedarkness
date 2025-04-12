@@ -1,0 +1,14 @@
+{
+  "type": "truedarkness:structure_feature",
+  "config": {
+    "structure": "truedarkness:corrupted_trail_1",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block",
+    "offset": [
+      2,
+      0,
+      2
+    ]
+  }
+}

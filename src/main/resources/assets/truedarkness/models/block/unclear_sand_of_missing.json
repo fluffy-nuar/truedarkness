@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "truedarkness:block/mistful_sand_of_missing",
-    "up": "truedarkness:block/mistful_sand_of_missing",
-    "north": "truedarkness:block/mistful_sand_of_missing",
-    "east": "truedarkness:block/mistful_sand_of_missing",
-    "south": "truedarkness:block/mistful_sand_of_missing",
-    "west": "truedarkness:block/mistful_sand_of_missing",
-    "particle": "truedarkness:block/mistful_sand_of_missing"
+    "down": "truedarkness:block/unclear_sand_of_missing",
+    "up": "truedarkness:block/unclear_sand_of_missing",
+    "north": "truedarkness:block/unclear_sand_of_missing",
+    "east": "truedarkness:block/unclear_sand_of_missing",
+    "south": "truedarkness:block/unclear_sand_of_missing",
+    "west": "truedarkness:block/unclear_sand_of_missing",
+    "particle": "truedarkness:block/unclear_sand_of_missing"
   },
   "render_type": "solid"
 }

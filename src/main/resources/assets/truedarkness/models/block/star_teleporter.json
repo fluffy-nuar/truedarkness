@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/teleporter",
+    "up": "truedarkness:block/teleporter_top",
+    "north": "truedarkness:block/teleporter_side",
+    "east": "truedarkness:block/teleporter_side",
+    "south": "truedarkness:block/teleporter_side",
+    "west": "truedarkness:block/teleporter_side",
+    "particle": "truedarkness:block/teleporter"
+  },
+  "render_type": "solid"
+}

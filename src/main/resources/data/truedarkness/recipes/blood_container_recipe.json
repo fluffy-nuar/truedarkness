@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:chiseled_corrupt_bricks"
+    },
+    "b": {
+      "item": "truedarkness:eridium_glass"
+    },
+    "c": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "item": "truedarkness:blood_container",
+    "count": 1
+  }
+}

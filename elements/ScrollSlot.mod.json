@@ -1,9 +1,9 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "curiosslot",
   "definition": {
-    "texture": "scroll_slot.png",
-    "name": "Scroll",
+    "texture": "slot_scroll.png",
+    "name": "Scroll Slot",
     "amount": 1
   }
 }

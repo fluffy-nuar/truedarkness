@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "converting",
+    "result": {
+      "value": "CUSTOM:SoulMap"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Items.MAP"
+      },
+      {
+        "value": "CUSTOM:LightOfSoul"
+      }
+    ]
+  }
+}

@@ -1,21 +1,23 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "particle",
   "definition": {
-    "texture": "corrupted_particle.png",
-    "animate": false,
+    "texture": "corrupt_particle.png",
+    "animate": true,
     "frameDuration": 1,
     "width": 0.2,
     "height": 0.2,
-    "scale": 1.5,
-    "speedFactor": 3.0,
-    "gravity": -0.19999999999999998,
-    "maxAge": 80,
+    "scale": {
+      "fixedValue": 11.5
+    },
+    "speedFactor": 5.0,
+    "gravity": -0.1,
+    "maxAge": 60,
     "maxAgeDiff": 20,
-    "angularVelocity": 0.02,
+    "angularVelocity": 0.05,
     "angularAcceleration": 0.0,
-    "canCollide": true,
+    "canCollide": false,
     "alwaysShow": false,
-    "renderType": "TRANSLUCENT"
+    "renderType": "LIT"
   }
 }

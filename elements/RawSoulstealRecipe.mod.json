@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "blacksmite_forge_recipe_type",
+    "result": {
+      "value": "CUSTOM:StoneMetal"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:SoulBottle"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:SoulstealShard"
+      }
+    ]
+  }
+}

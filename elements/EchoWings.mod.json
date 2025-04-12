@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
@@ -117,6 +117,54 @@
             "value": 5.0
           }
         ]
+      },
+      {
+        "renderType": 0,
+        "texture": "echo_wings_6",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:trim",
+              "type": "number"
+            },
+            "value": 6.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "echo_wings_5",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:trim",
+              "type": "number"
+            },
+            "value": 7.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "echo_wings_7",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:trim",
+              "type": "number"
+            },
+            "value": 8.0
+          }
+        ]
       }
     ],
     "guiBoundTo": "<NONE>",
@@ -125,6 +173,9 @@
     "slotAmount": 1,
     "onRightClickedInAir": {
       "name": "EchoWingsPriShchielchkiePKM"
+    },
+    "onItemInInventoryTick": {
+      "name": "EchoWingsKazhdyiTikVInvientarie"
     },
     "onEquip": {
       "name": "EchoWingsBaubleIsEquipped"

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "blink_mushroom_hatty",
@@ -24,24 +24,16 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
+        "mx": 1.0,
+        "my": 10.0,
+        "mz": 1.0,
+        "Mx": 15.0,
         "My": 16.0,
-        "Mz": 16.0,
+        "Mz": 15.0,
         "subtract": false
-      },
-      {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 8.0,
-        "Mz": 16.0,
-        "subtract": true
       }
     ],
+    "customProperties": [],
     "name": "Blink Roots",
     "specialInformation": {
       "fixedValue": []
@@ -50,9 +42,11 @@
     "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": true,
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "Blocks.AIR"
@@ -107,12 +101,11 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 2,
+    "luminance": 5,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -128,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRandomUpdateEvent": {
+      "name": "BlinkRootsSpontannoNaStoronieKliienta"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

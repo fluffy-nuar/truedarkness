@@ -1,0 +1,10 @@
+{
+  "parent": "truedarkness:custom/tear_berry",
+  "textures": {
+    "all": "truedarkness:block/lighted_vine_stem_full_0",
+    "particle": "truedarkness:block/lighted_berry_stem_end",
+    "berries": "truedarkness:block/lighted_vine_stem_full_0",
+    "stem": "truedarkness:block/lighted_berry_stem"
+  },
+  "render_type": "cutout"
+}

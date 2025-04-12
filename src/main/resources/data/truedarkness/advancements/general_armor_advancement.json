@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "general_armor_advancement": {
+    "general_armor_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

@@ -1,0 +1,23 @@
+{
+  "_fv": 73,
+  "_type": "particle",
+  "definition": {
+    "texture": "eridium_particle",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": {
+      "fixedValue": 0.24999999999999997
+    },
+    "speedFactor": 0.30000000000000004,
+    "gravity": -0.007,
+    "maxAge": 68,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": false,
+    "alwaysShow": false,
+    "renderType": "LIT"
+  }
+}

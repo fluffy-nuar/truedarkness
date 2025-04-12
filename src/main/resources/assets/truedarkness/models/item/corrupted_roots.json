@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "truedarkness:block/corrupted_roots"
+    "layer0": "truedarkness:block/corrupt_roots"
   }
 }

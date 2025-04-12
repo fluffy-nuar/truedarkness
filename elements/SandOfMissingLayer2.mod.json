@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "plant",
   "definition": {
     "renderType": 2,
@@ -13,6 +13,19 @@
     "plantType": "normal",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 0,
+    "secondaryTreeChance": 0.1,
+    "trees": [
+      null,
+      null
+    ],
+    "flowerTrees": [
+      null,
+      null
+    ],
+    "megaTrees": [
+      null,
+      null
+    ],
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "customBoundingBox": true,
@@ -32,14 +45,13 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "hardness": 1.0,
     "resistance": 0.5,
     "luminance": 0,
     "unbreakable": false,
     "isSolid": false,
+    "isWaterloggable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "SAND"
@@ -72,7 +84,7 @@
     "creativePickItem": {
       "value": "CUSTOM:SandOfMissing"
     },
-    "offsetType": "XZ",
+    "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:corrupt_bricks"
+    }
+  },
+  "result": {
+    "item": "truedarkness:corrupt_bricks_wall",
+    "count": 6
+  }
+}

@@ -1,7 +1,36 @@
 {
   "variants": {
-    "": {
+    "": [
+    {
       "model": "truedarkness:block/cvetaliy_cluster"
+    },
+    {
+      "model": "truedarkness:block/cvetaliy_cluster",
+      "y": 90
+    },
+    {
+      "model": "truedarkness:block/cvetaliy_cluster",
+      "y": 180
+    },
+    {
+      "model": "truedarkness:block/cvetaliy_cluster",
+      "y": 270
+    },
+    {
+      "model": "truedarkness:block/cvetaliy_cluster_blockstate_blockstate_0"
+    },
+    {
+      "model": "truedarkness:block/cvetaliy_cluster_blockstate_blockstate_0",
+      "y": 90
+    },
+    {
+      "model": "truedarkness:block/cvetaliy_cluster_blockstate_blockstate_0",
+      "y": 180
+    },
+    {
+      "model": "truedarkness:block/cvetaliy_cluster_blockstate_blockstate_0",
+      "y": 270
     }
+  	  ]
   }
 }

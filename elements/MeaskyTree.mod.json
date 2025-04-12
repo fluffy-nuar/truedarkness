@@ -1,0 +1,127 @@
+{
+  "_fv": 73,
+  "_type": "plant",
+  "definition": {
+    "renderType": 2,
+    "texture": "measky_bush",
+    "textureBottom": "",
+    "customModelName": "measky_bush:default",
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "sapling",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 100,
+    "secondaryTreeChance": 0.1,
+    "trees": [
+      {
+        "value": "CUSTOM:MeaskyTreeBoneMeal"
+      },
+      null
+    ],
+    "flowerTrees": [
+      null,
+      null
+    ],
+    "megaTrees": [
+      null,
+      null
+    ],
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": true,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 6.0,
+        "my": 0.0,
+        "mz": 6.0,
+        "Mx": 10.0,
+        "My": 8.0,
+        "Mz": 10.0,
+        "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 8.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Measky Tree",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 6,
+    "unbreakable": false,
+    "isSolid": true,
+    "isWaterloggable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "AZALEA"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": true,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:UndeskyBlacksoil"
+      },
+      {
+        "value": "CUSTOM:CobbledAccustone"
+      },
+      {
+        "value": "CUSTOM:MeaskyMoss"
+      }
+    ],
+    "isBonemealable": false,
+    "frequencyOnChunks": 5,
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "generationType": "Flower",
+    "patchSize": 64,
+    "generateAtAnyHeight": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "converting",
+    "result": {
+      "value": "CUSTOM:EchoWings"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:SoulstealWings"
+      },
+      {
+        "value": "CUSTOM:EchoHarp"
+      }
+    ]
+  }
+}

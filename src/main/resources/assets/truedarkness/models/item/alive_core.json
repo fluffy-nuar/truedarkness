@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/alive_core"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:alive_core_active": 1
+      },
+      "model": "truedarkness:item/alive_core_0"
+    }
+  ]
+}

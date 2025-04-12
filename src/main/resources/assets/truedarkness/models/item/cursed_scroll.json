@@ -2,5 +2,13 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "truedarkness:item/cursed_scroll"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:cursed_scroll_type": 1
+      },
+      "model": "truedarkness:item/cursed_scroll_0"
+    }
+  ]
 }

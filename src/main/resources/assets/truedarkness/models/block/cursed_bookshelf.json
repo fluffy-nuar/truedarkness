@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/corrupted_bricks",
+    "up": "truedarkness:block/corrupted_bricks",
+    "north": "truedarkness:block/cursed_bookshelf",
+    "east": "truedarkness:block/cursed_bookshelf",
+    "south": "truedarkness:block/cursed_bookshelf",
+    "west": "truedarkness:block/cursed_bookshelf",
+    "particle": "truedarkness:block/corrupted_bricks"
+  },
+  "render_type": "solid"
+}

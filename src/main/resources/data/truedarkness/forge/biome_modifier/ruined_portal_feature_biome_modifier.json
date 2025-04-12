@@ -1,6 +1,8 @@
 {
   "type": "forge:add_features",
-  "biomes": "truedarkness:swamp_wasteland",
+  "biomes": {
+    "type": "forge:any"
+  },
   "features": "truedarkness:ruined_portal_feature",
-  "step": "underground_structures"
+  "step": "surface_structures"
 }

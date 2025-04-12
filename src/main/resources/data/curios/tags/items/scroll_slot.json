@@ -1,7 +1,6 @@
 {
-  "replace": "false",
+  "replace": false,
   "values": [
-    "minecraft:air",
     "truedarkness:cursed_scroll",
     "truedarkness:echo_scroll"
   ]

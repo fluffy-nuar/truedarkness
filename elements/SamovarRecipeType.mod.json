@@ -1,0 +1,45 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "samovar_recipe.png",
+    "width": 112,
+    "height": 80,
+    "icon": {
+      "value": "CUSTOM:Samovar"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:Samovar"
+      }
+    ],
+    "enableCraftingtable": true,
+    "title": "Samovar Recipe Type",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 30,
+        "y": 48,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 48,
+        "y": 48,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 66,
+        "y": 48,
+        "slotid": 2
+      },
+      {
+        "type": "OUTPUT",
+        "x": 48,
+        "y": 11,
+        "slotid": 3
+      }
+    ]
+  }
+}

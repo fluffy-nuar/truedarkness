@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "minecraft:turtle_egg"
+    },
+    {
+      "item": "truedarkness:corrupted_sculk_catalyst"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:cursed_egg",
+    "count": 1
+  }
+}

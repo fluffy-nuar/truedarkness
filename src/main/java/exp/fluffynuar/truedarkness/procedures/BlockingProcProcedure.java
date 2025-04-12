@@ -12,8 +12,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 
 import javax.annotation.Nullable;
 
@@ -25,16 +23,16 @@ public class BlockingProcProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity(), event.getSource().getEntity());
+			execute(event, event.getEntity());
 		}
 	}
 
-	public static void execute(Entity entity, Entity sourceentity) {
-		execute(null, entity, sourceentity);
+	public static void execute(Entity entity) {
+		execute(null, entity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
-		if (entity == null || sourceentity == null)
+	private static void execute(@Nullable Event event, Entity entity) {
+		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.isBlocking()) {
 			if (!(entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(TruedarknessModMobEffects.SOULSTEAL_WINGS_COOLDOWN.get()))) {
@@ -50,20 +48,6 @@ public class BlockingProcProcedure {
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_WINGS.get(), 60);
 				}
-			}
-		}
-		if (!(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(TruedarknessModMobEffects.SOULSTEAL_SPOOL_COOLDOWN.get())) && Mth.nextInt(RandomSource.create(), 1, 100) >= 75) {
-			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.CURSED_MARK.get(), lv).isPresent() : false) {
-				if (sourceentity instanceof LivingEntity _entity)
-					_entity.setHealth((float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1));
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SOULSTEAL_SPOOL_COOLDOWN.get(), 60, 0, false, false));
-				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(TruedarknessModItems.CURSED_MARK.get(), 60);
-				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(TruedarknessModItems.WARRIOR_HEART.get(), 60);
-				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_SPOOL.get(), 60);
 			}
 		}
 	}

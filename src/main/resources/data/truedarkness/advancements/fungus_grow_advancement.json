@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "fungus_grow_advancement": {
+    "fungus_grow_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:cursed_smelting",
+  "ingredients": [
+    {
+      "item": "truedarkness:trudnite_ingot"
+    },
+    {
+      "item": "truedarkness:eridium_heart"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:fantal_ingot",
+    "count": 1
+  }
+}

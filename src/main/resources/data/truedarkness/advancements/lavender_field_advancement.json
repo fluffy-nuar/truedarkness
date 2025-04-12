@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "lavender_field_advancement": {
+    "lavender_field_advancement_0": {
       "trigger": "minecraft:location",
       "conditions": {
         "player": [

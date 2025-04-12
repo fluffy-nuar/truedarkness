@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:ice",
+    "minecraft:snow_block",
+    "minecraft:powder_snow_bucket",
+    "truedarkness:warm_chestplate",
+    "truedarkness:warm_leggings",
+    "truedarkness:warm_boots",
+    "minecraft:charcoal",
+    "minecraft:leather",
+    "truedarkness:lavender_tea",
+    "truedarkness:kvass"
+  ]
+}

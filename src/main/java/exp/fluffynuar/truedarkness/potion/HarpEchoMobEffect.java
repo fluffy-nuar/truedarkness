@@ -3,11 +3,14 @@ package exp.fluffynuar.truedarkness.potion;
 
 import net.minecraftforge.client.extensions.common.IClientMobEffectExtensions;
 
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen;
 import net.minecraft.client.gui.GuiGraphics;
+
+import exp.fluffynuar.truedarkness.procedures.HarpEchoKazhdyiTikVoVriemiaEffiektaProcedure;
 
 public class HarpEchoMobEffect extends MobEffect {
 	public HarpEchoMobEffect() {
@@ -15,8 +18,8 @@ public class HarpEchoMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.truedarkness.harp_echo";
+	public void applyEffectTick(LivingEntity entity, int amplifier) {
+		HarpEchoKazhdyiTikVoVriemiaEffiektaProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

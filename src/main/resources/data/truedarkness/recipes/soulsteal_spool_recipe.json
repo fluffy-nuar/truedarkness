@@ -8,17 +8,17 @@
   ],
   "key": {
     "a": {
-      "item": "truedarkness:soulsteal_nugget"
+      "item": "truedarkness:fantal_nugget"
     },
     "b": {
-      "item": "truedarkness:soulsteal_ingot"
+      "item": "truedarkness:synteriy"
     },
     "c": {
       "item": "minecraft:string"
     }
   },
   "result": {
-    "item": "truedarkness:soulsteal_spool",
+    "item": "truedarkness:fantal_spool",
     "count": 1
   }
 }

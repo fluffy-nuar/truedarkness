@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "particle",
   "definition": {
     "texture": "vanilla_bubble.png",
@@ -7,7 +7,9 @@
     "frameDuration": 2,
     "width": 0.4,
     "height": 0.4,
-    "scale": 1.0,
+    "scale": {
+      "fixedValue": 1.0
+    },
     "speedFactor": 1.0,
     "gravity": -0.05,
     "maxAge": 68,

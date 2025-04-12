@@ -1,8 +1,9 @@
 {
-  "parent": "block/cross",
+  "parent": "truedarkness:custom/metenite_crystal",
   "textures": {
-    "cross": "truedarkness:block/metenite_cluster",
-    "particle": "truedarkness:block/metenite_cluster"
+    "all": "truedarkness:block/metenite_cluster",
+    "particle": "truedarkness:block/metenite_block",
+    "0": "truedarkness:block/metenite_cluster"
   },
   "render_type": "cutout"
 }

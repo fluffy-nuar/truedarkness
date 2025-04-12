@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "grape_azalea_leaves",
@@ -34,6 +34,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Grape Azalea Leaves",
     "specialInformation": {
       "fixedValue": []
@@ -42,9 +43,11 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementriy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "destroyTool": "hoe",
     "customDrop": {
       "value": ""
@@ -101,10 +104,12 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
-    "isBonemealable": false,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": true,
+    "onBonemealSuccess": {
+      "name": "GrapeAzaleaLeavesUsloviieUspieshnoghoPrimienieniiaKostnoiMuki"
+    },
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -120,9 +125,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "GrapeAzaleaLeavesObnovitTakt"
-    },
     "generateFeature": true,
     "restrictionBiomes": [
       {

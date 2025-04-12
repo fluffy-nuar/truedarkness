@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:seeker_plant",
+    "truedarkness:seeker_plant_top",
+    "truedarkness:seeker_plant_glow",
+    "truedarkness:seeker_plant_glow_top"
+  ]
+}

@@ -1,33 +1,38 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "soulsteal_hoe",
+    "texture": "fantal_hoe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Soulsteal Hoe",
+    "name": "Fantal Hoe",
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 4,
-    "efficiency": 9.0,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
+    "efficiency": 8.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 2.0,
-    "usageCount": 2031,
-    "blocksAffected": [],
+    "usageCount": 1561,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
-        "value": "CUSTOM:SoulstealIngot"
+        "value": "CUSTOM:FantalIngot"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

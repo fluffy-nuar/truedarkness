@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/light_mushroom_tall",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:light_mushroom_tall",
+          "conditions": [
+            {
+              "block": "truedarkness:light_mushroom_tall",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

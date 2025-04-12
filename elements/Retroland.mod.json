@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Retroland",
@@ -13,6 +13,10 @@
       "value": "CUSTOM:SwampSand"
     },
     "airColor": {
+      "value": -15916501,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -15916501,
       "falpha": 0.0
     },
@@ -39,7 +43,7 @@
     "moodSoundDelay": 6000,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "CUSTOM:SampPollen"
+      "value": "CUSTOM:EchoBubble"
     },
     "particlesProbability": 0.5,
     "rainingPossibility": 0.0,

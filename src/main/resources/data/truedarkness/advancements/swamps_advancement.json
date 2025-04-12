@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "swamps_advancement": {
+    "swamps_advancement_0": {
       "trigger": "minecraft:location",
       "conditions": {
         "player": [
@@ -24,7 +24,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "truedarkness:swamps"
+                "biome": "truedarkness:crying_swamps"
               }
             }
           }

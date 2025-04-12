@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:cursed_smelting",
+  "ingredients": [
+    {
+      "item": "truedarkness:metenite_shard"
+    },
+    {
+      "item": "truedarkness:eridium_shard"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:dark_crystal_shard",
+    "count": 1
+  }
+}

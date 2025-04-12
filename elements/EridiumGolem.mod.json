@@ -1,37 +1,53 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
     "mobName": "Eridium Golem",
     "mobLabel": "",
     "mobModelName": "Modeliridiumoviy_Golem",
     "mobModelTexture": "eridium_golem.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [
       {
         "model": "Default",
         "texture": "eridium_golem_light.png",
+        "disableHurtOverlay": false,
         "glow": true
       }
     ],
+    "animations": [],
     "modelWidth": 2.0,
     "modelHeight": 2.9,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -12058463,
+      "value": -14934991,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16447193,
+      "value": -7006502,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -66,11 +82,13 @@
     "health": 150,
     "xpAmount": 40,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -91,7 +109,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:EridiumHeart"
+      "value": ""
     },
     "livingSound": {
       "value": ""
@@ -104,6 +122,9 @@
     },
     "stepSound": {
       "value": "block.basalt.step"
+    },
+    "raidCelebrationSound": {
+      "value": ""
     },
     "entityDataEntries": [],
     "whenMobDies": {
@@ -136,6 +157,15 @@
         "value": "CUSTOM:SwamdWasteland"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

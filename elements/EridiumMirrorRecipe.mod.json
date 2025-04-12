@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,28 +12,28 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:CursedMetal"
+        "value": ""
       },
       {
         "value": "CUSTOM:EridiumHeart"
       },
       {
-        "value": "CUSTOM:CursedMetal"
+        "value": ""
       },
       {
-        "value": "CUSTOM:SoulstealNugget"
+        "value": "CUSTOM:CorruptedHandFangs"
       },
       {
         "value": "CUSTOM:EridiumGlass"
       },
       {
-        "value": "CUSTOM:SoulstealNugget"
+        "value": "CUSTOM:CorruptedHandFangs"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:EridiumBone"
       },
       {
         "value": ""

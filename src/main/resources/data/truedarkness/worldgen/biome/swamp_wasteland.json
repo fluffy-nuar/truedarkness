@@ -1,6 +1,6 @@
 {
   "has_precipitation": false,
-  "temperature": 0.2,
+  "temperature": 1.5,
   "downfall": 0,
   "effects": {
     "music": {
@@ -13,7 +13,7 @@
       "options": {
         "type": "truedarkness:wasteland_pollen"
       },
-      "probability": 0.008
+      "probability": 0.017
     },
     "foliage_color": 10387789,
     "grass_color": 9470285,

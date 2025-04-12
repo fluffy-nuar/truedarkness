@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:cursed_tale_hunt",
+    "truedarkness:cursed_tale_alive",
+    "truedarkness:cursed_tale_poison",
+    "truedarkness:cursed_tale_frost",
+    "truedarkness:cursed_tale_blood",
+    "truedarkness:cursed_tale_haste",
+    "truedarkness:cursed_tale_steal",
+    "truedarkness:cursed_tale_glowing"
+  ]
+}

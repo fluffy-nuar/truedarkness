@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "truedarkness:swamp_cobblestone"
+    },
+    "c": {
+      "item": "truedarkness:spirit_armor_trim_smithing_template"
+    }
+  },
+  "result": {
+    "item": "truedarkness:spirit_armor_trim_smithing_template",
+    "count": 2
+  }
+}

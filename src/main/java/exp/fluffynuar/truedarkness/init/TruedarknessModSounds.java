@@ -27,7 +27,6 @@ public class TruedarknessModSounds {
 	public static final RegistryObject<SoundEvent> RECORD_LONOLINESS = REGISTRY.register("record.lonoliness", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "record.lonoliness")));
 	public static final RegistryObject<SoundEvent> RECORD_BE_LOUD = REGISTRY.register("record.be_loud", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "record.be_loud")));
 	public static final RegistryObject<SoundEvent> AMBIENT_NOISINESS = REGISTRY.register("ambient.noisiness", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "ambient.noisiness")));
-	public static final RegistryObject<SoundEvent> ENTITY_CORRUPTED_KNIGHT_HURT = REGISTRY.register("entity.corrupted_knight_hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.corrupted_knight_hurt")));
 	public static final RegistryObject<SoundEvent> BLOCK_PROECTOR = REGISTRY.register("block.proector", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "block.proector")));
 	public static final RegistryObject<SoundEvent> ENTITY_LAST_SOUL_DEATH = REGISTRY.register("entity.last_soul_death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.last_soul_death")));
 	public static final RegistryObject<SoundEvent> ENTITY_GRIM_GOLEM_HURT = REGISTRY.register("entity.grim_golem_hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.grim_golem_hurt")));
@@ -52,4 +51,43 @@ public class TruedarknessModSounds {
 	public static final RegistryObject<SoundEvent> ENTITY_GLOOMER_DEATH = REGISTRY.register("entity.gloomer.death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.gloomer.death")));
 	public static final RegistryObject<SoundEvent> ENTITY_GLOOMER_HURT = REGISTRY.register("entity.gloomer.hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.gloomer.hurt")));
 	public static final RegistryObject<SoundEvent> ENTITY_GLOOMER_STEP = REGISTRY.register("entity.gloomer.step", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.gloomer.step")));
+	public static final RegistryObject<SoundEvent> PLAYER_ROAR = REGISTRY.register("player.roar", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.roar")));
+	public static final RegistryObject<SoundEvent> AMBIENT_CORRUPTED_BELL = REGISTRY.register("ambient.corrupted_bell", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "ambient.corrupted_bell")));
+	public static final RegistryObject<SoundEvent> PLAYER_CORRUPTED_TELEPORT_USE = REGISTRY.register("player.corrupted.teleport.use", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.corrupted.teleport.use")));
+	public static final RegistryObject<SoundEvent> PLAYER_CORRUPTED_TELEPORT_SUMMON = REGISTRY.register("player.corrupted.teleport.summon",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.corrupted.teleport.summon")));
+	public static final RegistryObject<SoundEvent> PLAYER_CORRUPTED_ABILITY_READY = REGISTRY.register("player.corrupted.ability.ready",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.corrupted.ability.ready")));
+	public static final RegistryObject<SoundEvent> PLAYER_CORRUPTED_TELEPORT_STOP = REGISTRY.register("player.corrupted.teleport.stop",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.corrupted.teleport.stop")));
+	public static final RegistryObject<SoundEvent> PLAYER_MANA_RESTORED = REGISTRY.register("player.mana.restored", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.mana.restored")));
+	public static final RegistryObject<SoundEvent> PLAYER_ECHO_TELEPORT = REGISTRY.register("player.echo.teleport", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.echo.teleport")));
+	public static final RegistryObject<SoundEvent> PLAYER_CORRUPTED_TELEPORT_RESTORING_ITEM = REGISTRY.register("player.corrupted.teleport.restoring_item",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.corrupted.teleport.restoring_item")));
+	public static final RegistryObject<SoundEvent> ENTITY_CORRUPTED_CREATURE_AMBIENT = REGISTRY.register("entity.corrupted_creature.ambient",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.corrupted_creature.ambient")));
+	public static final RegistryObject<SoundEvent> ENTITY_CORRUPTED_CREATURE_HURT = REGISTRY.register("entity.corrupted_creature.hurt",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.corrupted_creature.hurt")));
+	public static final RegistryObject<SoundEvent> ENTITY_SOULSTEAL_WARRIOR_HURT = REGISTRY.register("entity.soulsteal_warrior.hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.soulsteal_warrior.hurt")));
+	public static final RegistryObject<SoundEvent> ENTITY_SOULSTEAL_WARRIOR_DEATH = REGISTRY.register("entity.soulsteal_warrior.death",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.soulsteal_warrior.death")));
+	public static final RegistryObject<SoundEvent> ENTITY_CORRUPTED_CREATURE_DEATH = REGISTRY.register("entity.corrupted_creature.death",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.corrupted_creature.death")));
+	public static final RegistryObject<SoundEvent> ENTITY_CORRUPTED_CREATURE_TURNS_AGGRESIVE = REGISTRY.register("entity.corrupted_creature.turns_aggresive",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.corrupted_creature.turns_aggresive")));
+	public static final RegistryObject<SoundEvent> ENTITY_CORRUPTED_KNIGHT_HURT = REGISTRY.register("entity.corrupted_knight.hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.corrupted_knight.hurt")));
+	public static final RegistryObject<SoundEvent> ENTITY_HEX_HURT = REGISTRY.register("entity.hex.hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.hex.hurt")));
+	public static final RegistryObject<SoundEvent> ENTITY_HEX_DEATH = REGISTRY.register("entity.hex.death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.hex.death")));
+	public static final RegistryObject<SoundEvent> ENTITY_HEX_AMBIENT = REGISTRY.register("entity.hex.ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.hex.ambient")));
+	public static final RegistryObject<SoundEvent> ENTITY_CORRUPTED_SKELETON_STEP = REGISTRY.register("entity.corrupted_skeleton.step",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.corrupted_skeleton.step")));
+	public static final RegistryObject<SoundEvent> ENTITY_CORRUPTED_SKELETON_AMBIENT = REGISTRY.register("entity.corrupted_skeleton.ambient",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.corrupted_skeleton.ambient")));
+	public static final RegistryObject<SoundEvent> ENTITY_CORRUPTED_SKELETON_DEATH = REGISTRY.register("entity.corrupted_skeleton.death",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.corrupted_skeleton.death")));
+	public static final RegistryObject<SoundEvent> ENTITY_CORRUPTED_SELETON_HURT = REGISTRY.register("entity.corrupted_seleton.hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "entity.corrupted_seleton.hurt")));
+	public static final RegistryObject<SoundEvent> PLAYER_CORRUPTED_TELEPORT_ERADICATED = REGISTRY.register("player.corrupted.teleport.eradicated",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.corrupted.teleport.eradicated")));
+	public static final RegistryObject<SoundEvent> PLAYER_CORRUPTED_TELEPORT_CASTING = REGISTRY.register("player.corrupted.teleport.casting",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("truedarkness", "player.corrupted.teleport.casting")));
 }

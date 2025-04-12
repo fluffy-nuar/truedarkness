@@ -8,11 +8,11 @@
   ],
   "key": {
     "a": {
-      "item": "truedarkness:chiseled_polished_sandstone_of_missing_2"
+      "item": "truedarkness:deleted_mod_element"
     }
   },
   "result": {
-    "item": "truedarkness:polished_sandstone_of_missing_stairs_1",
+    "item": "truedarkness:deleted_mod_element",
     "count": 4
   }
 }

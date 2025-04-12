@@ -2,7 +2,7 @@
   "type": "minecraft:smithing_transform",
   "template": [],
   "base": {
-    "item": "truedarkness:polished_sandstone_bricks_of_missing"
+    "item": "truedarkness:polished_sandstone_of_missing_bricks"
   },
   "addition": {
     "item": "truedarkness:sandglass"

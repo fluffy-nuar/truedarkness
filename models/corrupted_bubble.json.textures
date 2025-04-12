@@ -14,7 +14,7 @@
         "1": "corrupted_bubble_top",
         "3": "corrupted_bubble_side",
         "4": "corrupt",
-        "5": "0"
+        "5": "empty_texture"
       },
       "name": "empty"
     }

@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "truedarkness:block/cobbled_accustone",
+    "bottom": "truedarkness:block/cobbled_accustone",
+    "top": "truedarkness:block/cobbled_accustone",
+    "side": "truedarkness:block/cobbled_accustone"
+  },
+  "render_type": "solid"
+}

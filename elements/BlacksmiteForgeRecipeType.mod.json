@@ -1,0 +1,45 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "blacksmite_forge_recipe.png",
+    "width": 126,
+    "height": 73,
+    "icon": {
+      "value": "CUSTOM:BlacksmiteForge"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:BlacksmiteForge"
+      }
+    ],
+    "enableCraftingtable": true,
+    "title": "Forging",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 37,
+        "y": 47,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 55,
+        "y": 47,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 73,
+        "y": 47,
+        "slotid": 2
+      },
+      {
+        "type": "OUTPUT",
+        "x": 55,
+        "y": 9,
+        "slotid": 4
+      }
+    ]
+  }
+}

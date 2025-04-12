@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/small_skull",
+  "textures": {
+    "all": "truedarkness:block/small_skull",
+    "particle": "truedarkness:block/small_skull",
+    "0": "truedarkness:block/small_skull"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,32 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "CvetaliyCluster",
+    "blockstateList": [
+      {
+        "texture": "cvetaliy_cluster",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cvetaliy_cluster_0:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 3.0,
+            "my": 0.0,
+            "mz": 3.0,
+            "Mx": 13.0,
+            "My": 14.0,
+            "Mz": 13.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

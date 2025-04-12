@@ -35,7 +35,7 @@ public class SoulstealWingsPriShchielchkiePKMPoBlokuProcedure {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == TruedarknessModBlocks.LIGHT_OF_SOUL.get()) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = TruedarknessModBlocks.SOULSTEAL_GRID.get().defaultBlockState();
+				BlockState _bs = TruedarknessModBlocks.FANTAL_GRID.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -60,13 +60,13 @@ public class SoulstealWingsPriShchielchkiePKMPoBlokuProcedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 50, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 60, 255, false, false));
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_WINGS.get()) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.FANTAL_WINGS.get()) {
 				if (world.isClientSide())
 					Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(TruedarknessModItems.SOUL.get()));
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				TruedarknessMod.queueServerWork(60, () -> {
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_WINGS.get()) {
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.FANTAL_WINGS.get()) {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.zombie_villager.converted")), SoundSource.PLAYERS, 1, 1);
@@ -77,7 +77,7 @@ public class SoulstealWingsPriShchielchkiePKMPoBlokuProcedure {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal(("\u00A7b" + Component.translatable("item.truedarkness.soul_wings.desc").getString())), true);
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(TruedarknessModItems.SOUL_WINGS.get());
+							ItemStack _setstack = new ItemStack(TruedarknessModItems.SOUL_WINGS.get()).copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)
@@ -100,13 +100,13 @@ public class SoulstealWingsPriShchielchkiePKMPoBlokuProcedure {
 							_entity.swing(InteractionHand.MAIN_HAND, true);
 					}
 				});
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_WINGS.get()) {
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.FANTAL_WINGS.get()) {
 				if (world.isClientSide())
 					Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(TruedarknessModItems.SOUL.get()));
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.OFF_HAND, true);
 				TruedarknessMod.queueServerWork(20, () -> {
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_WINGS.get()) {
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.FANTAL_WINGS.get()) {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.zombie_villager.cure")), SoundSource.PLAYERS, 1, 1);
@@ -117,7 +117,7 @@ public class SoulstealWingsPriShchielchkiePKMPoBlokuProcedure {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal(("\u00A7b" + Component.translatable("item.truedarkness.soul_wings.desc").getString())), true);
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(TruedarknessModItems.SOUL_WINGS.get());
+							ItemStack _setstack = new ItemStack(TruedarknessModItems.SOUL_WINGS.get()).copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
 							if (_entity instanceof Player _player)

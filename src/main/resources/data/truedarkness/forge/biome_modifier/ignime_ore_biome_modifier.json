@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "truedarkness:retroland",
+    "truedarkness:mine"
+  ],
+  "features": "truedarkness:ignime_ore",
+  "step": "underground_ores"
+}

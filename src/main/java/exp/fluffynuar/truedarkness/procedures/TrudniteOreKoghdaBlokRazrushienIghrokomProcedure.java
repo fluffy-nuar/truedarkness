@@ -18,6 +18,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.client.Minecraft;
 
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
+import exp.fluffynuar.truedarkness.init.TruedarknessModBlocks;
 
 public class TrudniteOreKoghdaBlokRazrushienIghrokomProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -39,10 +40,23 @@ public class TrudniteOreKoghdaBlokRazrushienIghrokomProcedure {
 				_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, 4));
 			if (Mth.nextInt(RandomSource.create(), 0, 10) > 8) {
 				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.SOULSTEAL_SHARD.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.FANTAL_SHARD.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
+			} else {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModItems.RAW_TRUDNITE.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof PickaxeItem
+				&& EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TruedarknessModBlocks.TRUDNITE_ORE.get()));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
 			}
 		}
 	}

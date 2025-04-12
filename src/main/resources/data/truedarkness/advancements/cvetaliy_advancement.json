@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "cvetaliy_advancement": {
+    "cvetaliy_advancement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

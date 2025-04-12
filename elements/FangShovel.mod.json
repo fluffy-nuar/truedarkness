@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "fang_shovel",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§5Fang Shovel",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
+    "efficiency": 22.0,
+    "attackSpeed": 2.1,
+    "enchantability": 0,
+    "damageVsEntity": 5.5,
+    "usageCount": 4021,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CorruptedHandFangs"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "CorruptedRitualKnifePriShchielchkiePKM"
+    },
+    "onEntityHitWith": {
+      "name": "CursedSwordPriUdariePoSushchnostiInstrumientom"
+    },
+    "onItemInUseTick": {
+      "name": "FangPickaxeKazhdyiTikVRukie"
+    }
+  }
+}

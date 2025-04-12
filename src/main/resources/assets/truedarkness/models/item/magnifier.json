@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "truedarkness:item/magnifier"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:magnifier_can": 1
+      },
+      "model": "truedarkness:item/magnifier_0"
+    }
+  ]
+}

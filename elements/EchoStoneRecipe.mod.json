@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "blacksmite_forge_recipe_type",
+    "result": {
+      "value": "CUSTOM:EchoStone"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:SculkManaBottle"
+      },
+      {
+        "value": "CUSTOM:AccustonePebbles"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      }
+    ]
+  }
+}

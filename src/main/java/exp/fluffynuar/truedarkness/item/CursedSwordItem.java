@@ -3,17 +3,19 @@ package exp.fluffynuar.truedarkness.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
 
-import java.util.List;
-
-import exp.fluffynuar.truedarkness.procedures.CursedSwordKazhdyiTikVInvientarieProcedure;
+import exp.fluffynuar.truedarkness.procedures.FangPickaxeKazhdyiTikVRukieProcedure;
+import exp.fluffynuar.truedarkness.procedures.CursedSwordPriUdariePoSushchnostiInstrumientomProcedure;
+import exp.fluffynuar.truedarkness.procedures.CorruptedRitualKnifePriShchielchkiePKMProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
 public class CursedSwordItem extends SwordItem {
@@ -28,7 +30,7 @@ public class CursedSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 2f;
 			}
 
 			public int getLevel() {
@@ -46,13 +48,23 @@ public class CursedSwordItem extends SwordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		CursedSwordPriUdariePoSushchnostiInstrumientomProcedure.execute(entity, sourceentity);
+		return retval;
+	}
+
+	@Override
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		CorruptedRitualKnifePriShchielchkiePKMProcedure.execute(entity, ar.getObject());
+		return ar;
 	}
 
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		CursedSwordKazhdyiTikVInvientarieProcedure.execute(entity);
+		if (selected)
+			FangPickaxeKazhdyiTikVRukieProcedure.execute(entity, itemstack);
 	}
 }

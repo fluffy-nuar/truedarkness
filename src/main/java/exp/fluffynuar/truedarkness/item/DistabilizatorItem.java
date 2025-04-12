@@ -1,17 +1,12 @@
 
 package exp.fluffynuar.truedarkness.item;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
 
 import exp.fluffynuar.truedarkness.procedures.DistabilizatorKoghdaZhivaiaSushchnostPopadaietSPomoshchiuInstrumientaProcedure;
 
@@ -27,7 +22,7 @@ public class DistabilizatorItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return -1f;
+				return -3f;
 			}
 
 			public int getLevel() {
@@ -47,12 +42,7 @@ public class DistabilizatorItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		DistabilizatorKoghdaZhivaiaSushchnostPopadaietSPomoshchiuInstrumientaProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		DistabilizatorKoghdaZhivaiaSushchnostPopadaietSPomoshchiuInstrumientaProcedure.execute(entity.level(), entity);
 		return retval;
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 }

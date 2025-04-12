@@ -1,13 +1,13 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "chiseled_polished_sandstone_bricks_of_missing",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
+    "texture": "chiseled_polished_sandstone_of_missing_bricks_top",
+    "textureTop": "chiseled_polished_sandstone_of_missing_bricks_top",
+    "textureLeft": "chiseled_polished_sandstone_of_missing_bricks",
+    "textureFront": "chiseled_polished_sandstone_of_missing_bricks",
+    "textureRight": "chiseled_polished_sandstone_of_missing_bricks",
+    "textureBack": "chiseled_polished_sandstone_of_missing_bricks",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Chiseled Polished Sandstone Bricks Of Missing",
     "specialInformation": {
       "fixedValue": []
@@ -41,9 +42,11 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementriy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementriy"
+      }
+    ],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
@@ -100,10 +103,9 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

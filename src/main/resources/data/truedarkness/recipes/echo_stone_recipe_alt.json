@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:accustone_pebbles"
+    },
+    {
+      "item": "truedarkness:echo_harp"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:echo_stone",
+    "count": 1
+  }
+}

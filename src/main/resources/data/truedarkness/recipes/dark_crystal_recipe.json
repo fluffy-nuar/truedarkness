@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:blacksmite_forge_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:sculk_mana_bottle"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "truedarkness:dark_crystal_shard"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:dark_crystal",
+    "count": 1
+  }
+}

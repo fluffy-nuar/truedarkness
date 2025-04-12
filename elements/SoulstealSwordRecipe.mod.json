@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -15,16 +15,16 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:SoulstealIngot"
+        "value": "CUSTOM:FantalIngot"
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:SoulstealNugget"
+        "value": ""
       },
       {
-        "value": "CUSTOM:SoulstealIngot"
+        "value": "CUSTOM:FantalIngot"
       },
       {
         "value": ""

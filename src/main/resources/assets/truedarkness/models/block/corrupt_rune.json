@@ -1,7 +1,8 @@
 {
   "parent": "block/pressure_plate_up",
   "textures": {
-    "texture": "truedarkness:block/corrupt_rune"
+    "particle": "truedarkness:block/rune_0",
+    "texture": "truedarkness:block/rune_0"
   },
-  "render_type": "cutout"
+  "render_type": "translucent"
 }

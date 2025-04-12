@@ -1,20 +1,22 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "particle",
   "definition": {
-    "texture": "corrupt_spell.png",
-    "animate": true,
-    "frameDuration": 3,
+    "texture": "corrupt_block_particle",
+    "animate": false,
+    "frameDuration": 2,
     "width": 0.2,
     "height": 0.2,
-    "scale": 1.2000000000000002,
+    "scale": {
+      "fixedValue": 1.2000000000000002
+    },
     "speedFactor": 1.0,
     "gravity": -0.01,
-    "maxAge": 10,
-    "maxAgeDiff": 4,
+    "maxAge": 12,
+    "maxAgeDiff": 0,
     "angularVelocity": 0.0,
     "angularAcceleration": 0.0,
-    "canCollide": true,
+    "canCollide": false,
     "alwaysShow": false,
     "renderType": "TRANSLUCENT"
   }

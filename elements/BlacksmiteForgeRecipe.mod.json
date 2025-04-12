@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.IRON_TRAPDOOR"
+        "value": "CUSTOM:PolishedSwampCobblestone"
       },
       {
-        "value": "Blocks.IRON_TRAPDOOR"
+        "value": "CUSTOM:PolishedSwampCobblestone"
       },
       {
-        "value": "Blocks.IRON_TRAPDOOR"
+        "value": "CUSTOM:PolishedSwampCobblestone"
       },
       {
-        "value": "CUSTOM:GramiteShard"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "CUSTOM:Darknite"
+        "value": "Items.COAL#0"
       },
       {
-        "value": "CUSTOM:GramiteShard"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "CUSTOM:GramiteShard"
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": "Items.BUCKET"
       },
       {
-        "value": "CUSTOM:GramiteShard"
+        "value": "Items.IRON_INGOT"
       }
     ],
     "recipeReturnStack": {

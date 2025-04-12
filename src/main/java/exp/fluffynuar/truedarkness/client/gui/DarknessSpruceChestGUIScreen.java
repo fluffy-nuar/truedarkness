@@ -59,19 +59,9 @@ public class DarknessSpruceChestGUIScreen extends AbstractContainerScreen<Darkne
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.truedarkness.darkness_spruce_chest_gui.label_chest"), 8, 6, -13421773, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.truedarkness.darkness_spruce_chest_gui.label_inventory"), 8, 73, -12829636, false);
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
 	}
 
 	@Override

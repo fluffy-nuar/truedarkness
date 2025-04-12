@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "glow_item_frame",
+    "item",
+    "item_display",
+    "item_frame",
+    "area_effect_cloud",
+    "truedarkness:gloomer_warrior",
+    "warden",
+    "truedarkness:gloomer_craftsman",
+    "truedarkness:gloomer_elder",
+    "truedarkness:remnant"
+  ]
+}

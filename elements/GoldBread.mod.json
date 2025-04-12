@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,7 @@
     "states": [],
     "name": "Gold Bread",
     "rarity": "EPIC",
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 32,
@@ -33,7 +31,6 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
@@ -41,9 +38,11 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "CUSTOM:DarknessSpruceShieldProjectile"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 1000,
     "saturation": 1000.0,
@@ -52,6 +51,9 @@
     },
     "isMeat": false,
     "isAlwaysEdible": true,
-    "animation": "eat"
+    "animation": "eat",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

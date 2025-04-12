@@ -1,14 +1,11 @@
 {
-  "type": "minecraft:huge_fungus",
+  "type": "truedarkness:big_light_fungus",
   "config": {
     "valid_base_block": {
       "Name": "truedarkness:swamp_soil"
     },
     "stem_state": {
-      "Name": "truedarkness:glow_log",
-      "Properties": {
-        "axis": "y"
-      }
+      "Name": "truedarkness:glow_log"
     },
     "hat_state": {
       "Name": "truedarkness:glow_fungus_wart"

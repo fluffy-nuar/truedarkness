@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 600,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:StoneMetal"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Synteriy"
+    },
+    "name": "synteriy_recipe",
+    "namespace": "mod"
+  }
+}

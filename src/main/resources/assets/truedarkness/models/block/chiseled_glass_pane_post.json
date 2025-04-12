@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_post",
   "textures": {
+    "particle": "truedarkness:block/chiseled_glass",
     "edge": "truedarkness:block/chiseled_glass",
     "pane": "truedarkness:block/chiseled_glass"
   },

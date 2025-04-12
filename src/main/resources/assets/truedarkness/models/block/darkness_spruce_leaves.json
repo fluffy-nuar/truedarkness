@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "truedarkness:block/darkness_spruce_leaves",
-    "particle": "truedarkness:block/darkness_spruce_leaves"
-  }
-}

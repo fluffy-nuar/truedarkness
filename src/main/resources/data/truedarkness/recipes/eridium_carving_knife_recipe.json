@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:eridium_shard"
+    },
+    "b": {
+      "item": "truedarkness:eridium_heart"
+    },
+    "c": {
+      "item": "truedarkness:eridium_bone"
+    }
+  },
+  "result": {
+    "item": "truedarkness:eridium_carving_knife",
+    "count": 1
+  }
+}

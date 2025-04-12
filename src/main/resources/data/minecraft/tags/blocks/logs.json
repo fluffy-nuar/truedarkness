@@ -2,6 +2,16 @@
   "replace": false,
   "values": [
     "truedarkness:cyan_stem",
-    "truedarkness:darkness_spruce_log"
+    "truedarkness:darkness_spruce_log",
+    "truedarkness:stripped_darkness_spruce_log",
+    "truedarkness:stripped_cyan_log",
+    "truedarkness:fake_log",
+    "truedarkness:stripped_fake_log",
+    "truedarkness:glow_log",
+    "truedarkness:stripped_glow_log",
+    "truedarkness:crying_log",
+    "truedarkness:stripped_crying_log",
+    "truedarkness:neasky_log",
+    "truedarkness:stripped_neasky_log"
   ]
 }

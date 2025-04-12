@@ -2,25 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aba",
-    "cdc",
-    " e "
+    " a ",
+    "bcb",
+    " d "
   ],
   "key": {
     "a": {
-      "item": "truedarkness:cursed_metal"
-    },
-    "b": {
       "item": "truedarkness:eridium_heart"
     },
-    "c": {
-      "item": "truedarkness:soulsteal_nugget"
+    "b": {
+      "item": "truedarkness:corrupted_hand_fangs"
     },
-    "d": {
+    "c": {
       "item": "truedarkness:eridium_glass"
     },
-    "e": {
-      "item": "minecraft:stick"
+    "d": {
+      "item": "truedarkness:eridium_bone"
     }
   },
   "result": {

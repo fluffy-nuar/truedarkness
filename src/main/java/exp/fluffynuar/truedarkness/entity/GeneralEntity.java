@@ -5,7 +5,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -13,7 +12,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RemoveBlockGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -28,15 +26,28 @@ import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
+import net.minecraft.nbt.CompoundTag;
 
-import exp.fluffynuar.truedarkness.procedures.GeneralKoghdaSushchnostUmiraietProcedure;
+import exp.fluffynuar.truedarkness.procedures.GeneralPriObnovlieniiTikaSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.procedures.GeneralKoghdaSushchnostRanienaProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
 
 public class GeneralEntity extends Monster {
+	public static final EntityDataAccessor<Integer> DATA_aggresion = SynchedEntityData.defineId(GeneralEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Integer> DATA_mana = SynchedEntityData.defineId(GeneralEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Boolean> DATA_spawning = SynchedEntityData.defineId(GeneralEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<Integer> DATA_timer = SynchedEntityData.defineId(GeneralEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Integer> DATA_his_y = SynchedEntityData.defineId(GeneralEntity.class, EntityDataSerializers.INT);
+	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.PURPLE, ServerBossEvent.BossBarOverlay.NOTCHED_6);
+
 	public GeneralEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(TruedarknessModEntities.GENERAL.get(), world);
 	}
@@ -55,6 +66,16 @@ public class GeneralEntity extends Monster {
 	}
 
 	@Override
+	protected void defineSynchedData() {
+		super.defineSynchedData();
+		this.entityData.define(DATA_aggresion, 0);
+		this.entityData.define(DATA_mana, 0);
+		this.entityData.define(DATA_spawning, false);
+		this.entityData.define(DATA_timer, 60);
+		this.entityData.define(DATA_his_y, 0);
+	}
+
+	@Override
 	protected void registerGoals() {
 		super.registerGoals();
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
@@ -66,13 +87,12 @@ public class GeneralEntity extends Monster {
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(5, new RemoveBlockGoal(Blocks.LAVA, this, 1, (int) 3));
-		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
 	}
 
 	@Override
 	public MobType getMobType() {
-		return MobType.UNDEFINED;
+		return MobType.UNDEAD;
 	}
 
 	@Override
@@ -91,6 +111,11 @@ public class GeneralEntity extends Monster {
 	}
 
 	@Override
+	public SoundEvent getDeathSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:entity.general.death_new"));
+	}
+
+	@Override
 	public boolean hurt(DamageSource damagesource, float amount) {
 		double x = this.getX();
 		double y = this.getY();
@@ -100,7 +125,7 @@ public class GeneralEntity extends Monster {
 		Entity sourceentity = damagesource.getEntity();
 		Entity immediatesourceentity = damagesource.getDirectEntity();
 
-		GeneralKoghdaSushchnostRanienaProcedure.execute(world, x, y, z, entity, sourceentity);
+		GeneralKoghdaSushchnostRanienaProcedure.execute(entity);
 		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
 		if (damagesource.getDirectEntity() instanceof AbstractArrow)
@@ -115,7 +140,7 @@ public class GeneralEntity extends Monster {
 			return false;
 		if (damagesource.is(DamageTypes.LIGHTNING_BOLT))
 			return false;
-		if (damagesource.is(DamageTypes.EXPLOSION))
+		if (damagesource.is(DamageTypes.EXPLOSION) || damagesource.is(DamageTypes.PLAYER_EXPLOSION))
 			return false;
 		if (damagesource.is(DamageTypes.TRIDENT))
 			return false;
@@ -123,17 +148,73 @@ public class GeneralEntity extends Monster {
 			return false;
 		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
-		if (damagesource.is(DamageTypes.WITHER))
-			return false;
-		if (damagesource.is(DamageTypes.WITHER_SKULL))
+		if (damagesource.is(DamageTypes.WITHER) || damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(damagesource, amount);
 	}
 
 	@Override
-	public void die(DamageSource source) {
-		super.die(source);
-		GeneralKoghdaSushchnostUmiraietProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), source.getEntity());
+	public boolean ignoreExplosion() {
+		return true;
+	}
+
+	@Override
+	public boolean fireImmune() {
+		return true;
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putInt("Dataaggresion", this.entityData.get(DATA_aggresion));
+		compound.putInt("Datamana", this.entityData.get(DATA_mana));
+		compound.putBoolean("Dataspawning", this.entityData.get(DATA_spawning));
+		compound.putInt("Datatimer", this.entityData.get(DATA_timer));
+		compound.putInt("Datahis_y", this.entityData.get(DATA_his_y));
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Dataaggresion"))
+			this.entityData.set(DATA_aggresion, compound.getInt("Dataaggresion"));
+		if (compound.contains("Datamana"))
+			this.entityData.set(DATA_mana, compound.getInt("Datamana"));
+		if (compound.contains("Dataspawning"))
+			this.entityData.set(DATA_spawning, compound.getBoolean("Dataspawning"));
+		if (compound.contains("Datatimer"))
+			this.entityData.set(DATA_timer, compound.getInt("Datatimer"));
+		if (compound.contains("Datahis_y"))
+			this.entityData.set(DATA_his_y, compound.getInt("Datahis_y"));
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		GeneralPriObnovlieniiTikaSushchnostiProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+	}
+
+	@Override
+	public boolean canChangeDimensions() {
+		return false;
+	}
+
+	@Override
+	public void startSeenByPlayer(ServerPlayer player) {
+		super.startSeenByPlayer(player);
+		this.bossInfo.addPlayer(player);
+	}
+
+	@Override
+	public void stopSeenByPlayer(ServerPlayer player) {
+		super.stopSeenByPlayer(player);
+		this.bossInfo.removePlayer(player);
+	}
+
+	@Override
+	public void customServerAiStep() {
+		super.customServerAiStep();
+		this.bossInfo.setProgress(this.getHealth() / this.getMaxHealth());
 	}
 
 	public static void init() {
@@ -142,7 +223,7 @@ public class GeneralEntity extends Monster {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.35);
-		builder = builder.add(Attributes.MAX_HEALTH, 210);
+		builder = builder.add(Attributes.MAX_HEALTH, 200);
 		builder = builder.add(Attributes.ARMOR, 10);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 12);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 64);

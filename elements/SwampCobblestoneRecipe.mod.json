@@ -1,9 +1,9 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 12,
+    "recipeRetstackSize": 8,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -15,28 +15,28 @@
         "value": "CUSTOM:SwampTerracota"
       },
       {
-        "value": "CUSTOM:SwampMud"
+        "value": "CUSTOM:SwampClay"
       },
       {
-        "value": "CUSTOM:SwampSand"
+        "value": "CUSTOM:SwampClay"
       },
       {
-        "value": "CUSTOM:SwampMud"
+        "value": "CUSTOM:SwampTerracota"
+      },
+      {
+        "value": "CUSTOM:SwampTerracota"
+      },
+      {
+        "value": "CUSTOM:SwampClay"
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:SwampMud"
-      },
-      {
-        "value": "CUSTOM:SwampSand"
-      },
-      {
-        "value": "CUSTOM:SwampMud"
-      },
-      {
         "value": "CUSTOM:SwampTerracota"
+      },
+      {
+        "value": "CUSTOM:SwampClay"
       }
     ],
     "recipeReturnStack": {

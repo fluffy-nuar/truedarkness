@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "corrupted_hand_fangs_advancement": {
+    "corrupted_hand_fangs_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

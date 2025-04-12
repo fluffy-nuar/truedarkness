@@ -13,8 +13,12 @@ import net.minecraft.resources.ResourceLocation;
 public class TruedarknessModCustomCuriosSlots {
 	@SubscribeEvent
 	public static void enqueueIMC(final InterModEnqueueEvent event) {
-		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("scroll_slot").icon(new ResourceLocation("curios:slot/scroll_slot")).size(1).build());
-		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("heart_slot").icon(new ResourceLocation("curios:slot/heart_slot")).size(1).build());
-		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("wings_slot").icon(new ResourceLocation("curios:slot/wings_slot")).size(1).build());
+		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("wings_slot").icon(new ResourceLocation("curios:slot/slot_wings")).size(1).build());
+		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("heart_slot").icon(new ResourceLocation("curios:slot/slot_heart")).size(1).build());
+		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("scroll_slot").icon(new ResourceLocation("curios:slot/slot_scroll")).size(1).build());
+		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("eridium_slot").icon(new ResourceLocation("curios:slot/slot_eridium")).size(1).build());
+		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("addon_1_slot").icon(new ResourceLocation("curios:slot/slot_addon")).size(1).build());
+		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("addon_2_slot").icon(new ResourceLocation("curios:slot/slot_addon")).size(1).build());
+		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("addon_3_slot").icon(new ResourceLocation("curios:slot/slot_addon")).size(1).build());
 	}
 }

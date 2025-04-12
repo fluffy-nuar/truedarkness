@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "truedarkness:swamp_stone"
+    },
+    "c": {
+      "item": "truedarkness:split_smithing_template"
+    }
+  },
+  "result": {
+    "item": "truedarkness:split_smithing_template",
+    "count": 2
+  }
+}

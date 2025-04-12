@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:eridium_heart"
+    },
+    "b": {
+      "item": "truedarkness:corrupted_hand_fangs"
+    },
+    "c": {
+      "item": "truedarkness:corrupted_slime"
+    },
+    "d": {
+      "item": "truedarkness:eridium_bone"
+    }
+  },
+  "result": {
+    "item": "truedarkness:bubble_rod",
+    "count": 1
+  }
+}

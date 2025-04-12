@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:crying_log"
+    }
+  },
+  "result": {
+    "item": "truedarkness:crying_planks",
+    "count": 4
+  }
+}

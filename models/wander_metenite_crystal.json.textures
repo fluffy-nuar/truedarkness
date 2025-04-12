@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "wander_metenite_cluster"
+      },
+      "name": "default"
+    }
+  }
+}

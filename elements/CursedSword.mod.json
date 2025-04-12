@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -12,16 +12,16 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 2,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "efficiency": 4.0,
     "attackSpeed": 1.5,
     "enchantability": 2,
     "damageVsEntity": 6.0,
     "usageCount": 1031,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -31,10 +31,18 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onItemInInventoryTick": {
-      "name": "CursedSwordKazhdyiTikVInvientarie"
+    "onRightClickedInAir": {
+      "name": "CorruptedRitualKnifePriShchielchkiePKM"
+    },
+    "onEntityHitWith": {
+      "name": "CursedSwordPriUdariePoSushchnostiInstrumientom"
+    },
+    "onItemInUseTick": {
+      "name": "FangPickaxeKazhdyiTikVRukie"
     }
   }
 }

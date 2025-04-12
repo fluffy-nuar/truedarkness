@@ -1,7 +1,8 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "feature",
   "definition": {
+    "skipPlacement": false,
     "generationStep": "LOCAL_MODIFICATIONS",
     "restrictionBiomes": [
       {
@@ -15,6 +16,9 @@
       },
       {
         "value": "CUSTOM:Swamps"
+      },
+      {
+        "value": "CUSTOM:CryingForest"
       }
     ],
     "generateCondition": {

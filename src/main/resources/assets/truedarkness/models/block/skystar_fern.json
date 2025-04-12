@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "truedarkness:block/skystar_fern",
+    "particle": "truedarkness:block/skystar_fern"
+  },
+  "render_type": "cutout"
+}

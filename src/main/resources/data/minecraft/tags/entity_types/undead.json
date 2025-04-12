@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:soulsteal_warrior",
+    "truedarkness:corrupted_mage",
+    "truedarkness:corrupted_human",
+    "truedarkness:corrupted_hand",
+    "truedarkness:eridium_zombie",
+    "truedarkness:corrupted_knight",
+    "truedarkness:waste_runner"
+  ]
+}

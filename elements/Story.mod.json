@@ -1,17 +1,20 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Story Mode",
-    "icon": "story.png",
+    "icon": "story",
     "color": {
       "value": -1,
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": false,
-    "isBenefitical": false,
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": false,
-    "renderStatusInHUD": false
+    "renderStatusInHUD": false,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "modifiers": []
   }
 }

@@ -6,9 +6,7 @@ import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -18,18 +16,16 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
 import java.util.function.Consumer;
 import java.util.Map;
-import java.util.List;
 import java.util.Collections;
 
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
-import exp.fluffynuar.truedarkness.client.model.Modelarmor;
+import exp.fluffynuar.truedarkness.client.model.Modelfirenite_armor;
 
 public abstract class FireniteArmorItem extends ArmorItem {
 	public FireniteArmorItem(ArmorItem.Type type, Item.Properties properties) {
@@ -61,7 +57,7 @@ public abstract class FireniteArmorItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "firenite_armor";
+				return "firenite";
 			}
 
 			@Override
@@ -87,7 +83,7 @@ public abstract class FireniteArmorItem extends ArmorItem {
 				@Override
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+							Map.of("head", new Modelfirenite_armor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfirenite_armor.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
@@ -97,11 +93,6 @@ public abstract class FireniteArmorItem extends ArmorItem {
 					return armorModel;
 				}
 			});
-		}
-
-		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override
@@ -121,21 +112,16 @@ public abstract class FireniteArmorItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).Body, "left_arm",
-							new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).LeftArm, "right_arm", new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).RightArm,
-							"head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-							"left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelfirenite_armor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfirenite_armor.LAYER_LOCATION)).Body, "left_arm",
+							new Modelfirenite_armor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfirenite_armor.LAYER_LOCATION)).LeftArm, "right_arm",
+							new Modelfirenite_armor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfirenite_armor.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
 					armorModel.young = living.isBaby();
 					return armorModel;
 				}
 			});
-		}
-
-		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override
@@ -150,13 +136,8 @@ public abstract class FireniteArmorItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
-		}
-
-		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "truedarkness:textures/models/armor/firenite__layer_2.png";
+			return "truedarkness:textures/models/armor/firenite_armor__layer_2.png";
 		}
 	}
 
@@ -166,13 +147,27 @@ public abstract class FireniteArmorItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+			consumer.accept(new IClientItemExtensions() {
+				@Override
+				@OnlyIn(Dist.CLIENT)
+				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+							Map.of("left_leg", new Modelfirenite_armor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfirenite_armor.LAYER_LOCATION)).LeftLeg, "right_leg",
+									new Modelfirenite_armor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfirenite_armor.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+					armorModel.crouching = living.isShiftKeyDown();
+					armorModel.riding = defaultModel.riding;
+					armorModel.young = living.isBaby();
+					return armorModel;
+				}
+			});
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "truedarkness:textures/models/armor/firenite__layer_1.png";
+			return "truedarkness:textures/entities/firenite_armor.png";
 		}
 	}
 }

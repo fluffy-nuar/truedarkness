@@ -1,0 +1,78 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LightedVine2",
+    "blockstateList": [
+      {
+        "texture": "lighted_berry_stem",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 1,
+        "customModelName": "Cross model",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 15.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "lighted_berry_stem_full",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 1,
+        "customModelName": "Cross model",
+        "luminance": 3,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 15.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "lighted_vine_stem_full_0",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "tear_berry:default",
+        "luminance": 7,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 15.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

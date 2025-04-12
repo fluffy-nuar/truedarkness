@@ -17,20 +17,20 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class CorruptedKnightRenderer extends MobRenderer<CorruptedKnightEntity, Modelcorrupted_knight<CorruptedKnightEntity>> {
 	public CorruptedKnightRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcorrupted_knight(context.bakeLayer(Modelcorrupted_knight.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelcorrupted_knight<CorruptedKnightEntity>(context.bakeLayer(Modelcorrupted_knight.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new RenderLayer<CorruptedKnightEntity, Modelcorrupted_knight<CorruptedKnightEntity>>(this) {
-			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("truedarkness:textures/entities/corrupted_knight_light.png");
+			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("truedarkness:textures/entities/corrupted_light.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, CorruptedKnightEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, 15728640, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(CorruptedKnightEntity entity) {
-		return new ResourceLocation("truedarkness:textures/entities/corrupted_knight.png");
+		return new ResourceLocation("truedarkness:textures/entities/corrupted.png");
 	}
 }

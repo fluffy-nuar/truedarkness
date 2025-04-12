@@ -6,29 +6,29 @@
       "item": "truedarkness:swamp_terracota"
     },
     {
-      "item": "truedarkness:swamp_mud"
+      "item": "truedarkness:swamp_clay"
     },
     {
-      "item": "truedarkness:swamp_sand"
-    },
-    {
-      "item": "truedarkness:swamp_mud"
-    },
-    {
-      "item": "truedarkness:swamp_mud"
-    },
-    {
-      "item": "truedarkness:swamp_sand"
-    },
-    {
-      "item": "truedarkness:swamp_mud"
+      "item": "truedarkness:swamp_clay"
     },
     {
       "item": "truedarkness:swamp_terracota"
+    },
+    {
+      "item": "truedarkness:swamp_terracota"
+    },
+    {
+      "item": "truedarkness:swamp_clay"
+    },
+    {
+      "item": "truedarkness:swamp_terracota"
+    },
+    {
+      "item": "truedarkness:swamp_clay"
     }
   ],
   "result": {
     "item": "truedarkness:swamp_cobblestone",
-    "count": 12
+    "count": 8
   }
 }

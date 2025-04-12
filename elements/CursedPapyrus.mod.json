@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
@@ -32,8 +32,29 @@
       "fixedValue": []
     },
     "hasGlow": false,
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "type": {
+        "name": "BlinkEridium2ZnachieniieSvoistva"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "cursed_scroll_active",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:type",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      }
+    ],
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,

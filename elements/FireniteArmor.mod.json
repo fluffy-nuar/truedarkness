@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,10 +10,12 @@
     "textureLeggings": "firenite_leggings",
     "enableBoots": true,
     "textureBoots": "firenite_boots",
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "armorTextureFile": "firenite_",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
+    "armorTextureFile": "firenite_armor_",
     "helmetName": "Firenite Helmet",
     "bodyName": "Firenite Chestplate",
     "leggingsName": "Firenite Leggings",
@@ -30,10 +32,10 @@
     "bootsSpecialInformation": {
       "fixedValue": []
     },
-    "helmetModelName": "Modelarmor",
+    "helmetModelName": "Modelfirenite_armor",
     "helmetModelPart": "Head",
     "helmetModelTexture": "firenite_armor.png",
-    "bodyModelName": "Modelarmor",
+    "bodyModelName": "Modelfirenite_armor",
     "bodyModelPart": "Body",
     "armsModelPartL": "LeftArm",
     "armsModelPartR": "RightArm",
@@ -42,10 +44,10 @@
     "leggingsModelPartL": "Leggings L",
     "leggingsModelPartR": "Leggings R",
     "leggingsModelTexture": "From armor",
-    "bootsModelName": "Default",
-    "bootsModelPartL": "Boots L",
-    "bootsModelPartR": "Boots R",
-    "bootsModelTexture": "From armor",
+    "bootsModelName": "Modelfirenite_armor",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "firenite_armor.png",
     "helmetItemRenderType": 0,
     "helmetItemCustomModelName": "Normal",
     "bodyItemRenderType": 0,
@@ -58,6 +60,30 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 25,
     "damageValueHelmet": 4,
     "damageValueBody": 7,

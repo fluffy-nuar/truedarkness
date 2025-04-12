@@ -1,8 +1,9 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "truedarkness:swamps",
-    "truedarkness:mine"
+    "truedarkness:crying_swamps",
+    "truedarkness:mine",
+    "truedarkness:crying_forest"
   ],
   "features": "truedarkness:swamp_soil_feature",
   "step": "underground_ores"

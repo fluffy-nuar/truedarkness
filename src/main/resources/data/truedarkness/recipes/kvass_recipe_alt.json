@@ -1,0 +1,18 @@
+{
+  "type": "truedarkness:samovar_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:cup_water"
+    },
+    {
+      "tag": "truedarkness:jei_empty_tag"
+    },
+    {
+      "item": "truedarkness:crumpled_wheat"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:kvass",
+    "count": 1
+  }
+}

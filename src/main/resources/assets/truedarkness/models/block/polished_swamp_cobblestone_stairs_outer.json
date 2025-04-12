@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "truedarkness:block/polished_swamp_cobblestone",
     "bottom": "truedarkness:block/polished_swamp_cobblestone",
     "top": "truedarkness:block/polished_swamp_cobblestone",
     "side": "truedarkness:block/polished_swamp_cobblestone"

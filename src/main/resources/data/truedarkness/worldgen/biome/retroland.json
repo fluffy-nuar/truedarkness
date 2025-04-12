@@ -11,7 +11,7 @@
     },
     "particle": {
       "options": {
-        "type": "truedarkness:samp_pollen"
+        "type": "truedarkness:echo_bubble"
       },
       "probability": 0.005
     },

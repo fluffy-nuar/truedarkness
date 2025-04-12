@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "truedarkness:block/glow_vine"
+    },
+    "blockstate=1": {
+      "model": "truedarkness:block/glow_vine_blockstate_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "truedarkness:block/glow_vine_blockstate_blockstate_1"
+    },
+    "blockstate=3": {
+      "model": "truedarkness:block/glow_vine_blockstate_blockstate_2"
+    }
+  }
+}

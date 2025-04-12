@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:cursed_furnace",
+    "truedarkness:blood_container",
+    "truedarkness:cursed_pipe",
+    "truedarkness:corrupted_reactor",
+    "truedarkness:cursed_workbench",
+    "truedarkness:cursed_cauldron",
+    "truedarkness:corrupted_campfire"
+  ]
+}

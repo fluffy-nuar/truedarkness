@@ -1,0 +1,10 @@
+{
+  "type": "truedarkness:truedarkness_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/stronghold_corridor"
+    }
+  ],
+  "lootTable": "truedarkness:ender_upgrade_gen"
+}

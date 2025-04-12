@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "teleport_back_advancement": {
+    "teleport_back_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

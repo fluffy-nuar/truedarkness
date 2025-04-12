@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:polished_accustone_bricks"
+    },
+    {
+      "item": "truedarkness:corrupted_sculk_catalyst"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:corrupt_bricks",
+    "count": 1
+  }
+}

@@ -29,7 +29,8 @@ public class EchoStonePriNazhatiiPravoiKnopkoiMyshiProcedure {
 				_player.displayClientMessage(Component.literal(("\u00A73" + Math.round((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana))), true);
 		}
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.CORRUPTING.get(), 80, 0, false, false));
+			_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.THE_ALIVE.get(),
+					(int) (80 + 20 * (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana), 0, false, false));
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_eye.death")), SoundSource.PLAYERS, (float) 0.7, (float) 0.7);
@@ -38,6 +39,7 @@ public class EchoStonePriNazhatiiPravoiKnopkoiMyshiProcedure {
 			}
 		}
 		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_STONE.get(), 140);
+			_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_STONE.get(),
+					(int) (140 + Math.round(12.5 * (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SculkedMana)));
 	}
 }

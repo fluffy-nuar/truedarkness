@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:echo_bottle"
+    },
+    "title": {
+      "translate": "advancements.prays_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.prays_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "prays_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:deep_dark_adv"
+}

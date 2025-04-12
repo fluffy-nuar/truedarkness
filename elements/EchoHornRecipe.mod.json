@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:EchoStone"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "Items.GOAT_HORN"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:EchoStone"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EchoHorn"
+    },
+    "name": "echo_horn_recipe",
+    "namespace": "mod"
+  }
+}

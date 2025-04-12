@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "wings_of_magic": {
+    "wings_of_magic_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

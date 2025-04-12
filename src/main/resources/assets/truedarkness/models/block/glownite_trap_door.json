@@ -4,5 +4,5 @@
     "texture": "truedarkness:block/glownite_grid",
     "particle": "truedarkness:block/glownite_grid"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

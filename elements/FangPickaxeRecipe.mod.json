@@ -1,48 +1,22 @@
 {
-  "_fv": 57,
-  "_type": "recipe",
+  "_fv": 73,
+  "_type": "jeirecipe",
   "definition": {
-    "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
-    "group": "",
-    "cookingBookCategory": "MISC",
-    "xpReward": 0.0,
-    "cookingTime": 200,
-    "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": "CUSTOM:EridiumShard"
-      },
-      {
-        "value": "CUSTOM:CursedMetal"
-      },
-      {
-        "value": "CUSTOM:EridiumShard"
-      },
-      {
-        "value": "CUSTOM:CorruptedHandFangs"
-      },
-      {
-        "value": "CUSTOM:SoulstealPickaxe"
-      },
-      {
-        "value": "CUSTOM:CorruptedHandFangs"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:EridiumHeart"
-      },
-      {
-        "value": ""
-      }
-    ],
-    "recipeReturnStack": {
+    "category": "cursed_anvil_recipe_type",
+    "result": {
       "value": "CUSTOM:FangPickaxe"
     },
-    "name": "fang_pickaxe_recipe",
-    "namespace": "mod"
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:FangPickaxe"
+      },
+      {
+        "value": "TAG:truedarkness:cursed_tales"
+      },
+      {
+        "value": "CUSTOM:EvolutionEridiumShard"
+      }
+    ]
   }
 }

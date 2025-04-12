@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/cursed_fangs"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:creepy_fangs_active": 1
+      },
+      "model": "truedarkness:item/creepy_fangs_0"
+    }
+  ]
+}

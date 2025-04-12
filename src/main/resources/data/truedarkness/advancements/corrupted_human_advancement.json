@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "corrupted_human_advancement": {
+    "corrupted_human_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

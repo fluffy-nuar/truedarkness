@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/stripped_neasky_log_top",
+    "up": "truedarkness:block/stripped_neasky_log_top",
+    "north": "truedarkness:block/stripped_neasky_log",
+    "east": "truedarkness:block/stripped_neasky_log",
+    "south": "truedarkness:block/stripped_neasky_log",
+    "west": "truedarkness:block/stripped_neasky_log",
+    "particle": "truedarkness:block/stripped_neasky_log_top"
+  },
+  "render_type": "solid"
+}

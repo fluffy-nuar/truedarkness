@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ChiseledCorruptedBricks"
+      },
+      {
+        "value": "CUSTOM:CorruptedSkulkCatalyst"
+      },
+      {
+        "value": "CUSTOM:ChiseledCorruptedBricks"
+      },
+      {
+        "value": "CUSTOM:ChiseledCorruptedBricks"
+      },
+      {
+        "value": "Blocks.BLAST_FURNACE"
+      },
+      {
+        "value": "CUSTOM:ChiseledCorruptedBricks"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      },
+      {
+        "value": "CUSTOM:BloodContainer"
+      },
+      {
+        "value": "CUSTOM:EridiumShard"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CursedFurnace"
+    },
+    "name": "cursed_furnace_recipe",
+    "namespace": "mod"
+  }
+}

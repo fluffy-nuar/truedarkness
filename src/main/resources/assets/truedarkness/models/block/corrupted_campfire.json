@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/campfire_off",
+  "textures": {
+    "all": "truedarkness:block/corrupted_campfire_log",
+    "particle": "truedarkness:block/corrupted_campfire_log",
+    "log": "truedarkness:block/corrupted_campfire_log"
+  },
+  "render_type": "cutout"
+}

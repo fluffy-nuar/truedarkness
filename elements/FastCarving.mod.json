@@ -1,0 +1,28 @@
+{
+  "_fv": 73,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Fast Carving",
+    "supportedSlots": "mainhand",
+    "weight": 10,
+    "anvilCost": 1,
+    "maxLevel": 2,
+    "damageModifier": 0,
+    "incompatibleEnchantments": [],
+    "supportedItems": [
+      {
+        "value": "CUSTOM:CarvingKnife"
+      },
+      {
+        "value": "CUSTOM:EchoCarvingKnife"
+      },
+      {
+        "value": "CUSTOM:EridiumCarvingKnife"
+      }
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

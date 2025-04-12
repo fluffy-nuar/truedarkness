@@ -1,0 +1,367 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 162,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 208,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 228,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 248,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_text_cursed_anvil",
+          "text": {
+            "fixedValue": "",
+            "name": "TextCauldronProcText"
+          },
+          "displayCondition": {
+            "name": "TextCauldronProc"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 182,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_anvil_buttom.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CursedAnvilButtom"
+          },
+          "x": 185,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cursed_forging",
+          "text": {
+            "fixedValue": "Cursed Brewing"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_inventory",
+          "text": {
+            "fixedValue": "Inventory"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_cursed_avil_boold",
+          "text": {
+            "fixedValue": "",
+            "name": "CountOfBloodCauldron"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CursedAnvilButtomProc"
+          },
+          "x": 189,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_cursed_avil_boold1",
+          "text": {
+            "fixedValue": "",
+            "name": "CountOfBloodCauldron"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CursedAnvilButtomProc"
+          },
+          "x": 188,
+          "y": 61,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldron0"
+          },
+          "x": 183,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldron1"
+          },
+          "x": 185,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldronProc2"
+          },
+          "x": 187,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldron3"
+          },
+          "x": 189,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldron4"
+          },
+          "x": 191,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldron5"
+          },
+          "x": 193,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldron6"
+          },
+          "x": 195,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldron7"
+          },
+          "x": 185,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldron8"
+          },
+          "x": 185,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldron9"
+          },
+          "x": 185,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_cauldron_gui_layer_progress_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressCauldron10"
+          },
+          "x": 185,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_anvil_buttom_disallow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TextCauldronProc"
+          },
+          "x": 180,
+          "y": 81,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

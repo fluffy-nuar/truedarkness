@@ -1,0 +1,15 @@
+{
+  "type": "truedarkness:converting",
+  "ingredients": [
+    {
+      "item": "truedarkness:light_of_soul"
+    },
+    {
+      "item": "truedarkness:echo_carving_knife"
+    }
+  ],
+  "output": {
+    "item": "truedarkness:synteriy",
+    "count": 1
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Soul Stone",
     "rarity": "RARE",
-    "slotType": "HANDS",
+    "slotType": "Addon1Slot",
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {

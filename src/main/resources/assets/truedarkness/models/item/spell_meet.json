@@ -1,0 +1,50 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/spell_side"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:spell_meet_corrupted": 1,
+        "truedarkness:spell_meet_eridium_stage": 0
+      },
+      "model": "truedarkness:item/spell_meet_0"
+    },
+    {
+      "predicate": {
+        "truedarkness:spell_meet_corrupted": 1,
+        "truedarkness:spell_meet_eridium_stage": 1
+      },
+      "model": "truedarkness:item/spell_meet_1"
+    },
+    {
+      "predicate": {
+        "truedarkness:spell_meet_corrupted": 1,
+        "truedarkness:spell_meet_eridium_stage": 2
+      },
+      "model": "truedarkness:item/spell_meet_2"
+    },
+    {
+      "predicate": {
+        "truedarkness:spell_meet_corrupted": 1,
+        "truedarkness:spell_meet_eridium_stage": 3
+      },
+      "model": "truedarkness:item/spell_meet_3"
+    },
+    {
+      "predicate": {
+        "truedarkness:spell_meet_corrupted": 1,
+        "truedarkness:spell_meet_eridium_stage": 4
+      },
+      "model": "truedarkness:item/spell_meet_4"
+    },
+    {
+      "predicate": {
+        "truedarkness:spell_meet_corrupted": 1,
+        "truedarkness:spell_meet_eridium_stage": 5
+      },
+      "model": "truedarkness:item/spell_meet_5"
+    }
+  ]
+}

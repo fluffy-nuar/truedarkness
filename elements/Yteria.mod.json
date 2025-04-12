@@ -1,11 +1,8 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
-      {
-        "value": "CUSTOM:Swamps"
-      },
       {
         "value": "CUSTOM:CorruptedPlace"
       },
@@ -17,6 +14,18 @@
       },
       {
         "value": "CUSTOM:SwamdWasteland"
+      },
+      {
+        "value": "CUSTOM:Swamps"
+      },
+      {
+        "value": "CUSTOM:TheSky"
+      },
+      {
+        "value": "CUSTOM:CorruptedField"
+      },
+      {
+        "value": "CUSTOM:CryingForest"
       }
     ],
     "worldGenType": "Nether like gen",
@@ -26,13 +35,33 @@
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
     },
+    "seaLevel": 32,
+    "generateOreVeins": false,
+    "generateAquifers": false,
+    "horizontalNoiseSize": 1,
+    "verticalNoiseSize": 2,
+    "defaultEffects": "overworld",
+    "useCustomEffects": true,
+    "hasClouds": false,
+    "cloudHeight": 192.0,
+    "skyType": "NONE",
+    "sunHeightAffectsFog": false,
     "canRespawnHere": false,
     "hasFog": true,
-    "isDark": false,
+    "ambientLight": 0.5,
     "doesWaterVaporize": false,
-    "sleepResult": "ALLOW",
+    "hasFixedTime": false,
+    "fixedTimeValue": 0,
+    "coordinateScale": 1.0,
+    "infiniburnTag": "minecraft:infiniburn_overworld",
+    "bedWorks": true,
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
+    "piglinSafe": true,
+    "hasRaids": false,
+    "minMonsterSpawnLightLimit": 11,
+    "maxMonsterSpawnLightLimit": 11,
+    "monsterSpawnBlockLightLimit": 15,
     "onPlayerEntersDimension": {
       "name": "YteriaIesliIghrokVkhoditVIzmierieniie"
     },
@@ -51,12 +80,15 @@
     },
     "enableIgniter": true,
     "igniterName": "Yteria Portal Igniter",
+    "igniterRarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
-    "igniterTab": {
-      "value": "TOOLS"
-    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
     "texture": "",
     "portalTexture": "",
     "enablePortal": false

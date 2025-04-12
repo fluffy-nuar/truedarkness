@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "cursed_anvil_recipe_type",
+    "result": {
+      "value": "CUSTOM:EridiumBook"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:EridiumBook"
+      },
+      {
+        "value": "CUSTOM:CorruptedHandFangs"
+      },
+      {
+        "value": "CUSTOM:EvolutionEridiumShard"
+      }
+    ]
+  }
+}

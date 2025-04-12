@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:lighted_berry"
+      "item": "truedarkness:tear_berry"
     },
     "title": {
       "translate": "advancements.nausea_advancement.title"
@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "nausea_advancement": {
+    "nausea_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

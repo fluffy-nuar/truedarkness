@@ -1,6 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "truedarkness:swamps",
+  "biomes": "truedarkness:crying_swamps",
   "spawners": {
     "type": "truedarkness:flow",
     "weight": 1,

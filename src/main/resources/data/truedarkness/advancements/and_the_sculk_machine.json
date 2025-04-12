@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:echo_reel_7"
+    },
+    "title": {
+      "translate": "advancements.and_the_sculk_machine.title"
+    },
+    "description": {
+      "translate": "advancements.and_the_sculk_machine.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "and_the_sculk_machine_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:echo_harp_advancement"
+}

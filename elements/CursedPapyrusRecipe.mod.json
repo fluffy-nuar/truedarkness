@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,28 +12,28 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
+        "value": "CUSTOM:EridiumHeart"
+      },
+      {
         "value": ""
       },
       {
-        "value": "CUSTOM:EridiumShard"
+        "value": "CUSTOM:CorruptedHandFangs"
       },
       {
-        "value": "CUSTOM:EridiumBone"
-      },
-      {
-        "value": "CUSTOM:EridiumShard"
+        "value": ""
       },
       {
         "value": "CUSTOM:AncientPapyrus"
       },
       {
-        "value": "CUSTOM:EridiumShard"
+        "value": ""
       },
       {
-        "value": "CUSTOM:EridiumBone"
+        "value": "CUSTOM:CorruptedHandFangs"
       },
       {
-        "value": "CUSTOM:EridiumShard"
+        "value": ""
       },
       {
         "value": ""

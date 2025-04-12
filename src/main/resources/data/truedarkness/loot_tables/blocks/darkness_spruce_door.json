@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/darkness_spruce_door",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:darkness_spruce_door",
+          "conditions": [
+            {
+              "block": "truedarkness:darkness_spruce_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

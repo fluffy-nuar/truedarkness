@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "truedarkness:block/cursed_furnace_top",
+    "up": "truedarkness:block/cursed_furnace_top",
+    "north": "truedarkness:block/cursed_furnace_active",
+    "east": "truedarkness:block/cursed_furnace_side",
+    "south": "truedarkness:block/cursed_furnace_side",
+    "west": "truedarkness:block/cursed_furnace_side",
+    "particle": "truedarkness:block/cursed_furnace_down"
+  },
+  "render_type": "solid"
+}

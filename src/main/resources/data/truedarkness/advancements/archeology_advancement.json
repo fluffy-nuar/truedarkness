@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "truedarkness:sand_remnants"
+      "item": "truedarkness:sand_of_missing_remnants"
     },
     "title": {
       "translate": "advancements.archeology_advancement.title"
@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "archeology_advancement": {
+    "archeology_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

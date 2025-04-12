@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:retroland",
+  "features": "truedarkness:seeker_plant_gen",
+  "step": "surface_structures"
+}

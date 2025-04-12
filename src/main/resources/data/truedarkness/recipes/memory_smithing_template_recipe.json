@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "truedarkness:fake_wood"
+    },
+    "c": {
+      "item": "truedarkness:memory_armor_trim_smithing_template"
+    }
+  },
+  "result": {
+    "item": "truedarkness:memory_armor_trim_smithing_template",
+    "count": 2
+  }
+}

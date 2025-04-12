@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "truedarkness:swamps",
+  "biomes": "truedarkness:crying_swamps",
   "features": "truedarkness:yterias_structure_2_feature",
   "step": "underground_structures"
 }

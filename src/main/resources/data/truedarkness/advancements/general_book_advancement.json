@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "general_book_advancement": {
+    "general_book_advancement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

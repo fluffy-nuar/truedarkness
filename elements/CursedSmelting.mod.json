@@ -1,0 +1,39 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "cursed_furnace_recipe.png",
+    "width": 119,
+    "height": 38,
+    "icon": {
+      "value": "CUSTOM:CursedFurnace"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:CursedFurnace"
+      }
+    ],
+    "enableCraftingtable": true,
+    "title": "Cursed Smelting",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 13,
+        "y": 11,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 31,
+        "y": 11,
+        "slotid": 1
+      },
+      {
+        "type": "OUTPUT",
+        "x": 86,
+        "y": 11,
+        "slotid": 2
+      }
+    ]
+  }
+}

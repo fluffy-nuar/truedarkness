@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c ",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:echo_stone"
+    },
+    "b": {
+      "item": "minecraft:echo_shard"
+    },
+    "c": {
+      "item": "truedarkness:sandglass"
+    }
+  },
+  "result": {
+    "item": "truedarkness:echo_sandglass",
+    "count": 1
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "truedarkness:item/sculk_mana_bottle"
+    "layer0": "truedarkness:item/sculk_bottle"
   }
 }

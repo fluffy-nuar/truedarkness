@@ -8,7 +8,6 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.monster.Monster;
@@ -35,7 +34,6 @@ import net.minecraft.core.BlockPos;
 
 import exp.fluffynuar.truedarkness.procedures.EridiumGolemPriGibieliSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.procedures.EridiumGolemNaturalnoieUsloviiePoiavlieniiaSushchnostiProcedure;
-import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
 
 public class EridiumGolemEntity extends Monster {
@@ -81,11 +79,6 @@ public class EridiumGolemEntity extends Monster {
 		return false;
 	}
 
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(TruedarknessModItems.ERIDIUM_HEART.get()));
-	}
-
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
 		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.step")), 0.15f, 1);
@@ -115,19 +108,27 @@ public class EridiumGolemEntity extends Monster {
 			return false;
 		if (damagesource.is(DamageTypes.DROWN))
 			return false;
-		if (damagesource.is(DamageTypes.EXPLOSION))
+		if (damagesource.is(DamageTypes.EXPLOSION) || damagesource.is(DamageTypes.PLAYER_EXPLOSION))
 			return false;
-		if (damagesource.is(DamageTypes.WITHER))
-			return false;
-		if (damagesource.is(DamageTypes.WITHER_SKULL))
+		if (damagesource.is(DamageTypes.WITHER) || damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(damagesource, amount);
 	}
 
 	@Override
+	public boolean ignoreExplosion() {
+		return true;
+	}
+
+	@Override
+	public boolean fireImmune() {
+		return true;
+	}
+
+	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		EridiumGolemPriGibieliSushchnostiProcedure.execute(source.getEntity());
+		EridiumGolemPriGibieliSushchnostiProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), source.getEntity());
 	}
 
 	public static void init() {

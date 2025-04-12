@@ -37,13 +37,13 @@ public class CorruptedSpellParticle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
 		this.quadSize *= 1.2f;
-		this.lifetime = (int) Math.max(1, 10 + (this.random.nextInt(8) - 4));
+		this.lifetime = 12;
 		this.gravity = -0.01f;
-		this.hasPhysics = true;
+		this.hasPhysics = false;
 		this.xd = vx * 1;
 		this.yd = vy * 1;
 		this.zd = vz * 1;
-		this.setSpriteFromAge(spriteSet);
+		this.pickSprite(spriteSet);
 	}
 
 	@Override
@@ -54,8 +54,5 @@ public class CorruptedSpellParticle extends TextureSheetParticle {
 	@Override
 	public void tick() {
 		super.tick();
-		if (!this.removed) {
-			this.setSprite(this.spriteSet.get((this.age / 3) % 16 + 1, 16));
-		}
 	}
 }

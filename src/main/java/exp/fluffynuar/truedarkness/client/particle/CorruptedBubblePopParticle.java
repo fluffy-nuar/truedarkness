@@ -35,7 +35,7 @@ public class CorruptedBubblePopParticle extends TextureSheetParticle {
 	protected CorruptedBubblePopParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(0.4f, 0.4f);
+		this.setSize(0.1f, 0.1f);
 		this.lifetime = 68;
 		this.gravity = -0.05f;
 		this.hasPhysics = true;

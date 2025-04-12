@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -12,16 +12,16 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 0,
-    "efficiency": 100.0,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
+    "efficiency": 22.0,
     "attackSpeed": 2.1,
     "enchantability": 0,
     "damageVsEntity": 3.0,
     "usageCount": 4021,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -31,13 +31,15 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "onRightClickedInAir": {
-      "name": "FangPickaxeRightclicked"
+      "name": "CorruptedRitualKnifePriShchielchkiePKM"
     },
-    "onItemInInventoryTick": {
-      "name": "FangPickaxeKazhdyiTikVInvientarie"
+    "onEntityHitWith": {
+      "name": "CursedSwordPriUdariePoSushchnostiInstrumientom"
     },
     "onItemInUseTick": {
       "name": "FangPickaxeKazhdyiTikVRukie"

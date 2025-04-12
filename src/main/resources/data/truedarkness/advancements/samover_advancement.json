@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "samover_advancement": {
+    "samover_advancement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

@@ -1,11 +1,11 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
     "mobName": "Waste Runner",
     "mobLabel": "",
-    "mobModelName": "Modelwaster",
-    "mobModelTexture": "waste_runer.png",
+    "mobModelName": "Modelwaste_runner",
+    "mobModelTexture": "corrupted.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -24,26 +24,30 @@
     "modelLayers": [
       {
         "model": "Default",
-        "texture": "waste_runer_light.png",
+        "texture": "corrupted_light.png",
+        "disableHurtOverlay": false,
         "glow": true
       }
     ],
+    "animations": [],
     "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelHeight": 1.9000000000000001,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -8158333,
+      "value": -7697782,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -10223453,
+      "value": -11194020,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -85,7 +89,6 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -120,6 +123,9 @@
     "stepSound": {
       "value": "entity.skeleton.step"
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "whenMobDies": {
       "name": "WasteRunerKoghdaSushchnostUmiraiet"
@@ -148,6 +154,15 @@
         "value": "CUSTOM:SwamdWasteland"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

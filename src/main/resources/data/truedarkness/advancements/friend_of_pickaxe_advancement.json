@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "truedarkness:glow_vine"
+    },
+    "title": {
+      "translate": "advancements.friend_of_pickaxe_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.friend_of_pickaxe_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "friend_of_pickaxe_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "truedarkness:another_level_advancement"
+}

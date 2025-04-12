@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "truedarkness:block/darknite",
     "bottom": "truedarkness:block/darknite",
     "top": "truedarkness:block/darknite",
     "side": "truedarkness:block/darknite"

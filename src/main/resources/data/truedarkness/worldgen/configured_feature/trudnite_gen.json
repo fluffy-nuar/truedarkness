@@ -1,8 +1,18 @@
 {
-  "type": "minecraft:forest_rock",
+  "type": "minecraft:ore",
   "config": {
-    "state": {
-      "Name": "truedarkness:trudnite_ore"
-    }
+    "size": 33,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "block_match",
+          "block": "truedarkness:swamp_soil"
+        },
+        "state": {
+          "Name": "truedarkness:trudnite_ore"
+        }
+      }
+    ]
   }
 }

@@ -1,26 +1,19 @@
 package exp.fluffynuar.truedarkness.procedures;
 
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.core.BlockPos;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 
-import java.util.concurrent.atomic.AtomicReference;
+import java.util.function.Supplier;
+import java.util.Map;
 
 public class LavaProcedure {
-	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if ((new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-				return _retval.get();
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Items.LAVA_BUCKET) {
+	public static boolean execute(Entity entity) {
+		if (entity == null)
+			return false;
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET) {
 			return true;
 		}
 		return false;

@@ -32,12 +32,6 @@ public class RealGeneralSwordPriShchielchkiePKMProcedure {
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(TruedarknessModItems.REAL_GENERAL_SWORD.get(), 120);
-			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(TruedarknessModItems.ECHO_WINGS.get(), 120);
-			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(TruedarknessModItems.SOUL_WINGS.get(), 120);
-			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(TruedarknessModItems.GENERAL_WINGS.get(), 120);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.activate")), SoundSource.PLAYERS, 1, (float) 0.5);

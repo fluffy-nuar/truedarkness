@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_noside",
   "textures": {
+    "particle": "truedarkness:block/metenite_glass",
     "pane": "truedarkness:block/metenite_glass"
   },
   "render_type": "translucent"

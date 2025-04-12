@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "samovar_recipe_type",
+    "result": {
+      "value": "CUSTOM:AppleJuice"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:CupWater"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "CUSTOM:CutedApple"
+      }
+    ]
+  }
+}

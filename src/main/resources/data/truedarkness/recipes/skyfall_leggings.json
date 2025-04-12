@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "truedarkness:skyfall_ingot"
+    }
+  },
+  "result": {
+    "item": "truedarkness:skyfall_armor_leggings",
+    "count": 1
+  }
+}

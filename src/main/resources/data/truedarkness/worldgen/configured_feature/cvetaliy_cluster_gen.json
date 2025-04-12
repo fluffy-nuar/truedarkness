@@ -9,10 +9,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "truedarkness:cvetaliy_cluster",
-              "Properties": {
-                "waterlogged": "false"
-              }
+              "Name": "truedarkness:cvetaliy_cluster"
             }
           }
         }

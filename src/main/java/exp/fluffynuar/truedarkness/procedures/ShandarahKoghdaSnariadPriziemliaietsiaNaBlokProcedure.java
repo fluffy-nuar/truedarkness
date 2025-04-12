@@ -19,7 +19,7 @@ public class ShandarahKoghdaSnariadPriziemliaietsiaNaBlokProcedure {
 			if (Mth.nextInt(RandomSource.create(), 1, 10) <= 5) {
 				{
 					BlockPos _bp = BlockPos.containing(x - 0, y + 0, z - 0);
-					BlockState _bs = TruedarknessModBlocks.CORRUPTED_SCULK.get().defaultBlockState();
+					BlockState _bs = TruedarknessModBlocks.UNCLEAR_CORRUPT.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

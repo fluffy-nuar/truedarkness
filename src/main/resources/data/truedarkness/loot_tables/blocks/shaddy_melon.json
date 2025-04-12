@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "truedarkness:blocks/shaddy_melon",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "truedarkness:shaddy_melon_item",
+          "functions": [
+            {
+              "count": 5,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

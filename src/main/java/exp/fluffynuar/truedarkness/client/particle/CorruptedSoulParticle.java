@@ -36,8 +36,9 @@ public class CorruptedSoulParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.lifetime = (int) Math.max(1, 40 + (this.random.nextInt(24) - 12));
-		this.gravity = -0.1f;
+		this.quadSize *= 1.5f;
+		this.lifetime = 21;
+		this.gravity = -0.08f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;
 		this.yd = vy * 1;
@@ -46,8 +47,13 @@ public class CorruptedSoulParticle extends TextureSheetParticle {
 	}
 
 	@Override
+	public int getLightColor(float partialTick) {
+		return 15728880;
+	}
+
+	@Override
 	public ParticleRenderType getRenderType() {
-		return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
+		return ParticleRenderType.PARTICLE_SHEET_LIT;
 	}
 
 	@Override

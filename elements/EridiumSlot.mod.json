@@ -1,0 +1,9 @@
+{
+  "_fv": 73,
+  "_type": "curiosslot",
+  "definition": {
+    "texture": "slot_eridium.png",
+    "name": "Eridium Slot",
+    "amount": 1
+  }
+}

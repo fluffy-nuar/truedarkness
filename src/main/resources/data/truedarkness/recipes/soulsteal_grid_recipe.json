@@ -3,19 +3,19 @@
   "category": "misc",
   "pattern": [
     "aba",
-    " a ",
-    "a a"
+    "bab",
+    "aba"
   ],
   "key": {
     "a": {
-      "item": "truedarkness:soulsteal_nugget"
+      "item": "truedarkness:fantal_nugget"
     },
     "b": {
-      "item": "truedarkness:soulsteal_ingot"
+      "item": "truedarkness:accustone_pebbles"
     }
   },
   "result": {
-    "item": "truedarkness:soulsteal_grid",
+    "item": "truedarkness:fantal_grid",
     "count": 32
   }
 }

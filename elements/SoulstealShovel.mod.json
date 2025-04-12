@@ -1,33 +1,38 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "soulsteal_shovel",
+    "texture": "fantal_shovel",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Soulsteal Shovel",
+    "name": "Fantal Shovel",
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:TrueDarknessElementariy"
-    },
-    "harvestLevel": 1,
-    "efficiency": 4.0,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TrueDarknessElementariy"
+      }
+    ],
+    "efficiency": 8.0,
     "attackSpeed": 2.1,
-    "enchantability": 15,
+    "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 2031,
-    "blocksAffected": [],
+    "usageCount": 1561,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
-        "value": "CUSTOM:SoulstealIngot"
+        "value": "CUSTOM:FantalIngot"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

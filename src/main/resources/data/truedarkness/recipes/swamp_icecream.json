@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a ",
+    "bc",
+    "d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:sugar"
+    },
+    "b": {
+      "item": "truedarkness:neasky_pumpkin"
+    },
+    "c": {
+      "item": "minecraft:ice"
+    },
+    "d": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "truedarkness:star_icecream",
+    "count": 1
+  }
+}

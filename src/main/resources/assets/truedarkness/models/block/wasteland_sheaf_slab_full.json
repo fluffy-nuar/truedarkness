@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "truedarkness:block/wasteland_sheaf",
     "bottom": "truedarkness:block/wasteland_sheaf",
     "top": "truedarkness:block/wasteland_sheaf",
     "side": "truedarkness:block/wasteland_sheaf"

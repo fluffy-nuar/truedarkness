@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CorruptedSkulkCatalyst"
+      },
+      {
+        "value": "CUSTOM:CorruptedSkulkCatalyst"
+      },
+      {
+        "value": "CUSTOM:CorruptedSkulkCatalyst"
+      },
+      {
+        "value": "CUSTOM:ChiseledCorruptedBricks"
+      },
+      {
+        "value": "Blocks.CRAFTING_TABLE"
+      },
+      {
+        "value": "CUSTOM:ChiseledCorruptedBricks"
+      },
+      {
+        "value": "CUSTOM:EridiumBlock"
+      },
+      {
+        "value": "CUSTOM:BloodContainer"
+      },
+      {
+        "value": "CUSTOM:EridiumBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CursedWorkbench"
+    },
+    "name": "cursed_workbench_recipe",
+    "namespace": "mod"
+  }
+}

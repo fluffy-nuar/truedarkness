@@ -1,27 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    " aa",
-    "ab ",
-    "cd "
-  ],
-  "key": {
-    "a": {
+  "type": "truedarkness:cursed_anvil_recipe_type",
+  "ingredients": [
+    {
+      "item": "truedarkness:firenite_sword"
+    },
+    {
       "item": "truedarkness:corrupted_hand_fangs"
     },
-    "b": {
-      "item": "truedarkness:eridium_heart"
-    },
-    "c": {
-      "item": "truedarkness:cursed_metal"
-    },
-    "d": {
-      "item": "truedarkness:soulsteal_sword"
+    {
+      "item": "truedarkness:evolution_eridium_shard"
     }
-  },
-  "result": {
-    "item": "truedarkness:cursed_sword",
+  ],
+  "output": {
+    "item": "truedarkness:fang_sword",
     "count": 1
   }
 }

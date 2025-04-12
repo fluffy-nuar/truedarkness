@@ -3,16 +3,18 @@ package exp.fluffynuar.truedarkness.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
 
-import java.util.List;
-
+import exp.fluffynuar.truedarkness.procedures.ReinforcedSwordPriShchielchkiePKMProcedure;
+import exp.fluffynuar.truedarkness.procedures.CooldownProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
 public class ReinforcedSwordItem extends SwordItem {
@@ -27,7 +29,7 @@ public class ReinforcedSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 2f;
 			}
 
 			public int getLevel() {
@@ -45,7 +47,15 @@ public class ReinforcedSwordItem extends SwordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		ReinforcedSwordPriShchielchkiePKMProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
+		return ar;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		CooldownProcedure.execute(entity, itemstack);
 	}
 }

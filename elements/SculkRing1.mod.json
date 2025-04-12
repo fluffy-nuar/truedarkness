@@ -1,13 +1,13 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
     "texture": "echo_ring",
     "customModelName": "Normal",
-    "name": "§3Echo Ring",
+    "name": "§3Sculk Ring",
     "rarity": "COMMON",
-    "slotType": "RING",
+    "slotType": "Addon3Slot",
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {
@@ -26,7 +26,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
-    "addSlot": true,
+    "addSlot": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": []

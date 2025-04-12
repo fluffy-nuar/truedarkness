@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "truedarkness:block/corrupted_bricks",
+    "bottom": "truedarkness:block/corrupted_bricks",
+    "top": "truedarkness:block/corrupted_bricks",
+    "side": "truedarkness:block/corrupted_bricks"
+  },
+  "render_type": "solid"
+}

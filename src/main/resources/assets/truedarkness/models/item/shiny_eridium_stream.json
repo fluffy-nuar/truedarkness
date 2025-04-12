@@ -1,0 +1,50 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "truedarkness:item/shiny_eridium_0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "truedarkness:shiny_eridium_stream_eridium_stage": 0
+      },
+      "model": "truedarkness:item/shiny_eridium_stream_0"
+    },
+    {
+      "predicate": {
+        "truedarkness:shiny_eridium_stream_eridium_stage": 1
+      },
+      "model": "truedarkness:item/shiny_eridium_stream_1"
+    },
+    {
+      "predicate": {
+        "truedarkness:shiny_eridium_stream_eridium_stage": 2
+      },
+      "model": "truedarkness:item/shiny_eridium_stream_2"
+    },
+    {
+      "predicate": {
+        "truedarkness:shiny_eridium_stream_eridium_stage": 3
+      },
+      "model": "truedarkness:item/shiny_eridium_stream_3"
+    },
+    {
+      "predicate": {
+        "truedarkness:shiny_eridium_stream_eridium_stage": 4
+      },
+      "model": "truedarkness:item/shiny_eridium_stream_4"
+    },
+    {
+      "predicate": {
+        "truedarkness:shiny_eridium_stream_eridium_stage": 5
+      },
+      "model": "truedarkness:item/shiny_eridium_stream_5"
+    },
+    {
+      "predicate": {
+        "truedarkness:shiny_eridium_stream_eridium_stage": 10
+      },
+      "model": "truedarkness:item/shiny_eridium_stream_6"
+    }
+  ]
+}

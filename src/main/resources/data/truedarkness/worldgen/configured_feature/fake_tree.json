@@ -31,16 +31,13 @@
               "Name": "truedarkness:crenrit"
             },
             "stem_state": {
-              "Name": "truedarkness:fake_log",
-              "Properties": {
-                "axis": "y"
-              }
+              "Name": "truedarkness:fake_log"
             },
             "hat_state": {
               "Name": "truedarkness:fake_leaves"
             },
             "decor_state": {
-              "Name": "truedarkness:ancient_sculk"
+              "Name": "truedarkness:echo_fruit"
             },
             "replaceable_blocks": {
               "type": "minecraft:matching_blocks",

@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
+    "minecraft:apple",
+    "minecraft:golden_apple",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:diamond_sword",
+    "minecraft:diamond_shovel",
+    "minecraft:diamond_pickaxe",
+    "minecraft:diamond_axe",
+    "minecraft:diamond_hoe",
     "minecraft:wooden_sword",
     "minecraft:wooden_shovel",
     "minecraft:wooden_pickaxe",
@@ -21,18 +29,10 @@
     "minecraft:golden_pickaxe",
     "minecraft:golden_axe",
     "minecraft:golden_hoe",
-    "minecraft:diamond_sword",
-    "minecraft:diamond_shovel",
-    "minecraft:diamond_pickaxe",
-    "minecraft:diamond_axe",
-    "minecraft:diamond_hoe",
     "minecraft:netherite_sword",
     "minecraft:netherite_shovel",
     "minecraft:netherite_pickaxe",
     "minecraft:netherite_axe",
-    "minecraft:netherite_hoe",
-    "minecraft:apple",
-    "minecraft:golden_apple",
-    "minecraft:enchanted_golden_apple"
+    "minecraft:netherite_hoe"
   ]
 }

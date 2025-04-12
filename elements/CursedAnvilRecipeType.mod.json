@@ -1,0 +1,45 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "cursed_anvil_jei_gui_layer.png",
+    "width": 162,
+    "height": 52,
+    "icon": {
+      "value": "CUSTOM:CursedAnvil"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:CursedAnvil"
+      }
+    ],
+    "enableCraftingtable": true,
+    "title": "Cursed Upgrade",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 18,
+        "y": 18,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 55,
+        "y": 18,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 73,
+        "y": 18,
+        "slotid": 2
+      },
+      {
+        "type": "OUTPUT",
+        "x": 128,
+        "y": 18,
+        "slotid": 3
+      }
+    ]
+  }
+}

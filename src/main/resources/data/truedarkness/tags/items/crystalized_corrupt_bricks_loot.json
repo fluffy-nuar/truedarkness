@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:eridium_shard",
+    "truedarkness:eridium_heart",
+    "minecraft:air",
+    "truedarkness:evolution_eridium_shard",
+    "minecraft:void_air",
+    "minecraft:cave_air"
+  ]
+}

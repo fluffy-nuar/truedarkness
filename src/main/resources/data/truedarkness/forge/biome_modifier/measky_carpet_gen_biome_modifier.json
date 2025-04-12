@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "truedarkness:the_sky",
+  "features": "truedarkness:measky_carpet_gen",
+  "step": "top_layer_modification"
+}

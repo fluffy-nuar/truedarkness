@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -13,21 +13,19 @@
       "fixedValue": [],
       "name": "BirthdayAuthor"
     },
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
-    "harvestLevel": 4,
+    "creativeTabs": [],
     "efficiency": 11.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 10.0,
     "usageCount": 2031,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [],
     "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedOnBlock": {

@@ -35,7 +35,7 @@ public class CorruptedFearKazhdyiTikVoVriemiaEffiektaProcedure {
 						_level.addFreshEntity(entityToSpawn);
 					}
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.AIR);
+						ItemStack _setstack = new ItemStack(Blocks.AIR).copy();
 						_setstack.setCount(1);
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
@@ -54,7 +54,7 @@ public class CorruptedFearKazhdyiTikVoVriemiaEffiektaProcedure {
 								_level.addFreshEntity(entityToSpawn);
 							}
 							if (entity instanceof LivingEntity _entity) {
-								ItemStack _setstack = new ItemStack(Blocks.AIR);
+								ItemStack _setstack = new ItemStack(Blocks.AIR).copy();
 								_setstack.setCount(1);
 								_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
 								if (_entity instanceof Player _player)
@@ -76,7 +76,7 @@ public class CorruptedFearKazhdyiTikVoVriemiaEffiektaProcedure {
 						_level.addFreshEntity(entityToSpawn);
 					}
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.AIR);
+						ItemStack _setstack = new ItemStack(Blocks.AIR).copy();
 						_setstack.setCount(1);
 						_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
 						if (_entity instanceof Player _player)
@@ -95,7 +95,7 @@ public class CorruptedFearKazhdyiTikVoVriemiaEffiektaProcedure {
 								_level.addFreshEntity(entityToSpawn);
 							}
 							if (entity instanceof LivingEntity _entity) {
-								ItemStack _setstack = new ItemStack(Blocks.AIR);
+								ItemStack _setstack = new ItemStack(Blocks.AIR).copy();
 								_setstack.setCount(1);
 								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 								if (_entity instanceof Player _player)

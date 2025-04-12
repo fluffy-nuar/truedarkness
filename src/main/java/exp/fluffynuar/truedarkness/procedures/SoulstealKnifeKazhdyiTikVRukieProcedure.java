@@ -26,14 +26,14 @@ public class SoulstealKnifeKazhdyiTikVRukieProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruedarknessModMobEffects.HARP_ECHO.get())
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_KNIFE.get()) {
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.FANTAL_KNIFE.get()) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 60, 0, false, false));
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.SCULK_SOUL, x, y, z, 10, 0.1, 0.1, 0.1, 0.2);
 			TruedarknessMod.queueServerWork(20, () -> {
 				if (entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(TruedarknessModMobEffects.HARP_ECHO.get())
-						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.SOULSTEAL_KNIFE.get()) {
+						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.FANTAL_KNIFE.get()) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sculk.charge")), SoundSource.PLAYERS, 1, (float) 0.2);
@@ -42,7 +42,7 @@ public class SoulstealKnifeKazhdyiTikVRukieProcedure {
 						}
 					}
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(TruedarknessModItems.REINFORCED_KNIFE.get());
+						ItemStack _setstack = new ItemStack(TruedarknessModItems.REINFORCED_KNIFE.get()).copy();
 						_setstack.setCount(1);
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)

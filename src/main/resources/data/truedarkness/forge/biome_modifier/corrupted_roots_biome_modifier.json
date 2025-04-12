@@ -1,6 +1,9 @@
 {
   "type": "forge:add_features",
-  "biomes": "truedarkness:corrupted_place",
+  "biomes": [
+    "truedarkness:corrupted_forest",
+    "truedarkness:corrupted_field"
+  ],
   "features": "truedarkness:corrupted_roots",
   "step": "vegetal_decoration"
 }
