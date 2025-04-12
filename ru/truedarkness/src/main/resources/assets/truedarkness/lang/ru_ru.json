@@ -1,5 +1,5 @@
 {
-  "item.truedarkness.fantal_knife": "Fantal Knife",
+  "item.truedarkness.fantal_knife": "Фантальный Нож",
   "item.truedarkness.cursed_sandglass": "§5Cursed Sandglass",
   "gui.truedarkness.cursed_anvil_gui.label_inventory": "Inventory",
   "block.truedarkness.mycelium_roots": "Glow Roots",
@@ -20,9 +20,9 @@
   "block.truedarkness.corrupt_rune": "Corrupt Rune",
   "item.truedarkness.soul_reel": "Soul Reel",
   "block.truedarkness.glownite_trap_door": "Glownite Trap Door",
-  "effect.truedarkness.soulsteal_heart_cooldown": "Heartbeat",
+  "effect.truedarkness.soulsteal_heart_cooldown": "Cердцебиение",
   "block.truedarkness.copper_kettle.desc": "Can make drinks, if will be on Samovar",
-  "advancements.real_archeology_advancement.title": "Deep In Story",
+  "advancements.real_archeology_advancement.title": "Глубоко в истории",
   "item.truedarkness.sliced_stem": "Sliced Stem",
   "subtitles.player.corrupted.teleport.summon": "Remnant lost",
   "item.truedarkness.soul_pin.desc": "§7[§a+§7] Hide Soul remnant",
