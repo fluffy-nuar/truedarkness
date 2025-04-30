@@ -1,0 +1,583 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer.png",
+          "use1Xscale": false,
+          "x": 105,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:manuals"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "AAAAAAAABook"
+          },
+          "x": 136,
+          "y": 88,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:manuals:addon_1_category"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVziatieIsSlota"
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVziatieIsSlota"
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "PriIzmeneniiSlota1"
+          },
+          "x": 110,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:manuals:addon_2_category"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVziatieIsSlota"
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVziatieIsSlota"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "PriIzmeneniiSlota1"
+          },
+          "x": 110,
+          "y": 70,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:manuals:addon_3_category"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVziatieIsSlota"
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVziatieIsSlota"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "PriIzmeneniiSlota1"
+          },
+          "x": 110,
+          "y": 88,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 154,
+          "y": 88,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "SlotsOfEridium"
+          },
+          "x": 210,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "id": 6,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "SlotsOfEridium"
+          },
+          "x": 228,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "id": 7,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "SlotsOfEridium"
+          },
+          "x": 246,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "id": 8,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "SlotsOfEridium"
+          },
+          "x": 201,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "id": 9,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "SlotsOfEridium"
+          },
+          "x": 219,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "id": 10,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "SlotsOfEridium"
+          },
+          "x": 237,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "id": 11,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "SlotsOfEridium"
+          },
+          "x": 255,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "id": 12,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "SlotsOfEridium"
+          },
+          "x": 210,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "id": 13,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "SlotsOfEridium"
+          },
+          "x": 228,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:truedarkness:shiny_eridium"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "id": 14,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "ZapretitVzyatie"
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "SlotsOfEridium"
+          },
+          "x": 246,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer_blocked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "VisualLockCursedAltar"
+          },
+          "x": 210,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer_blocked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "VisualLockCursedAltar"
+          },
+          "x": 228,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer_blocked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "VisualLockCursedAltar0"
+          },
+          "x": 246,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer_blocked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "VisualLockCursedAltar1"
+          },
+          "x": 201,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer_blocked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "VisualLockCursedAltar2"
+          },
+          "x": 219,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer_blocked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "VisualLockCursedAltar3"
+          },
+          "x": 237,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer_blocked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "VisualLockCursedAltar4"
+          },
+          "x": 255,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer_blocked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "VisualLockCursedAltar5"
+          },
+          "x": 210,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer_blocked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "VisualLockCursedAltar6"
+          },
+          "x": 228,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_gui_layer_blocked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "VisualLockCursedAltar7"
+          },
+          "x": 246,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_inventory",
+          "text": {
+            "fixedValue": "Inventory"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bookshelf",
+          "text": {
+            "fixedValue": "Content"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 133,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_manual_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EstPredmetV1SLote"
+          },
+          "x": 137,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cursed_altar_fangs_slot.png",
+          "use1Xscale": false,
+          "x": 111,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slot_addon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EstPredmetV4SLote"
+          },
+          "x": 111,
+          "y": 89,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

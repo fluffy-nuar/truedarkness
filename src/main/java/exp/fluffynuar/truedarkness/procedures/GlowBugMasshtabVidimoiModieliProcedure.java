@@ -1,0 +1,11 @@
+package exp.fluffynuar.truedarkness.procedures;
+
+import net.minecraft.world.entity.Entity;
+
+public class GlowBugMasshtabVidimoiModieliProcedure {
+	public static double execute(Entity entity) {
+		if (entity == null)
+			return 0;
+		return entity.getPersistentData().getDouble("size");
+	}
+}

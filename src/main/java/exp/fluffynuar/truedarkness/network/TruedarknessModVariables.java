@@ -15,15 +15,10 @@ import net.minecraftforge.common.capabilities.CapabilityToken;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
-import net.minecraft.world.level.saveddata.SavedData;
-import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.Tag;
@@ -39,7 +34,6 @@ import exp.fluffynuar.truedarkness.TruedarknessMod;
 public class TruedarknessModVariables {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
-		TruedarknessMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new, SavedDataSyncMessage::handler);
 		TruedarknessMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
 	}
 
@@ -81,9 +75,6 @@ public class TruedarknessModVariables {
 			clone.Active_skill_select_corner = original.Active_skill_select_corner;
 			clone.Active_skill_selected = original.Active_skill_selected;
 			clone.Corrupt_stage = original.Corrupt_stage;
-			clone.DreamFirst = original.DreamFirst;
-			clone.DreamSecond = original.DreamSecond;
-			clone.DreamThird = original.DreamThird;
 			clone.Faction = original.Faction;
 			clone.Fatigue_restore = original.Fatigue_restore;
 			clone.Metenite_shard = original.Metenite_shard;
@@ -97,9 +88,7 @@ public class TruedarknessModVariables {
 			clone.Rift_x = original.Rift_x;
 			clone.Rift_y = original.Rift_y;
 			clone.Rift_z = original.Rift_z;
-			clone.Scroll_logic = original.Scroll_logic;
 			clone.SculkedMana = original.SculkedMana;
-			clone.Step_height = original.Step_height;
 			clone.Tool_0 = original.Tool_0;
 			clone.Tool_0_count = original.Tool_0_count;
 			clone.Tool_1 = original.Tool_1;
@@ -108,19 +97,15 @@ public class TruedarknessModVariables {
 			clone.Tool_2_count = original.Tool_2_count;
 			clone.Tool_anable = original.Tool_anable;
 			clone.Tool_selected = original.Tool_selected;
-			clone.Using_crystal_x = original.Using_crystal_x;
-			clone.Using_crystal_y = original.Using_crystal_y;
-			clone.Using_crystal_z = original.Using_crystal_z;
-			clone.Yteria_find_block = original.Yteria_find_block;
-			clone.Yteria_X = original.Yteria_X;
-			clone.Yteria_Y = original.Yteria_Y;
-			clone.Yteria_Z = original.Yteria_Z;
 			clone.WhitelistPlayer = original.WhitelistPlayer;
+			clone.YteriaSafeBlock = original.YteriaSafeBlock;
+			clone.ScrollToggle = original.ScrollToggle;
+			clone.YteriaSpawnX = original.YteriaSpawnX;
+			clone.YteriaSpawnY = original.YteriaSpawnY;
+			clone.YteriaSpawnZ = original.YteriaSpawnZ;
+			clone.CorruptionStage = original.CorruptionStage;
 			if (!event.isWasDeath()) {
-				clone.Active_ability_3_logic = original.Active_ability_3_logic;
-				clone.Active_armor = original.Active_armor;
 				clone.Active_skill = original.Active_skill;
-				clone.Active_skill_item = original.Active_skill_item;
 				clone.Charge = original.Charge;
 				clone.corrupt_first = original.corrupt_first;
 				clone.corrupt_second = original.corrupt_second;
@@ -150,8 +135,6 @@ public class TruedarknessModVariables {
 				clone.Remnant_vx = original.Remnant_vx;
 				clone.Remnant_vy = original.Remnant_vy;
 				clone.Remnant_vz = original.Remnant_vz;
-				clone.Spell_cast = original.Spell_cast;
-				clone.Trade = original.Trade;
 				clone.Trial_category = original.Trial_category;
 				clone.Trial_count = original.Trial_count;
 				clone.Trial_item = original.Trial_item;
@@ -161,140 +144,11 @@ public class TruedarknessModVariables {
 				clone.Trial_x = original.Trial_x;
 				clone.Trial_y = original.Trial_y;
 				clone.Trial_z = original.Trial_z;
+				clone.ProgressBar = original.ProgressBar;
+				clone.SelectedLine = original.SelectedLine;
+				clone.PerkItem = original.PerkItem;
+				clone.HoldAbility3 = original.HoldAbility3;
 			}
-		}
-
-		@SubscribeEvent
-		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getEntity().level().isClientSide()) {
-				SavedData mapdata = MapVariables.get(event.getEntity().level());
-				SavedData worlddata = WorldVariables.get(event.getEntity().level());
-				if (mapdata != null)
-					TruedarknessMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(0, mapdata));
-				if (worlddata != null)
-					TruedarknessMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-
-		@SubscribeEvent
-		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getEntity().level().isClientSide()) {
-				SavedData worlddata = WorldVariables.get(event.getEntity().level());
-				if (worlddata != null)
-					TruedarknessMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-	}
-
-	public static class WorldVariables extends SavedData {
-		public static final String DATA_NAME = "truedarkness_worldvars";
-
-		public static WorldVariables load(CompoundTag tag) {
-			WorldVariables data = new WorldVariables();
-			data.read(tag);
-			return data;
-		}
-
-		public void read(CompoundTag nbt) {
-		}
-
-		@Override
-		public CompoundTag save(CompoundTag nbt) {
-			return nbt;
-		}
-
-		public void syncData(LevelAccessor world) {
-			this.setDirty();
-			if (world instanceof Level level && !level.isClientSide())
-				TruedarknessMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(level::dimension), new SavedDataSyncMessage(1, this));
-		}
-
-		static WorldVariables clientSide = new WorldVariables();
-
-		public static WorldVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevel level) {
-				return level.getDataStorage().computeIfAbsent(e -> WorldVariables.load(e), WorldVariables::new, DATA_NAME);
-			} else {
-				return clientSide;
-			}
-		}
-	}
-
-	public static class MapVariables extends SavedData {
-		public static final String DATA_NAME = "truedarkness_mapvars";
-		public ItemStack Metenite_shard_global = ItemStack.EMPTY;
-
-		public static MapVariables load(CompoundTag tag) {
-			MapVariables data = new MapVariables();
-			data.read(tag);
-			return data;
-		}
-
-		public void read(CompoundTag nbt) {
-			Metenite_shard_global = ItemStack.of(nbt.getCompound("Metenite_shard_global"));
-		}
-
-		@Override
-		public CompoundTag save(CompoundTag nbt) {
-			nbt.put("Metenite_shard_global", Metenite_shard_global.save(new CompoundTag()));
-			return nbt;
-		}
-
-		public void syncData(LevelAccessor world) {
-			this.setDirty();
-			if (world instanceof Level && !world.isClientSide())
-				TruedarknessMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new SavedDataSyncMessage(0, this));
-		}
-
-		static MapVariables clientSide = new MapVariables();
-
-		public static MapVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevelAccessor serverLevelAcc) {
-				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(e -> MapVariables.load(e), MapVariables::new, DATA_NAME);
-			} else {
-				return clientSide;
-			}
-		}
-	}
-
-	public static class SavedDataSyncMessage {
-		private final int type;
-		private SavedData data;
-
-		public SavedDataSyncMessage(FriendlyByteBuf buffer) {
-			this.type = buffer.readInt();
-			CompoundTag nbt = buffer.readNbt();
-			if (nbt != null) {
-				this.data = this.type == 0 ? new MapVariables() : new WorldVariables();
-				if (this.data instanceof MapVariables mapVariables)
-					mapVariables.read(nbt);
-				else if (this.data instanceof WorldVariables worldVariables)
-					worldVariables.read(nbt);
-			}
-		}
-
-		public SavedDataSyncMessage(int type, SavedData data) {
-			this.type = type;
-			this.data = data;
-		}
-
-		public static void buffer(SavedDataSyncMessage message, FriendlyByteBuf buffer) {
-			buffer.writeInt(message.type);
-			if (message.data != null)
-				buffer.writeNbt(message.data.save(new CompoundTag()));
-		}
-
-		public static void handler(SavedDataSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-			NetworkEvent.Context context = contextSupplier.get();
-			context.enqueueWork(() -> {
-				if (!context.getDirection().getReceptionSide().isServer() && message.data != null) {
-					if (message.type == 0)
-						MapVariables.clientSide = (MapVariables) message.data;
-					else
-						WorldVariables.clientSide = (WorldVariables) message.data;
-				}
-			});
-			context.setPacketHandled(true);
 		}
 	}
 
@@ -329,13 +183,10 @@ public class TruedarknessModVariables {
 	}
 
 	public static class PlayerVariables {
-		public boolean Active_ability_3_logic = false;
-		public double Active_armor = 0;
 		public double Active_corrupt_stage = 0.0;
 		public double Active_prey_count = 0.0;
 		public String Active_skill = "";
 		public boolean Active_skill_convert = false;
-		public ItemStack Active_skill_item = ItemStack.EMPTY;
 		public double Active_skill_preselect = 0;
 		public boolean Active_skill_select = false;
 		public double Active_skill_select_corner = 0;
@@ -345,9 +196,6 @@ public class TruedarknessModVariables {
 		public double corrupt_second = 0.0;
 		public double Corrupt_stage = 0.0;
 		public boolean Dash = true;
-		public boolean DreamFirst = false;
-		public boolean DreamSecond = false;
-		public boolean DreamThird = false;
 		public String Faction = "";
 		public double Fatigue_first = 0.0;
 		public boolean Fatigue_restore = true;
@@ -386,36 +234,35 @@ public class TruedarknessModVariables {
 		public double Rift_x = 0;
 		public double Rift_y = 0;
 		public double Rift_z = 0;
-		public boolean Scroll_logic = true;
 		public double SculkedMana = 0.0;
-		public String Spell_cast = "";
-		public double Step_height = 0.0;
 		public ItemStack Tool_0 = ItemStack.EMPTY;
 		public double Tool_0_count = 0.0;
 		public ItemStack Tool_1 = ItemStack.EMPTY;
 		public double Tool_1_count = 0.0;
 		public ItemStack Tool_2 = ItemStack.EMPTY;
 		public double Tool_2_count = 0.0;
-		public double Tool_anable = 0;
+		public double Tool_anable = 0.0;
 		public double Tool_selected = 0.0;
-		public boolean Trade = false;
-		public double Trial_category = 0;
+		public double Trial_category = 0.0;
 		public double Trial_count = 0;
 		public ItemStack Trial_item = ItemStack.EMPTY;
 		public boolean Trial_logic = false;
 		public double Trial_progress = 0;
 		public double Trial_tier = 0.0;
-		public double Trial_x = 0;
+		public double Trial_x = 0.0;
 		public double Trial_y = 0.0;
 		public double Trial_z = 0.0;
-		public double Using_crystal_x = 0;
-		public double Using_crystal_y = 0;
-		public double Using_crystal_z = 0;
-		public boolean Yteria_find_block = false;
-		public double Yteria_X = 0;
-		public double Yteria_Y = 0;
-		public double Yteria_Z = 0;
 		public ItemStack WhitelistPlayer = ItemStack.EMPTY;
+		public double ProgressBar = 0;
+		public double SelectedLine = 0.0;
+		public boolean YteriaSafeBlock = false;
+		public boolean ScrollToggle = false;
+		public double YteriaSpawnX = 0.0;
+		public double YteriaSpawnY = 0;
+		public double YteriaSpawnZ = 0.0;
+		public ItemStack PerkItem = ItemStack.EMPTY;
+		public boolean HoldAbility3 = false;
+		public double CorruptionStage = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -424,13 +271,10 @@ public class TruedarknessModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putBoolean("Active_ability_3_logic", Active_ability_3_logic);
-			nbt.putDouble("Active_armor", Active_armor);
 			nbt.putDouble("Active_corrupt_stage", Active_corrupt_stage);
 			nbt.putDouble("Active_prey_count", Active_prey_count);
 			nbt.putString("Active_skill", Active_skill);
 			nbt.putBoolean("Active_skill_convert", Active_skill_convert);
-			nbt.put("Active_skill_item", Active_skill_item.save(new CompoundTag()));
 			nbt.putDouble("Active_skill_preselect", Active_skill_preselect);
 			nbt.putBoolean("Active_skill_select", Active_skill_select);
 			nbt.putDouble("Active_skill_select_corner", Active_skill_select_corner);
@@ -440,9 +284,6 @@ public class TruedarknessModVariables {
 			nbt.putDouble("corrupt_second", corrupt_second);
 			nbt.putDouble("Corrupt_stage", Corrupt_stage);
 			nbt.putBoolean("Dash", Dash);
-			nbt.putBoolean("DreamFirst", DreamFirst);
-			nbt.putBoolean("DreamSecond", DreamSecond);
-			nbt.putBoolean("DreamThird", DreamThird);
 			nbt.putString("Faction", Faction);
 			nbt.putDouble("Fatigue_first", Fatigue_first);
 			nbt.putBoolean("Fatigue_restore", Fatigue_restore);
@@ -481,10 +322,7 @@ public class TruedarknessModVariables {
 			nbt.putDouble("Rift_x", Rift_x);
 			nbt.putDouble("Rift_y", Rift_y);
 			nbt.putDouble("Rift_z", Rift_z);
-			nbt.putBoolean("Scroll_logic", Scroll_logic);
 			nbt.putDouble("SculkedMana", SculkedMana);
-			nbt.putString("Spell_cast", Spell_cast);
-			nbt.putDouble("Step_height", Step_height);
 			nbt.put("Tool_0", Tool_0.save(new CompoundTag()));
 			nbt.putDouble("Tool_0_count", Tool_0_count);
 			nbt.put("Tool_1", Tool_1.save(new CompoundTag()));
@@ -493,7 +331,6 @@ public class TruedarknessModVariables {
 			nbt.putDouble("Tool_2_count", Tool_2_count);
 			nbt.putDouble("Tool_anable", Tool_anable);
 			nbt.putDouble("Tool_selected", Tool_selected);
-			nbt.putBoolean("Trade", Trade);
 			nbt.putDouble("Trial_category", Trial_category);
 			nbt.putDouble("Trial_count", Trial_count);
 			nbt.put("Trial_item", Trial_item.save(new CompoundTag()));
@@ -503,26 +340,26 @@ public class TruedarknessModVariables {
 			nbt.putDouble("Trial_x", Trial_x);
 			nbt.putDouble("Trial_y", Trial_y);
 			nbt.putDouble("Trial_z", Trial_z);
-			nbt.putDouble("Using_crystal_x", Using_crystal_x);
-			nbt.putDouble("Using_crystal_y", Using_crystal_y);
-			nbt.putDouble("Using_crystal_z", Using_crystal_z);
-			nbt.putBoolean("Yteria_find_block", Yteria_find_block);
-			nbt.putDouble("Yteria_X", Yteria_X);
-			nbt.putDouble("Yteria_Y", Yteria_Y);
-			nbt.putDouble("Yteria_Z", Yteria_Z);
 			nbt.put("WhitelistPlayer", WhitelistPlayer.save(new CompoundTag()));
+			nbt.putDouble("ProgressBar", ProgressBar);
+			nbt.putDouble("SelectedLine", SelectedLine);
+			nbt.putBoolean("YteriaSafeBlock", YteriaSafeBlock);
+			nbt.putBoolean("ScrollToggle", ScrollToggle);
+			nbt.putDouble("YteriaSpawnX", YteriaSpawnX);
+			nbt.putDouble("YteriaSpawnY", YteriaSpawnY);
+			nbt.putDouble("YteriaSpawnZ", YteriaSpawnZ);
+			nbt.put("PerkItem", PerkItem.save(new CompoundTag()));
+			nbt.putBoolean("HoldAbility3", HoldAbility3);
+			nbt.putDouble("CorruptionStage", CorruptionStage);
 			return nbt;
 		}
 
 		public void readNBT(Tag tag) {
 			CompoundTag nbt = (CompoundTag) tag;
-			Active_ability_3_logic = nbt.getBoolean("Active_ability_3_logic");
-			Active_armor = nbt.getDouble("Active_armor");
 			Active_corrupt_stage = nbt.getDouble("Active_corrupt_stage");
 			Active_prey_count = nbt.getDouble("Active_prey_count");
 			Active_skill = nbt.getString("Active_skill");
 			Active_skill_convert = nbt.getBoolean("Active_skill_convert");
-			Active_skill_item = ItemStack.of(nbt.getCompound("Active_skill_item"));
 			Active_skill_preselect = nbt.getDouble("Active_skill_preselect");
 			Active_skill_select = nbt.getBoolean("Active_skill_select");
 			Active_skill_select_corner = nbt.getDouble("Active_skill_select_corner");
@@ -532,9 +369,6 @@ public class TruedarknessModVariables {
 			corrupt_second = nbt.getDouble("corrupt_second");
 			Corrupt_stage = nbt.getDouble("Corrupt_stage");
 			Dash = nbt.getBoolean("Dash");
-			DreamFirst = nbt.getBoolean("DreamFirst");
-			DreamSecond = nbt.getBoolean("DreamSecond");
-			DreamThird = nbt.getBoolean("DreamThird");
 			Faction = nbt.getString("Faction");
 			Fatigue_first = nbt.getDouble("Fatigue_first");
 			Fatigue_restore = nbt.getBoolean("Fatigue_restore");
@@ -573,10 +407,7 @@ public class TruedarknessModVariables {
 			Rift_x = nbt.getDouble("Rift_x");
 			Rift_y = nbt.getDouble("Rift_y");
 			Rift_z = nbt.getDouble("Rift_z");
-			Scroll_logic = nbt.getBoolean("Scroll_logic");
 			SculkedMana = nbt.getDouble("SculkedMana");
-			Spell_cast = nbt.getString("Spell_cast");
-			Step_height = nbt.getDouble("Step_height");
 			Tool_0 = ItemStack.of(nbt.getCompound("Tool_0"));
 			Tool_0_count = nbt.getDouble("Tool_0_count");
 			Tool_1 = ItemStack.of(nbt.getCompound("Tool_1"));
@@ -585,7 +416,6 @@ public class TruedarknessModVariables {
 			Tool_2_count = nbt.getDouble("Tool_2_count");
 			Tool_anable = nbt.getDouble("Tool_anable");
 			Tool_selected = nbt.getDouble("Tool_selected");
-			Trade = nbt.getBoolean("Trade");
 			Trial_category = nbt.getDouble("Trial_category");
 			Trial_count = nbt.getDouble("Trial_count");
 			Trial_item = ItemStack.of(nbt.getCompound("Trial_item"));
@@ -595,14 +425,17 @@ public class TruedarknessModVariables {
 			Trial_x = nbt.getDouble("Trial_x");
 			Trial_y = nbt.getDouble("Trial_y");
 			Trial_z = nbt.getDouble("Trial_z");
-			Using_crystal_x = nbt.getDouble("Using_crystal_x");
-			Using_crystal_y = nbt.getDouble("Using_crystal_y");
-			Using_crystal_z = nbt.getDouble("Using_crystal_z");
-			Yteria_find_block = nbt.getBoolean("Yteria_find_block");
-			Yteria_X = nbt.getDouble("Yteria_X");
-			Yteria_Y = nbt.getDouble("Yteria_Y");
-			Yteria_Z = nbt.getDouble("Yteria_Z");
 			WhitelistPlayer = ItemStack.of(nbt.getCompound("WhitelistPlayer"));
+			ProgressBar = nbt.getDouble("ProgressBar");
+			SelectedLine = nbt.getDouble("SelectedLine");
+			YteriaSafeBlock = nbt.getBoolean("YteriaSafeBlock");
+			ScrollToggle = nbt.getBoolean("ScrollToggle");
+			YteriaSpawnX = nbt.getDouble("YteriaSpawnX");
+			YteriaSpawnY = nbt.getDouble("YteriaSpawnY");
+			YteriaSpawnZ = nbt.getDouble("YteriaSpawnZ");
+			PerkItem = ItemStack.of(nbt.getCompound("PerkItem"));
+			HoldAbility3 = nbt.getBoolean("HoldAbility3");
+			CorruptionStage = nbt.getDouble("CorruptionStage");
 		}
 	}
 
@@ -627,13 +460,10 @@ public class TruedarknessModVariables {
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.Active_ability_3_logic = message.data.Active_ability_3_logic;
-					variables.Active_armor = message.data.Active_armor;
 					variables.Active_corrupt_stage = message.data.Active_corrupt_stage;
 					variables.Active_prey_count = message.data.Active_prey_count;
 					variables.Active_skill = message.data.Active_skill;
 					variables.Active_skill_convert = message.data.Active_skill_convert;
-					variables.Active_skill_item = message.data.Active_skill_item;
 					variables.Active_skill_preselect = message.data.Active_skill_preselect;
 					variables.Active_skill_select = message.data.Active_skill_select;
 					variables.Active_skill_select_corner = message.data.Active_skill_select_corner;
@@ -643,9 +473,6 @@ public class TruedarknessModVariables {
 					variables.corrupt_second = message.data.corrupt_second;
 					variables.Corrupt_stage = message.data.Corrupt_stage;
 					variables.Dash = message.data.Dash;
-					variables.DreamFirst = message.data.DreamFirst;
-					variables.DreamSecond = message.data.DreamSecond;
-					variables.DreamThird = message.data.DreamThird;
 					variables.Faction = message.data.Faction;
 					variables.Fatigue_first = message.data.Fatigue_first;
 					variables.Fatigue_restore = message.data.Fatigue_restore;
@@ -684,10 +511,7 @@ public class TruedarknessModVariables {
 					variables.Rift_x = message.data.Rift_x;
 					variables.Rift_y = message.data.Rift_y;
 					variables.Rift_z = message.data.Rift_z;
-					variables.Scroll_logic = message.data.Scroll_logic;
 					variables.SculkedMana = message.data.SculkedMana;
-					variables.Spell_cast = message.data.Spell_cast;
-					variables.Step_height = message.data.Step_height;
 					variables.Tool_0 = message.data.Tool_0;
 					variables.Tool_0_count = message.data.Tool_0_count;
 					variables.Tool_1 = message.data.Tool_1;
@@ -696,7 +520,6 @@ public class TruedarknessModVariables {
 					variables.Tool_2_count = message.data.Tool_2_count;
 					variables.Tool_anable = message.data.Tool_anable;
 					variables.Tool_selected = message.data.Tool_selected;
-					variables.Trade = message.data.Trade;
 					variables.Trial_category = message.data.Trial_category;
 					variables.Trial_count = message.data.Trial_count;
 					variables.Trial_item = message.data.Trial_item;
@@ -706,14 +529,17 @@ public class TruedarknessModVariables {
 					variables.Trial_x = message.data.Trial_x;
 					variables.Trial_y = message.data.Trial_y;
 					variables.Trial_z = message.data.Trial_z;
-					variables.Using_crystal_x = message.data.Using_crystal_x;
-					variables.Using_crystal_y = message.data.Using_crystal_y;
-					variables.Using_crystal_z = message.data.Using_crystal_z;
-					variables.Yteria_find_block = message.data.Yteria_find_block;
-					variables.Yteria_X = message.data.Yteria_X;
-					variables.Yteria_Y = message.data.Yteria_Y;
-					variables.Yteria_Z = message.data.Yteria_Z;
 					variables.WhitelistPlayer = message.data.WhitelistPlayer;
+					variables.ProgressBar = message.data.ProgressBar;
+					variables.SelectedLine = message.data.SelectedLine;
+					variables.YteriaSafeBlock = message.data.YteriaSafeBlock;
+					variables.ScrollToggle = message.data.ScrollToggle;
+					variables.YteriaSpawnX = message.data.YteriaSpawnX;
+					variables.YteriaSpawnY = message.data.YteriaSpawnY;
+					variables.YteriaSpawnZ = message.data.YteriaSpawnZ;
+					variables.PerkItem = message.data.PerkItem;
+					variables.HoldAbility3 = message.data.HoldAbility3;
+					variables.CorruptionStage = message.data.CorruptionStage;
 				}
 			});
 			context.setPacketHandled(true);

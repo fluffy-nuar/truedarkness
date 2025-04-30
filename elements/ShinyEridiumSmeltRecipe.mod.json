@@ -4,12 +4,12 @@
   "definition": {
     "category": "cursed_anvil_recipe_type",
     "result": {
-      "value": "CUSTOM:ShinyEridiumSmelt"
+      "value": "CUSTOM:ShinyEridiumDash"
     },
     "count": 1,
     "ingredients": [
       {
-        "value": "CUSTOM:ShinyEridiumSmelt"
+        "value": "CUSTOM:ShinyEridiumDash"
       },
       {
         "value": "CUSTOM:CorruptedHandFangs"

@@ -12,7 +12,7 @@ public class EridiumBookBaubleIsUnequippedProcedure {
 		{
 			ItemStack _setval = ItemStack.EMPTY;
 			entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.Active_skill_item = _setval.copy();
+				capability.PerkItem = _setval.copy();
 				capability.syncPlayerVariables(entity);
 			});
 		}

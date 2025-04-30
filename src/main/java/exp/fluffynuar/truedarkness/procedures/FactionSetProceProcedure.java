@@ -49,7 +49,7 @@ public class FactionSetProceProcedure {
 					}
 				}
 			}.getEntity()).getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.Corrupt_stage = _setval;
+				capability.CorruptionStage = _setval;
 				capability.syncPlayerVariables((new Object() {
 					public Entity getEntity() {
 						try {

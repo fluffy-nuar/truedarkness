@@ -63,8 +63,8 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.METENITE_MAGNIFIER.get());
 				tabData.accept(TruedarknessModItems.DARK_MAGNIFIER.get());
 				tabData.accept(TruedarknessModItems.ANCIENT_PAPYRUS.get());
-				tabData.accept(TruedarknessModItems.ANCIENT_REGULATION.get());
 				tabData.accept(TruedarknessModItems.LETTER.get());
+				tabData.accept(TruedarknessModItems.ANCIENT_REGULATION.get());
 				tabData.accept(TruedarknessModItems.SANDGLASS.get());
 				tabData.accept(TruedarknessModItems.REEL.get());
 				tabData.accept(TruedarknessModItems.CHISELED_ANCIENT_GLASS_SHARD.get());
@@ -169,8 +169,6 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.FANTAL_PICKAXE.get());
 				tabData.accept(TruedarknessModItems.FANTAL_SHOVEL.get());
 				tabData.accept(TruedarknessModItems.FANTAL_HOE.get());
-				tabData.accept(TruedarknessModItems.FANTAL_HAMMER.get());
-				tabData.accept(TruedarknessModItems.FANTAL_KNIFE.get());
 				tabData.accept(TruedarknessModItems.GENERAL_REGULATION.get());
 				tabData.accept(TruedarknessModItems.AQUAMARINE_SWORD.get());
 				tabData.accept(TruedarknessModItems.REAL_GENERAL_SWORD.get());
@@ -202,7 +200,6 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.ECHO_SHELL.get());
 				tabData.accept(TruedarknessModItems.SCULK_RING.get());
 				tabData.accept(TruedarknessModItems.ECHO_BOTTLE.get());
-				tabData.accept(TruedarknessModItems.ECHO_HORN.get());
 				tabData.accept(TruedarknessModItems.REINFORCED_KEY.get());
 				tabData.accept(TruedarknessModItems.REINFORCED_RING.get());
 				tabData.accept(TruedarknessModItems.ECHO_CARVING_KNIFE.get());
@@ -221,30 +218,6 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.ECHO_REEL_7.get());
 				tabData.accept(TruedarknessModItems.ECHO_REEL_8.get());
 				tabData.accept(TruedarknessModItems.EMPTY_SPELL.get());
-				tabData.accept(TruedarknessModItems.SPELL_BLINK.get());
-				tabData.accept(TruedarknessModItems.SPELL_HASTE.get());
-				tabData.accept(TruedarknessModItems.SPELL_PETS.get());
-				tabData.accept(TruedarknessModItems.SPELL_DISO.get());
-				tabData.accept(TruedarknessModItems.SPELL_AFRAID.get());
-				tabData.accept(TruedarknessModItems.SPELL_GUST.get());
-				tabData.accept(TruedarknessModItems.SPELL_HUNGER.get());
-				tabData.accept(TruedarknessModItems.SPELL_WEATHER.get());
-				tabData.accept(TruedarknessModItems.SPELL_DASH.get());
-				tabData.accept(TruedarknessModItems.SPELL_MEET.get());
-				tabData.accept(TruedarknessModItems.SPELL_BOMB.get());
-				tabData.accept(TruedarknessModItems.SPELL_TELEPORT.get());
-				tabData.accept(TruedarknessModItems.SPELL_POTION.get());
-				tabData.accept(TruedarknessModItems.SPELL_SHOT.get());
-				tabData.accept(TruedarknessModItems.SPELL_LINE.get());
-				tabData.accept(TruedarknessModItems.SIDE_NATURE.get());
-				tabData.accept(TruedarknessModItems.SPELL_DIVE.get());
-				tabData.accept(TruedarknessModItems.SPELL_FEET.get());
-				tabData.accept(TruedarknessModItems.SPELL_HIDE.get());
-				tabData.accept(TruedarknessModItems.SPELL_FANG.get());
-				tabData.accept(TruedarknessModItems.SPELL_AQUA.get());
-				tabData.accept(TruedarknessModItems.SPELL_REGEN.get());
-				tabData.accept(TruedarknessModItems.SPELL_EYE.get());
-				tabData.accept(TruedarknessModItems.SPELL_SMELT.get());
 				tabData.accept(TruedarknessModItems.SOUL_WINGS.get());
 				tabData.accept(TruedarknessModItems.SOUL_SPOOL.get());
 				tabData.accept(TruedarknessModItems.SOUL_HEART.get());
@@ -290,16 +263,15 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.CURSED_SANDGLASS.get());
 				tabData.accept(TruedarknessModItems.CURSED_LEATHER.get());
 				tabData.accept(TruedarknessModItems.ERIDIUM_BOOK.get());
-				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_SEER.get());
-				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_UNDYING.get());
-				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_RUNE.get());
-				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_ECHO.get());
-				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_TOOL.get());
-				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_SKULL.get());
 				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_SMELT.get());
-				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_LIGHT.get());
 				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_TREAD.get());
+				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_SEER.get());
+				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_SHOT.get());
+				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_LIGHTNING.get());
+				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_RINGING.get());
+				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_FANGS.get());
 				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_STREAM.get());
+				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_UNDEAD.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_LAPIS.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_FOREST_NIGHT.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_TURQUOISE_FLOWER.get());
@@ -586,6 +558,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModBlocks.CURSED_ANVIL.get().asItem());
 				tabData.accept(TruedarknessModBlocks.CORRUPTED_CAMPFIRE.get().asItem());
 				tabData.accept(TruedarknessModBlocks.CURSED_BOOKSHELF.get().asItem());
+				tabData.accept(TruedarknessModBlocks.CURSED_LECTERN.get().asItem());
 				tabData.accept(TruedarknessModBlocks.UNDESKY_BLACKSOIL.get().asItem());
 				tabData.accept(TruedarknessModBlocks.DEAD_GRASS.get().asItem());
 				tabData.accept(TruedarknessModBlocks.NEASKY_VINES.get().asItem());
@@ -595,6 +568,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModBlocks.SKYSTAR_GRASS.get().asItem());
 				tabData.accept(TruedarknessModBlocks.SKYSTAR_ROOTS.get().asItem());
 				tabData.accept(TruedarknessModBlocks.SKYSTAR_SMALL_ROOTS.get().asItem());
+				tabData.accept(TruedarknessModBlocks.MEASKY_TREE.get().asItem());
 				tabData.accept(TruedarknessModBlocks.NEASKY_MOSS.get().asItem());
 				tabData.accept(TruedarknessModBlocks.MEASKY_CARPET.get().asItem());
 				tabData.accept(TruedarknessModBlocks.NEASKY_PUMPKIN.get().asItem());
@@ -700,7 +674,6 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModBlocks.BLOOMING_CRYING_LAEVES.get().asItem());
 				tabData.accept(TruedarknessModBlocks.BLOOMING_CORRUPTED_LEAVES.get().asItem());
 				tabData.accept(TruedarknessModBlocks.CORRUPTED_LEAVES.get().asItem());
-				tabData.accept(TruedarknessModBlocks.MEASKY_TREE.get().asItem());
 			}).withTabsBefore(TRUE_DARKNESS.getId()).build());
 
 	@SubscribeEvent

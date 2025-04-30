@@ -16,7 +16,7 @@ public class CrystalTravelingEffectMobEffect extends MobEffect {
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		CrystalTravelingEffectPriIstiechieniiEffiektaProcedure.execute(entity);
+		CrystalTravelingEffectPriIstiechieniiEffiektaProcedure.execute();
 	}
 
 	@Override

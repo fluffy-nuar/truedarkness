@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Stop Restoding",
-    "icon": "stop_restoring.png",
+    "icon": "stop_restoring",
     "color": {
       "value": -12175534,
       "falpha": 0.0
@@ -12,8 +12,8 @@
     "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": false,
-    "isCuredByMilk": true,
-    "isProtectedByTotem": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
     "isCuredbyHoney": false,
     "modifiers": [],
     "onExpired": {

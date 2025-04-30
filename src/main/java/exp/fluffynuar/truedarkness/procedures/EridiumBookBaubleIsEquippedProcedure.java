@@ -12,14 +12,7 @@ public class EridiumBookBaubleIsEquippedProcedure {
 		{
 			ItemStack _setval = itemstack;
 			entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.Active_skill_item = _setval.copy();
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			double _setval = itemstack.getOrCreateTag().getDouble("SelectedLine");
-			entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.Active_skill_selected = _setval;
+				capability.PerkItem = _setval.copy();
 				capability.syncPlayerVariables(entity);
 			});
 		}

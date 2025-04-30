@@ -11,9 +11,18 @@ public class ActiveAbility3PriOtpuskaniiKlavishiProcedure {
 		{
 			boolean _setval = false;
 			entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.Active_ability_3_logic = _setval;
+				capability.HoldAbility3 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
+		}
+		if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).ProgressBar != 0) {
+			{
+				double _setval = 0;
+				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.ProgressBar = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

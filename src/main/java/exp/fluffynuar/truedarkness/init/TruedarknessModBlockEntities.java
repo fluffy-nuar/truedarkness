@@ -19,9 +19,9 @@ import exp.fluffynuar.truedarkness.block.entity.SamovarActiveBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.DarknessSpruceChestBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.CursedWorkbenchBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.CursedPipeBlockEntity;
+import exp.fluffynuar.truedarkness.block.entity.CursedLecternBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.CursedFurnaceBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.CursedCauldronBlockEntity;
-import exp.fluffynuar.truedarkness.block.entity.CursedBookshelfBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.CursedAnvilBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.CorruptedSculkCatalystBloomingBlockEntity;
 import exp.fluffynuar.truedarkness.block.entity.CorruptedSculkBlockEntity;
@@ -52,11 +52,11 @@ public class TruedarknessModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CURSED_PIPE = register("cursed_pipe", TruedarknessModBlocks.CURSED_PIPE, CursedPipeBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> STAR_TELEPORTER = register("star_teleporter", TruedarknessModBlocks.STAR_TELEPORTER, StarTeleporterBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CURSED_WORKBENCH = register("cursed_workbench", TruedarknessModBlocks.CURSED_WORKBENCH, CursedWorkbenchBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> CURSED_BOOKSHELF = register("cursed_bookshelf", TruedarknessModBlocks.CURSED_BOOKSHELF, CursedBookshelfBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CURSED_CAULDRON = register("cursed_cauldron", TruedarknessModBlocks.CURSED_CAULDRON, CursedCauldronBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CURSED_ANVIL = register("cursed_anvil", TruedarknessModBlocks.CURSED_ANVIL, CursedAnvilBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CORRUPTED_LIGHT = register("corrupted_light", TruedarknessModBlocks.CORRUPTED_LIGHT, CorruptedLightBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CORRUPTED_CAMPFIRE = register("corrupted_campfire", TruedarknessModBlocks.CORRUPTED_CAMPFIRE, CorruptedCampfireBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CURSED_LECTERN = register("cursed_lectern", TruedarknessModBlocks.CURSED_LECTERN, CursedLecternBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

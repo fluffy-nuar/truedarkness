@@ -1,0 +1,522 @@
+{
+  "_fv": 73,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_text_fatigue_blood_count",
+          "text": {
+            "fixedValue": "",
+            "name": "TextFatigueBloodCount"
+          },
+          "color": {
+            "value": -12111538,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FatigueBloodCount"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 222,
+          "y": 191,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_text_fatigue_blood",
+          "text": {
+            "fixedValue": "",
+            "name": "TextFatigueBlood"
+          },
+          "color": {
+            "value": -9087361,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 227,
+          "y": 205,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spell_type_bar.png",
+          "spritesCount": 11,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTypeOfPerk"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 116,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spell_type_bar.png",
+          "spritesCount": 11,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTypeOfPerk1"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 136,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spell_type_bar.png",
+          "spritesCount": 11,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTypeOfPerk2"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 156,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spell_type_bar.png",
+          "spritesCount": 11,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTypeOfPerk3"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 176,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spell_type_bar.png",
+          "spritesCount": 11,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTypeOfPerk4"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 196,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spell_type_bar.png",
+          "spritesCount": 11,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTypeOfPerk5"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 216,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spell_type_bar.png",
+          "spritesCount": 11,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTypeOfPerk6"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 236,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spell_type_bar.png",
+          "spritesCount": 11,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTypeOfPerk7"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 256,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spell_type_bar.png",
+          "spritesCount": 11,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTypeOfPerk8"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 276,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spell_type_bar.png",
+          "spritesCount": 11,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTypeOfPerk9"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 296,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_0.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress1"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 123,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_1.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress2"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 133,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_2.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress3"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 143,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_0.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress4"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 153,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_2.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress5"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 163,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_0.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress6"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 173,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_2.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress8"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 193,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_1.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress7"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 183,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_0.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress9"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 203,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_0.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress10"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 213,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "active_progress.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 122,
+          "y": 201,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spell_selecting_bar.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 113,
+          "y": 218,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectied_spell.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellSelectingAtProc"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 112,
+          "y": 217,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectied_spell.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellSelectingAtProc1"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 132,
+          "y": 217,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectied_spell.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellSelectingAtProc2"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 152,
+          "y": 217,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectied_spell.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellSelectingAtProc3"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 172,
+          "y": 217,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectied_spell.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellSelectingAtProc4"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 192,
+          "y": 217,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectied_spell.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellSelectingAtProc5"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 212,
+          "y": 217,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectied_spell.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellSelectingAtProc6"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 232,
+          "y": 217,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectied_spell.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellSelectingAtProc7"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 252,
+          "y": 217,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectied_spell.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellSelectingAtProc8"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 272,
+          "y": 217,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectied_spell.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellSelectingAtProc9"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 292,
+          "y": 217,
+          "locked": true
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ExpirienceHideBar"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

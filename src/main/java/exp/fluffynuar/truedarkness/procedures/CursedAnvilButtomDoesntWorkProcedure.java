@@ -65,7 +65,7 @@ public class CursedAnvilButtomDoesntWorkProcedure {
 					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag()
 							.getDouble("ActiveStage") != 0
 					&& (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage < (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
+							.orElse(new TruedarknessModVariables.PlayerVariables())).CorruptionStage < (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
 									? ((Slot) _slt.get(0)).getItem()
 									: ItemStack.EMPTY).getOrCreateTag().getDouble("ActiveStage")) {
 				return true;

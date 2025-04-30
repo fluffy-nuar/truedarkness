@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "glow_fungus_0",
+    "texture": "glow_fungus_1",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -107,7 +107,16 @@
     "placingCondition": {
       "name": "NeaskyVinesUsloviieRazmieshchieniiaBloka"
     },
-    "isBonemealable": false,
+    "isBonemealable": true,
+    "isBonemealTargetCondition": {
+      "name": "GlowFungusHatUsloviieRazrieshieniiaIspolzovaniiaKostnoiMuki"
+    },
+    "bonemealSuccessCondition": {
+      "name": "GlowFungusHatUsloviieUspieshnoghoPrimienieniiaKostnoiMuki"
+    },
+    "onBonemealSuccess": {
+      "name": "GlowFungusHatPriIspolzovaniiKostnoiMuki"
+    },
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,

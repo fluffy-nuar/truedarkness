@@ -5,8 +5,8 @@
     "renderType": 0,
     "texture": "shiny_eridium_0",
     "customModelName": "Normal",
-    "name": "§5Shiny Eridium",
-    "rarity": "COMMON",
+    "name": "Shiny Eridium",
+    "rarity": "UNCOMMON",
     "slotType": "EridiumSlot",
     "baubleModel": "Default",
     "baubleModelTexture": "",
@@ -29,29 +29,28 @@
     "addSlot": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [],
-      "name": "ShinyEridiumDashDopolnitielnaiaInformatsiia"
+      "fixedValue": []
     },
     "hasGlow": false,
     "customProperties": {
-      "eridium_stage": {
+      "active_stage": {
         "name": "ShinyEridiumDashZnachieniieSvoistva"
       }
     },
     "states": [
       {
         "renderType": 0,
-        "texture": "shiny_eridium_0",
+        "texture": "shiny_eridium_1",
         "customModelName": "Normal",
         "stateMap": [
           {
             "property": {
               "min": -1.7976931348623157E308,
               "max": 1.7976931348623157E308,
-              "name": "CUSTOM:eridium_stage",
+              "name": "CUSTOM:active_stage",
               "type": "number"
             },
-            "value": 0.0
+            "value": 1.0
           }
         ]
       },
@@ -64,23 +63,7 @@
             "property": {
               "min": -1.7976931348623157E308,
               "max": 1.7976931348623157E308,
-              "name": "CUSTOM:eridium_stage",
-              "type": "number"
-            },
-            "value": 1.0
-          }
-        ]
-      },
-      {
-        "renderType": 0,
-        "texture": "shiny_eridium_1",
-        "customModelName": "Normal",
-        "stateMap": [
-          {
-            "property": {
-              "min": -1.7976931348623157E308,
-              "max": 1.7976931348623157E308,
-              "name": "CUSTOM:eridium_stage",
+              "name": "CUSTOM:active_stage",
               "type": "number"
             },
             "value": 2.0
@@ -96,7 +79,7 @@
             "property": {
               "min": -1.7976931348623157E308,
               "max": 1.7976931348623157E308,
-              "name": "CUSTOM:eridium_stage",
+              "name": "CUSTOM:active_stage",
               "type": "number"
             },
             "value": 3.0
@@ -112,7 +95,7 @@
             "property": {
               "min": -1.7976931348623157E308,
               "max": 1.7976931348623157E308,
-              "name": "CUSTOM:eridium_stage",
+              "name": "CUSTOM:active_stage",
               "type": "number"
             },
             "value": 4.0
@@ -128,26 +111,10 @@
             "property": {
               "min": -1.7976931348623157E308,
               "max": 1.7976931348623157E308,
-              "name": "CUSTOM:eridium_stage",
+              "name": "CUSTOM:active_stage",
               "type": "number"
             },
             "value": 5.0
-          }
-        ]
-      },
-      {
-        "renderType": 0,
-        "texture": "sussy_eridium_stage_0",
-        "customModelName": "Normal",
-        "stateMap": [
-          {
-            "property": {
-              "min": -1.7976931348623157E308,
-              "max": 1.7976931348623157E308,
-              "name": "CUSTOM:eridium_stage",
-              "type": "number"
-            },
-            "value": 10.0
           }
         ]
       }
@@ -156,14 +123,8 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "slotAmount": 1,
-    "onRightClickedInAir": {
-      "name": "ShinyEridiumDashPriShchielchkiePKM"
-    },
     "onEquip": {
       "name": "ShinyEridiumDashBaubleIsEquipped"
-    },
-    "onUnequip": {
-      "name": "ShinyEridiumBaubleIsUnequipped"
     },
     "isFood": false,
     "friendlyPigs": false,

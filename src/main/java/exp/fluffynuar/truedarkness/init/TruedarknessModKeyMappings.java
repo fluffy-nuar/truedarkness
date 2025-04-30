@@ -37,15 +37,13 @@ public class TruedarknessModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping ACTIVE_ABILITY_1 = new KeyMapping("key.truedarkness.active_ability_1", GLFW.GLFW_KEY_B, "key.categories.truedarkness") {
+	public static final KeyMapping ACTIVE_ABILITY_1 = new KeyMapping("key.truedarkness.active_ability_1", GLFW.GLFW_KEY_RIGHT, "key.categories.truedarkness") {
 		private boolean isDownOld = false;
 
 		@Override
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				TruedarknessMod.PACKET_HANDLER.sendToServer(new ActiveAbility1Message(0, 0));
-				ActiveAbility1Message.pressAction(Minecraft.getInstance().player, 0, 0);
 				ACTIVE_ABILITY_1_LASTPRESS = System.currentTimeMillis();
 			} else if (isDownOld != isDown && !isDown) {
 				int dt = (int) (System.currentTimeMillis() - ACTIVE_ABILITY_1_LASTPRESS);

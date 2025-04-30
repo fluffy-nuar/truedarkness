@@ -9,18 +9,12 @@
       "falpha": 0.0
     },
     "isInstant": false,
-    "mobEffectCategory": "BENEFICIAL",
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": false,
-    "isCuredByMilk": true,
-    "isProtectedByTotem": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
     "isCuredbyHoney": false,
-    "modifiers": [],
-    "onActiveTick": {
-      "name": "HuntingKazhdyiTikVoVriemiaEffiekta"
-    },
-    "onExpired": {
-      "name": "HuntingPriIstiechieniiEffiekta"
-    }
+    "modifiers": []
   }
 }

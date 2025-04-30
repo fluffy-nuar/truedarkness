@@ -13,7 +13,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import java.util.function.Supplier;
 
 import exp.fluffynuar.truedarkness.procedures.ActiveAbility1PriOtpuskaniiKlavishiProcedure;
-import exp.fluffynuar.truedarkness.procedures.ActiveAbility1PriNazhatiiKlavishiProcedure;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -51,10 +50,6 @@ public class ActiveAbility1Message {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(entity.blockPosition()))
 			return;
-		if (type == 0) {
-
-			ActiveAbility1PriNazhatiiKlavishiProcedure.execute(world, x, y, z, entity);
-		}
 		if (type == 1) {
 
 			ActiveAbility1PriOtpuskaniiKlavishiProcedure.execute(entity);

@@ -97,13 +97,13 @@ public class CorruptedNecromancerPriObnovlieniiTikaSushchnostiProcedure {
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.WITCH, x, (y + 1), z, 15, 0.1, 0.1, 0.1, 0.1);
-						entity.getPersistentData().putDouble("timer", (entity.getPersistentData().getDouble("timer") + 40));
+						entity.getPersistentData().putDouble("timer", (entity.getPersistentData().getDouble("timer") + 60));
 					}
 				} else if (player >= 1) {
 					player = 0;
 					{
 						final Vec3 _center = new Vec3(x, y, z);
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 						for (Entity entityiterator : _entfound) {
 							if (entityiterator instanceof Player && entityiterator instanceof LivingEntity _livEnt27 && _livEnt27.hasEffect(TruedarknessModMobEffects.TARGET.get())
 									&& !(entityiterator instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
@@ -131,36 +131,7 @@ public class CorruptedNecromancerPriObnovlieniiTikaSushchnostiProcedure {
 					}
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.WITCH, x, (y + 1), z, 7, 0.1, 0.1, 0.1, 0.1);
-					entity.getPersistentData().putDouble("timer", (entity.getPersistentData().getDouble("timer") + 40 * player));
-				} else if (count >= 2) {
-					count = 0;
-					{
-						final Vec3 _center = new Vec3(x, y, z);
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(20 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-						for (Entity entityiterator : _entfound) {
-							if (entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("truedarkness:undead_corrupted")))) {
-								if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-									_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 0, false, false));
-								if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-									_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 2, 0, false, false));
-								if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-									_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, false, false));
-								count = count + 1;
-							}
-						}
-					}
-					if (count != 0) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.WITCH, x, (y + 1), z, 2, 0.1, 0.1, 0.1, 0.1);
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.illusioner.prepare_mirror")), SoundSource.HOSTILE, (float) 1.8, (float) 0.8);
-							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.illusioner.prepare_mirror")), SoundSource.HOSTILE, (float) 1.8, (float) 0.8, false);
-							}
-						}
-						entity.getPersistentData().putDouble("timer", (entity.getPersistentData().getDouble("timer") + 60 * count));
-					}
+					entity.getPersistentData().putDouble("timer", (entity.getPersistentData().getDouble("timer") + 80 * player));
 				}
 			}
 		} else {
@@ -217,7 +188,7 @@ public class CorruptedNecromancerPriObnovlieniiTikaSushchnostiProcedure {
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
-						if (entityiterator instanceof LivingEntity _livEnt76 && _livEnt76.hasEffect(TruedarknessModMobEffects.TARGET.get()) || entityiterator instanceof GeneralEntity) {
+						if (entityiterator instanceof LivingEntity _livEnt67 && _livEnt67.hasEffect(TruedarknessModMobEffects.TARGET.get()) || entityiterator instanceof GeneralEntity) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.TARGET.get(), 6000, 0, false, false));
 						}

@@ -14,11 +14,11 @@
       "item": "truedarkness:polished_accustone"
     },
     "c": {
-      "item": "truedarkness:metamorphosis_smithing_template"
+      "item": "truedarkness:metamorphosis_armor_trim_smithing_template"
     }
   },
   "result": {
-    "item": "truedarkness:metamorphosis_smithing_template",
+    "item": "truedarkness:metamorphosis_armor_trim_smithing_template",
     "count": 2
   }
 }

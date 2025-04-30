@@ -11,7 +11,7 @@ public class ActiveAbility3PriNazhatiiKlavishiProcedure {
 		{
 			boolean _setval = true;
 			entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.Active_ability_3_logic = _setval;
+				capability.HoldAbility3 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

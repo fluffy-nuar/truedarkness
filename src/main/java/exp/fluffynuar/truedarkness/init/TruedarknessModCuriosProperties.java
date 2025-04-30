@@ -28,8 +28,6 @@ public class TruedarknessModCuriosProperties {
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) BlinkEridium2ZnachieniieSvoistvaProcedure.execute(entity));
 			ItemProperties.register(TruedarknessModItems.CORRUPTED_CATALYST.get(), new ResourceLocation("truedarkness:corrupted_catalyst_active"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) BlinkEridium2ZnachieniieSvoistvaProcedure.execute(entity));
-			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_STREAM.get(), new ResourceLocation("truedarkness:shiny_eridium_stream_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
 			ItemProperties.register(TruedarknessModItems.CURSED_EGG.get(), new ResourceLocation("truedarkness:cursed_egg_active_status"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) CursedEggZnachieniieSvoistvaProcedure.execute(itemStackToRender));
 			ItemProperties.register(TruedarknessModItems.STEEL_FANGS.get(), new ResourceLocation("truedarkness:steel_fangs_active"),
@@ -46,16 +44,6 @@ public class TruedarknessModCuriosProperties {
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) BlinkEridium2ZnachieniieSvoistvaProcedure.execute(entity));
 			ItemProperties.register(TruedarknessModItems.MOONLIGHT_FANGS.get(), new ResourceLocation("truedarkness:moonlight_fangs_active"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) BlinkEridium2ZnachieniieSvoistvaProcedure.execute(entity));
-			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_SEER.get(), new ResourceLocation("truedarkness:shiny_eridium_seer_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_UNDYING.get(), new ResourceLocation("truedarkness:shiny_eridium_undying_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_RUNE.get(), new ResourceLocation("truedarkness:shiny_eridium_rune_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_TREAD.get(), new ResourceLocation("truedarkness:shiny_eridium_tread_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_ECHO.get(), new ResourceLocation("truedarkness:shiny_eridium_echo_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
 			ItemProperties.register(TruedarknessModItems.CURSED_LEATHER.get(), new ResourceLocation("truedarkness:cursed_leather_type"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) CursedLeatherZnachieniieSvoistvaProcedure.execute(itemStackToRender));
 			ItemProperties.register(TruedarknessModItems.CURSED_MAGNIFIER.get(), new ResourceLocation("truedarkness:cursed_magnifier_active"),
@@ -64,13 +52,23 @@ public class TruedarknessModCuriosProperties {
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) BlinkEridium2ZnachieniieSvoistvaProcedure.execute(entity));
 			ItemProperties.register(TruedarknessModItems.ERIDIUM_BOOK.get(), new ResourceLocation("truedarkness:eridium_book_vitanomicon"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EridiumBookZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_SMELT.get(), new ResourceLocation("truedarkness:shiny_eridium_smelt_eridium_stage"),
+			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_STREAM.get(), new ResourceLocation("truedarkness:shiny_eridium_stream_active_stage"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_TOOL.get(), new ResourceLocation("truedarkness:shiny_eridium_tool_eridium_stage"),
+			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_SMELT.get(), new ResourceLocation("truedarkness:shiny_eridium_smelt_active_stage"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_SKULL.get(), new ResourceLocation("truedarkness:shiny_eridium_skull_eridium_stage"),
+			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_TREAD.get(), new ResourceLocation("truedarkness:shiny_eridium_tread_active_stage"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_LIGHT.get(), new ResourceLocation("truedarkness:shiny_eridium_light_eridium_stage"),
+			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_SEER.get(), new ResourceLocation("truedarkness:shiny_eridium_seer_active_stage"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
+			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_SHOT.get(), new ResourceLocation("truedarkness:shiny_eridium_shot_active_stage"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
+			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_LIGHTNING.get(), new ResourceLocation("truedarkness:shiny_eridium_lightning_active_stage"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
+			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_RINGING.get(), new ResourceLocation("truedarkness:shiny_eridium_ringing_active_stage"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
+			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_FANGS.get(), new ResourceLocation("truedarkness:shiny_eridium_fangs_active_stage"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
+			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_UNDEAD.get(), new ResourceLocation("truedarkness:shiny_eridium_undead_active_stage"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
 		});
 	}

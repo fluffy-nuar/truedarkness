@@ -2,7 +2,6 @@
 package exp.fluffynuar.truedarkness.item;
 
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
-import top.theillusivec4.curios.api.SlotContext;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
@@ -13,8 +12,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import exp.fluffynuar.truedarkness.procedures.CursedLeatherPriShchielchkiePKMProcedure;
-import exp.fluffynuar.truedarkness.procedures.CursedLeatherBaubleIsUnequippedProcedure;
-import exp.fluffynuar.truedarkness.procedures.CursedLeatherBaubleIsEquippedProcedure;
 
 public class CursedLeatherItem extends Item implements ICurioItem {
 	public CursedLeatherItem() {
@@ -31,15 +28,5 @@ public class CursedLeatherItem extends Item implements ICurioItem {
 
 		CursedLeatherPriShchielchkiePKMProcedure.execute(entity, itemstack);
 		return ar;
-	}
-
-	@Override
-	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		CursedLeatherBaubleIsEquippedProcedure.execute(slotContext.entity(), stack);
-	}
-
-	@Override
-	public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
-		CursedLeatherBaubleIsUnequippedProcedure.execute(slotContext.entity());
 	}
 }

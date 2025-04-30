@@ -11,8 +11,7 @@ public class SlotPerkMathProcedure {
 		double add_count = 0;
 		double second_sount = 0;
 		while (!(add_count == F)) {
-			if (!(((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Active_skill_item).getOrCreateTag().getString(("Line" + Math.round(add_count))))
-					.equals("")) {
+			if (!(((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).PerkItem).getOrCreateTag().getString(("Line" + Math.round(add_count)))).equals("")) {
 				add_count = add_count + 1;
 				continue;
 			}

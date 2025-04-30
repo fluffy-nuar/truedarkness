@@ -19,6 +19,7 @@ import exp.fluffynuar.truedarkness.world.inventory.CursedFurnaceGUIMenu;
 import exp.fluffynuar.truedarkness.world.inventory.CursedCauldronNewGUIMenu;
 import exp.fluffynuar.truedarkness.world.inventory.CursedCauldronGUIMenu;
 import exp.fluffynuar.truedarkness.world.inventory.CursedAnvilGUIMenu;
+import exp.fluffynuar.truedarkness.world.inventory.BookAltarGuiMenu;
 import exp.fluffynuar.truedarkness.world.inventory.BlacksmiteForgeGUIMenu;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
@@ -33,4 +34,5 @@ public class TruedarknessModMenus {
 	public static final RegistryObject<MenuType<CursedAnvilGUIMenu>> CURSED_ANVIL_GUI = REGISTRY.register("cursed_anvil_gui", () -> IForgeMenuType.create(CursedAnvilGUIMenu::new));
 	public static final RegistryObject<MenuType<CursedScalesGUIMenu>> CURSED_SCALES_GUI = REGISTRY.register("cursed_scales_gui", () -> IForgeMenuType.create(CursedScalesGUIMenu::new));
 	public static final RegistryObject<MenuType<CursedCauldronNewGUIMenu>> CURSED_CAULDRON_NEW_GUI = REGISTRY.register("cursed_cauldron_new_gui", () -> IForgeMenuType.create(CursedCauldronNewGUIMenu::new));
+	public static final RegistryObject<MenuType<BookAltarGuiMenu>> BOOK_ALTAR_GUI = REGISTRY.register("book_altar_gui", () -> IForgeMenuType.create(BookAltarGuiMenu::new));
 }

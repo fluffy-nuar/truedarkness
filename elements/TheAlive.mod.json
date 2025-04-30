@@ -2,25 +2,19 @@
   "_fv": 73,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Corrupt",
+    "effectName": "The Corruptation",
     "icon": "corrupting",
     "color": {
       "value": -15527659,
       "falpha": 0.0
     },
-    "isInstant": false,
+    "isInstant": true,
     "mobEffectCategory": "NEUTRAL",
-    "renderStatusInInventory": true,
-    "renderStatusInHUD": true,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
     "isCuredByMilk": false,
     "isProtectedByTotem": false,
     "isCuredbyHoney": false,
-    "modifiers": [],
-    "onActiveTick": {
-      "name": "TheAliveKazhdyiTikVoVriemiaEffiekta"
-    },
-    "onExpired": {
-      "name": "TheAlivePriIstiechieniiEffiekta"
-    }
+    "modifiers": []
   }
 }

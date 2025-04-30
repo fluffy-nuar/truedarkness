@@ -42,8 +42,14 @@ minecraft {
     }
 }
 
+repositories {
+    maven { url 'https://maven.blamejared.com' }
+}
+
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-84.1-FORGE:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-84.1-FORGE")
 }
 
 tasks.withType(JavaCompile).configureEach {

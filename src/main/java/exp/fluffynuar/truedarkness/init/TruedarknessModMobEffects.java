@@ -35,14 +35,12 @@ import exp.fluffynuar.truedarkness.potion.NosediveEffectMobEffect;
 import exp.fluffynuar.truedarkness.potion.HuntingMobEffect;
 import exp.fluffynuar.truedarkness.potion.HarpEchoMobEffect;
 import exp.fluffynuar.truedarkness.potion.FallingEffectMobEffect;
-import exp.fluffynuar.truedarkness.potion.EchoRemnantEffectMobEffect;
 import exp.fluffynuar.truedarkness.potion.EchoNosediveEffectMobEffect;
 import exp.fluffynuar.truedarkness.potion.EarthHungerEffectMobEffect;
 import exp.fluffynuar.truedarkness.potion.DealCooldownMobEffect;
 import exp.fluffynuar.truedarkness.potion.CrystalTravelingEffectMobEffect;
 import exp.fluffynuar.truedarkness.potion.CorruptedRemnantUsingMobEffect;
 import exp.fluffynuar.truedarkness.potion.CorruptedEffectMobEffect;
-import exp.fluffynuar.truedarkness.potion.ChangingSpellMobEffect;
 import exp.fluffynuar.truedarkness.potion.CalmMobEffect;
 import exp.fluffynuar.truedarkness.potion.BloodshedMobEffect;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
@@ -78,10 +76,8 @@ public class TruedarknessModMobEffects {
 	public static final RegistryObject<MobEffect> TRIAL = REGISTRY.register("trial", () -> new TrialMobEffect());
 	public static final RegistryObject<MobEffect> CORRUPTED_REMNANT_USING = REGISTRY.register("corrupted_remnant_using", () -> new CorruptedRemnantUsingMobEffect());
 	public static final RegistryObject<MobEffect> SCRATCH = REGISTRY.register("scratch", () -> new ScratchMobEffect());
-	public static final RegistryObject<MobEffect> ECHO_REMNANT_EFFECT = REGISTRY.register("echo_remnant_effect", () -> new EchoRemnantEffectMobEffect());
 	public static final RegistryObject<MobEffect> REACTOR_RADIENT = REGISTRY.register("reactor_radient", () -> new ReactorRadientMobEffect());
 	public static final RegistryObject<MobEffect> TOXIC_VAPOUR = REGISTRY.register("toxic_vapour", () -> new ToxicVapourMobEffect());
-	public static final RegistryObject<MobEffect> CHANGING_SPELL = REGISTRY.register("changing_spell", () -> new ChangingSpellMobEffect());
 	public static final RegistryObject<MobEffect> CRYSTAL_TRAVELING_EFFECT = REGISTRY.register("crystal_traveling_effect", () -> new CrystalTravelingEffectMobEffect());
 	public static final RegistryObject<MobEffect> REAPER_RESTORE_UP = REGISTRY.register("reaper_restore_up", () -> new ReaperRestoreUpMobEffect());
 }

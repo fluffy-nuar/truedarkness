@@ -2,12 +2,9 @@
   "_fv": 73,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "B",
+    "triggerKey": "RIGHT",
     "keyBindingName": "Active Ability 1",
     "keyBindingCategoryKey": "truedarkness",
-    "onKeyPressed": {
-      "name": "ActiveAbility1PriNazhatiiKlavishi"
-    },
     "onKeyReleased": {
       "name": "ActiveAbility1PriOtpuskaniiKlavishi"
     }

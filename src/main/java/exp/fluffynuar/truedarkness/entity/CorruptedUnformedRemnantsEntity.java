@@ -6,17 +6,22 @@ import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.SpawnEggItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
@@ -24,9 +29,13 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -41,11 +50,10 @@ import javax.annotation.Nullable;
 import exp.fluffynuar.truedarkness.procedures.SpawningCooldownProcedure;
 import exp.fluffynuar.truedarkness.procedures.CorruptedSkeletonPriObnovlieniiTikaSushchnostiProcedure;
 import exp.fluffynuar.truedarkness.procedures.CorruptedSkeletonPriNachalnomPrizyvieSushchnostiProcedure;
-import exp.fluffynuar.truedarkness.procedures.CorruptedHumanPriRanieniiSushchnostiProcedure;
-import exp.fluffynuar.truedarkness.procedures.AttackPlayerProcUndeadProcedure;
+import exp.fluffynuar.truedarkness.procedures.CorruptedCreationsCanAttackProcedure;
 import exp.fluffynuar.truedarkness.init.TruedarknessModEntities;
 
-public class CorruptedUnformedRemnantsEntity extends Monster {
+public class CorruptedUnformedRemnantsEntity extends TamableAnimal {
 	public static final EntityDataAccessor<Boolean> DATA_aggresive = SynchedEntityData.defineId(CorruptedUnformedRemnantsEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<Boolean> DATA_spawning = SynchedEntityData.defineId(CorruptedUnformedRemnantsEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<Integer> DATA_timer = SynchedEntityData.defineId(CorruptedUnformedRemnantsEntity.class, EntityDataSerializers.INT);
@@ -82,7 +90,49 @@ public class CorruptedUnformedRemnantsEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+		this.targetSelector.addGoal(1, new OwnerHurtTargetGoal(this) {
+			@Override
+			public boolean canUse() {
+				double x = CorruptedUnformedRemnantsEntity.this.getX();
+				double y = CorruptedUnformedRemnantsEntity.this.getY();
+				double z = CorruptedUnformedRemnantsEntity.this.getZ();
+				Entity entity = CorruptedUnformedRemnantsEntity.this;
+				Level world = CorruptedUnformedRemnantsEntity.this.level();
+				return super.canUse() && CorruptedCreationsCanAttackProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = CorruptedUnformedRemnantsEntity.this.getX();
+				double y = CorruptedUnformedRemnantsEntity.this.getY();
+				double z = CorruptedUnformedRemnantsEntity.this.getZ();
+				Entity entity = CorruptedUnformedRemnantsEntity.this;
+				Level world = CorruptedUnformedRemnantsEntity.this.level();
+				return super.canContinueToUse() && CorruptedCreationsCanAttackProcedure.execute(entity);
+			}
+		});
+		this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this) {
+			@Override
+			public boolean canUse() {
+				double x = CorruptedUnformedRemnantsEntity.this.getX();
+				double y = CorruptedUnformedRemnantsEntity.this.getY();
+				double z = CorruptedUnformedRemnantsEntity.this.getZ();
+				Entity entity = CorruptedUnformedRemnantsEntity.this;
+				Level world = CorruptedUnformedRemnantsEntity.this.level();
+				return super.canUse() && CorruptedCreationsCanAttackProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = CorruptedUnformedRemnantsEntity.this.getX();
+				double y = CorruptedUnformedRemnantsEntity.this.getY();
+				double z = CorruptedUnformedRemnantsEntity.this.getZ();
+				Entity entity = CorruptedUnformedRemnantsEntity.this;
+				Level world = CorruptedUnformedRemnantsEntity.this.level();
+				return super.canContinueToUse() && CorruptedCreationsCanAttackProcedure.execute(entity);
+			}
+		});
+		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.3, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
@@ -95,7 +145,7 @@ public class CorruptedUnformedRemnantsEntity extends Monster {
 				double z = CorruptedUnformedRemnantsEntity.this.getZ();
 				Entity entity = CorruptedUnformedRemnantsEntity.this;
 				Level world = CorruptedUnformedRemnantsEntity.this.level();
-				return super.canUse() && SpawningCooldownProcedure.execute(entity);
+				return super.canUse() && CorruptedCreationsCanAttackProcedure.execute(entity);
 			}
 
 			@Override
@@ -105,11 +155,11 @@ public class CorruptedUnformedRemnantsEntity extends Monster {
 				double z = CorruptedUnformedRemnantsEntity.this.getZ();
 				Entity entity = CorruptedUnformedRemnantsEntity.this;
 				Level world = CorruptedUnformedRemnantsEntity.this.level();
-				return super.canContinueToUse() && SpawningCooldownProcedure.execute(entity);
+				return super.canContinueToUse() && CorruptedCreationsCanAttackProcedure.execute(entity);
 			}
 
 		});
-		this.targetSelector.addGoal(2, new HurtByTargetGoal(this) {
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 0.5) {
 			@Override
 			public boolean canUse() {
 				double x = CorruptedUnformedRemnantsEntity.this.getX();
@@ -130,7 +180,7 @@ public class CorruptedUnformedRemnantsEntity extends Monster {
 				return super.canContinueToUse() && SpawningCooldownProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.5) {
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = CorruptedUnformedRemnantsEntity.this.getX();
@@ -149,48 +199,6 @@ public class CorruptedUnformedRemnantsEntity extends Monster {
 				Entity entity = CorruptedUnformedRemnantsEntity.this;
 				Level world = CorruptedUnformedRemnantsEntity.this.level();
 				return super.canContinueToUse() && SpawningCooldownProcedure.execute(entity);
-			}
-		});
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this) {
-			@Override
-			public boolean canUse() {
-				double x = CorruptedUnformedRemnantsEntity.this.getX();
-				double y = CorruptedUnformedRemnantsEntity.this.getY();
-				double z = CorruptedUnformedRemnantsEntity.this.getZ();
-				Entity entity = CorruptedUnformedRemnantsEntity.this;
-				Level world = CorruptedUnformedRemnantsEntity.this.level();
-				return super.canUse() && SpawningCooldownProcedure.execute(entity);
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				double x = CorruptedUnformedRemnantsEntity.this.getX();
-				double y = CorruptedUnformedRemnantsEntity.this.getY();
-				double z = CorruptedUnformedRemnantsEntity.this.getZ();
-				Entity entity = CorruptedUnformedRemnantsEntity.this;
-				Level world = CorruptedUnformedRemnantsEntity.this.level();
-				return super.canContinueToUse() && SpawningCooldownProcedure.execute(entity);
-			}
-		});
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false) {
-			@Override
-			public boolean canUse() {
-				double x = CorruptedUnformedRemnantsEntity.this.getX();
-				double y = CorruptedUnformedRemnantsEntity.this.getY();
-				double z = CorruptedUnformedRemnantsEntity.this.getZ();
-				Entity entity = CorruptedUnformedRemnantsEntity.this;
-				Level world = CorruptedUnformedRemnantsEntity.this.level();
-				return super.canUse() && AttackPlayerProcUndeadProcedure.execute(entity);
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				double x = CorruptedUnformedRemnantsEntity.this.getX();
-				double y = CorruptedUnformedRemnantsEntity.this.getY();
-				double z = CorruptedUnformedRemnantsEntity.this.getZ();
-				Entity entity = CorruptedUnformedRemnantsEntity.this;
-				Level world = CorruptedUnformedRemnantsEntity.this.level();
-				return super.canContinueToUse() && AttackPlayerProcUndeadProcedure.execute(entity);
 			}
 		});
 	}
@@ -226,20 +234,6 @@ public class CorruptedUnformedRemnantsEntity extends Monster {
 	}
 
 	@Override
-	public boolean hurt(DamageSource damagesource, float amount) {
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Level world = this.level();
-		Entity entity = this;
-		Entity sourceentity = damagesource.getEntity();
-		Entity immediatesourceentity = damagesource.getDirectEntity();
-
-		CorruptedHumanPriRanieniiSushchnostiProcedure.execute(world, x, y, z, sourceentity);
-		return super.hurt(damagesource, amount);
-	}
-
-	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
 		CorruptedSkeletonPriNachalnomPrizyvieSushchnostiProcedure.execute(world, this.getX(), this.getZ(), this);
@@ -272,9 +266,64 @@ public class CorruptedUnformedRemnantsEntity extends Monster {
 	}
 
 	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
+		Item item = itemstack.getItem();
+		if (itemstack.getItem() instanceof SpawnEggItem) {
+			retval = super.mobInteract(sourceentity, hand);
+		} else if (this.level().isClientSide()) {
+			retval = (this.isTame() && this.isOwnedBy(sourceentity) || this.isFood(itemstack)) ? InteractionResult.sidedSuccess(this.level().isClientSide()) : InteractionResult.PASS;
+		} else {
+			if (this.isTame()) {
+				if (this.isOwnedBy(sourceentity)) {
+					if (item.isEdible() && this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
+						this.usePlayerItem(sourceentity, hand, itemstack);
+						this.heal((float) item.getFoodProperties().getNutrition());
+						retval = InteractionResult.sidedSuccess(this.level().isClientSide());
+					} else if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
+						this.usePlayerItem(sourceentity, hand, itemstack);
+						this.heal(4);
+						retval = InteractionResult.sidedSuccess(this.level().isClientSide());
+					} else {
+						retval = super.mobInteract(sourceentity, hand);
+					}
+				}
+			} else if (this.isFood(itemstack)) {
+				this.usePlayerItem(sourceentity, hand, itemstack);
+				if (this.random.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, sourceentity)) {
+					this.tame(sourceentity);
+					this.level().broadcastEntityEvent(this, (byte) 7);
+				} else {
+					this.level().broadcastEntityEvent(this, (byte) 6);
+				}
+				this.setPersistenceRequired();
+				retval = InteractionResult.sidedSuccess(this.level().isClientSide());
+			} else {
+				retval = super.mobInteract(sourceentity, hand);
+				if (retval == InteractionResult.SUCCESS || retval == InteractionResult.CONSUME)
+					this.setPersistenceRequired();
+			}
+		}
+		return retval;
+	}
+
+	@Override
 	public void baseTick() {
 		super.baseTick();
 		CorruptedSkeletonPriObnovlieniiTikaSushchnostiProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+	}
+
+	@Override
+	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
+		CorruptedUnformedRemnantsEntity retval = TruedarknessModEntities.CORRUPTED_UNFORMED_REMNANTS.get().create(serverWorld);
+		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
+		return retval;
+	}
+
+	@Override
+	public boolean isFood(ItemStack stack) {
+		return Ingredient.of(new ItemStack(Blocks.BEDROCK)).test(stack);
 	}
 
 	public static void init() {

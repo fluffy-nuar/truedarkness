@@ -12,11 +12,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:TrueDarknessElementariy"
-      }
-    ],
+    "creativeTabs": [],
     "efficiency": 12.0,
     "attackSpeed": 5.0,
     "enchantability": 2,

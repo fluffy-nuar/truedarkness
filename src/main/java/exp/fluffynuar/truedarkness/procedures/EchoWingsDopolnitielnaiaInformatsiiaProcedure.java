@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -19,7 +18,6 @@ import javax.annotation.Nullable;
 
 import java.util.List;
 
-import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 
 @Mod.EventBusSubscriber
@@ -27,15 +25,15 @@ public class EchoWingsDopolnitielnaiaInformatsiiaProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
+		execute(event, event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
-		execute(null, entity, itemstack, tooltip);
+	public static void execute(ItemStack itemstack, List<Component> tooltip) {
+		execute(null, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
-		if (entity == null || tooltip == null)
+	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
+		if (tooltip == null)
 			return;
 		if (itemstack.getItem() == TruedarknessModItems.ECHO_WINGS.get()) {
 			if (Screen.hasShiftDown()) {
@@ -77,27 +75,6 @@ public class EchoWingsDopolnitielnaiaInformatsiiaProcedure {
 				tooltip.add(1, Component.literal((Component.translatable("item.truedarkness.metenite_crystal.desc").getString())));
 			}
 		}
-		if (itemstack.getItem() == TruedarknessModItems.ECHO_HORN.get() || itemstack.is(ItemTags.create(new ResourceLocation("truedarkness:spell_casting_item")))
-				&& ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Faction).equals("corrupt")) {
-			if (Screen.hasShiftDown()) {
-				if ((itemstack.getOrCreateTag().getString("desc")).equals(ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString())) {
-					tooltip.add(1, Component.literal((Component.translatable("item.truedarkness.echo_horn.description").getString())));
-				} else {
-					tooltip.add(1, Component.literal((Component.translatable("item.truedarkness.metenite_crystal.desc").getString())));
-				}
-			} else if (!(itemstack.getOrCreateTag().getString("Spell")).equals("")) {
-				if (itemstack.getOrCreateTag().getDouble("Legend") == 2) {
-					tooltip.add(1, Component.literal(("\u00A77[" + Component.translatable("item.truedarkness.spell.legend").getString() + "\u00A77]")));
-				} else if (itemstack.getOrCreateTag().getDouble("Legend") == 1) {
-					tooltip.add(1, Component.literal(("\u00A77[" + Component.translatable("item.truedarkness.spell.rare").getString() + "\u00A77]")));
-				} else {
-					tooltip.add(1, Component.literal(("\u00A77[" + Component.translatable("item.truedarkness.spell.common").getString() + "\u00A77]")));
-				}
-				tooltip.add(2, Component.literal(("\u00A77" + Component.translatable(("item.truedarkness.spell_" + itemstack.getOrCreateTag().getString("Spell") + ".desc")).getString())));
-			} else {
-				tooltip.add(1, Component.literal((Component.translatable("item.truedarkness.echo_horn.desc").getString())));
-			}
-		}
 		if (itemstack.is(ItemTags.create(new ResourceLocation("truedarkness:spell")))) {
 			if (!Screen.hasShiftDown()) {
 				if (itemstack.getOrCreateTag().getDouble("Legend") == 2) {
@@ -107,18 +84,6 @@ public class EchoWingsDopolnitielnaiaInformatsiiaProcedure {
 				} else {
 					tooltip.add(1, Component.literal(("\u00A77[" + Component.translatable("item.truedarkness.spell.common").getString() + "\u00A77]")));
 				}
-			}
-		}
-		if (itemstack.getItem() == TruedarknessModItems.EMPTY_SPELL.get()) {
-			if (Screen.hasShiftDown()) {
-				if ((itemstack.getOrCreateTag().getString("desc")).equals(ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString())) {
-					tooltip.add(1, Component.literal((Component.translatable(("item." + (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace(":", ".") + ".desc")).getString())));
-				} else {
-					tooltip.add(1, Component.literal((Component.translatable("item.truedarkness.metenite_crystal.desc").getString())));
-				}
-			} else {
-				tooltip.add(1, Component.literal(
-						("\u00A77" + Component.translatable("item.truedarkness.empty_spell.desc_1").getString() + "\u00A7b" + Math.round((itemstack.getOrCreateTag().getDouble("tagLight") / itemstack.getOrCreateTag().getDouble("tagKills")) * 100))));
 			}
 		}
 	}

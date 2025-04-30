@@ -1,7 +1,5 @@
 package exp.fluffynuar.truedarkness.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.block.Block;
@@ -24,7 +22,6 @@ import net.minecraft.advancements.Advancement;
 import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
 import exp.fluffynuar.truedarkness.init.TruedarknessModParticleTypes;
 import exp.fluffynuar.truedarkness.init.TruedarknessModMobEffects;
-import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.init.TruedarknessModBlocks;
 import exp.fluffynuar.truedarkness.TruedarknessMod;
 
@@ -34,7 +31,7 @@ public class CorruptedRemnantUsingPriIstiechieniiEffiektaProcedure {
 			return;
 		double add_count = 0;
 		if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Remnant_logic == true) {
-			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.CURSED_REEL.get(), lv).isPresent() : false) {
+			if ((((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).PerkItem).getOrCreateTag().getString("SecondAbility")).equals("remnant")) {
 				world.levelEvent(2001, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), Block.getId(TruedarknessModBlocks.CORRUPT.get().defaultBlockState()));
 				world.levelEvent(2001, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), Block.getId(TruedarknessModBlocks.CORRUPT.get().defaultBlockState()));
 				if (!(entity instanceof ServerPlayer _plr9 && _plr9.level() instanceof ServerLevel
@@ -76,7 +73,7 @@ public class CorruptedRemnantUsingPriIstiechieniiEffiektaProcedure {
 				}
 				world.levelEvent(2001, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), Block.getId(TruedarknessModBlocks.CORRUPT.get().defaultBlockState()));
 				world.levelEvent(2001, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), Block.getId(TruedarknessModBlocks.CORRUPT.get().defaultBlockState()));
-			} else if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.CURSED_CUP.get(), lv).isPresent() : false) {
+			} else if ((((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).PerkItem).getOrCreateTag().getString("SecondAbility")).equals("jump")) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:player.corrupted.teleport.casting")), SoundSource.PLAYERS, 4,
@@ -111,9 +108,7 @@ public class CorruptedRemnantUsingPriIstiechieniiEffiektaProcedure {
 									+ (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Remnant_x,
 							(entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Remnant_vy * add_count * 1.5
 									+ (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Remnant_y + 1.7,
-							(entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Remnant_vz * add_count * 1.5
-									+ (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Remnant_z,
-							entity);
+							0 + (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Remnant_z, entity);
 					add_count = add_count + 1;
 				}
 				if (entity instanceof LivingEntity _entity)
@@ -122,7 +117,7 @@ public class CorruptedRemnantUsingPriIstiechieniiEffiektaProcedure {
 					_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.BLOODSHED.get(), 80, 0, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, false, false));
-			} else if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(TruedarknessModItems.CURSED_BUCKET.get(), lv).isPresent() : false) {
+			} else if ((((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).PerkItem).getOrCreateTag().getString("SecondAbility")).equals("push")) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null,

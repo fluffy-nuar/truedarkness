@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "blockstate=0": {
       "model": "truedarkness:block/glow_fungus_hat_0"
+    },
+    "blockstate=1": {
+      "model": "truedarkness:block/glow_fungus_blockstate_0"
     }
   }
 }

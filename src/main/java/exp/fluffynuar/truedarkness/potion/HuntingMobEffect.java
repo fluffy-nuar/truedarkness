@@ -3,29 +3,23 @@ package exp.fluffynuar.truedarkness.potion;
 
 import net.minecraftforge.client.extensions.common.IClientMobEffectExtensions;
 
-import net.minecraft.world.entity.ai.attributes.AttributeMap;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
-import exp.fluffynuar.truedarkness.procedures.HuntingPriIstiechieniiEffiektaProcedure;
-import exp.fluffynuar.truedarkness.procedures.HuntingKazhdyiTikVoVriemiaEffiektaProcedure;
+import java.util.List;
+import java.util.ArrayList;
 
 public class HuntingMobEffect extends MobEffect {
 	public HuntingMobEffect() {
-		super(MobEffectCategory.BENEFICIAL, -10924693);
+		super(MobEffectCategory.NEUTRAL, -10924693);
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		HuntingKazhdyiTikVoVriemiaEffiektaProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
-	}
-
-	@Override
-	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		HuntingPriIstiechieniiEffiektaProcedure.execute(entity.level(), entity);
+	public List<ItemStack> getCurativeItems() {
+		ArrayList<ItemStack> cures = new ArrayList<ItemStack>();
+		return cures;
 	}
 
 	@Override

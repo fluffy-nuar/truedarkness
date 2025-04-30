@@ -40,12 +40,12 @@ public class TargetKazhdyiTikVoVriemiaEffiektaProcedure {
 							? _livEnt.getEffect(TruedarknessModMobEffects.TARGET.get()).getDuration()
 							: 0) != (entityiterator instanceof LivingEntity _livEnt && _livEnt.hasEffect(TruedarknessModMobEffects.TARGET.get()) ? _livEnt.getEffect(TruedarknessModMobEffects.TARGET.get()).getDuration() : 0)
 							|| !(entityiterator instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(TruedarknessModMobEffects.TARGET.get())))
-							&& entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("truedarkness:corrupted_entities")))) {
+							&& entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("truedarkness:corrupted_creatures")))) {
+						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 0));
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.TARGET.get(),
 									entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(TruedarknessModMobEffects.TARGET.get()) ? _livEnt.getEffect(TruedarknessModMobEffects.TARGET.get()).getDuration() : 0, 0));
-						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 0));
 					}
 				}
 			}

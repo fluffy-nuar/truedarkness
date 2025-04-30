@@ -301,6 +301,7 @@ import exp.fluffynuar.truedarkness.block.CvetaliyBlockBlock;
 import exp.fluffynuar.truedarkness.block.CursedWorkbenchBlock;
 import exp.fluffynuar.truedarkness.block.CursedScaleBlock;
 import exp.fluffynuar.truedarkness.block.CursedPipeBlock;
+import exp.fluffynuar.truedarkness.block.CursedLecternBlock;
 import exp.fluffynuar.truedarkness.block.CursedFurnaceBlock;
 import exp.fluffynuar.truedarkness.block.CursedCauldronBlock;
 import exp.fluffynuar.truedarkness.block.CursedBookshelfBlock;
@@ -808,6 +809,7 @@ public class TruedarknessModBlocks {
 	public static final RegistryObject<Block> BLOOMING_CRYING_LAEVES = REGISTRY.register("blooming_crying_laeves", () -> new BloomingCryingLaevesBlock());
 	public static final RegistryObject<Block> POISONER = REGISTRY.register("poisoner", () -> new PoisonerBlock());
 	public static final RegistryObject<Block> MEASKY_TREE = REGISTRY.register("measky_tree", () -> new MeaskyTreeBlock());
+	public static final RegistryObject<Block> CURSED_LECTERN = REGISTRY.register("cursed_lectern", () -> new CursedLecternBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

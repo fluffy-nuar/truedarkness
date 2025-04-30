@@ -1,5 +1,7 @@
 package exp.fluffynuar.truedarkness.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.ItemTags;
@@ -20,7 +22,7 @@ public class EvolutionShardCountProcProcedure {
 			return 4;
 		} else if (itemstack.getItem() == TruedarknessModItems.ERIDIUM_HEART.get()) {
 			return 3;
-		} else if (itemstack.getItem() == TruedarknessModItems.ANCIENT_REGULATION.get()) {
+		} else if (itemstack.getItem() == ForgeRegistries.ITEMS.getValue(new ResourceLocation("truedarkness:ancient_regulation"))) {
 			return 14;
 		} else if (itemstack.is(ItemTags.create(new ResourceLocation("truedarkness:firenite_tools")))) {
 			return 6;

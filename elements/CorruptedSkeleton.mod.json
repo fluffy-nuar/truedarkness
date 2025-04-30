@@ -122,11 +122,6 @@
     },
     "entityDataEntries": [
       {
-        "name": "aggresive",
-        "type": "logic",
-        "value": false
-      },
-      {
         "name": "spawning",
         "type": "logic",
         "value": true
@@ -153,9 +148,6 @@
         "value": 0
       }
     ],
-    "whenMobIsHurt": {
-      "name": "CorruptedHumanPriRanieniiSushchnosti"
-    },
     "onMobTickUpdate": {
       "name": "CorruptedSkeletonPriObnovlieniiTikaSushchnosti"
     },
@@ -164,10 +156,14 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.3</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">SpawningCooldown,SpawningCooldown</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">SpawningCooldown,SpawningCooldown</field><next><block type=\"wander\"><field name=\"speed\">0.5</field><field name=\"condition\">SpawningCooldown,SpawningCooldown</field><next><block type=\"look_around\"><field name=\"condition\">SpawningCooldown,SpawningCooldown</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">AttackPlayerProcUndead,AttackPlayerProcUndead</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": false,
-    "tameable": false,
-    "breedTriggerItems": [],
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"fight_as_owner\"><field name=\"condition\">CorruptedCreationsCanAttack,CorruptedCreationsCanAttack</field><next><block type=\"protect_owner\"><field name=\"condition\">CorruptedCreationsCanAttack,CorruptedCreationsCanAttack</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">CorruptedCreationsCanAttack,CorruptedCreationsCanAttack</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.3</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">CorruptedCreationsCanAttack,CorruptedCreationsCanAttack</field><next><block type=\"wander\"><field name=\"speed\">0.5</field><field name=\"condition\">SpawningCooldown,SpawningCooldown</field><next><block type=\"look_around\"><field name=\"condition\">SpawningCooldown,SpawningCooldown</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
+    "tameable": true,
+    "breedTriggerItems": [
+      {
+        "value": "Blocks.BEDROCK"
+      }
+    ],
     "ranged": false,
     "rangedAttackItem": {
       "value": ""

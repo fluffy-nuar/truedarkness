@@ -21,21 +21,11 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
-import exp.fluffynuar.truedarkness.procedures.SideSpell0ZnachieniieSvoistvaProcedure;
-import exp.fluffynuar.truedarkness.procedures.ShinyEridiumDashZnachieniieSvoistvaProcedure;
 import exp.fluffynuar.truedarkness.procedures.MagnifierZnachieniieSvoistvaProcedure;
 import exp.fluffynuar.truedarkness.procedures.BlinkEridium2ZnachieniieSvoistvaProcedure;
 import exp.fluffynuar.truedarkness.item.WitheredFangsItem;
 import exp.fluffynuar.truedarkness.item.WastelandWheatItem;
 import exp.fluffynuar.truedarkness.item.WarmItem;
-import exp.fluffynuar.truedarkness.item.UpSpellWeatherItem;
-import exp.fluffynuar.truedarkness.item.UpSpellPetsItem;
-import exp.fluffynuar.truedarkness.item.UpSpellHungerItem;
-import exp.fluffynuar.truedarkness.item.UpSpellHasteItem;
-import exp.fluffynuar.truedarkness.item.UpSpellGustItem;
-import exp.fluffynuar.truedarkness.item.UpSpellDisoItem;
-import exp.fluffynuar.truedarkness.item.UpSpellBlinkItem;
-import exp.fluffynuar.truedarkness.item.UpSpellAfraidItem;
 import exp.fluffynuar.truedarkness.item.TrudniteIngotItem;
 import exp.fluffynuar.truedarkness.item.TotemOfDyingItem;
 import exp.fluffynuar.truedarkness.item.SynteriyItem;
@@ -54,8 +44,6 @@ import exp.fluffynuar.truedarkness.item.StarIcecreamItem;
 import exp.fluffynuar.truedarkness.item.StarDustItem;
 import exp.fluffynuar.truedarkness.item.SplitArmorTrimSmithingTemplateItem;
 import exp.fluffynuar.truedarkness.item.SpiritArmorTrimSmithingTemplateItem;
-import exp.fluffynuar.truedarkness.item.SpellSideNatureItem;
-import exp.fluffynuar.truedarkness.item.SownSpellRegenItem;
 import exp.fluffynuar.truedarkness.item.SoulstealWingsItem;
 import exp.fluffynuar.truedarkness.item.SoulstealSwordItem;
 import exp.fluffynuar.truedarkness.item.SoulstealShovelItem;
@@ -100,23 +88,15 @@ import exp.fluffynuar.truedarkness.item.SkulkedHoeItem;
 import exp.fluffynuar.truedarkness.item.SkulkedAxeItem;
 import exp.fluffynuar.truedarkness.item.SkrezhalItem;
 import exp.fluffynuar.truedarkness.item.SieveItem;
-import exp.fluffynuar.truedarkness.item.SideSpellTeleportItem;
-import exp.fluffynuar.truedarkness.item.SideSpellShotItem;
-import exp.fluffynuar.truedarkness.item.SideSpellPotionItem;
-import exp.fluffynuar.truedarkness.item.SideSpellMeetItem;
-import exp.fluffynuar.truedarkness.item.SideSpellLineItem;
-import exp.fluffynuar.truedarkness.item.SideSpellDashItem;
-import exp.fluffynuar.truedarkness.item.SideSpellBombItem;
-import exp.fluffynuar.truedarkness.item.ShinyEridiumUndyingItem;
-import exp.fluffynuar.truedarkness.item.ShinyEridiumToolItem;
-import exp.fluffynuar.truedarkness.item.ShinyEridiumTeleportItem;
+import exp.fluffynuar.truedarkness.item.ShinyEridiumUndeadItem;
+import exp.fluffynuar.truedarkness.item.ShinyEridiumTreadItem;
+import exp.fluffynuar.truedarkness.item.ShinyEridiumStreamItem;
 import exp.fluffynuar.truedarkness.item.ShinyEridiumSmeltItem;
-import exp.fluffynuar.truedarkness.item.ShinyEridiumSkullItem;
+import exp.fluffynuar.truedarkness.item.ShinyEridiumShotItem;
 import exp.fluffynuar.truedarkness.item.ShinyEridiumSeerItem;
-import exp.fluffynuar.truedarkness.item.ShinyEridiumRuneItem;
-import exp.fluffynuar.truedarkness.item.ShinyEridiumLightItem;
-import exp.fluffynuar.truedarkness.item.ShinyEridiumEchoItem;
-import exp.fluffynuar.truedarkness.item.ShinyEridiumDashItem;
+import exp.fluffynuar.truedarkness.item.ShinyEridiumRingingItem;
+import exp.fluffynuar.truedarkness.item.ShinyEridiumLightningItem;
+import exp.fluffynuar.truedarkness.item.ShinyEridiumFangsItem;
 import exp.fluffynuar.truedarkness.item.ShaddyMelonItemItem;
 import exp.fluffynuar.truedarkness.item.SeekerPlantItemItem;
 import exp.fluffynuar.truedarkness.item.SculkRing1Item;
@@ -241,19 +221,11 @@ import exp.fluffynuar.truedarkness.item.EchoReel0Item;
 import exp.fluffynuar.truedarkness.item.EchoPapryrusItem;
 import exp.fluffynuar.truedarkness.item.EchoKnifeItem;
 import exp.fluffynuar.truedarkness.item.EchoKeyItem;
-import exp.fluffynuar.truedarkness.item.EchoHornItem;
 import exp.fluffynuar.truedarkness.item.EchoHeartItem;
 import exp.fluffynuar.truedarkness.item.EchoHarpItem;
 import exp.fluffynuar.truedarkness.item.EchoHammerItem;
 import exp.fluffynuar.truedarkness.item.EchoCarvingKnifeItem;
 import exp.fluffynuar.truedarkness.item.EchoBottleItem;
-import exp.fluffynuar.truedarkness.item.DownSpellSmeltItem;
-import exp.fluffynuar.truedarkness.item.DownSpellHideItem;
-import exp.fluffynuar.truedarkness.item.DownSpellFeetItem;
-import exp.fluffynuar.truedarkness.item.DownSpellFangItem;
-import exp.fluffynuar.truedarkness.item.DownSpellEyeItem;
-import exp.fluffynuar.truedarkness.item.DownSpellDiveItem;
-import exp.fluffynuar.truedarkness.item.DownSpellAquaItem;
 import exp.fluffynuar.truedarkness.item.DistabilizatorItem;
 import exp.fluffynuar.truedarkness.item.DisorientDustItem;
 import exp.fluffynuar.truedarkness.item.DarknessSpruceShieldItem;
@@ -722,7 +694,6 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> GLOW_TRAP_DOOR = block(TruedarknessModBlocks.GLOW_TRAP_DOOR);
 	public static final RegistryObject<Item> ANCIENT_PAPYRUS = REGISTRY.register("ancient_papyrus", () -> new AncientPapyrusItem());
 	public static final RegistryObject<Item> FANG_SWORD = REGISTRY.register("fang_sword", () -> new CursedSwordItem());
-	public static final RegistryObject<Item> ANCIENT_REGULATION = REGISTRY.register("ancient_regulation", () -> new AncientRegulationItem());
 	public static final RegistryObject<Item> GENERAL_REGULATION = REGISTRY.register("general_regulation", () -> new GeneralRegulationItem());
 	public static final RegistryObject<Item> REAL_GENERAL_SWORD = REGISTRY.register("real_general_sword", () -> new RealGeneralSwordItem());
 	public static final RegistryObject<Item> CORRUPTED_BUBBLE_EMPTY = block(TruedarknessModBlocks.CORRUPTED_BUBBLE_EMPTY);
@@ -844,7 +815,6 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> REINFORCED_CRYSTAL = REGISTRY.register("reinforced_crystal", () -> new ReinforcedCrystalItem());
 	public static final RegistryObject<Item> SMALL_SKULL = block(TruedarknessModBlocks.SMALL_SKULL);
 	public static final RegistryObject<Item> CORRUPTED_REACTOR = block(TruedarknessModBlocks.CORRUPTED_REACTOR);
-	public static final RegistryObject<Item> ECHO_HORN = REGISTRY.register("echo_horn", () -> new EchoHornItem());
 	public static final RegistryObject<Item> POISON_FOG = REGISTRY.register("poison_fog", () -> new PoisonFogItem());
 	public static final RegistryObject<Item> SYNTERIY = REGISTRY.register("synteriy", () -> new SynteriyItem());
 	public static final RegistryObject<Item> FANTAL_ORE = REGISTRY.register("fantal_ore", () -> new FantalOreItem());
@@ -856,7 +826,6 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> FANG_HOE = REGISTRY.register("fang_hoe", () -> new FangHoeItem());
 	public static final RegistryObject<Item> FANG_KNIFE = REGISTRY.register("fang_knife", () -> new CorruptedRitualKnifeItem());
 	public static final RegistryObject<Item> CORRUPTED_CATALYST = REGISTRY.register("corrupted_catalyst", () -> new CorruptedCatalystItem());
-	public static final RegistryObject<Item> SHINY_ERIDIUM_STREAM = REGISTRY.register("shiny_eridium_stream", () -> new ShinyEridiumDashItem());
 	public static final RegistryObject<Item> SEEKER_PLANT = block(TruedarknessModBlocks.SEEKER_PLANT);
 	public static final RegistryObject<Item> SEEKER_PLANT_TOP = block(TruedarknessModBlocks.SEEKER_PLANT_TOP);
 	public static final RegistryObject<Item> SEEKER_PLANT_GLOW = block(TruedarknessModBlocks.SEEKER_PLANT_GLOW);
@@ -888,11 +857,6 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> SOUL_REEL = REGISTRY.register("soul_reel", () -> new SoulReelItem());
 	public static final RegistryObject<Item> SOUL_SANDGLASS = REGISTRY.register("soul_sandglass", () -> new SoulSandglassItem());
 	public static final RegistryObject<Item> SOUL_ARROW = REGISTRY.register("soul_arrow", () -> new SoulArrowItem());
-	public static final RegistryObject<Item> SHINY_ERIDIUM_SEER = REGISTRY.register("shiny_eridium_seer", () -> new ShinyEridiumSeerItem());
-	public static final RegistryObject<Item> SHINY_ERIDIUM_UNDYING = REGISTRY.register("shiny_eridium_undying", () -> new ShinyEridiumUndyingItem());
-	public static final RegistryObject<Item> SHINY_ERIDIUM_RUNE = REGISTRY.register("shiny_eridium_rune", () -> new ShinyEridiumRuneItem());
-	public static final RegistryObject<Item> SHINY_ERIDIUM_TREAD = REGISTRY.register("shiny_eridium_tread", () -> new ShinyEridiumTeleportItem());
-	public static final RegistryObject<Item> SHINY_ERIDIUM_ECHO = REGISTRY.register("shiny_eridium_echo", () -> new ShinyEridiumEchoItem());
 	public static final RegistryObject<Item> ICE_TEST_BLOCK = block(TruedarknessModBlocks.ICE_TEST_BLOCK);
 	public static final RegistryObject<Item> JUMP_TEST_BLOCK = block(TruedarknessModBlocks.JUMP_TEST_BLOCK);
 	public static final RegistryObject<Item> SCULK_RING = REGISTRY.register("sculk_ring", () -> new SculkRing1Item());
@@ -997,13 +961,9 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> ENDER_SKYFALL_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("ender_skyfall_upgrade_smithing_template", () -> new EnderSkyfallUpgradeSmithingTemplateItem());
 	public static final RegistryObject<Item> ERIDIUM_BOOK = REGISTRY.register("eridium_book", () -> new EridiumBookItem());
 	public static final RegistryObject<Item> CURSED_ANVIL = block(TruedarknessModBlocks.CURSED_ANVIL);
-	public static final RegistryObject<Item> SHINY_ERIDIUM_SMELT = REGISTRY.register("shiny_eridium_smelt", () -> new ShinyEridiumSmeltItem());
-	public static final RegistryObject<Item> SHINY_ERIDIUM_TOOL = REGISTRY.register("shiny_eridium_tool", () -> new ShinyEridiumToolItem());
-	public static final RegistryObject<Item> SHINY_ERIDIUM_SKULL = REGISTRY.register("shiny_eridium_skull", () -> new ShinyEridiumSkullItem());
 	public static final RegistryObject<Item> CORRUPTED_LIGHT = block(TruedarknessModBlocks.CORRUPTED_LIGHT);
 	public static final RegistryObject<Item> EVOLUTION_ERIDIUM_SHARD = REGISTRY.register("evolution_eridium_shard", () -> new EvolutionEridiumShardItem());
 	public static final RegistryObject<Item> CURSED_BUCKET = REGISTRY.register("cursed_bucket", () -> new CursedBucketItem());
-	public static final RegistryObject<Item> SHINY_ERIDIUM_LIGHT = REGISTRY.register("shiny_eridium_light", () -> new ShinyEridiumLightItem());
 	public static final RegistryObject<Item> PURULENT_SPRUCE_LOG = block(TruedarknessModBlocks.PURULENT_SPRUCE_LOG);
 	public static final RegistryObject<Item> PURULENT_OIL = REGISTRY.register("purulent_oil", () -> new PurulentOilItem());
 	public static final RegistryObject<Item> SLIME_OIL = REGISTRY.register("slime_oil", () -> new SlimeOilItem());
@@ -1035,30 +995,6 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> SKYFALL_ARMOR_BOOTS = REGISTRY.register("skyfall_armor_boots", () -> new SkyfallArmorItem.Boots());
 	public static final RegistryObject<Item> SKYFALL_ORE = block(TruedarknessModBlocks.SKYFALL_ORE);
 	public static final RegistryObject<Item> MOSSY_CORRUPTED_BRICKS = block(TruedarknessModBlocks.MOSSY_CORRUPTED_BRICKS);
-	public static final RegistryObject<Item> SPELL_DASH = REGISTRY.register("spell_dash", () -> new SideSpellDashItem());
-	public static final RegistryObject<Item> SPELL_MEET = REGISTRY.register("spell_meet", () -> new SideSpellMeetItem());
-	public static final RegistryObject<Item> SPELL_BOMB = REGISTRY.register("spell_bomb", () -> new SideSpellBombItem());
-	public static final RegistryObject<Item> SPELL_TELEPORT = REGISTRY.register("spell_teleport", () -> new SideSpellTeleportItem());
-	public static final RegistryObject<Item> SPELL_POTION = REGISTRY.register("spell_potion", () -> new SideSpellPotionItem());
-	public static final RegistryObject<Item> SPELL_SHOT = REGISTRY.register("spell_shot", () -> new SideSpellShotItem());
-	public static final RegistryObject<Item> SPELL_LINE = REGISTRY.register("spell_line", () -> new SideSpellLineItem());
-	public static final RegistryObject<Item> SIDE_NATURE = REGISTRY.register("side_nature", () -> new SpellSideNatureItem());
-	public static final RegistryObject<Item> SPELL_BLINK = REGISTRY.register("spell_blink", () -> new UpSpellBlinkItem());
-	public static final RegistryObject<Item> SPELL_HASTE = REGISTRY.register("spell_haste", () -> new UpSpellHasteItem());
-	public static final RegistryObject<Item> SPELL_PETS = REGISTRY.register("spell_pets", () -> new UpSpellPetsItem());
-	public static final RegistryObject<Item> SPELL_DISO = REGISTRY.register("spell_diso", () -> new UpSpellDisoItem());
-	public static final RegistryObject<Item> SPELL_HUNGER = REGISTRY.register("spell_hunger", () -> new UpSpellHungerItem());
-	public static final RegistryObject<Item> SPELL_AFRAID = REGISTRY.register("spell_afraid", () -> new UpSpellAfraidItem());
-	public static final RegistryObject<Item> SPELL_GUST = REGISTRY.register("spell_gust", () -> new UpSpellGustItem());
-	public static final RegistryObject<Item> SPELL_WEATHER = REGISTRY.register("spell_weather", () -> new UpSpellWeatherItem());
-	public static final RegistryObject<Item> SPELL_DIVE = REGISTRY.register("spell_dive", () -> new DownSpellDiveItem());
-	public static final RegistryObject<Item> SPELL_FEET = REGISTRY.register("spell_feet", () -> new DownSpellFeetItem());
-	public static final RegistryObject<Item> SPELL_HIDE = REGISTRY.register("spell_hide", () -> new DownSpellHideItem());
-	public static final RegistryObject<Item> SPELL_FANG = REGISTRY.register("spell_fang", () -> new DownSpellFangItem());
-	public static final RegistryObject<Item> SPELL_AQUA = REGISTRY.register("spell_aqua", () -> new DownSpellAquaItem());
-	public static final RegistryObject<Item> SPELL_REGEN = REGISTRY.register("spell_regen", () -> new SownSpellRegenItem());
-	public static final RegistryObject<Item> SPELL_EYE = REGISTRY.register("spell_eye", () -> new DownSpellEyeItem());
-	public static final RegistryObject<Item> SPELL_SMELT = REGISTRY.register("spell_smelt", () -> new DownSpellSmeltItem());
 	public static final RegistryObject<Item> MUSIC_DISC_LAPIS = REGISTRY.register("music_disc_lapis", () -> new MusicDiscLapisItem());
 	public static final RegistryObject<Item> MUSIC_DISC_TURQUOISE_FLOWER = REGISTRY.register("music_disc_turquoise_flower", () -> new MusicDiscTurquoiseFlowerItem());
 	public static final RegistryObject<Item> MUSIC_DISC_RAIN = REGISTRY.register("music_disc_rain", () -> new MusicDiscRainItem());
@@ -1071,6 +1007,17 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> BLOOMING_CRYING_LAEVES = block(TruedarknessModBlocks.BLOOMING_CRYING_LAEVES);
 	public static final RegistryObject<Item> POISONER = block(TruedarknessModBlocks.POISONER);
 	public static final RegistryObject<Item> MEASKY_TREE = block(TruedarknessModBlocks.MEASKY_TREE);
+	public static final RegistryObject<Item> SHINY_ERIDIUM_STREAM = REGISTRY.register("shiny_eridium_stream", () -> new ShinyEridiumStreamItem());
+	public static final RegistryObject<Item> SHINY_ERIDIUM_SMELT = REGISTRY.register("shiny_eridium_smelt", () -> new ShinyEridiumSmeltItem());
+	public static final RegistryObject<Item> SHINY_ERIDIUM_TREAD = REGISTRY.register("shiny_eridium_tread", () -> new ShinyEridiumTreadItem());
+	public static final RegistryObject<Item> SHINY_ERIDIUM_SEER = REGISTRY.register("shiny_eridium_seer", () -> new ShinyEridiumSeerItem());
+	public static final RegistryObject<Item> SHINY_ERIDIUM_SHOT = REGISTRY.register("shiny_eridium_shot", () -> new ShinyEridiumShotItem());
+	public static final RegistryObject<Item> SHINY_ERIDIUM_LIGHTNING = REGISTRY.register("shiny_eridium_lightning", () -> new ShinyEridiumLightningItem());
+	public static final RegistryObject<Item> SHINY_ERIDIUM_RINGING = REGISTRY.register("shiny_eridium_ringing", () -> new ShinyEridiumRingingItem());
+	public static final RegistryObject<Item> SHINY_ERIDIUM_FANGS = REGISTRY.register("shiny_eridium_fangs", () -> new ShinyEridiumFangsItem());
+	public static final RegistryObject<Item> SHINY_ERIDIUM_UNDEAD = REGISTRY.register("shiny_eridium_undead", () -> new ShinyEridiumUndeadItem());
+	public static final RegistryObject<Item> CURSED_LECTERN = block(TruedarknessModBlocks.CURSED_LECTERN);
+	public static final RegistryObject<Item> ANCIENT_REGULATION = REGISTRY.register("ancient_regulation", () -> new AncientRegulationItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -1098,80 +1045,6 @@ public class TruedarknessModItems {
 			ItemProperties.register(DARK_MAGNIFIER.get(), new ResourceLocation("truedarkness:dark_magnifier_can"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) MagnifierZnachieniieSvoistvaProcedure.execute(itemStackToRender));
 			ItemProperties.register(EVOLUTION_ERIDIUM_SHARD.get(), new ResourceLocation("truedarkness:evolution_eridium_shard_type"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) BlinkEridium2ZnachieniieSvoistvaProcedure.execute(entity));
-			ItemProperties.register(SPELL_DASH.get(), new ResourceLocation("truedarkness:spell_dash_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_DASH.get(), new ResourceLocation("truedarkness:spell_dash_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_MEET.get(), new ResourceLocation("truedarkness:spell_meet_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_MEET.get(), new ResourceLocation("truedarkness:spell_meet_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_BOMB.get(), new ResourceLocation("truedarkness:spell_bomb_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_BOMB.get(), new ResourceLocation("truedarkness:spell_bomb_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_TELEPORT.get(), new ResourceLocation("truedarkness:spell_teleport_corrupted"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_TELEPORT.get(), new ResourceLocation("truedarkness:spell_teleport_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_POTION.get(), new ResourceLocation("truedarkness:spell_potion_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_POTION.get(), new ResourceLocation("truedarkness:spell_potion_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_SHOT.get(), new ResourceLocation("truedarkness:spell_shot_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_SHOT.get(), new ResourceLocation("truedarkness:spell_shot_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_LINE.get(), new ResourceLocation("truedarkness:spell_line_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_LINE.get(), new ResourceLocation("truedarkness:spell_line_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SIDE_NATURE.get(), new ResourceLocation("truedarkness:side_nature_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SIDE_NATURE.get(), new ResourceLocation("truedarkness:side_nature_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_BLINK.get(), new ResourceLocation("truedarkness:spell_blink_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_BLINK.get(), new ResourceLocation("truedarkness:spell_blink_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_HASTE.get(), new ResourceLocation("truedarkness:spell_haste_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_HASTE.get(), new ResourceLocation("truedarkness:spell_haste_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_PETS.get(), new ResourceLocation("truedarkness:spell_pets_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_PETS.get(), new ResourceLocation("truedarkness:spell_pets_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_DISO.get(), new ResourceLocation("truedarkness:spell_diso_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_DISO.get(), new ResourceLocation("truedarkness:spell_diso_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_HUNGER.get(), new ResourceLocation("truedarkness:spell_hunger_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_HUNGER.get(), new ResourceLocation("truedarkness:spell_hunger_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_AFRAID.get(), new ResourceLocation("truedarkness:spell_afraid_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_AFRAID.get(), new ResourceLocation("truedarkness:spell_afraid_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_GUST.get(), new ResourceLocation("truedarkness:spell_gust_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_GUST.get(), new ResourceLocation("truedarkness:spell_gust_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_WEATHER.get(), new ResourceLocation("truedarkness:spell_weather_corrupted"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_WEATHER.get(), new ResourceLocation("truedarkness:spell_weather_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_DIVE.get(), new ResourceLocation("truedarkness:spell_dive_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_DIVE.get(), new ResourceLocation("truedarkness:spell_dive_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_FEET.get(), new ResourceLocation("truedarkness:spell_feet_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_FEET.get(), new ResourceLocation("truedarkness:spell_feet_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_HIDE.get(), new ResourceLocation("truedarkness:spell_hide_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_HIDE.get(), new ResourceLocation("truedarkness:spell_hide_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_FANG.get(), new ResourceLocation("truedarkness:spell_fang_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_FANG.get(), new ResourceLocation("truedarkness:spell_fang_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_AQUA.get(), new ResourceLocation("truedarkness:spell_aqua_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_AQUA.get(), new ResourceLocation("truedarkness:spell_aqua_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_REGEN.get(), new ResourceLocation("truedarkness:spell_regen_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_REGEN.get(), new ResourceLocation("truedarkness:spell_regen_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_EYE.get(), new ResourceLocation("truedarkness:spell_eye_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_EYE.get(), new ResourceLocation("truedarkness:spell_eye_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
-			ItemProperties.register(SPELL_SMELT.get(), new ResourceLocation("truedarkness:spell_smelt_corrupted"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SideSpell0ZnachieniieSvoistvaProcedure.execute(itemStackToRender));
-			ItemProperties.register(SPELL_SMELT.get(), new ResourceLocation("truedarkness:spell_smelt_eridium_stage"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
 		});
 	}
 }

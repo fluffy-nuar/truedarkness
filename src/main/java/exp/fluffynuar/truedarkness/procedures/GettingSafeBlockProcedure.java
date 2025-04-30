@@ -26,28 +26,28 @@ public class GettingSafeBlockProcedure {
 			{
 				double _setval = x;
 				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Yteria_X = _setval;
+					capability.YteriaSpawnX = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
 			{
 				double _setval = y;
 				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Yteria_Y = _setval;
+					capability.YteriaSpawnY = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
 			{
 				double _setval = z;
 				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Yteria_Z = _setval;
+					capability.YteriaSpawnZ = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
 			{
 				boolean _setval = true;
 				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Yteria_find_block = _setval;
+					capability.YteriaSafeBlock = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

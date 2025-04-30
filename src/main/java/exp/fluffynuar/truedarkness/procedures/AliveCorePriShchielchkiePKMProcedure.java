@@ -44,7 +44,7 @@ public class AliveCorePriShchielchkiePKMProcedure {
 			{
 				double _setval = 0;
 				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Corrupt_stage = _setval;
+					capability.CorruptionStage = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -149,7 +149,7 @@ public class AliveCorePriShchielchkiePKMProcedure {
 			{
 				double _setval = 0;
 				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Corrupt_stage = _setval;
+					capability.CorruptionStage = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

@@ -1,11 +1,8 @@
 {
   "replace": false,
   "values": [
-    "truedarkness:shiny_eridium_tool",
-    "truedarkness:shiny_eridium_skull",
     "truedarkness:shiny_eridium_smelt",
     "truedarkness:cursed_tale_alive",
-    "truedarkness:shiny_eridium_rune",
     "truedarkness:cursed_tale_glowing",
     "truedarkness:evolution_eridium_shard",
     "truedarkness:corrupted_hand_fangs"

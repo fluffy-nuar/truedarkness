@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "truedarkness:corrupted_assassin",
+    "truedarkness:corrupted_human",
+    "truedarkness:corrupted_knight",
+    "truedarkness:corrupted_mage",
+    "truedarkness:corrupted_necromancer"
+  ]
+}

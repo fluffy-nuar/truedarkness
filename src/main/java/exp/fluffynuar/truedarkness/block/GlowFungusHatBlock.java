@@ -12,6 +12,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -19,6 +20,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
+import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
@@ -28,20 +30,30 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 import exp.fluffynuar.truedarkness.procedures.SporeVine2SpontannoNaStoronieKliientaProcedure;
 import exp.fluffynuar.truedarkness.procedures.NeaskyVinesUsloviieRazmieshchieniiaBlokaProcedure;
+import exp.fluffynuar.truedarkness.procedures.GlowFungusHatUsloviieUspieshnoghoPrimienieniiaKostnoiMukiProcedure;
+import exp.fluffynuar.truedarkness.procedures.GlowFungusHatUsloviieRazrieshieniiaIspolzovaniiaKostnoiMukiProcedure;
 import exp.fluffynuar.truedarkness.procedures.GlowFungusHatPriIzmienieniiSosiednieghoBlokaProcedure;
+import exp.fluffynuar.truedarkness.procedures.GlowFungusHatPriIspolzovaniiKostnoiMukiProcedure;
 
-public class GlowFungusHatBlock extends Block implements SimpleWaterloggedBlock {
+public class GlowFungusHatBlock extends Block implements SimpleWaterloggedBlock, BonemealableBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public GlowFungusHatBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.HANGING_ROOTS).strength(1f, 10f).lightLevel(s -> 3).noCollission().noOcclusion().hasPostProcess((bs, br, bp) -> true)
-				.emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.HANGING_ROOTS).strength(1f, 10f).lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(BLOCKSTATE) == 1)
+					return 6;
+				return 3;
+			}
+		}.getLightLevel())).noCollission().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
@@ -62,13 +74,16 @@ public class GlowFungusHatBlock extends Block implements SimpleWaterloggedBlock 
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		if (state.getValue(BLOCKSTATE) == 1) {
+			return box(1, 3, 1, 15, 16, 15);
+		}
 		return box(1, 3, 1, 15, 16, 15);
 	}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(WATERLOGGED);
+		builder.add(WATERLOGGED, BLOCKSTATE);
 	}
 
 	@Override
@@ -115,6 +130,24 @@ public class GlowFungusHatBlock extends Block implements SimpleWaterloggedBlock 
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		SporeVine2SpontannoNaStoronieKliientaProcedure.execute(world, x, y, z);
+		SporeVine2SpontannoNaStoronieKliientaProcedure.execute(world, x, y, z, blockstate);
+	}
+
+	@Override
+	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate, boolean clientSide) {
+		if (worldIn instanceof LevelAccessor world) {
+			return GlowFungusHatUsloviieRazrieshieniiaIspolzovaniiaKostnoiMukiProcedure.execute(blockstate);
+		}
+		return false;
+	}
+
+	@Override
+	public boolean isBonemealSuccess(Level world, RandomSource random, BlockPos pos, BlockState blockstate) {
+		return GlowFungusHatUsloviieUspieshnoghoPrimienieniiaKostnoiMukiProcedure.execute();
+	}
+
+	@Override
+	public void performBonemeal(ServerLevel world, RandomSource random, BlockPos pos, BlockState blockstate) {
+		GlowFungusHatPriIspolzovaniiKostnoiMukiProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

@@ -56,45 +56,45 @@ public class YteriaIesliIghrokVkhoditVIzmierieniieProcedure {
 				{
 					boolean _setval = true;
 					entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.Yteria_find_block = _setval;
+						capability.YteriaSafeBlock = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 				{
 					double _setval = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("Tablet_X");
 					entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.Yteria_X = _setval;
+						capability.YteriaSpawnX = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 				{
 					double _setval = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("Tablet_Y");
 					entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.Yteria_Y = _setval;
+						capability.YteriaSpawnY = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 				{
 					double _setval = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("Tablet_Z");
 					entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.Yteria_Z = _setval;
+						capability.YteriaSpawnZ = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 			} else {
-				if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Yteria_find_block == true) {
+				if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).YteriaSafeBlock == true) {
 					{
 						Entity _ent = entity;
-						_ent.teleportTo(((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Yteria_X),
-								((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Yteria_Y),
-								((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Yteria_Z));
+						_ent.teleportTo(((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).YteriaSpawnX),
+								((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).YteriaSpawnY),
+								((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).YteriaSpawnZ));
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Yteria_X),
-									((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Yteria_Y),
-									((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Yteria_Z), _ent.getYRot(), _ent.getXRot());
+							_serverPlayer.connection.teleport(((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).YteriaSpawnX),
+									((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).YteriaSpawnY),
+									((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).YteriaSpawnZ), _ent.getYRot(), _ent.getXRot());
 					}
 				} else {
-					while (!(entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Yteria_find_block) {
+					while (!(entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).YteriaSafeBlock) {
 						GettingSafeBlockProcedure.execute(world, Mth.nextInt(RandomSource.create(), -100, 100) + entity.getX(), Mth.nextInt(RandomSource.create(), 10, 120), Mth.nextInt(RandomSource.create(), -100, 100) + entity.getZ(), entity);
 					}
 				}

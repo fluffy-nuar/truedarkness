@@ -7,21 +7,16 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -36,14 +31,11 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import javax.annotation.Nullable;
 
-import exp.fluffynuar.truedarkness.network.TruedarknessModVariables;
 import exp.fluffynuar.truedarkness.init.TruedarknessModMobEffects;
 import exp.fluffynuar.truedarkness.init.TruedarknessModItems;
 import exp.fluffynuar.truedarkness.entity.MinerEntity;
@@ -291,62 +283,6 @@ public class RMBProcProcedure {
 						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.DEAL_COOLDOWN.get(), 20, 0, false, false));
 					if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.DEAL_COOLDOWN.get(), 20, 0, false, false));
-				}
-			}
-		}
-		if (((sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Faction).equals("corrupt") && sourceentity instanceof LivingEntity _livEnt170
-				&& _livEnt170.hasEffect(TruedarknessModMobEffects.HUNTING.get()) && !(sourceentity instanceof LivingEntity _livEnt171 && _livEnt171.hasEffect(TruedarknessModMobEffects.BLOODSHED.get()))) {
-			if (((sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Passive_skill).equals("steel")) {
-				if (sourceentity.isVehicle()) {
-					if (!entity.isVehicle() && !((sourceentity.getFirstPassenger()) == entity)) {
-						(sourceentity.getFirstPassenger()).startRiding(entity);
-					}
-				} else {
-					entity.startRiding(sourceentity);
-				}
-			} else {
-				entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
-				if (!((sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Passive_skill).equals("moon")
-						|| !((sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Passive_skill).equals("fear")) {
-					if (((sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Passive_skill).equals("wither")) {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 140, 1, false, false));
-						if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.BLOODSHED.get(),
-									(int) (10 * (1 + (sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage)), 0, false, false));
-					} else {
-						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK), sourceentity),
-								(float) (2 + (sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage));
-						if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.BLOODSHED.get(),
-									(int) (10 * (1 + (sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage)), 0, false, false));
-						if (!(entity instanceof LivingEntity _livEnt185 && _livEnt185.getMobType() == MobType.UNDEAD) || !(entity instanceof LivingEntity _livEnt186 && _livEnt186.getMobType() == MobType.ARTHROPOD)) {
-							if ((sourceentity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) < 20) {
-								if (sourceentity instanceof Player _player)
-									_player.getFoodData().setFoodLevel((int) ((sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage * 0.75
-											+ (sourceentity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + 2));
-							} else if ((sourceentity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) < 20) {
-								if (sourceentity instanceof Player _player)
-									_player.getFoodData().setSaturation((float) ((sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage * 0.1
-											+ (sourceentity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) + 0.5));
-							}
-						}
-						if (((sourceentity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Passive_skill).equals("bone")) {
-							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 80, 6, false, false));
-							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 80, 2, false, false));
-						}
-					}
-					if (sourceentity instanceof LivingEntity _entity)
-						_entity.swing(InteractionHand.MAIN_HAND, true);
-					{
-						Entity _ent = entity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "particle truedarkness:corrupted_spell ~ ~0.5 ~ 0.1 0.1 0.1 0.01 15 normal");
-						}
-					}
 				}
 			}
 		}

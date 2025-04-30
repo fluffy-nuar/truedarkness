@@ -94,12 +94,6 @@
     "onRightClickedInAir": {
       "name": "CursedLeatherPriShchielchkiePKM"
     },
-    "onEquip": {
-      "name": "CursedLeatherBaubleIsEquipped"
-    },
-    "onUnequip": {
-      "name": "CursedLeatherBaubleIsUnequipped"
-    },
     "isFood": false,
     "friendlyPigs": false,
     "enderMask": false,

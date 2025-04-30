@@ -45,6 +45,9 @@
     "onRightClickedInAir": {
       "name": "EridiumBookPriShchielchkiePKM"
     },
+    "curioTick": {
+      "name": "EridiumBookVToVriemiaKakBiezdielushkaEkipirovanaKazhdyiTik"
+    },
     "onEquip": {
       "name": "EridiumBookBaubleIsEquipped"
     },

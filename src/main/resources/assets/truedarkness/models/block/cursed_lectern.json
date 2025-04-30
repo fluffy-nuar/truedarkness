@@ -1,0 +1,9 @@
+{
+  "parent": "truedarkness:custom/cursed_lectern",
+  "textures": {
+    "all": "truedarkness:block/cursed_bookshelf",
+    "particle": "truedarkness:block/cursed_workbench_side",
+    "0": "truedarkness:block/cursed_lectern"
+  },
+  "render_type": "cutout"
+}

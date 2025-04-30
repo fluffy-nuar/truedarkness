@@ -12,6 +12,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
+import exp.fluffynuar.truedarkness.procedures.EridiumBookVToVriemiaKakBiezdielushkaEkipirovanaKazhdyiTikProcedure;
 import exp.fluffynuar.truedarkness.procedures.EridiumBookPriShchielchkiePKMProcedure;
 import exp.fluffynuar.truedarkness.procedures.EridiumBookBaubleIsUnequippedProcedure;
 import exp.fluffynuar.truedarkness.procedures.EridiumBookBaubleIsEquippedProcedure;
@@ -31,6 +32,11 @@ public class EridiumBookItem extends Item implements ICurioItem {
 
 		EridiumBookPriShchielchkiePKMProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
+	}
+
+	@Override
+	public void curioTick(SlotContext slotContext, ItemStack stack) {
+		EridiumBookVToVriemiaKakBiezdielushkaEkipirovanaKazhdyiTikProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
 	}
 
 	@Override

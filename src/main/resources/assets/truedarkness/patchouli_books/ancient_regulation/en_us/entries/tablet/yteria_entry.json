@@ -1,0 +1,11 @@
+{
+    "name": "Yteria",
+    "icon": "truedarkness:tablet",
+    "category": "truedarkness:tablet_category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": ""
+        }
+    ]
+}

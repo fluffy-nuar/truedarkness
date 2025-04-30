@@ -97,11 +97,11 @@
     "canControlStrafe": false,
     "immuneToFire": false,
     "immuneToArrows": false,
-    "immuneToFallDamage": false,
-    "immuneToCactus": false,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
     "immuneToDrowning": false,
     "immuneToLightning": false,
-    "immuneToPotions": false,
+    "immuneToPotions": true,
     "immuneToPlayer": false,
     "immuneToExplosion": false,
     "immuneToTrident": false,
@@ -136,7 +136,7 @@
     "onRightClickedOn": {
       "name": "GlowBugPriShchielchkiePKMPoSushchnosti"
     },
-    "onPlayerCollidesWith": {
+    "onMobTickUpdate": {
       "name": "GlowBugPriStolknovieniiIghrokaSSushchnostiu"
     },
     "hasAI": true,
@@ -146,7 +146,7 @@
     "tameable": true,
     "breedTriggerItems": [
       {
-        "value": "CUSTOM:CvetaliyGrain"
+        "value": "Blocks.BEDROCK"
       }
     ],
     "ranged": false,

@@ -57,7 +57,7 @@
       "value": ""
     },
     "musicDiscDescription": "",
-    "musicDiscLengthInTicks": 0,
+    "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0
   }
 }

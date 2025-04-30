@@ -8,22 +8,12 @@ public class ShowHideScrollPriNazhatiiKlavishiProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Scroll_logic) {
-			{
-				boolean _setval = false;
-				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Scroll_logic = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		} else {
-			{
-				boolean _setval = true;
-				entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Scroll_logic = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
+		{
+			boolean _setval = !(entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).ScrollToggle;
+			entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.ScrollToggle = _setval;
+				capability.syncPlayerVariables(entity);
+			});
 		}
 	}
 }

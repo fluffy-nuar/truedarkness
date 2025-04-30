@@ -19,6 +19,7 @@ import exp.fluffynuar.truedarkness.client.gui.CursedFurnaceGUIScreen;
 import exp.fluffynuar.truedarkness.client.gui.CursedCauldronNewGUIScreen;
 import exp.fluffynuar.truedarkness.client.gui.CursedCauldronGUIScreen;
 import exp.fluffynuar.truedarkness.client.gui.CursedAnvilGUIScreen;
+import exp.fluffynuar.truedarkness.client.gui.BookAltarGuiScreen;
 import exp.fluffynuar.truedarkness.client.gui.BlacksmiteForgeGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -35,6 +36,7 @@ public class TruedarknessModScreens {
 			MenuScreens.register(TruedarknessModMenus.CURSED_ANVIL_GUI.get(), CursedAnvilGUIScreen::new);
 			MenuScreens.register(TruedarknessModMenus.CURSED_SCALES_GUI.get(), CursedScalesGUIScreen::new);
 			MenuScreens.register(TruedarknessModMenus.CURSED_CAULDRON_NEW_GUI.get(), CursedCauldronNewGUIScreen::new);
+			MenuScreens.register(TruedarknessModMenus.BOOK_ALTAR_GUI.get(), BookAltarGuiScreen::new);
 		});
 	}
 }

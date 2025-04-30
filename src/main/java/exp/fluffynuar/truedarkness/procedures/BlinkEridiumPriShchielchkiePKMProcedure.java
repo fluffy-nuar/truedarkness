@@ -23,23 +23,23 @@ public class BlinkEridiumPriShchielchkiePKMProcedure {
 		if (entity == null)
 			return;
 		if (((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Faction).equals("corrupt")) {
-			if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage < 5) {
+			if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).CorruptionStage < 5) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TruedarknessModItems.BLINK_ERIDIUM_2.get()) {
 					if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Preys
 							+ (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Active_prey_count >= 140
-									* ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage + 1) * 3) {
+									* ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).CorruptionStage + 1) * 3) {
 						{
 							double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Active_prey_count
-									- 140 * ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage + 1) * 3;
+									- 140 * ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).CorruptionStage + 1) * 3;
 							entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.Active_prey_count = _setval;
 								capability.syncPlayerVariables(entity);
 							});
 						}
 						{
-							double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Corrupt_stage + 1;
+							double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).CorruptionStage + 1;
 							entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.Corrupt_stage = _setval;
+								capability.CorruptionStage = _setval;
 								capability.syncPlayerVariables(entity);
 							});
 						}
@@ -52,10 +52,10 @@ public class BlinkEridiumPriShchielchkiePKMProcedure {
 									_player.getInventory().setChanged();
 							}
 							if (entity instanceof Player _player)
-								_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
+								_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
 						}
 						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
+							_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.STOP_RESTORING.get(), 60, 0, false, false));
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

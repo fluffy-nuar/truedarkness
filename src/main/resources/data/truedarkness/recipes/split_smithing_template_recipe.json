@@ -14,11 +14,11 @@
       "item": "truedarkness:swamp_stone"
     },
     "c": {
-      "item": "truedarkness:split_smithing_template"
+      "item": "truedarkness:split_armor_trim_smithing_template"
     }
   },
   "result": {
-    "item": "truedarkness:split_smithing_template",
+    "item": "truedarkness:split_armor_trim_smithing_template",
     "count": 2
   }
 }

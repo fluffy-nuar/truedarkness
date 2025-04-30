@@ -1,21 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "truedarkness:spell_dash",
-    "truedarkness:spell_meet",
-    "truedarkness:spell_bomb",
-    "truedarkness:spell_teleport",
-    "truedarkness:spell_potion",
-    "truedarkness:spell_shot",
-    "truedarkness:spell_line",
-    "truedarkness:side_nature",
-    "truedarkness:spell_blink",
-    "truedarkness:spell_haste",
-    "truedarkness:spell_pets",
-    "truedarkness:spell_diso",
-    "truedarkness:spell_hunger",
-    "truedarkness:spell_afraid",
-    "truedarkness:spell_gust",
-    "truedarkness:spell_weather"
-  ]
+  "values": []
 }

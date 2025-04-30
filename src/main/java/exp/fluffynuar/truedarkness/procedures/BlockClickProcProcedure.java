@@ -17,7 +17,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.entity.player.Player;
@@ -172,59 +171,6 @@ public class BlockClickProcProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-			}
-		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == TruedarknessModBlocks.LIGHT_MUSHROOMS_ACTIVE.get()
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GLASS_BOTTLE) {
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bottle.fill_dragonbreath")), SoundSource.NEUTRAL, (float) 0.8, (float) 0.8);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bottle.fill_dragonbreath")), SoundSource.NEUTRAL, (float) 0.8, (float) 0.8, false);
-				}
-			}
-			{
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = Blocks.AIR.defaultBlockState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-					if (_property != null && _bs.getValue(_property) != null)
-						try {
-							_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-						} catch (Exception e) {
-						}
-				}
-				BlockEntity _be = world.getBlockEntity(_bp);
-				CompoundTag _bnbt = null;
-				if (_be != null) {
-					_bnbt = _be.saveWithFullMetadata();
-					_be.setRemoved();
-				}
-				world.setBlock(_bp, _bs, 3);
-				if (_bnbt != null) {
-					_be = world.getBlockEntity(_bp);
-					if (_be != null) {
-						try {
-							_be.load(_bnbt);
-						} catch (Exception ignored) {
-						}
-					}
-				}
-			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.swing(InteractionHand.MAIN_HAND, true);
-			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
-				_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-				if (_entity instanceof Player _player)
-					_player.getInventory().setChanged();
-			}
-			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(TruedarknessModItems.POISON_FOG.get()));
-				entityToSpawn.setPickUpDelay(0);
-				_level.addFreshEntity(entityToSpawn);
 			}
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == TruedarknessModBlocks.LIGHT_OF_SOUL.get()) {
@@ -526,7 +472,7 @@ public class BlockClickProcProcedure {
 			}
 		}
 		if (world.isEmptyBlock(BlockPos.containing(x, y + 1, z)) && world.getBlockState(BlockPos.containing(x, y, z)).canOcclude()) {
-			if (entity instanceof LivingEntity _livEnt103 && _livEnt103.hasEffect(TruedarknessModMobEffects.RUNE_DRAWING.get())) {
+			if (entity instanceof LivingEntity _livEnt88 && _livEnt88.hasEffect(TruedarknessModMobEffects.RUNE_DRAWING.get())) {
 				if (Mth.nextInt(RandomSource.create(), 1, 100) >= 33) {
 					{
 						BlockPos _bp = BlockPos.containing(x, y + 1, z);
