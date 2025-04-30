@@ -1,0 +1,4 @@
+files:
+  - source: src/main/resources/assets/truedarkness/lang/en_us.json
+    translation: truedarkness/src/main/resources/assets/truedarkness/lang/ru_ru.json
+    custom_segmentation: src/main/resources/assets/truedarkness/lang/ru_ru.json
