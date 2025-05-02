@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "blockstate=0": {
       "model": "truedarkness:block/cursed_lectern"
+    },
+    "blockstate=1": {
+      "model": "truedarkness:block/cursed_lectern_blockstate_blockstate_0"
     }
   }
 }

@@ -15,6 +15,21 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
-    "modifiers": []
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "KNOCKBACK_RESISTANCE"
+        },
+        "amount": -0.03,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "ENTITY_REACH"
+        },
+        "amount": -0.03,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ]
   }
 }

@@ -46,7 +46,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:manuals:addon_1_category"
+            "value": "TAG:truedarkness:manual_eridium_0"
           },
           "disablePlacement": {
             "fixedValue": false,
@@ -70,7 +70,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:manuals:addon_2_category"
+            "value": "TAG:truedarkness:manual_eridium_1"
           },
           "disablePlacement": {
             "fixedValue": false,
@@ -94,7 +94,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:manuals:addon_3_category"
+            "value": "TAG:truedarkness:manual_eridium_2"
           },
           "disablePlacement": {
             "fixedValue": false,

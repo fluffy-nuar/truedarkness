@@ -24,6 +24,8 @@ public class ShinyEridiumGetTypeProcedure {
 			return "fangs";
 		} else if (itemstack.getItem() == TruedarknessModItems.SHINY_ERIDIUM_UNDEAD.get()) {
 			return "undead";
+		} else if (itemstack.getItem() == TruedarknessModItems.SHINY_ERIDIUM_GREED.get()) {
+			return "greed";
 		}
 		return "";
 	}

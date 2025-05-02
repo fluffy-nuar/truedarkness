@@ -57,4 +57,3 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 apply from: 'mcreator.gradle'
-

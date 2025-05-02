@@ -2,9 +2,15 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "cursed_lectern"
+        "0": "cursed_stand"
       },
       "name": "default"
+    },
+    "with_book": {
+      "map": {
+        "0": "cursed_stand_book"
+      },
+      "name": "with_book"
     }
   }
 }

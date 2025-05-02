@@ -70,6 +70,8 @@ public class TruedarknessModCuriosProperties {
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
 			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_UNDEAD.get(), new ResourceLocation("truedarkness:shiny_eridium_undead_active_stage"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
+			ItemProperties.register(TruedarknessModItems.SHINY_ERIDIUM_GREED.get(), new ResourceLocation("truedarkness:shiny_eridium_greed_active_stage"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) ShinyEridiumDashZnachieniieSvoistvaProcedure.execute(entity, itemStackToRender));
 		});
 	}
 }

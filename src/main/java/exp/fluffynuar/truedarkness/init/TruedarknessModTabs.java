@@ -22,7 +22,7 @@ import exp.fluffynuar.truedarkness.TruedarknessMod;
 public class TruedarknessModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TruedarknessMod.MODID);
 	public static final RegistryObject<CreativeModeTab> TRUE_DARKNESS = REGISTRY.register("true_darkness",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.truedarkness.true_darkness")).icon(() -> new ItemStack(TruedarknessModItems.WASTELAND_WHEAT.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.truedarkness.true_darkness")).icon(() -> new ItemStack(TruedarknessModItems.TABLET_OCEAN.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TruedarknessModItems.TABLET_OCEAN.get());
 				tabData.accept(TruedarknessModItems.TABLET_CAVE.get());
 				tabData.accept(TruedarknessModItems.TABLET.get());
@@ -271,6 +271,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_RINGING.get());
 				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_FANGS.get());
 				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_STREAM.get());
+				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_GREED.get());
 				tabData.accept(TruedarknessModItems.SHINY_ERIDIUM_UNDEAD.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_LAPIS.get());
 				tabData.accept(TruedarknessModItems.MUSIC_DISC_FOREST_NIGHT.get());
@@ -302,7 +303,7 @@ public class TruedarknessModTabs {
 				tabData.accept(TruedarknessModItems.FLOW_SPAWN_EGG.get());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> TRUE_DARKNESS_BUILDING_BLOCKS = REGISTRY.register("true_darkness_building_blocks",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.truedarkness.true_darkness_building_blocks")).icon(() -> new ItemStack(TruedarknessModBlocks.SWAMP_BLACK_SOIL.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.truedarkness.true_darkness_building_blocks")).icon(() -> new ItemStack(TruedarknessModBlocks.BLACKSMITE_FORGE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TruedarknessModBlocks.CYAN.get().asItem());
 				tabData.accept(TruedarknessModBlocks.CYAN_STEM.get().asItem());
 				tabData.accept(TruedarknessModBlocks.STRIPPED_CYAN_WOOD.get().asItem());

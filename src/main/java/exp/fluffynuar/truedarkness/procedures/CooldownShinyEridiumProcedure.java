@@ -1,29 +1,29 @@
 package exp.fluffynuar.truedarkness.procedures;
 
 public class CooldownShinyEridiumProcedure {
-	public static double execute(double stage, String eridium) {
-		if (eridium == null)
+	public static double execute(String perk) {
+		if (perk == null)
 			return 0;
-		if ((eridium).equals("dash")) {
-			return 20 + 20 * (6 - stage);
-		} else if ((eridium).equals("seer")) {
-			return 180 + 40 * (6 - stage);
-		} else if ((eridium).equals("undying")) {
-			return 260 + 60 * (6 - stage);
-		} else if ((eridium).equals("rune")) {
-			return 100 + 30 * (6 - stage);
-		} else if ((eridium).equals("teleport")) {
-			return 120 + 20 * (6 - stage);
-		} else if ((eridium).equals("echo")) {
-			return 260 + 60 * (6 - stage);
-		} else if ((eridium).equals("smelt")) {
-			return 240 + 60 * (6 - stage);
-		} else if ((eridium).equals("tool")) {
-			return 350 + 60 * (6 - stage);
-		} else if ((eridium).equals("skull")) {
-			return 80 + 80 * (6 - stage);
-		} else if ((eridium).equals("light")) {
-			return 20 + 20 * (6 - stage);
+		if ((perk).equals("stream")) {
+			return 2;
+		} else if ((perk).equals("smelt")) {
+			return 50;
+		} else if ((perk).equals("tread")) {
+			return 22;
+		} else if ((perk).equals("seer")) {
+			return 12;
+		} else if ((perk).equals("shot")) {
+			return 14;
+		} else if ((perk).equals("lightning")) {
+			return 14;
+		} else if ((perk).equals("ringing")) {
+			return 34;
+		} else if ((perk).equals("fangs")) {
+			return 22;
+		} else if ((perk).equals("undead")) {
+			return 30;
+		} else if ((perk).equals("greed")) {
+			return 50;
 		}
 		return 0;
 	}

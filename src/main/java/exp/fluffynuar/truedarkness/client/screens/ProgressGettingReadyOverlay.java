@@ -48,6 +48,17 @@ import exp.fluffynuar.truedarkness.procedures.GetTypeOfPerk4Procedure;
 import exp.fluffynuar.truedarkness.procedures.GetTypeOfPerk3Procedure;
 import exp.fluffynuar.truedarkness.procedures.GetTypeOfPerk2Procedure;
 import exp.fluffynuar.truedarkness.procedures.GetTypeOfPerk1Procedure;
+import exp.fluffynuar.truedarkness.procedures.GetTyleOfCooldownProcedure;
+import exp.fluffynuar.truedarkness.procedures.GetTyleOfCooldown9Procedure;
+import exp.fluffynuar.truedarkness.procedures.GetTyleOfCooldown8Procedure;
+import exp.fluffynuar.truedarkness.procedures.GetTyleOfCooldown7Procedure;
+import exp.fluffynuar.truedarkness.procedures.GetTyleOfCooldown6Procedure;
+import exp.fluffynuar.truedarkness.procedures.GetTyleOfCooldown5Procedure;
+import exp.fluffynuar.truedarkness.procedures.GetTyleOfCooldown4Procedure;
+import exp.fluffynuar.truedarkness.procedures.GetTyleOfCooldown3Procedure;
+import exp.fluffynuar.truedarkness.procedures.GetTyleOfCooldown2Procedure;
+import exp.fluffynuar.truedarkness.procedures.GetTyleOfCooldown1Procedure;
+import exp.fluffynuar.truedarkness.procedures.GetLevelOfEridiumTextProcedure;
 import exp.fluffynuar.truedarkness.procedures.FatigueBloodCountProcedure;
 import exp.fluffynuar.truedarkness.procedures.ExpirienceHideBarProcedure;
 
@@ -78,7 +89,7 @@ public class ProgressGettingReadyOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (ExpirienceHideBarProcedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress.png"), w / 2 + -91, h - 39, 0, 0, 182, 15, 182, 15);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress.png"), w / 2 + -101, h - 39, 0, 0, 204, 17, 204, 17);
 
 			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_selecting_bar.png"), w / 2 + -100, h - 22, 0, 0, 203, 22, 203, 22);
 
@@ -113,53 +124,78 @@ public class ProgressGettingReadyOverlay {
 				event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/selectied_spell.png"), w / 2 + 79, h - 23, 0, 0, 24, 24, 24, 24);
 			}
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + -97, h - 19, Mth.clamp((int) GetTypeOfPerkProcedure.execute(entity) * 16, 0, 160), 0, 16, 16, 176, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + -97, h - 19, Mth.clamp((int) GetTypeOfPerkProcedure.execute(entity) * 16, 0, 224), 0, 16, 16, 240, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + -77, h - 19, Mth.clamp((int) GetTypeOfPerk1Procedure.execute(entity) * 16, 0, 160), 0, 16, 16, 176, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + -77, h - 19, Mth.clamp((int) GetTypeOfPerk1Procedure.execute(entity) * 16, 0, 224), 0, 16, 16, 240, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + -57, h - 19, Mth.clamp((int) GetTypeOfPerk2Procedure.execute(entity) * 16, 0, 160), 0, 16, 16, 176, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + -57, h - 19, Mth.clamp((int) GetTypeOfPerk2Procedure.execute(entity) * 16, 0, 224), 0, 16, 16, 240, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + -37, h - 19, Mth.clamp((int) GetTypeOfPerk3Procedure.execute(entity) * 16, 0, 160), 0, 16, 16, 176, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + -37, h - 19, Mth.clamp((int) GetTypeOfPerk3Procedure.execute(entity) * 16, 0, 224), 0, 16, 16, 240, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + -17, h - 19, Mth.clamp((int) GetTypeOfPerk4Procedure.execute(entity) * 16, 0, 160), 0, 16, 16, 176, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + -17, h - 19, Mth.clamp((int) GetTypeOfPerk4Procedure.execute(entity) * 16, 0, 224), 0, 16, 16, 240, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + 3, h - 19, Mth.clamp((int) GetTypeOfPerk5Procedure.execute(entity) * 16, 0, 160), 0, 16, 16, 176, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + 3, h - 19, Mth.clamp((int) GetTypeOfPerk5Procedure.execute(entity) * 16, 0, 224), 0, 16, 16, 240, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + 23, h - 19, Mth.clamp((int) GetTypeOfPerk6Procedure.execute(entity) * 16, 0, 160), 0, 16, 16, 176, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + 23, h - 19, Mth.clamp((int) GetTypeOfPerk6Procedure.execute(entity) * 16, 0, 224), 0, 16, 16, 240, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + 43, h - 19, Mth.clamp((int) GetTypeOfPerk7Procedure.execute(entity) * 16, 0, 160), 0, 16, 16, 176, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + 43, h - 19, Mth.clamp((int) GetTypeOfPerk7Procedure.execute(entity) * 16, 0, 224), 0, 16, 16, 240, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + 63, h - 19, Mth.clamp((int) GetTypeOfPerk8Procedure.execute(entity) * 16, 0, 160), 0, 16, 16, 176, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + 63, h - 19, Mth.clamp((int) GetTypeOfPerk8Procedure.execute(entity) * 16, 0, 224), 0, 16, 16, 240, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + 83, h - 19, Mth.clamp((int) GetTypeOfPerk9Procedure.execute(entity) * 16, 0, 160), 0, 16, 16, 176, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/spell_type_bar.png"), w / 2 + 83, h - 19, Mth.clamp((int) GetTypeOfPerk9Procedure.execute(entity) * 16, 0, 224), 0, 16, 16, 240, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_0.png"), w / 2 + -90, h - 28, Mth.clamp((int) VisualProgress1Procedure.execute(entity) * 10, 0, 50), 0, 10, 3, 60, 3);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_1.png"), w / 2 + -100, h - 28, Mth.clamp((int) VisualProgress1Procedure.execute(entity) * 10, 0, 50), 0, 10, 4, 60, 4);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_1.png"), w / 2 + -80, h - 28, Mth.clamp((int) VisualProgress2Procedure.execute(entity) * 10, 0, 50), 0, 10, 3, 60, 3);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_2.png"), w / 2 + -90, h - 28, Mth.clamp((int) VisualProgress2Procedure.execute(entity) * 10, 0, 50), 0, 10, 4, 60, 4);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_2.png"), w / 2 + -70, h - 28, Mth.clamp((int) VisualProgress3Procedure.execute(entity) * 10, 0, 50), 0, 10, 3, 60, 3);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_3.png"), w / 2 + -80, h - 28, Mth.clamp((int) VisualProgress3Procedure.execute(entity) * 10, 0, 50), 0, 10, 4, 60, 4);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_0.png"), w / 2 + -60, h - 28, Mth.clamp((int) VisualProgress4Procedure.execute(entity) * 10, 0, 50), 0, 10, 3, 60, 3);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_4.png"), w / 2 + -70, h - 28, Mth.clamp((int) VisualProgress4Procedure.execute(entity) * 10, 0, 50), 0, 10, 4, 60, 4);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_2.png"), w / 2 + -50, h - 28, Mth.clamp((int) VisualProgress5Procedure.execute(entity) * 10, 0, 50), 0, 10, 3, 60, 3);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_5.png"), w / 2 + -60, h - 28, Mth.clamp((int) VisualProgress5Procedure.execute(entity) * 10, 0, 50), 0, 10, 4, 60, 4);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_0.png"), w / 2 + -40, h - 28, Mth.clamp((int) VisualProgress6Procedure.execute(entity) * 10, 0, 50), 0, 10, 3, 60, 3);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_6.png"), w / 2 + -50, h - 28, Mth.clamp((int) VisualProgress6Procedure.execute(entity) * 10, 0, 50), 0, 10, 4, 60, 4);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_2.png"), w / 2 + -20, h - 28, Mth.clamp((int) VisualProgress8Procedure.execute(entity) * 10, 0, 50), 0, 10, 3, 60, 3);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_7.png"), w / 2 + -40, h - 28, Mth.clamp((int) VisualProgress7Procedure.execute(entity) * 10, 0, 50), 0, 10, 4, 60, 4);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_1.png"), w / 2 + -30, h - 28, Mth.clamp((int) VisualProgress7Procedure.execute(entity) * 10, 0, 50), 0, 10, 3, 60, 3);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_8.png"), w / 2 + -30, h - 28, Mth.clamp((int) VisualProgress8Procedure.execute(entity) * 10, 0, 50), 0, 10, 4, 60, 4);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_0.png"), w / 2 + -10, h - 28, Mth.clamp((int) VisualProgress9Procedure.execute(entity) * 10, 0, 50), 0, 10, 3, 60, 3);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_9.png"), w / 2 + -20, h - 28, Mth.clamp((int) VisualProgress9Procedure.execute(entity) * 10, 0, 50), 0, 10, 4, 60, 4);
 
-			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_0.png"), w / 2 + 0, h - 28, Mth.clamp((int) VisualProgress10Procedure.execute(entity) * 10, 0, 50), 0, 10, 3, 60, 3);
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_bar_0.png"), w / 2 + -10, h - 28, Mth.clamp((int) VisualProgress10Procedure.execute(entity) * 10, 0, 50), 0, 10, 4, 60, 4);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_rimworld.png"), w / 2 + 2, h - 39, Mth.clamp((int) GetLevelOfEridiumTextProcedure.execute(entity) * 21, 0, 168), 0, 21, 16, 189, 16);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_cooldown.png"), w / 2 + -97, h - 19, Mth.clamp((int) GetTyleOfCooldownProcedure.execute(entity) * 16, 0, 288), 0, 16, 16, 304, 16);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_cooldown.png"), w / 2 + -77, h - 19, Mth.clamp((int) GetTyleOfCooldown1Procedure.execute(entity) * 16, 0, 288), 0, 16, 16, 304, 16);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_cooldown.png"), w / 2 + -57, h - 19, Mth.clamp((int) GetTyleOfCooldown2Procedure.execute(entity) * 16, 0, 288), 0, 16, 16, 304, 16);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_cooldown.png"), w / 2 + -37, h - 19, Mth.clamp((int) GetTyleOfCooldown3Procedure.execute(entity) * 16, 0, 288), 0, 16, 16, 304, 16);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_cooldown.png"), w / 2 + -17, h - 19, Mth.clamp((int) GetTyleOfCooldown4Procedure.execute(entity) * 16, 0, 288), 0, 16, 16, 304, 16);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_cooldown.png"), w / 2 + 3, h - 19, Mth.clamp((int) GetTyleOfCooldown5Procedure.execute(entity) * 16, 0, 288), 0, 16, 16, 304, 16);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_cooldown.png"), w / 2 + 23, h - 19, Mth.clamp((int) GetTyleOfCooldown6Procedure.execute(entity) * 16, 0, 288), 0, 16, 16, 304, 16);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_cooldown.png"), w / 2 + 43, h - 19, Mth.clamp((int) GetTyleOfCooldown7Procedure.execute(entity) * 16, 0, 288), 0, 16, 16, 304, 16);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_cooldown.png"), w / 2 + 63, h - 19, Mth.clamp((int) GetTyleOfCooldown8Procedure.execute(entity) * 16, 0, 288), 0, 16, 16, 304, 16);
+
+			event.getGuiGraphics().blit(new ResourceLocation("truedarkness:textures/screens/active_progress_cooldown.png"), w / 2 + 83, h - 19, Mth.clamp((int) GetTyleOfCooldown9Procedure.execute(entity) * 16, 0, 288), 0, 16, 16, 304, 16);
 
 			if (FatigueBloodCountProcedure.execute(entity))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-						TextFatigueBloodCountProcedure.execute(entity), w / 2 + 9, h - 49, -12111538, false);
+						TextFatigueBloodCountProcedure.execute(entity), w / 2 + 22, h - 48, -12111538, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					TextFatigueBloodProcedure.execute(entity), w / 2 + 14, h - 35, -9087361, false);
+					TextFatigueBloodProcedure.execute(entity), w / 2 + 29, h - 34, -12177842, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					TextFatigueBloodProcedure.execute(entity), w / 2 + 28, h - 35, -9087361, false);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

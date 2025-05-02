@@ -57,7 +57,7 @@
     "material": {
       "value": "AIR"
     },
-    "tickRate": 0,
+    "tickRate": 60,
     "tickRandomly": false,
     "isReplaceable": true,
     "canProvidePower": false,

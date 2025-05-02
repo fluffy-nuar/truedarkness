@@ -26,6 +26,8 @@ public class EridiumBookVToVriemiaKakBiezdielushkaEkipirovanaKazhdyiTikProcedure
 		if (entity == null)
 			return;
 		double add_int = 0;
+		double add_int_1 = 0;
+		double cooldown_max = 0;
 		if (((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Faction).equals("corrupt")) {
 			if (!(itemstack.getOrCreateTag().getString("BookAddon")).equals("armor")
 					|| itemstack.getOrCreateTag().getDouble("BookAddonLevel") < (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getCount()
@@ -93,8 +95,20 @@ public class EridiumBookVToVriemiaKakBiezdielushkaEkipirovanaKazhdyiTikProcedure
 					});
 				}
 			}
+			if (entity instanceof LivingEntity _livEnt34 && _livEnt34.hasEffect(TruedarknessModMobEffects.CORRUPTED_REMNANT_USING.get())) {
+				for (int index1 = 0; index1 < (int) (itemstack.getOrCreateTag().getDouble("ActiveStage") + 2); index1++) {
+					if ((entity instanceof Player _plrCldRem39
+							? _plrCldRem39.getCooldowns().getCooldownPercent(ForgeRegistries.ITEMS.getValue(new ResourceLocation((("truedarkness:shiny_eridium_"
+									+ ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).PerkItem).getOrCreateTag().getString(("Line" + Math.round(add_int_1)))))
+									.toLowerCase(java.util.Locale.ENGLISH))), 0f) * 100
+							: 0) == 0 && itemstack.getOrCreateTag().getDouble(("Line" + Math.round(add_int_1) + "Cooldown")) != 0) {
+						itemstack.getOrCreateTag().putDouble(("Line" + Math.round(add_int_1) + "Cooldown"), 0);
+					}
+					add_int_1 = add_int_1 + 1;
+				}
+			}
 			if ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Active_prey_count != 0
-					&& !(entity instanceof LivingEntity _livEnt34 && _livEnt34.hasEffect(TruedarknessModMobEffects.DEAL_COOLDOWN.get()))) {
+					&& !(entity instanceof LivingEntity _livEnt44 && _livEnt44.hasEffect(TruedarknessModMobEffects.DEAL_COOLDOWN.get()))) {
 				{
 					double _setval = (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Preys
 							+ PreyCountPereschetProcedure.execute((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).Active_prey_count);

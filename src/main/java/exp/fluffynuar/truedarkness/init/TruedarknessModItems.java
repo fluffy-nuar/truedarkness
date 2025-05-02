@@ -96,6 +96,7 @@ import exp.fluffynuar.truedarkness.item.ShinyEridiumShotItem;
 import exp.fluffynuar.truedarkness.item.ShinyEridiumSeerItem;
 import exp.fluffynuar.truedarkness.item.ShinyEridiumRingingItem;
 import exp.fluffynuar.truedarkness.item.ShinyEridiumLightningItem;
+import exp.fluffynuar.truedarkness.item.ShinyEridiumGreedItem;
 import exp.fluffynuar.truedarkness.item.ShinyEridiumFangsItem;
 import exp.fluffynuar.truedarkness.item.ShaddyMelonItemItem;
 import exp.fluffynuar.truedarkness.item.SeekerPlantItemItem;
@@ -1018,6 +1019,7 @@ public class TruedarknessModItems {
 	public static final RegistryObject<Item> SHINY_ERIDIUM_UNDEAD = REGISTRY.register("shiny_eridium_undead", () -> new ShinyEridiumUndeadItem());
 	public static final RegistryObject<Item> CURSED_LECTERN = block(TruedarknessModBlocks.CURSED_LECTERN);
 	public static final RegistryObject<Item> ANCIENT_REGULATION = REGISTRY.register("ancient_regulation", () -> new AncientRegulationItem());
+	public static final RegistryObject<Item> SHINY_ERIDIUM_GREED = REGISTRY.register("shiny_eridium_greed", () -> new ShinyEridiumGreedItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,31 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Shiny Rush",
+    "icon": "reaper_restore_up",
+    "color": {
+      "value": -2697828,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -0.25,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ],
+    "onActiveTick": {
+      "name": "ShinyRushKazhdyiTikVoVriemiaEffiekta"
+    }
+  }
+}

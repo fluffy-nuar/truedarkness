@@ -82,7 +82,7 @@ public class MagicEridiumProcedure {
 				}
 				if ((entity instanceof Player _plrCldRem7
 						? _plrCldRem7.getCooldowns().getCooldownPercent(ForgeRegistries.ITEMS.getValue(new ResourceLocation((("truedarkness:shiny_eridium_" + Active_skill)).toLowerCase(java.util.Locale.ENGLISH))), 0f) * 100
-						: 0) <= 0) {
+						: 0) == 0) {
 					find = true;
 					if ((Active_skill).equals("stream")) {
 						if (!(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(TruedarknessModMobEffects.BLOODSHED.get()))) {
@@ -569,24 +569,28 @@ public class MagicEridiumProcedure {
 								find = false;
 							}
 						}
+					} else if ((Active_skill).equals("greed")) {
+						if (!(entity instanceof LivingEntity _livEnt234 && _livEnt234.hasEffect(TruedarknessModMobEffects.BLOODSHED.get()))) {
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.SHINY_RUSH.get(),
+										(int) (600 * ((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).ProgressBar / 100)), (int) Active_stage));
+						}
 					} else {
 						find = false;
 					}
 					if (find == true) {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.STOP_RESTORING.get(), 20, 0, false, false));
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.BLOODSHED.get(), 60, 0, false, false));
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:player.corrupted.teleport.use")), SoundSource.PLAYERS, 1, (float) 0.8);
-							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:player.corrupted.teleport.use")), SoundSource.PLAYERS, 1, (float) 0.8, false);
-							}
-						}
 						if (entity instanceof Player _player)
 							_player.getCooldowns().addCooldown(ForgeRegistries.ITEMS.getValue(new ResourceLocation((("truedarkness:shiny_eridium_" + Active_skill)).toLowerCase(java.util.Locale.ENGLISH))),
-									(int) CooldownShinyEridiumProcedure.execute((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).CorruptionStage, Active_skill));
+									(int) (20 * (CooldownShinyEridiumProcedure.execute(Active_skill) + Active_stage)
+											* (((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).ProgressBar < 20
+													? (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).ProgressBar
+													: 20) / 100)));
+						((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).PerkItem).getOrCreateTag().putDouble(
+								("Line" + Math.round((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).SelectedLine) + "Cooldown"),
+								(20 * (CooldownShinyEridiumProcedure.execute(Active_skill) + Active_stage)
+										* (((entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).ProgressBar < 20
+												? (entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TruedarknessModVariables.PlayerVariables())).ProgressBar
+												: 20) / 100)));
 						{
 							double _setval = 0;
 							entity.getCapability(TruedarknessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -600,6 +604,17 @@ public class MagicEridiumProcedure {
 								capability.Fatigue_second = _setval;
 								capability.syncPlayerVariables(entity);
 							});
+						}
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.STOP_RESTORING.get(), 20, 0, false, false));
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(TruedarknessModMobEffects.BLOODSHED.get(), 60, 0, false, false));
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:player.corrupted.teleport.use")), SoundSource.PLAYERS, 1, (float) 0.8);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("truedarkness:player.corrupted.teleport.use")), SoundSource.PLAYERS, 1, (float) 0.8, false);
+							}
 						}
 					} else {
 						if (entity instanceof Player _player && !_player.level().isClientSide())

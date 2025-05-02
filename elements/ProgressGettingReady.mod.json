@@ -20,8 +20,26 @@
             "name": "FatigueBloodCount"
           },
           "anchorPoint": "BOTTOM_CENTER",
-          "x": 222,
-          "y": 191,
+          "x": 235,
+          "y": 192,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_text_fatigue_blood1",
+          "text": {
+            "fixedValue": "",
+            "name": "TextFatigueBlood"
+          },
+          "color": {
+            "value": -12177842,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 242,
+          "y": 206,
           "locked": false
         }
       },
@@ -38,7 +56,7 @@
             "falpha": 0.0
           },
           "anchorPoint": "BOTTOM_CENTER",
-          "x": 227,
+          "x": 241,
           "y": 205,
           "locked": false
         }
@@ -47,7 +65,7 @@
         "type": "sprite",
         "data": {
           "sprite": "spell_type_bar.png",
-          "spritesCount": 11,
+          "spritesCount": 15,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetTypeOfPerk"
@@ -62,7 +80,7 @@
         "type": "sprite",
         "data": {
           "sprite": "spell_type_bar.png",
-          "spritesCount": 11,
+          "spritesCount": 15,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetTypeOfPerk1"
@@ -77,7 +95,7 @@
         "type": "sprite",
         "data": {
           "sprite": "spell_type_bar.png",
-          "spritesCount": 11,
+          "spritesCount": 15,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetTypeOfPerk2"
@@ -92,7 +110,7 @@
         "type": "sprite",
         "data": {
           "sprite": "spell_type_bar.png",
-          "spritesCount": 11,
+          "spritesCount": 15,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetTypeOfPerk3"
@@ -107,7 +125,7 @@
         "type": "sprite",
         "data": {
           "sprite": "spell_type_bar.png",
-          "spritesCount": 11,
+          "spritesCount": 15,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetTypeOfPerk4"
@@ -122,7 +140,7 @@
         "type": "sprite",
         "data": {
           "sprite": "spell_type_bar.png",
-          "spritesCount": 11,
+          "spritesCount": 15,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetTypeOfPerk5"
@@ -137,7 +155,7 @@
         "type": "sprite",
         "data": {
           "sprite": "spell_type_bar.png",
-          "spritesCount": 11,
+          "spritesCount": 15,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetTypeOfPerk6"
@@ -152,7 +170,7 @@
         "type": "sprite",
         "data": {
           "sprite": "spell_type_bar.png",
-          "spritesCount": 11,
+          "spritesCount": 15,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetTypeOfPerk7"
@@ -167,7 +185,7 @@
         "type": "sprite",
         "data": {
           "sprite": "spell_type_bar.png",
-          "spritesCount": 11,
+          "spritesCount": 15,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetTypeOfPerk8"
@@ -182,7 +200,7 @@
         "type": "sprite",
         "data": {
           "sprite": "spell_type_bar.png",
-          "spritesCount": 11,
+          "spritesCount": 15,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetTypeOfPerk9"
@@ -196,11 +214,26 @@
       {
         "type": "sprite",
         "data": {
-          "sprite": "active_progress_bar_0.png",
+          "sprite": "active_progress_bar_1.png",
           "spritesCount": 6,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "VisualProgress1"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 113,
+          "y": 212,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_bar_2.png",
+          "spritesCount": 6,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "VisualProgress2"
           },
           "anchorPoint": "BOTTOM_CENTER",
           "x": 123,
@@ -211,11 +244,11 @@
       {
         "type": "sprite",
         "data": {
-          "sprite": "active_progress_bar_1.png",
+          "sprite": "active_progress_bar_3.png",
           "spritesCount": 6,
           "spriteIndex": {
             "fixedValue": 0.0,
-            "name": "VisualProgress2"
+            "name": "VisualProgress3"
           },
           "anchorPoint": "BOTTOM_CENTER",
           "x": 133,
@@ -226,11 +259,11 @@
       {
         "type": "sprite",
         "data": {
-          "sprite": "active_progress_bar_2.png",
+          "sprite": "active_progress_bar_4.png",
           "spritesCount": 6,
           "spriteIndex": {
             "fixedValue": 0.0,
-            "name": "VisualProgress3"
+            "name": "VisualProgress4"
           },
           "anchorPoint": "BOTTOM_CENTER",
           "x": 143,
@@ -241,11 +274,11 @@
       {
         "type": "sprite",
         "data": {
-          "sprite": "active_progress_bar_0.png",
+          "sprite": "active_progress_bar_5.png",
           "spritesCount": 6,
           "spriteIndex": {
             "fixedValue": 0.0,
-            "name": "VisualProgress4"
+            "name": "VisualProgress5"
           },
           "anchorPoint": "BOTTOM_CENTER",
           "x": 153,
@@ -256,11 +289,11 @@
       {
         "type": "sprite",
         "data": {
-          "sprite": "active_progress_bar_2.png",
+          "sprite": "active_progress_bar_6.png",
           "spritesCount": 6,
           "spriteIndex": {
             "fixedValue": 0.0,
-            "name": "VisualProgress5"
+            "name": "VisualProgress6"
           },
           "anchorPoint": "BOTTOM_CENTER",
           "x": 163,
@@ -271,11 +304,11 @@
       {
         "type": "sprite",
         "data": {
-          "sprite": "active_progress_bar_0.png",
+          "sprite": "active_progress_bar_7.png",
           "spritesCount": 6,
           "spriteIndex": {
             "fixedValue": 0.0,
-            "name": "VisualProgress6"
+            "name": "VisualProgress7"
           },
           "anchorPoint": "BOTTOM_CENTER",
           "x": 173,
@@ -286,26 +319,11 @@
       {
         "type": "sprite",
         "data": {
-          "sprite": "active_progress_bar_2.png",
+          "sprite": "active_progress_bar_8.png",
           "spritesCount": 6,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "VisualProgress8"
-          },
-          "anchorPoint": "BOTTOM_CENTER",
-          "x": 193,
-          "y": 212,
-          "locked": false
-        }
-      },
-      {
-        "type": "sprite",
-        "data": {
-          "sprite": "active_progress_bar_1.png",
-          "spritesCount": 6,
-          "spriteIndex": {
-            "fixedValue": 0.0,
-            "name": "VisualProgress7"
           },
           "anchorPoint": "BOTTOM_CENTER",
           "x": 183,
@@ -316,14 +334,14 @@
       {
         "type": "sprite",
         "data": {
-          "sprite": "active_progress_bar_0.png",
+          "sprite": "active_progress_bar_9.png",
           "spritesCount": 6,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "VisualProgress9"
           },
           "anchorPoint": "BOTTOM_CENTER",
-          "x": 203,
+          "x": 193,
           "y": 212,
           "locked": false
         }
@@ -338,7 +356,7 @@
             "name": "VisualProgress10"
           },
           "anchorPoint": "BOTTOM_CENTER",
-          "x": 213,
+          "x": 203,
           "y": 212,
           "locked": false
         }
@@ -349,7 +367,7 @@
           "image": "active_progress.png",
           "use1Xscale": false,
           "anchorPoint": "BOTTOM_CENTER",
-          "x": 122,
+          "x": 112,
           "y": 201,
           "locked": true
         }
@@ -503,6 +521,171 @@
           "x": 292,
           "y": 217,
           "locked": true
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_rimworld.png",
+          "spritesCount": 9,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetLevelOfEridiumText"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 215,
+          "y": 201,
+          "locked": true
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_cooldown.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTyleOfCooldown"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 116,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_cooldown.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTyleOfCooldown1"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 136,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_cooldown.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTyleOfCooldown2"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 156,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_cooldown.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTyleOfCooldown3"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 176,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_cooldown.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTyleOfCooldown4"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 196,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_cooldown.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTyleOfCooldown5"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 216,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_cooldown.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTyleOfCooldown6"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 236,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_cooldown.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTyleOfCooldown7"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 256,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_cooldown.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTyleOfCooldown8"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 276,
+          "y": 221,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "active_progress_cooldown.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetTyleOfCooldown9"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 296,
+          "y": 221,
+          "locked": false
         }
       }
     ],

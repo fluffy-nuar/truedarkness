@@ -22,12 +22,12 @@ import exp.fluffynuar.truedarkness.potion.SoulstealSpoolCooldownMobEffect;
 import exp.fluffynuar.truedarkness.potion.SoulstealHeartCooldownMobEffect;
 import exp.fluffynuar.truedarkness.potion.SnakeMasterMobEffect;
 import exp.fluffynuar.truedarkness.potion.SkrezhalBreakingMobEffect;
+import exp.fluffynuar.truedarkness.potion.ShinyRushMobEffect;
 import exp.fluffynuar.truedarkness.potion.ScratchMobEffect;
 import exp.fluffynuar.truedarkness.potion.RuneProtectionMobEffect;
 import exp.fluffynuar.truedarkness.potion.RuneDrawingMobEffect;
 import exp.fluffynuar.truedarkness.potion.RemnantUsingMobEffect;
 import exp.fluffynuar.truedarkness.potion.ReducedVisibilityMobEffect;
-import exp.fluffynuar.truedarkness.potion.ReaperRestoreUpMobEffect;
 import exp.fluffynuar.truedarkness.potion.ReactorRadientMobEffect;
 import exp.fluffynuar.truedarkness.potion.PhantomProtectionMobEffect;
 import exp.fluffynuar.truedarkness.potion.ParanoidMobEffect;
@@ -79,5 +79,5 @@ public class TruedarknessModMobEffects {
 	public static final RegistryObject<MobEffect> REACTOR_RADIENT = REGISTRY.register("reactor_radient", () -> new ReactorRadientMobEffect());
 	public static final RegistryObject<MobEffect> TOXIC_VAPOUR = REGISTRY.register("toxic_vapour", () -> new ToxicVapourMobEffect());
 	public static final RegistryObject<MobEffect> CRYSTAL_TRAVELING_EFFECT = REGISTRY.register("crystal_traveling_effect", () -> new CrystalTravelingEffectMobEffect());
-	public static final RegistryObject<MobEffect> REAPER_RESTORE_UP = REGISTRY.register("reaper_restore_up", () -> new ReaperRestoreUpMobEffect());
+	public static final RegistryObject<MobEffect> SHINY_RUSH = REGISTRY.register("shiny_rush", () -> new ShinyRushMobEffect());
 }

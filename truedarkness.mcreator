@@ -34130,7 +34130,7 @@
           }
         ]
       },
-      "path": "~/Curios"
+      "path": "~/Curios/EridiumGets"
     },
     {
       "name": "EridiumBookPriShchielchkiePKM",
@@ -37369,11 +37369,7 @@
         ],
         "dependencies": [
           {
-            "name": "stage",
-            "type": "number"
-          },
-          {
-            "name": "eridium",
+            "name": "perk",
             "type": "string"
           }
         ]
@@ -37830,19 +37826,6 @@
         ]
       },
       "path": "~/GUI"
-    },
-    {
-      "name": "ReaperRestoreUp",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reaper_restore_up",
-      "metadata": {
-        "files": [
-          "src/main/java/exp/fluffynuar/truedarkness/potion/ReaperRestoreUpMobEffect.java"
-        ]
-      },
-      "path": "~/Effect"
     },
     {
       "name": "FatigueBloodCount",
@@ -42429,7 +42412,7 @@
       "name": "GetTypeOfPerk",
       "type": "procedure",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "get_type_of_perk",
       "metadata": {
         "return_type": "number",
@@ -42846,6 +42829,317 @@
         ]
       },
       "path": "~/BiomeY/Mine"
+    },
+    {
+      "name": "ShinyRush",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shiny_rush",
+      "metadata": {
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/potion/ShinyRushMobEffect.java"
+        ]
+      },
+      "path": "~/Effect"
+    },
+    {
+      "name": "ShinyRushKazhdyiTikVoVriemiaEffiekta",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shiny_rush_kazhdyi_tik_vo_vriemia_effiekta",
+      "metadata": {
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/ShinyRushKazhdyiTikVoVriemiaEffiektaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Effect"
+    },
+    {
+      "name": "SetSpellOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_spell_overlay",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/SetSpellOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "SelectedSlot",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "ShinyEridiumGreed",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shiny_eridium_greed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/truedarkness/models/item/shiny_eridium_greed_4.json",
+          "src/main/resources/assets/truedarkness/models/item/shiny_eridium_greed_1.json",
+          "src/main/java/exp/fluffynuar/truedarkness/item/ShinyEridiumGreedItem.java",
+          "src/main/resources/assets/truedarkness/models/item/shiny_eridium_greed_2.json",
+          "src/main/resources/assets/truedarkness/models/item/shiny_eridium_greed_0.json",
+          "src/main/resources/assets/truedarkness/models/item/shiny_eridium_greed.json",
+          "src/main/resources/assets/truedarkness/models/item/shiny_eridium_greed_3.json"
+        ]
+      },
+      "path": "~/Curios"
+    },
+    {
+      "name": "GetLevelOfEridiumText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_level_of_eridium_text",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetLevelOfEridiumTextProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "GetTyleOfCooldown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tyle_of_cooldown",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetTyleOfCooldownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "GetTyleOfCooldown1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tyle_of_cooldown_1",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetTyleOfCooldown1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "GetTyleOfCooldown2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tyle_of_cooldown_2",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetTyleOfCooldown2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "GetTyleOfCooldown3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tyle_of_cooldown_3",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetTyleOfCooldown3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "GetTyleOfCooldown4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tyle_of_cooldown_4",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetTyleOfCooldown4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "GetTyleOfCooldown5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tyle_of_cooldown_5",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetTyleOfCooldown5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "GetTyleOfCooldown6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tyle_of_cooldown_6",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetTyleOfCooldown6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "GetTyleOfCooldown7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tyle_of_cooldown_7",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetTyleOfCooldown7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "GetTyleOfCooldown8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tyle_of_cooldown_8",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetTyleOfCooldown8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "GetTyleOfCooldown9",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tyle_of_cooldown_9",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/exp/fluffynuar/truedarkness/procedures/GetTyleOfCooldown9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/CursedAltar"
+    },
+    {
+      "name": "CursedLecternBlockstate",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_lectern_blockstate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/truedarkness/models/block/cursed_lectern_blockstate_blockstate_0.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -44029,7 +44323,6 @@
       "CUSTOM:CursedBucket"
     ],
     "BLOCKS:truedarkness:swamp_kelp": [
-      "CUSTOM:SwampKelp",
       "CUSTOM:SwampKelpTop"
     ],
     "ITEMS:truedarkness:manual_eridium_2": [
@@ -44066,7 +44359,8 @@
       "CUSTOM:ShinyEridiumLightning",
       "CUSTOM:ShinyEridiumRinging",
       "CUSTOM:ShinyEridiumFangs",
-      "CUSTOM:ShinyEridiumUndead"
+      "CUSTOM:ShinyEridiumUndead",
+      "CUSTOM:ShinyEridiumGreed"
     ],
     "BLOCKS:truedarkness:corrupted_vines": [
       "CUSTOM:CorruptedVines2",
@@ -44545,6 +44839,30 @@
       "CUSTOM:GlowFence",
       "CUSTOM:WastelandSheafFence",
       "CUSTOM:NeaskyFence"
+    ],
+    "BLOCKS:truedarkness:valuable_blocks": [
+      "Blocks.MOB_SPAWNER",
+      "Blocks.CHEST",
+      "Blocks.COAL_ORE",
+      "Blocks.IRON_ORE",
+      "Blocks.REDSTONE_ORE",
+      "Blocks.LIT_REDSTONE_ORE",
+      "Blocks.GOLD_ORE",
+      "Blocks.LAPIS_ORE",
+      "Blocks.DIAMOND_ORE",
+      "Blocks.EMERALD_ORE",
+      "Blocks.COPPER_ORE",
+      "Blocks.DEEPSLATE_COAL_ORE",
+      "Blocks.DEEPSLATE_IRON_ORE",
+      "Blocks.DEEPSLATE_REDSTONE_ORE",
+      "Blocks.DEEPSLATE_GOLD_ORE",
+      "Blocks.DEEPSLATE_LAPIS_ORE",
+      "Blocks.DEEPSLATE_DIAMOND_ORE",
+      "Blocks.DEEPSLATE_EMERALD_ORE",
+      "Blocks.DEEPSLATE_COPPER_ORE",
+      "Blocks.QUARTZ_ORE",
+      "Blocks.NETHER_GOLD_ORE",
+      "Blocks.ANCIENT_DEBRIS"
     ],
     "ITEMS:truedarkness:evolution_accept": [
       "CUSTOM:ShinyEridiumSeer",
@@ -45566,6 +45884,7 @@
       "ShinyEridiumRinging",
       "ShinyEridiumFangs",
       "ShinyEridiumStream",
+      "ShinyEridiumGreed",
       "ShinyEridiumUndead",
       "MusicDiscLapis",
       "MusicDiscForestNight",
@@ -45974,8 +46293,8 @@
     "en_us": {
       "item.truedarkness.fantal_knife": "Fantal Knife",
       "item.truedarkness.cursed_sandglass": "§5Cursed Sandglass",
-      "block.truedarkness.mycelium_roots": "Glow Roots",
       "gui.truedarkness.cursed_anvil_gui.label_inventory": "Inventory",
+      "block.truedarkness.mycelium_roots": "Glow Roots",
       "advancements.collect_real_archeology_advancement.descr": "You\u0027ve found real Story",
       "subtitles.entity.corrupted_skeleton.ambient": "Corrupted Undead Here",
       "block.truedarkness.corrupt_1": "§5Corrupt",
@@ -45987,13 +46306,13 @@
       "advancements.be_quiet_advancement.title": "Be Quiet!!!",
       "effect.truedarkness.falling_effect": "Falling",
       "block.truedarkness.corrupted_soil": "§5Corrupted Soil",
-      "block.truedarkness.glow_fungus_hat_0": "Glow Fungus Vine",
       "block.truedarkness.empty_chiseled_ancient_glass": "Empty Chiseled Ancient Glass",
-      "block.truedarkness.corrupt_rune": "Corrupt Rune",
+      "block.truedarkness.glow_fungus_hat_0": "Glow Fungus Vine",
       "effect.truedarkness.rune_drawing": "Rune Drawing",
-      "effect.truedarkness.soulsteal_heart_cooldown": "Heartbeat",
-      "block.truedarkness.glownite_trap_door": "Glownite Trap Door",
+      "block.truedarkness.corrupt_rune": "Corrupt Rune",
       "item.truedarkness.soul_reel": "Soul Reel",
+      "block.truedarkness.glownite_trap_door": "Glownite Trap Door",
+      "effect.truedarkness.soulsteal_heart_cooldown": "Heartbeat",
       "block.truedarkness.copper_kettle.desc": "Can make drinks, if will be on Samovar",
       "advancements.real_archeology_advancement.title": "Deep In Story",
       "item.truedarkness.sliced_stem": "Sliced Stem",
@@ -46001,13 +46320,13 @@
       "item.truedarkness.soul_pin.desc": "§7[§a+§7] Hide Soul remnant",
       "entity.truedarkness.miner": "Miner",
       "item.truedarkness.tablet_cave.desc_1": "§7[§b?§7] There\u0027s some information about §bBuried Treasure",
-      "gamerule.sandRemnantsSucces.description": "How Many Chances Are There When The Sand Remnants Give Loot",
       "biome.truedarkness.crying_forest": "Swamps",
-      "effect.truedarkness.reaper_restore_up": "Reaper Restore Up",
+      "gamerule.sandRemnantsSucces.description": "How Many Chances Are There When The Sand Remnants Give Loot",
       "item.truedarkness.empty_spell.desc_1": "Shiny:",
       "entity.truedarkness.corrupted_human": "§5Corrupted Human",
       "advancements.soulsteal_advancement.title": "Stealing The Soul",
       "entity.truedarkness.gloomer_craftsman": "Gloomer Craftsman",
+      "item.truedarkness.shiny_eridium_greed": "Shiny Eridium",
       "block.truedarkness.corrupt_0.dark": "Looks like real power",
       "item.truedarkness.echo_heart.desc": "§7[§a!§7] When you\u0027re near of Spawnpoint your §3Mana§7 is max",
       "block.truedarkness.glow_fence": "Glow Fence",
@@ -46041,15 +46360,15 @@
       "block.truedarkness.swamp_stone_wall": "Swamp Stone Wall",
       "item.truedarkness.soul_catalyst": "Soul Catalyst",
       "item.truedarkness.shiny_eridium_fangs": "Shony Eridium",
-      "death.attack.gold_bread.item": "Broke some teeth",
       "advancements.echo_harp_advancement.title": "I Hear The Voice",
-      "item.truedarkness.creepy_fangs": "§5Creepy Fangs",
-      "item.truedarkness.soul_wings": "Soul Wings",
+      "death.attack.gold_bread.item": "Broke some teeth",
       "gui.truedarkness.blacksmite_forge_gui.label_blacksmite_forge": "Blacksmite Forge",
+      "item.truedarkness.soul_wings": "Soul Wings",
+      "item.truedarkness.creepy_fangs": "§5Creepy Fangs",
       "block.truedarkness.corrupted_slime": "Corrupted Slime",
-      "block.truedarkness.measky_leaves": "Measky Leaves",
-      "block.truedarkness.waster_flower": "Waster Flower",
       "block.truedarkness.crying_fence_gate": "Crying Fence Gate",
+      "block.truedarkness.waster_flower": "Waster Flower",
+      "block.truedarkness.measky_leaves": "Measky Leaves",
       "block.truedarkness.swamp_sand_layer": "Swamp Sand Layer",
       "block.truedarkness.corrupted_flower": "§5Corrupted Flower",
       "block.truedarkness.fake_slab": "Fake Slab",
@@ -46074,6 +46393,7 @@
       "item.truedarkness.shiny_eridium_ringing.desc": "The Ringing",
       "advancements.renteria_archeology_advancement.title": "Another Way",
       "advancements.wings_of_magic.descr": "Magic of silent",
+      "effect.truedarkness.shiny_rush": "Shiny Rush",
       "advancements.general_defeat_advancement.descr": "Kill general",
       "item.truedarkness.corrupted_meat.add_desc.corrupt": "Allow Reapers",
       "item.truedarkness.carving_knife.chiseled": "Type: Chiseled",
@@ -46422,6 +46742,7 @@
       "item.truedarkness.spirit_armor_trim_smithing_template": "Smithing Template",
       "advancements.nausea_advancement.title": "What Have You Added Here?",
       "description.pattern.how_to_use.slot.main_hand": "When in Main-Hand",
+      "item.truedarkness.shiny_eridium_greed.desc": "The Greedness",
       "advancements.light_of_soul_advancement.descr": "Use Light Of Soul",
       "advancements.cursed_bowl_advancement.descr": "Teleport to more then 100 blocks with Cursed Bowl",
       "block.truedarkness.corrupted_reactor.c_4.tier_1": "",
@@ -47382,7 +47703,12 @@
       },
       {
         "name": "Curios",
-        "children": []
+        "children": [
+          {
+            "name": "EridiumGets",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Decor",
@@ -47473,10 +47799,6 @@
       },
       {
         "name": "Loot",
-        "children": []
-      },
-      {
-        "name": "Magic",
         "children": []
       },
       {
