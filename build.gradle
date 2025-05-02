@@ -20,7 +20,7 @@ minecraft {
         client {
             def mcreatorJvmOptions = System.getenv('MCREATOR_JVM_OPTIONS')
             if (mcreatorJvmOptions) {
-                jvmArgs += mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.toList()
+                jvmArgs += mcreatorJvmOptions.split("\s+").findAll { it.trim() }.toList()
             }
         }
 
@@ -43,7 +43,7 @@ minecraft {
 }
 
 repositories {
-    maven { url 'https://maven.blamejared.com' }
+    maven { url 'https://maven.blamejared.com/' }
 }
 
 dependencies {
