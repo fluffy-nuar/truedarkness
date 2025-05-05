@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "particle",
   "definition": {
-    "texture": "vanilla_bubble.png",
+    "texture": "vanilla_bubble",
     "animate": true,
     "frameDuration": 2,
     "width": 0.4,
@@ -18,6 +18,6 @@
     "angularAcceleration": 0.0,
     "canCollide": true,
     "alwaysShow": false,
-    "renderType": "LIT"
+    "renderType": "OPAQUE"
   }
 }

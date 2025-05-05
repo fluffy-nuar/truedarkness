@@ -2,7 +2,7 @@
   "parent": "block/cross",
   "textures": {
     "cross": "truedarkness:block/glow_fungus_0",
-    "particle": "truedarkness:block/glow_fungus_0"
+    "particle": "truedarkness:block/glow_fungus_1"
   },
   "render_type": "cutout"
 }

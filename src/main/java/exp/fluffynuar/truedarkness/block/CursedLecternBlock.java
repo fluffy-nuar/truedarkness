@@ -1,16 +1,12 @@
 
 package exp.fluffynuar.truedarkness.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -37,16 +33,8 @@ import exp.fluffynuar.truedarkness.world.inventory.BookAltarGuiMenu;
 import exp.fluffynuar.truedarkness.block.entity.CursedLecternBlockEntity;
 
 public class CursedLecternBlock extends Block implements EntityBlock {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
-
 	public CursedLecternBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.POLISHED_DEEPSLATE).strength(1f, 10f).lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(BLOCKSTATE) == 1)
-					return 0;
-				return 0;
-			}
-		}.getLightLevel())).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.POLISHED_DEEPSLATE).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -66,16 +54,7 @@ public class CursedLecternBlock extends Block implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 1) {
-			return Shapes.or(box(2, 0, 2, 14, 4, 14), box(3, 4, 3, 13, 10, 13), box(4, 10, 4, 12, 16, 12), box(4, 16, 4, 12, 18, 12), box(3, 18, 3, 13, 22, 13), box(2, 22, 2, 14, 24, 14));
-		}
-		return Shapes.or(box(2, 0, 2, 14, 4, 14), box(3, 4, 3, 13, 10, 13), box(4, 10, 4, 12, 16, 12), box(4, 16, 4, 12, 18, 12), box(3, 18, 3, 13, 22, 13), box(2, 22, 2, 14, 24, 14));
-	}
-
-	@Override
-	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder);
-		builder.add(BLOCKSTATE);
+		return Shapes.or(box(2, 0, 2, 14, 4, 14), box(3, 4, 3, 13, 7, 13), box(4, 7, 4, 12, 10, 12), box(3, 10, 3, 13, 14, 13), box(2, 14, 2, 14, 16, 14));
 	}
 
 	@Override

@@ -3,7 +3,7 @@
   "textures": {
     "all": "truedarkness:block/cursed_bookshelf",
     "particle": "truedarkness:block/cursed_workbench_side",
-    "0": "truedarkness:block/cursed_stand"
+    "1": "truedarkness:block/cursed_stand_book"
   },
   "render_type": "cutout"
 }
